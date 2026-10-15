@@ -1,0 +1,2773 @@
+{
+  "status": "passed",
+  "seed": 20260831,
+  "cases": [
+    {
+      "id": "synthetic_00",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": -2,
+              "b": -2,
+              "z": 1
+            },
+            "sense": "ge",
+            "rhs": 11
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": 2,
+              "b": -3,
+              "z": 0
+            },
+            "sense": "eq",
+            "rhs": -1
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": 3,
+              "b": -1,
+              "z": 3
+            },
+            "sense": "ge",
+            "rhs": 4
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": 2,
+            "b": 0,
+            "z": 4
+          },
+          "sense": "max",
+          "unit": "synthetic_units",
+          "offset": -3
+        }
+      },
+      "oracle": {
+        "status": "infeasible",
+        "exact_objective": null
+      },
+      "solver": {
+        "bound_direction": "upper",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": null,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_node_count": null,
+        "objective": null,
+        "objective_bound": null,
+        "objective_sense": "max",
+        "objective_unit": "synthetic_units",
+        "point": null,
+        "reported_mip_gap": null,
+        "solver_queries": 1,
+        "solver_status_code": 2,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "infeasible",
+        "wall_seconds": 0.49625904113054276,
+        "peak_rss_bytes_sampled": 76988416,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_01",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": -1,
+              "b": 2,
+              "z": 1
+            },
+            "sense": "eq",
+            "rhs": -2
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": -2,
+              "b": -3,
+              "z": 3
+            },
+            "sense": "le",
+            "rhs": -3
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": -2,
+              "b": 1,
+              "z": 2
+            },
+            "sense": "ge",
+            "rhs": 0
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": 3,
+            "b": 2,
+            "z": -3
+          },
+          "sense": "min",
+          "unit": "synthetic_units",
+          "offset": -1
+        }
+      },
+      "oracle": {
+        "status": "infeasible",
+        "exact_objective": null
+      },
+      "solver": {
+        "bound_direction": "lower",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": null,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_node_count": null,
+        "objective": null,
+        "objective_bound": null,
+        "objective_sense": "min",
+        "objective_unit": "synthetic_units",
+        "point": null,
+        "reported_mip_gap": null,
+        "solver_queries": 1,
+        "solver_status_code": 2,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "infeasible",
+        "wall_seconds": 0.4802060825750232,
+        "peak_rss_bytes_sampled": 78610432,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_02",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": 0,
+              "b": 1,
+              "z": -1
+            },
+            "sense": "eq",
+            "rhs": 3
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": 0,
+              "b": 0,
+              "z": 2
+            },
+            "sense": "ge",
+            "rhs": 7
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": -2,
+              "b": 2,
+              "z": 1
+            },
+            "sense": "eq",
+            "rhs": 5
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": -3,
+            "b": -2,
+            "z": 0
+          },
+          "sense": "max",
+          "unit": "synthetic_units",
+          "offset": 0
+        }
+      },
+      "oracle": {
+        "status": "infeasible",
+        "exact_objective": null
+      },
+      "solver": {
+        "bound_direction": "upper",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": null,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_node_count": null,
+        "objective": null,
+        "objective_bound": null,
+        "objective_sense": "max",
+        "objective_unit": "synthetic_units",
+        "point": null,
+        "reported_mip_gap": null,
+        "solver_queries": 1,
+        "solver_status_code": 2,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "infeasible",
+        "wall_seconds": 0.46509825065732,
+        "peak_rss_bytes_sampled": 77496320,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_03",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": -1,
+              "b": -3,
+              "z": 3
+            },
+            "sense": "le",
+            "rhs": 7
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": 0,
+              "b": 1,
+              "z": -2
+            },
+            "sense": "le",
+            "rhs": 4
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": -2,
+              "b": 0,
+              "z": 1
+            },
+            "sense": "le",
+            "rhs": 6
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": 4,
+            "b": 2,
+            "z": -2
+          },
+          "sense": "min",
+          "unit": "synthetic_units",
+          "offset": 0
+        }
+      },
+      "oracle": {
+        "status": "optimal",
+        "exact_objective": "-14/3"
+      },
+      "solver": {
+        "absolute_gap": 0.0,
+        "bound_direction": "lower",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": -4.666666666666666,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_node_count": 0,
+        "objective": -4.666666666666666,
+        "objective_bound": -4.666666666666666,
+        "objective_sense": "min",
+        "objective_unit": "synthetic_units",
+        "point": {
+          "b": 1.0,
+          "x": 0.0,
+          "z": 3.333333333333333
+        },
+        "point_check": {
+          "feasibility_tolerance": 1e-07,
+          "feasible": true,
+          "integer_tolerance": 1e-06,
+          "max_integer_violation": 0.0,
+          "max_scaled_violation": 0.0
+        },
+        "reported_mip_gap": 0.0,
+        "solver_queries": 1,
+        "solver_status_code": 0,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "optimal",
+        "wall_seconds": 0.4643801674246788,
+        "peak_rss_bytes_sampled": 81100800,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_04",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": 0,
+              "b": 1,
+              "z": -3
+            },
+            "sense": "ge",
+            "rhs": 0
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": 0,
+              "b": 2,
+              "z": 2
+            },
+            "sense": "le",
+            "rhs": 2
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": 2,
+              "b": -3,
+              "z": 1
+            },
+            "sense": "le",
+            "rhs": 9
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": -4,
+            "b": -4,
+            "z": -3
+          },
+          "sense": "max",
+          "unit": "synthetic_units",
+          "offset": -2
+        }
+      },
+      "oracle": {
+        "status": "optimal",
+        "exact_objective": "-2"
+      },
+      "solver": {
+        "absolute_gap": 0.0,
+        "bound_direction": "upper",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": -2.0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_node_count": 0,
+        "objective": -2.0,
+        "objective_bound": -2.0,
+        "objective_sense": "max",
+        "objective_unit": "synthetic_units",
+        "point": {
+          "b": 0.0,
+          "x": 0.0,
+          "z": 0.0
+        },
+        "point_check": {
+          "feasibility_tolerance": 1e-07,
+          "feasible": true,
+          "integer_tolerance": 1e-06,
+          "max_integer_violation": 0.0,
+          "max_scaled_violation": 0.0
+        },
+        "reported_mip_gap": 0.0,
+        "solver_queries": 1,
+        "solver_status_code": 0,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "optimal",
+        "wall_seconds": 0.47088512498885393,
+        "peak_rss_bytes_sampled": 79233024,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_05",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": 3,
+              "b": 1,
+              "z": 0
+            },
+            "sense": "eq",
+            "rhs": 12
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": -1,
+              "b": -3,
+              "z": 1
+            },
+            "sense": "ge",
+            "rhs": -1
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": 0,
+              "b": 3,
+              "z": -2
+            },
+            "sense": "le",
+            "rhs": 12
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": 4,
+            "b": 0,
+            "z": -3
+          },
+          "sense": "min",
+          "unit": "synthetic_units",
+          "offset": 4
+        }
+      },
+      "oracle": {
+        "status": "optimal",
+        "exact_objective": "5"
+      },
+      "solver": {
+        "absolute_gap": 0.0,
+        "bound_direction": "lower",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": 5.0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_node_count": 0,
+        "objective": 5.0,
+        "objective_bound": 5.0,
+        "objective_sense": "min",
+        "objective_unit": "synthetic_units",
+        "point": {
+          "b": 0.0,
+          "x": 4.0,
+          "z": 5.0
+        },
+        "point_check": {
+          "feasibility_tolerance": 1e-07,
+          "feasible": true,
+          "integer_tolerance": 1e-06,
+          "max_integer_violation": 0.0,
+          "max_scaled_violation": 0.0
+        },
+        "reported_mip_gap": 0.0,
+        "solver_queries": 1,
+        "solver_status_code": 0,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "optimal",
+        "wall_seconds": 0.4623827077448368,
+        "peak_rss_bytes_sampled": 77021184,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_06",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": -2,
+              "b": -3,
+              "z": -1
+            },
+            "sense": "le",
+            "rhs": 7
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": 3,
+              "b": 2,
+              "z": -2
+            },
+            "sense": "le",
+            "rhs": 3
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": 1,
+              "b": 0,
+              "z": 2
+            },
+            "sense": "eq",
+            "rhs": 6
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": 1,
+            "b": 0,
+            "z": 4
+          },
+          "sense": "max",
+          "unit": "synthetic_units",
+          "offset": 2
+        }
+      },
+      "oracle": {
+        "status": "optimal",
+        "exact_objective": "14"
+      },
+      "solver": {
+        "absolute_gap": 0.0,
+        "bound_direction": "upper",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": 14.0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_node_count": 0,
+        "objective": 14.0,
+        "objective_bound": 14.0,
+        "objective_sense": "max",
+        "objective_unit": "synthetic_units",
+        "point": {
+          "b": 0.0,
+          "x": 0.0,
+          "z": 3.0
+        },
+        "point_check": {
+          "feasibility_tolerance": 1e-07,
+          "feasible": true,
+          "integer_tolerance": 1e-06,
+          "max_integer_violation": 0.0,
+          "max_scaled_violation": 0.0
+        },
+        "reported_mip_gap": 0.0,
+        "solver_queries": 1,
+        "solver_status_code": 0,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "optimal",
+        "wall_seconds": 0.4152280408889055,
+        "peak_rss_bytes_sampled": 78954496,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_07",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": 0,
+              "b": 0,
+              "z": 2
+            },
+            "sense": "eq",
+            "rhs": 9
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": -2,
+              "b": -1,
+              "z": 0
+            },
+            "sense": "ge",
+            "rhs": 8
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": -2,
+              "b": 0,
+              "z": 0
+            },
+            "sense": "eq",
+            "rhs": -1
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": -4,
+            "b": 3,
+            "z": 0
+          },
+          "sense": "min",
+          "unit": "synthetic_units",
+          "offset": -5
+        }
+      },
+      "oracle": {
+        "status": "infeasible",
+        "exact_objective": null
+      },
+      "solver": {
+        "bound_direction": "lower",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": null,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_node_count": null,
+        "objective": null,
+        "objective_bound": null,
+        "objective_sense": "min",
+        "objective_unit": "synthetic_units",
+        "point": null,
+        "reported_mip_gap": null,
+        "solver_queries": 1,
+        "solver_status_code": 2,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "infeasible",
+        "wall_seconds": 0.38948475010693073,
+        "peak_rss_bytes_sampled": 77479936,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_08",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": 0,
+              "b": 0,
+              "z": -3
+            },
+            "sense": "ge",
+            "rhs": 6
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": 2,
+              "b": -3,
+              "z": 2
+            },
+            "sense": "ge",
+            "rhs": 2
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": 3,
+              "b": -1,
+              "z": 1
+            },
+            "sense": "le",
+            "rhs": 0
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": -3,
+            "b": -4,
+            "z": 2
+          },
+          "sense": "max",
+          "unit": "synthetic_units",
+          "offset": -3
+        }
+      },
+      "oracle": {
+        "status": "infeasible",
+        "exact_objective": null
+      },
+      "solver": {
+        "bound_direction": "upper",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": null,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_node_count": null,
+        "objective": null,
+        "objective_bound": null,
+        "objective_sense": "max",
+        "objective_unit": "synthetic_units",
+        "point": null,
+        "reported_mip_gap": null,
+        "solver_queries": 1,
+        "solver_status_code": 2,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "infeasible",
+        "wall_seconds": 0.3796217078343034,
+        "peak_rss_bytes_sampled": 80166912,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_09",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": 3,
+              "b": 0,
+              "z": 3
+            },
+            "sense": "eq",
+            "rhs": 0
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": 1,
+              "b": -2,
+              "z": 0
+            },
+            "sense": "le",
+            "rhs": 8
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": 2,
+              "b": -2,
+              "z": 1
+            },
+            "sense": "eq",
+            "rhs": 5
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": 1,
+            "b": 3,
+            "z": -2
+          },
+          "sense": "min",
+          "unit": "synthetic_units",
+          "offset": 4
+        }
+      },
+      "oracle": {
+        "status": "infeasible",
+        "exact_objective": null
+      },
+      "solver": {
+        "bound_direction": "lower",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": null,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_node_count": null,
+        "objective": null,
+        "objective_bound": null,
+        "objective_sense": "min",
+        "objective_unit": "synthetic_units",
+        "point": null,
+        "reported_mip_gap": null,
+        "solver_queries": 1,
+        "solver_status_code": 2,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "infeasible",
+        "wall_seconds": 0.3703376669436693,
+        "peak_rss_bytes_sampled": 80117760,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_10",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": 0,
+              "b": 0,
+              "z": -1
+            },
+            "sense": "ge",
+            "rhs": -1
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": 2,
+              "b": 1,
+              "z": -2
+            },
+            "sense": "ge",
+            "rhs": 0
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": -2,
+              "b": 3,
+              "z": 3
+            },
+            "sense": "le",
+            "rhs": 4
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": 4,
+            "b": 3,
+            "z": 2
+          },
+          "sense": "max",
+          "unit": "synthetic_units",
+          "offset": -3
+        }
+      },
+      "oracle": {
+        "status": "optimal",
+        "exact_objective": "18"
+      },
+      "solver": {
+        "absolute_gap": 0.0,
+        "bound_direction": "upper",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": 18.0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_node_count": 0,
+        "objective": 18.0,
+        "objective_bound": 18.0,
+        "objective_sense": "max",
+        "objective_unit": "synthetic_units",
+        "point": {
+          "b": 1.0,
+          "x": 4.0,
+          "z": 1.0
+        },
+        "point_check": {
+          "feasibility_tolerance": 1e-07,
+          "feasible": true,
+          "integer_tolerance": 1e-06,
+          "max_integer_violation": 0.0,
+          "max_scaled_violation": 0.0
+        },
+        "reported_mip_gap": 0.0,
+        "solver_queries": 1,
+        "solver_status_code": 0,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "optimal",
+        "wall_seconds": 0.36751995887607336,
+        "peak_rss_bytes_sampled": 80035840,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_11",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": -3,
+              "b": 1,
+              "z": -2
+            },
+            "sense": "ge",
+            "rhs": 4
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": 3,
+              "b": -1,
+              "z": 3
+            },
+            "sense": "eq",
+            "rhs": 4
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": -2,
+              "b": 1,
+              "z": -1
+            },
+            "sense": "ge",
+            "rhs": 1
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": 2,
+            "b": 2,
+            "z": -3
+          },
+          "sense": "min",
+          "unit": "synthetic_units",
+          "offset": 0
+        }
+      },
+      "oracle": {
+        "status": "infeasible",
+        "exact_objective": null
+      },
+      "solver": {
+        "bound_direction": "lower",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": null,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_node_count": null,
+        "objective": null,
+        "objective_bound": null,
+        "objective_sense": "min",
+        "objective_unit": "synthetic_units",
+        "point": null,
+        "reported_mip_gap": null,
+        "solver_queries": 1,
+        "solver_status_code": 2,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "infeasible",
+        "wall_seconds": 0.37027145735919476,
+        "peak_rss_bytes_sampled": 80035840,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_12",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": 3,
+              "b": 1,
+              "z": 0
+            },
+            "sense": "le",
+            "rhs": 6
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": 3,
+              "b": -3,
+              "z": -2
+            },
+            "sense": "le",
+            "rhs": -2
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": -3,
+              "b": 0,
+              "z": 3
+            },
+            "sense": "ge",
+            "rhs": 7
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": -1,
+            "b": 2,
+            "z": -3
+          },
+          "sense": "max",
+          "unit": "synthetic_units",
+          "offset": -1
+        }
+      },
+      "oracle": {
+        "status": "optimal",
+        "exact_objective": "-6"
+      },
+      "solver": {
+        "absolute_gap": 0.0,
+        "bound_direction": "upper",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": -6.0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_node_count": 0,
+        "objective": -6.0,
+        "objective_bound": -6.0,
+        "objective_sense": "max",
+        "objective_unit": "synthetic_units",
+        "point": {
+          "b": 1.0,
+          "x": 0.0,
+          "z": 2.3333333333333335
+        },
+        "point_check": {
+          "feasibility_tolerance": 1e-07,
+          "feasible": true,
+          "integer_tolerance": 1e-06,
+          "max_integer_violation": 0.0,
+          "max_scaled_violation": 0.0
+        },
+        "reported_mip_gap": 0.0,
+        "solver_queries": 1,
+        "solver_status_code": 0,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "optimal",
+        "wall_seconds": 0.3694104580208659,
+        "peak_rss_bytes_sampled": 79822848,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_13",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": -3,
+              "b": 3,
+              "z": -3
+            },
+            "sense": "eq",
+            "rhs": 2
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": -1,
+              "b": -2,
+              "z": 3
+            },
+            "sense": "eq",
+            "rhs": 5
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": 3,
+              "b": -2,
+              "z": 3
+            },
+            "sense": "le",
+            "rhs": -2
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": 0,
+            "b": -4,
+            "z": -2
+          },
+          "sense": "min",
+          "unit": "synthetic_units",
+          "offset": -3
+        }
+      },
+      "oracle": {
+        "status": "infeasible",
+        "exact_objective": null
+      },
+      "solver": {
+        "bound_direction": "lower",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": null,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_node_count": null,
+        "objective": null,
+        "objective_bound": null,
+        "objective_sense": "min",
+        "objective_unit": "synthetic_units",
+        "point": null,
+        "reported_mip_gap": null,
+        "solver_queries": 1,
+        "solver_status_code": 2,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "infeasible",
+        "wall_seconds": 0.3682899158447981,
+        "peak_rss_bytes_sampled": 80904192,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_14",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": 2,
+              "b": 0,
+              "z": -1
+            },
+            "sense": "ge",
+            "rhs": 4
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": 3,
+              "b": -3,
+              "z": -2
+            },
+            "sense": "eq",
+            "rhs": 10
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": 0,
+              "b": 1,
+              "z": 2
+            },
+            "sense": "ge",
+            "rhs": -1
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": 3,
+            "b": -1,
+            "z": -3
+          },
+          "sense": "max",
+          "unit": "synthetic_units",
+          "offset": 1
+        }
+      },
+      "oracle": {
+        "status": "optimal",
+        "exact_objective": "10"
+      },
+      "solver": {
+        "absolute_gap": 0.0,
+        "bound_direction": "upper",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": 10.0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_node_count": 0,
+        "objective": 10.0,
+        "objective_bound": 10.0,
+        "objective_sense": "max",
+        "objective_unit": "synthetic_units",
+        "point": {
+          "b": 0.0,
+          "x": 4.0,
+          "z": 1.0
+        },
+        "point_check": {
+          "feasibility_tolerance": 1e-07,
+          "feasible": true,
+          "integer_tolerance": 1e-06,
+          "max_integer_violation": 0.0,
+          "max_scaled_violation": 0.0
+        },
+        "reported_mip_gap": 0.0,
+        "solver_queries": 1,
+        "solver_status_code": 0,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "optimal",
+        "wall_seconds": 0.4226634167134762,
+        "peak_rss_bytes_sampled": 79413248,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_15",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": -2,
+              "b": -1,
+              "z": 0
+            },
+            "sense": "ge",
+            "rhs": 1
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": -3,
+              "b": 2,
+              "z": -3
+            },
+            "sense": "eq",
+            "rhs": 3
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": -1,
+              "b": 0,
+              "z": 0
+            },
+            "sense": "le",
+            "rhs": -3
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": 0,
+            "b": 0,
+            "z": 1
+          },
+          "sense": "min",
+          "unit": "synthetic_units",
+          "offset": -2
+        }
+      },
+      "oracle": {
+        "status": "infeasible",
+        "exact_objective": null
+      },
+      "solver": {
+        "bound_direction": "lower",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": null,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_node_count": null,
+        "objective": null,
+        "objective_bound": null,
+        "objective_sense": "min",
+        "objective_unit": "synthetic_units",
+        "point": null,
+        "reported_mip_gap": null,
+        "solver_queries": 1,
+        "solver_status_code": 2,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "infeasible",
+        "wall_seconds": 0.44983637519180775,
+        "peak_rss_bytes_sampled": 77316096,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_16",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": 2,
+              "b": 3,
+              "z": 1
+            },
+            "sense": "le",
+            "rhs": 9
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": -3,
+              "b": -2,
+              "z": 0
+            },
+            "sense": "le",
+            "rhs": -2
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": 2,
+              "b": -3,
+              "z": -2
+            },
+            "sense": "eq",
+            "rhs": 2
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": 1,
+            "b": 2,
+            "z": 3
+          },
+          "sense": "max",
+          "unit": "synthetic_units",
+          "offset": -2
+        }
+      },
+      "oracle": {
+        "status": "optimal",
+        "exact_objective": "7"
+      },
+      "solver": {
+        "absolute_gap": 0.0,
+        "bound_direction": "upper",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": 7.0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_node_count": 0,
+        "objective": 7.0,
+        "objective_bound": 7.0,
+        "objective_sense": "max",
+        "objective_unit": "synthetic_units",
+        "point": {
+          "b": 0.0,
+          "x": 3.0,
+          "z": 2.0
+        },
+        "point_check": {
+          "feasibility_tolerance": 1e-07,
+          "feasible": true,
+          "integer_tolerance": 1e-06,
+          "max_integer_violation": 0.0,
+          "max_scaled_violation": 0.0
+        },
+        "reported_mip_gap": 0.0,
+        "solver_queries": 1,
+        "solver_status_code": 0,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "optimal",
+        "wall_seconds": 0.45299687422811985,
+        "peak_rss_bytes_sampled": 77266944,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_17",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": -3,
+              "b": -3,
+              "z": -2
+            },
+            "sense": "le",
+            "rhs": 7
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": 2,
+              "b": -3,
+              "z": -2
+            },
+            "sense": "ge",
+            "rhs": 7
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": -1,
+              "b": -2,
+              "z": 2
+            },
+            "sense": "eq",
+            "rhs": -1
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": 4,
+            "b": 0,
+            "z": -4
+          },
+          "sense": "min",
+          "unit": "synthetic_units",
+          "offset": 0
+        }
+      },
+      "oracle": {
+        "status": "infeasible",
+        "exact_objective": null
+      },
+      "solver": {
+        "bound_direction": "lower",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": null,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_node_count": null,
+        "objective": null,
+        "objective_bound": null,
+        "objective_sense": "min",
+        "objective_unit": "synthetic_units",
+        "point": null,
+        "reported_mip_gap": null,
+        "solver_queries": 1,
+        "solver_status_code": 2,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "infeasible",
+        "wall_seconds": 0.43075745925307274,
+        "peak_rss_bytes_sampled": 78299136,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_18",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": 2,
+              "b": -2,
+              "z": 1
+            },
+            "sense": "eq",
+            "rhs": 4
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": -2,
+              "b": 2,
+              "z": -1
+            },
+            "sense": "le",
+            "rhs": 3
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": -1,
+              "b": -1,
+              "z": 0
+            },
+            "sense": "eq",
+            "rhs": -3
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": 2,
+            "b": 4,
+            "z": -2
+          },
+          "sense": "max",
+          "unit": "synthetic_units",
+          "offset": 2
+        }
+      },
+      "oracle": {
+        "status": "optimal",
+        "exact_objective": "6"
+      },
+      "solver": {
+        "absolute_gap": 0.0,
+        "bound_direction": "upper",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": 6.0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_node_count": 0,
+        "objective": 6.0,
+        "objective_bound": 6.0,
+        "objective_sense": "max",
+        "objective_unit": "synthetic_units",
+        "point": {
+          "b": 1.0,
+          "x": 2.0,
+          "z": 2.0
+        },
+        "point_check": {
+          "feasibility_tolerance": 1e-07,
+          "feasible": true,
+          "integer_tolerance": 1e-06,
+          "max_integer_violation": 0.0,
+          "max_scaled_violation": 0.0
+        },
+        "reported_mip_gap": 0.0,
+        "solver_queries": 1,
+        "solver_status_code": 0,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "optimal",
+        "wall_seconds": 0.4765083324164152,
+        "peak_rss_bytes_sampled": 80805888,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_19",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": 0,
+              "b": 3,
+              "z": -1
+            },
+            "sense": "eq",
+            "rhs": 9
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": 0,
+              "b": -3,
+              "z": -2
+            },
+            "sense": "eq",
+            "rhs": 11
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": -1,
+              "b": -1,
+              "z": 2
+            },
+            "sense": "eq",
+            "rhs": 3
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": 0,
+            "b": -3,
+            "z": 3
+          },
+          "sense": "min",
+          "unit": "synthetic_units",
+          "offset": -2
+        }
+      },
+      "oracle": {
+        "status": "infeasible",
+        "exact_objective": null
+      },
+      "solver": {
+        "bound_direction": "lower",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": null,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_node_count": null,
+        "objective": null,
+        "objective_bound": null,
+        "objective_sense": "min",
+        "objective_unit": "synthetic_units",
+        "point": null,
+        "reported_mip_gap": null,
+        "solver_queries": 1,
+        "solver_status_code": 2,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "infeasible",
+        "wall_seconds": 0.45682720746845007,
+        "peak_rss_bytes_sampled": 76791808,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_20",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": 1,
+              "b": 1,
+              "z": -1
+            },
+            "sense": "ge",
+            "rhs": 7
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": -1,
+              "b": 0,
+              "z": -1
+            },
+            "sense": "eq",
+            "rhs": 2
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": -3,
+              "b": 2,
+              "z": -3
+            },
+            "sense": "ge",
+            "rhs": 4
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": -4,
+            "b": -2,
+            "z": 1
+          },
+          "sense": "max",
+          "unit": "synthetic_units",
+          "offset": -5
+        }
+      },
+      "oracle": {
+        "status": "infeasible",
+        "exact_objective": null
+      },
+      "solver": {
+        "bound_direction": "upper",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": null,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_node_count": null,
+        "objective": null,
+        "objective_bound": null,
+        "objective_sense": "max",
+        "objective_unit": "synthetic_units",
+        "point": null,
+        "reported_mip_gap": null,
+        "solver_queries": 1,
+        "solver_status_code": 2,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "infeasible",
+        "wall_seconds": 0.4542995411902666,
+        "peak_rss_bytes_sampled": 77316096,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_21",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": 3,
+              "b": 3,
+              "z": -2
+            },
+            "sense": "le",
+            "rhs": 11
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": 0,
+              "b": 1,
+              "z": 1
+            },
+            "sense": "eq",
+            "rhs": 9
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": 3,
+              "b": -3,
+              "z": -2
+            },
+            "sense": "le",
+            "rhs": 11
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": 0,
+            "b": -1,
+            "z": 0
+          },
+          "sense": "min",
+          "unit": "synthetic_units",
+          "offset": -4
+        }
+      },
+      "oracle": {
+        "status": "infeasible",
+        "exact_objective": null
+      },
+      "solver": {
+        "bound_direction": "lower",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": null,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_node_count": null,
+        "objective": null,
+        "objective_bound": null,
+        "objective_sense": "min",
+        "objective_unit": "synthetic_units",
+        "point": null,
+        "reported_mip_gap": null,
+        "solver_queries": 1,
+        "solver_status_code": 2,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "infeasible",
+        "wall_seconds": 0.4180825827643275,
+        "peak_rss_bytes_sampled": 78528512,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_22",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": 3,
+              "b": 1,
+              "z": 1
+            },
+            "sense": "le",
+            "rhs": 11
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": -1,
+              "b": 2,
+              "z": -2
+            },
+            "sense": "le",
+            "rhs": 8
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": 3,
+              "b": -1,
+              "z": 0
+            },
+            "sense": "eq",
+            "rhs": 1
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": -1,
+            "b": -4,
+            "z": -4
+          },
+          "sense": "max",
+          "unit": "synthetic_units",
+          "offset": 2
+        }
+      },
+      "oracle": {
+        "status": "infeasible",
+        "exact_objective": null
+      },
+      "solver": {
+        "bound_direction": "upper",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": null,
+        "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+        "mip_node_count": null,
+        "objective": null,
+        "objective_bound": null,
+        "objective_sense": "max",
+        "objective_unit": "synthetic_units",
+        "point": null,
+        "reported_mip_gap": null,
+        "solver_queries": 1,
+        "solver_status_code": 2,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "infeasible",
+        "wall_seconds": 0.466495624743402,
+        "peak_rss_bytes_sampled": 79396864,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "synthetic_23",
+      "model": {
+        "schema": "milp-v1",
+        "variables": [
+          {
+            "id": "x",
+            "meaning": "synthetic integer quantity",
+            "unit": "1",
+            "domain": "integer",
+            "lower": 0,
+            "upper": 4
+          },
+          {
+            "id": "b",
+            "meaning": "synthetic binary choice",
+            "unit": "1",
+            "domain": "binary",
+            "lower": null,
+            "upper": null
+          },
+          {
+            "id": "z",
+            "meaning": "synthetic continuous quantity",
+            "unit": "1",
+            "domain": "continuous",
+            "lower": 0,
+            "upper": 5
+          }
+        ],
+        "constraints": [
+          {
+            "id": "r0",
+            "coefficients": {
+              "x": 1,
+              "b": 1,
+              "z": 2
+            },
+            "sense": "eq",
+            "rhs": 10
+          },
+          {
+            "id": "r1",
+            "coefficients": {
+              "x": -3,
+              "b": -2,
+              "z": 2
+            },
+            "sense": "ge",
+            "rhs": 6
+          },
+          {
+            "id": "r2",
+            "coefficients": {
+              "x": -1,
+              "b": 3,
+              "z": 0
+            },
+            "sense": "le",
+            "rhs": 3
+          }
+        ],
+        "objective": {
+          "coefficients": {
+            "x": 1,
+            "b": -3,
+            "z": 4
+          },
+          "sense": "min",
+          "unit": "synthetic_units",
+          "offset": -2
+        }
+      },
+      "oracle": {
+        "status": "optimal",
+        "exact_objective": "13"
+      },
+      "solver": {
+        "absolute_gap": 0.0,
+        "bound_direction": "lower",
+        "certificate_scope": "numerical_solver_status_and_rechecked_incumbent",
+        "incumbent_objective": 13.0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "mip_node_count": 0,
+        "objective": 13.0,
+        "objective_bound": 13.0,
+        "objective_sense": "min",
+        "objective_unit": "synthetic_units",
+        "point": {
+          "b": 1.0,
+          "x": 0.0,
+          "z": 4.5
+        },
+        "point_check": {
+          "feasibility_tolerance": 1e-07,
+          "feasible": true,
+          "integer_tolerance": 1e-06,
+          "max_integer_violation": 0.0,
+          "max_scaled_violation": 0.0
+        },
+        "reported_mip_gap": 0.0,
+        "solver_queries": 1,
+        "solver_status_code": 0,
+        "solver_version": {
+          "highs": "1.12.0",
+          "scipy": "1.17.1"
+        },
+        "status": "optimal",
+        "wall_seconds": 0.42449333332479,
+        "peak_rss_bytes_sampled": 79921152,
+        "resource_scope": "trusted_numeric_worker; CPU60s; sampled_RSS; hard_AS_1GiB_on_Linux_only",
+        "configured_limits": {
+          "solve_seconds": 10.0,
+          "total_seconds": 25.0,
+          "node_limit": 10000,
+          "max_queries": 128,
+          "wall_seconds": 30,
+          "rss_mb": 512
+        }
+      },
+      "passed": true
+    }
+  ],
+  "total": 24,
+  "passed": 24,
+  "oracle": "Full enumeration of integer/binary coordinates plus exact rational elimination of one continuous variable",
+  "optimal_cases": 10,
+  "infeasible_cases": 14,
+  "actual_model_api_calls": 0,
+  "benchmark_performance_claim": false
+}

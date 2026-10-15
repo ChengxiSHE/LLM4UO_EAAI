@@ -1,0 +1,1116 @@
+{
+  "audited_at_local_date": "2026-10-15",
+  "decision": {
+    "executable_allowlist_established": false,
+    "next_review_order": [
+      "Resolve root license, attribution and current-byte provenance policy.",
+      "Review the manual projection and execution queues without opening evaluator-only answer values.",
+      "Specify behavior-equivalence tests for the two dependency cut points before any refactor.",
+      "Freeze non-Python inputs and the actual per-layer third-party/binary environment.",
+      "Run a credential-free recursive clean-clone reconstruction."
+    ],
+    "ordinary_source_candidates": 13,
+    "prohibited_claims": [
+      "The 28-file first queue is a runnable closure.",
+      "Files without a heuristic signal are rights-safe.",
+      "Reachable Git objects prove current-byte provenance.",
+      "The current offline requirements cover the conservative transitive closure."
+    ],
+    "rights_safe_allowlist_established": false
+  },
+  "dependency_cut_points": [
+    {
+      "direct_incidental_dependency": "llm4or/object_feedback_pilot_inputs.py",
+      "effect": "Pulls the historical provider/reviewer/packing stack into the conservative TSP preparation closure.",
+      "source": "scripts/prepare_tsp_constraint_confirmation.py"
+    },
+    {
+      "direct_incidental_dependency": "llm4or/or_debug_development_eval.py",
+      "effect": "Adds development-evaluation code to the confirmation scoring closure.",
+      "source": "llm4or/or_debug_hidden_score.py"
+    }
+  ],
+  "execution": {
+    "credentials_read": 0,
+    "evaluator_only_answers_read": 0,
+    "git_history_modified": false,
+    "git_index_modified": false,
+    "model_or_api_calls": 0,
+    "native_or_vm_calls": 0,
+    "network_calls": 0,
+    "request_or_response_bodies_read": 0,
+    "solver_calls": 0
+  },
+  "files": [
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 8552,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [
+          "llm4or/finite_count_model.py",
+          "llm4or/finite_count_public.py",
+          "llm4or/typed_count_skill.py"
+        ],
+        "tracked": [
+          "llm4or/schema.py"
+        ]
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "no_execution_risk_signal_in_file",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 237,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "mechanical_literal_screen_no_high_risk_content_signal",
+      "path": "llm4or/count_skill_library.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [],
+      "semantic_role": "typed_count_skill_or_certificate",
+      "sha256": "51c57c87be9eb6f7eb64a2d8300be28bb8012a466b7c02c0aaaa4c4783480987",
+      "top_level_definitions": [
+        "CountSkillLibraryError",
+        "_require",
+        "_complete_n",
+        "oracle_complete",
+        "oracle_truth",
+        "build_complete_model",
+        "build_truth_model",
+        "_complete_match",
+        "_partial_match",
+        "_truth_match",
+        "_route_with_evidence",
+        "route_public",
+        "_partial_candidate",
+        "proposal_for_public"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 6671,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [],
+        "tracked": [
+          "llm4or/milp_schema.py",
+          "llm4or/schema.py"
+        ]
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "no_execution_risk_signal_in_file",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 158,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "mechanical_literal_screen_no_high_risk_content_signal",
+      "path": "llm4or/finite_count_model.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [],
+      "semantic_role": "typed_count_skill_or_certificate",
+      "sha256": "aeab13a5c06bf06b56889bf185ec930de6f06b2195a4eeeacb7a8f123a802444",
+      "top_level_definitions": [
+        "CountModelError",
+        "require",
+        "fields",
+        "integer",
+        "validate_count_model",
+        "compile_count_model"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 9294,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [
+          "llm4or/finite_count_response.py"
+        ],
+        "tracked": [
+          "llm4or/schema.py"
+        ]
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "no_execution_risk_signal_in_file",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 159,
+      "long_literal_metadata": [
+        {
+          "characters": 948,
+          "sha256": "94deb5200cc0e97d5d065bc682e53486efecd0fd9e629c70424328aa23638f26",
+          "targets": [
+            "STATIC_GUIDANCE"
+          ]
+        },
+        {
+          "characters": 1833,
+          "sha256": "3d293752e4b83dc38b9ec00ba94b985ee8d475df96dcb7ceb9dd3280c4731df9",
+          "targets": [
+            "CAPABILITIES"
+          ]
+        }
+      ],
+      "minimum_disclosure_status": "manual_projection_review_required",
+      "path": "llm4or/finite_count_public.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [
+        "long_literal",
+        "private_or_evaluator_term"
+      ],
+      "semantic_role": "typed_count_skill_or_certificate",
+      "sha256": "999d2e79c6b5e1018caa983743e3e5ced2de911227c7d751c126f90d884225c8",
+      "top_level_definitions": [
+        "PublicCountError",
+        "require",
+        "bind_public",
+        "response_schema",
+        "payload",
+        "bind_response",
+        "native_solution"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 4279,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [
+          "llm4or/finite_count_model.py"
+        ],
+        "tracked": [
+          "llm4or/schema.py"
+        ]
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "no_execution_risk_signal_in_file",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 95,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "mechanical_literal_screen_no_high_risk_content_signal",
+      "path": "llm4or/finite_count_response.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [],
+      "semantic_role": "typed_count_skill_or_certificate",
+      "sha256": "9a0aa67e9ff20a9112235795b12f089c318735076fbcbbf5faa7031c6404f493",
+      "top_level_definitions": [
+        "CountResponseError",
+        "require",
+        "bounded_text",
+        "parse_count_response",
+        "_parse",
+        "decode_count_assignment",
+        "_decode"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 3246,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [],
+        "tracked": []
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "no_execution_risk_signal_in_file",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 69,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "mechanical_literal_screen_no_high_risk_content_signal",
+      "path": "llm4or/or_debug_comparison.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [],
+      "semantic_role": "or_debug_confirmation_or_scoring",
+      "sha256": "e2703e7f2092c164311bc37699eb701a91f93ad6f784683d29f43663de808c50",
+      "top_level_definitions": [
+        "_paired",
+        "_group",
+        "compare_development_records"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 2687,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [],
+        "tracked": []
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "no_execution_risk_signal_in_file",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 76,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "mechanical_literal_screen_no_high_risk_content_signal",
+      "path": "llm4or/or_debug_confirmation_inference.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [],
+      "semantic_role": "or_debug_confirmation_or_scoring",
+      "sha256": "3bdb9b36ed254d199b096be518343ec00ced336f550b8ef9013002c10c58ba12",
+      "top_level_definitions": [
+        "_upper_binomial_tail",
+        "summarize_group_confirmation"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 4133,
+      "direct_local_dependencies": {
+        "incidental": [
+          "llm4or/or_debug_development_eval.py"
+        ],
+        "outside_closure": [],
+        "queue": [
+          "llm4or/or_debug_repair_dsl.py",
+          "llm4or/or_debug_repair_equivalence.py"
+        ],
+        "tracked": [
+          "llm4or/or_debug_gurobi.py",
+          "llm4or/or_debug_mps.py"
+        ]
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "manual_execution_review_required",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 100,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "manual_projection_review_required",
+      "path": "llm4or/or_debug_hidden_score.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [
+        "private_or_evaluator_term",
+        "solver_term"
+      ],
+      "semantic_role": "or_debug_confirmation_or_scoring",
+      "sha256": "2eb7682363dea11aa5fa8159acd606773e8ff2f2bbc2d85de77fdfa6c65a5ff9",
+      "top_level_definitions": [
+        "_incorrect",
+        "score_hidden_record"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 8065,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [],
+        "tracked": []
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "no_execution_risk_signal_in_file",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 217,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "mechanical_literal_screen_no_high_risk_content_signal",
+      "path": "llm4or/or_debug_repair_dsl.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [],
+      "semantic_role": "or_debug_confirmation_or_scoring",
+      "sha256": "cfec98d763d12ea4d7a5379fc71273075ce942eaf8d6e87cd95ca59f83fd6c6b",
+      "top_level_definitions": [
+        "_number",
+        "_full",
+        "_remove",
+        "parse_reference_repair",
+        "source_corrected_repair"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 2192,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [],
+        "tracked": []
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "no_execution_risk_signal_in_file",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 64,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "mechanical_literal_screen_no_high_risk_content_signal",
+      "path": "llm4or/or_debug_repair_equivalence.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [],
+      "semantic_role": "or_debug_confirmation_or_scoring",
+      "sha256": "07353c4ea12424ef581e0071e8d10ad81be5e94aca463bc86f401518277663a1",
+      "top_level_definitions": [
+        "_decimal",
+        "_value_equivalent",
+        "_operation_equivalent",
+        "repairs_equivalent"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 5896,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [],
+        "tracked": []
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "no_execution_risk_signal_in_file",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 157,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "mechanical_literal_screen_no_high_risk_content_signal",
+      "path": "llm4or/or_debug_split.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [],
+      "semantic_role": "or_debug_confirmation_or_scoring",
+      "sha256": "7cdabaefb74b3736431141c425cf87f2578613abfdb43d97c2a1857804a2370f",
+      "top_level_definitions": [
+        "shape_group",
+        "assign_shape_group",
+        "_counts",
+        "build_answer_free_split"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 3392,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [],
+        "tracked": [
+          "llm4or/or_debug_gurobi.py",
+          "llm4or/or_debug_iis_control.py",
+          "llm4or/or_debug_mps.py",
+          "llm4or/or_debug_public_runner.py"
+        ]
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "manual_execution_review_required",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 94,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "mechanical_literal_screen_no_high_risk_content_signal",
+      "path": "llm4or/or_debug_static_public_runner.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [
+        "solver_term"
+      ],
+      "semantic_role": "or_debug_confirmation_or_scoring",
+      "sha256": "5ada97326a34906444f229f68e933226a5e4117e9184ecae154c71d312ada44a",
+      "top_level_definitions": [
+        "_repair_sha",
+        "execute_static_public_record"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 4562,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [],
+        "tracked": []
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "no_execution_risk_signal_in_file",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 134,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "mechanical_literal_screen_no_high_risk_content_signal",
+      "path": "llm4or/tsp_paired_evaluation.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [],
+      "semantic_role": "tsp_confirmation_or_evaluation",
+      "sha256": "d9d6cb06dc7db10824821cb2f55762209f0de298915662dd14e102341f794b0b",
+      "top_level_definitions": [
+        "_validate",
+        "_one_sided_sign_p",
+        "pair_tsp_evaluations"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 4170,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [],
+        "tracked": []
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "manual_execution_review_required",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 104,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "manual_projection_review_required",
+      "path": "llm4or/tsp_static_evaluation.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [
+        "network_or_provider_term",
+        "private_or_evaluator_term"
+      ],
+      "semantic_role": "tsp_confirmation_or_evaluation",
+      "sha256": "d464134c0b6436820258197c179069012f18ccd2f849a3b12e249fe74c06734c",
+      "top_level_definitions": [
+        "_objective_match",
+        "_wilson_95",
+        "evaluate_tsp_static"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 11488,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [
+          "llm4or/count_skill_library.py",
+          "llm4or/finite_count_public.py",
+          "llm4or/typed_count_skill.py"
+        ],
+        "tracked": [
+          "llm4or/schema.py"
+        ]
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "no_execution_risk_signal_in_file",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 283,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "mechanical_literal_screen_no_high_risk_content_signal",
+      "path": "llm4or/typed_count_cegis_revision.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [],
+      "semantic_role": "typed_count_skill_or_certificate",
+      "sha256": "cc9fec59056d35f96eff4c18ac990c0ea3674189a1d6d07ba9141d29dbe17720",
+      "top_level_definitions": [
+        "TypedCountCegisRevisionError",
+        "_require",
+        "sha256_text",
+        "response_schema",
+        "_bound_cases",
+        "_bound_records",
+        "_bound_prior",
+        "_bound_review",
+        "revision_payload",
+        "validate_candidate",
+        "_proposal_with_candidate",
+        "audit_candidate"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 6194,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [
+          "llm4or/typed_count_cegis_revision.py",
+          "llm4or/typed_count_skill.py"
+        ],
+        "tracked": [
+          "llm4or/schema.py"
+        ]
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "no_execution_risk_signal_in_file",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 159,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "mechanical_literal_screen_no_high_risk_content_signal",
+      "path": "llm4or/typed_count_repair_certificate.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [],
+      "semantic_role": "typed_count_skill_or_certificate",
+      "sha256": "52747d0e1745853da51a0f82dcc280d52920de69030d0891231a655f192bd59f",
+      "top_level_definitions": [
+        "TypedCountRepairCertificateError",
+        "_require",
+        "_bound_cases",
+        "candidate_distance",
+        "_verification_summary",
+        "termination_bounds",
+        "repair_certificate"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 12906,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [
+          "llm4or/finite_count_model.py"
+        ],
+        "tracked": [
+          "llm4or/schema.py"
+        ]
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "no_execution_risk_signal_in_file",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 366,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "mechanical_literal_screen_no_high_risk_content_signal",
+      "path": "llm4or/typed_count_skill.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [],
+      "semantic_role": "typed_count_skill_or_certificate",
+      "sha256": "4e7af9b56a2da61eec9dcbe68beb331beadb3ed7d8b997575ec0d2766750b49d",
+      "top_level_definitions": [
+        "TypedCountSkillError",
+        "_require",
+        "_integer",
+        "_parameters",
+        "validate_candidate",
+        "enumerate_candidates",
+        "oracle_partial",
+        "_oracle_clean",
+        "_target_domains",
+        "_model",
+        "build_partial_models",
+        "model_accepts",
+        "_model_accepts_clean",
+        "_public_cases",
+        "_empty_semantic",
+        "_semantic_check",
+        "_compiled_metrics",
+        "_resource_check",
+        "verify_candidate",
+        "_complexity",
+        "synthesize",
+        "render_knowledge"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 9782,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [],
+        "tracked": [
+          "llm4or/benchmark_inputs.py",
+          "llm4or/schema.py"
+        ]
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "manual_execution_review_required",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 170,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "manual_projection_review_required",
+      "path": "scripts/audit_external_comparison_cohorts.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "external_record_reconstruction_not_in_bound_sets",
+      "release_disposition": "not_cleared",
+      "review_signals": [
+        "credential_or_environment_term",
+        "file_write",
+        "network_or_provider_term"
+      ],
+      "semantic_role": "external_common40_record_reconstruction",
+      "sha256": "88a3338ebeb60608b68a2b49067b73f9bb0f179d8dc9821b9ad653462383ea3d",
+      "top_level_definitions": [
+        "read",
+        "sha",
+        "unique",
+        "audit"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 9724,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [],
+        "tracked": []
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "manual_execution_review_required",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 252,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "manual_projection_review_required",
+      "path": "scripts/certify_typed_count_repair.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [
+        "dynamic_execution",
+        "file_write",
+        "private_or_evaluator_term"
+      ],
+      "semantic_role": "typed_count_skill_or_certificate",
+      "sha256": "4e8669276c9d5354e71651f5336c88ed33d0b8226318f86ebaf34135860c1068",
+      "top_level_definitions": [
+        "require",
+        "_sha",
+        "_canonical",
+        "_digest",
+        "_reject_constant",
+        "_reject_duplicate",
+        "_strict_json",
+        "_read_regular",
+        "_source_snapshot",
+        "_local_module_files",
+        "build_report",
+        "_write_new",
+        "main"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 6287,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [
+          "scripts/audit_external_comparison_cohorts.py"
+        ],
+        "tracked": [
+          "llm4or/pipeline.py",
+          "llm4or/schema.py"
+        ]
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "manual_execution_review_required",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 103,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "mechanical_literal_screen_no_high_risk_content_signal",
+      "path": "scripts/evaluate_bind_common40_union.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "external_record_reconstruction_not_in_bound_sets",
+      "release_disposition": "not_cleared",
+      "review_signals": [
+        "file_write"
+      ],
+      "semantic_role": "external_common40_record_reconstruction",
+      "sha256": "4030011751843354d2d8eb0756cdddbb029046e5f079f56c66400ee9f1740c14",
+      "top_level_definitions": [
+        "read",
+        "evaluate"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 8348,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [
+          "scripts/audit_external_comparison_cohorts.py"
+        ],
+        "tracked": [
+          "llm4or/benchmark_inputs.py",
+          "llm4or/pipeline.py",
+          "llm4or/schema.py"
+        ]
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "manual_execution_review_required",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 127,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "mechanical_literal_screen_no_high_risk_content_signal",
+      "path": "scripts/evaluate_coe_common40_union.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "external_record_reconstruction_not_in_bound_sets",
+      "release_disposition": "not_cleared",
+      "review_signals": [
+        "file_write"
+      ],
+      "semantic_role": "external_common40_record_reconstruction",
+      "sha256": "8e86aa778069ec56de4172279b5cb8d0789f5c3594a3324878ef2caac5d04ab6",
+      "top_level_definitions": [
+        "read",
+        "blank",
+        "evaluate"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 6485,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [
+          "llm4or/or_debug_comparison.py",
+          "llm4or/or_debug_confirmation_inference.py",
+          "llm4or/or_debug_hidden_score.py",
+          "llm4or/or_debug_split.py"
+        ],
+        "tracked": []
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "manual_execution_review_required",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 159,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "manual_projection_review_required",
+      "path": "scripts/evaluate_or_debug_confirmation.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [
+        "file_write",
+        "private_or_evaluator_term"
+      ],
+      "semantic_role": "or_debug_confirmation_or_scoring",
+      "sha256": "b7ae44c3d3367e5401ab3aee052de1b7ab9c9a0e4529d8429e0d59c122badd74",
+      "top_level_definitions": [
+        "sha",
+        "main"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 6025,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [
+          "llm4or/tsp_paired_evaluation.py",
+          "llm4or/tsp_static_evaluation.py",
+          "scripts/evaluate_tsp_constraint_promotion.py"
+        ],
+        "tracked": [
+          "llm4or/schema.py"
+        ]
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "manual_execution_review_required",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 162,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "manual_projection_review_required",
+      "path": "scripts/evaluate_tsp_constraint_confirmation.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [
+        "file_write",
+        "network_or_provider_term",
+        "private_or_evaluator_term"
+      ],
+      "semantic_role": "tsp_confirmation_or_evaluation",
+      "sha256": "304445d047e119f0d1b64521975430efd963caf89c548a24ee243a06a769c1b0",
+      "top_level_definitions": [
+        "_sha",
+        "_encoded",
+        "_write_new",
+        "evaluate_plan",
+        "main"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 8554,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [
+          "llm4or/tsp_paired_evaluation.py",
+          "llm4or/tsp_static_evaluation.py"
+        ],
+        "tracked": [
+          "llm4or/schema.py"
+        ]
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "manual_execution_review_required",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 228,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "manual_projection_review_required",
+      "path": "scripts/evaluate_tsp_constraint_promotion.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [
+        "file_write",
+        "network_or_provider_term",
+        "private_or_evaluator_term"
+      ],
+      "semantic_role": "tsp_confirmation_or_evaluation",
+      "sha256": "0347b56d5cb11b6063537dbc775eae17f2cc9a72cf175265d997685a2e444ac7",
+      "top_level_definitions": [
+        "_sha",
+        "_encoded",
+        "_write_new",
+        "bind_role_references",
+        "evaluate_plan",
+        "main"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 5814,
+      "direct_local_dependencies": {
+        "incidental": [
+          "llm4or/object_feedback_pilot_inputs.py"
+        ],
+        "outside_closure": [],
+        "queue": [],
+        "tracked": [
+          "llm4or/__init__.py",
+          "llm4or/schema.py"
+        ]
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "manual_execution_review_required",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 161,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "manual_projection_review_required",
+      "path": "scripts/prepare_tsp_constraint_confirmation.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [
+        "file_write",
+        "private_or_evaluator_term"
+      ],
+      "semantic_role": "tsp_confirmation_or_evaluation",
+      "sha256": "0e1fcdc7d319a0fcfdc48eee6a5c3a043592d19147d6b0c915cb94aa1cb4b83e",
+      "top_level_definitions": [
+        "source_rows",
+        "main"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 3793,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [
+          "llm4or/or_debug_static_public_runner.py"
+        ],
+        "tracked": [
+          "llm4or/or_debug_public_runner.py"
+        ]
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "manual_execution_review_required",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 79,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "mechanical_literal_screen_no_high_risk_content_signal",
+      "path": "scripts/run_or_debug_confirmation_methods.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [
+        "file_write"
+      ],
+      "semantic_role": "or_debug_confirmation_or_scoring",
+      "sha256": "3ecc7f014deba013a9d8305777b517873492205bbb81b96ed551470beab3f4e9",
+      "top_level_definitions": [
+        "sha",
+        "main"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 7404,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [],
+        "tracked": [
+          "llm4or/schema.py",
+          "llm4or/tsp_constraint_skill_scalable.py"
+        ]
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "manual_execution_review_required",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 194,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "manual_projection_review_required",
+      "path": "scripts/run_tsp_constraint_confirmation.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "explicitly_bound_by_frozen_evidence",
+      "release_disposition": "not_cleared",
+      "review_signals": [
+        "file_write",
+        "network_or_provider_term",
+        "private_or_evaluator_term"
+      ],
+      "semantic_role": "tsp_confirmation_or_evaluation",
+      "sha256": "ed977e5ca6c01ae4e95316c5ee02feffddbe2e322b15a5b5e5d274b799e33e75",
+      "top_level_definitions": [
+        "_sha",
+        "_encoded",
+        "_write_new",
+        "_compact",
+        "run_rows",
+        "load_and_run",
+        "main"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 13009,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [
+          "scripts/audit_external_comparison_cohorts.py"
+        ],
+        "tracked": [
+          "llm4or/pipeline.py",
+          "llm4or/schema.py"
+        ]
+      },
+      "direct_third_party_imports": [],
+      "execution_review_status": "manual_execution_review_required",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 149,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "manual_projection_review_required",
+      "path": "scripts/summarize_external_common40.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "external_record_reconstruction_not_in_bound_sets",
+      "release_disposition": "not_cleared",
+      "review_signals": [
+        "credential_or_environment_term",
+        "file_write"
+      ],
+      "semantic_role": "external_common40_record_reconstruction",
+      "sha256": "86208c6d9452890e5e5ef354576665f65a36b20ba665c330712c62046789e4aa",
+      "top_level_definitions": [
+        "checked_row",
+        "summarize"
+      ]
+    },
+    {
+      "authorship_and_redistribution_rights": "unresolved",
+      "bytes": 1483,
+      "direct_local_dependencies": {
+        "incidental": [],
+        "outside_closure": [],
+        "queue": [
+          "scripts/summarize_external_common40.py"
+        ],
+        "tracked": []
+      },
+      "direct_third_party_imports": [
+        "pytest"
+      ],
+      "execution_review_status": "no_execution_risk_signal_in_file",
+      "license_status": "blocked_until_root_license_and_attribution_policy_are_selected",
+      "lines": 35,
+      "long_literal_metadata": [],
+      "minimum_disclosure_status": "mechanical_literal_screen_no_high_risk_content_signal",
+      "path": "tests/test_external_common40_summary.py",
+      "provenance_status": "current_same_path_same_blob_not_found_in_reachable_commit",
+      "queue": "external_record_reconstruction_not_in_bound_sets",
+      "release_disposition": "not_cleared",
+      "review_signals": [],
+      "semantic_role": "external_common40_record_reconstruction",
+      "sha256": "f62c37013c687f0d32b112448987475a51e14c92b5d2d918e285ca76500e5a13",
+      "top_level_definitions": [
+        "test_three_repeats_are_40_distinct_problems_not_120",
+        "test_unavailable_does_not_disappear_from_primary_denominator",
+        "test_wrong_denominators_and_inconsistent_counts_are_rejected",
+        "test_family_shifts_and_numerator_changes_are_rejected"
+      ]
+    }
+  ],
+  "inputs": {
+    "experiments/headline_static_python_closure_20261015.json": "e2c5eba845c06df826570de1fc68103d37793422d813ab4341e0dfdecd2e098b",
+    "experiments/release_python_allowlist_triage_20261015.json": "da56d4924a5cc33639795dae6ab3a432d3269cf1930f8e18bb709bd4fc1801ea",
+    "requirements-offline.txt": "6f359bfd71ebac9196dfb0c868f8279a4b3994c3f9b918372775feef41e030d3"
+  },
+  "method": {
+    "content_boundary": "No string value, request/response body, problem body, repair identity, credential or evaluator-only answer is emitted.",
+    "execution_boundary": "The transitive closure is conservative and can contain branches never reached by a specific reconstruction command.",
+    "file_review": "AST metadata, import resolution, top-level definition inventory, literal length/hash metadata, bounded risk-term scan, and direct-call plus attribute-call write-wrapper detection.",
+    "rights_boundary": "Static source review cannot establish authorship or redistribution rights; every file remains uncleared until the repository license and attribution policy are selected."
+  },
+  "purpose": "Review all 28 first-queue Python files without emitting literal content, and distinguish source review from an executable release closure.",
+  "schema": "release-first-queue-file-review-v1",
+  "status": "mechanical_file_review_complete_rights_and_release_clearance_open",
+  "summary": {
+    "conservative_transitive_local_closure_files": 102,
+    "conservative_transitive_third_party_imports": [
+      "cpmpy",
+      "jsonschema",
+      "numpy",
+      "psutil",
+      "pytest",
+      "scipy",
+      "yaml"
+    ],
+    "direct_local_dependency_union": {
+      "incidental": 2,
+      "outside_closure": 0,
+      "queue": 18,
+      "tracked": 10
+    },
+    "external_record_reconstruction": 5,
+    "files_reviewed": 28,
+    "first_queue_files_with_direct_incidental_dependency": 2,
+    "frozen_evidence_bound": 23,
+    "manual_execution_review_required": 14,
+    "manual_projection_review_required": 11,
+    "mechanical_content_screen_without_high_risk_literal_signal": 17,
+    "release_cleared": 0,
+    "transitive_imports_missing_from_requirements_offline": [
+      {
+        "distribution": "cpmpy",
+        "import": "cpmpy"
+      },
+      {
+        "distribution": "psutil",
+        "import": "psutil"
+      },
+      {
+        "distribution": "pytest",
+        "import": "pytest"
+      },
+      {
+        "distribution": "pyyaml",
+        "import": "yaml"
+      }
+    ]
+  }
+}

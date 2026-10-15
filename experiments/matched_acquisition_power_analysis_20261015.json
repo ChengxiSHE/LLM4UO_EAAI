@@ -1,0 +1,68 @@
+{
+  "schema": "matched-acquisition-exact-power-analysis-v1",
+  "date": "2026-10-15",
+  "status": "closed_offline_design_analysis",
+  "primary_design": {
+    "unit": "Independent rejected typed skill proposal paired with one frozen version-space state",
+    "outcome": "Binary admission success within the same predeclared request and resource budget",
+    "comparison": "Separating-witness feedback versus fact-equivalent flat feedback",
+    "test": "One-sided exact conditional McNemar/sign test on discordant pairs",
+    "alpha": 0.05,
+    "null": "Conditional treatment-win probability among discordant pairs q <= 0.5",
+    "alternative_parameters": {
+      "r": "Probability that the two feedback arms are discordant",
+      "q": "Probability that treatment wins conditional on discordance",
+      "accuracy_difference": "r * (2*q - 1)"
+    },
+    "calculation": "For each total pair count N, integrate exact conditional rejection probability over D ~ Binomial(N,r); for each D use the smallest integer k with P[Binomial(D,0.5) >= k] <= 0.05."
+  },
+  "minimum_total_pairs_for_80_percent_power": {
+    "columns_q": [0.65, 0.70, 0.75, 0.80],
+    "rows": [
+      {"r": 0.20, "implied_accuracy_difference": [0.06, 0.08, 0.10, 0.12], "N": [369, 208, 134, 92]},
+      {"r": 0.30, "implied_accuracy_difference": [0.09, 0.12, 0.15, 0.18], "N": [246, 138, 89, 61]},
+      {"r": 0.40, "implied_accuracy_difference": [0.12, 0.16, 0.20, 0.24], "N": [185, 104, 67, 46]},
+      {"r": 0.50, "implied_accuracy_difference": [0.15, 0.20, 0.25, 0.30], "N": [148, 83, 53, 37]}
+    ]
+  },
+  "minimum_total_pairs_for_90_percent_power": {
+    "columns_q": [0.65, 0.70, 0.75, 0.80],
+    "rows": [
+      {"r": 0.20, "implied_accuracy_difference": [0.06, 0.08, 0.10, 0.12], "N": [498, 279, 177, 122]},
+      {"r": 0.30, "implied_accuracy_difference": [0.09, 0.12, 0.15, 0.18], "N": [332, 186, 118, 81]},
+      {"r": 0.40, "implied_accuracy_difference": [0.12, 0.16, 0.20, 0.24], "N": [249, 139, 88, 60]},
+      {"r": 0.50, "implied_accuracy_difference": [0.15, 0.20, 0.25, 0.30], "N": [199, 111, 70, 48]}
+    ]
+  },
+  "minimum_observed_discordant_pairs": {
+    "columns_q": [0.65, 0.70, 0.75, 0.80],
+    "for_80_percent_conditional_power": [69, 37, 23, 18],
+    "for_90_percent_conditional_power": [93, 53, 33, 23]
+  },
+  "eight_pair_canary": {
+    "role": "Engineering and variance-estimation pilot only",
+    "power_columns_q": [0.65, 0.70, 0.75, 0.80],
+    "power_by_discordance_rate": [
+      {"r": 0.20, "power": [0.001156, 0.001684, 0.002393, 0.003326]},
+      {"r": 0.30, "power": [0.006241, 0.009139, 0.013044, 0.018206]},
+      {"r": 0.40, "power": [0.017982, 0.026490, 0.038032, 0.053390]},
+      {"r": 0.50, "power": [0.035823, 0.053204, 0.076982, 0.108872]}
+    ],
+    "claim_boundary": "Eight proposal pairs cannot serve as a confirmatory publication-level study under any displayed scenario."
+  },
+  "recommended_two_stage_use": {
+    "stage_1": "Use eight prospectively generated pairs only to validate packet equivalence, teacher determinism, transport accounting, and estimate the discordance rate without making an efficacy claim.",
+    "stage_2": "Freeze r and q planning assumptions from an outcome-blind or alpha-accounted rule, then collect the table-defined total pair count in an independent expansion.",
+    "illustrative_conservative_target": "If r=0.30 and q=0.70 are the minimum relevant alternative, 138 total independent pairs give at least 80% power and 186 give at least 90% power.",
+    "multiplicity_boundary": "The table assumes one final test and no unaccounted interim looks; sequential monitoring requires the paper's alpha-spending mechanism and a new power calculation."
+  },
+  "non_claims": [
+    "The assumed r and q values are planning scenarios, not estimates from current data.",
+    "This analysis does not authorize proposal generation, model calls, freezing, dispatch, or endpoint changes.",
+    "Power does not repair nonexchangeable proposal units, opened outcomes, packet nonequivalence, or invalid custody."
+  ],
+  "evidence": [
+    {"path": "experiments/matched_acquisition_design_audit_20261015.json", "sha256": "170bb84c8db2c6cde3f7b213ecfcaff338ee135702e0fec0e71df091e981cfe4"},
+    {"path": "experiments/proposal_provenance_inventory_20261015.json", "sha256": "b301eb0b168e85009b16e0f7f26404f30950cf6a123a5fdcdc4363dfa12d90f1"}
+  ]
+}

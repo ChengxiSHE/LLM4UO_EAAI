@@ -1,0 +1,54 @@
+{
+  "schema": "llm4or-current-library-provenance-v1",
+  "created_at_local_date": "2026-10-15",
+  "status": "metadata_only_historical_identity_registry",
+  "historical_identities": {
+    "or_debug_confirmation_evaluation_plan": {
+      "path": "experiments/or_debug_confirmation_evaluation_plan_20261014.json",
+      "sha256": "5f20fbcd09289a37f9f38d06c71938d6a202f39a3ec5f01547f6b2a4d19bd1b7",
+      "role": "verifier_plan"
+    },
+    "or_debug_confirmation_plan": {
+      "path": "experiments/or_debug_confirmation_plan_20261014.json",
+      "sha256": "1e6a75da27cf5e75fe773a12e95b97d56e827080decfe547976aa8bbf924ed79",
+      "role": "construction_split"
+    },
+    "or_debug_promotion_plan": {
+      "path": "experiments/or_debug_promotion_plan_20261014.json",
+      "sha256": "72badae77d2cda495a0b2f9913d822945b1e275f0f6c0b5b304e1adb6e652059",
+      "role": "promotion_decision"
+    },
+    "tsp_constraint_confirmation_candidate_plan": {
+      "path": "experiments/tsp_constraint_confirmation_candidate_plan_20261014.json",
+      "sha256": "30befe1f147928c0375f734900f9db4599597e18028607e64ba15475317717e9",
+      "role": "construction_split"
+    },
+    "tsp_constraint_confirmation_evaluation_plan": {
+      "path": "experiments/tsp_constraint_confirmation_evaluation_plan_20261014.json",
+      "sha256": "86e7a399e2c3b96bf1880461066b9fb3027df3631c8b4787304111c14f79050a",
+      "role": "verifier_plan"
+    },
+    "tsp_constraint_promotion_evaluation_plan": {
+      "path": "experiments/tsp_constraint_promotion_evaluation_plan_20261014.json",
+      "sha256": "76b6e210b3f5ce0a2d687b63db56f78100eaf3a60146698121ee3fca50e87274",
+      "role": "endpoint_plan"
+    },
+    "tsp_constraint_skill_promotion_root_closure": {
+      "path": "results/tsp_constraint_skill_promotion_root_closure_20261014.json",
+      "sha256": "08e2afa1e961c90b8185d6a5b2bb1ef2a6a9bef18952e475c1c9adbf6b77ff8c",
+      "role": "promotion_decision"
+    }
+  },
+  "privacy": {
+    "contains_problem_text": false,
+    "contains_request_body": false,
+    "contains_response_body": false,
+    "contains_evaluator_only_answer": false,
+    "contains_credential": false
+  },
+  "boundary": [
+    "This registry preserves byte identities and roles for historical files that are not part of the release runtime closure.",
+    "It does not reconstruct, summarize or authorize publication of the historical file bodies.",
+    "A clean clone can validate current artifact lineage from this metadata, but cannot replay the historical executions without separately authorized source artifacts."
+  ]
+}

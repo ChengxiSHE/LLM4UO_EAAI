@@ -1,0 +1,175 @@
+{
+  "retrieved_at_utc": "2026-08-31T06:51:22.547781+00:00",
+  "records": [
+    {
+      "repo": "FreedomIntelligence/Mamo",
+      "revision": "2c91069dee5c1e4db4b899eb176ec987d0251bb3",
+      "upstream_path": "data/optimization/Complex_LP/mamo_complex_lp.jsonl",
+      "url": "https://raw.githubusercontent.com/FreedomIntelligence/Mamo/2c91069dee5c1e4db4b899eb176ec987d0251bb3/data/optimization/Complex_LP/mamo_complex_lp.jsonl",
+      "local_path": "data/raw/benchmark_inventory_20260831/FreedomIntelligence__Mamo/data/optimization/Complex_LP/mamo_complex_lp.jsonl",
+      "bytes": 387757,
+      "sha256": "07eb3db3d2af099871dfa4425b14887775179c158c38944fe4fe152b615bbfc3",
+      "rows": 211,
+      "public_question_field": "Question",
+      "fields": [
+        "Answer",
+        "Category",
+        "Question",
+        "Type",
+        "id"
+      ],
+      "labels_inspected_for_selection": false
+    },
+    {
+      "repo": "FreedomIntelligence/Mamo",
+      "revision": "2c91069dee5c1e4db4b899eb176ec987d0251bb3",
+      "upstream_path": "README.md",
+      "url": "https://raw.githubusercontent.com/FreedomIntelligence/Mamo/2c91069dee5c1e4db4b899eb176ec987d0251bb3/README.md",
+      "local_path": "data/raw/benchmark_inventory_20260831/FreedomIntelligence__Mamo/README.md",
+      "bytes": 5990,
+      "sha256": "87050ff32c11a51bc78658d4a77a5bccab687dc93ea4eb7d27c5234d8c875af9"
+    },
+    {
+      "repo": "FreedomIntelligence/Mamo",
+      "revision": "2c91069dee5c1e4db4b899eb176ec987d0251bb3",
+      "upstream_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/FreedomIntelligence/Mamo/2c91069dee5c1e4db4b899eb176ec987d0251bb3/LICENSE",
+      "local_path": "data/raw/benchmark_inventory_20260831/FreedomIntelligence__Mamo/LICENSE",
+      "bytes": 20138,
+      "sha256": "187442db4df3afd21f2f0525739fd4beac28a62daaba3ee8d3533f60e7c33ec7"
+    },
+    {
+      "repo": "Cardinal-Operations/SIRL",
+      "revision": "b329ff288e9240ecd41813fa41e7f003fd5ca47d",
+      "upstream_path": "test_data/IndustryOR_fixedV2.json",
+      "url": "https://raw.githubusercontent.com/Cardinal-Operations/SIRL/b329ff288e9240ecd41813fa41e7f003fd5ca47d/test_data/IndustryOR_fixedV2.json",
+      "local_path": "data/raw/benchmark_inventory_20260831/Cardinal-Operations__SIRL/test_data/IndustryOR_fixedV2.json",
+      "bytes": 115295,
+      "sha256": "756549264386d9c28f3bf15b442e4d45e345f809155f7c7951c9b7edfd25ee8b",
+      "rows": 100,
+      "public_question_field": "en_question",
+      "fields": [
+        "difficulty",
+        "en_answer",
+        "en_question",
+        "id"
+      ],
+      "labels_inspected_for_selection": false
+    },
+    {
+      "repo": "Cardinal-Operations/SIRL",
+      "revision": "b329ff288e9240ecd41813fa41e7f003fd5ca47d",
+      "upstream_path": "test_data/MAMO_ComplexLP_fixed.jsonl",
+      "url": "https://raw.githubusercontent.com/Cardinal-Operations/SIRL/b329ff288e9240ecd41813fa41e7f003fd5ca47d/test_data/MAMO_ComplexLP_fixed.jsonl",
+      "local_path": "data/raw/benchmark_inventory_20260831/Cardinal-Operations__SIRL/test_data/MAMO_ComplexLP_fixed.jsonl",
+      "bytes": 362655,
+      "sha256": "0fe155db0ddb62ab82cdf270f2966afae9f46a512b1c02f6d8a9233f5d3f33c7",
+      "rows": 203,
+      "public_question_field": "en_question",
+      "fields": [
+        "en_answer",
+        "en_question",
+        "is_checked",
+        "orginal_answer",
+        "original_answer"
+      ],
+      "labels_inspected_for_selection": false
+    },
+    {
+      "repo": "Cardinal-Operations/SIRL",
+      "revision": "b329ff288e9240ecd41813fa41e7f003fd5ca47d",
+      "upstream_path": "test_data/NL4OPT.jsonl",
+      "url": "https://raw.githubusercontent.com/Cardinal-Operations/SIRL/b329ff288e9240ecd41813fa41e7f003fd5ca47d/test_data/NL4OPT.jsonl",
+      "local_path": "data/raw/benchmark_inventory_20260831/Cardinal-Operations__SIRL/test_data/NL4OPT.jsonl",
+      "bytes": 143216,
+      "sha256": "7cf8e6fb097a57d9f647ab7b37d005656cbc6a89f6ba2978a52ed618bfbdb5df",
+      "rows": 245,
+      "public_question_field": "en_question",
+      "fields": [
+        "en_answer",
+        "en_question"
+      ],
+      "labels_inspected_for_selection": false
+    },
+    {
+      "repo": "Cardinal-Operations/SIRL",
+      "revision": "b329ff288e9240ecd41813fa41e7f003fd5ca47d",
+      "upstream_path": "test_data/OptMATH_Bench_166.jsonl",
+      "url": "https://raw.githubusercontent.com/Cardinal-Operations/SIRL/b329ff288e9240ecd41813fa41e7f003fd5ca47d/test_data/OptMATH_Bench_166.jsonl",
+      "local_path": "data/raw/benchmark_inventory_20260831/Cardinal-Operations__SIRL/test_data/OptMATH_Bench_166.jsonl",
+      "bytes": 492278,
+      "sha256": "d773290dcdd21044c1fbed487dd3df44e50ca5550b41c8124fce5d1559efbc2a",
+      "rows": 166,
+      "public_question_field": "en_question",
+      "fields": [
+        "en_answer",
+        "en_question"
+      ],
+      "labels_inspected_for_selection": false
+    },
+    {
+      "repo": "Cardinal-Operations/SIRL",
+      "revision": "b329ff288e9240ecd41813fa41e7f003fd5ca47d",
+      "upstream_path": "test_data/OptiBench.jsonl",
+      "url": "https://raw.githubusercontent.com/Cardinal-Operations/SIRL/b329ff288e9240ecd41813fa41e7f003fd5ca47d/test_data/OptiBench.jsonl",
+      "local_path": "data/raw/benchmark_inventory_20260831/Cardinal-Operations__SIRL/test_data/OptiBench.jsonl",
+      "bytes": 439907,
+      "sha256": "1652b89ba6e3f08b4c67662ea1c8534170577e6f32e486df28befaa0d742174e",
+      "rows": 605,
+      "public_question_field": "en_question",
+      "fields": [
+        "en_answer",
+        "en_question"
+      ],
+      "labels_inspected_for_selection": false
+    },
+    {
+      "repo": "Cardinal-Operations/SIRL",
+      "revision": "b329ff288e9240ecd41813fa41e7f003fd5ca47d",
+      "upstream_path": "README.md",
+      "url": "https://raw.githubusercontent.com/Cardinal-Operations/SIRL/b329ff288e9240ecd41813fa41e7f003fd5ca47d/README.md",
+      "local_path": "data/raw/benchmark_inventory_20260831/Cardinal-Operations__SIRL/README.md",
+      "bytes": 14703,
+      "sha256": "82601cdf147cd523e1eaf9bc581dfc03b5ee2a8e6f132e4a7b39078245c18992"
+    },
+    {
+      "repo": "optsuite/OptMATH",
+      "revision": "f15bbc4477c70db85ad148df8bcc1b780bca0f8c",
+      "upstream_path": "benchmark/OptMATH_Bench.json",
+      "url": "https://raw.githubusercontent.com/optsuite/OptMATH/f15bbc4477c70db85ad148df8bcc1b780bca0f8c/benchmark/OptMATH_Bench.json",
+      "local_path": "data/raw/benchmark_inventory_20260831/optsuite__OptMATH/benchmark/OptMATH_Bench.json",
+      "bytes": 499806,
+      "sha256": "c5dbc2bf14995b880d13e306ff54ae81b603f07b565a31e52248533848ad3a93",
+      "rows": 166,
+      "public_question_field": "en_question",
+      "fields": [
+        "en_answer",
+        "en_question",
+        "id"
+      ],
+      "labels_inspected_for_selection": false
+    },
+    {
+      "repo": "optsuite/OptMATH",
+      "revision": "f15bbc4477c70db85ad148df8bcc1b780bca0f8c",
+      "upstream_path": "README.md",
+      "url": "https://raw.githubusercontent.com/optsuite/OptMATH/f15bbc4477c70db85ad148df8bcc1b780bca0f8c/README.md",
+      "local_path": "data/raw/benchmark_inventory_20260831/optsuite__OptMATH/README.md",
+      "bytes": 5274,
+      "sha256": "732a0f3bc30cf6e6edf84cea5a0d9d9fc6229c09663538ced0242cfa772972f6"
+    },
+    {
+      "repo": "optsuite/OptMATH",
+      "revision": "f15bbc4477c70db85ad148df8bcc1b780bca0f8c",
+      "upstream_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/optsuite/OptMATH/f15bbc4477c70db85ad148df8bcc1b780bca0f8c/LICENSE",
+      "local_path": "data/raw/benchmark_inventory_20260831/optsuite__OptMATH/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    }
+  ],
+  "failures": [],
+  "actual_model_api_calls": 0,
+  "source_code_executed": false,
+  "note": "Separate source inventory; does not change frozen S1/S2 inputs or authorize any benchmark run."
+}

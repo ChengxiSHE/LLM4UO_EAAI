@@ -1,0 +1,22 @@
+# Preparation only: this file grants no authorization and cannot enable a provider.
+status: four_problem_probe_completed_api_closed
+api_enabled: false
+protocol: lp-pilot-v3-verified-facts
+public_inputs: data/next_development/public/problems.jsonl
+manifest: data/next_development/manifest.json
+family_audit: data/next_development/family_audit.json
+candidate_problem_ids: [opti_dev_058, opti_dev_150, opti_dev_226, opti_dev_583]
+purpose: protocol_and_fixed_workflow_development_only
+formal_test_split: false
+cross_task_evolution: false
+request_budget_authorized: 0
+unused_s1_budget_transfer: false
+live_runner_connected: true
+completed_probe_authorization: experiments/probe_s2_authorization.json
+completed_probe_report: docs/PILOT_HISTORY.md
+requirements_before_live:
+  - Separate approval specifying questions, total/per-question requests, output caps, and retry rules.
+  - New run directory and single durable authorization ledger; never reopen S1.
+  - Freeze protocol, source hashes, references, and post-inference alignment rules.
+  - Check full teacher and repair wire limits before dispatch; initial-only offline checks are insufficient.
+  - Report format failures and all token/solver costs, not only successful retained models.

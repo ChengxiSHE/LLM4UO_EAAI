@@ -1,0 +1,338 @@
+{
+  "audited_at_local_date": "2026-10-15",
+  "decision": {
+    "code_content_projection_still_required_for_files": [],
+    "dependency_cutpoint_design_required": [
+      "scripts/prepare_tsp_constraint_confirmation.py"
+    ],
+    "execution_signal_triage_complete": true,
+    "prohibited_claims": [
+      "The 15 reviewed source files are release-cleared.",
+      "A source-code candidate implies its referenced data are redistributable.",
+      "Historical output publication is concurrency-safe.",
+      "The prompt artifact is rights-cleared."
+    ],
+    "projection_signal_triage_complete": true,
+    "prompt_artifact_decision_required": [
+      "llm4or/finite_count_public.py"
+    ],
+    "publisher_contract_required": [
+      "scripts/audit_external_comparison_cohorts.py",
+      "scripts/evaluate_bind_common40_union.py",
+      "scripts/evaluate_coe_common40_union.py",
+      "scripts/evaluate_or_debug_confirmation.py",
+      "scripts/evaluate_tsp_constraint_confirmation.py",
+      "scripts/evaluate_tsp_constraint_promotion.py",
+      "scripts/run_or_debug_confirmation_methods.py",
+      "scripts/run_tsp_constraint_confirmation.py",
+      "scripts/summarize_external_common40.py"
+    ],
+    "remaining_global_gates": [
+      "root license and attribution policy",
+      "current-byte provenance decision",
+      "rights-safe data/result projections",
+      "non-Python environment and binary closure",
+      "credential-free recursive clean-clone reconstruction"
+    ],
+    "runtime_contract_required_for_solver_files": [
+      "llm4or/or_debug_hidden_score.py",
+      "llm4or/or_debug_static_public_runner.py"
+    ]
+  },
+  "execution": {
+    "credentials_read": 0,
+    "evaluator_only_answers_read": 0,
+    "git_history_modified": false,
+    "git_index_modified": false,
+    "model_or_api_calls": 0,
+    "native_or_vm_calls": 0,
+    "network_calls": 0,
+    "request_or_response_bodies_read": 0,
+    "solver_calls": 0
+  },
+  "files": [
+    {
+      "content_disposition": {
+        "disposition": "fixed_prompt_artifact_disclosure_pending",
+        "reason": "The only long assignments are named fixed guidance/capability constants; values remain undisclosed in this audit and require an explicit prompt-artifact rights/disclosure decision.",
+        "restricted_values_embedded_in_report": false
+      },
+      "execution_disposition": {
+        "disposition": "not_applicable",
+        "reason": "No execution trigger."
+      },
+      "path": "llm4or/finite_count_public.py",
+      "release_cleared": false,
+      "rights_and_license_disposition": "open_for_all_current_bytes",
+      "sha256": "999d2e79c6b5e1018caa983743e3e5ced2de911227c7d751c126f90d884225c8",
+      "triggered_execution_review": false,
+      "triggered_projection_review": true
+    },
+    {
+      "content_disposition": {
+        "disposition": "source_code_candidate_with_restricted_inputs_and_outputs_excluded",
+        "reason": "AST structure shows executable logic and path/interface references but no long embedded answer or benchmark-body value; any referenced dataset, response, repair or evaluator input remains a separately reviewed artifact.",
+        "restricted_values_embedded_in_report": false
+      },
+      "execution_disposition": {
+        "disposition": "solver_and_dataset_runtime_contract_required",
+        "reason": "The source invokes the pinned OR-Debug solver interface and reads or receives model data; code publication is separable from the solver binary/license and dataset reconstruction contract."
+      },
+      "path": "llm4or/or_debug_hidden_score.py",
+      "release_cleared": false,
+      "rights_and_license_disposition": "open_for_all_current_bytes",
+      "sha256": "2eb7682363dea11aa5fa8159acd606773e8ff2f2bbc2d85de77fdfa6c65a5ff9",
+      "triggered_execution_review": true,
+      "triggered_projection_review": true
+    },
+    {
+      "content_disposition": {
+        "disposition": "not_applicable",
+        "reason": "No projection trigger.",
+        "restricted_values_embedded_in_report": false
+      },
+      "execution_disposition": {
+        "disposition": "solver_and_dataset_runtime_contract_required",
+        "reason": "The source invokes the pinned OR-Debug solver interface and reads or receives model data; code publication is separable from the solver binary/license and dataset reconstruction contract."
+      },
+      "path": "llm4or/or_debug_static_public_runner.py",
+      "release_cleared": false,
+      "rights_and_license_disposition": "open_for_all_current_bytes",
+      "sha256": "5ada97326a34906444f229f68e933226a5e4117e9184ecae154c71d312ada44a",
+      "triggered_execution_review": true,
+      "triggered_projection_review": false
+    },
+    {
+      "content_disposition": {
+        "disposition": "source_code_candidate_with_restricted_inputs_and_outputs_excluded",
+        "reason": "AST structure shows executable logic and path/interface references but no long embedded answer or benchmark-body value; any referenced dataset, response, repair or evaluator input remains a separately reviewed artifact.",
+        "restricted_values_embedded_in_report": false
+      },
+      "execution_disposition": {
+        "disposition": "pure_evaluator_false_positive_for_execution_risk",
+        "reason": "The module imports only standard-library utilities, defines pure evaluation/statistical functions and has no file, network, subprocess, solver or write call."
+      },
+      "path": "llm4or/tsp_static_evaluation.py",
+      "release_cleared": false,
+      "rights_and_license_disposition": "open_for_all_current_bytes",
+      "sha256": "d464134c0b6436820258197c179069012f18ccd2f849a3b12e249fe74c06734c",
+      "triggered_execution_review": true,
+      "triggered_projection_review": true
+    },
+    {
+      "content_disposition": {
+        "disposition": "source_code_candidate_with_restricted_inputs_and_outputs_excluded",
+        "reason": "AST structure shows executable logic and path/interface references but no long embedded answer or benchmark-body value; any referenced dataset, response, repair or evaluator input remains a separately reviewed artifact.",
+        "restricted_values_embedded_in_report": false
+      },
+      "execution_disposition": {
+        "disposition": "nonexclusive_output_publication_requires_reconstruction_contract",
+        "reason": "The historical path uses precheck-plus-write, temporary replace, path write or shared write_json/write_text helpers without an exclusive terminal-file reservation proved by this audit. It is acceptable as historical provenance but not yet a concurrent clean-clone producer."
+      },
+      "path": "scripts/audit_external_comparison_cohorts.py",
+      "release_cleared": false,
+      "rights_and_license_disposition": "open_for_all_current_bytes",
+      "sha256": "88a3338ebeb60608b68a2b49067b73f9bb0f179d8dc9821b9ad653462383ea3d",
+      "triggered_execution_review": true,
+      "triggered_projection_review": true
+    },
+    {
+      "content_disposition": {
+        "disposition": "source_code_candidate_with_restricted_inputs_and_outputs_excluded",
+        "reason": "AST structure shows executable logic and path/interface references but no long embedded answer or benchmark-body value; any referenced dataset, response, repair or evaluator input remains a separately reviewed artifact.",
+        "restricted_values_embedded_in_report": false
+      },
+      "execution_disposition": {
+        "disposition": "existing_fail_closed_dynamic_import_trust_root",
+        "reason": "The launcher pins verifier sources before the first verifier import, uses exclusive output creation and is covered by targeted certificate tests; current source identity and inputs remain separately bound."
+      },
+      "path": "scripts/certify_typed_count_repair.py",
+      "release_cleared": false,
+      "rights_and_license_disposition": "open_for_all_current_bytes",
+      "sha256": "4e8669276c9d5354e71651f5336c88ed33d0b8226318f86ebaf34135860c1068",
+      "triggered_execution_review": true,
+      "triggered_projection_review": true
+    },
+    {
+      "content_disposition": {
+        "disposition": "not_applicable",
+        "reason": "No projection trigger.",
+        "restricted_values_embedded_in_report": false
+      },
+      "execution_disposition": {
+        "disposition": "nonexclusive_output_publication_requires_reconstruction_contract",
+        "reason": "The historical path uses precheck-plus-write, temporary replace, path write or shared write_json/write_text helpers without an exclusive terminal-file reservation proved by this audit. It is acceptable as historical provenance but not yet a concurrent clean-clone producer."
+      },
+      "path": "scripts/evaluate_bind_common40_union.py",
+      "release_cleared": false,
+      "rights_and_license_disposition": "open_for_all_current_bytes",
+      "sha256": "4030011751843354d2d8eb0756cdddbb029046e5f079f56c66400ee9f1740c14",
+      "triggered_execution_review": true,
+      "triggered_projection_review": false
+    },
+    {
+      "content_disposition": {
+        "disposition": "not_applicable",
+        "reason": "No projection trigger.",
+        "restricted_values_embedded_in_report": false
+      },
+      "execution_disposition": {
+        "disposition": "nonexclusive_output_publication_requires_reconstruction_contract",
+        "reason": "The historical path uses precheck-plus-write, temporary replace, path write or shared write_json/write_text helpers without an exclusive terminal-file reservation proved by this audit. It is acceptable as historical provenance but not yet a concurrent clean-clone producer."
+      },
+      "path": "scripts/evaluate_coe_common40_union.py",
+      "release_cleared": false,
+      "rights_and_license_disposition": "open_for_all_current_bytes",
+      "sha256": "8e86aa778069ec56de4172279b5cb8d0789f5c3594a3324878ef2caac5d04ab6",
+      "triggered_execution_review": true,
+      "triggered_projection_review": false
+    },
+    {
+      "content_disposition": {
+        "disposition": "source_code_candidate_with_restricted_inputs_and_outputs_excluded",
+        "reason": "AST structure shows executable logic and path/interface references but no long embedded answer or benchmark-body value; any referenced dataset, response, repair or evaluator input remains a separately reviewed artifact.",
+        "restricted_values_embedded_in_report": false
+      },
+      "execution_disposition": {
+        "disposition": "nonexclusive_output_publication_requires_reconstruction_contract",
+        "reason": "The historical path uses precheck-plus-write, temporary replace, path write or shared write_json/write_text helpers without an exclusive terminal-file reservation proved by this audit. It is acceptable as historical provenance but not yet a concurrent clean-clone producer."
+      },
+      "path": "scripts/evaluate_or_debug_confirmation.py",
+      "release_cleared": false,
+      "rights_and_license_disposition": "open_for_all_current_bytes",
+      "sha256": "b7ae44c3d3367e5401ab3aee052de1b7ab9c9a0e4529d8429e0d59c122badd74",
+      "triggered_execution_review": true,
+      "triggered_projection_review": true
+    },
+    {
+      "content_disposition": {
+        "disposition": "source_code_candidate_with_restricted_inputs_and_outputs_excluded",
+        "reason": "AST structure shows executable logic and path/interface references but no long embedded answer or benchmark-body value; any referenced dataset, response, repair or evaluator input remains a separately reviewed artifact.",
+        "restricted_values_embedded_in_report": false
+      },
+      "execution_disposition": {
+        "disposition": "nonexclusive_output_publication_requires_reconstruction_contract",
+        "reason": "The historical path uses precheck-plus-write, temporary replace, path write or shared write_json/write_text helpers without an exclusive terminal-file reservation proved by this audit. It is acceptable as historical provenance but not yet a concurrent clean-clone producer."
+      },
+      "path": "scripts/evaluate_tsp_constraint_confirmation.py",
+      "release_cleared": false,
+      "rights_and_license_disposition": "open_for_all_current_bytes",
+      "sha256": "304445d047e119f0d1b64521975430efd963caf89c548a24ee243a06a769c1b0",
+      "triggered_execution_review": true,
+      "triggered_projection_review": true
+    },
+    {
+      "content_disposition": {
+        "disposition": "source_code_candidate_with_restricted_inputs_and_outputs_excluded",
+        "reason": "AST structure shows executable logic and path/interface references but no long embedded answer or benchmark-body value; any referenced dataset, response, repair or evaluator input remains a separately reviewed artifact.",
+        "restricted_values_embedded_in_report": false
+      },
+      "execution_disposition": {
+        "disposition": "nonexclusive_output_publication_requires_reconstruction_contract",
+        "reason": "The historical path uses precheck-plus-write, temporary replace, path write or shared write_json/write_text helpers without an exclusive terminal-file reservation proved by this audit. It is acceptable as historical provenance but not yet a concurrent clean-clone producer."
+      },
+      "path": "scripts/evaluate_tsp_constraint_promotion.py",
+      "release_cleared": false,
+      "rights_and_license_disposition": "open_for_all_current_bytes",
+      "sha256": "0347b56d5cb11b6063537dbc775eae17f2cc9a72cf175265d997685a2e444ac7",
+      "triggered_execution_review": true,
+      "triggered_projection_review": true
+    },
+    {
+      "content_disposition": {
+        "disposition": "source_code_candidate_with_restricted_inputs_and_outputs_excluded",
+        "reason": "AST structure shows executable logic and path/interface references but no long embedded answer or benchmark-body value; any referenced dataset, response, repair or evaluator input remains a separately reviewed artifact.",
+        "restricted_values_embedded_in_report": false
+      },
+      "execution_disposition": {
+        "disposition": "exclusive_helper_is_safe_but_dependency_cutpoint_remains",
+        "reason": "The imported write_new helper uses O_CREAT|O_EXCL|O_NOFOLLOW with directory-relative opening, flush and fsync, but importing that helper pulls the historical provider/reviewer/packing stack."
+      },
+      "path": "scripts/prepare_tsp_constraint_confirmation.py",
+      "release_cleared": false,
+      "rights_and_license_disposition": "open_for_all_current_bytes",
+      "sha256": "0e1fcdc7d319a0fcfdc48eee6a5c3a043592d19147d6b0c915cb94aa1cb4b83e",
+      "triggered_execution_review": true,
+      "triggered_projection_review": true
+    },
+    {
+      "content_disposition": {
+        "disposition": "not_applicable",
+        "reason": "No projection trigger.",
+        "restricted_values_embedded_in_report": false
+      },
+      "execution_disposition": {
+        "disposition": "nonexclusive_output_publication_requires_reconstruction_contract",
+        "reason": "The historical path uses precheck-plus-write, temporary replace, path write or shared write_json/write_text helpers without an exclusive terminal-file reservation proved by this audit. It is acceptable as historical provenance but not yet a concurrent clean-clone producer."
+      },
+      "path": "scripts/run_or_debug_confirmation_methods.py",
+      "release_cleared": false,
+      "rights_and_license_disposition": "open_for_all_current_bytes",
+      "sha256": "3ecc7f014deba013a9d8305777b517873492205bbb81b96ed551470beab3f4e9",
+      "triggered_execution_review": true,
+      "triggered_projection_review": false
+    },
+    {
+      "content_disposition": {
+        "disposition": "source_code_candidate_with_restricted_inputs_and_outputs_excluded",
+        "reason": "AST structure shows executable logic and path/interface references but no long embedded answer or benchmark-body value; any referenced dataset, response, repair or evaluator input remains a separately reviewed artifact.",
+        "restricted_values_embedded_in_report": false
+      },
+      "execution_disposition": {
+        "disposition": "nonexclusive_output_publication_requires_reconstruction_contract",
+        "reason": "The historical path uses precheck-plus-write, temporary replace, path write or shared write_json/write_text helpers without an exclusive terminal-file reservation proved by this audit. It is acceptable as historical provenance but not yet a concurrent clean-clone producer."
+      },
+      "path": "scripts/run_tsp_constraint_confirmation.py",
+      "release_cleared": false,
+      "rights_and_license_disposition": "open_for_all_current_bytes",
+      "sha256": "ed977e5ca6c01ae4e95316c5ee02feffddbe2e322b15a5b5e5d274b799e33e75",
+      "triggered_execution_review": true,
+      "triggered_projection_review": true
+    },
+    {
+      "content_disposition": {
+        "disposition": "source_code_candidate_with_restricted_inputs_and_outputs_excluded",
+        "reason": "AST structure shows executable logic and path/interface references but no long embedded answer or benchmark-body value; any referenced dataset, response, repair or evaluator input remains a separately reviewed artifact.",
+        "restricted_values_embedded_in_report": false
+      },
+      "execution_disposition": {
+        "disposition": "nonexclusive_output_publication_requires_reconstruction_contract",
+        "reason": "The historical path uses precheck-plus-write, temporary replace, path write or shared write_json/write_text helpers without an exclusive terminal-file reservation proved by this audit. It is acceptable as historical provenance but not yet a concurrent clean-clone producer."
+      },
+      "path": "scripts/summarize_external_common40.py",
+      "release_cleared": false,
+      "rights_and_license_disposition": "open_for_all_current_bytes",
+      "sha256": "86208c6d9452890e5e5ef354576665f65a36b20ba665c330712c62046789e4aa",
+      "triggered_execution_review": true,
+      "triggered_projection_review": true
+    }
+  ],
+  "inputs": {
+    "experiments/release_first_queue_file_review_20261015.json": "f9c8dc2a99b07f572f8550b7f5450c4790260f799c08f1ff1f42c7dc3fd523b6",
+    "llm4or/object_feedback_pilot_inputs.py": "89396c7fd96b021bdec6603644a20888aae3ba0c413910c17e27ba9cafbef22d",
+    "llm4or/pipeline.py": "f15089697fac45dca363b5b32a64d61fb7050b06b3d73e98a5ae1f3a3d7d014e",
+    "tests/test_certify_typed_count_repair.py": "79c95a280b002e04d68942c1caf8fbfef784d3af17a07204fffd208009e3038d"
+  },
+  "method": {
+    "boundary": "A source-code disposition does not establish authorship, license, dataset rights, binary availability or runnable clean-clone reconstruction.",
+    "content_review": "Use AST definitions, imports, constant names/types/lengths/hashes and I/O call shapes; never emit literal values.",
+    "execution_review": "Classify pure functions, solver boundaries, pinned dynamic import, exclusive helper publication and nonexclusive historical publication paths."
+  },
+  "purpose": "Resolve every projection or execution trigger in the 28-file first queue into a bounded source-code disposition without reading or emitting restricted values.",
+  "schema": "release-trigger-disposition-audit-v1",
+  "status": "static_trigger_dispositions_closed_release_clearance_open",
+  "summary": {
+    "content_source_candidate_with_restricted_values_separate": 10,
+    "exclusive_helper_dependency_cutpoint": 1,
+    "execution_false_positive_pure_evaluator": 1,
+    "execution_triggered": 14,
+    "existing_fail_closed_dynamic_import_trust_root": 1,
+    "fixed_prompt_artifact_disclosure_pending": 1,
+    "nonexclusive_output_publication": 9,
+    "overlap": 10,
+    "projection_triggered": 11,
+    "release_cleared": 0,
+    "solver_runtime_contract_required": 2,
+    "triggered_files": 15
+  }
+}

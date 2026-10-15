@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software or its released aggregate evidence, please cite it using this metadata."
+title: "LLM4OR-EAAI: Benchmark-Grounded Proof-Carrying Knowledge Compilation for Optimization Modeling"
+type: software
+version: "1.0.0"
+date-released: "2026-10-16"
+authors:
+  - family-names: "She"
+    given-names: "Chengxi"
+    affiliation: "School of Management & Engineering, Nanjing University"
+    email: "522023150104@smail.nju.edu.cn"
+license: "Apache-2.0"
+repository-code: "https://github.com/ChengxiSHE/LLM4UO_EAAI"
+url: "https://github.com/ChengxiSHE/LLM4UO_EAAI"
+abstract: >-
+  Reproducible research software and aggregate evidence for benchmark-grounded,
+  proof-carrying knowledge compilation in language-to-optimization modeling.
+keywords:
+  - operations research
+  - language models
+  - mathematical optimization
+  - knowledge compilation
+  - verified skills

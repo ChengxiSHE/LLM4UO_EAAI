@@ -1,0 +1,106 @@
+{
+  "all_required_paths_tracked": true,
+  "boundary": "This inventory proves path separation and identifies the decisions. It does not infer authorship, ownership, permission, license compatibility, or redistribution rights from repository location.",
+  "decision": {
+    "license_selected": false,
+    "public_release_authorized": false,
+    "rights_clearance_claimed": false
+  },
+  "execution": {
+    "api_or_model_calls": 0,
+    "credentials_read": false,
+    "file_contents_read": false,
+    "network_calls": 0,
+    "public_push": false
+  },
+  "external_submodules": [
+    "vendor/solver-in-the-loop"
+  ],
+  "first_party_candidate_count": 792,
+  "generated_manuscript_artifact_count": 21,
+  "private_paths_tracked": [],
+  "remaining_decisions": [
+    "Authors must confirm ownership or permission for every first_party_candidate path.",
+    "Authors must select a root license and approve a third-party attribution/NOTICE policy.",
+    "Each source_metadata manifest must retain source-specific provenance and must not grant rights to upstream content.",
+    "The solver-in-the-loop gitlink stays external under its own upstream license and is not vendored into the main snapshot.",
+    "Generated manuscript artifacts inherit the rights and disclosure constraints of their source data and code."
+  ],
+  "required_paths": [
+    {
+      "exists": true,
+      "path": "scripts/audit_release_rights_inventory.py",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "tests/test_release_rights_inventory.py",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": ".gitmodules",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "experiments/restricted_source_exclusion_audit_20261015.json",
+      "tracked": true
+    }
+  ],
+  "restricted_paths_tracked": [],
+  "root_license_paths": [],
+  "schema_version": "release-rights-inventory-v1",
+  "source": {
+    "commit": "87668c7806f8b9aea48494cddb9a8bc96277ddac",
+    "scope": "git_tree_at_source_commit",
+    "tree": "c82bdf144a3fb204549b1bd7dd00556c5bcdae5f"
+  },
+  "source_metadata_paths": [
+    "data/manifests/audit.json",
+    "data/manifests/benchmark_input_audit.json",
+    "data/manifests/benchmark_inventory_20260831_sources.json",
+    "data/manifests/benchmark_inventory_audit.json",
+    "data/manifests/complexor_sources.json",
+    "data/manifests/optengine_artifact_audit_v1.json",
+    "data/manifests/reference_readiness_summary.json",
+    "data/manifests/source_manifest.json",
+    "data/manifests/text2opt_resource_allocation_v1.json",
+    "data/manifests/text2opt_template_confirmation_v1.json",
+    "data/manifests/text2opt_v8_grouped_split_v1.json"
+  ],
+  "status": "inventory_closed_rights_decisions_open",
+  "symlinks_requiring_review": [],
+  "tree": {
+    "class_counts": {
+      "external_submodule": 1,
+      "first_party_candidate": 792,
+      "generated_manuscript_artifact": 21,
+      "source_metadata": 11
+    },
+    "path_set_sha256": "b1aa260e4f44457dd3e96d5c7ba1a763ef6642767e65cdf94ff627831112be2e",
+    "top_level_counts": {
+      ".gitignore": 1,
+      ".gitmodules": 1,
+      "AGENTS.md": 1,
+      "README.md": 1,
+      "ark": 1,
+      "artifacts": 3,
+      "data": 11,
+      "docs": 84,
+      "experiments": 201,
+      "llm4or": 111,
+      "manuscript": 30,
+      "reproduction": 2,
+      "requirements-figures.txt": 1,
+      "requirements-offline.txt": 1,
+      "requirements-provider.txt": 1,
+      "results": 83,
+      "scripts": 202,
+      "tests": 89,
+      "vendor": 1
+    },
+    "tracked_entries": 825,
+    "tree_entry_identity_sha256": "5b2ec7d911fed40ca2a5f03f9d8f6416588ca73f67b13edcad10447c869974bd"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "schema": "component-ablation-identifiability-audit-v1",
+  "date": "2026-10-15",
+  "status": "not_ready_for_freeze_or_dispatch",
+  "purpose": "Determine how the theory-guided knowledge-construction components can be causally evaluated without treating one final benchmark table as evidence for every mechanism.",
+  "method_state": {
+    "library": "L_t=(K_t,rho_t,V,E,ledger_t)",
+    "knowledge_unit": "A content-addressed typed skill with scope, extractor, transformation, semantic obligation, resource obligation and provenance.",
+    "construction_principle": "Verified structural risk minimization over a frozen candidate language: minimize held-out endpoint risk plus label-independent description cost subject to semantic, resource and promotion constraints.",
+    "deployment_principle": "Exactly-one public-only routing with exact fallback when zero or multiple guards match.",
+    "claim_boundary": "The theory constrains what may be admitted and deployed; it does not by itself prove that an LLM proposer discovers useful skills or that any component improves benchmark accuracy."
+  },
+  "identifiability_finding": {
+    "single_final_accuracy_table_sufficient": false,
+    "reason": "Semantic verification, resource admission and complexity control act on proposal or library selection, whereas selective routing acts on deployment envelopes. These components have different interventions, units and observable failure modes.",
+    "required_layers": [
+      "proposal-level acquisition and admission",
+      "library-level selection and promotion",
+      "identity-level end-to-end endpoint evaluation",
+      "envelope-level routing under ambiguity or shift"
+    ]
+  },
+  "components": [
+    {
+      "component": "semantic_verification",
+      "intervention": "Remove the semantic proof obligation while retaining the immutable parser, compiler, exact resource cap and endpoint scorer.",
+      "unit": "A frozen candidate proposal from one common candidate pool.",
+      "primary_estimands": [
+        "difference in false-adoption rate",
+        "difference in collateral-change or regression rate",
+        "difference in held-out endpoint accuracy after promotion"
+      ],
+      "safe_execution": "Candidates rejected by the full verifier are scored in a sealed offline evaluator; they are never deployed.",
+      "current_evidence": "The failed typed count proposer shows that semantic success alone is insufficient, but it is not a matched no-verifier ablation.",
+      "status": "open_experiment"
+    },
+    {
+      "component": "exact_resource_admission",
+      "intervention": "Remove the method's predictive resource admission decision while retaining a non-removable evaluator hard cap.",
+      "unit": "A frozen candidate proposal from the same common candidate pool.",
+      "primary_estimands": [
+        "difference in hard-cap hit rate",
+        "difference in resource rejection and unavailable mass",
+        "difference in full-denominator endpoint accuracy"
+      ],
+      "safe_execution": "A cap hit is an incorrect endpoint outcome; unrestricted execution is prohibited.",
+      "current_evidence": "The typed count proposer passes 20,977 semantic assignments and fails exact resource admission, demonstrating a mechanism-level counterexample but not an average causal effect.",
+      "status": "open_experiment"
+    },
+    {
+      "component": "complexity_control",
+      "intervention": "Set the prespecified description-length coefficient to zero while holding the candidate pool, hard obligations, producer budget and promotion data fixed.",
+      "unit": "One independent library-selection episode or lineage-separated benchmark group, not one candidate from an adaptively shared parent.",
+      "primary_estimands": [
+        "difference in selected serialized library length",
+        "difference in promotion-to-confirmation generalization gap",
+        "difference in confirmation endpoint accuracy at equal construction budget"
+      ],
+      "safe_execution": "Both selected libraries must satisfy the same semantic and resource obligations before endpoint evaluation.",
+      "current_evidence": "The prefix-code bound justifies the design under its assumptions; current authored libraries do not isolate an empirical complexity effect.",
+      "status": "open_experiment"
+    },
+    {
+      "component": "selective_routing",
+      "intervention": "Replace exactly-one routing and fallback with a prespecified forced-family or relaxed-guard policy while retaining the same skills and outer safety cap.",
+      "unit": "One frozen public envelope from a prespecified ambiguity, paraphrase, schema-shift or new-family cohort.",
+      "primary_estimands": [
+        "difference in coverage",
+        "difference in ambiguity and fallback rate",
+        "difference in routed corrections and regressions",
+        "difference in full-denominator endpoint accuracy"
+      ],
+      "safe_execution": "All arms retain immutable compiler and evaluator caps; forced unsafe candidates are scored offline only.",
+      "current_evidence": "The 2,985-record mixed confirmation proves exact preservation on known envelopes. It has no routing contrast and cannot identify the value of selective routing under shift.",
+      "status": "open_experiment"
+    }
+  ],
+  "reference_rows_not_component_ablations": [
+    {
+      "row": "Base",
+      "role": "Backbone and harness reference."
+    },
+    {
+      "row": "Strong static knowledge",
+      "role": "Tests whether evolution adds value beyond a fixed expert library."
+    },
+    {
+      "row": "Full method",
+      "role": "End-to-end treatment against which claim-critical interventions are paired."
+    }
+  ],
+  "prospective_design_requirements": {
+    "common_candidate_pool": "Every construction ablation receives the same content-addressed proposals or the same randomized producer draws, with identical model, public evidence, grammar, request and token ceilings, stopping rule and evaluator.",
+    "frozen_selection_rule": "Candidate code length, verifier version, resource limits, promotion endpoint and tie breaking are fixed before held-out outcomes are opened.",
+    "routing_shift_cohort": "Routing is evaluated on a separate prespecified envelope cohort containing zero-match, exactly-one-match and multiple-match opportunities; known family identities alone are insufficient.",
+    "outer_safety_invariant": "No ablation may remove the evaluator's hard parser, memory, time, variable, row, nonzero or byte caps.",
+    "denominator_rule": "Rejected, abstained, ambiguous, unsupported, hard-cap and terminal failures remain in the prespecified denominator.",
+    "causal_language_rule": "A component may be called beneficial only for its prespecified contrast and unit. Failure of a single candidate cannot establish necessity, and success of the full system cannot allocate credit among components."
+  },
+  "multiplicity_and_power": {
+    "confirmatory_contrasts": [
+      "full versus no-semantic-verifier",
+      "full versus no-resource-admission",
+      "full versus no-complexity-control",
+      "full versus no-selective-routing"
+    ],
+    "familywise_rule": "Holm correction at familywise alpha 0.05; alpha 0.0125 is the conservative planning value for each of four contrasts.",
+    "n38_test": "One-sided exact conditional McNemar/sign test integrated over D~Binomial(38,r).",
+    "columns_q": [0.65, 0.70, 0.75, 0.80],
+    "rows": [
+      {"r": 0.20, "power": [0.031439, 0.056221, 0.095458, 0.154340]},
+      {"r": 0.30, "power": [0.065128, 0.120922, 0.207961, 0.331584]},
+      {"r": 0.40, "power": [0.092825, 0.178192, 0.308078, 0.479718]},
+      {"r": 0.50, "power": [0.118303, 0.232217, 0.398808, 0.600319]}
+    ],
+    "zero_regression_minimum_corrections_at_alpha_0_0125": 7,
+    "interpretation": "The 38-record fresh cohort can expose large component failures and provide descriptive paired mechanisms, but it is underpowered for four moderate confirmatory effects. Proposal/library and routing cohorts must be sized for their own units, and larger independent endpoint cohorts are required for strong causal component claims."
+  },
+  "readiness_checks": {
+    "theory_to_intervention_mapping": "passed",
+    "safe_outer_cap_definition": "passed",
+    "common_candidate_pool": "missing",
+    "independent_library_selection_units": "missing",
+    "frozen_complexity_code_and_coefficient": "missing",
+    "routing_shift_and_ambiguity_cohort": "missing",
+    "four_contrast_multiplicity_plan": "specified_not_frozen",
+    "power_for_four_moderate_endpoint_effects_on_n38": "insufficient",
+    "outcome_blind_custody": "missing"
+  },
+  "decision": {
+    "ready_to_prepare": false,
+    "ready_to_freeze": false,
+    "ready_to_dispatch": false,
+    "permitted_current_claim": "The knowledge library and its construction process admit a coherent theory-to-mechanism mapping with separately identifiable acquisition, admission, selection and routing layers.",
+    "prohibited_current_claims": [
+      "All four components are causally necessary.",
+      "The existing 38-record cohort is adequately powered for four moderate component effects.",
+      "Known-envelope mixed routing proves robustness under distribution shift.",
+      "A failed resource gate estimates the average benefit of resource admission.",
+      "The Occam bound proves that the current complexity controller improves empirical accuracy."
+    ]
+  },
+  "evidence": [
+    {"path": "docs/PROOF_CARRYING_SKILL_EVOLUTION_THEORY.md", "sha256": "40b657ecdb41de9b01655e8aa75556935ac3189d83511728561651dbeba3fe9d"},
+    {"path": "docs/THEORY_CLAIM_EVIDENCE_MATRIX.md", "sha256": "3d7d09ac76df489676341b1d089bb5b6b6b1ff1cabcaed9ed2f6dc0a11443ba9"},
+    {"path": "manuscript/SUPPLEMENTARY_THEORY.md", "sha256": "83ec8b74423f781cffa2dcfb8149e463afb0d94b5780c5e3830a4b33c4b0e1cf"},
+    {"path": "results/dcp_typed_count_cegis_revision_20261014_audit.json", "sha256": "c3fb17f664ccfbf4e46d08b7695e9730111bcd4b3ccf01cb48074307c6cc03f2"},
+    {"path": "results/mixed_skill_confirmation_audit_v2_20261014.json", "sha256": "d2ec7251f562373cf50a0e3e22f7a0ce87e0aa5748749c873420c531a757b992"},
+    {"path": "experiments/fresh_common_protocol_estimand_audit_20261015.json", "sha256": "f2bedf8c900952ea868360ec659a8ccea8973139aad8a0ee55d72271028de030"}
+  ]
+}

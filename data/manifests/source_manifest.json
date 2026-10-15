@@ -1,0 +1,191 @@
+{
+  "retrieved_at_utc": "2026-08-30T12:51:43.695680+00:00",
+  "records": [
+    {
+      "repo": "Minw913/AlphaOPT",
+      "revision": "159ea58da557dbfe77f4d33afd78fd3a52d38ce4",
+      "upstream_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/Minw913/AlphaOPT/159ea58da557dbfe77f4d33afd78fd3a52d38ce4/LICENSE",
+      "local_path": "data/raw/Minw913__AlphaOPT/LICENSE",
+      "bytes": 1068,
+      "sha256": "3c8a88763df18e319016767e62dbe827d0c354bbb8b8be62daa371557fca6789",
+      "top_level_items_or_rows": null,
+      "repository_license": "MIT",
+      "data_license_note": "Repository license is not a blanket relicense of upstream datasets; review provenance before redistribution."
+    },
+    {
+      "repo": "Minw913/AlphaOPT",
+      "revision": "159ea58da557dbfe77f4d33afd78fd3a52d38ce4",
+      "upstream_path": "README.md",
+      "url": "https://raw.githubusercontent.com/Minw913/AlphaOPT/159ea58da557dbfe77f4d33afd78fd3a52d38ce4/README.md",
+      "local_path": "data/raw/Minw913__AlphaOPT/README.md",
+      "bytes": 6234,
+      "sha256": "6bfcf7288c2f14281fc96bc7ec25067fe171da39b98597286115c4aa6b153b86",
+      "top_level_items_or_rows": null,
+      "repository_license": "MIT",
+      "data_license_note": "Repository license is not a blanket relicense of upstream datasets; review provenance before redistribution."
+    },
+    {
+      "repo": "Minw913/AlphaOPT",
+      "revision": "159ea58da557dbfe77f4d33afd78fd3a52d38ce4",
+      "upstream_path": "data/optimization_tasks/clean/industryor.json",
+      "url": "https://raw.githubusercontent.com/Minw913/AlphaOPT/159ea58da557dbfe77f4d33afd78fd3a52d38ce4/data/optimization_tasks/clean/industryor.json",
+      "local_path": "data/raw/Minw913__AlphaOPT/data/optimization_tasks/clean/industryor.json",
+      "bytes": 469164,
+      "sha256": "f45630d2df11894360580db24665835c6abfced07c907a257e97b000e39dbf74",
+      "top_level_items_or_rows": 82,
+      "repository_license": "MIT",
+      "data_license_note": "Repository license is not a blanket relicense of upstream datasets; review provenance before redistribution."
+    },
+    {
+      "repo": "Minw913/AlphaOPT",
+      "revision": "159ea58da557dbfe77f4d33afd78fd3a52d38ce4",
+      "upstream_path": "data/optimization_tasks/clean/mamo_complex.json",
+      "url": "https://raw.githubusercontent.com/Minw913/AlphaOPT/159ea58da557dbfe77f4d33afd78fd3a52d38ce4/data/optimization_tasks/clean/mamo_complex.json",
+      "local_path": "data/raw/Minw913__AlphaOPT/data/optimization_tasks/clean/mamo_complex.json",
+      "bytes": 213055,
+      "sha256": "5d9d1351b341ff399b3b836ae9be628263a9baff6f26caa0b5ae20a90c1a0191",
+      "top_level_items_or_rows": 111,
+      "repository_license": "MIT",
+      "data_license_note": "Repository license is not a blanket relicense of upstream datasets; review provenance before redistribution."
+    },
+    {
+      "repo": "Minw913/AlphaOPT",
+      "revision": "159ea58da557dbfe77f4d33afd78fd3a52d38ce4",
+      "upstream_path": "data/optimization_tasks/clean/nl4opt.json",
+      "url": "https://raw.githubusercontent.com/Minw913/AlphaOPT/159ea58da557dbfe77f4d33afd78fd3a52d38ce4/data/optimization_tasks/clean/nl4opt.json",
+      "local_path": "data/raw/Minw913__AlphaOPT/data/optimization_tasks/clean/nl4opt.json",
+      "bytes": 130647,
+      "sha256": "7e9caea909bb2e6216b7ce70280c50275e2d056e75be3981808ae133129fe3e6",
+      "top_level_items_or_rows": 214,
+      "repository_license": "MIT",
+      "data_license_note": "Repository license is not a blanket relicense of upstream datasets; review provenance before redistribution."
+    },
+    {
+      "repo": "Minw913/AlphaOPT",
+      "revision": "159ea58da557dbfe77f4d33afd78fd3a52d38ce4",
+      "upstream_path": "data/optimization_tasks/clean/nlp4lp.json",
+      "url": "https://raw.githubusercontent.com/Minw913/AlphaOPT/159ea58da557dbfe77f4d33afd78fd3a52d38ce4/data/optimization_tasks/clean/nlp4lp.json",
+      "local_path": "data/raw/Minw913__AlphaOPT/data/optimization_tasks/clean/nlp4lp.json",
+      "bytes": 498046,
+      "sha256": "fa65b948bf04a657ce30eecc63f4a391ffdd3aaae111670c7a998adc8823d999",
+      "top_level_items_or_rows": 242,
+      "repository_license": "MIT",
+      "data_license_note": "Repository license is not a blanket relicense of upstream datasets; review provenance before redistribution."
+    },
+    {
+      "repo": "nl4opt/nl4opt-competition",
+      "revision": "49f1e0d66b7fdcd33305a7f281c2a7c13f5620ea",
+      "upstream_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/nl4opt/nl4opt-competition/49f1e0d66b7fdcd33305a7f281c2a7c13f5620ea/LICENSE",
+      "local_path": "data/raw/nl4opt__nl4opt-competition/LICENSE",
+      "bytes": 1076,
+      "sha256": "d8165362b50a26ccad4bc717c050c86db776b1c6d2ec40f288e416d0ecb62399",
+      "top_level_items_or_rows": null,
+      "repository_license": "MIT",
+      "data_license_note": "Repository license is not a blanket relicense of upstream datasets; review provenance before redistribution."
+    },
+    {
+      "repo": "nl4opt/nl4opt-competition",
+      "revision": "49f1e0d66b7fdcd33305a7f281c2a7c13f5620ea",
+      "upstream_path": "README.md",
+      "url": "https://raw.githubusercontent.com/nl4opt/nl4opt-competition/49f1e0d66b7fdcd33305a7f281c2a7c13f5620ea/README.md",
+      "local_path": "data/raw/nl4opt__nl4opt-competition/README.md",
+      "bytes": 3266,
+      "sha256": "9bc91ca957fd43ec273c752a1ce3c7862e38a81f0dbfa66855f66ec3256c2591",
+      "top_level_items_or_rows": null,
+      "repository_license": "MIT",
+      "data_license_note": "Repository license is not a blanket relicense of upstream datasets; review provenance before redistribution."
+    },
+    {
+      "repo": "nl4opt/nl4opt-competition",
+      "revision": "49f1e0d66b7fdcd33305a7f281c2a7c13f5620ea",
+      "upstream_path": "generation_data/dev.jsonl",
+      "url": "https://raw.githubusercontent.com/nl4opt/nl4opt-competition/49f1e0d66b7fdcd33305a7f281c2a7c13f5620ea/generation_data/dev.jsonl",
+      "local_path": "data/raw/nl4opt__nl4opt-competition/generation_data/dev.jsonl",
+      "bytes": 1437713,
+      "sha256": "6538ce1fe76861f89879672a6c9a02c8f41156952256f3cfde82c2808ba320ee",
+      "top_level_items_or_rows": 99,
+      "repository_license": "MIT",
+      "data_license_note": "Repository license is not a blanket relicense of upstream datasets; review provenance before redistribution."
+    },
+    {
+      "repo": "nl4opt/nl4opt-competition",
+      "revision": "49f1e0d66b7fdcd33305a7f281c2a7c13f5620ea",
+      "upstream_path": "generation_data/test.jsonl",
+      "url": "https://raw.githubusercontent.com/nl4opt/nl4opt-competition/49f1e0d66b7fdcd33305a7f281c2a7c13f5620ea/generation_data/test.jsonl",
+      "local_path": "data/raw/nl4opt__nl4opt-competition/generation_data/test.jsonl",
+      "bytes": 3897679,
+      "sha256": "2a4a20a11935aacc99068ee4207d5265f15c0b387d4720c548c196d8ff2fcf5b",
+      "top_level_items_or_rows": 289,
+      "repository_license": "MIT",
+      "data_license_note": "Repository license is not a blanket relicense of upstream datasets; review provenance before redistribution."
+    },
+    {
+      "repo": "nl4opt/nl4opt-competition",
+      "revision": "49f1e0d66b7fdcd33305a7f281c2a7c13f5620ea",
+      "upstream_path": "generation_data/train.jsonl",
+      "url": "https://raw.githubusercontent.com/nl4opt/nl4opt-competition/49f1e0d66b7fdcd33305a7f281c2a7c13f5620ea/generation_data/train.jsonl",
+      "local_path": "data/raw/nl4opt__nl4opt-competition/generation_data/train.jsonl",
+      "bytes": 9150479,
+      "sha256": "120ff6881c723296c458ef34f3840b5f14d174c6c30dd7002711f59e7e262380",
+      "top_level_items_or_rows": 713,
+      "repository_license": "MIT",
+      "data_license_note": "Repository license is not a blanket relicense of upstream datasets; review provenance before redistribution."
+    },
+    {
+      "repo": "yangzhch6/ReSocratic",
+      "revision": "27ff7ecb3c6a4955fdcb031f7bf3419c6f462d2e",
+      "upstream_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/yangzhch6/ReSocratic/27ff7ecb3c6a4955fdcb031f7bf3419c6f462d2e/LICENSE",
+      "local_path": "data/raw/yangzhch6__ReSocratic/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "top_level_items_or_rows": null,
+      "repository_license": "Apache-2.0",
+      "data_license_note": "Repository license is not a blanket relicense of upstream datasets; review provenance before redistribution."
+    },
+    {
+      "repo": "yangzhch6/ReSocratic",
+      "revision": "27ff7ecb3c6a4955fdcb031f7bf3419c6f462d2e",
+      "upstream_path": "README.md",
+      "url": "https://raw.githubusercontent.com/yangzhch6/ReSocratic/27ff7ecb3c6a4955fdcb031f7bf3419c6f462d2e/README.md",
+      "local_path": "data/raw/yangzhch6__ReSocratic/README.md",
+      "bytes": 9370,
+      "sha256": "84a6d9e5eb406773b0102844bc7a2ae12e7558396cd01179705594d0ea77f5c4",
+      "top_level_items_or_rows": null,
+      "repository_license": "Apache-2.0",
+      "data_license_note": "Repository license is not a blanket relicense of upstream datasets; review provenance before redistribution."
+    },
+    {
+      "repo": "yangzhch6/ReSocratic",
+      "revision": "27ff7ecb3c6a4955fdcb031f7bf3419c6f462d2e",
+      "upstream_path": "data/NL4OPT-E.json",
+      "url": "https://raw.githubusercontent.com/yangzhch6/ReSocratic/27ff7ecb3c6a4955fdcb031f7bf3419c6f462d2e/data/NL4OPT-E.json",
+      "local_path": "data/raw/yangzhch6__ReSocratic/data/NL4OPT-E.json",
+      "bytes": 237824,
+      "sha256": "82eb3d6bc1ec8d573d9acc74707150e4b866741ac5a6d6fceed9ee581f3b5e99",
+      "top_level_items_or_rows": 289,
+      "repository_license": "Apache-2.0",
+      "data_license_note": "Repository license is not a blanket relicense of upstream datasets; review provenance before redistribution."
+    },
+    {
+      "repo": "yangzhch6/ReSocratic",
+      "revision": "27ff7ecb3c6a4955fdcb031f7bf3419c6f462d2e",
+      "upstream_path": "data/OptiBench.json",
+      "url": "https://raw.githubusercontent.com/yangzhch6/ReSocratic/27ff7ecb3c6a4955fdcb031f7bf3419c6f462d2e/data/OptiBench.json",
+      "local_path": "data/raw/yangzhch6__ReSocratic/data/OptiBench.json",
+      "bytes": 610820,
+      "sha256": "0378fab2065e084563913340bc4cff6818a891dc06c5adc83452b40fbd18e85b",
+      "top_level_items_or_rows": 605,
+      "repository_license": "Apache-2.0",
+      "data_license_note": "Repository license is not a blanket relicense of upstream datasets; review provenance before redistribution."
+    }
+  ],
+  "failures": [],
+  "notes": [
+    "These are source snapshots, not yet a locked or audited experimental dataset.",
+    "Hugging Face API connectivity timed out locally; official cards were checked through web search.",
+    "AlphaOPT clean files are derivative benchmark versions and must not be called original releases."
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "schema": "llm4or-restricted-source-exclusion-audit-v1",
+  "audited_at_local_date": "2026-10-15",
+  "status": "current_tree_restricted_sources_excluded_history_sanitization_open",
+  "purpose": "Verify that task-text and repair-bearing frozen sources are absent from the candidate public Git tree while metadata-only projections preserve every paper-facing identity claim.",
+  "excluded_from_current_git_index": [
+    {
+      "path": "experiments/mixed_skill_confirmation_bundle_20261014.json",
+      "sha256": "944757ee0ef04111c3ff921e32f321385787c102a528bba6165c00addd4dafbb",
+      "reason": "contains upstream task text"
+    },
+    {
+      "path": "results/or_debug_confirmation_method_outputs_20261014.json",
+      "sha256": "9ab4058fd9f641f96279d5880820c13cbf7277af779fc42c62503ddd4c7d27ec",
+      "reason": "contains repair objects and solver objectives"
+    },
+    {
+      "path": "results/mixed_skill_confirmation_outputs_20261014.json",
+      "sha256": "719d0d739ef98723baeea58d00355c0a4eba44e5ae1cb267a10dd5f0a12f67d1",
+      "reason": "contains routed repair objects and solver objectives"
+    },
+    {
+      "path": "results/private/tsp_constraint_confirmation_candidates_20261014.json",
+      "sha256": "f114fff73ff3c80cc557b7642a336a417a8bb1b85609f862cd2260dbad0c6627",
+      "reason": "private direct candidate objects"
+    },
+    {
+      "path": "results/private/tsp_constraint_confirmation_public_20261014.json",
+      "sha256": "7c5635e8b78fa2f5d7647890bd8d6199c00e28a128c1c55a1b48f43af12d2fc8",
+      "reason": "contains upstream task text"
+    }
+  ],
+  "already_untracked_and_ignored": {
+    "path": "results/or_debug_confirmation_evaluation_20261014.json",
+    "sha256": "04342d960613c01d3e354d742e39eec5949a90a53ca06fe0c6e30b6be057b66e",
+    "reason": "contains per-instance repair identities"
+  },
+  "public_replacements": [
+    {
+      "path": "experiments/public_projections/mixed_skill_confirmation_bundle_projection_20261015.json",
+      "sha256": "da9a35dcb6b76e2289a7a9f0613384661dac80f6e96b8c3ed41ba1f5538fee65",
+      "records": 2985
+    },
+    {
+      "path": "results/public_projections/or_debug_confirmation_evaluation_projection_20261015.json",
+      "sha256": "7f83555e8b81ff15bad510b95bf7e2617d87bb139786777407704a55e10a70ca",
+      "records": 2845
+    },
+    {
+      "path": "results/public_projections/or_debug_confirmation_method_outputs_projection_20261015.json",
+      "sha256": "d714e72bb9207ba7ca7146f43a196f9b6599e1e43b5ea94446fe9a60bfbbcf46",
+      "records": 2845
+    },
+    {
+      "path": "results/public_projections/mixed_skill_confirmation_outputs_projection_20261015.json",
+      "sha256": "5f7b5860f4e50e5ce37b85e49fbd9e3b96488429bf08e779fe17c503ded1ad70",
+      "records": 2985
+    },
+    {
+      "path": "results/public_projections/tsp_constraint_confirmation_public_projection_20261015.json",
+      "sha256": "b4cba3f5fdf52efb6c4cf653f7e7df06e36c80c82d8dad60d96f45920b629418",
+      "records": 140
+    },
+    {
+      "path": "results/public_projections/tsp_constraint_confirmation_candidates_projection_20261015.json",
+      "sha256": "bbd4e31ddf317df76dc7e84ce00be143ec078f159663f57fa443226610a27e23",
+      "records_per_arm": 140
+    }
+  ],
+  "public_identity_audit": {
+    "path": "results/mixed_skill_confirmation_public_audit_v3_20261015.json",
+    "sha256": "3c9b8700639cfe5599fc76b18cca4318b14d4b0865fb5bd343f5c0d26fead08f",
+    "records": 2985,
+    "exact_output_hash_matches": 2985,
+    "route_mismatches": 0,
+    "output_mismatches": 0,
+    "source_mismatches": 0,
+    "terminal_failures": 0,
+    "claim_fields_identical_to_v2": true,
+    "accuracy_recomputed": false
+  },
+  "implementation": {
+    "projection_module_sha256": "f6ed846b181f3151d349116debbc5f98359bdd94f8308cd453d8c64ede933940",
+    "projection_builder_sha256": "642a0bf4cb415f764eaa32fa9d20c48c1dafdbeebc88eb8e87251f55dc237dd0",
+    "projection_tests_sha256": "e5e73654ff803f9201b94a94628bc3de27f630fd81d941108233f109d5034a3e",
+    "public_identity_auditor_sha256": "7d7e258badc6c0c6824d226e8b788ecd71ce611efae64daec51fe05f91080bd1",
+    "public_identity_tests_sha256": "4f9b007d0166ffa56093fa53cad1476345c46647dff5ee3a354a0a96cfada9be"
+  },
+  "release_tree": {
+    "restricted_paths_tracked_after_commit": 0,
+    "paper_manifest_paths": 69,
+    "paper_manifest_paths_tracked_after_commit": 69,
+    "paper_manifest_restricted_source_paths": 0,
+    "paper_structured_assertions": 408,
+    "paper_global_boundaries": 15,
+    "local_ignored_frozen_copies_preserved": true
+  },
+  "history_boundary": {
+    "restricted_blobs_exist_in_local_ancestry": true,
+    "introducing_commit_on_current_remote_branch_at_audit_time": false,
+    "ordinary_push_is_release_safe": false,
+    "required_publication_mode": "history-free rights-reviewed snapshot or author-approved history sanitization before any public push"
+  },
+  "remaining_release_gates": [
+    "author-selected root license and third-party attribution policy",
+    "fixed prompt disclosure decision",
+    "canonical content-addressed skill and library manifests",
+    "historical producer replacement or wrapping",
+    "layered execution environments and commands",
+    "required solver submodule and external Gurobi contract",
+    "credential-free recursive clean-clone rebuild",
+    "history-free or sanitized public release construction"
+  ],
+  "decision": {
+    "current_tree_body_and_repair_exclusion_closed": true,
+    "mixed_identity_evidence_preserved": true,
+    "release_ready": false,
+    "permitted_claim": "The candidate public tree excludes every identified task-text, repair-identity and repair-object source while preserving the 2,985-record mixed identity result through independently hash-bound metadata projections.",
+    "prohibited_claim": "The local branch history is not safe for an ordinary public push, and current-tree exclusion does not settle licensing, provenance, environment, solver or clean-clone reconstruction."
+  },
+  "execution": {
+    "api_or_model_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "request_or_response_bodies_emitted": false,
+    "task_text_or_repair_objects_emitted": false,
+    "credentials_read": false
+  }
+}

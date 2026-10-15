@@ -1,0 +1,146 @@
+{
+  "schema": "llm4or-release-allowlist-projection-v1",
+  "date": "2026-10-15",
+  "status": "provisional_not_authorized_for_staging_or_release",
+  "purpose": "Partition the current 46 paper-manifest paths into provisional release candidates and paths that require aggregate projection, replacement or exclusion before a curated public release.",
+  "scope": {
+    "paper_manifest": "experiments/paper_evidence_manifest_20261015.json",
+    "paper_manifest_sha256": "a00649690e03eadcf1072d80c9131f19f1a5746772fae278ec2378692c582901",
+    "manifest_paths": 46,
+    "inspection": "JSON key paths, value types, string lengths, Git tracking, generic credential literals and known upstream-rights boundaries; no body values reproduced in this artifact."
+  },
+  "provisional_release_candidate_paths": [
+    "results/tsp_constraint_confirmation_root_closure_20261014.json",
+    "results/or_debug_group_endpoint_sensitivity_audit_20261015.json",
+    "results/mixed_skill_confirmation_audit_v2_20261014.json",
+    "experiments/external_baseline_evidence_ledger_20261014.json",
+    "results/external_fixed_common40_summary.json",
+    "results/bind_fixed_common40.json",
+    "results/coe_fixed_common40.json",
+    "results/optitrust_arxiv_source_audit_20261014.json",
+    "results/optitrust_artifact_recheck_20261014.json",
+    "results/dcp_typed_count_cegis_revision_20261014_audit.json",
+    "results/dcp_typed_count_repair_input_20261014.json",
+    "results/dcp_typed_count_repair_certificate_v3_20261014.json",
+    "results/manuscript_figure2_source_data_audit_20261015.json",
+    "experiments/proposal_provenance_inventory_20261015.json",
+    "experiments/matched_acquisition_power_analysis_20261015.json",
+    "experiments/fresh_common_protocol_estimand_audit_20261015.json",
+    "experiments/component_ablation_identifiability_audit_20261015.json",
+    "experiments/component_ablation_power_and_unit_inventory_20261015.json",
+    "experiments/release_readiness_delta_v2_20261015.json",
+    "results/paper_evidence_offline_verification_20261014.json",
+    "manuscript/references.bib",
+    "manuscript/MANUSCRIPT_DRAFT.md",
+    "manuscript/MANUSCRIPT_EVIDENCE_AUDIT.md",
+    "manuscript/WORKED_EXAMPLE.md",
+    "manuscript/FIGURE_PLAN.md",
+    "manuscript/SUPPLEMENTARY_THEORY.md",
+    "manuscript/SUPPLEMENTARY_REPRODUCIBILITY.md",
+    "docs/KNOWLEDGE_EVOLUTION_THEORETICAL_FRAMEWORK_20261015.md",
+    "manuscript/source_data/README.md",
+    "manuscript/source_data/or_debug_endpoint_sensitivity.csv",
+    "manuscript/source_data/or_debug_group_endpoint_sensitivity.csv",
+    "docs/PROOF_CARRYING_SKILL_EVOLUTION_THEORY.md",
+    "docs/THEORY_PRIMARY_SOURCE_MAP_20261015.md",
+    "docs/THEORY_CLAIM_EVIDENCE_MATRIX.md",
+    "docs/TOP_CONFERENCE_STORY.md",
+    "docs/TOP_CONFERENCE_METHOD_ROADMAP.md",
+    "docs/COMPONENT_ABLATION_IDENTIFIABILITY_AUDIT_20261015.md",
+    "docs/COMPONENT_ABLATION_POWER_AND_UNIT_INVENTORY_20261015.md",
+    "docs/PAPER_TERMINOLOGY_LEDGER_20261014.md",
+    "manuscript/OUTLINE.md",
+    "docs/DATA_CODE_AVAILABILITY_AUDIT_20261015.md",
+    "docs/RELEASE_READINESS_DELTA_V2_20261015.md"
+  ],
+  "replace_or_exclude_before_release": [
+    {
+      "path": "experiments/mixed_skill_confirmation_bundle_20261014.json",
+      "reason": "Contains 140 nonempty records[].public_envelope.public_text values from an upstream source without verified redistribution terms.",
+      "safe_projection": "Record identity, source revision, public-text hash, expected family, deterministic mixed order and routing metadata; reconstruct public text from the pinned upstream revision."
+    },
+    {
+      "path": "results/or_debug_confirmation_evaluation_20261014.json",
+      "reason": "Contains per-record corrected and released repair identities in addition to aggregate endpoint results.",
+      "safe_projection": "Publish full-denominator aggregate counts, group membership hashes, endpoint sensitivity, correction/regression categories and terminal artifact hashes without repair identity."
+    },
+    {
+      "path": "results/or_debug_confirmation_method_outputs_20261014.json",
+      "reason": "Contains per-record static/evolved repair objects and repair hashes.",
+      "safe_projection": "Publish record membership hashes, status counts, candidate counts, route identity and output hashes; reconstruct method outputs only inside the licensed benchmark environment."
+    },
+    {
+      "path": "results/mixed_skill_confirmation_outputs_20261014.json",
+      "reason": "Contains per-record routed output objects, including repair objects for the OR-Debug family.",
+      "safe_projection": "Publish route, status, direct-output hash, mixed-output hash and exact-equivalence result without the repair object."
+    }
+  ],
+  "release_control_candidates_outside_self_bound_manifest": [
+    "experiments/paper_evidence_manifest_20261015.json",
+    "experiments/goal_completion_audit_20261015.json",
+    "docs/GOAL_COMPLETION_AUDIT_20261015.md"
+  ],
+  "exclude_from_public_tree_outside_manifest": [
+    {
+      "path": "results/private/tsp_constraint_confirmation_public_20261014.json",
+      "reason": "Tracked private path containing upstream public text."
+    },
+    {
+      "path": "results/private/tsp_constraint_confirmation_candidates_20261014.json",
+      "reason": "Tracked private derived-output path pending content and upstream-rights review."
+    }
+  ],
+  "structural_scan": {
+    "paths_with_string_values_at_least_500_characters": 1,
+    "long_value_path": "experiments/mixed_skill_confirmation_bundle_20261014.json::records[].public_envelope.public_text",
+    "long_values_at_that_path": 140,
+    "paths_with_per_record_repair_or_repair_identity": 3,
+    "bearer_token_literal_hits": 0,
+    "openai_like_key_literal_hits": 0,
+    "quoted_secret_assignment_hits": 0,
+    "claim_boundary": "Key/length/literal inspection is a conservative structural screen, not final semantic redaction, licensing advice or author approval."
+  },
+  "counts": {
+    "manifest_paths": 46,
+    "provisional_release_candidates": 42,
+    "replace_or_exclude_manifest_paths": 4,
+    "release_control_candidates_outside_manifest": 3,
+    "exclude_outside_manifest": 2
+  },
+  "admission_gates_for_each_provisional_candidate": [
+    "No credential, request body, response body or evaluator-only answer value.",
+    "No upstream task text or third-party source code without verified redistribution terms.",
+    "Only the minimum identity, hash, aggregate, proof or reconstruction metadata required for the paper claim.",
+    "File hash is rebound in the final release manifest after any projection or redaction.",
+    "Author-selected first-party license and all upstream attribution are present.",
+    "The candidate participates in a successful credential-free clean-clone reconstruction."
+  ],
+  "decision": {
+    "ready_to_stage": false,
+    "ready_to_commit": false,
+    "ready_to_push": false,
+    "bulk_add_safe": false,
+    "four_projection_artifacts_required": true,
+    "author_license_decision_required": true,
+    "permitted_claim": "A narrow provisional allowlist partition exists; four manifest paths require safe projections and two tracked private paths require exclusion before release.",
+    "prohibited_claims": [
+      "All 42 provisional candidates have completed legal or semantic review.",
+      "The current paper manifest can be published unchanged.",
+      "The public repository is clean-clone reproducible.",
+      "Absence of generic secret literals proves absence of sensitive content."
+    ]
+  },
+  "execution": {
+    "files_staged": 0,
+    "commits_created": 0,
+    "remote_writes": 0,
+    "network_calls": 0,
+    "new_api_or_model_calls": 0,
+    "new_solver_calls": 0,
+    "new_native_or_vm_calls": 0
+  },
+  "evidence": [
+    {"path": "experiments/paper_evidence_manifest_20261015.json", "sha256": "a00649690e03eadcf1072d80c9131f19f1a5746772fae278ec2378692c582901"},
+    {"path": "experiments/release_readiness_delta_v2_20261015.json", "sha256": "5bbee3ca8cf8169a2b85aa75526445ea503ac57c46a846adf310d6a2355e8106"}
+  ]
+}

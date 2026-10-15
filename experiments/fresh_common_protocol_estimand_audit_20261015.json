@@ -1,0 +1,206 @@
+{
+  "schema": "fresh-common-protocol-estimand-audit-v1",
+  "date": "2026-10-15",
+  "status": "not_ready_for_freeze_or_dispatch",
+  "purpose": "Define which current-method and external-baseline comparisons are scientifically commensurate on the prospective larger RCPSP/VRPTW cohort.",
+  "privacy_boundary": {
+    "problem_text_displayed": false,
+    "reference_values_displayed": false,
+    "gold_program_executed": false,
+    "request_or_response_bodies_read": false,
+    "credentials_read": false,
+    "metadata_and_hashes_only": true
+  },
+  "source": {
+    "repository": "https://github.com/SprocketLab/text2opt-bench",
+    "revision": "1dac06be656c41d827ef20987cf8af0b48d382a2",
+    "tree": "3da1c3eb3ee8c14bab29e593db13cf9658db2fed",
+    "upstream_root": "synthetic_dataset/Template/basic_template/{rcpsp,vrptw}/small",
+    "selection_rule": "Select canonical small-tier RCPSP and VRPTW records excluded from text2opt_template_confirmation_v1 solely because num_vars > 96 or num_constraints > 192.",
+    "selection_uses_outcomes": false,
+    "canonical_metadata_projection_sha256": "806191d6693ff6f5f50cf2c16b478e0c8c43fb93eea0be936f279befa1d3789c"
+  },
+  "cohort": {
+    "records": 38,
+    "families": {"rcpsp": 13, "vrptw": 25},
+    "rcpsp": {
+      "num_vars_min": 98,
+      "num_vars_max": 181,
+      "num_constraints_min": 159,
+      "num_constraints_max": 311,
+      "prompt_tokens_with_data_min": 2900,
+      "prompt_tokens_with_data_max": 3771,
+      "prompt_tokens_without_data_min": 782,
+      "prompt_tokens_without_data_max": 1076
+    },
+    "vrptw": {
+      "num_vars_min": 109,
+      "num_vars_max": 419,
+      "num_constraints_min": 172,
+      "num_constraints_max": 742,
+      "prompt_tokens_with_data_min": 942,
+      "prompt_tokens_with_data_max": 1534,
+      "prompt_tokens_without_data_min": 563,
+      "prompt_tokens_without_data_max": 882
+    },
+    "unique_ids": 38,
+    "unique_source_file_hashes": 38,
+    "unique_public_text_hashes": 38,
+    "unique_normalized_text_hashes": 38,
+    "public_text_hash_overlap_with_existing_prepared_183": 0,
+    "fixed_id_hits_outside_raw_source_before_this_audit": 0,
+    "reference_endpoint": {
+      "finite_theoretical_optimum": 38,
+      "solver_status_2": 38,
+      "metadata_variable_count_matches_source_dictionary": 38,
+      "metadata_constraint_count_matches_source_dictionary": 38,
+      "reference_values_disclosed": false
+    },
+    "claim_boundary": "File-level untouched larger-size candidate cohort under the current workspace audit; not proof of historical human outcome blindness, unseen family transfer, or independent template-level sampling."
+  },
+  "primary_common_evidence_estimand": {
+    "name": "answer_blind_common_evidence_native_budget_accuracy",
+    "unit": "One of 38 frozen public problem identities",
+    "public_atomic_facts": "The same content-addressed union of public natural-language description and public structured instance data for every method.",
+    "backbone": "AntChat DeepSeek-V4-Flash",
+    "endpoint": "Full-denominator formulation accuracy: candidate safely compiles, reaches the declared optimal solver state, and matches the frozen theoretical optimum at relative tolerance 1e-5 and absolute tolerance 1e-6.",
+    "method_budget": "Each method's prospectively frozen native answer-blind schedule; physical requests, retries, reported or reserved tokens, safe-execution coverage and solver calls reported separately.",
+    "failure_rule": "Parser, schema, compilation, resource, solve, projection, or exhausted transport failure is incorrect. A global endpoint outage before outcomes are opened reschedules the whole affected block under a predeclared rule.",
+    "paired_reporting": [
+      "accuracy on all 38 identities",
+      "RCPSP and VRPTW accuracy separately",
+      "paired corrections and regressions versus Base",
+      "one-sided exact McNemar/sign test on discordant identities",
+      "safe-adapter and resource-admission coverage",
+      "physical requests and token accounting"
+    ],
+    "interpretation": "Ecologically fair under common information and backbone, but not equal compute because native method schedules differ."
+  },
+  "required_secondary_views": [
+    {
+      "name": "answer_blind_common_evidence_equal_budget_sensitivity",
+      "difference_from_primary": "Apply one shared predeclared physical-request and token ceiling to every method.",
+      "interpretation": "Compute-normalized sensitivity; not author-native reproduction."
+    },
+    {
+      "name": "author_native_reproduction",
+      "difference_from_primary": "Use each official method's input representation, feedback schedule and native budget.",
+      "interpretation": "Reproduction and ecological validity only; unequal information and compute prevent an unconditional leaderboard."
+    },
+    {
+      "name": "bind_answer_bearing_final",
+      "difference_from_primary": "Use official answer-bearing repair feedback after BIND round one.",
+      "interpretation": "Oracle-assisted upper-information row, always outside the answer-blind primary comparison."
+    }
+  ],
+  "method_rows": [
+    {
+      "method": "Base",
+      "primary_role": "reference",
+      "answer_blind": true,
+      "current_status": "existing interface, fresh packet not frozen"
+    },
+    {
+      "method": "Strong static knowledge",
+      "primary_role": "matched knowledge control",
+      "answer_blind": true,
+      "current_status": "RCPSP/VRPTW static skill content and packet not frozen"
+    },
+    {
+      "method": "Benchmark-Grounded Proof-Carrying Knowledge Compilation",
+      "primary_role": "current full method",
+      "answer_blind": true,
+      "current_status": "RCPSP/VRPTW typed skills, router and promotion artifacts not constructed or frozen"
+    },
+    {
+      "method": "Current-method ablations",
+      "primary_role": "causal mechanism",
+      "answer_blind": true,
+      "current_status": "no-verifier, no-resource, no-complexity and no-routing arms not frozen; unsafe arms must be scored offline only"
+    },
+    {
+      "method": "BIND first round",
+      "primary_role": "official-code external comparator",
+      "answer_blind": true,
+      "current_status": "official prompt locally reproduced; common-evidence fact-equivalence adapter for the fresh packet not frozen"
+    },
+    {
+      "method": "CoE safe-adapter",
+      "primary_role": "official-code external comparator",
+      "answer_blind": true,
+      "current_status": "official paper/current snapshots locally reproduced; fresh serializer and compile-time nnz/byte admission not frozen"
+    },
+    {
+      "method": "BIND answer-bearing final",
+      "primary_role": "separate upper-information row",
+      "answer_blind": false,
+      "current_status": "must never enter the primary answer-blind ranking"
+    },
+    {
+      "method": "OptiTrust",
+      "primary_role": "artifact-unavailable",
+      "answer_blind": null,
+      "current_status": "no verified author- or venue-linked runnable package; no score row"
+    }
+  ],
+  "execution_admission": {
+    "safe_adapter_limits": {
+      "max_variables": 2000,
+      "max_constraints": 10000,
+      "max_nonzeros": 100000,
+      "max_serialized_model_bytes": 4000000
+    },
+    "cohort_declared_variable_limit_pass": 38,
+    "cohort_declared_constraint_limit_pass": 38,
+    "candidate_specific_nonzero_and_byte_checks": "Required at compile time; source metadata cannot certify generated candidate size.",
+    "same_request_fingerprint_rule": "A logical request fingerprint may produce at most one physical send; imported or retried attempts remain charged in the ledger."
+  },
+  "n38_exact_power": {
+    "test": "One-sided exact conditional McNemar/sign test at alpha 0.05",
+    "columns_q": [0.65, 0.70, 0.75, 0.80],
+    "rows": [
+      {"r": 0.20, "power": [0.1044, 0.1640, 0.2452, 0.3496]},
+      {"r": 0.30, "power": [0.1730, 0.2759, 0.4073, 0.5584]},
+      {"r": 0.40, "power": [0.2393, 0.3814, 0.5491, 0.7179]},
+      {"r": 0.50, "power": [0.2955, 0.4687, 0.6569, 0.8218]}
+    ],
+    "zero_regression_minimum_corrections_for_nominal_one_sided_p_below_0_05": 5,
+    "claim_boundary": "The 38-record cohort is powered only for very large paired effects; it is a size-generalization confirmation and mechanism panel, not by itself a definitive cross-method leaderboard."
+  },
+  "readiness_checks": {
+    "cohort_identity_and_reference_endpoint": "passed",
+    "file_level_novelty_against_existing_prepared_cohort": "passed",
+    "common_atomic_fact_packet": "missing",
+    "current_method_rcpsp_vrptw_skills": "missing",
+    "claim_critical_ablation_artifacts": "missing",
+    "fresh_bind_and_coe_serializers": "missing",
+    "native_and_equal_budget_caps": "missing",
+    "outcome_blind_custody_receipt": "missing",
+    "candidate_compile_nnz_and_byte_admission": "runtime_required",
+    "power_for_moderate_cross_method_effects": "insufficient"
+  },
+  "decision": {
+    "ready_to_prepare": false,
+    "ready_to_freeze": false,
+    "ready_to_dispatch": false,
+    "permitted_current_claim": "A unique, evaluator-complete 38-record larger-size RCPSP/VRPTW candidate cohort exists and supports a future common-evidence comparison design.",
+    "prohibited_current_claims": [
+      "The current method has been evaluated on the fresh cohort.",
+      "The 38 records establish broad benchmark superiority.",
+      "BIND final is an answer-blind comparator.",
+      "CoE safe-adapter failures equal native CoE modeling failures.",
+      "OptiTrust has a locally runnable official result."
+    ]
+  },
+  "evidence": [
+    {"path": "scripts/prepare_text2opt_template_external.py", "sha256": "8dc92c8dd76cc384f3af08834367d52831eb152cb4fdb0d467c14eb289dc2082"},
+    {"path": "data/manifests/text2opt_template_confirmation_v1.json", "sha256": "5d61a800f2f61d581290108e236fcd60b0b2e6260285a9f5b771eb2b878775ac"},
+    {"path": "data/prepared_benchmarks/text2opt_template_confirmation_v1.json", "sha256": "00c083a56687b75122b29f3c94d47feddc152e13c58c071ea47055c144b11b34"},
+    {"path": "results/external_fixed_common40_summary.json", "sha256": "22c588da5167f6cb76615340ea81551021b8473b9db2a4ea83d717c93a77a38c"},
+    {"path": "experiments/external_baseline_evidence_ledger_20261014.json", "sha256": "5c35cf2fb7adb7b1c4ed67392f81e630f631b07657745daeea4017f9930a736b"},
+    {"path": "results/bind_fixed_common40_cost.json", "sha256": "159cc1f0d93e5a4c1745f75005b17e2fcfc0ba46e1e52a23625ae6c5aa019bac"},
+    {"path": "results/coe_fixed_common40_cost.json", "sha256": "ced936fd8dcb9f38f66be2acfd97662f250291d129e1a82ff37af87ee608c5d6"},
+    {"path": "results/bind_fixed_common40.json", "sha256": "fd3e12d813d1e3b2824b25bf0c53d8071b6e11f7566f5583e79dcf01c117268d"},
+    {"path": "results/coe_fixed_common40.json", "sha256": "6d478837d18584add5636d083567c8aa280c5db2edff18894452664b78fd9b06"}
+  ]
+}

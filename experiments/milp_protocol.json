@@ -1,0 +1,63 @@
+{
+  "schema": "milp-kernel-protocol-v1",
+  "date": "2026-08-31",
+  "status": "offline_kernel_verified_not_benchmark_ready",
+  "model_schema": "milp-v1",
+  "legacy_schema": "lp-v1_unchanged",
+  "api_enabled": false,
+  "request_budget_authorized": 0,
+  "model_limits": {
+    "variables": 2000,
+    "constraint_rows": 10000,
+    "coefficient_entries_including_objective": 100000,
+    "model_bytes": 4000000,
+    "operation_bytes": 9000000,
+    "max_absolute_input_number": 1000000000000.0,
+    "min_absolute_nonzero_coefficient": 1e-08
+  },
+  "domains": [
+    "continuous",
+    "integer",
+    "binary"
+  ],
+  "model_boundary": "linear_only_explicitly_expanded_variables_no_code_execution",
+  "default_worker_limits": {
+    "solve_seconds": 10.0,
+    "total_seconds": 25.0,
+    "wall_seconds": 30,
+    "rss_mb": 512,
+    "node_limit_per_solve": 10000,
+    "max_queries": 128,
+    "cpu_seconds": 60,
+    "threads": 1
+  },
+  "numeric_policy": {
+    "scaled_feasibility_tolerance": 1e-07,
+    "absolute_integrality_tolerance": 1e-06,
+    "objective_bound_tolerance": 1e-07,
+    "solver_relative_gap_target": 0.0,
+    "solver_absolute_gap_target": 0.0,
+    "evaluation_objective_abs_tolerance": 1e-06,
+    "evaluation_objective_rel_tolerance": 1e-06,
+    "incomplete_incumbent_is_optimum": false,
+    "certificates": "numerical_not_exact_symbolic"
+  },
+  "resource_boundary": "Trusted numeric worker only; macOS sampled RSS, not a hard memory cap or arbitrary-code sandbox; Linux adds 1 GiB RLIMIT_AS.",
+  "verified_runtime": {
+    "python": "3.11.16",
+    "scipy": "1.17.1",
+    "highs": "1.12.0"
+  },
+  "evaluation": {
+    "module": "llm4or/milp_evaluator.py",
+    "references": [
+      "structured_milp_model",
+      "audited_optimization-reference-v1_label"
+    ],
+    "full_planned_denominator": true,
+    "objective_status_proxy_separate_from_formulation": true,
+    "reference_must_be_audited_against_input_revision": true,
+    "input_reference_binding_automation_implemented": false
+  },
+  "documentation": "docs/BENCHMARKS.md"
+}

@@ -1,0 +1,100 @@
+{
+  "schema": "llm4or-figure2-render-qa-v1",
+  "audited_at_local_date": "2026-10-15",
+  "status": "passed_publication_size_render_and_visual_qa",
+  "backend": {
+    "language": "python",
+    "library": "matplotlib",
+    "matplotlib_version": "3.10.7",
+    "render_source": "scripts/render_main_figure2.py",
+    "render_source_sha256": "dc63d09b47a0e19d4815f050f24cd22ea9aa1ef1b5f24de8139a254c46b5828e"
+  },
+  "source_data": [
+    {
+      "path": "manuscript/source_data/figure2_endpoint_summary.csv",
+      "sha256": "71927fc29af5f54269dee1675c140f8f3b04404635458cc31973c2709e8ec71e"
+    },
+    {
+      "path": "manuscript/source_data/figure2_group_summary.csv",
+      "sha256": "0977c0b8d8856fcf9e287907da993181ccdc39e269831901bcf84a9b507c2076"
+    },
+    {
+      "path": "manuscript/source_data/figure2_router_identity.csv",
+      "sha256": "a44eb29bc162419e2acda954daf1b1f08e5448b9242cfc414cb0e8b59eae52e2"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "manuscript/figures/figure2_endpoint_preservation.pdf",
+      "sha256": "2aeac3a7a45452ebef683bdfe436663e0f6136c618e90126e025c4e78f57bec5",
+      "role": "main_text_vector"
+    },
+    {
+      "path": "manuscript/figures/figure2_endpoint_preservation.svg",
+      "sha256": "594dff43ca77a0a8d8a368cd7791b49459323e2449ab0283171d26875933cf68",
+      "role": "editable_vector"
+    },
+    {
+      "path": "manuscript/figures/figure2_endpoint_preservation.png",
+      "sha256": "6973a2de3fd9d7146196f7deb84604615a2a2a0b3ce8036cbaf5ed51e568162a",
+      "role": "600_dpi_preview"
+    },
+    {
+      "path": "manuscript/figures/figure2_endpoint_preservation.tiff",
+      "sha256": "794a0bdf4f774b49bdd19296bdd1afc52c26d8330e362f48e4e00ba0b08325d8",
+      "role": "600_dpi_submission_raster"
+    }
+  ],
+  "final_size": {
+    "width_mm": 180.0,
+    "height_mm": 122.0,
+    "raster_dpi": 600
+  },
+  "automated_qa": {
+    "source_preflight": {
+      "verdict": "PASS",
+      "pass": 21,
+      "warn": 0,
+      "fail": 0
+    },
+    "pdf_text": {
+      "auditable": true,
+      "text_runs": 71,
+      "minimum_font_pt": 5.5,
+      "minimum_required_pt": 5.0,
+      "below_minimum": 0,
+      "warnings": 0
+    },
+    "collision": {
+      "path": "manuscript/figures/figure2_endpoint_preservation.collision-audit.json",
+      "sha256": "edf8535730dea1d4256406eed972186cd29a9bbf3be67b9b4fa3c4e5000fb2e9",
+      "verdict": "PASS",
+      "fail": 0,
+      "warn": 0
+    },
+    "alignment": {
+      "path": "manuscript/figures/figure2_endpoint_preservation.alignment.json",
+      "sha256": "08714521dc52a19e5c7366d588fe5e3f71d019fd9b2b9d18373e33099cff1873",
+      "verdict": "PASS",
+      "comparisons": 4,
+      "tolerance_pt": 1.5,
+      "fail": 0,
+      "warn": 0
+    }
+  },
+  "visual_qa": {
+    "performed_at_final_export_size": true,
+    "panel_a": "PASS: both within-study accuracy contrasts and percentage-point gains are legible without pooling endpoints",
+    "panel_b": "PASS: all four outcome categories are keyed and zero regressions remain explicitly visible",
+    "panel_c": "PASS: TSP descriptive strata and OR-Debug group inference are visually separated and footer labels do not collide",
+    "panel_d": "PASS: exact family counts and the accuracy-not-rescored boundary are legible",
+    "overall": "PASS"
+  },
+  "privacy": {
+    "contains_problem_text": false,
+    "contains_request_or_response_body": false,
+    "contains_evaluator_only_answer": false,
+    "contains_credential": false
+  },
+  "claim_boundary": "The figure visualizes already sealed aggregate evidence. It adds no model, API, solver, native-evaluator or VM call, does not pool the two endpoint definitions, does not turn zero observed regressions into a prospective guarantee, and does not rescore accuracy in the router-identity panel."
+}

@@ -1,0 +1,180 @@
+{
+  "schema": "llm4or-content-addressed-library-manifest-design-v1",
+  "audited_at_local_date": "2026-10-15",
+  "status": "design_complete_not_implemented_not_authorized_for_reconstruction",
+  "objective": "Make the theoretical skill and library objects reconstructable, answer-free, content-addressed and suitable for a label-independent description-length measurement without changing frozen method behavior.",
+  "inputs": [
+    {
+      "path": "experiments/theory_implementation_conformance_audit_20261015.json",
+      "sha256": "6c3ff980ade13608728d7c935b8e34bdb6310c129358522cff48de0b6218eea7"
+    },
+    {
+      "path": "docs/KNOWLEDGE_EVOLUTION_THEORETICAL_FRAMEWORK_20261015.md",
+      "sha256": "4f649abf98137395f72361850bd5b03a7f97cd58ebeb9b236e83c521422d8bfe"
+    },
+    {
+      "path": "llm4or/schema.py",
+      "sha256": "82a63e82f4cf72b99f4f58be2ff5ece44ad8b8ae8c08c0aa440d8615d6d9e428"
+    },
+    {
+      "path": "scripts/run_mixed_skill_confirmation.py",
+      "sha256": "6ef3307eb858407d932915bfef3083ef4f4315fe392c9defba496cc01988b176"
+    },
+    {
+      "path": "experiments/reconstruction_publisher_solver_boundary_audit_20261015.json",
+      "sha256": "b5331ac3b605d153680becfa664910cfc00b93852c608986a7f144cf9bb8c22f"
+    }
+  ],
+  "alternatives": [
+    {
+      "id": "A",
+      "name": "two-level canonical manifests with pinned closures",
+      "decision": "recommended",
+      "reason": "Separates one skill from one library version, preserves existing module boundaries, supports parent-linked rollback, and can reconstruct current behavior without copying third-party code or benchmark bodies."
+    },
+    {
+      "id": "B",
+      "name": "monolithic self-contained skill bundles",
+      "decision": "rejected_for_current_release",
+      "reason": "Simple to load but duplicates implementation bytes, complicates upstream rights, and risks treating vendored external code as first-party material."
+    },
+    {
+      "id": "C",
+      "name": "event ledger without loadable manifests",
+      "decision": "rejected",
+      "reason": "Preserves chronology but does not give one deterministic object for execution, rollback or description-length accounting."
+    }
+  ],
+  "canonicalization": {
+    "encoding": "UTF-8",
+    "json_rules": "sort object keys, use compact separators, preserve array order only where semantically declared, reject duplicate keys and non-finite numbers",
+    "digest_rule": "sha256(canonical_json(body_without_content_sha256))",
+    "filename_rule": "the terminal filename contains the computed digest; a content_sha256 field may repeat it only after independent recomputation",
+    "path_rule": "repository-relative POSIX paths only; reject absolute paths, dot-dot segments, symlinks and root escape",
+    "publication_rule": "exclusive terminal creation, no replacement, file fsync followed by directory fsync, and explicit abandoned-reservation recovery",
+    "compatibility_note": "The existing llm4or.schema canonical function is a useful starting convention but is not by itself the new manifest validator or publisher."
+  },
+  "skill_manifest": {
+    "schema_name": "llm4or.skill_manifest.v1",
+    "required_fields": [
+      "schema",
+      "skill_id",
+      "family",
+      "semantic_version",
+      "guard",
+      "extractor",
+      "transform",
+      "semantic_verifier",
+      "resource_checker",
+      "provenance",
+      "fallback_contract",
+      "semantic_payload",
+      "implementation_closure",
+      "claim_boundary"
+    ],
+    "role_binding": {
+      "g": "guard",
+      "e": "extractor",
+      "t": "transform",
+      "v": "semantic_verifier",
+      "r": "resource_checker",
+      "p": "provenance"
+    },
+    "reference_shape": "Every executable role names an interface, semantic version and ordered closure of repository-relative path plus SHA-256 pairs.",
+    "provenance_shape": "Authorship mode, parent proposal or source audit identity, construction split identity, verifier identity and admitted/rejected decision references; hashes and counts only, never benchmark or model-response bodies.",
+    "semantic_payload_shape": "A canonical declarative representation of guard conditions, typed grammar or DSL, transformation obligations, resource policy and fallback target. It may not be replaced by a short path or hash when computing description length."
+  },
+  "library_manifest": {
+    "schema_name": "llm4or.library_manifest.v1",
+    "required_fields": [
+      "schema",
+      "library_version",
+      "parent_library_sha256",
+      "rollback_library_sha256",
+      "skills",
+      "router",
+      "verifier_closure",
+      "endpoint_identities",
+      "promotion_decision",
+      "accepted_ledger_refs",
+      "rejected_ledger_refs",
+      "release_boundary",
+      "claim_boundary"
+    ],
+    "skills_rule": "Skill references are sorted by family and skill_id and bind the complete skill-manifest digest.",
+    "router_rule": "The public-only router binds interface, implementation closure, zero/multiple-match fallback and overlap policy.",
+    "endpoint_rule": "Bind endpoint schema, frozen plan and aggregate evidence identities without embedding evaluator-only answers.",
+    "transition_rule": "A successor must bind its parent and rollback target. Failed promotion creates a rejected ledger event but no successor manifest.",
+    "genesis_rule": "The genesis library uses null parent and rollback values and explicitly names the previous-system fallback."
+  },
+  "description_length": {
+    "symbol": "ell(L)",
+    "primary_definition": "Eight times the byte length of a prefix-free envelope containing the canonical semantic payload of every skill plus the canonical router semantic payload, ordered by manifest identity.",
+    "included": [
+      "guard predicates and typed fields",
+      "grammar or repair DSL alternatives",
+      "transformation and projection obligations",
+      "semantic and resource policies",
+      "fallback and overlap rules",
+      "router decision rules"
+    ],
+    "excluded": [
+      "file paths and SHA-256 strings used only for reconstruction",
+      "timestamps, machine identifiers and elapsed time",
+      "development, promotion or confirmation outcomes",
+      "benchmark identities, problem text and evaluator-only answers",
+      "request and response bodies"
+    ],
+    "anti_gaming_rule": "A semantic payload cannot be replaced by a constant-size external pointer. Referenced first-party declarative bytes are included; third-party executable dependencies remain reconstruction dependencies and are not counted as learned knowledge.",
+    "validity_boundary": "The payload grammar, prefix-free envelope and coding convention must be frozen before evaluated labels are opened. The current authored libraries do not retroactively satisfy this premise."
+  },
+  "producer_compatibility": {
+    "rule": "Human authors, finite search, BIND, CoE, OptiTrust or another generator may propose the semantic payload, but all proposals enter the same manifest validator, verifier closure, resource admission and promotion endpoint.",
+    "same_artifact_same_decision": "When two producers emit byte-identical canonical semantic payloads under the same manifest and verifier versions, admission must be identical.",
+    "non_guarantee": "Producer compatibility does not guarantee that an output can be translated, passes admission or improves benchmark accuracy."
+  },
+  "privacy_and_rights": {
+    "forbidden_fields": [
+      "problem text",
+      "reference solution or objective",
+      "evaluator-only answer",
+      "model request body",
+      "model response body",
+      "credential",
+      "repair identity when redistribution is restricted"
+    ],
+    "allowed_evidence": [
+      "repository-relative first-party path and SHA-256",
+      "upstream repository URL, revision and license observation",
+      "split and endpoint manifest SHA-256",
+      "aggregate correction, regression, abstention and failure counts",
+      "accepted or rejected decision hashes"
+    ],
+    "external_code_rule": "Unlicensed or separately licensed upstream code is referenced by source and revision and acquired separately; it is not embedded in the manifest bundle."
+  },
+  "reconstruction_preflight": [
+    "Validate canonical JSON, field allowlists, path containment and duplicate-free closure entries.",
+    "Recompute every first-party file hash before import or execution and again after reconstruction.",
+    "Resolve upstream dependencies only through separately disclosed reconstruction instructions and license checks.",
+    "Load the parent library and verify the rollback identity before constructing a successor.",
+    "Run the current direct-family and mixed identity checks without changing the frozen endpoint or opening restricted bodies.",
+    "Accept the manifest representation only if the reconstructed TSP, OR-Debug and mixed output hashes equal the sealed historical hashes."
+  ],
+  "closure_criteria": {
+    "design": "This document and its human-readable companion pass input-hash, internal-consistency, privacy-boundary and claim-boundary checks.",
+    "implementation": "A separately reviewed validator, exclusive publisher, current-library manifests and manifest-driven reconstruction reproduce all sealed hashes from a rights-safe clean clone.",
+    "scientific": "A future complexity-control experiment freezes this encoding before outcomes and compares valid library-selection units; manifest availability alone does not prove a complexity effect."
+  },
+  "safety": {
+    "api_or_model_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "runtime_behavior_changed": false,
+    "manifest_validator_implemented": false,
+    "manifest_publisher_implemented": false,
+    "benchmark_or_response_bodies_read": false,
+    "evaluator_only_answers_read": false,
+    "credentials_read": false
+  }
+}

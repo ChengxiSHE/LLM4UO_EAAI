@@ -1,0 +1,71 @@
+{
+  "schema": "llm4or-content-addressed-manifest-implementation-audit-v1",
+  "audited_at_local_date": "2026-10-15",
+  "status": "validator_publisher_and_encoding_implemented_current_library_materialization_open",
+  "authorization": {
+    "source": "user approval of Scheme A as the G07-G09 prospective architecture plus standing autonomous continuation of the active research goal",
+    "scope": "offline implementation and verification only",
+    "api_dispatch": false,
+    "solver_dispatch": false,
+    "native_evaluator_dispatch": false
+  },
+  "design_inputs": [
+    {
+      "path": "docs/CONTENT_ADDRESSED_LIBRARY_MANIFEST_DESIGN_20261015.md",
+      "sha256": "0d2b2c7654f4d30c6ed00fbd6c82617e2f3af6ac745bee1535339ca3c52351fc"
+    },
+    {
+      "path": "experiments/content_addressed_library_manifest_design_20261015.json",
+      "sha256": "40ba7e21003c896a0768e741e98e512ea6ebfd107e7c1bbeff8e997018fc4222"
+    }
+  ],
+  "implementation": [
+    {
+      "path": "llm4or/content_addressed_manifests.py",
+      "sha256": "77941ff32a3f1b9deb34d41c2975ece02ba49068db18d08d7c635ee8e242850f"
+    },
+    {
+      "path": "tests/test_content_addressed_manifests.py",
+      "sha256": "6c5a2143282b8db810d29e9c630cb61cdb34621c43a939ebbfb2cdc27e05fd6e"
+    }
+  ],
+  "commits": [
+    "e575080",
+    "6432ec3"
+  ],
+  "implemented_contracts": {
+    "canonical_identity": "UTF-8 compact sorted JSON; content_sha256 is excluded from its own digest; duplicate keys and non-finite constants are rejected on load",
+    "skill_validation": "exact field allowlist; five executable role contracts; direct semantic payload; provenance, fallback and claim boundaries; first-party path and byte-hash verification before import",
+    "library_validation": "sorted skill identities; revalidation of bound skills; exactly-one router contract; verifier closure; endpoint identities; accepted/rejected ledger byte hashes; genesis or accepted transitions; parent and rollback object bindings",
+    "privacy": "recursive rejection of request/response bodies, evaluator/reference answers, credentials, problem text and solver objective/point keys",
+    "anti_pointer": "each semantic role must carry nonempty semantics and cannot be represented only by path/hash/URI/reference pointers",
+    "description_length": "prefix-free length envelope over skill semantic payloads plus router semantic payload only; file paths, reconstruction hashes, outcomes and machine metadata are excluded",
+    "publication": "content-digest filename, O_EXCL terminal ownership, O_NOFOLLOW where available, file fsync then directory fsync, no replacement; a crash-created partial terminal remains an explicit abandoned reservation requiring external audit",
+    "loading": "repository-relative POSIX containment, no parent segments or symlink components, canonical byte equality, filename/digest equality, and full kind-specific revalidation"
+  },
+  "verification": {
+    "command": "python3 -m unittest tests.test_content_addressed_manifests tests.test_verified_skill_library tests.test_release_safe_projections",
+    "tests": 35,
+    "failures": 0,
+    "errors": 0,
+    "compileall": "passed",
+    "diff_check": "passed"
+  },
+  "boundaries": [
+    "No current TSP or OR-Debug skill manifest was materialized by this implementation step.",
+    "No current library manifest or manifest-driven reconstruction was executed.",
+    "The validator does not import code and a valid manifest does not authorize execution.",
+    "The operational description-length function is an implementation of the prospective encoding; it does not retroactively validate a complexity claim for an outcome-exposed authored library.",
+    "Rights review, root license, fixed-prompt disclosure, layered environments, external Gurobi contract, history-safe publication and credential-free clean-clone reconstruction remain open."
+  ],
+  "safety": {
+    "api_or_model_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "benchmark_or_response_bodies_read": false,
+    "evaluator_only_answers_read": false,
+    "credentials_read": false,
+    "existing_runtime_behavior_changed": false
+  }
+}

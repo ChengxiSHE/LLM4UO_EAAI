@@ -1,0 +1,116 @@
+{
+  "schema": "llm4or-release-projection-rebinding-audit-v1",
+  "audited_at_local_date": "2026-10-15",
+  "status": "projection_rebinding_closed_release_still_open",
+  "purpose": "Verify that every paper-manifest binding previously exposing task text, repair identity, or repair objects has been replaced by a deterministic metadata-only projection without changing the paper's structured claims.",
+  "implementation": {
+    "module": "llm4or/release_safe_projections.py",
+    "module_sha256": "365fb5c8e688fe3a572a37ef132d71121e6a752a8018df0469ba4d821670345c",
+    "builder": "scripts/build_release_safe_projections.py",
+    "builder_sha256": "362617875ce6f80275f11360a416374d7d90e407964399fe08b7fd2b331f277c",
+    "tests": "tests/test_release_safe_projections.py",
+    "tests_sha256": "f53671e974b2a02c6ec7ca58857ef2890a22cdfe5b6f6dc2bf207b414d67d876",
+    "exclusive_terminal_reservation": true,
+    "temporary_file_fsync": true,
+    "atomic_replace": true,
+    "directory_fsync": true,
+    "check_mode_requires_byte_identity": true,
+    "absolute_parent_symlink_and_root_escape_rejected": true
+  },
+  "projections": [
+    {
+      "source_path": "experiments/mixed_skill_confirmation_bundle_20261014.json",
+      "source_sha256": "944757ee0ef04111c3ff921e32f321385787c102a528bba6165c00addd4dafbb",
+      "projection_path": "experiments/public_projections/mixed_skill_confirmation_bundle_projection_20261015.json",
+      "projection_sha256": "da9a35dcb6b76e2289a7a9f0613384661dac80f6e96b8c3ed41ba1f5538fee65",
+      "projection_bytes": 529937,
+      "records": 2985,
+      "omitted_classes": [
+        "public task text"
+      ],
+      "binding": "Each omitted public envelope is bound by canonical SHA-256."
+    },
+    {
+      "source_path": "results/or_debug_confirmation_evaluation_20261014.json",
+      "source_sha256": "04342d960613c01d3e354d742e39eec5949a90a53ca06fe0c6e30b6be057b66e",
+      "projection_path": "results/public_projections/or_debug_confirmation_evaluation_projection_20261015.json",
+      "projection_sha256": "7f83555e8b81ff15bad510b95bf7e2617d87bb139786777407704a55e10a70ca",
+      "projection_bytes": 3392033,
+      "records": 2845,
+      "omitted_classes": [
+        "corrected repair identity",
+        "released repair identity"
+      ],
+      "binding": "Each complete source record is bound by canonical SHA-256 while all aggregate comparison and inference objects remain explicit."
+    },
+    {
+      "source_path": "results/or_debug_confirmation_method_outputs_20261014.json",
+      "source_sha256": "9ab4058fd9f641f96279d5880820c13cbf7277af779fc42c62503ddd4c7d27ec",
+      "projection_path": "results/public_projections/or_debug_confirmation_method_outputs_projection_20261015.json",
+      "projection_sha256": "d714e72bb9207ba7ca7146f43a196f9b6599e1e43b5ea94446fe9a60bfbbcf46",
+      "projection_bytes": 3898266,
+      "records": 2845,
+      "omitted_classes": [
+        "repair object",
+        "solver objective"
+      ],
+      "binding": "Each complete static and evolved output is bound by canonical SHA-256."
+    },
+    {
+      "source_path": "results/mixed_skill_confirmation_outputs_20261014.json",
+      "source_sha256": "719d0d739ef98723baeea58d00355c0a4eba44e5ae1cb267a10dd5f0a12f67d1",
+      "projection_path": "results/public_projections/mixed_skill_confirmation_outputs_projection_20261015.json",
+      "projection_sha256": "5f7b5860f4e50e5ce37b85e49fbd9e3b96488429bf08e779fe17c503ded1ad70",
+      "projection_bytes": 2835264,
+      "records": 2985,
+      "omitted_classes": [
+        "repair object",
+        "solver objective"
+      ],
+      "binding": "Each complete routed output is bound by canonical SHA-256 while route and status counts remain explicit."
+    }
+  ],
+  "manifest_after_rebinding": {
+    "path": "experiments/paper_evidence_manifest_20261015.json",
+    "sha256_before_document_synchronization": "d22ee267c5315791beb6fa05db42ac3faff3422bb7923d1ca220dfd8e885c726",
+    "unique_bound_paths": 69,
+    "git_tracked": 69,
+    "git_untracked": 0,
+    "missing": 0,
+    "restricted_source_paths_bound": 0,
+    "structured_assertions": 408,
+    "global_claim_boundaries": 15,
+    "endpoint_or_baseline_values_changed": false
+  },
+  "privacy": {
+    "projection_privacy_flags_all_false": true,
+    "forbidden_keys_recursive_scan_passed": true,
+    "credentials_read": false,
+    "request_or_response_bodies_read": false,
+    "evaluator_only_answers_read": false,
+    "repair_objects_emitted": false,
+    "task_text_emitted": false
+  },
+  "remaining_release_gates": [
+    "author-selected root license and third-party attribution policy",
+    "two tracked results/private artifacts excluded or replaced",
+    "fixed prompt disclosure decision",
+    "canonical content-addressed skill and library manifests",
+    "layered execution environments and commands",
+    "required solver submodule and external Gurobi contract",
+    "credential-free recursive clean-clone rebuild"
+  ],
+  "decision": {
+    "four_safe_projections_materialized_and_rebound": true,
+    "manifest_tracking_backlog_closed": true,
+    "release_ready": false,
+    "permitted_claim": "All 69 paper-manifest paths are locally tracked and the four formerly restricted bindings now use deterministic metadata-only projections while preserving 408 structured assertions and 15 global boundaries.",
+    "prohibited_claim": "This does not establish rights clearance, a selected license, complete execution environments, canonical skill/library reconstruction, external solver availability, or a passing clean-clone rebuild."
+  },
+  "execution": {
+    "api_or_model_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0
+  }
+}
