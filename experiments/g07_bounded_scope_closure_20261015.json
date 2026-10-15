@@ -1,0 +1,104 @@
+{
+  "schema": "g07-bounded-scope-closure-v1",
+  "audited_at_local_date": "2026-10-15",
+  "status": "closed_with_boundary_no_new_dispatch",
+  "requirement": "Compare the current method, controls, and runnable external methods under one fresh common protocol.",
+  "completed_common_protocol": {
+    "cohort": {
+      "planned": 38,
+      "rcpsp": 13,
+      "vrptw": 25,
+      "source_lineages": 1
+    },
+    "full_denominator_correct": {
+      "current": 30,
+      "base": 0,
+      "bind_round_one": 13,
+      "bind_final": 13,
+      "coe_safe": 4
+    },
+    "paired_current_vs_comparator": {
+      "base": {
+        "corrections": 30,
+        "regressions": 0,
+        "holm_adjusted_p": 3.725290298461914e-09
+      },
+      "bind_round_one": {
+        "corrections": 18,
+        "regressions": 1,
+        "holm_adjusted_p": 7.62939453125e-05
+      },
+      "bind_final": {
+        "corrections": 18,
+        "regressions": 1,
+        "holm_adjusted_p": 7.62939453125e-05
+      },
+      "coe_safe": {
+        "corrections": 26,
+        "regressions": 0,
+        "holm_adjusted_p": 4.470348358154297e-08
+      }
+    },
+    "identity_alignment_verified": true,
+    "fixed_endpoint_claim_supported": true,
+    "broad_benchmark_superiority_supported": false
+  },
+  "candidate_second_source_disposition": {
+    "dcp_bench": {
+      "selection_identities": 135,
+      "ordinary_correct": 41,
+      "recovery_correct": 44,
+      "feedback_correct": 45,
+      "recovery_vs_ordinary": {
+        "corrections": 3,
+        "regressions": 0
+      },
+      "recovery_vs_feedback": {
+        "corrections": 6,
+        "regressions": 7
+      },
+      "promotion_gate_passed": false,
+      "reserved_confirmation_identities": 219,
+      "reserved_confirmation_remains_closed": true,
+      "decision": "do_not_open_after_failed_prespecified_gate"
+    },
+    "miplib_nl": {
+      "inventory_candidates": 215,
+      "status": "metadata_audit_only_not_ready_for_inference_or_confirmation",
+      "scoreable_endpoint_frozen": false,
+      "semantic_lineage_resolved": false,
+      "resource_and_reference_contract_frozen": false,
+      "decision": "do_not_dispatch_until_a_separate_score_ready_protocol_exists"
+    }
+  },
+  "scope_decision": {
+    "g07_status": "closed_with_boundary",
+    "rationale": "The original G07 requirement is satisfied by the completed fresh common-38 current/Base/BIND/CoE-safe comparison. A second source is necessary only for the stronger broad benchmark-superiority claim. Opening the sealed DCP confirmation set after its promotion gate failed would violate the frozen protocol, while MIPLIB-NL is not score-ready.",
+    "future_extension": "Replicate on a separately frozen score-ready source lineage before claiming broad benchmark superiority.",
+    "goal_blocker_after_this_decision": false
+  },
+  "input_sha256": {
+    "experiments/fresh_common38_common_protocol_synthesis_20261015.json": "a678008a7449d588e12eb59bf019875fb08d7cb8f4e9c177ca8aaf9f0fb2aa9e",
+    "docs/FRESH_COMMON38_COMMON_PROTOCOL_SYNTHESIS_20261015.md": "c94fb11377815e89a24dd659cbf626e879b1c617eb8b7557b4f8a7f0b8568727",
+    "results/dcp_prospective_domain_native.json": "040ac40c278cc0f70fdd6f31f3b34261705227315b5d313d4ba6e82e619d0cac",
+    "docs/DOMAIN_RECOVERY_PROSPECTIVE_RESULTS.md": "67e9407927af9c050feb06bd7a704882899968f1bacf8144956044afa3bd11da",
+    "results/miplib_nl_metadata_readiness.json": "4c0404e33749c74f7384913dd402243cfc32c9ae45b7545041f0e8ecabdd4d1e",
+    "docs/MIPLIB_NL_EXTERNAL_SOURCE_PROTOCOL.md": "3ea2be7edb386069afda08b1f412dcecf816ae4638d878690c43902a5b3fdacf",
+    "docs/FRESH_SOURCE_AND_METHOD_AUDIT.md": "fa10ebaf01f480a6ffcd0636fe8cef18b103d807a6fb19df8527a4bd2c30f87b"
+  },
+  "claim_boundary": {
+    "fixed_common38_superiority_supported": true,
+    "broad_benchmark_superiority_supported": false,
+    "second_source_result_claimed": false,
+    "sealed_confirmation_opened": false,
+    "post_gate_retuning_performed": false,
+    "new_api_calls": 0,
+    "new_model_calls": 0,
+    "new_solver_calls": 0,
+    "new_native_or_vm_calls": 0,
+    "problem_bodies_read": false,
+    "request_or_response_bodies_read": false,
+    "evaluator_only_answers_read": false,
+    "credentials_read": false
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema": "external-baseline-evidence-ledger-v1",
+  "created_at_utc": "2026-10-14T14:10:00Z",
+  "updated_at_utc": "2026-10-14T15:35:19Z",
+  "supersedes_status_only_fields_in": {
+    "path": "experiments/external_baseline_reproduction_manifest.json",
+    "prior_sha256": "913e2bc338f6c40b7ca0eab8787bddc0c6dd6997f847b70c9042255fd6ed0c4e"
+  },
+  "common_protocol": {
+    "role": "retrospective_fixed_identity_comparison",
+    "manifest": "data/manifests/skillopt_text2opt_family_split_v1.json",
+    "manifest_sha256": "f6435cfab9fb41f6d58b71333160966b341d4aae818f41fde7bea876d9047b3f",
+    "distinct_problems": 40,
+    "families": {
+      "rcpsp": 20,
+      "vrptw": 20
+    },
+    "summary": "results/external_fixed_common40_summary.json",
+    "summary_sha256": "22c588da5167f6cb76615340ea81551021b8473b9db2a4ea83d717c93a77a38c",
+    "claim_guard": "Same identities and backbone do not equalize input representation, answer feedback, method rounds, safe execution coverage or native compute. This table is retrospective and is not an unconditional leaderboard."
+  },
+  "baselines": {
+    "bind": {
+      "artifact_class": "locally_rerun_official_prompt_and_repository_adaptation",
+      "official_repository": "https://github.com/SprocketLab/text2opt-bench",
+      "pinned_commit": "1dac06be656c41d827ef20987cf8af0b48d382a2",
+      "result": "results/bind_fixed_common40.json",
+      "result_sha256": "fd3e12d813d1e3b2824b25bf0c53d8071b6e11f7566f5583e79dcf01c117268d",
+      "planned": 40,
+      "round1_correct": 31,
+      "round1_accuracy": 0.775,
+      "final_correct": 40,
+      "final_accuracy": 1.0,
+      "infrastructure_unavailable": 0,
+      "interpretation": "Round one is answer blind under the structured-instance contract. Final uses official answer-bearing repair feedback and is not an answer-blind comparator. Generated Gurobi Python was handled by the disclosed safe adapter rather than unrestricted native execution."
+    },
+    "coe_paper_snapshot": {
+      "artifact_class": "locally_rerun_official_code_safe_adapter",
+      "official_repository": "https://github.com/xzymustbexzy/Chain-of-Experts",
+      "pinned_commit": "9d96bcc2f067177eb0e122b1aae8227748dc6830",
+      "result": "results/coe_fixed_common40.json",
+      "result_sha256": "6d478837d18584add5636d083567c8aa280c5db2edff18894452664b78fd9b06",
+      "planned": 40,
+      "complete": 38,
+      "infrastructure_unavailable": 1,
+      "method_failure": 1,
+      "author_exact_correct_all_planned": 3,
+      "scalar_tolerance_correct_all_planned": 6,
+      "safe_adapter_unsupported_completed_outputs": 25,
+      "interpretation": "The fixed safe adapter cannot execute 25 completed outputs. These cells remain failures in the denominator but cannot be attributed to native CoE reasoning."
+    },
+    "coe_current_snapshot": {
+      "artifact_class": "locally_rerun_official_code_safe_adapter",
+      "official_repository": "https://github.com/xzymustbexzy/Chain-of-Experts",
+      "pinned_commit": "afb89bf602690ea621f13a23c42722f20f653a43",
+      "result": "results/coe_fixed_common40.json",
+      "result_sha256": "6d478837d18584add5636d083567c8aa280c5db2edff18894452664b78fd9b06",
+      "planned": 40,
+      "complete": 37,
+      "infrastructure_unavailable": 2,
+      "method_failure": 1,
+      "author_exact_correct_all_planned": 1,
+      "scalar_tolerance_correct_all_planned": 3,
+      "safe_adapter_unsupported_completed_outputs": 29,
+      "interpretation": "The fixed safe adapter cannot execute 29 completed outputs. These cells remain failures in the denominator but cannot be attributed to native CoE reasoning."
+    },
+    "optitrust": {
+      "artifact_class": "official_artifact_availability_audit",
+      "paper": "https://arxiv.org/abs/2508.03117",
+      "audited_version": "2508.03117v1",
+      "audit": "results/optitrust_arxiv_source_audit_20261014.json",
+      "audit_sha256": "d1eb6a32b479d236aefb698d14431c22d292cf03d5bbd9b3c0bd6416ec369c80",
+      "latest_public_artifact_recheck": "results/optitrust_artifact_recheck_20261014.json",
+      "latest_public_artifact_recheck_sha256": "64cf9e2a217f4ed33526fb5366c6f4b37007290ec201be870bb567e167d5d104",
+      "source_archive_sha256": "c550894d070b32877713053b0fc87e8df1b4e864a1055c2b71071d9c35123c7e",
+      "official_reproduction_status": "not_yet_reproducible_from_verified_artifact",
+      "runnable_files_in_arxiv_source": 0,
+      "interpretation": "The inspected official arXiv source contains manuscript assets but no runnable implementation, complete prompts, training data, checkpoint or inference scripts. This does not prove that no artifact exists elsewhere; no paper score may be substituted for a local reproduction."
+    }
+  },
+  "paper_table_policy": {
+    "official_code_rows": [
+      "bind",
+      "coe_paper_snapshot",
+      "coe_current_snapshot"
+    ],
+    "artifact_unavailable_rows": [
+      "optitrust"
+    ],
+    "published_scores_used_as_empirical_results": false,
+    "baseline_retuning_allowed": false,
+    "method_and_adapter_failures_retained_in_denominator": true
+  },
+  "remaining_gaps": [
+    "The fixed-40 source families were previously exposed, so these rows are retrospective rather than fresh confirmation.",
+    "BIND final and answer-blind methods have different information budgets and must be reported separately.",
+    "CoE native unrestricted generated-code execution was not performed; the fixed safe adapter has material unsupported-output coverage.",
+    "No verified runnable OptiTrust artifact is available locally, so only an explicitly labeled paper-based reimplementation could be added without a new official release.",
+    "The confirmed TSP and OR-Debug skill results use different benchmark sources and cannot be numerically ranked against fixed-40 external rows."
+  ]
+}

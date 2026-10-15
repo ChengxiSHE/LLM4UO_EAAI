@@ -1,0 +1,135 @@
+{
+  "categories": {
+    "Template/basic_template/disaster_response/small": {
+      "compiled": 50,
+      "programs": 50,
+      "structurally_equivalent": 50
+    },
+    "Template/basic_template/jssp/small": {
+      "compiled": 50,
+      "programs": 50,
+      "structurally_equivalent": 50
+    },
+    "Template/basic_template/jssp/small_prose": {
+      "compiled": 50,
+      "programs": 50,
+      "structurally_equivalent": 50
+    },
+    "Template/basic_template/rcpsp/small": {
+      "compiled": 50,
+      "programs": 50,
+      "structurally_equivalent": 50
+    },
+    "Template/basic_template/transportation/small": {
+      "compiled": 50,
+      "programs": 50,
+      "structurally_equivalent": 50
+    },
+    "Template/basic_template/transportation/small_capped": {
+      "compiled": 30,
+      "programs": 30,
+      "structurally_equivalent": 30
+    },
+    "Template/basic_template/transportation/small_prose": {
+      "compiled": 50,
+      "programs": 50,
+      "structurally_equivalent": 50
+    },
+    "Template/basic_template/vrptw/small": {
+      "compiled": 50,
+      "programs": 50,
+      "structurally_equivalent": 50
+    },
+    "Template/induce_constraint/facility_location/small": {
+      "compiled": 50,
+      "programs": 50,
+      "structurally_equivalent": 50
+    },
+    "Template/induce_constraint/power_transmission/small": {
+      "programs": 50,
+      "rejected": 50
+    },
+    "Template/induce_constraint/queuing_staffing/small": {
+      "compiled": 46,
+      "programs": 50,
+      "rejected": 4,
+      "structurally_equivalent": 46
+    },
+    "Template/industrial/modified_facility_location/small": {
+      "compiled": 50,
+      "programs": 50,
+      "structurally_equivalent": 50
+    },
+    "Template/industrial/multiobjective_transportation/small": {
+      "compiled": 50,
+      "programs": 50,
+      "structurally_equivalent": 50
+    },
+    "Template/industrial/stochastic_transportation/small": {
+      "compiled": 50,
+      "programs": 50,
+      "structurally_equivalent": 50
+    },
+    "Unstructured/resource_allocation/eval": {
+      "compiled": 248,
+      "programs": 248,
+      "structurally_equivalent": 248
+    },
+    "Unstructured/resource_allocation/train": {
+      "compiled": 764,
+      "programs": 764,
+      "structurally_equivalent": 764
+    },
+    "Unstructured/resource_allocation/train_2_11": {
+      "compiled": 429,
+      "programs": 429,
+      "structurally_equivalent": 429
+    }
+  },
+  "interpretation": "Structural equivalence checks domains, effective bounds, objective direction and coefficients, and the multiset of normalized sparse constraints. Opposite-signed equivalent inequalities and truth-equivalent constant rows are canonicalized. Rejected programs remain failures; they are not executed through a fallback Python path.",
+  "mismatches": [],
+  "rates": {
+    "compile_coverage": 0.9745403111739745,
+    "structural_equivalence_given_compiled": 1.0
+  },
+  "rejections": [
+    {
+      "count": 50,
+      "examples": [
+        "synthetic_dataset/Template/induce_constraint/power_transmission/small/pt_001.json",
+        "synthetic_dataset/Template/induce_constraint/power_transmission/small/pt_002.json",
+        "synthetic_dataset/Template/induce_constraint/power_transmission/small/pt_003.json"
+      ],
+      "reason": "RestrictedCodeError: nonlinear expression"
+    },
+    {
+      "count": 4,
+      "examples": [
+        "synthetic_dataset/Template/induce_constraint/queuing_staffing/small/qs_044.json",
+        "synthetic_dataset/Template/induce_constraint/queuing_staffing/small/qs_046.json",
+        "synthetic_dataset/Template/induce_constraint/queuing_staffing/small/qs_049.json"
+      ],
+      "reason": "RestrictedCodeError: variable limit"
+    }
+  ],
+  "safety": {
+    "compiler_sha256": "f3e5efa14f27de79403d842030870e36b59c830f47449ad9efdc3b6c24c31d2a",
+    "network_access": false,
+    "real_file_access": false,
+    "translation": "bounded whitelist AST interpreter to milp-v1",
+    "upstream_python_executed": false
+  },
+  "schema": "restricted-gurobi-official-audit-v1",
+  "scope": "official linear and mixed-integer gold_solution/solution_code programs",
+  "source": {
+    "license": "MIT",
+    "repository": "https://github.com/SprocketLab/text2opt-bench",
+    "revision": "1dac06be656c41d827ef20987cf8af0b48d382a2"
+  },
+  "totals": {
+    "compiled": 2067,
+    "programs": 2121,
+    "rejected": 54,
+    "structurally_equivalent": 2067
+  }
+}

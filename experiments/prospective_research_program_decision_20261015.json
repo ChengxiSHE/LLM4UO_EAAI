@@ -1,0 +1,153 @@
+{
+  "schema": "llm4or-prospective-research-program-decision-v1",
+  "status": "approved_for_staged_implementation",
+  "created_at_local_date": "2026-10-15",
+  "purpose": "Integrate automatic skill acquisition, component attribution and fresh common-protocol comparison without mixing proposal, library-selection, routing-envelope and benchmark-identity units.",
+  "inputs": {
+    "experiments/matched_acquisition_design_audit_20261015.json": "170bb84c8db2c6cde3f7b213ecfcaff338ee135702e0fec0e71df091e981cfe4",
+    "experiments/matched_acquisition_power_analysis_20261015.json": "f2362bab0bdcac78d30339d4e0b03ab32176974b44f5d6c0e3b678ff0d24f82d",
+    "experiments/component_ablation_identifiability_audit_20261015.json": "7c13e7921b38baa89cea5da335131609268bd5dff278c9edd6fe10ba91163bd7",
+    "experiments/component_ablation_power_and_unit_inventory_20261015.json": "0f75cb740d2f2202a4699598f47e26f02ca3c9c37b211a5bcbc8577a208e1a5e",
+    "experiments/fresh_common_protocol_estimand_audit_20261015.json": "f2bedf8c900952ea868360ec659a8ccea8973139aad8a0ee55d72271028de030"
+  },
+  "decision_problem": "Which prospective program can support a causal automatic-acquisition claim, component-level mechanism evidence and a fair external-method comparison without pseudoreplication or post-outcome design?",
+  "alternatives": {
+    "A_staged_multi_unit_program": {
+      "recommended": true,
+      "description": "Use separate prospective stages for proposal-level acquisition, proposal/routing component interventions and benchmark-level common comparison, each with its own denominator and claim.",
+      "advantages": [
+        "Preserves the correct statistical unit for each theoretical component.",
+        "Makes the automatic-construction claim independently falsifiable.",
+        "Allows the 38-record common cohort to provide honest size-generalization and compatibility evidence without overstating power.",
+        "Retains a publishable authored-skill fallback if automatic acquisition fails."
+      ],
+      "costs": [
+        "Requires new prospective proposal and routing-envelope populations.",
+        "Cannot claim an empirical MDL effect unless independent library-selection episodes are created.",
+        "Needs more than the existing 38 benchmark identities for a broad superiority claim."
+      ]
+    },
+    "B_single_38_record_factorial": {
+      "recommended": false,
+      "description": "Run Base, static, full and all component removals on the 38 fresh RCPSP/VRPTW identities and use one table as the entire causal story.",
+      "rejection_reasons": [
+        "Benchmark identities are not independent skill-proposal or library-selection units.",
+        "Known-family records do not contain zero- or multiple-guard opportunities, so routing is not identified.",
+        "The cohort has only 12.09 percent power under the illustrative moderate Holm-planning case.",
+        "The design would create pseudoreplication and unsupported necessity claims."
+      ]
+    },
+    "C_authored_skill_only_submission": {
+      "recommended": false,
+      "description": "Stop the automatic-construction claim and submit the current authored proof-carrying skills, theory and bounded external audit as the final method story.",
+      "advantages": [
+        "Already supported by strong TSP and OR-Debug endpoint gains.",
+        "Avoids overstating the negative automatic proposer trace."
+      ],
+      "costs": [
+        "Leaves the main knowledge-evolution mechanism unvalidated.",
+        "Weakens novelty relative to a top-conference automatic knowledge-engineering claim.",
+        "Does not close the fresh common-protocol comparison."
+      ],
+      "fallback_condition": "Use only if the prospective acquisition study fails or cannot produce a valid independent proposal population."
+    }
+  },
+  "recommended_program": {
+    "name": "A_staged_multi_unit_program",
+    "stage_0_common_freeze": {
+      "objects": [
+        "atomic fact ledger and immutable fact IDs",
+        "typed grammar, semantic oracle and exact resource checker",
+        "model and endpoint identity",
+        "request, token, output and retry ceilings",
+        "custody, randomization, missingness and stop rules",
+        "content-addressed serializer and response parser"
+      ],
+      "rule": "No treatment payload or model request is created before all shared objects are content-addressed."
+    },
+    "stage_1_acquisition_canary": {
+      "unit": "One rejected typed proposal plus its frozen version-space state and parent lineage.",
+      "population": "Eight outcome-independent units; existing model proposal identities remain distinct from deterministically selected synthetic repair seeds, which must be labelled synthetic.",
+      "arms": {
+        "flat": "Canonical sequence of the same atomic fact IDs without partition structure.",
+        "separating_witness": "The same fact IDs plus verifier-derived outcome partitions; no winner, winner hash, minimum repair or endpoint label."
+      },
+      "teacher": "At each round select the eligible witness minimizing the largest remaining verifier-outcome cell, with lexicographic SHA-256 tie breaking.",
+      "matched_budget": "Same model, schema, maximum rounds, output ceiling, retry rule and reserved-token ceiling; interleave paired cells in frozen hash order.",
+      "primary_outcome": "Verifier-valid and resource-valid skill admitted within the common budget.",
+      "secondary_outcomes": [
+        "rounds to admission",
+        "physical requests",
+        "reported and ledger tokens",
+        "version-space contraction",
+        "semantic rejection",
+        "resource rejection",
+        "terminal unavailability"
+      ],
+      "progression_gate": "Engineering-only: at least two net paired treatment wins, zero control-only wins and no global safety failure. This gate is not a significance result."
+    },
+    "stage_2_acquisition_confirmation": {
+      "population": "A new, independently frozen proposal-level population that excludes the eight canary units and their descendant lineages.",
+      "planned_n": 138,
+      "planning_case": "One-sided alpha .05, discordance r=.30 and treatment-win probability q=.70 among discordant pairs gives at least 80 percent exact power.",
+      "analysis": "Full-denominator paired difference, discordant counts, exact one-sided paired test and confidence interval; every unavailable or invalid cell remains in the denominator under the frozen missingness rule.",
+      "claim_if_positive": "Separating-witness organization improves automatic acquisition under the frozen grammar, verifier, model and budget.",
+      "claim_if_negative": "The automatic acquisition hypothesis is rejected or remains unsupported; retain the result and use the authored-skill fallback story."
+    },
+    "stage_3_component_program": {
+      "semantic_and_resource": "Use one prospective content-addressed candidate pool with paired offline outcomes. Remove only the method-level semantic or predictive resource gate; immutable outer parser, compiler and hard safety caps remain.",
+      "routing": "Use a separate answer-free envelope population with prespecified zero, unique and multiple matches plus paraphrase, schema-shift and new-family cases. Compare exactly-one fallback with a frozen forced or relaxed policy.",
+      "complexity": "Estimate an empirical effect only if independent common-pool library-selection episodes can be generated. Otherwise retain MDL/prefix-code control as a theoretical design principle and do not claim causal necessity.",
+      "multiplicity": "Use Holm familywise alpha .05 across confirmatory component contrasts. Under the illustrative r=.30,q=.70 four-contrast planning case, target at least 205 valid units for 80 percent power or label the analysis exploratory.",
+      "safety": "Unsafe candidates are scored only by isolated offline evaluators and can never be promoted or execute without immutable caps."
+    },
+    "stage_4_fresh_common_protocol": {
+      "cohort": "The 38 outcome-blind larger RCPSP/VRPTW identities already bound by the estimand audit.",
+      "primary_view": "Answer-blind common evidence with AntChat DeepSeek-V4-Flash and method-native budgets.",
+      "rows": [
+        "Base",
+        "strongest matched static knowledge",
+        "full current method",
+        "claim-critical safe ablations",
+        "BIND first round",
+        "CoE safe-adapter"
+      ],
+      "separate_views": [
+        "equal-budget sensitivity",
+        "author-native reproduction",
+        "BIND answer-bearing final outside the primary table"
+      ],
+      "interpretation": "Size-generalization, compatibility and mechanism confirmation; not a broad superiority leaderboard unless a larger independent cohort or source-lineage replication is added."
+    }
+  },
+  "paper_claim_ladder": [
+    "Authored proof-carrying skills improve formulation accuracy on two frozen benchmark sources.",
+    "A positive Stage 2 would add a causal claim that separating-witness organization improves automatic typed-skill acquisition under a fixed budget.",
+    "Positive component studies would support only the components with valid units and Holm-controlled outcomes; untested MDL remains a design principle.",
+    "Stage 4 adds prospective common-protocol breadth and external-method compatibility, with its N=38 power boundary disclosed.",
+    "No stage proves universal language understanding, unrestricted RSI or distribution-free non-regression."
+  ],
+  "implementation_gate": {
+    "design_review_required": false,
+    "approved_program": "A_staged_multi_unit_program",
+    "approved_at_local_date": "2026-10-15",
+    "approval_statement": "批准方案A作为G07–G09前瞻实验的整体架构。",
+    "staging_rule": "Implement and freeze each stage separately; API, solver and native execution remain bounded by that stage's content-addressed plan, safety caps and terminal accounting.",
+    "still_prohibited": [
+      "unbounded request or cost increases",
+      "evaluator-only answers in model inputs",
+      "unsafe candidate execution outside immutable parser, compiler and resource caps",
+      "outcome-driven cohort replacement or favorable reruns"
+    ]
+  },
+  "execution": {
+    "model_calls": 0,
+    "api_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "request_or_response_bodies_read": false,
+    "evaluator_only_answers_read": false,
+    "credentials_read": false
+  }
+}

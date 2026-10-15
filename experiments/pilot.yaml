@@ -1,0 +1,68 @@
+# Revised from the implemented five-call graph, not the old two-method estimate.
+# User approved this scope on 2026-08-31; one durable run directory is mandatory.
+status: completed_46_requests_authorization_closed
+goal: validate_provider_schema_teacher_and_repair_pipeline_not_claim_superiority
+model:
+  framework_id: openai/DeepSeek-V4-Pro-0813
+  provider_model_id: DeepSeek-V4-Pro-0813
+  base_url: https://antchat.alipay.com/v1
+  credentials: runtime_only_from_authorized_private_profile
+  temperature: 0
+data:
+  source: nl4opt_original_development
+  manifest: data/pilot/manifest.json
+  public_input: data/pilot/public/problems.jsonl
+  evaluator_only_directory: data/pilot/evaluator
+  problem_count: 10
+  selection: manual_bounded_continuous_LP_eligibility_before_any_model_outcomes
+  selected_source_lines: [6, 7, 11, 12, 14, 18, 21, 34, 37, 51]
+  reference_review: assistant_transcribed_two_numerical_methods_not_expert_certified
+  must_exclude_from_final_test: true
+  cross_source_family_split_locked: false
+methods:
+  - solver_feedback_repair
+  - semantic_teacher_scoped_repair
+call_graph:
+  shared_initial_per_problem: 1
+  baseline_repair_per_problem: 1
+  independent_teacher_model_per_problem: 1
+  teacher_feedback_per_problem: 1
+  semantic_repair_per_problem: 1
+  ordinary_requests_total_max: 50
+  retry_reserve_total_max: 10
+  retry_policy: no_automatic_retry_explicit_new_key_at_most_one_extra_per_problem
+limits:
+  max_model_requests_total_including_retries: 60
+  max_requests_per_problem_all_phases_including_retries: 6
+  max_request_utf8_bytes: 24000
+  max_response_utf8_bytes: 24000
+  max_completion_tokens_per_request: 2048
+  max_completion_tokens_all_requests_arithmetic_ceiling: 122880
+  max_concurrent_requests: 1
+  max_request_seconds: 90
+  max_solver_seconds_per_lp: 20
+  max_solver_wall_seconds_per_operation: 40
+  max_wall_seconds: 7200
+  monetary_cap: null
+  monetary_cap_reason: pricing_and_provider_token_enforcement_not_verified
+execution:
+  api_enabled: false
+  requires_user_approval: true
+  authorization_record: experiments/pilot_authorization.json
+  run_directory: results/private/pilot_s1_20260831
+  live_transport_implemented: true
+  offline_gateway_verified: true
+  real_transport_limits_must_be_verified_before_batch: true
+  representation: lp_v1_no_arbitrary_generated_python
+  solver: highs_via_scipy
+  freeze_cross_problem_memory: true
+  gold_labels_available_to_agent: false
+  scoring: post_inference_only_objective_proxy_and_separate_semantic_audit
+  equal_token_comparison: false
+  note: first_real_connection_check_must_count_toward_the_60_request_cap
+outputs:
+  - per_problem_models_evidence_packets_gate_acceptance_and_rollback
+  - durable_request_reservations_failures_usage_and_resume_log
+  - separate_evaluator_artifacts_no_gold_in_requests
+  - schema_failures_unknowns_and_reference_mapping_review
+  - go_no_go_report_before_any_evolution_or_larger_run

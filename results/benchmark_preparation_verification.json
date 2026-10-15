@@ -1,0 +1,37 @@
+{
+  "status": "offline_preparation_verified_not_benchmark_performance",
+  "verified_at_utc": "2026-08-31T07:48:02.921800+00:00",
+  "tests_passed": 128,
+  "test_wall_seconds": 7.114,
+  "test_command": "/Users/chengxi-nju/miniforge3/envs/ark-base/bin/python -m unittest discover -s tests -v",
+  "new_input_tests": 13,
+  "verified_source_files": 142,
+  "complexor_files_read_only": true,
+  "source_problems_before_split": 1356,
+  "input_exports_deterministic_on_repeat": true,
+  "unchanged_private_archive_files": 92,
+  "prior_authorizations": {
+    "pilot_authorization.json": "completed",
+    "probe_s2_authorization.json": "completed"
+  },
+  "actual_model_api_calls": 0,
+  "source_code_executed": false,
+  "full_benchmark_run_completed": false,
+  "code_and_manifest_sha256": {
+    "llm4or/benchmark_inputs.py": "4400d140532368a2bf015d98095ab0af9b34918d7af052121080e455b43f4528",
+    "scripts/fetch_complexor.py": "3d8692e8d1437f02b512629d080a9fc5eaccfa6e8d65c2cfc0a4af9614a9dc90",
+    "scripts/prepare_benchmark_inputs.py": "0e69e64ff277b4a2e69280c2ac070196bdf14dd25931dcc94fd8f2639afd1349",
+    "scripts/audit_benchmark_inventory.py": "0ce9dc96ce65e16e6dd9e4b40f37ede8b92ebab5b62f488b2e045ba1dd9eb538",
+    "tests/test_benchmark_inputs.py": "d16fbd7bea8a30294c3706a930b38d722a84d21e6433dc06c067ed6aafa5aae0",
+    "experiments/benchmark_plan.json": "881a3bc6411253d666ce0d7dce28866d2b861e9c3f1a6667e2f08c5fb192e07d",
+    "data/manifests/complexor_sources.json": "578ee984ad11ec7209cc1d1ffc09b9db0983e70921cd6a93bfeaef146f97494f",
+    "data/manifests/benchmark_input_audit.json": "b53b392f4591b5d68a0d4448d261e9068ef180edaf10cc33d59219728e41326a"
+  },
+  "remaining": [
+    "ComplexOR parameter conflicts and independent reference audit",
+    "Integer/MILP and nonlinear solver/evaluation coverage",
+    "Family/exposure isolation",
+    "Full DSL workflow evolution and controls",
+    "New paid scope authorization before any model calls"
+  ]
+}

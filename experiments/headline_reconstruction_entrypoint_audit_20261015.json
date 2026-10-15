@@ -1,0 +1,288 @@
+{
+  "schema": "llm4or-headline-reconstruction-entrypoint-audit-v1",
+  "audited_at_local_date": "2026-10-15",
+  "status": "not_ready_for_credential_free_clean_clone_reconstruction",
+  "purpose": "Distinguish local artifact verification, local result reconstruction, external-inference replay and public clean-clone reproducibility for every headline evidence group without rerunning experiments.",
+  "repository": {
+    "branch": "codex/typed-count-cegis-revision-20261014",
+    "head": "22927e96fcced15de3cc5af5cd220febdb8942cc",
+    "paper_manifest": "experiments/paper_evidence_manifest_20261015.json",
+    "paper_manifest_sha256": "a00649690e03eadcf1072d80c9131f19f1a5746772fae278ec2378692c582901",
+    "headline_groups": 16
+  },
+  "reconstruction_levels": {
+    "L0_integrity_only": "Verify hashes, schemas, arithmetic or contracts from existing artifacts; does not regenerate benchmark outputs.",
+    "L1_local_deterministic_rebuild": "Regenerate an artifact from frozen local inputs without model/API calls; may require source data or a local solver.",
+    "L2_external_inference_replay": "Regenerate model outputs under the frozen provider, official-method adaptation and request budget.",
+    "L3_public_clean_clone": "Rebuild the claimed artifact from a licensed rights-safe recursive clone without private paths, local caches or credentials for the offline portion."
+  },
+  "summary": {
+    "headline_groups": 16,
+    "exact_headline_schema_producer_found": 5,
+    "exact_headline_schema_producer_missing": 11,
+    "inspected_key_experiment_scripts": 13,
+    "inspected_key_experiment_scripts_git_tracked": 3,
+    "inspected_key_experiment_scripts_git_untracked": 10,
+    "single_top_level_reproduction_entrypoint_present": false,
+    "complete_provider_solver_native_environment_lock_present": false,
+    "credential_free_recursive_clean_clone_rebuild_record_present": false,
+    "public_clean_clone_reconstruction_supported": false
+  },
+  "tracked_environment": {
+    "offline_requirements": {
+      "path": "requirements-offline.txt",
+      "sha256": "6f359bfd71ebac9196dfb0c868f8279a4b3994c3f9b918372775feef41e030d3",
+      "git_tracked": true,
+      "scope": "Python 3.11 offline evidence packages only"
+    },
+    "gitmodules": {
+      "path": ".gitmodules",
+      "sha256": "aae8291a5d8aa8a3c98a38b5a38ae543a116319aab067daed68d83c8030b1d45",
+      "git_tracked": true,
+      "solver_in_the_loop_commit": "c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010",
+      "local_observation": "git submodule status used a '-' prefix, while a local checkout and dataset at the pinned commit were readable; this does not establish recursive-clean-clone initialization."
+    },
+    "local_tools_observed": {
+      "gurobi_cli": "/usr/local/bin/gurobi_cl",
+      "gurobipy": "absent",
+      "pytest": "absent"
+    }
+  },
+  "key_script_inventory": [
+    {"path": "scripts/prepare_tsp_constraint_confirmation.py", "sha256": "0e1fcdc7d319a0fcfdc48eee6a5c3a043592d19147d6b0c915cb94aa1cb4b83e", "git_tracked": false},
+    {"path": "scripts/run_tsp_constraint_confirmation.py", "sha256": "ed977e5ca6c01ae4e95316c5ee02feffddbe2e322b15a5b5e5d274b799e33e75", "git_tracked": false},
+    {"path": "scripts/evaluate_tsp_constraint_confirmation.py", "sha256": "304445d047e119f0d1b64521975430efd963caf89c548a24ee243a06a769c1b0", "git_tracked": false},
+    {"path": "scripts/run_or_debug_confirmation_methods.py", "sha256": "3ecc7f014deba013a9d8305777b517873492205bbb81b96ed551470beab3f4e9", "git_tracked": false},
+    {"path": "scripts/evaluate_or_debug_confirmation.py", "sha256": "b7ae44c3d3367e5401ab3aee052de1b7ab9c9a0e4529d8429e0d59c122badd74", "git_tracked": false},
+    {"path": "scripts/prepare_mixed_skill_confirmation_bundle.py", "sha256": "7a934eb71c6f391e16077d2cb3031aa41ba8e73fba55f0a65b2cb6a3659d0b47", "git_tracked": true},
+    {"path": "scripts/run_mixed_skill_confirmation.py", "sha256": "6ef3307eb858407d932915bfef3083ef4f4315fe392c9defba496cc01988b176", "git_tracked": true},
+    {"path": "scripts/audit_mixed_skill_confirmation.py", "sha256": "7df56867a43476fe54b09b5d1dc5e9c97dd2ef8777b9fa73b79aaa0d76231954", "git_tracked": true},
+    {"path": "scripts/evaluate_bind_common40_union.py", "sha256": "4030011751843354d2d8eb0756cdddbb029046e5f079f56c66400ee9f1740c14", "git_tracked": false},
+    {"path": "scripts/evaluate_coe_common40_union.py", "sha256": "8e86aa778069ec56de4172279b5cb8d0789f5c3594a3324878ef2caac5d04ab6", "git_tracked": false},
+    {"path": "scripts/summarize_external_common40.py", "sha256": "86208c6d9452890e5e5ef354576665f65a36b20ba665c330712c62046789e4aa", "git_tracked": false},
+    {"path": "scripts/audit_typed_count_cegis_revision.py", "sha256": "9b4313b4c3e62b39e7e70769db990e34eaf6458292b5f27c339291085f19235f", "git_tracked": false},
+    {"path": "scripts/certify_typed_count_repair.py", "sha256": "4e8669276c9d5354e71651f5336c88ed33d0b8226318f86ebaf34135860c1068", "git_tracked": false}
+  ],
+  "headline_entrypoints": [
+    {
+      "group": "tsp_confirmation",
+      "headline_artifact": "results/tsp_constraint_confirmation_root_closure_20261014.json",
+      "highest_supported_level_now": "L1_local_deterministic_rebuild_partial",
+      "commands": [
+        "python3 scripts/prepare_tsp_constraint_confirmation.py --dry-run",
+        "python3 scripts/prepare_tsp_constraint_confirmation.py",
+        "python3 scripts/run_tsp_constraint_confirmation.py",
+        "python3 scripts/evaluate_tsp_constraint_confirmation.py"
+      ],
+      "requirements": ["rights-cleared pinned OPT-Engine raw source", "Gurobi command-line installation and license", "all frozen plans and code pins", "outputs absent because launchers refuse overwrite"],
+      "exact_headline_schema_producer_found": false,
+      "boundary": "The candidate and evaluation chain exists locally, but no script producing the root-closure schema was found; all three displayed chain scripts are untracked and the source/public projections are not release-ready."
+    },
+    {
+      "group": "or_debug_confirmation",
+      "headline_artifact": "results/or_debug_confirmation_evaluation_20261014.json",
+      "highest_supported_level_now": "L1_local_solver_rebuild_partial",
+      "commands": ["python3 scripts/run_or_debug_confirmation_methods.py", "python3 scripts/evaluate_or_debug_confirmation.py"],
+      "requirements": ["pinned solver-in-the-loop dataset", "Gurobi 13.0.1 command-line installation and license", "frozen split and plans", "outputs absent"],
+      "exact_headline_schema_producer_found": true,
+      "boundary": "Both scripts are untracked; the locally readable pinned upstream checkout does not prove recursive clean-clone availability."
+    },
+    {
+      "group": "or_debug_group_endpoint_sensitivity",
+      "headline_artifact": "results/or_debug_group_endpoint_sensitivity_audit_20261015.json",
+      "highest_supported_level_now": "L0_integrity_only",
+      "commands": [],
+      "requirements": ["a scripted aggregate-only producer from rights-safe OR-Debug projections"],
+      "exact_headline_schema_producer_found": false,
+      "boundary": "No schema-producing script or test was found."
+    },
+    {
+      "group": "mixed_public_router",
+      "headline_artifact": "results/mixed_skill_confirmation_audit_v2_20261014.json",
+      "highest_supported_level_now": "L1_local_rebuild_partial",
+      "commands": ["python3 scripts/prepare_mixed_skill_confirmation_bundle.py", "python3 scripts/run_mixed_skill_confirmation.py", "python3 scripts/audit_mixed_skill_confirmation.py"],
+      "requirements": ["TSP and OR-Debug direct-family inputs", "rights-safe replacements for body-bearing bundle/output artifacts", "outputs absent"],
+      "exact_headline_schema_producer_found": true,
+      "boundary": "The three scripts are tracked, but their direct inputs and current body-bearing outputs are not a complete rights-safe clean-clone chain."
+    },
+    {
+      "group": "external_fixed_common40",
+      "headline_artifact": "results/external_fixed_common40_summary.json",
+      "highest_supported_level_now": "L0_integrity_and_local_aggregation",
+      "commands": ["python3 scripts/summarize_external_common40.py --check-readiness", "python3 scripts/evaluate_bind_common40_union.py", "python3 scripts/evaluate_coe_common40_union.py", "python3 scripts/summarize_external_common40.py"],
+      "requirements": ["all frozen run records and plans", "official-code adapters", "provider replay only for L2", "safe execution backend and solver"],
+      "exact_headline_schema_producer_found": true,
+      "boundary": "Aggregation does not reproduce inference; all three displayed aggregation/evaluation scripts are untracked, and provider/official-code dependencies are not fully locked."
+    },
+    {
+      "group": "optitrust_artifact_availability",
+      "headline_artifact": "results/optitrust_artifact_recheck_20261014.json",
+      "highest_supported_level_now": "L0_external_audit_record_only",
+      "commands": [],
+      "requirements": ["dated official-channel search protocol", "retrievable official source package", "scripted membership/static-source inspection"],
+      "exact_headline_schema_producer_found": false,
+      "boundary": "The result is a dated bounded availability audit; no replayable producer was found and future public state can change."
+    },
+    {
+      "group": "typed_count_automatic_proposer",
+      "headline_artifact": "results/dcp_typed_count_cegis_revision_20261014_audit.json",
+      "highest_supported_level_now": "L0_terminal_reaudit",
+      "commands": ["python3 scripts/audit_typed_count_cegis_revision.py"],
+      "requirements": ["historical plan, payload, terminal record and private candidate/proposal", "outputs absent"],
+      "exact_headline_schema_producer_found": true,
+      "boundary": "The offline audit can reconstruct the stored terminal outcome but cannot reproduce the original model request without the frozen provider path; the audit script and required historical materials are untracked/private."
+    },
+    {
+      "group": "typed_count_exact_repair",
+      "headline_artifact": "results/dcp_typed_count_repair_certificate_v3_20261014.json",
+      "highest_supported_level_now": "L1_local_deterministic_rebuild",
+      "commands": ["python3 scripts/certify_typed_count_repair.py"],
+      "requirements": ["answer-free repair input", "public binding preview", "exact pinned verifier closure", "output absent"],
+      "exact_headline_schema_producer_found": true,
+      "boundary": "The deterministic certificate is reconstructable from local inputs, but the launcher and inputs are untracked, so L3 is unsupported."
+    },
+    {
+      "group": "manuscript_figure2_source_data",
+      "headline_artifact": "results/manuscript_figure2_source_data_audit_20261015.json",
+      "highest_supported_level_now": "L0_integrity_only",
+      "commands": [],
+      "requirements": ["scripted derivation of all source-data rows from safe aggregate evidence"],
+      "exact_headline_schema_producer_found": false,
+      "boundary": "The source-data routes are documented, but no schema-producing audit script was found."
+    },
+    {
+      "group": "proposal_provenance_inventory",
+      "headline_artifact": "experiments/proposal_provenance_inventory_20261015.json",
+      "highest_supported_level_now": "L0_record_only",
+      "commands": [],
+      "requirements": ["scripted metadata-only inventory from frozen lineage inputs"],
+      "exact_headline_schema_producer_found": false,
+      "boundary": "No schema-producing script was found."
+    },
+    {
+      "group": "matched_acquisition_power",
+      "headline_artifact": "experiments/matched_acquisition_power_analysis_20261015.json",
+      "highest_supported_level_now": "L0_record_only",
+      "commands": [],
+      "requirements": ["scripted exact conditional-power calculation with frozen scenarios"],
+      "exact_headline_schema_producer_found": false,
+      "boundary": "The numerical analysis is inspectable but not bound to an executable producer."
+    },
+    {
+      "group": "fresh_common_protocol_estimand",
+      "headline_artifact": "experiments/fresh_common_protocol_estimand_audit_20261015.json",
+      "highest_supported_level_now": "L0_record_only",
+      "commands": [],
+      "requirements": ["scripted metadata projection and endpoint/transport feasibility audit"],
+      "exact_headline_schema_producer_found": false,
+      "boundary": "No schema-producing script was found; the artifact is a design audit, not an experiment."
+    },
+    {
+      "group": "component_ablation_identifiability",
+      "headline_artifact": "experiments/component_ablation_identifiability_audit_20261015.json",
+      "highest_supported_level_now": "L0_record_only",
+      "commands": [],
+      "requirements": ["scripted theory-to-intervention and exact-power audit"],
+      "exact_headline_schema_producer_found": false,
+      "boundary": "No schema-producing script was found; no component effect has been estimated."
+    },
+    {
+      "group": "component_ablation_power_and_units",
+      "headline_artifact": "experiments/component_ablation_power_and_unit_inventory_20261015.json",
+      "highest_supported_level_now": "L0_record_only",
+      "commands": [],
+      "requirements": ["scripted unit inventory and exact-power calculation"],
+      "exact_headline_schema_producer_found": false,
+      "boundary": "No schema-producing script was found."
+    },
+    {
+      "group": "release_readiness_delta",
+      "headline_artifact": "experiments/release_readiness_delta_v2_20261015.json",
+      "highest_supported_level_now": "L0_record_only",
+      "commands": [],
+      "requirements": ["scripted manifest/Git/content/environment audit runnable in a clean clone"],
+      "exact_headline_schema_producer_found": false,
+      "boundary": "No schema-producing script was found; the result describes the current local tree only."
+    },
+    {
+      "group": "targeted_offline_verification",
+      "headline_artifact": "results/paper_evidence_offline_verification_20261014.json",
+      "highest_supported_level_now": "L0_command_recorded_but_not_clean_clone",
+      "commands": ["PYTHONPATH=scripts:. python3 -m unittest -v tests.test_evaluate_tsp_constraint_confirmation tests.test_or_debug_confirmation_inference tests.test_mixed_skill_router tests.test_mixed_skill_execution tests.test_audit_mixed_skill_confirmation tests.test_prepare_mixed_skill_confirmation_bundle tests.test_typed_count_repair_certificate tests.test_certify_typed_count_repair"],
+      "requirements": ["nine frozen test/source identities", "equivalent external-common40 assertion harness or pytest"],
+      "exact_headline_schema_producer_found": false,
+      "boundary": "The exact test command is recorded, but only the four mixed-router test modules among the listed test modules are tracked; the JSON report itself has no producer."
+    }
+  ],
+  "command_layers": [
+    {
+      "layer": "A_offline_integrity",
+      "purpose": "Hash, schema, contract, arithmetic and deterministic certificate checks",
+      "may_claim": "Existing evidence is internally bound under the audited source identities.",
+      "may_not_claim": "Headline benchmark inference was rerun."
+    },
+    {
+      "layer": "B_local_solver_reconstruction",
+      "purpose": "Regenerate TSP, OR-Debug and mixed-family outputs from rights-cleared public inputs with the pinned solver/backend",
+      "may_claim": "Local benchmark outputs were reconstructed if every pinned dependency and endpoint passes.",
+      "may_not_claim": "A public clean clone works unless the same process succeeds there."
+    },
+    {
+      "layer": "C_external_inference_replay",
+      "purpose": "Regenerate Base/BIND/CoE/current-method outputs under frozen provider and official-code adaptations",
+      "may_claim": "A dated provider-backed rerun under the disclosed protocol.",
+      "may_not_claim": "Credential-free reproduction or protocol equality across methods."
+    },
+    {
+      "layer": "D_release_reconstruction",
+      "purpose": "Execute layers A and B from a licensed rights-safe recursive clone, and document how authorized users execute layer C",
+      "may_claim": "Public offline reproducibility only after the clone test succeeds.",
+      "may_not_claim": "Full API replay without user-provided credentials or licensed solver access."
+    }
+  ],
+  "blocking_gaps": [
+    "Ten of thirteen key experiment scripts are absent from Git tracking, including all inspected TSP, OR-Debug, external-summary and count-certificate entrypoints.",
+    "Eleven of sixteen headline groups lack a producer for the exact headline schema; several are manually assembled metadata or arithmetic audits.",
+    "No single top-level command defines dependency checks, immutable output locations, layer selection and expected hashes for the paper.",
+    "Rights-sensitive TSP text and OR-Debug repair objects require safe reconstruction projections before release.",
+    "The tracked offline requirements do not lock the provider transport, Gurobi/native execution environment or every upstream dependency.",
+    "The local upstream checkout and solver availability do not substitute for a credential-free recursive clean-clone run.",
+    "The external methods require dated provider access and, for CoE/BIND, disclosed official-code adapters; aggregation of stored results is not inference reproduction."
+  ],
+  "required_next_actions": [
+    "Define a reviewed release allowlist for every producer, test and minimal dependency needed by the 16 headline groups.",
+    "Add deterministic producers for the TSP root closure, OR-Debug group sensitivity, Figure 2 source-data audit, provenance/power/design audits and release audit, or relabel those artifacts as non-reconstructive records.",
+    "Specify one layered paper-reconstruction command contract with dry-run/readiness mode, immutable outputs and expected hashes; implementation remains subject to the repository's architecture-design gate.",
+    "Replace restricted body-bearing artifacts with claim-complete safe projections and bind reconstruction to pinned upstream revisions.",
+    "Lock the complete offline, solver and official-adapter environment while keeping API credentials outside the repository.",
+    "Run the final command map from a fresh recursive clone and record independent expected-versus-observed hashes before claiming reproducibility."
+  ],
+  "decision": {
+    "local_evidence_integrity_supported": true,
+    "some_local_reconstruction_paths_exist": true,
+    "headline_reconstruction_map_complete": true,
+    "public_clean_clone_reconstruction_supported": false,
+    "safe_to_claim_clean_clone_reproducibility": false,
+    "safe_to_stage_or_release_from_this_audit": false,
+    "permitted_claim": "The current workspace contains identifiable local reconstruction paths for several core results, but the public repository lacks most of their producers and has no end-to-end clean-clone command contract.",
+    "prohibited_claims": [
+      "Every headline result can be regenerated from the current GitHub repository.",
+      "The targeted offline test record is a rerun of headline benchmark inference.",
+      "Stored BIND/CoE aggregation reproduces their model inference.",
+      "The local solver and upstream checkout prove clean-clone readiness."
+    ]
+  },
+  "execution": {
+    "files_modified_before_report": 0,
+    "network_calls": 0,
+    "model_or_api_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "request_or_response_bodies_read": false,
+    "evaluator_only_answers_read": false,
+    "credentials_read": false,
+    "git_index_modified": false,
+    "git_history_modified": false
+  }
+}

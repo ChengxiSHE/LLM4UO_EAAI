@@ -1,0 +1,79 @@
+{
+  "audited_at_local_date": "2026-10-15",
+  "claim_boundary": {
+    "not_proved": [
+      "The main repository is publicly available from a remote.",
+      "The repository or submodule has author-approved redistribution rights.",
+      "Provider, solver/native, or figure layers were reexecuted by this run.",
+      "The historical publishers are concurrency-safe."
+    ],
+    "proved": "The pinned solver-in-the-loop submodule can be acquired from its declared GitHub remote with Git HTTPS HTTP/1.1, has a complete reachable object graph, and supports the credential-free Layer-A reconstruction at the bound main source commit."
+  },
+  "layer_a": {
+    "commands": [
+      {
+        "name": "unit_tests",
+        "returncode": 0
+      },
+      {
+        "name": "build_current_library_manifests_check",
+        "returncode": 0
+      },
+      {
+        "name": "audit_current_library_reconstruction_check",
+        "returncode": 0
+      },
+      {
+        "name": "reconstruct_release_evidence_check",
+        "returncode": 0
+      }
+    ],
+    "current_library_reconstruction_sha256": "af920f71608a46ce25fd5e8a54e88d1fe1f5ca351988b52546a83e1a3fbc6ce9",
+    "release_evidence_sha256": "01a41381ae1f6a23df2b0695c6a0fb518efae537bde1d8248a51bc9dac59400f",
+    "status": "passed_credential_free_layer_a",
+    "test_modules": [
+      "tests.test_content_addressed_manifests",
+      "tests.test_current_library_manifests",
+      "tests.test_current_library_reconstruction",
+      "tests.test_release_evidence_reconstruction",
+      "tests.test_clean_clone_layer_a",
+      "tests.test_verified_skill_library",
+      "tests.test_audit_mixed_skill_confirmation",
+      "tests.test_mixed_skill_execution"
+    ],
+    "tests": 53
+  },
+  "prior_failure_resolution": "The default transport previously failed with an HTTP/2 framing error and a retry timeout. Forcing Git HTTP/1.1 succeeded; no repository-global configuration was changed.",
+  "remote_submodule": {
+    "checked_out_commit": "c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010",
+    "fsck_full_passed": true,
+    "git_transport": "HTTPS forced to HTTP/1.1 for this run",
+    "ls_remote_elapsed_seconds": 1.778,
+    "ls_remote_head": "c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010",
+    "missing_reachable_objects": 0,
+    "recursive_update_elapsed_seconds": 18.31,
+    "remote_acquisition_verified": true,
+    "url": "https://github.com/agentic-or-benchmark/solver-in-the-loop.git"
+  },
+  "safety": {
+    "api_or_model_calls": 0,
+    "credentials_read": false,
+    "environment_values_inherited": false,
+    "evaluator_only_answers_read": false,
+    "native_evaluator_calls": 0,
+    "public_push": false,
+    "repository_configuration_modified": false,
+    "request_or_response_bodies_read": false,
+    "solver_calls": 0,
+    "vm_calls": 0
+  },
+  "schema": "llm4or-remote-recursive-layer-a-http1-audit-v1",
+  "source": {
+    "branch": "codex/typed-count-cegis-revision-20261014",
+    "commit": "2002b29851b2ab118001251566b21d76ac339474",
+    "main_repository_mode": "no-local clone from bound local source commit",
+    "tree": "5a13d45068fc6015aba0abf41bd1d53f4eb7ffc6",
+    "working_tree_clean_after": true
+  },
+  "status": "passed_remote_submodule_recursive_credential_free_layer_a_http1"
+}

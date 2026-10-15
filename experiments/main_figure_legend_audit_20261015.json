@@ -1,0 +1,86 @@
+{
+  "schema": "llm4or-main-figure-legend-audit-v1",
+  "status": "passed_backend_independent_final_render_review_pending",
+  "created_at_local_date": "2026-10-15",
+  "purpose": "Bind the main-figure legends to the frozen method and endpoint preflights and check self-containment, panel coverage, statistics, claim boundaries and length before rendering.",
+  "inputs": {
+    "manuscript/MAIN_FIGURE_LEGENDS_DRAFT.md": "4aa8d6e5b89594816cdb14e4bbfabffc72c4d89160b3af2130e78848047b72f5",
+    "manuscript/FIGURE_PLAN.md": "c19257e211ef4bdfd817249ada7f11713e7561efd41e72c5b99edf4e3f4edf78",
+    "experiments/figure1_method_schematic_preflight_20261015.json": "07241912dc26721c94ee76d360af06389de91a7ae76d84b64b59e9437183e351",
+    "experiments/figure2_backend_independent_preflight_20261015.json": "47dc1e1dabfa024bc6b908e2b892356c3067b028993062f1f94d1153c1ebaad3"
+  },
+  "legends": {
+    "figure_1": {
+      "word_count": 216,
+      "panels_present_once": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "present_tense_visual_description": true,
+      "defines_skill_and_library": true,
+      "identifies_untrusted_proposer": true,
+      "distinguishes_verification_from_empirical_utility": true,
+      "states_conditional_witness_bound": true,
+      "states_prospective_candidate_risk_budget": true,
+      "states_fixed_target_boundary_for_cumulative_regression": true,
+      "states_language_and_rsi_boundaries": true,
+      "states_current_manifest_implementation_boundary": true,
+      "source_data_boilerplate_required": false,
+      "reason": "Conceptual method schematic with no plotted benchmark observation."
+    },
+    "figure_2": {
+      "word_count": 196,
+      "panels_present_once": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "sample_sizes_present": true,
+      "paired_corrections_and_regressions_present": true,
+      "dependence_units_present": true,
+      "test_and_exact_p_value_present": true,
+      "endpoint_nonpooling_present": true,
+      "router_accuracy_not_rescored_boundary_present": true,
+      "zero_regression_boundary_present": true,
+      "source_data_boilerplate_present": true
+    }
+  },
+  "shared_checks": {
+    "title_format_fig_number_pipe_noun_phrase": true,
+    "all_panel_descriptions_present": true,
+    "each_legend_below_250_words": true,
+    "canonical_labels_preserved": [
+      "TSP",
+      "OR-Debug"
+    ],
+    "no_unexplained_significance_stars": true,
+    "no_claim_of_universal_semantic_correctness": true,
+    "no_claim_of_automatic_skill_discovery": true,
+    "no_claim_of_distribution_free_non_regression": true
+  },
+  "remaining_render_checks": [
+    "Match every panel letter, display label, colour and symbol to the final rendered figure.",
+    "Confirm that the final target venue has no stricter legend rule than the current under-250-word contract.",
+    "Recount legends after any rendered-label or panel-order revision.",
+    "Verify final figure and Source Data filenames after export."
+  ],
+  "decision": {
+    "legends_ready_for_rendering": true,
+    "submission_final": false,
+    "remaining_blocker": "Final visual labels and target-venue instructions cannot be checked until the figures are rendered and the venue is fixed."
+  },
+  "execution": {
+    "model_calls": 0,
+    "api_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "plotting_calls": 0,
+    "request_or_response_bodies_read": false,
+    "evaluator_only_answers_read": false,
+    "credentials_read": false
+  }
+}

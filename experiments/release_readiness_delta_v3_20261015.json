@@ -1,0 +1,120 @@
+{
+  "schema": "llm4or-release-readiness-delta-v3",
+  "audited_at_local_date": "2026-10-15",
+  "status": "not_ready_no_release_surface_change",
+  "purpose": "Rebind release readiness after the manuscript adds the distributed-versus-canonical artifact boundary and prospective complexity-weighted promotion guarantees, while proving that the 46-path release surface and Git-tracking counts did not change.",
+  "inputs": [
+    {
+      "path": "experiments/release_readiness_delta_v2_20261015.json",
+      "sha256": "5bbee3ca8cf8169a2b85aa75526445ea503ac57c46a846adf310d6a2355e8106"
+    },
+    {
+      "path": "docs/RELEASE_READINESS_DELTA_V2_20261015.md",
+      "sha256": "b4932c2dc6415799d4f16e735aa3934770f25ed902d728564203978ca5e4db4b"
+    },
+    {
+      "path": "experiments/paper_evidence_manifest_20261015.json",
+      "sha256": "03062cb3fc4e38fcf030132cdd577d94d65c933467fe2a2df14fa1fcb9b51bba"
+    },
+    {
+      "path": "manuscript/MANUSCRIPT_DRAFT.md",
+      "sha256": "6c1b006a4ea6031aaf5e74050e2fcd41cea466c97892dc137b9f1556382d203e"
+    },
+    {
+      "path": "manuscript/MANUSCRIPT_EVIDENCE_AUDIT.md",
+      "sha256": "eea5a0a52057841caf1ec8ced428c2b4f96fd8ceedfe60e44f45948b0605660c"
+    },
+    {
+      "path": "manuscript/SUPPLEMENTARY_THEORY.md",
+      "sha256": "16372d188580070141d8d1351057b3fefd78d0de54b555c7acc9ce21f6fe388e"
+    },
+    {
+      "path": "docs/KNOWLEDGE_EVOLUTION_THEORETICAL_FRAMEWORK_20261015.md",
+      "sha256": "b6e0f543b3bafb4c0a406fa7da0d74ba44dd85e9aa196e85b3b97a628c3cf65b"
+    },
+    {
+      "path": "docs/THEORY_CLAIM_EVIDENCE_MATRIX.md",
+      "sha256": "337ffa77c8babb8ade0b7802080c5ef6537f39a424ca43d0d2c5896211896975"
+    },
+    {
+      "path": "experiments/theory_implementation_conformance_audit_20261015.json",
+      "sha256": "6c3ff980ade13608728d7c935b8e34bdb6310c129358522cff48de0b6218eea7"
+    },
+    {
+      "path": "experiments/content_addressed_library_manifest_design_20261015.json",
+      "sha256": "40ba7e21003c896a0768e741e98e512ea6ebfd107e7c1bbeff8e997018fc4222"
+    }
+  ],
+  "manifest_delta": {
+    "current_unique_bound_paths": 46,
+    "current_git_tracked": 7,
+    "current_git_untracked": 39,
+    "current_missing": 0,
+    "path_set_sha256": "804cf10abdf2c354f7206b6a0bc07465c7484278ce0d945859e78dace752702a",
+    "path_set_equal_to_v2_inventory": true,
+    "tracking_counts_equal_to_v2": true,
+    "changed_bound_file_hashes": [
+      "manuscript/MANUSCRIPT_DRAFT.md",
+      "manuscript/MANUSCRIPT_EVIDENCE_AUDIT.md",
+      "manuscript/SUPPLEMENTARY_THEORY.md",
+      "docs/KNOWLEDGE_EVOLUTION_THEORETICAL_FRAMEWORK_20261015.md",
+      "docs/THEORY_CLAIM_EVIDENCE_MATRIX.md"
+    ],
+    "paper_manifest_global_boundaries_before": 8,
+    "paper_manifest_global_boundaries_now": 10,
+    "new_boundaries": [
+      "Behavioral skill/library conformance does not imply an implemented canonical answer-free manifest or a measured current-library description length.",
+      "Complexity-weighted promotion and cumulative regression budgeting are prospective conditional protocol guarantees, not results already established by the current runs."
+    ]
+  },
+  "scientific_delta": {
+    "headline_endpoint_values_changed": false,
+    "external_baseline_values_changed": false,
+    "automatic_acquisition_result_changed": false,
+    "component_effect_claim_added": false,
+    "figure_data_changed": false,
+    "manuscript_limitation_added": true,
+    "figure1_manifest_boundary_added": true,
+    "prospective_promotion_theory_added": true,
+    "figure1_risk_budget_boundary_added": true
+  },
+  "release_delta": {
+    "root_license_present": false,
+    "safe_projection_completed": false,
+    "canonical_manifest_design_completed": true,
+    "manifest_validator_implemented": false,
+    "exclusive_manifest_publisher_implemented": false,
+    "current_skill_manifests_materialized": false,
+    "current_library_manifest_materialized": false,
+    "manifest_driven_frozen_hash_reconstruction_completed": false,
+    "credential_free_recursive_clean_clone_completed": false,
+    "release_ready": false
+  },
+  "interpretation": {
+    "permitted": "The paper now states both the artifact boundary and prospective promotion-theory boundary accurately, while the release surface remains the same 46 bound paths with the same 7/39 tracking split.",
+    "prohibited": [
+      "The current repository contains one canonical loadable skill library.",
+      "The current authored libraries have a measured label-independent ell(L).",
+      "The new manifest design closes clean-clone reproducibility.",
+      "The manuscript-only revision changes any reported endpoint result.",
+      "The current runs implemented complexity-weighted candidate promotion or a fixed-target repeated-generation regression budget."
+    ]
+  },
+  "required_next_actions": [
+    "Obtain architecture approval before implementing the designed manifest validator, exclusive publisher and manifest-driven reconstruction.",
+    "Preserve the unchanged 46-path release review and rights-safe projection requirements from v2.",
+    "Rebuild sealed direct-family and mixed hashes from current manifests before claiming artifact conformance.",
+    "Complete the license, environment, submodule, rights review and credential-free recursive clean-clone gates."
+  ],
+  "execution": {
+    "api_or_model_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "git_index_modified": false,
+    "git_history_modified": false,
+    "request_or_response_bodies_read": false,
+    "evaluator_only_answers_read": false,
+    "credentials_read": false
+  }
+}

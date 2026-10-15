@@ -1,0 +1,110 @@
+{
+  "all_required_paths_tracked": true,
+  "binary": {
+    "path": "/usr/local/bin/gurobi_cl",
+    "present": true,
+    "resolved_path": "/Library/gurobi1301/macos_universal2/bin/gurobi_cl",
+    "resolved_sha256": "306eb8c94fd58fec71817db556d0c022bda7657df46c4f62772dad7258a3171e",
+    "version": "13.0.1",
+    "version_command_returncode": 0,
+    "version_matches": true
+  },
+  "contract": {
+    "gurobi_version": "13.0.1",
+    "max_mps_bytes": 1000000,
+    "solver_timeout_seconds": 15,
+    "submodule_commit": "c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010",
+    "threads": 1,
+    "wall_timeout_seconds": 25
+  },
+  "execution": {
+    "benchmark_dataset_contents_read": false,
+    "binary_version_calls": 1,
+    "evaluator_only_answers_read": false,
+    "license_file_contents_read_by_verifier": false,
+    "provider_api_calls": 0,
+    "request_or_response_bodies_read": false,
+    "synthetic_solver_calls": 3,
+    "virtual_machine_calls": 0
+  },
+  "external_license_boundary": "The vendor binary may resolve a user-provisioned license internally. The verifier does not locate, read, hash, copy, or report license material.",
+  "required_paths": [
+    {
+      "exists": true,
+      "path": "scripts/verify_solver_native_environment.py",
+      "sha256": "4c02230073c796a35b6ab2a859cf6629e8ee3243886be5c7a84f403179a6e32c",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "tests/test_solver_native_environment.py",
+      "sha256": "534105d4b243de966d614ee8cb39a398734084296bb77e1e5b587e476a85c2fe",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "llm4or/gurobi_cli_solver.py",
+      "sha256": "59bc10e45901908c0782767dfc70fbf3bd248af6c671d0c62b396bdfd295e126",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "llm4or/or_debug_gurobi.py",
+      "sha256": "97691082bfe6ba48bdfdedf33f8df5abcbdb8baf44cd59c72d96f7752cb9cf8b",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "llm4or/or_debug_iis_control.py",
+      "sha256": "7b911b667ee71272811ee5ee6980e13811703468d3f948b2ac8b16021581124e",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "llm4or/or_debug_mps.py",
+      "sha256": "f598e37dce8d133c458258d5c87a30746bb7b66ffe25401e15b3b37b7be1ec9c",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "llm4or/milp_solver.py",
+      "sha256": "2a30ce4668ab04ad823f9b93adfabc291f4e76ba0f80e9614d21540d20522858",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "llm4or/milp_schema.py",
+      "sha256": "0900e2e5d9e4669b5067209ead0d3ab221e6b78bbdd5f5ed120670f452703556",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "vendor/solver-in-the-loop",
+      "sha256": null,
+      "tracked": true
+    }
+  ],
+  "schema_version": "solver-native-environment-audit-v1",
+  "status": "passed_local_solver_native_smoke_external_license",
+  "submodule": {
+    "clean": true,
+    "commit": "c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010",
+    "commit_matches": true,
+    "dataset_contents_read": false,
+    "initialized": true,
+    "license_contents_read": false,
+    "path": "vendor/solver-in-the-loop",
+    "required_paths_tracked": true,
+    "tracked_model_count": 4962,
+    "tracked_model_count_matches": true
+  },
+  "synthetic_checks": {
+    "declarative_milp_optimal": true,
+    "declarative_objective_rechecked": true,
+    "declarative_primal_feasible": true,
+    "fresh_iis_computed": true,
+    "generic_iis_repair_constructed": true,
+    "repaired_mps_objective": true,
+    "repaired_mps_optimal": true
+  }
+}

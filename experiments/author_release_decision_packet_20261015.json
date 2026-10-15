@@ -1,0 +1,268 @@
+{
+  "author_decisions": [
+    {
+      "approval_source": "user_2026-10-16",
+      "approved": true,
+      "decision": "Confirm ownership or licensing authority for all 792 first-party candidates in the bound source tree.",
+      "id": "D1",
+      "scope_extension": "The 2026-10-16 authorization also covers the listed first-party release metadata, audits, tests and body-free public provider surface added after the 792-path inventory; third-party exclusions remain unchanged."
+    },
+    {
+      "approval_source": "user_2026-10-16",
+      "approved": true,
+      "decision": "Approve Apache-2.0 for the explicitly scoped first-party software and machine-readable artifacts.",
+      "id": "D2"
+    },
+    {
+      "approval_source": "user_2026-10-16",
+      "approved": true,
+      "decision": "Approve CC-BY-4.0 for explicitly marked author-owned aggregate Source Data and documentation, or select another data license.",
+      "id": "D3"
+    },
+    {
+      "approval_source": "user_2026-10-16",
+      "approved": true,
+      "decision": "Approve the third-party attribution and NOTICE policy and its exclusions.",
+      "id": "D4"
+    },
+    {
+      "approval_source": "user_2026-10-15_reaffirmed_2026-10-16",
+      "approved": true,
+      "decision": "Approve the shared atomic publisher plus nine thin adapters architecture.",
+      "id": "D5",
+      "implementation_evidence": {
+        "path": "experiments/atomic_publisher_migration_audit_20261015.json",
+        "sha256": "8eda814dd970c452da08de2d72897ae6783924ecd6fcc2bc2d543a6343c3f474"
+      },
+      "implementation_status": "passed_shared_atomic_publisher_and_nine_thin_adapters"
+    },
+    {
+      "approval_source": "user_2026-10-16",
+      "approved": true,
+      "decision": "Approve the Data Availability, Code availability and AI-use disclosure text after filling the bracketed repository, DOI and license fields.",
+      "id": "D6"
+    },
+    {
+      "approval_source": "user_2026-10-16",
+      "approved": true,
+      "decision": "Provide final author names, affiliations, corresponding-author route, ORCIDs if used, target venue and funding metadata.",
+      "id": "D7",
+      "metadata_resolution": {
+        "affiliation": "School of Management & Engineering, Nanjing University",
+        "corresponding_email": "522023150104@smail.nju.edu.cn",
+        "funding": "not_declared",
+        "name": "Chengxi She",
+        "orcid": "omitted_unverified",
+        "target_venue": "undecided"
+      }
+    },
+    {
+      "approval_source": "user_2026-10-16",
+      "approved": true,
+      "decision": "Authorize publication of the final verified history-free candidate and its archival deposit.",
+      "id": "D8"
+    }
+  ],
+  "boundary": "The user authorized D1-D8 on 2026-10-16. This record scopes the grants to first-party materials under the stated authority and preserves all third-party exclusions; it is a release record, not legal advice. Publication and DOI fields remain false until independently verified.",
+  "date": "2026-10-15",
+  "execution": {
+    "api_or_model_calls": 0,
+    "credentials_read": false,
+    "d5_files_added_or_modified_before_evidence_rebinding": 20,
+    "doi_reserved": false,
+    "license_applied": true,
+    "public_provider_surface_added": true,
+    "publisher_adapters": 9,
+    "publisher_code_changed": true,
+    "repository_published": false,
+    "solver_calls": 0
+  },
+  "external_primary_sources": [
+    {
+      "checked": "2026-10-15",
+      "role": "Apache-2.0 canonical license text and copyright/patent grants",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    {
+      "checked": "2026-10-15",
+      "role": "Applying Apache-2.0 and NOTICE guidance",
+      "url": "https://apache.org/legal/apply-license.html"
+    },
+    {
+      "checked": "2026-10-15",
+      "role": "CC BY 4.0 attribution and change-marking summary",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "checked": "2026-10-15",
+      "role": "CC BY 4.0 legal code and licensor authority boundary",
+      "url": "https://creativecommons.org/licenses/by/4.0/legalcode.en"
+    },
+    {
+      "checked": "2026-10-15",
+      "role": "Upstream solver-in-the-loop repository and CC-BY-4.0 identification",
+      "url": "https://github.com/agentic-or-benchmark/solver-in-the-loop"
+    },
+    {
+      "checked": "2026-10-15",
+      "role": "Zenodo GitHub release archiving workflow",
+      "url": "https://help.zenodo.org/docs/github/"
+    },
+    {
+      "checked": "2026-10-15",
+      "role": "DOI reservation and publication behavior",
+      "url": "https://help.zenodo.org/docs/deposit/describe-records/reserve-doi/"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "experiments/release_rights_inventory_20261015.json",
+      "sha256": "eb5e8cee55cacc26fa76085996dfe2451c0c542eb1fe48bb7dfab726ec877ebd"
+    },
+    {
+      "path": "experiments/reconstruction_publisher_solver_boundary_audit_20261015.json",
+      "sha256": "b5331ac3b605d153680becfa664910cfc00b93852c608986a7f144cf9bb8c22f"
+    },
+    {
+      "path": "reproduction/environment_layers_v1.json",
+      "sha256": "28dbc73118a1b2007df0ce77ecd8226e2d90abeebb2e625a34205f233e47e809"
+    },
+    {
+      "path": "docs/DATA_CODE_AVAILABILITY_AUDIT_V2_20261015.md",
+      "sha256": "39067579085c11349553f19215f92cc1c840bdf0d325eefcd2ed4033e5262489"
+    },
+    {
+      "path": "docs/TOP_CONFERENCE_METHOD_ROADMAP.md",
+      "sha256": "97e43e8b6be5becc56e423e038875793e1ea8df0560fc41dd278c0f010673962"
+    }
+  ],
+  "purpose": "Record the author authorization for D1-D8 and bind the scoped release metadata used by the verified history-free public candidate.",
+  "ready_to_paste": {
+    "ai_use_disclosure": "Language models were used in the explicitly identified candidate-generation experiments, in software-development assistance and in manuscript drafting. Candidate knowledge, code changes, numerical results and prose were not accepted solely on model output. Human authors defined the research questions and frozen evaluation contracts, reviewed the outputs, and verified the reported evidence through deterministic checks, independent endpoint scoring, source and citation audits, and reproducible reconstruction. The human authors remain accountable for all claims, analyses, citations and released artifacts.",
+    "code_availability": "First-party code, typed skill and library manifests, public-only routing and verification code, aggregate evidence, figure-generation scripts and deterministic reconstruction commands are authorized for publication at https://github.com/ChengxiSHE/LLM4UO_EAAI under Apache-2.0. The live repository status and archival DOI will be added only after external verification. The solver-in-the-loop dataset remains an external pinned submodule under its upstream terms. Gurobi 13.0.1 requires a separate user installation and licence. Provider replay requires a user-supplied account and credential; credential-free evidence reconstruction does not.",
+    "data_availability": "Author-owned aggregate data supporting the findings of this study, including endpoint summaries, paired correction and regression counts, structural-group summaries, routing-identity records and figure Source Data, accompany the versioned software release under CC BY 4.0. The archival DOI will be added after archival deposit. Reused benchmark sources are retrieved at pinned revisions listed in the release metadata and remain subject to their upstream terms. Where redistribution is not authorized, the release provides metadata-only identities, checksums and reconstruction instructions rather than upstream task text or evaluator-only answers. Private request and response bodies, credentials and evaluator-only answers are not released."
+  },
+  "recommendation": {
+    "archive_route": {
+      "boundary": "Zenodo cannot archive a private GitHub repository through the normal integration; no DOI is invented in this packet.",
+      "choice": "Public GitHub release archived through Zenodo",
+      "requirements": [
+        "public immutable release",
+        "license present",
+        "CITATION.cff or .zenodo.json with verified authors",
+        "version tag",
+        "reserved or minted DOI",
+        "checksum-bound release manifest"
+      ]
+    },
+    "author_owned_aggregate_data_license": {
+      "choice": "CC-BY-4.0",
+      "not_covered": [
+        "upstream benchmark text or answers",
+        "external submodule contents",
+        "third-party generated programs without redistribution rights"
+      ],
+      "reason": "Permits sharing and adaptation with attribution and change indication.",
+      "scope": "Only author-owned aggregate endpoint evidence, figure Source Data and documentation explicitly marked as such."
+    },
+    "first_party_software_license": {
+      "choice": "Apache-2.0",
+      "not_covered": [
+        "external gitlink contents",
+        "third-party benchmark content",
+        "commercial Gurobi",
+        "publisher-controlled manuscript rights unless separately authorized"
+      ],
+      "reason": "Standard SPDX identifier, explicit copyright grant and explicit contributor patent grant; requires a root LICENSE and clear NOTICE/third-party scope.",
+      "scope": "Only first-party software, tests, scripts and machine-readable project artifacts for which the authors or their institutions hold licensing authority."
+    },
+    "publisher_architecture": {
+      "choice": "one shared atomic publisher plus nine thin adapters",
+      "must_add": [
+        "exclusive terminal ownership",
+        "unique temporary paths",
+        "file and directory fsync",
+        "atomic no-clobber commit",
+        "byte-identical idempotence",
+        "symlink and path-escape rejection",
+        "explicit crash recovery",
+        "recoverable paired JSON/Markdown transaction"
+      ],
+      "must_preserve": [
+        "scientific fields",
+        "input identity checks",
+        "serialization",
+        "paths",
+        "output bytes and SHA-256",
+        "missing/duplicate/invalid/mismatch fail-closed behavior"
+      ]
+    },
+    "third_party_policy": [
+      {
+        "item": "vendor/solver-in-the-loop",
+        "treatment": "Keep as an external gitlink pinned at c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010 and attribute upstream CC-BY-4.0; do not relicense its contents under the root software license."
+      },
+      {
+        "item": "CoE",
+        "treatment": "Retrieve from pinned upstream only; do not vendor or claim a license until the author repository provides one."
+      },
+      {
+        "item": "Gurobi",
+        "treatment": "Document as separately installed commercial software; never redistribute the binary or license."
+      },
+      {
+        "item": "Other benchmark sources",
+        "treatment": "Retain source/version/hash metadata and reconstruct from upstream where redistribution rights are absent or unverified."
+      }
+    ]
+  },
+  "release_candidate_corrections": {
+    "private_provider_runtime_published": false,
+    "public_body_free_provider_surface": "llm4or/public_antchat_transport.py",
+    "reason": "final five-layer audit found that the historical provider preflight depended on untracked private experiment modules"
+  },
+  "schema": "llm4or-author-release-decision-packet-v2",
+  "status": "author_approved_ready_for_verified_publication",
+  "verified_author_metadata": {
+    "affiliation": "School of Management & Engineering, Nanjing University",
+    "basis": "publicly verified name, affiliation and email; optional unverified fields omitted",
+    "corresponding_email": "522023150104@smail.nju.edu.cn",
+    "funding": "not_declared",
+    "name": "Chengxi She",
+    "orcid": "omitted_unverified",
+    "target_venue": "undecided"
+  },
+  "verified_facts": {
+    "authorized_post_inventory_first_party_additions": [
+      ".zenodo.json",
+      "CITATION.cff",
+      "LICENSE",
+      "LICENSE-DATA",
+      "NOTICE",
+      "docs/PROVIDER_ENVIRONMENT_PREFLIGHT_AUDIT_20261016.md",
+      "docs/DATA_CODE_AVAILABILITY_AUDIT_V3_20261016.md",
+      "experiments/authorized_release_audit_20261016.json",
+      "experiments/data_code_availability_audit_v3_20261016.json",
+      "experiments/provider_environment_preflight_audit_20261016.json",
+      "llm4or/public_antchat_transport.py",
+      "scripts/audit_authorized_release.py",
+      "tests/test_authorized_release_metadata.py"
+    ],
+    "bound_rights_source_commit": "87668c7806f8b9aea48494cddb9a8bc96277ddac",
+    "current_remote": "https://github.com/ChengxiSHE/LLM4UO_EAAI.git",
+    "current_remote_publicly_fetchable_in_check": false,
+    "d5_atomic_publisher_tests_passed": 22,
+    "external_submodules": 1,
+    "first_party_candidates": 792,
+    "generated_manuscript_artifacts": 21,
+    "historical_nonexclusive_publishers": 9,
+    "historical_publishers_wrapped_by_d5": 9,
+    "paper_evidence_paths_tracked": 70,
+    "private_paths_tracked": 0,
+    "restricted_paths_tracked": 0,
+    "root_license_present": true,
+    "source_metadata_manifests": 11,
+    "symlinks_requiring_review": 0,
+    "tracked_entries": 825
+  }
+}

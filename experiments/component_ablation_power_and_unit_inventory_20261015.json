@@ -1,0 +1,117 @@
+{
+  "schema": "component-ablation-power-unit-inventory-v1",
+  "date": "2026-10-15",
+  "status": "closed_offline_design_analysis_not_ready_for_dispatch",
+  "purpose": "Quantify the sample sizes required for four multiplicity-controlled component contrasts and determine whether existing artifacts supply valid proposal-, library- or envelope-level units.",
+  "multiplicity_plan": {
+    "family": [
+      "full versus no-semantic-verifier",
+      "full versus no-resource-admission",
+      "full versus no-complexity-control",
+      "full versus no-selective-routing"
+    ],
+    "confirmatory_rule": "Holm step-down familywise error control at 0.05.",
+    "conservative_planning_alpha_per_contrast": 0.0125,
+    "test": "One-sided exact conditional McNemar/sign test on paired discordant units.",
+    "alternative_parameters": {
+      "r": "Probability that the full and ablated arms disagree on one valid unit.",
+      "q": "Probability that the full arm wins conditional on disagreement.",
+      "full_denominator_difference": "r*(2*q-1)"
+    },
+    "calculation": "For each N, integrate the exact conditional rejection probability over D~Binomial(N,r); reject for the smallest treatment-win count whose Binomial(D,0.5) upper tail is at most 0.0125."
+  },
+  "minimum_total_units_for_80_percent_power": {
+    "columns_q": [0.65, 0.70, 0.75, 0.80],
+    "rows": [
+      {"r": 0.20, "implied_difference": [0.06, 0.08, 0.10, 0.12], "N": [549, 308, 196, 135]},
+      {"r": 0.30, "implied_difference": [0.09, 0.12, 0.15, 0.18], "N": [366, 205, 131, 90]},
+      {"r": 0.40, "implied_difference": [0.12, 0.16, 0.20, 0.24], "N": [274, 153, 98, 67]},
+      {"r": 0.50, "implied_difference": [0.15, 0.20, 0.25, 0.30], "N": [220, 123, 78, 54]}
+    ]
+  },
+  "minimum_total_units_for_90_percent_power": {
+    "columns_q": [0.65, 0.70, 0.75, 0.80],
+    "rows": [
+      {"r": 0.20, "implied_difference": [0.06, 0.08, 0.10, 0.12], "N": [706, 395, 251, 170]},
+      {"r": 0.30, "implied_difference": [0.09, 0.12, 0.15, 0.18], "N": [471, 263, 167, 113]},
+      {"r": 0.40, "implied_difference": [0.12, 0.16, 0.20, 0.24], "N": [353, 197, 125, 84]},
+      {"r": 0.50, "implied_difference": [0.15, 0.20, 0.25, 0.30], "N": [282, 158, 100, 67]}
+    ]
+  },
+  "minimum_observed_discordant_units": {
+    "columns_q": [0.65, 0.70, 0.75, 0.80],
+    "for_80_percent_conditional_power": [104, 58, 37, 24],
+    "for_90_percent_conditional_power": [135, 77, 49, 32]
+  },
+  "existing_unit_inventory": {
+    "proposal_level": {
+      "current_dcp_distinct_proposal_identities": 5,
+      "current_dcp_free_text_or_untyped": 4,
+      "current_dcp_typed_finite_grammar": 1,
+      "strict_historical_matched_typed_units": 1,
+      "per_instance_formulation_trajectories_excluded": 229,
+      "legacy_vera_identities_excluded": 6,
+      "reason_excluded": "Per-instance formulations are endpoint attempts, and the legacy skill identities use incompatible or already-open protocols; neither class is an exchangeable component-ablation proposal population.",
+      "readiness": "insufficient"
+    },
+    "library_selection_level": {
+      "independent_repeated_common_pool_selection_episodes": 0,
+      "existing_authored_success_families": ["TSP", "OR-Debug"],
+      "reason_not_reusable": "The successful libraries were separately authored for different benchmark families and were not selected twice from one frozen candidate pool with and without the same description code.",
+      "readiness": "missing"
+    },
+    "routing_envelope_level": {
+      "existing_mixed_records": 2985,
+      "known_tsp_unique_routes": 140,
+      "known_or_debug_unique_routes": 2845,
+      "zero_or_multiple_match_outcomes_observed": 0,
+      "route_or_output_mismatches": 0,
+      "reason_not_reusable": "The retrospective known-envelope study establishes identity preservation but contains no intervention headroom for selective routing under ambiguity or shift.",
+      "readiness": "insufficient"
+    },
+    "fresh_endpoint_level": {
+      "candidate_identities": 38,
+      "families": {"RCPSP": 13, "VRPTW": 25},
+      "power_at_r_0_30_q_0_70_alpha_0_0125": 0.120922,
+      "minimum_total_units_at_r_0_30_q_0_70_for_80_percent_power": 205,
+      "minimum_total_units_at_r_0_30_q_0_70_for_90_percent_power": 263,
+      "readiness": "descriptive_mechanism_panel_only"
+    }
+  },
+  "design_consequences": [
+    "Do not relabel the five historical proposals, 229 per-instance trajectories or six legacy identities as a powered matched component population.",
+    "Use one prospectively frozen proposal pool for semantic-verifier and resource-admission interventions; their units may be shared, but each contrast retains its own paired outcomes.",
+    "Generate independent or validly clustered library-selection episodes before estimating a complexity-control effect; benchmark rows are not repeated selection episodes.",
+    "Build a separate answer-free routing cohort with prespecified zero-, unique- and multiple-match opportunities before estimating selective-routing utility.",
+    "Use a small pilot only to estimate r and failure taxonomy. Freeze the confirmatory N from an independent or alpha-accounted rule before opening confirmatory outcomes.",
+    "If the required library-level replication is infeasible, narrow the empirical claim to verifier/resource and routing mechanisms and retain complexity control as a theory-motivated design principle rather than claiming causal benefit."
+  ],
+  "decision": {
+    "historical_units_close_g09": false,
+    "n38_closes_four_component_effects": false,
+    "ready_to_prepare": false,
+    "ready_to_freeze": false,
+    "ready_to_dispatch": false,
+    "permitted_claim": "The existing artifacts do not contain valid powered units for any of the four component effects; exact planning targets are now fixed for displayed alternatives.",
+    "prohibited_claims": [
+      "Historical endpoint trajectories are independent skill-proposal trials.",
+      "The two authored family libraries identify a description-length effect.",
+      "Known-envelope exact routing identifies selective-routing benefit.",
+      "Thirty-eight endpoint identities provide 80 percent power for the moderate r=.30,q=.70 alternative after four-contrast control."
+    ]
+  },
+  "execution": {
+    "new_api_calls": 0,
+    "new_model_calls": 0,
+    "new_solver_calls": 0,
+    "new_native_or_vm_calls": 0,
+    "problem_or_answer_bodies_used_for_analysis": false,
+    "credentials_read": false
+  },
+  "evidence": [
+    {"path": "experiments/component_ablation_identifiability_audit_20261015.json", "sha256": "7c13e7921b38baa89cea5da335131609268bd5dff278c9edd6fe10ba91163bd7"},
+    {"path": "experiments/proposal_provenance_inventory_20261015.json", "sha256": "b301eb0b168e85009b16e0f7f26404f30950cf6a123a5fdcdc4363dfa12d90f1"},
+    {"path": "results/mixed_skill_confirmation_audit_v2_20261014.json", "sha256": "d2ec7251f562373cf50a0e3e22f7a0ce87e0aa5748749c873420c531a757b992"},
+    {"path": "experiments/fresh_common_protocol_estimand_audit_20261015.json", "sha256": "f2bedf8c900952ea868360ec659a8ccea8973139aad8a0ee55d72271028de030"}
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "claim_guard": {
+    "accuracy_recomputed": false,
+    "new_generalization_claimed": false,
+    "preservation_claim_allowed": true,
+    "retrospective_composition_only": true
+  },
+  "exact_identity_pass": true,
+  "families": {
+    "or_debug": {
+      "exact_matches": 2845,
+      "missing_direct_records": 0,
+      "missing_mixed_records": 0,
+      "output_mismatches": 0,
+      "records": 2845,
+      "route_mismatches": 0,
+      "terminal_failures": 0
+    },
+    "tsp": {
+      "exact_matches": 140,
+      "missing_direct_records": 0,
+      "missing_mixed_records": 0,
+      "output_mismatches": 0,
+      "records": 140,
+      "route_mismatches": 0,
+      "terminal_failures": 0
+    }
+  },
+  "inherited_confirmation_endpoints": {
+    "or_debug": {
+      "denominator": 2845,
+      "evolved_correct": 2752,
+      "static_correct": 828
+    },
+    "tsp": {
+      "denominator": 140,
+      "skill_correct": 100,
+      "static_correct": 54
+    }
+  },
+  "input_sha256": {
+    "bundle": "944757ee0ef04111c3ff921e32f321385787c102a528bba6165c00addd4dafbb",
+    "mixed": "719d0d739ef98723baeea58d00355c0a4eba44e5ae1cb267a10dd5f0a12f67d1",
+    "or_debug_direct": "9ab4058fd9f641f96279d5880820c13cbf7277af779fc42c62503ddd4c7d27ec",
+    "tsp_direct": "f114fff73ff3c80cc557b7642a336a417a8bb1b85609f862cd2260dbad0c6627"
+  },
+  "route_counts": {
+    "or_debug_typed_repair_v1": 2845,
+    "tsp_constraint_xor_v2_scalable": 140
+  },
+  "schema": "llm4or.mixed_skill_confirmation_audit.v1",
+  "status_counts": {
+    "complete": 2985
+  },
+  "totals": {
+    "duplicate_bundle_records": 0,
+    "duplicate_direct_records": 0,
+    "duplicate_mixed_records": 0,
+    "exact_matches": 2985,
+    "missing_direct_records": 0,
+    "missing_mixed_records": 0,
+    "output_mismatches": 0,
+    "records": 2985,
+    "route_mismatches": 0,
+    "terminal_failures": 0,
+    "unexpected_mixed_records": 0
+  }
+}

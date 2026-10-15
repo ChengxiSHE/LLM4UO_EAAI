@@ -1,0 +1,56 @@
+{
+  "schema": "llm4or-or-debug-group-endpoint-sensitivity-audit-v1",
+  "source": {
+    "artifact": "results/or_debug_confirmation_evaluation_20261014.json",
+    "sha256": "04342d960613c01d3e354d742e39eec5949a90a53ca06fe0c6e30b6be057b66e"
+  },
+  "output": {
+    "artifact": "manuscript/source_data/or_debug_group_endpoint_sensitivity.csv",
+    "sha256": "3659cddc28cddd41498ebd4bae86c7c5cc50b7d6a2eabd906fe2ab2d4d00c5c3",
+    "membership_hash_definition": "sha256 of sorted problem_id values joined by newline within each shape_group"
+  },
+  "summary": {
+    "records": 2845,
+    "shape_groups": 100,
+    "minimum_group_size": 1,
+    "maximum_group_size": 126,
+    "unique_membership_hashes": 100,
+    "corrected_primary": {
+      "static_correct": 828,
+      "evolved_correct": 2752,
+      "corrections": 1924,
+      "regressions": 0
+    },
+    "released_primary": {
+      "static_correct": 828,
+      "evolved_correct": 2236,
+      "corrections": 1408,
+      "regressions": 0
+    },
+    "endpoint_divergence": {
+      "evolved_records": 516,
+      "shape_groups_with_divergence": 20,
+      "static_records": 0,
+      "error_type_counts": {
+        "B": 516
+      }
+    }
+  },
+  "privacy": {
+    "contains_problem_text": false,
+    "contains_reference_repair": false,
+    "contains_repair_identity": false,
+    "contains_evaluator_only_answer": false,
+    "contains_request_or_response_body": false,
+    "contains_problem_id": false,
+    "contains_membership_hash_only": true
+  },
+  "claim_boundary": "Complete confirmation-group aggregate equivalent for endpoint sensitivity and membership reconstruction; not a proof that the public shape key captures every source-model or generation-template lineage.",
+  "execution": {
+    "model_calls": 0,
+    "api_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "status": "offline_milp_extension_verified_not_benchmark_performance",
+  "verified_at_utc": "2026-08-31T08:34:47.119177+00:00",
+  "tests_passed": 173,
+  "test_wall_seconds": 20.747,
+  "new_tests": 45,
+  "test_log": "results/milp_extension_tests.txt",
+  "test_command": "/Users/chengxi-nju/miniforge3/envs/ark-base/bin/python -m unittest discover -s tests -v",
+  "synthetic_oracle": {
+    "seed": 20260831,
+    "total": 24,
+    "passed": 24,
+    "optimal_cases": 10,
+    "infeasible_cases": 14,
+    "oracle": "Full enumeration of integer/binary coordinates plus exact rational elimination of one continuous variable"
+  },
+  "runtime": {
+    "python": "3.11.16",
+    "scipy": "1.17.1",
+    "highs": "1.12.0"
+  },
+  "parameter_revision": {
+    "name": "complexor-parameter-metadata-v1",
+    "retained": 37,
+    "edited_problems": 2,
+    "shape_edits": 3,
+    "remaining_shape_conflicts": 5,
+    "unresolved_problems": 3,
+    "numeric_inputs_changed": false,
+    "reference_values_read_or_changed": false,
+    "repeat_export_and_manifest_identical": true
+  },
+  "verified_source_files": 142,
+  "complexor_readonly_source_files": 115,
+  "separate_coe_crosscheck_hashes_verified": 4,
+  "preservation": {
+    "unchanged_files": 97,
+    "private_archive_files_and_file_set_unchanged": 92,
+    "private_archive_hash_index_sha256": "1a64e7398b033e5ba278fbc49351be144a34f91a3f3ed93f2bf460063ac55470",
+    "legacy_and_original_export_sha256": {
+      "llm4or/schema.py": "82a63e82f4cf72b99f4f58be2ff5ece44ad8b8ae8c08c0aa440d8615d6d9e428",
+      "llm4or/solver.py": "fad10e67ad43fd427628f5a9613fa34ea7bb65dfb4bce16fb96b3c765445b0f1",
+      "llm4or/evaluator.py": "c8c72b47dce25e5cb69eb15d2e67a79a3c54800996c1d6edc6fde6fb54c08e4f",
+      "llm4or/alignment.py": "9c5f96a0a703d34c2c12483c272cf4c4b64eda0d84202c9b2cefe0113949cbe9",
+      "data/prepared_benchmarks/complexor.json": "730349e818d7fe1d7d7961dd4bc624e81224833f19752548c23670c3cdad0b4b"
+    }
+  },
+  "prior_authorizations": {
+    "pilot_authorization.json": "completed",
+    "probe_s2_authorization.json": "completed"
+  },
+  "api_enabled": false,
+  "actual_model_api_calls": 0,
+  "upstream_code_executed": false,
+  "model_generated_code_executed": false,
+  "solver_installs": 0,
+  "full_benchmark_run_completed": false,
+  "code_manifest_artifact_sha256": {
+    "llm4or/data_revisions.py": "a4fe75458bbde605f26c47be1aee01ddc703c1137954885f3d5f80f6a2e385f6",
+    "llm4or/milp_schema.py": "0900e2e5d9e4669b5067209ead0d3ab221e6b78bbdd5f5ed120670f452703556",
+    "llm4or/milp_solver.py": "5765d2a9008ff9eafaf4a067351950448b044549b9eeccda80327b51f3dcfa25",
+    "llm4or/milp_evaluator.py": "0a7d0f6187ce4fec6dc1089623235cc042619377363a4a9c1b9c90822be7138d",
+    "scripts/revise_complexor_parameters.py": "4d634595519732c9f958fa7a78ece0a0f448bf8d0f68a02031aa6b29709b3de1",
+    "scripts/verify_milp.py": "52564e729ead4e98ce78dcf2c0932cc6034246b28c86efb6c58611bbc6a90352",
+    "scripts/audit_benchmark_inventory.py": "0ce9dc96ce65e16e6dd9e4b40f37ede8b92ebab5b62f488b2e045ba1dd9eb538",
+    "tests/test_data_revisions.py": "3418475f9782378aad2f203c1eeb3b6581e8891f577758e32d9c45fa94146f70",
+    "tests/test_milp.py": "94d9b7dd52877397a98971939997f69d17ffefc10b88ab30378863aef4d5e331",
+    "experiments/benchmark_plan.json": "a5db0dc30d341b02a3337ee7fb72ce7722e3880d7237609458b2e4716f36a750",
+    "experiments/milp_protocol.json": "57b4de38a31026892539a38b2b6304b2eaa8d009a2a244419845d01682fd1f77",
+    "data/revisions/complexor_parameters_v1.json": "6903d1248440d9443be16048380befda86a26b09ac4b451a1d4f6456476fdeb6",
+    "data/prepared_benchmarks/complexor_parameters_v1.json": "eb277a683cc95f977adba70f7332c9ede9fd624a8c1f28116faa114044623bd0",
+    "data/manifests/complexor_sources.json": "578ee984ad11ec7209cc1d1ffc09b9db0983e70921cd6a93bfeaef146f97494f",
+    "data/manifests/benchmark_input_audit.json": "b53b392f4591b5d68a0d4448d261e9068ef180edaf10cc33d59219728e41326a",
+    "results/milp_oracle_verification.json": "e43cbb2a191f8b46e6fcb721b8529d74a7be19f6873a6a089f46615efe5ac7e5",
+    "results/milp_extension_tests.txt": "6d0c3d4a0a670eb922ea5679395a959d0e96601bba3283b266932f0cfd209832",
+    "results/benchmark_preparation_verification.json": "d526be50ee670468cfbed80613e69b80878374bff8f28963bd1d0dd6724730e1",
+    "README.md": "d9788b0d47c9102d310f894dc6007b59546f18cefa2db9cbe54a2d26b3125acc",
+    "AGENTS.md": "3c5e4c8f0828f0a64825a432f1807a377bcc2d856a5f00085fcacebf3b8ceb7d",
+    "docs/MILP_EXTENSION_REPORT.md": "b4d9987121b9c49348a45e4fa61f7d60b7b9e2dd0fd8165d5d5a5ecaa7df6c49",
+    "docs/PROJECT_HANDOFF.md": "a8f35e95d6659b997b004dd11accd3bf13218dc49e2a9502c0bdec3bed0f9fb2",
+    "docs/STATUS.md": "69ed0507191cdf6c3e7c4a101cdf21cd154e62ce39d6baac78277873913e3285",
+    "docs/BENCHMARK_PLAN.md": "295e2304990dcdbc1667db049b39a7ae25b74fa80d273d9e952e827316a8abe4",
+    "docs/BENCHMARK_INPUT_AUDIT.md": "6414a27d4d181491555d9ec6c40994b62f15a3cb2b6090876eda39af3aa36dad",
+    "docs/OFFLINE_IMPLEMENTATION.md": "f2d2312a39dbbc7bf6446c08e78717caf4e8f22a09d35acfe4ec43b00daa6a4e",
+    "docs/PREFLIGHT.md": "3270633ab7efaeac087076b577c51ef805325e4b4550532f7f59953b8edd559f"
+  },
+  "remaining": [
+    "Three ComplexOR tensor/topology ambiguities",
+    "Per-problem type support inventory, independently audited references and revision binding",
+    "Nonlinear/conic execution and auxiliary-variable comparison",
+    "Family/exposure isolation and frozen denominator",
+    "MILP teacher/gate integration and full DSL evolution",
+    "Separate authorization before any new paid model calls"
+  ]
+}

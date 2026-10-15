@@ -1,0 +1,851 @@
+{
+  "schema": "llm4or-paper-evidence-manifest-v1",
+  "created_at_local_date": "2026-10-15",
+  "method_name": "Benchmark-Grounded Proof-Carrying Knowledge Compilation",
+  "purpose": "Single machine-readable entry point binding every headline paper claim to terminal evidence, exact file identity, permitted interpretation, and claim boundary.",
+  "source_of_truth_order": [
+    "terminal result or closure JSON",
+    "machine-readable evidence ledger",
+    "claim-to-evidence matrix",
+    "paper-facing narrative documents"
+  ],
+  "headline_evidence": {
+    "tsp_confirmation": {
+      "artifact": "results/tsp_constraint_confirmation_root_closure_20261014.json",
+      "sha256": "0a0aef6aad14e720f537c3201b5cc585b0177c0a05150a18d0300f3e498c437d",
+      "schema": "tsp-constraint-confirmation-root-closure-v1",
+      "assertions": {
+        "status": "closed_sealed_within_source_size_confirmation",
+        "result.denominator": 140,
+        "result.static_correct": 54,
+        "result.skill_correct": 100,
+        "result.corrections": 46,
+        "result.regressions": 0,
+        "result.skill_abstentions_counted_incorrect": 40,
+        "result.positive_gain_each_size_13_to_19": true,
+        "decision.benchmark_specific_accuracy_improvement_supported": true,
+        "decision.same_source_size_confirmation_supported": true,
+        "decision.automatic_llm_skill_synthesis_supported": false
+      },
+      "permitted_claim": "The typed TSP skill improves benchmark formulation accuracy over the frozen strong static controller on the sealed size-13 through size-19 confirmation split.",
+      "boundary": "Same-source size confirmation; the item-level sign test is nominal under shared templates; the skill is authored rather than automatically synthesized."
+    },
+    "or_debug_confirmation": {
+      "artifact": "results/public_projections/or_debug_confirmation_evaluation_projection_20261015.json",
+      "sha256": "7f83555e8b81ff15bad510b95bf7e2617d87bb139786777407704a55e10a70ca",
+      "method_outputs": "results/public_projections/or_debug_confirmation_method_outputs_projection_20261015.json",
+      "method_outputs_sha256": "d714e72bb9207ba7ca7146f43a196f9b6599e1e43b5ea94446fe9a60bfbbcf46",
+      "schema": "llm4or-release-or-debug-evaluation-projection-v1",
+      "assertions": {
+        "comparison.records": 2845,
+        "comparison.corrected_primary.static_correct": 828,
+        "comparison.corrected_primary.evolved_correct": 2752,
+        "comparison.corrected_primary.corrections": 1924,
+        "comparison.corrected_primary.regressions": 0,
+        "comparison.corrected_primary.both_wrong": 93,
+        "comparison.released_primary.static_correct": 828,
+        "comparison.released_primary.evolved_correct": 2236,
+        "comparison.released_primary.corrections": 1408,
+        "comparison.released_primary.regressions": 0,
+        "comparison.released_primary.both_wrong": 609,
+        "confirmation_inference.groups": 100,
+        "confirmation_inference.positive_groups": 65,
+        "confirmation_inference.tied_groups": 35,
+        "confirmation_inference.negative_groups": 0,
+        "confirmation_inference.gain_p_value": 2.710505431213761e-20,
+        "source_metadata.execution.model_or_api_calls": 0
+      },
+      "permitted_claim": "The same construction, verification, routing and promotion methodology replicates on a second benchmark source and repair task, improving both disclosed full-denominator endpoints over a generic fresh-IIS static policy.",
+      "boundary": "Corrected-primary uses a development-frozen source correction and yields 2752/2845; unmodified released-primary yields 2236/2845. This is methodological replication across sources, not transfer of one unchanged skill, automatic synthesis, independent item-level samples, or unrestricted RSI."
+    },
+    "or_debug_group_endpoint_sensitivity": {
+      "artifact": "results/or_debug_group_endpoint_sensitivity_audit_20261015.json",
+      "sha256": "613fd34cd25a844813c9decf22e800a4c99eba651d25b887b50d897327e33a33",
+      "schema": "llm4or-or-debug-group-endpoint-sensitivity-audit-v1",
+      "assertions": {
+        "summary.records": 2845,
+        "summary.shape_groups": 100,
+        "summary.minimum_group_size": 1,
+        "summary.maximum_group_size": 126,
+        "summary.unique_membership_hashes": 100,
+        "summary.endpoint_divergence.evolved_records": 516,
+        "summary.endpoint_divergence.shape_groups_with_divergence": 20,
+        "summary.endpoint_divergence.static_records": 0,
+        "summary.endpoint_divergence.error_type_counts.B": 516,
+        "privacy.contains_problem_text": false,
+        "privacy.contains_reference_repair": false,
+        "privacy.contains_evaluator_only_answer": false,
+        "execution.model_calls": 0,
+        "execution.api_calls": 0,
+        "execution.solver_calls": 0
+      },
+      "permitted_claim": "A complete aggregate ledger accounts for all 100 confirmation shape groups and localizes the 516 corrected-versus-released evolved-output disagreements to type B across 20 groups.",
+      "boundary": "Membership hashes and public shape groups support reconstruction without exposing task text or answers; they do not prove that the grouping captures every source-model or generation-template lineage."
+    },
+    "mixed_public_router": {
+      "bundle": "experiments/public_projections/mixed_skill_confirmation_bundle_projection_20261015.json",
+      "bundle_sha256": "da9a35dcb6b76e2289a7a9f0613384661dac80f6e96b8c3ed41ba1f5538fee65",
+      "outputs": "results/public_projections/mixed_skill_confirmation_outputs_projection_20261015.json",
+      "outputs_sha256": "5f7b5860f4e50e5ce37b85e49fbd9e3b96488429bf08e779fe17c503ded1ad70",
+      "audit": "results/mixed_skill_confirmation_public_audit_v3_20261015.json",
+      "audit_sha256": "3c9b8700639cfe5599fc76b18cca4318b14d4b0865fb5bd343f5c0d26fead08f",
+      "schema": "llm4or.mixed_skill_confirmation_public_audit.v1",
+      "assertions": {
+        "exact_identity_pass": true,
+        "totals.records": 2985,
+        "totals.exact_matches": 2985,
+        "totals.route_mismatches": 0,
+        "totals.output_mismatches": 0,
+        "totals.source_mismatches": 0,
+        "totals.terminal_failures": 0,
+        "totals.missing_mixed_records": 0,
+        "totals.duplicate_mixed_records": 0,
+        "totals.invalid_mixed_records": 0,
+        "totals.unexpected_mixed_records": 0,
+        "families.tsp.exact_matches": 140,
+        "families.or_debug.exact_matches": 2845,
+        "claim_guard.accuracy_recomputed": false,
+        "claim_guard.retrospective_composition_only": true
+      },
+      "permitted_claim": "The frozen public-only mixed router preserves the exact direct-family output for every TSP and OR-Debug confirmation envelope.",
+      "boundary": "Retrospective interface composition only; no fresh accuracy, learned routing, paraphrase robustness, or distribution-shift result."
+    },
+    "external_fixed_common40": {
+      "ledger": "experiments/external_baseline_evidence_ledger_20261014.json",
+      "ledger_sha256": "5c35cf2fb7adb7b1c4ed67392f81e630f631b07657745daeea4017f9930a736b",
+      "summary": "results/external_fixed_common40_summary.json",
+      "summary_sha256": "22c588da5167f6cb76615340ea81551021b8473b9db2a4ea83d717c93a77a38c",
+      "bind": "results/bind_fixed_common40.json",
+      "bind_sha256": "fd3e12d813d1e3b2824b25bf0c53d8071b6e11f7566f5583e79dcf01c117268d",
+      "coe": "results/coe_fixed_common40.json",
+      "coe_sha256": "6d478837d18584add5636d083567c8aa280c5db2edff18894452664b78fd9b06",
+      "assertions": {
+        "summary.distinct_problem_records": 40,
+        "summary.families.rcpsp": 20,
+        "summary.families.vrptw": 20,
+        "ledger.baselines.bind.round1_correct": 31,
+        "ledger.baselines.bind.final_correct": 40,
+        "ledger.baselines.coe_paper_snapshot.author_exact_correct_all_planned": 3,
+        "ledger.baselines.coe_current_snapshot.author_exact_correct_all_planned": 1,
+        "ledger.baselines.coe_paper_snapshot.safe_adapter_unsupported_completed_outputs": 25,
+        "ledger.baselines.coe_current_snapshot.safe_adapter_unsupported_completed_outputs": 29,
+        "summary.new_model_calls": 0,
+        "summary.new_solver_calls": 0
+      },
+      "permitted_claim": "BIND and CoE were locally rerun on the same retrospective 40 identities under disclosed official-prompt or official-code adaptations.",
+      "boundary": "Different information, feedback, output and execution contracts prevent an unconditional leaderboard; BIND final is answer-bearing and CoE safe-adapter undercoverage is material."
+    },
+    "optitrust_artifact_availability": {
+      "source_audit": "results/optitrust_arxiv_source_audit_20261014.json",
+      "source_audit_sha256": "d1eb6a32b479d236aefb698d14431c22d292cf03d5bbd9b3c0bd6416ec369c80",
+      "public_recheck": "results/optitrust_artifact_recheck_20261014.json",
+      "public_recheck_sha256": "64cf9e2a217f4ed33526fb5366c6f4b37007290ec201be870bb567e167d5d104",
+      "assertions": {
+        "ledger.baselines.optitrust.official_reproduction_status": "not_yet_reproducible_from_verified_artifact",
+        "ledger.baselines.optitrust.runnable_files_in_arxiv_source": 0
+      },
+      "permitted_claim": "The inspected official arXiv v1 source and bounded public-channel recheck did not yield a verified runnable official OptiTrust artifact.",
+      "boundary": "This is an artifact-availability result, not proof that no artifact exists globally; no published score may replace a local reproduction."
+    },
+    "typed_count_automatic_proposer": {
+      "terminal_audit": "results/dcp_typed_count_cegis_revision_20261014_audit.json",
+      "terminal_audit_sha256": "c3fb17f664ccfbf4e46d08b7695e9730111bcd4b3ccf01cb48074307c6cc03f2",
+      "assertions": {
+        "passed": false,
+        "candidate_audit.grammar_size": 64,
+        "candidate_audit.failure_code": "resource_model_rejected",
+        "candidate_audit.verification.semantic.assignments_checked": 20977,
+        "candidate_audit.verification.semantic.passed": true,
+        "candidate_audit.matches_unique_authored_upper_bound": false,
+        "claim_boundary.general_automatic_acquisition_claimed": false,
+        "claim_boundary.independent_accuracy_claimed": false
+      },
+      "permitted_claim": "The bounded model proposer entered the frozen typed grammar and satisfied the enumerated semantic domain but failed exact resource admission.",
+      "boundary": "Negative proposer result on exposed development material; no recovery, promotion, accuracy gain or causal treatment effect."
+    },
+    "typed_count_exact_repair": {
+      "input": "results/dcp_typed_count_repair_input_20261014.json",
+      "input_sha256": "4bd31cba7a752110b38974faedfd2839682e94a9ea3d8e944b31b6028e8c0d53",
+      "certificate": "results/dcp_typed_count_repair_certificate_v3_20261014.json",
+      "certificate_sha256": "43af5c30bc8bc69f0c60a990f133fe842e9cfee149119bbcf37b08159730d911",
+      "schema": "proof-carrying-count-repair-report-v3",
+      "assertions": {
+        "repair_certificate.passed": true,
+        "repair_certificate.hypothesis_class_size": 64,
+        "repair_certificate.all_hypotheses_verified": 64,
+        "repair_certificate.minimum_passing_distance": 2,
+        "repair_certificate.minimum_passing_candidates": 1,
+        "repair_certificate.unique_minimum_repair": true,
+        "repair_certificate.guarantees.finite_class_minimality_exact": true,
+        "repair_certificate.guarantees.finite_class_uniqueness_exact": true,
+        "execution.model_api_calls": 0,
+        "execution.solver_calls": 0,
+        "execution.native_or_vm_calls": 0,
+        "execution.reference_answers_read": 0,
+        "claim_boundary.finite_frozen_grammar_only": true,
+        "claim_boundary.library_promoted": false
+      },
+      "permitted_claim": "Exhaustive answer-free verification proves one unique minimum distance-two repair within the frozen grammar and verifier.",
+      "boundary": "Deterministic verifier-mediated repair, not model discovery, grammar completeness, an unbounded semantic theorem or benchmark accuracy."
+    },
+    "prospective_acquisition_canary": {
+      "plan": "experiments/prospective_acquisition_canary_plan.json",
+      "plan_sha256": "3227b5af3275befbfe89466fb4cdb38e605850f159a6ecef1c8f62173ec76838",
+      "result": "results/prospective_acquisition_canary_result.json",
+      "result_sha256": "97f029192b6249de747f8e110c46280c1e7ae987d338dd021dc08b198a76c405",
+      "audit": "results/prospective_acquisition_canary_audit.json",
+      "audit_sha256": "4957610b0fd1bc00dd805957c8e5bd612822fb829cea2bbc314f217101f3645e",
+      "schema": "prospective-acquisition-canary-audit-v1",
+      "assertions": {
+        "paired_counts.treatment_only": 0,
+        "paired_counts.flat_only": 0,
+        "paired_counts.both": 8,
+        "paired_counts.neither": 0,
+        "engineering_gate.passed": false,
+        "engineering_gate.global_safety_failure_observed": false,
+        "accounting.logical_cells": 48,
+        "accounting.physical_attempts_reserved": 44,
+        "accounting.physical_attempts_completed": 44,
+        "accounting.usage.prompt_tokens": 42797,
+        "accounting.usage.completion_tokens": 4723,
+        "accounting.usage.total_tokens": 47520,
+        "recomputed_evidence_counts.typed_responses": 44,
+        "recomputed_evidence_counts.verification_passed": 16,
+        "claim_boundary.automatic_acquisition_efficacy_claimed": false,
+        "claim_boundary.benchmark_accuracy_claimed": false,
+        "claim_boundary.library_promotion_performed": false
+      },
+      "permitted_claim": "In the prospective eight-pair engineering canary, flat and verifier-partitioned feedback both eventually admitted all eight rejected typed proposals, producing zero discordant pairs and failing the prespecified progression gate.",
+      "boundary": "The six atomic facts were authored, seven proposal units were deterministic synthetic rejected seeds, and the canary was an underpowered engineering gate. It does not establish automatic fact acquisition, efficacy equivalence, benchmark accuracy or component necessity."
+    },
+    "g08_finite_active_acquisition_census": {
+      "artifact": "experiments/g08_finite_acquisition_census_20261015.json",
+      "sha256": "e588d581da44acf9c6e29999da892940cb849059131afd32e43e3acf203320d2",
+      "human_report": "docs/G08_FINITE_ACQUISITION_CENSUS_20261015.md",
+      "human_report_sha256": "a8d22030d02a0a110ed5f97b627d928ebb375a579a375ae13f7ccd5c48ba8724",
+      "schema": "g08-finite-acquisition-census-v1",
+      "assertions": {
+        "status": "complete_exact_finite_population_census",
+        "population.full_candidates": 64,
+        "population.semantic_candidates": 32,
+        "population.semantic_equivalence_classes": 10,
+        "population.query_space": 20977,
+        "arms.balanced_separating_witness.identified_within_budget": 10,
+        "arms.balanced_separating_witness.total_queries": 26,
+        "arms.balanced_separating_witness.worst_queries": 3,
+        "arms.canonical_first_witness.identified_within_budget": 6,
+        "arms.canonical_first_witness.total_queries": 30,
+        "arms.canonical_first_witness.worst_queries": 4,
+        "paired.balanced_only": 4,
+        "paired.canonical_only": 0,
+        "paired.both": 6,
+        "paired.neither": 0,
+        "inference.sampling_based_p_value": false,
+        "claim_boundary.exact_only_for_frozen_semantic_classes": true,
+        "claim_boundary.natural_language_fact_discovery_supported": false,
+        "claim_boundary.resource_policy_identified_by_semantic_queries": false,
+        "claim_boundary.llm_proposer_efficacy_claimed": false,
+        "claim_boundary.benchmark_accuracy_claimed": false,
+        "claim_boundary.library_promoted": false,
+        "execution.model_calls": 0,
+        "execution.api_calls": 0,
+        "execution.solver_calls": 0,
+        "execution.native_calls": 0,
+        "execution.vm_calls": 0,
+        "privacy.contains_counterexample_assignments": false,
+        "privacy.contains_problem_bodies": false,
+        "privacy.contains_request_bodies": false,
+        "privacy.contains_response_bodies": false,
+        "privacy.contains_reference_answers": false,
+        "privacy.contains_credentials": false
+      },
+      "permitted_claim": "An exact census over the 10 extensional behavior classes induced by the frozen semantic grammar shows that balanced verifier-selected witnesses identify 10/10 classes within three queries, versus 6/10 for a frozen canonical-order separating-witness control.",
+      "boundary": "This is finite active acquisition inside an authored grammar, oracle and complete domain. It does not discover natural-language facts or the resource-policy axis, establish language-model proposer efficacy or benchmark accuracy, or perform library promotion."
+    },
+    "manuscript_figure1_render": {
+      "artifact": "experiments/figure1_render_qa_20261015.json",
+      "sha256": "8e779787a9c09329d27cf315efcfd7c80e52bc0eaad16cd4d7f3851343d15951",
+      "human_report": "docs/FIGURE1_RENDER_QA_20261015.md",
+      "human_report_sha256": "d149121fadf2905ffee60324785ba868bc23bf3a879ef83953fb09f68cd5bf7f",
+      "figure": "manuscript/figures/figure1_knowledge_compilation.pdf",
+      "figure_sha256": "7c4e0b246881f6a827da27006b16af3d564eb60f5c720e3a7147a153d266044a",
+      "schema": "llm4or-figure1-render-qa-v1",
+      "assertions": {
+        "status": "passed_publication_size_render_and_visual_qa",
+        "final_size.width_mm": 180.0,
+        "final_size.height_mm": 135.89,
+        "final_size.raster_dpi": 600,
+        "automated_qa.source_preflight.verdict": "PASS",
+        "automated_qa.source_preflight.fail": 0,
+        "automated_qa.pdf_text.minimum_font_pt": 5.0,
+        "automated_qa.pdf_text.below_minimum": 0,
+        "automated_qa.collision.verdict": "PASS",
+        "automated_qa.collision.fail": 0,
+        "automated_qa.collision.warn": 0,
+        "automated_qa.alignment.verdict": "PASS",
+        "visual_qa.overall": "PASS",
+        "claim_boundaries.canonical_manifest_currently_implemented": true,
+        "claim_boundaries.complexity_weighted_promotion_currently_executed": false,
+        "claim_boundaries.universal_natural_language_proof_claimed": false,
+        "claim_boundaries.unrestricted_recursive_self_improvement_claimed": false,
+        "execution.model_calls": 0,
+        "execution.api_calls": 0,
+        "execution.solver_calls": 0
+      },
+      "permitted_claim": "The main method schematic has a reproducible 180-mm Python/Matplotlib render with editable vector outputs, 600-dpi raster companions and passing source, font, collision, alignment and final-size visual checks; it depicts the implemented canonical manifest as a retrospective artifact measurement.",
+      "boundary": "The schematic adds no experimental result; manifest description length was measured after development and is not a retrospective generalization guarantee. Complexity-weighted promotion and unrestricted recursive self-improvement remain unestablished."
+    },
+    "manuscript_figure2_source_data": {
+      "artifact": "results/manuscript_figure2_source_data_audit_20261015.json",
+      "sha256": "681dc3453e9134189059f80b7b432e4b71da927337368f286a3b0c05c5f58a8c",
+      "schema": "llm4or-manuscript-figure2-source-data-audit-v1",
+      "assertions": {
+        "status": "passed",
+        "execution.model_calls": 0,
+        "execution.api_calls": 0,
+        "execution.solver_calls": 0,
+        "execution.native_evaluator_calls": 0,
+        "execution.vm_calls": 0
+      },
+      "permitted_claim": "The aggregate tables planned for the main endpoint figure reproduce every displayed count, ratio, grouped outcome and routing-identity field from the sealed evidence.",
+      "boundary": "Source-data validation only; no new benchmark accuracy is computed by rendering."
+    },
+    "manuscript_figure2_render": {
+      "artifact": "experiments/figure2_render_qa_20261015.json",
+      "sha256": "a9fb4d781939e451467eb53e0d3de79fb66abeee97f67296865ec7517a811a11",
+      "human_report": "docs/FIGURE2_RENDER_QA_20261015.md",
+      "human_report_sha256": "d115511c7f8c58119f517232de01577b78ea8acab7e2326e143f22632333c90d",
+      "figure": "manuscript/figures/figure2_endpoint_preservation.pdf",
+      "figure_sha256": "2aeac3a7a45452ebef683bdfe436663e0f6136c618e90126e025c4e78f57bec5",
+      "schema": "llm4or-figure2-render-qa-v1",
+      "assertions": {
+        "status": "passed_publication_size_render_and_visual_qa",
+        "final_size.width_mm": 180.0,
+        "final_size.height_mm": 122.0,
+        "final_size.raster_dpi": 600,
+        "automated_qa.source_preflight.verdict": "PASS",
+        "automated_qa.source_preflight.fail": 0,
+        "automated_qa.pdf_text.minimum_font_pt": 5.5,
+        "automated_qa.pdf_text.below_minimum": 0,
+        "automated_qa.collision.verdict": "PASS",
+        "automated_qa.collision.fail": 0,
+        "automated_qa.collision.warn": 0,
+        "automated_qa.alignment.verdict": "PASS",
+        "visual_qa.overall": "PASS",
+        "privacy.contains_problem_text": false,
+        "privacy.contains_request_or_response_body": false,
+        "privacy.contains_evaluator_only_answer": false,
+        "privacy.contains_credential": false
+      },
+      "permitted_claim": "The main endpoint figure has a reproducible 180-mm Python/Matplotlib render with editable vector outputs, 600-dpi raster companions and passing source, font, collision, alignment and final-size visual checks.",
+      "boundary": "The render visualizes sealed aggregate evidence, adds no benchmark result or execution call, keeps the two endpoint definitions separate, treats zero regressions as observed rather than guaranteed, and does not rescore router accuracy."
+    },
+    "proposal_provenance_inventory": {
+      "artifact": "experiments/proposal_provenance_inventory_20261015.json",
+      "sha256": "b301eb0b168e85009b16e0f7f26404f30950cf6a123a5fdcdc4363dfa12d90f1",
+      "schema": "proposal-provenance-inventory-v1",
+      "assertions": {
+        "current_dcp_summary.distinct_proposal_identities": 5,
+        "current_dcp_summary.free_text_or_untyped": 4,
+        "current_dcp_summary.typed_finite_grammar": 1,
+        "current_dcp_summary.strict_matched_typed_units": 1,
+        "per_instance_formulation_trajectory_class.records": 229,
+        "per_instance_formulation_trajectory_class.distinct_source_proposal_identities": 132,
+        "legacy_vera_skill_lineage_class.distinct_proposal_identities_visible_in_those_records": 6,
+        "decision.historical_artifacts_form_a_valid_eight_unit_matched_population": false
+      },
+      "permitted_claim": "Historical artifacts with proposal hashes separate into incompatible statistical objects; only one current historical episode is a reusable skill proposal under the common frozen typed grammar.",
+      "boundary": "Metadata-only provenance classification; it neither evaluates proposal text nor estimates an acquisition-policy effect."
+    },
+    "matched_acquisition_power": {
+      "artifact": "experiments/matched_acquisition_power_analysis_20261015.json",
+      "sha256": "f2362bab0bdcac78d30339d4e0b03ab32176974b44f5d6c0e3b678ff0d24f82d",
+      "schema": "matched-acquisition-exact-power-analysis-v1",
+      "assertions": {
+        "primary_design.alpha": 0.05,
+        "eight_pair_canary.role": "Engineering and variance-estimation pilot only",
+        "recommended_two_stage_use.illustrative_conservative_target": "If r=0.30 and q=0.70 are the minimum relevant alternative, 138 total independent pairs give at least 80% power and 186 give at least 90% power."
+      },
+      "permitted_claim": "Under the displayed exact conditional planning scenarios, eight total proposal pairs are an engineering pilot rather than a confirmatory efficacy study; the illustrative r=.30,q=.70 alternative requires 138 or 186 independent pairs for 80% or 90% power.",
+      "boundary": "Offline planning assumptions, not effect estimates; no proposal generation, dispatch or endpoint result is authorized or implied."
+    },
+    "fresh_common_protocol_estimand": {
+      "artifact": "experiments/fresh_common_protocol_estimand_audit_20261015.json",
+      "sha256": "cca6601442e8ab17ab5fbf298083c9b431ce96938b10ee35ff1160df08e89d3d",
+      "schema": "fresh-common-protocol-estimand-audit-v1",
+      "assertions": {
+        "status": "not_ready_for_freeze_or_dispatch",
+        "source.revision": "1dac06be656c41d827ef20987cf8af0b48d382a2",
+        "cohort.records": 38,
+        "cohort.families.rcpsp": 13,
+        "cohort.families.vrptw": 25,
+        "cohort.unique_ids": 38,
+        "cohort.unique_public_text_hashes": 38,
+        "cohort.public_text_hash_overlap_with_existing_prepared_183": 0,
+        "cohort.reference_endpoint.finite_theoretical_optimum": 38,
+        "cohort.reference_endpoint.solver_status_2": 38,
+        "n38_exact_power.zero_regression_minimum_corrections_for_nominal_one_sided_p_below_0_05": 5,
+        "decision.ready_to_dispatch": false
+      },
+      "permitted_claim": "A unique, evaluator-complete 38-record larger-size RCPSP/VRPTW candidate cohort supports a future common-evidence size-generalization and mechanism panel.",
+      "boundary": "This artifact is the pre-implementation metadata and power audit. Later manifest entries freeze the common packets and authored typed compilers, while solving, scoring, ablations, external serializers, budgets and custody remain open; moderate-effect leaderboard power is still insufficient."
+    },
+    "fresh_common38_packets": {
+      "artifact": "experiments/fresh_common38_packet_readiness_20261015.json",
+      "sha256": "a12efc6273060c5cdb7b6239b83fa0c102beebd6c394adb4206dff67b7aa543f",
+      "schema": "fresh-common38-packets-v1-public-readiness",
+      "assertions": {
+        "status": "common_packets_ready_method_dispatch_not_ready",
+        "cohort.records": 38,
+        "cohort.rcpsp": 13,
+        "cohort.vrptw": 25,
+        "cohort.unique_public_payloads": 38,
+        "static_compiler_readiness.compiled": 9,
+        "static_compiler_readiness.failed": 29,
+        "decision.common_atomic_fact_packet_ready": true,
+        "decision.ready_to_dispatch": false
+      },
+      "permitted_claim": "All 38 fresh identities have a content-bound common public-text-plus-structured-data packet; the pre-existing static compiler covers only 9/38.",
+      "boundary": "The public manifest is body-free, the packet bundle remains private, and packet readiness is not formulation accuracy or dispatch authorization."
+    },
+    "fresh_common38_structured_skills": {
+      "artifact": "experiments/fresh_common38_structured_skill_readiness_20261015.json",
+      "sha256": "27e9a27453540cf688887971e8110276c59d6b6cc5348ed8e94fba158d131acf",
+      "schema": "fresh-common38-structured-skills-readiness-v1",
+      "assertions": {
+        "status": "typed_skills_ready_dispatch_controls_open",
+        "aggregate.planned": 38,
+        "aggregate.compiled_and_admitted": 38,
+        "aggregate.exact_source_count_matches": 38,
+        "aggregate.routes.rcpsp": 13,
+        "aggregate.routes.vrptw": 25,
+        "aggregate.maximum_resources.variables": 419,
+        "aggregate.maximum_resources.constraints": 742,
+        "aggregate.maximum_resources.nonzeros": 2850,
+        "aggregate.maximum_resources.serialized_bytes": 149270,
+        "execution.api_calls": 0,
+        "execution.solver_calls": 0,
+        "decision.typed_skills_ready": true,
+        "decision.ready_to_dispatch": false
+      },
+      "permitted_claim": "Authored typed RCPSP/VRPTW skills route, compile and admit all 38 fresh packets with exact agreement to source-reported variable and constraint counts.",
+      "boundary": "Count agreement and resource admission establish structural readiness only; they do not prove semantic equivalence, solver feasibility, endpoint accuracy, automatic acquisition or external-method superiority."
+    },
+    "fresh_common38_current_native": {
+      "artifact": "experiments/fresh_common38_current_native_result_20261015.json",
+      "sha256": "33ccdd0ea22874a5424441d95027540661ce2688b5298175673867fc1dc11ce3",
+      "schema": "fresh-common38-current-native-v1-public-result",
+      "assertions": {
+        "status": "complete",
+        "aggregate.planned": 38,
+        "aggregate.correct": 30,
+        "aggregate.solver_unavailable": 8,
+        "aggregate.accuracy": 0.7894736842105263,
+        "families.rcpsp.planned": 13,
+        "families.rcpsp.correct": 12,
+        "families.rcpsp.solver_unavailable": 1,
+        "families.vrptw.planned": 25,
+        "families.vrptw.correct": 18,
+        "families.vrptw.solver_unavailable": 7,
+        "privacy.contains_objectives": false,
+        "privacy.contains_points": false,
+        "privacy.contains_reference_values": false,
+        "claim_boundary.common_external_comparison_complete": false
+      },
+      "permitted_claim": "Under the frozen one-thread 20-second Gurobi native endpoint, the authored current method is correct on 30/38 fresh common identities; all 30 optimal cells match the benchmark endpoint.",
+      "boundary": "Eight solver-unavailable cells remain in the full denominator. This is the current-method row only, not a Base/BIND/CoE comparison, broad superiority result, or automatic-acquisition result."
+    },
+    "fresh_common38_current_native_audit": {
+      "artifact": "experiments/fresh_common38_current_native_audit_20261015.json",
+      "sha256": "5f24ce220be4dc79c8160206b3fa125f23fb59015ff766edb3ab4e63515d2c20",
+      "schema": "fresh-common38-current-native-independent-audit-v1",
+      "assertions": {
+        "status": "passed",
+        "checks.plan_reconstructed": true,
+        "checks.models_reconstructed": 38,
+        "checks.private_checkpoints_verified": 38,
+        "checks.endpoint_scores_recomputed": 38,
+        "checks.public_result_exactly_reproduced": true,
+        "checks.status_counts.optimal": 30,
+        "checks.status_counts.limit": 7,
+        "checks.status_counts.numerical_error": 1,
+        "execution.new_solver_calls": 0,
+        "execution.api_calls": 0
+      },
+      "permitted_claim": "An independent local audit reconstructs the frozen plan, every model, every private checkpoint and the exact public 30/38 aggregate without new solver calls.",
+      "boundary": "The audit verifies the current native row and its privacy/accounting boundaries; it does not supply missing external rows."
+    },
+    "fresh_common38_common_protocol_synthesis": {
+      "artifact": "experiments/fresh_common38_common_protocol_synthesis_20261015.json",
+      "sha256": "a678008a7449d588e12eb59bf019875fb08d7cb8f4e9c177ca8aaf9f0fb2aa9e",
+      "schema": "fresh-common38-common-protocol-synthesis-v1",
+      "assertions": {
+        "status": "complete",
+        "cohort.planned": 38,
+        "cohort.rcpsp": 13,
+        "cohort.vrptw": 25,
+        "identity_alignment_verified": true,
+        "inference.confirmatory_comparisons": 4,
+        "inference.familywise_control": "Holm",
+        "bind_answer_bearing_transition.corrections": 0,
+        "bind_answer_bearing_transition.regressions": 0,
+        "claim_boundary.fixed_fresh_common_endpoint_only": true,
+        "claim_boundary.broad_benchmark_superiority_supported": false,
+        "claim_boundary.construction_cost_equalized": false,
+        "privacy.contains_problem_bodies": false,
+        "privacy.contains_request_bodies": false,
+        "privacy.contains_response_bodies": false,
+        "privacy.contains_credentials": false
+      },
+      "permitted_claim": "On the frozen 38-identity RCPSP/VRPTW cohort, the current method scores 30/38 versus Base 0/38, BIND round one and final 13/38, and CoE-safe 4/38; all four paired current-method comparisons reject after Holm correction.",
+      "boundary": "This is a fixed-endpoint comparison over two families from one source lineage. Method-native call budgets and provider tokens differ, BIND final is answer-bearing, construction cost is not equalized, and broad benchmark superiority is not established."
+    },
+    "g07_bounded_scope_closure": {
+      "artifact": "experiments/g07_bounded_scope_closure_20261015.json",
+      "sha256": "11d0bf01cab6bf33cf6af1528e9318b01b1b92e92783103fc3496724ba911086",
+      "human_report": "docs/G07_BOUNDED_SCOPE_CLOSURE_20261015.md",
+      "human_report_sha256": "f21ea772df885837ff9015eae6e403e943c6e50c3fbbe7568104cc9bd7bd2175",
+      "schema": "g07-bounded-scope-closure-v1",
+      "assertions": {
+        "status": "closed_with_boundary_no_new_dispatch",
+        "completed_common_protocol.cohort.planned": 38,
+        "completed_common_protocol.cohort.source_lineages": 1,
+        "completed_common_protocol.full_denominator_correct.current": 30,
+        "completed_common_protocol.full_denominator_correct.base": 0,
+        "completed_common_protocol.full_denominator_correct.bind_round_one": 13,
+        "completed_common_protocol.full_denominator_correct.bind_final": 13,
+        "completed_common_protocol.full_denominator_correct.coe_safe": 4,
+        "candidate_second_source_disposition.dcp_bench.promotion_gate_passed": false,
+        "candidate_second_source_disposition.dcp_bench.reserved_confirmation_identities": 219,
+        "candidate_second_source_disposition.dcp_bench.reserved_confirmation_remains_closed": true,
+        "candidate_second_source_disposition.miplib_nl.scoreable_endpoint_frozen": false,
+        "scope_decision.g07_status": "closed_with_boundary",
+        "scope_decision.goal_blocker_after_this_decision": false,
+        "claim_boundary.fixed_common38_superiority_supported": true,
+        "claim_boundary.broad_benchmark_superiority_supported": false,
+        "claim_boundary.second_source_result_claimed": false,
+        "claim_boundary.sealed_confirmation_opened": false,
+        "claim_boundary.new_api_calls": 0,
+        "claim_boundary.new_model_calls": 0,
+        "claim_boundary.new_solver_calls": 0,
+        "claim_boundary.new_native_or_vm_calls": 0,
+        "claim_boundary.problem_bodies_read": false,
+        "claim_boundary.request_or_response_bodies_read": false,
+        "claim_boundary.evaluator_only_answers_read": false,
+        "claim_boundary.credentials_read": false
+      },
+      "permitted_claim": "The completed fresh common-38 comparison closes G07 for its stated fixed-endpoint scope; a second independently frozen source is required only before a broad benchmark-superiority claim.",
+      "boundary": "The DCP confirmation partition remains sealed after its failed promotion gate, MIPLIB-NL remains non-score-ready, and no second-source result is claimed."
+    },
+    "component_ablation_identifiability": {
+      "artifact": "experiments/component_ablation_identifiability_audit_20261015.json",
+      "sha256": "7c13e7921b38baa89cea5da335131609268bd5dff278c9edd6fe10ba91163bd7",
+      "schema": "component-ablation-identifiability-audit-v1",
+      "assertions": {
+        "status": "not_ready_for_freeze_or_dispatch",
+        "identifiability_finding.single_final_accuracy_table_sufficient": false,
+        "multiplicity_and_power.zero_regression_minimum_corrections_at_alpha_0_0125": 7,
+        "readiness_checks.theory_to_intervention_mapping": "passed",
+        "readiness_checks.power_for_four_moderate_endpoint_effects_on_n38": "insufficient",
+        "decision.ready_to_prepare": false,
+        "decision.ready_to_freeze": false,
+        "decision.ready_to_dispatch": false
+      },
+      "permitted_claim": "The knowledge-construction theory maps to separately identifiable proposal-, library- and envelope-level interventions with immutable outer safety caps.",
+      "boundary": "Design and power audit only; no component effect has been estimated, and the 38-record endpoint cohort is underpowered for four moderate confirmatory effects."
+    },
+    "component_ablation_power_and_units": {
+      "artifact": "experiments/component_ablation_power_and_unit_inventory_20261015.json",
+      "sha256": "0f75cb740d2f2202a4699598f47e26f02ca3c9c37b211a5bcbc8577a208e1a5e",
+      "schema": "component-ablation-power-unit-inventory-v1",
+      "assertions": {
+        "status": "closed_offline_design_analysis_not_ready_for_dispatch",
+        "multiplicity_plan.conservative_planning_alpha_per_contrast": 0.0125,
+        "existing_unit_inventory.proposal_level.strict_historical_matched_typed_units": 1,
+        "existing_unit_inventory.library_selection_level.independent_repeated_common_pool_selection_episodes": 0,
+        "existing_unit_inventory.routing_envelope_level.existing_mixed_records": 2985,
+        "existing_unit_inventory.routing_envelope_level.zero_or_multiple_match_outcomes_observed": 0,
+        "existing_unit_inventory.fresh_endpoint_level.power_at_r_0_30_q_0_70_alpha_0_0125": 0.120922,
+        "existing_unit_inventory.fresh_endpoint_level.minimum_total_units_at_r_0_30_q_0_70_for_80_percent_power": 205,
+        "existing_unit_inventory.fresh_endpoint_level.minimum_total_units_at_r_0_30_q_0_70_for_90_percent_power": 263,
+        "decision.ready_to_dispatch": false
+      },
+      "permitted_claim": "Exact conservative planning and metadata inventory show that current historical proposal, library-selection and routing records do not supply valid powered units for the four component effects.",
+      "boundary": "The displayed r and q values are planning alternatives rather than effect estimates; no new proposal, route or component outcome was generated."
+    },
+    "g09_finite_component_census": {
+      "artifact": "experiments/g09_finite_component_census_v2_20261015.json",
+      "sha256": "11e68dbff762893924430608c69dae1cfdb41756f5b5d66c981b96584e8b8911",
+      "schema": "g09-finite-component-census-v2",
+      "assertions": {
+        "status": "complete_exact_finite_population_census",
+        "admission_census.population": 64,
+        "admission_census.unique_candidate_hashes": 64,
+        "admission_census.semantic_identifiability": "identified_non_nested_complete_finite_grammar",
+        "admission_census.semantic_resource_cells.semantic_0_resource_0": 47,
+        "admission_census.semantic_resource_cells.semantic_0_resource_1": 11,
+        "admission_census.semantic_resource_cells.semantic_1_resource_0": 5,
+        "admission_census.semantic_resource_cells.semantic_1_resource_1": 1,
+        "admission_census.paired_full_vs_no_semantic.full_prevents_unsafe_admission": 11,
+        "admission_census.paired_full_vs_no_semantic.no_semantic_prevents_safe_admission": 0,
+        "admission_census.paired_full_vs_no_resource.full_prevents_unsafe_admission": 5,
+        "admission_census.paired_full_vs_no_resource.no_resource_prevents_safe_admission": 0,
+        "routing_census.population": 69,
+        "routing_census.multiplicity_counts.zero": 43,
+        "routing_census.multiplicity_counts.unique": 24,
+        "routing_census.multiplicity_counts.multiple": 2,
+        "routing_census.paired_exactly_one_vs_forced_first.corrections": 45,
+        "routing_census.paired_exactly_one_vs_forced_first.regressions": 0,
+        "complexity_control.independent_library_selection_episodes": 0,
+        "claim_boundary.resource_gate_effect_identified_in_typed_count_grammar": true,
+        "claim_boundary.semantic_gate_effect_identified_in_typed_count_grammar": true,
+        "claim_boundary.exactly_one_routing_effect_identified_in_envelope_grammar": true,
+        "claim_boundary.complexity_control_causal_effect_identified": false,
+        "execution.api_calls": 0,
+        "execution.solver_calls": 0
+      },
+      "permitted_claim": "Exact complete-population censuses identify bounded semantic-admission and resource-admission effects in the 64-member typed-count grammar and a bounded exactly-one routing effect in the 69-envelope shift and ambiguity grammar.",
+      "boundary": "Deployment verification remains fail-fast, whereas ablation measurement runs both gates independently. This earlier census contains no library-selection episode; complexity is tested separately. Neither census supports proposer-distribution or unrestricted-shift generalization."
+    },
+    "g09_library_complexity_census": {
+      "artifact": "experiments/g09_library_complexity_census_20261015.json",
+      "sha256": "d6deb6b5c538f78e431cd00c91dd239e48029854d73135fed2acfdc4e3ea8f1b",
+      "human_report": "docs/G09_LIBRARY_COMPLEXITY_CENSUS_20261015.md",
+      "human_report_sha256": "6e42d8dec915188552ad98a8a316837f620773f7c821e2ae2394fc4d108d4216",
+      "schema": "g09-library-complexity-census-v1",
+      "assertions": {
+        "status": "complete_exact_finite_population_census",
+        "population.optional_shadow_guards": 6,
+        "population.candidate_libraries": 64,
+        "population.calibration_episodes": 64,
+        "population.routing_envelopes": 69,
+        "population.unique_candidate_hashes": 64,
+        "population.unique_episode_hashes": 64,
+        "population.same_candidate_pool_every_episode": true,
+        "population.code_frozen_before_episode_labels": true,
+        "prefix_code.membership_header_bits": 6,
+        "prefix_code.prefix_free": true,
+        "prefix_code.label_independent": true,
+        "arms.proof_constrained_mdl.fully_correct_libraries": 64,
+        "arms.proof_constrained_mdl.routing_decisions_correct": 4416,
+        "arms.proof_only_frozen_hash.fully_correct_libraries": 1,
+        "arms.proof_only_frozen_hash.routing_decisions_correct": 4284,
+        "paired.mdl_only_fully_correct": 63,
+        "paired.control_only_fully_correct": 0,
+        "paired.both_fully_correct": 1,
+        "paired.neither_fully_correct": 0,
+        "paired.mdl_routing_corrections": 132,
+        "paired.mdl_routing_regressions": 0,
+        "inference.sampling_based_p_value": false,
+        "claim_boundary.bounded_complexity_effect_identified": true,
+        "claim_boundary.exact_only_for_authored_shadow_guard_grammar": true,
+        "claim_boundary.natural_library_distribution_generalization": false,
+        "claim_boundary.current_authored_library_length_measured": false,
+        "claim_boundary.benchmark_accuracy_claimed": false,
+        "claim_boundary.library_promoted": false,
+        "execution.model_calls": 0,
+        "execution.api_calls": 0,
+        "execution.solver_calls": 0,
+        "execution.native_calls": 0,
+        "execution.vm_calls": 0,
+        "privacy.contains_problem_bodies": false,
+        "privacy.contains_request_bodies": false,
+        "privacy.contains_response_bodies": false,
+        "privacy.contains_reference_answers": false,
+        "privacy.contains_evaluator_only_answers": false,
+        "privacy.contains_credentials": false
+      },
+      "permitted_claim": "Across the complete authored six-shadow-guard library grammar and all 64 calibration subsets, proof-constrained label-independent description length selects 64/64 fully correct libraries versus 1/64 for a proof-only frozen-hash selector, with 132 routing-decision corrections and no regressions.",
+      "boundary": "This is an exact bounded mechanism effect over an authored finite library grammar, not a sample from natural library evolution. It does not measure current TSP/OR library length, add benchmark-accuracy evidence or perform promotion."
+    },
+    "release_readiness_delta": {
+      "artifact": "experiments/release_readiness_delta_v2_20261015.json",
+      "sha256": "5bbee3ca8cf8169a2b85aa75526445ea503ac57c46a846adf310d6a2355e8106",
+      "schema": "llm4or-release-readiness-delta-v2",
+      "assertions": {
+        "status": "not_ready",
+        "repository.root_license_present": false,
+        "manifest_inventory.unique_bound_paths": 46,
+        "manifest_inventory.git_tracked": 7,
+        "manifest_inventory.git_untracked": 39,
+        "manifest_inventory.missing": 0,
+        "content_and_secret_scan.credential_literal_patterns.bearer_token_hits": 0,
+        "content_and_secret_scan.credential_literal_patterns.openai_style_key_hits": 0,
+        "content_and_secret_scan.credential_literal_patterns.quoted_secret_assignment_hits": 0,
+        "environment_and_clone_readiness.offline_environment_spec_present": true,
+        "environment_and_clone_readiness.full_provider_solver_native_environment_locked": false,
+        "environment_and_clone_readiness.submodule_initialized_now": false,
+        "environment_and_clone_readiness.credential_free_clean_clone_rebuild_completed": false,
+        "decision.release_ready": false
+      },
+      "permitted_claim": "The current 45-path evidence package is complete on disk but not integrated into a licensed, rights-safe, credential-free reproducible release.",
+      "boundary": "Read-only release audit; no license, Git index, history, submodule, public repository or archive was modified."
+    },
+    "targeted_offline_verification": {
+      "artifact": "results/paper_evidence_offline_verification_20261014.json",
+      "sha256": "27c0d1cfacb77d03036fa541c2bda7ff17402e66020dc6ccf527893a7d23a4c9",
+      "assertions": {
+        "unittest_run.tests_run": 40,
+        "unittest_run.failures": 0,
+        "unittest_run.errors": 0,
+        "unittest_run.status": "passed",
+        "external_common40_equivalent_assertions.assertions_run": 11,
+        "external_common40_equivalent_assertions.failures": 0,
+        "external_common40_equivalent_assertions.status": "passed",
+        "execution.api_calls": 0,
+        "execution.model_calls": 0,
+        "execution.benchmark_solver_calls": 0,
+        "execution.native_evaluator_calls": 0
+      },
+      "permitted_claim": "Targeted offline contract and reconstruction tests for the five paper evidence axes pass under the recorded source identities.",
+      "boundary": "Not a rerun of headline benchmark inference or the complete historical repository suite."
+    },
+    "remote_recursive_layer_a_http1": {
+      "artifact": "experiments/clean_clone_layer_a_remote_http1_audit_20261015.json",
+      "sha256": "4be4b7dfcf7f7ec03680588b4c349e74cdceb7b0b6837c1418f4a06b76b266cf",
+      "schema": "llm4or-remote-recursive-layer-a-http1-audit-v1",
+      "assertions": {
+        "status": "passed_remote_submodule_recursive_credential_free_layer_a_http1",
+        "source.commit": "2002b29851b2ab118001251566b21d76ac339474",
+        "remote_submodule.checked_out_commit": "c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010",
+        "remote_submodule.missing_reachable_objects": 0,
+        "remote_submodule.fsck_full_passed": true,
+        "remote_submodule.remote_acquisition_verified": true,
+        "layer_a.tests": 53,
+        "safety.api_or_model_calls": 0
+      },
+      "permitted_claim": "At the bound main source commit, Git HTTPS HTTP/1.1 retrieved the exact pinned solver-in-the-loop submodule from GitHub with a complete object graph and supported all 53 credential-free Layer-A tests.",
+      "boundary": "This run does not prove public main-repository availability, rights clearance, historical publisher safety, or provider/solver/figure reexecution."
+    }
+  },
+  "paper_documents": {
+    "bibliography": {
+      "path": "manuscript/references.bib",
+      "sha256": "b306306cf3e90720d434ef8f92ae8e82166de3286388ee3e6343b51326407b2f"
+    },
+    "manuscript_draft": {
+      "path": "manuscript/MANUSCRIPT_DRAFT.md",
+      "sha256": "e711c2867ed5069cc7184a0902d46860266c175babbf4d01520842265ec11cfd"
+    },
+    "manuscript_evidence_audit": {
+      "path": "manuscript/MANUSCRIPT_EVIDENCE_AUDIT.md",
+      "sha256": "917fc0736969b979e2bfa7e044af3cbc1b30402685a01ab6110dd8a63102770a"
+    },
+    "worked_example": {
+      "path": "manuscript/WORKED_EXAMPLE.md",
+      "sha256": "11f41d0809fc62c03b6109da3e28cf665c0ee8bd552a17bf2f25a3d31d414152"
+    },
+    "figure_plan": {
+      "path": "manuscript/FIGURE_PLAN.md",
+      "sha256": "025cb0c14f3916aa1572a8c9560bb978cca226e273e939465a5b3b0ae122ada3"
+    },
+    "supplementary_theory": {
+      "path": "manuscript/SUPPLEMENTARY_THEORY.md",
+      "sha256": "5e613994a5e4e36dc20664ce5abfa82e2786aa7acee7becc5a2708390f029cf2"
+    },
+    "supplementary_reproducibility": {
+      "path": "manuscript/SUPPLEMENTARY_REPRODUCIBILITY.md",
+      "sha256": "1796f4064932ac668e14dbfd9b681726437950d192678323c77f6078da0c0688"
+    },
+    "knowledge_evolution_theory": {
+      "path": "docs/KNOWLEDGE_EVOLUTION_THEORETICAL_FRAMEWORK_20261015.md",
+      "sha256": "da0710bb3f84d11e22fae3306270b314d148320b3764bba9e885bed2b9fbe584"
+    },
+    "source_data_readme": {
+      "path": "manuscript/source_data/README.md",
+      "sha256": "99fea70b401fedbfa95ea9d3af6b1b8dfe6a4ace4d9b91352f24e9aa497b296b"
+    },
+    "or_debug_endpoint_sensitivity_source_data": {
+      "path": "manuscript/source_data/or_debug_endpoint_sensitivity.csv",
+      "sha256": "6b771547ea2d1bd7cd4bf093a1f99b4e7a206667a0e2e42f85ae011f06babc4e"
+    },
+    "or_debug_group_endpoint_sensitivity_source_data": {
+      "path": "manuscript/source_data/or_debug_group_endpoint_sensitivity.csv",
+      "sha256": "3659cddc28cddd41498ebd4bae86c7c5cc50b7d6a2eabd906fe2ab2d4d00c5c3"
+    },
+    "theory": {
+      "path": "docs/PROOF_CARRYING_SKILL_EVOLUTION_THEORY.md",
+      "sha256": "a0c8001ae887ba7e793a53ecc315762483a32363417910b998a2e36050911fd4"
+    },
+    "theory_primary_source_map": {
+      "path": "docs/THEORY_PRIMARY_SOURCE_MAP_20261015.md",
+      "sha256": "2805a2f50a4764bc9be4e3e5d31ed783c8b0b1b26185ed613b4692a3d0523c07"
+    },
+    "claim_evidence_matrix": {
+      "path": "docs/THEORY_CLAIM_EVIDENCE_MATRIX.md",
+      "sha256": "8beff240cbe43b039ee6898ce4f00718b5000074cf65dad6f9a99b969b530522"
+    },
+    "paper_story": {
+      "path": "docs/TOP_CONFERENCE_STORY.md",
+      "sha256": "ef888edbba3ef78aefa448fb3c950276e5523c956f488ec7dacf13edcc9d7c86"
+    },
+    "method_roadmap": {
+      "path": "docs/TOP_CONFERENCE_METHOD_ROADMAP.md",
+      "sha256": "97e43e8b6be5becc56e423e038875793e1ea8df0560fc41dd278c0f010673962"
+    },
+    "component_ablation_report": {
+      "path": "docs/COMPONENT_ABLATION_IDENTIFIABILITY_AUDIT_20261015.md",
+      "sha256": "1b71d413860e0f6b82f7b50c2c144afe545770e5162dbed0d850736ccc9a8156"
+    },
+    "component_ablation_power_report": {
+      "path": "docs/COMPONENT_ABLATION_POWER_AND_UNIT_INVENTORY_20261015.md",
+      "sha256": "c58d0f4bc8726bfdd04fdecab4d041456736d91b06814eb005e275fb82428e73"
+    },
+    "fresh_common38_common_protocol_report": {
+      "path": "docs/FRESH_COMMON38_COMMON_PROTOCOL_SYNTHESIS_20261015.md",
+      "sha256": "c94fb11377815e89a24dd659cbf626e879b1c617eb8b7557b4f8a7f0b8568727"
+    },
+    "g07_bounded_scope_closure_report": {
+      "path": "docs/G07_BOUNDED_SCOPE_CLOSURE_20261015.md",
+      "sha256": "f21ea772df885837ff9015eae6e403e943c6e50c3fbbe7568104cc9bd7bd2175"
+    },
+    "g09_finite_component_report": {
+      "path": "docs/G09_FINITE_COMPONENT_CENSUS_V2_20261015.md",
+      "sha256": "cd5e01e8c2f76697a477cb4c1c5e42c99a1da300865faf711a18e63d3629b1a0"
+    },
+    "terminology": {
+      "path": "docs/PAPER_TERMINOLOGY_LEDGER_20261014.md",
+      "sha256": "668311cf7956367b27ca8bbbcfaa60c2912ebcc14619035194d9f0ad745b25f0"
+    },
+    "outline": {
+      "path": "manuscript/OUTLINE.md",
+      "sha256": "0a070c2a40ed07378604159bca8347780a1a27bd40470c09197bcd339556abd6"
+    },
+    "data_code_availability_audit": {
+      "path": "docs/DATA_CODE_AVAILABILITY_AUDIT_V3_20261016.md",
+      "sha256": "e02c524c4ad8d622edd774aca9d0b5aa870d9045d83bcaa34de344c0bbeb67eb"
+    },
+    "release_readiness_report": {
+      "path": "docs/RELEASE_READINESS_DELTA_V2_20261015.md",
+      "sha256": "b4932c2dc6415799d4f16e735aa3934770f25ed902d728564203978ca5e4db4b"
+    }
+  },
+  "global_claim_boundaries": [
+    "Benchmark formulation accuracy is a fixed task endpoint, not full formulation equivalence.",
+    "Finite verifier-relative correctness does not establish correctness outside the declared verification domain.",
+    "TSP and OR-Debug show replication of a methodology with separately authored skills, not transfer of one unchanged skill.",
+    "OR-Debug corrected-primary and released-primary results are both disclosed because the endpoint definition changes 516 type-B LP judgments.",
+    "Mixed routing is retrospective frozen-interface composition, not fresh accuracy or learned routing under shift.",
+    "The fixed common-40 panel has unequal information and execution contracts and is not an unconditional leaderboard.",
+    "One final endpoint table cannot causally identify proposal-level admission, library-level complexity control and envelope-level routing; each requires its valid intervention and unit.",
+    "The current evidence establishes bounded behavior-class acquisition inside one authored finite grammar, but not end-to-end automatic skill acquisition from natural language or unrestricted RSI.",
+    "The completed eight-pair matched canary has zero discordant pairs and fails its progression gate; it tests feedback organization over authored facts, not automatic fact discovery or efficacy equivalence.",
+    "Recent work already covers typed contracts, validation-gated revision, executable skill programs, applicability filtering and versioned verifiable skill libraries; this paper claims an optimization-modeling-specific proof-carrying composition rather than general priority for those mechanisms.",
+    "The current TSP/OR-Debug library has canonical answer-free skill and parent-linked library manifests with a measured 17,728-bit semantic envelope and exact 2,985-record identity reconstruction; because the authored encoding was fixed after development outcomes, this is an artifact measurement rather than a retrospective generalization bound.",
+    "Complexity-weighted promotion and cumulative regression budgeting are prospective conditional protocol guarantees; current runs did not use the former, and TSP plus OR-Debug do not form one fixed-target sequence for the latter.",
+    "The fresh common-38 study establishes a large fixed-endpoint advantage over locally rerun Base, BIND and CoE-safe on two families from one source lineage; it does not equalize construction cost or prove broad benchmark superiority.",
+    "Finite complete-population censuses identify semantic-admission, resource-admission and exactly-one routing effects inside their frozen 64-candidate and 69-envelope grammars, and a complexity-control effect inside the authored six-shadow-guard library grammar; none establishes natural proposer or shift-distribution generalization.",
+    "A second source lineage is required before a broad benchmark-superiority claim, but the failed DCP development gate and non-score-ready MIPLIB-NL inventory must not be bypassed to manufacture that replication."
+  ],
+  "construction_execution": {
+    "new_model_calls": 44,
+    "new_api_calls": 44,
+    "new_solver_calls": 0,
+    "new_native_or_vm_calls": 0,
+    "reference_answers_read": false,
+    "request_or_response_bodies_read": true,
+    "body_access_scope": "frozen runtime and independent verifier only; no bodies are present in public evidence artifacts",
+    "credentials_read": true,
+    "credential_access_scope": "authorized isolated transport children only; no credential is present in evidence artifacts"
+  }
+}

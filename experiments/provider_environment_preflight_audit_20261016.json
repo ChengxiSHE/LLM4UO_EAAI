@@ -1,0 +1,57 @@
+{
+  "schema": "llm4or-provider-environment-preflight-v1",
+  "status": "passed_provider_transport_preflight",
+  "base_url": "https://antchat.alipay.com/v1",
+  "model": "DeepSeek-V4-Flash",
+  "max_concurrency": 5,
+  "transport_version": "antchat-public-transport-preflight-v1",
+  "python": "3.10.1",
+  "dependencies": {
+    "certifi": "2026.7.22"
+  },
+  "requirements_file": "requirements-provider.txt",
+  "requirements_file_sha256": "219fc54508ef936917d2fec1107709c3015c4959c96d2f81ce56bdf8f641d072",
+  "ca_bundle": {
+    "bytes": 240216,
+    "sha256": "9cc2a774b5198dcff14d9be1e66091f538975d867ce029a96bce15a55dfd730f",
+    "expected_sha256": "9cc2a774b5198dcff14d9be1e66091f538975d867ce029a96bce15a55dfd730f"
+  },
+  "transport_imports": [
+    "__future__",
+    "certifi",
+    "hashlib",
+    "pathlib",
+    "ssl"
+  ],
+  "third_party_imports": [
+    "certifi"
+  ],
+  "source_sha256": {
+    "llm4or/public_antchat_transport.py": "0514ba591bc391cf0c72bf38f4fa1c0140f3511678297456a3b925c441c17e24",
+    "llm4or/formal_provider.py": "bd87fa4aec57ef9dc66188ba3e5505118300911b7d4055df8241a985921944ad"
+  },
+  "checks": {
+    "certifi_version_matches": true,
+    "ca_sha256_matches": true,
+    "transport_frozen_ca_matches": true,
+    "base_url_consistent": true,
+    "model_consistent": true,
+    "max_concurrency_fixed": true,
+    "third_party_imports_exact": true,
+    "openai_sdk_not_required": true,
+    "requests_not_required": true,
+    "tls_context_verified": true
+  },
+  "boundary": "This proves only the local frozen transport dependency, CA binding, endpoint/model identity and TLS-context construction. It does not read profile metadata or a key, contact the provider, prove account authorization, replay trajectories or validate future provider behavior.",
+  "execution": {
+    "model_calls": 0,
+    "api_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "profile_metadata_read": false,
+    "credentials_read": false,
+    "request_or_response_bodies_read": false,
+    "evaluator_only_answers_read": false
+  }
+}

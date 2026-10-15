@@ -1,0 +1,579 @@
+{
+  "audited_at_local_date": "2026-10-15",
+  "decision": {
+    "first_review_queue": "Review the 23 explicitly evidence-bound files and the five external-record reconstruction files before considering any of the 50 incidental fanout files.",
+    "incidental_fanout_policy": "Do not bulk-allowlist the 50 residual files. Remove avoidable dependencies through an approved behavior-equivalent design, or justify each file by an executed reconstruction test.",
+    "release_allowlist_established": false,
+    "remaining_gates": [
+      "author-selected root license and attribution policy",
+      "per-file semantic, authorship, rights and minimum-disclosure review",
+      "non-Python data/binary/service/license closure",
+      "deterministic layer-specific reconstruction tests",
+      "credential-free recursive clean-clone rebuild"
+    ]
+  },
+  "execution": {
+    "credentials_read": 0,
+    "evaluator_only_answers_read": 0,
+    "git_history_modified": false,
+    "git_index_modified": false,
+    "model_or_api_calls": 0,
+    "native_or_vm_calls": 0,
+    "network_calls": 0,
+    "request_or_response_bodies_read": 0,
+    "solver_calls": 0
+  },
+  "frozen_evidence_source_sets": {
+    "or_debug_confirmation": {
+      "bound_python_files": 17,
+      "current_hash_mismatches": [],
+      "outside_conservative_closure": [
+        "llm4or/or_debug_public_bundle.py",
+        "scripts/prepare_or_debug_confirmation_bundle.py"
+      ],
+      "tracked_in_current_checkout": 6,
+      "untracked_in_conservative_closure": 9
+    },
+    "tsp_confirmation": {
+      "bound_python_files": 11,
+      "current_hash_mismatches": [],
+      "outside_conservative_closure": [
+        "data/raw/optengine_20261004/pipeline/evaluation_tir.py",
+        "tests/test_prepare_tsp_constraint_confirmation.py",
+        "tests/test_run_tsp_constraint_confirmation.py"
+      ],
+      "tracked_in_current_checkout": 2,
+      "untracked_in_conservative_closure": 6
+    },
+    "typed_count_exact_repair": {
+      "bound_python_files": 11,
+      "current_hash_mismatches": [],
+      "outside_conservative_closure": [],
+      "tracked_in_current_checkout": 3,
+      "untracked_in_conservative_closure": 8
+    }
+  },
+  "inputs": {
+    "experiments/headline_reconstruction_entrypoint_audit_20261015.json": "32225cf5bfd8cc7826726b7d9e1a5a6e9d9a160a3f41032fbceb7f4fb2ad1b16",
+    "experiments/headline_static_python_closure_20261015.json": "e2c5eba845c06df826570de1fc68103d37793422d813ab4341e0dfdecd2e098b"
+  },
+  "license_and_provenance": {
+    "current_blob_objects_seen_in_reachable_object_listing": 83,
+    "files_with_spdx_copyright_or_licensed_under_signal": 0,
+    "interpretation": "The object graph contains historical path and blob hints for all 83 files, but the stricter same-path/same-blob commit lookup found none. Object presence alone is not a release provenance chain.",
+    "path_names_seen_in_reachable_object_listing": 83,
+    "same_path_same_blob_found_in_a_reachable_commit": 0
+  },
+  "method": {
+    "limitations": [
+      "Heuristic risk signals are review triggers, not findings of a secret, network transmission or rights violation.",
+      "Absence of a pattern is not evidence of license, authorship, rights safety or minimum disclosure.",
+      "Static import closure excludes runtime-only imports, subprocess binaries, data, services and licenses."
+    ],
+    "partition": "Explicit frozen source bindings first, then direct external-record reconstruction, then remaining direct entrypoints/tests, then residual import fanout.",
+    "provenance_probe": "Compare current path and blob identities with the reachable Git object graph, then require a stricter same-path/same-blob commit lookup before treating history as provenance.",
+    "risk_scan": "AST and raw-text metadata scan with direct-call and attribute-call write wrappers. It emits file names and counts only; it does not emit string values, credentials, problem bodies, responses or evaluator-only answers."
+  },
+  "purpose": "Partition every untracked Python file in the conservative headline reconstruction closure by evidentiary role and flag source-review risks without staging or publishing any file.",
+  "risk_signal_summary": {
+    "credential_or_environment_heuristic": {
+      "files": 9,
+      "paths": [
+        "llm4or/antchat_object_pilot_transport_v2.py",
+        "llm4or/compact_object_transport.py",
+        "llm4or/direct_semantic_review_gateway.py",
+        "llm4or/object_feedback_contract.py",
+        "llm4or/public_finite_canary.py",
+        "llm4or/reference_audit_stress_v2.py",
+        "scripts/acquire_typed_count_cegis_revision.py",
+        "scripts/audit_external_comparison_cohorts.py",
+        "scripts/summarize_external_common40.py"
+      ]
+    },
+    "dynamic_execution_heuristic": {
+      "files": 3,
+      "paths": [
+        "dcp_reference_adapter.py",
+        "scripts/certify_typed_count_repair.py",
+        "tests/test_evaluate_tsp_constraint_confirmation.py"
+      ]
+    },
+    "file_write_call_heuristic": {
+      "files": 18,
+      "paths": [
+        "dcp_reference_adapter.py",
+        "llm4or/object_feedback_pilot_inputs.py",
+        "llm4or/packing_indexed_development.py",
+        "llm4or/packing_relational_development.py",
+        "llm4or/reference_audit_stress_v2.py",
+        "scripts/acquire_typed_count_cegis_revision.py",
+        "scripts/audit_external_comparison_cohorts.py",
+        "scripts/audit_typed_count_cegis_revision.py",
+        "scripts/certify_typed_count_repair.py",
+        "scripts/evaluate_bind_common40_union.py",
+        "scripts/evaluate_coe_common40_union.py",
+        "scripts/evaluate_or_debug_confirmation.py",
+        "scripts/evaluate_tsp_constraint_confirmation.py",
+        "scripts/evaluate_tsp_constraint_promotion.py",
+        "scripts/prepare_tsp_constraint_confirmation.py",
+        "scripts/run_or_debug_confirmation_methods.py",
+        "scripts/run_tsp_constraint_confirmation.py",
+        "scripts/summarize_external_common40.py"
+      ]
+    },
+    "large_string_literal_at_least_500_chars": {
+      "files": 19,
+      "paths": [
+        "llm4or/compact_object_transport.py",
+        "llm4or/finite_count_public.py",
+        "llm4or/isolated_semantic_review.py",
+        "llm4or/object_feedback_contract.py",
+        "llm4or/order_study_contract.py",
+        "llm4or/packing_capacity_references.py",
+        "llm4or/packing_measurement_projection.py",
+        "llm4or/packing_reference_obligation_audit.py",
+        "llm4or/packing_reference_obligation_audit_v2.py",
+        "llm4or/packing_relational_audit.py",
+        "llm4or/packing_relational_frontend.py",
+        "llm4or/packing_semantic_frontend_v2.py",
+        "llm4or/packing_source_index_frontend.py",
+        "llm4or/pair_skill_acquisition.py",
+        "llm4or/public_compact_guidance.py",
+        "llm4or/public_compact_proposal.py",
+        "llm4or/public_finite_proposal.py",
+        "llm4or/public_finite_tensor_proposal.py",
+        "llm4or/public_order_proposal.py"
+      ]
+    },
+    "network_or_provider_heuristic": {
+      "files": 21,
+      "paths": [
+        "llm4or/antchat_object_pilot_contract.py",
+        "llm4or/antchat_object_pilot_transport_v2.py",
+        "llm4or/compact_object_transport.py",
+        "llm4or/direct_semantic_review_gateway.py",
+        "llm4or/external_completion_gateway.py",
+        "llm4or/isolated_semantic_review.py",
+        "llm4or/object_feedback_contract.py",
+        "llm4or/object_feedback_pilot_inputs.py",
+        "llm4or/order_study_contract.py",
+        "llm4or/packing_indexed_development.py",
+        "llm4or/packing_relational_development.py",
+        "llm4or/public_compact_canary.py",
+        "llm4or/public_compact_inputs.py",
+        "llm4or/public_compact_repair_files.py",
+        "llm4or/reference_audit_stress_v2.py",
+        "llm4or/tsp_static_evaluation.py",
+        "scripts/acquire_typed_count_cegis_revision.py",
+        "scripts/audit_external_comparison_cohorts.py",
+        "scripts/evaluate_tsp_constraint_confirmation.py",
+        "scripts/evaluate_tsp_constraint_promotion.py",
+        "scripts/run_tsp_constraint_confirmation.py"
+      ]
+    },
+    "private_or_evaluator_term_heuristic": {
+      "files": 20,
+      "paths": [
+        "llm4or/domain_selection_contract.py",
+        "llm4or/finite_count_public.py",
+        "llm4or/isolated_semantic_review.py",
+        "llm4or/object_feedback_pilot_inputs.py",
+        "llm4or/or_debug_development_eval.py",
+        "llm4or/or_debug_hidden_score.py",
+        "llm4or/packing_source_index_frontend.py",
+        "llm4or/public_compact_guidance.py",
+        "llm4or/public_compact_inputs.py",
+        "llm4or/public_finite_program.py",
+        "llm4or/tsp_static_evaluation.py",
+        "scripts/acquire_typed_count_cegis_revision.py",
+        "scripts/audit_typed_count_cegis_revision.py",
+        "scripts/certify_typed_count_repair.py",
+        "scripts/evaluate_or_debug_confirmation.py",
+        "scripts/evaluate_tsp_constraint_confirmation.py",
+        "scripts/evaluate_tsp_constraint_promotion.py",
+        "scripts/prepare_tsp_constraint_confirmation.py",
+        "scripts/run_tsp_constraint_confirmation.py",
+        "tests/test_certify_typed_count_repair.py"
+      ]
+    },
+    "solver_backend_heuristic": {
+      "files": 8,
+      "paths": [
+        "dcp_reference_adapter.py",
+        "dcp_reference_files.py",
+        "dcp_reference_inputs.py",
+        "llm4or/obligation_packing_compiler.py",
+        "llm4or/obligation_packing_exact.py",
+        "llm4or/or_debug_development_eval.py",
+        "llm4or/or_debug_hidden_score.py",
+        "llm4or/or_debug_static_public_runner.py"
+      ]
+    },
+    "subprocess_or_native_heuristic": {
+      "files": 5,
+      "paths": [
+        "llm4or/antchat_object_pilot_transport_v2.py",
+        "llm4or/direct_semantic_review_gateway.py",
+        "llm4or/isolated_semantic_review.py",
+        "llm4or/typed_count_cegis_revision.py",
+        "tests/test_certify_typed_count_repair.py"
+      ]
+    }
+  },
+  "schema": "release-python-allowlist-triage-v1",
+  "status": "provisional_read_only_triage_not_release_clearance",
+  "summary": {
+    "conservative_closure_files": 121,
+    "git_tracked": 38,
+    "git_untracked": 83,
+    "partition_counts": {
+      "explicitly_bound_by_frozen_evidence": 23,
+      "external_record_reconstruction_not_in_bound_sets": 5,
+      "incidental_historical_import_fanout": 50,
+      "other_direct_entrypoint_or_test": 5
+    },
+    "partition_is_complete_and_disjoint": true
+  },
+  "untracked_partition": {
+    "explicitly_bound_by_frozen_evidence": [
+      {
+        "path": "llm4or/count_skill_library.py",
+        "sha256": "51c57c87be9eb6f7eb64a2d8300be28bb8012a466b7c02c0aaaa4c4783480987"
+      },
+      {
+        "path": "llm4or/finite_count_model.py",
+        "sha256": "aeab13a5c06bf06b56889bf185ec930de6f06b2195a4eeeacb7a8f123a802444"
+      },
+      {
+        "path": "llm4or/finite_count_public.py",
+        "sha256": "999d2e79c6b5e1018caa983743e3e5ced2de911227c7d751c126f90d884225c8"
+      },
+      {
+        "path": "llm4or/finite_count_response.py",
+        "sha256": "9a0aa67e9ff20a9112235795b12f089c318735076fbcbbf5faa7031c6404f493"
+      },
+      {
+        "path": "llm4or/or_debug_comparison.py",
+        "sha256": "e2703e7f2092c164311bc37699eb701a91f93ad6f784683d29f43663de808c50"
+      },
+      {
+        "path": "llm4or/or_debug_confirmation_inference.py",
+        "sha256": "3bdb9b36ed254d199b096be518343ec00ced336f550b8ef9013002c10c58ba12"
+      },
+      {
+        "path": "llm4or/or_debug_hidden_score.py",
+        "sha256": "2eb7682363dea11aa5fa8159acd606773e8ff2f2bbc2d85de77fdfa6c65a5ff9"
+      },
+      {
+        "path": "llm4or/or_debug_repair_dsl.py",
+        "sha256": "cfec98d763d12ea4d7a5379fc71273075ce942eaf8d6e87cd95ca59f83fd6c6b"
+      },
+      {
+        "path": "llm4or/or_debug_repair_equivalence.py",
+        "sha256": "07353c4ea12424ef581e0071e8d10ad81be5e94aca463bc86f401518277663a1"
+      },
+      {
+        "path": "llm4or/or_debug_split.py",
+        "sha256": "7cdabaefb74b3736431141c425cf87f2578613abfdb43d97c2a1857804a2370f"
+      },
+      {
+        "path": "llm4or/or_debug_static_public_runner.py",
+        "sha256": "5ada97326a34906444f229f68e933226a5e4117e9184ecae154c71d312ada44a"
+      },
+      {
+        "path": "llm4or/tsp_paired_evaluation.py",
+        "sha256": "d9d6cb06dc7db10824821cb2f55762209f0de298915662dd14e102341f794b0b"
+      },
+      {
+        "path": "llm4or/tsp_static_evaluation.py",
+        "sha256": "d464134c0b6436820258197c179069012f18ccd2f849a3b12e249fe74c06734c"
+      },
+      {
+        "path": "llm4or/typed_count_cegis_revision.py",
+        "sha256": "cc9fec59056d35f96eff4c18ac990c0ea3674189a1d6d07ba9141d29dbe17720"
+      },
+      {
+        "path": "llm4or/typed_count_repair_certificate.py",
+        "sha256": "52747d0e1745853da51a0f82dcc280d52920de69030d0891231a655f192bd59f"
+      },
+      {
+        "path": "llm4or/typed_count_skill.py",
+        "sha256": "4e7af9b56a2da61eec9dcbe68beb331beadb3ed7d8b997575ec0d2766750b49d"
+      },
+      {
+        "path": "scripts/certify_typed_count_repair.py",
+        "sha256": "4e8669276c9d5354e71651f5336c88ed33d0b8226318f86ebaf34135860c1068"
+      },
+      {
+        "path": "scripts/evaluate_or_debug_confirmation.py",
+        "sha256": "b7ae44c3d3367e5401ab3aee052de1b7ab9c9a0e4529d8429e0d59c122badd74"
+      },
+      {
+        "path": "scripts/evaluate_tsp_constraint_confirmation.py",
+        "sha256": "304445d047e119f0d1b64521975430efd963caf89c548a24ee243a06a769c1b0"
+      },
+      {
+        "path": "scripts/evaluate_tsp_constraint_promotion.py",
+        "sha256": "0347b56d5cb11b6063537dbc775eae17f2cc9a72cf175265d997685a2e444ac7"
+      },
+      {
+        "path": "scripts/prepare_tsp_constraint_confirmation.py",
+        "sha256": "0e1fcdc7d319a0fcfdc48eee6a5c3a043592d19147d6b0c915cb94aa1cb4b83e"
+      },
+      {
+        "path": "scripts/run_or_debug_confirmation_methods.py",
+        "sha256": "3ecc7f014deba013a9d8305777b517873492205bbb81b96ed551470beab3f4e9"
+      },
+      {
+        "path": "scripts/run_tsp_constraint_confirmation.py",
+        "sha256": "ed977e5ca6c01ae4e95316c5ee02feffddbe2e322b15a5b5e5d274b799e33e75"
+      }
+    ],
+    "external_record_reconstruction_not_in_bound_sets": [
+      {
+        "path": "scripts/audit_external_comparison_cohorts.py",
+        "sha256": "88a3338ebeb60608b68a2b49067b73f9bb0f179d8dc9821b9ad653462383ea3d"
+      },
+      {
+        "path": "scripts/evaluate_bind_common40_union.py",
+        "sha256": "4030011751843354d2d8eb0756cdddbb029046e5f079f56c66400ee9f1740c14"
+      },
+      {
+        "path": "scripts/evaluate_coe_common40_union.py",
+        "sha256": "8e86aa778069ec56de4172279b5cb8d0789f5c3594a3324878ef2caac5d04ab6"
+      },
+      {
+        "path": "scripts/summarize_external_common40.py",
+        "sha256": "86208c6d9452890e5e5ef354576665f65a36b20ba665c330712c62046789e4aa"
+      },
+      {
+        "path": "tests/test_external_common40_summary.py",
+        "sha256": "f62c37013c687f0d32b112448987475a51e14c92b5d2d918e285ca76500e5a13"
+      }
+    ],
+    "incidental_historical_import_fanout": [
+      {
+        "path": "dcp_reference_adapter.py",
+        "sha256": "c2006a695cf348cd0ff0c7be80b677d41cb6d4ff49e53b5f78530f100eda44a0"
+      },
+      {
+        "path": "dcp_reference_files.py",
+        "sha256": "794944cc8d2d1b23bc885144f2b911223a999fc77e0dd348aee3660ccad18aa4"
+      },
+      {
+        "path": "dcp_reference_inputs.py",
+        "sha256": "d48a3e3c45b4283e8e38176c4c452adb61ee988ef472a4f5967ae30ea0efa417"
+      },
+      {
+        "path": "llm4or/antchat_object_pilot_contract.py",
+        "sha256": "a0866fc5592792bdd111c5e29cec9c9bf076dbe846c23513279edb42f4e56462"
+      },
+      {
+        "path": "llm4or/antchat_object_pilot_transport_v2.py",
+        "sha256": "a1c51b6d56586cc0ccbd33c4e28f3c1ebe51b201524d0dca30856b16c715253b"
+      },
+      {
+        "path": "llm4or/compact_integer_relations.py",
+        "sha256": "8cc66479293cb93a9aef50a902d40c8be262c79a2f432dfeefeb2d275a39912e"
+      },
+      {
+        "path": "llm4or/compact_object_transport.py",
+        "sha256": "42275178fcb972de89f323ff2e6f41d16eae29496de16ced43e0fef360f753b4"
+      },
+      {
+        "path": "llm4or/count_skill_acquisition.py",
+        "sha256": "e4f29c55fb7ec8c3377b4fed208a31fde2a2215965393a0550b1f3d7cbcd1f53"
+      },
+      {
+        "path": "llm4or/direct_semantic_review_gateway.py",
+        "sha256": "8accb225f6ef4a3b10751f1b3e2838158f0386c76f4099ba7e798248f9faaf7f"
+      },
+      {
+        "path": "llm4or/domain_selection_contract.py",
+        "sha256": "26c0032f101f24af44d7bcb44924579733f3f9ecf275f750c6e7f9a70bcf521c"
+      },
+      {
+        "path": "llm4or/external_completion_gateway.py",
+        "sha256": "664ce7a12f8c5521725990eb6f25066b49a8a390e9408e0497fa24147d1f4e2c"
+      },
+      {
+        "path": "llm4or/isolated_semantic_review.py",
+        "sha256": "761b4a5bafc945c86ac3bad8b8ae14a4445896e3ca241a65f9103c8ffd1d79a7"
+      },
+      {
+        "path": "llm4or/object_feedback_contract.py",
+        "sha256": "6e258785ea915360fd3df2994b7e010dd548dfed5fd911b58f7db194303b5356"
+      },
+      {
+        "path": "llm4or/object_feedback_pilot_inputs.py",
+        "sha256": "89396c7fd96b021bdec6603644a20888aae3ba0c413910c17e27ba9cafbef22d"
+      },
+      {
+        "path": "llm4or/obligation_packing_compiler.py",
+        "sha256": "befdf2999bb2772647f06eca38090606050eec39a422a366e6d84459fae43676"
+      },
+      {
+        "path": "llm4or/obligation_packing_exact.py",
+        "sha256": "98006376ac6a7e9462d6ee0edc8755e9b31b89d9cb6cde67f8c7e493194b2086"
+      },
+      {
+        "path": "llm4or/or_debug_development_eval.py",
+        "sha256": "3586b6d280dc34ccec45257f6862b375c818cf1a4bdec4bc07cf7ea56fa6a480"
+      },
+      {
+        "path": "llm4or/order_component.py",
+        "sha256": "feb02061c784c547cbd0236c3b726718205eb87862a64789269ebbdd719b8e36"
+      },
+      {
+        "path": "llm4or/order_component_compact.py",
+        "sha256": "22e040ba856c5d89590bc885ae416cf9852abdf5aba3fc5fe8c254ae67138bb3"
+      },
+      {
+        "path": "llm4or/order_component_search.py",
+        "sha256": "767d653dd7bfaef5567df94c855f000fd16efe04863464e046bde41fae95b15b"
+      },
+      {
+        "path": "llm4or/order_study_contract.py",
+        "sha256": "db38491eea1cbeae37dc991ccad2d49442f7fba43d5ebcc9500af8bcc5473b61"
+      },
+      {
+        "path": "llm4or/packing_capacity_references.py",
+        "sha256": "8ac19442e181ffac7bd00f3fc0bdd15b39208ca9534330bf6a4f2320e3b36107"
+      },
+      {
+        "path": "llm4or/packing_indexed_development.py",
+        "sha256": "78904598f2f90846c8bb989305aaafbfea785271c61b8f1e02994f939ab880c7"
+      },
+      {
+        "path": "llm4or/packing_measurement_projection.py",
+        "sha256": "e3efc5e577517fff4ad124d6a1480d4fd8ea0b11235e952fb3d7a6461419cda0"
+      },
+      {
+        "path": "llm4or/packing_reference_obligation_audit.py",
+        "sha256": "afd0a073b4f5f78325417171b1152e3651435f0d8fcbda6f1896266839679f1b"
+      },
+      {
+        "path": "llm4or/packing_reference_obligation_audit_v2.py",
+        "sha256": "42d8ea274f0267fb731d1b313c8ca44ad1c5432bf240cc0f8d8e63e57ec4fe50"
+      },
+      {
+        "path": "llm4or/packing_relational_audit.py",
+        "sha256": "1b4554ec52c7df850dc49b24b2452c0329900fb9edb775b4c1c46eeff1a7896e"
+      },
+      {
+        "path": "llm4or/packing_relational_development.py",
+        "sha256": "db7a91aef950e95bb43aaa1790beaf61bcd1bd08d774b93cfe70873efdc431b9"
+      },
+      {
+        "path": "llm4or/packing_relational_frontend.py",
+        "sha256": "e41c101bea85781cfafc2f9e37aa63afbbfb10b19f4111a4e0c4b1dc85c1c08b"
+      },
+      {
+        "path": "llm4or/packing_semantic_frontend_v2.py",
+        "sha256": "1df159be4704dabd161bd74193e5e748e4f436c6d895e93259dcccf147f8d9fc"
+      },
+      {
+        "path": "llm4or/packing_source_index_frontend.py",
+        "sha256": "a9960a1d03b957380ef448a893aaf4340121ad2e05d9110aee206176a068fab3"
+      },
+      {
+        "path": "llm4or/pair_skill_acquisition.py",
+        "sha256": "3fdd31ed189456bb6e30e1d1a2287d3615787e4842e17c6923c975d197300a54"
+      },
+      {
+        "path": "llm4or/public_compact_canary.py",
+        "sha256": "27de09171f596525e37e1b7a9ddbe50a1ab57036969386351ed110c3dbd4980e"
+      },
+      {
+        "path": "llm4or/public_compact_guidance.py",
+        "sha256": "70a56419d9cce35c91806ec5a9091c516932f0e481d52490729f9f03323a223f"
+      },
+      {
+        "path": "llm4or/public_compact_inputs.py",
+        "sha256": "1c4299911aaa858adb22e1dda5b2d3ee9c10ffdf8674091596d1eec23629e159"
+      },
+      {
+        "path": "llm4or/public_compact_program.py",
+        "sha256": "2706d09c7ccff3911c6f3624d9168ccdca14d98a3b50e3970351fecce331ed50"
+      },
+      {
+        "path": "llm4or/public_compact_proposal.py",
+        "sha256": "d81cf8c5128bc56d208226b44a06d48110791394bfa5adf198f8e23b6794a883"
+      },
+      {
+        "path": "llm4or/public_compact_repair_files.py",
+        "sha256": "35303bb29b8e28d1993a1194aa1dc803e3037feb06d5182c8b4815e4d66f7a08"
+      },
+      {
+        "path": "llm4or/public_finite_assignment.py",
+        "sha256": "77816032e11debcf2dab1bd8314219d27cca2cf644513312d7049d26b9e384f8"
+      },
+      {
+        "path": "llm4or/public_finite_canary.py",
+        "sha256": "c33624f5eff5ef9b12eaa6aba8deb168b473a756214bc590ac5e23f9bad9b389"
+      },
+      {
+        "path": "llm4or/public_finite_program.py",
+        "sha256": "9ca76e596f46995753724e52db1fdc2d749fd5da2f25ed084a7eb0ed0afb12fd"
+      },
+      {
+        "path": "llm4or/public_finite_proposal.py",
+        "sha256": "57666b936841d58b53db3f2e4dbbef846f3e945d0b5cc0f9ff01605901b0db53"
+      },
+      {
+        "path": "llm4or/public_finite_quoted.py",
+        "sha256": "70fd1ac8cb5b89979e01f1e9746c5cae48d469ab0027500d5241b8897ed5d6c5"
+      },
+      {
+        "path": "llm4or/public_finite_tensor.py",
+        "sha256": "0ee90f9c71127d51271bbde6180135f3906995735319e4fb62f7f1b56e6daa85"
+      },
+      {
+        "path": "llm4or/public_finite_tensor_proposal.py",
+        "sha256": "80e30924f797f050d3316978000926af829212b80dbb959e0868fc1d6553701d"
+      },
+      {
+        "path": "llm4or/public_order_program.py",
+        "sha256": "2949618c8a72f87e7693d8afd284b19555dcf7b6246637ce374ea5cd5f02c94d"
+      },
+      {
+        "path": "llm4or/public_order_proposal.py",
+        "sha256": "468752df4e56ed82bbe0d8ce20f0f2b474cab310d48b8a4436ab64bdec5df6a1"
+      },
+      {
+        "path": "llm4or/public_output_declarations.py",
+        "sha256": "5eecef48844b42ae5021da991e87ca7cd18d5a21775a7c7368a189817490b6af"
+      },
+      {
+        "path": "llm4or/reference_audit_stress_v2.py",
+        "sha256": "f05016d6d014f2ba62a9e2f9a7ba9096b420321c6ccab16c50630299535eeb9f"
+      },
+      {
+        "path": "scripts/acquire_typed_count_cegis_revision.py",
+        "sha256": "7d03dfdd1af68861c2279a6cc530ed997506e574ad1ce9882cc94d0160deea02"
+      }
+    ],
+    "other_direct_entrypoint_or_test": [
+      {
+        "path": "scripts/audit_typed_count_cegis_revision.py",
+        "sha256": "9b4313b4c3e62b39e7e70769db990e34eaf6458292b5f27c339291085f19235f"
+      },
+      {
+        "path": "tests/test_certify_typed_count_repair.py",
+        "sha256": "79c95a280b002e04d68942c1caf8fbfef784d3af17a07204fffd208009e3038d"
+      },
+      {
+        "path": "tests/test_evaluate_tsp_constraint_confirmation.py",
+        "sha256": "ecf6d573cb60eca1cd68e32a0e8ae8a68261ced466673a538af1d372c998b5d5"
+      },
+      {
+        "path": "tests/test_or_debug_confirmation_inference.py",
+        "sha256": "a3834043d06262c3f2774ce2b11b7788915bb34a4b21ea2899fb3ac763c58e4e"
+      },
+      {
+        "path": "tests/test_typed_count_repair_certificate.py",
+        "sha256": "1ff3f0bc7973994887406c71216306be010c648acee15344f51639ac18b04bc6"
+      }
+    ]
+  }
+}

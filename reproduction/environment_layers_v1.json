@@ -1,0 +1,185 @@
+{
+  "schema": "llm4or-reproduction-environment-layers-v1",
+  "created_at_local_date": "2026-10-15",
+  "purpose": "Separate credential-free evidence reconstruction from analysis, solver/native, provider and figure dependencies so each reproducibility claim names the environment it actually requires.",
+  "layers": [
+    {
+      "id": "A_evidence_integrity",
+      "status": "passed_remote_recursive_credential_free_layer_a_http1",
+      "python": {
+        "minimum": "3.10",
+        "verified_interpreters": [
+          "3.10.1",
+          "3.11.16"
+        ]
+      },
+      "requirements": [],
+      "commands": [
+        "git -c http.version=HTTP/1.1 submodule update --init --recursive vendor/solver-in-the-loop",
+        "python3 -m unittest tests.test_content_addressed_manifests tests.test_current_library_manifests tests.test_current_library_reconstruction tests.test_release_evidence_reconstruction tests.test_clean_clone_layer_a tests.test_verified_skill_library tests.test_audit_mixed_skill_confirmation tests.test_mixed_skill_execution",
+        "python3 scripts/build_current_library_manifests.py --check",
+        "python3 scripts/audit_current_library_reconstruction.py --check",
+        "python3 scripts/reconstruct_release_evidence.py --check"
+      ],
+      "remote_dependency": {
+        "path": "vendor/solver-in-the-loop",
+        "url": "https://github.com/agentic-or-benchmark/solver-in-the-loop.git",
+        "commit": "c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010",
+        "transport": "Git HTTPS forced to HTTP/1.1 for this command only",
+        "remote_acquisition_verified": true,
+        "missing_reachable_objects": 0,
+        "fsck_full_passed": true
+      },
+      "audit": {
+        "path": "experiments/clean_clone_layer_a_remote_http1_audit_20261015.json",
+        "sha256": "4be4b7dfcf7f7ec03680588b4c349e74cdceb7b0b6837c1418f4a06b76b266cf"
+      },
+      "credentials": "forbidden",
+      "network_after_clone": "forbidden",
+      "claim": "Public paper-evidence integrity, current content-addressed library identity and body-free direct-versus-mixed identity are reconstructable after retrieving the exact pinned solver-in-the-loop gitlink from its declared remote.",
+      "boundary": "The verified HTTP/1.1 acquisition closes the pinned submodule transport path only. It does not establish public availability of the main repository, redistribution rights, publisher concurrency safety, or any provider, solver/native or figure reexecution claim."
+    },
+    {
+      "id": "B_offline_analysis",
+      "status": "passed_clean_offline_analysis_smoke",
+      "python": {
+        "exact": "3.11.16"
+      },
+      "requirements_file": "requirements-offline.txt",
+      "requirements_file_sha256": "6f359bfd71ebac9196dfb0c868f8279a4b3994c3f9b918372775feef41e030d3",
+      "packages": {
+        "numpy": "2.4.4",
+        "scipy": "1.17.1",
+        "jsonschema": "4.26.0",
+        "scikit-learn": "1.9.0"
+      },
+      "command": "python scripts/verify_offline_analysis_environment.py --check",
+      "audit": {
+        "path": "experiments/offline_analysis_environment_audit_20261015.json",
+        "sha256": "0ce5e116043bab18c4852d0dde67adee3834fb1d6dc92f2c96983231576e8b7a"
+      },
+      "synthetic_checks": [
+        "deterministic NumPy numeric operation",
+        "SciPy internal integer MILP",
+        "paired confirmatory statistics",
+        "JSON Schema contract",
+        "scikit-learn public-text family grouping"
+      ],
+      "credentials": "forbidden",
+      "claim": "The exact offline Python/package environment passes isolated synthetic checks for every declared analysis dependency and the project statistical, schema and grouping paths.",
+      "boundary": "The smoke check reads no benchmark instance, private evaluator answer, request or response body. It makes no provider, external solver, native evaluator or VM call. Exact package versions are pinned, but distributable wheel hashes and rights-safe release history remain separate Layer G11 work."
+    },
+    {
+      "id": "C_solver_native",
+      "status": "passed_local_solver_native_smoke_external_license",
+      "python": {
+        "verified": "3.11.16"
+      },
+      "submodule": {
+        "path": "vendor/solver-in-the-loop",
+        "commit": "c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010",
+        "tracked_model_count": 4962,
+        "working_tree": "clean"
+      },
+      "gurobi": {
+        "binary": "/usr/local/bin/gurobi_cl",
+        "resolved_binary_sha256": "306eb8c94fd58fec71817db556d0c022bda7657df46c4f62772dad7258a3171e",
+        "cli_version": "13.0.1",
+        "license": "user-provided outside repository",
+        "threads": 1,
+        "solver_timeout_seconds": 15,
+        "wall_timeout_seconds": 25,
+        "max_mps_bytes": 1000000
+      },
+      "command": "python scripts/verify_solver_native_environment.py --check",
+      "audit": {
+        "path": "experiments/solver_native_environment_audit_20261015.json",
+        "sha256": "3476e963a270f19756fe7147e92bb50b5b895f8ead1aa950c02c411b42b445b0"
+      },
+      "synthetic_checks": [
+        "declarative mixed-integer solve with independent primal recheck",
+        "fresh infeasible-system IIS computation",
+        "generic IIS repair construction",
+        "repaired MPS optimal solve"
+      ],
+      "credentials": "commercial solver license external; never stored or inspected by verifier",
+      "claim": "The pinned local binary, fixed runtime limits, pinned OR-Debug submodule and both solver-facing code paths pass on synthetic instances.",
+      "boundary": "This is a machine-local external-license smoke test. It is not credential-free, does not read or score the benchmark dataset, and does not establish that another machine has Gurobi or a valid license. Layer A remains the credential-free public evidence layer."
+    },
+    {
+      "id": "D_provider_replay",
+      "status": "passed_transport_preflight_replay_external",
+      "python": {
+        "verified": "3.10.1"
+      },
+      "requirements_file": "requirements-provider.txt",
+      "requirements_file_sha256": "219fc54508ef936917d2fec1107709c3015c4959c96d2f81ce56bdf8f641d072",
+      "transport": "body-free public TLS/endpoint preflight using standard-library ssl plus certifi 2026.7.22",
+      "transport_source": "llm4or/public_antchat_transport.py",
+      "base_url": "https://antchat.alipay.com/v1",
+      "model": "DeepSeek-V4-Flash",
+      "max_concurrency": 5,
+      "ca_bundle_sha256": "9cc2a774b5198dcff14d9be1e66091f538975d867ce029a96bce15a55dfd730f",
+      "credential_source": "external private profile only; never stored in repository",
+      "repository_credentials": "forbidden",
+      "preflight_command": "python scripts/verify_provider_environment.py --check",
+      "audit": {
+        "path": "experiments/provider_environment_preflight_audit_20261016.json",
+        "sha256": "bf0d118398a8191fdd461c1913a4d321650449da61e8c87b302bc238d3ad82a4"
+      },
+      "offline_replay": "use frozen public projections and ledgers; do not resend requests",
+      "claim": "The public body-free transport surface binds the exact local CA dependency, TLS construction, endpoint, model and concurrency without importing private request construction.",
+      "boundary": "This preflight makes zero API calls and does not serialize or replay private experiment envelopes, establish account authorization or future provider behavior. Live replay requires separately held private protocol material, an account, a credential and author authorization; public evidence reconstruction does not.",
+      "release_surface": "endpoint, model, concurrency, CA identity and TLS construction only; private request-envelope construction excluded"
+    },
+    {
+      "id": "E_figures",
+      "status": "passed_clean_temporary_reconstruction",
+      "python": {
+        "exact": "3.10.1"
+      },
+      "requirements_file": "requirements-figures.txt",
+      "requirements_file_sha256": "9a94b355b2cdfd238f2a1af83fb2887caab03eedd17d5d887ca70128f16cead9",
+      "backend": "Python Matplotlib 3.10.7",
+      "generators": [
+        "scripts/render_main_figure1.py",
+        "scripts/render_main_figure2.py"
+      ],
+      "qa_support": [
+        "scripts/audit_panel_alignment.py",
+        "scripts/reconstruct_figures.py"
+      ],
+      "source_data": [
+        "manuscript/source_data/figure2_endpoint_summary.csv",
+        "manuscript/source_data/figure2_group_summary.csv",
+        "manuscript/source_data/figure2_router_identity.csv",
+        "manuscript/source_data/figure2_tsp_by_size.csv"
+      ],
+      "command": "python scripts/reconstruct_figures.py --check",
+      "audit": {
+        "path": "experiments/figure_clean_reconstruction_audit_20261015.json",
+        "sha256": "70c0132d51551ffad0038a3ffeaba9ed6b79d14424f15ca33b366e0c2c8949a2"
+      },
+      "outputs": [
+        "manuscript/figures/figure1_knowledge_compilation.pdf",
+        "manuscript/figures/figure1_knowledge_compilation.svg",
+        "manuscript/figures/figure1_knowledge_compilation.png",
+        "manuscript/figures/figure1_knowledge_compilation.tiff",
+        "manuscript/figures/figure2_endpoint_preservation.pdf",
+        "manuscript/figures/figure2_endpoint_preservation.svg",
+        "manuscript/figures/figure2_endpoint_preservation.png",
+        "manuscript/figures/figure2_endpoint_preservation.tiff"
+      ],
+      "credentials": "forbidden",
+      "claim": "Both main figures rebuild in a fresh temporary tree with passing repository-local alignment and PDF font-floor checks; Figure 1 now depicts the implemented canonical manifest as a retrospective artifact measurement. PNG/TIFF are byte-identical and PDF/SVG are byte-identical after only declared nonsemantic canonicalization.",
+      "boundary": "Existing collision and final-size visual QA transfer only because the regenerated PNG/TIFF pixels are byte-identical. This does not close solver, provider, license, rights or history-safe release layers."
+    }
+  ],
+  "global_boundaries": [
+    "Passing one layer never implies that a later layer passed.",
+    "Provider credentials and commercial solver licenses are never stored in the repository.",
+    "Layer A reads no environment-variable values and makes no model, API, solver, native-evaluator or VM call.",
+    "The public release claim remains incomplete until the applicable clean-clone layers and rights-safe history are closed."
+  ],
+  "updated_at_local_date": "2026-10-16"
+}

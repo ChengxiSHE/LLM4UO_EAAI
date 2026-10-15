@@ -1,0 +1,132 @@
+{
+  "schema": "llm4or-theory-implementation-conformance-audit-v1",
+  "audited_at_local_date": "2026-10-15",
+  "status": "behaviorally_conformant_artifact_conformance_partial",
+  "theory_contract": {
+    "skill": "k=(g,e,t,v,r,p)",
+    "library": "L_t=(K_t,rho_t,V,E,ledger_t)",
+    "source": {
+      "path": "docs/KNOWLEDGE_EVOLUTION_THEORETICAL_FRAMEWORK_20261015.md",
+      "sha256": "4f649abf98137395f72361850bd5b03a7f97cd58ebeb9b236e83c521422d8bfe"
+    },
+    "formal_supplement": {
+      "path": "manuscript/SUPPLEMENTARY_THEORY.md",
+      "sha256": "83ec8b74423f781cffa2dcfb8149e463afb0d94b5780c5e3830a4b33c4b0e1cf"
+    }
+  },
+  "tsp_skill": {
+    "status": "all_six_roles_present_provenance_distributed",
+    "roles": {
+      "g": "The scalable extractor accepts only the frozen size and public constraint envelope and otherwise falls back.",
+      "e": "The public text is re-extracted into graph, forbidden-edge, exactly-one, objective, unit and quoted-evidence fields.",
+      "t": "The typed contract is compiled into the constrained TSP representation and scalable directed-MTZ backend.",
+      "v": "Candidate bytes are compared with a fresh public re-extraction and the returned tour/objective are independently decoded and checked.",
+      "r": "Input, candidate and model limits fail closed before execution; exact backend limits are enforced in the scalable path.",
+      "p": "Version strings, question hashes, code pins and the confirmation root closure record provenance, but no single skill manifest binds them as one object."
+    },
+    "implementation": [
+      {
+        "path": "llm4or/tsp_constraint_skill.py",
+        "sha256": "2bb4712061c112c155678f00d301519edaaf40be978a893585f1e86f4a1256df"
+      },
+      {
+        "path": "llm4or/tsp_constraint_skill_scalable.py",
+        "sha256": "7130d57f2f6821720e5002c4ad6841ee6cd5df7b1aca0871338b4165eec19653"
+      },
+      {
+        "path": "llm4or/tsp_scalable_exact.py",
+        "sha256": "8bcf804cb47430fb014bee4ad8695d7cdc42699fff8dff654b9c27287317b5bc"
+      }
+    ],
+    "endpoint_evidence": {
+      "path": "results/tsp_constraint_confirmation_root_closure_20261014.json",
+      "sha256": "0a0aef6aad14e720f537c3201b5cc585b0177c0a05150a18d0300f3e498c437d"
+    }
+  },
+  "or_debug_skill": {
+    "status": "all_six_roles_present_resource_and_provenance_distributed",
+    "roles": {
+      "g": "A unique public error type and source LP/MIP class must be recognized; ambiguous evidence abstains.",
+      "e": "Public problem text, public MPS structure and a fresh solver IIS are converted into typed repair evidence.",
+      "t": "One of the finite repair-operation programs is applied through the inert six-operation DSL and MPS patcher.",
+      "v": "The candidate must be uniquely executable, and the frozen hidden endpoint checks status and repair consequences.",
+      "r": "MPS size, solver time, thread and execution constraints are enforced in runner/backend modules rather than embedded in each proposal object.",
+      "p": "Skill identifiers, schema, evidence-source declaration, source hashes, plan hashes and result hashes exist, but ancestry is distributed across plans and result artifacts."
+    },
+    "implementation": [
+      {
+        "path": "llm4or/or_debug_evolved_skill.py",
+        "sha256": "3eb6d961313b34fd57ad0d13309e716379e11b0d46dd254914de64fad85b5e93"
+      },
+      {
+        "path": "llm4or/or_debug_repair_dsl.py",
+        "sha256": "cfec98d763d12ea4d7a5379fc71273075ce942eaf8d6e87cd95ca59f83fd6c6b"
+      },
+      {
+        "path": "llm4or/or_debug_public_runner.py",
+        "sha256": "60049e80ee3e2dd1c2d133cfa127461983de9a3321a49bd69f6acf41a80318be"
+      },
+      {
+        "path": "llm4or/or_debug_gurobi.py",
+        "sha256": "97691082bfe6ba48bdfdedf33f8df5abcbdb8baf44cd59c72d96f7752cb9cf8b"
+      }
+    ],
+    "endpoint_evidence": {
+      "path": "results/or_debug_confirmation_evaluation_20261014.json",
+      "sha256": "04342d960613c01d3e354d742e39eec5949a90a53ca06fe0c6e30b6be057b66e"
+    }
+  },
+  "library_state": {
+    "status": "runtime_composition_pinned_canonical_library_artifact_missing",
+    "components": {
+      "K_t": "The TSP and OR-Debug code closures are pinned by the mixed executor, but there is no canonical array of content-addressed skill manifests.",
+      "rho_t": "The public-only exactly-one router is explicit and pinned.",
+      "V": "Family-specific verifiers and resource checks are explicit and pinned, but their closure is not named by one verifier-manifest hash.",
+      "E": "Frozen TSP and OR-Debug endpoint artifacts exist, but the library artifact does not bind their identities directly.",
+      "ledger_t": "Accepted results, rejected traces, plans and root closures exist; there is no single parent-linked accepted/rejected version ledger."
+    },
+    "implementation": [
+      {
+        "path": "llm4or/mixed_skill_router.py",
+        "sha256": "950c817a60f87a8fcdbb024bab84895b4b7e547ae772f285f00bbe0977e72a83"
+      },
+      {
+        "path": "llm4or/mixed_skill_execution.py",
+        "sha256": "b9928572da49960db693c55ce4fe631462ce2660cd877b9d691016c3aabfae83"
+      },
+      {
+        "path": "scripts/run_mixed_skill_confirmation.py",
+        "sha256": "6ef3307eb858407d932915bfef3083ef4f4315fe392c9defba496cc01988b176"
+      }
+    ],
+    "composition_evidence": {
+      "path": "results/mixed_skill_confirmation_audit_v2_20261014.json",
+      "sha256": "d2ec7251f562373cf50a0e3e22f7a0ce87e0aa5748749c873420c531a757b992"
+    }
+  },
+  "conclusions": {
+    "behavioral_conformance": true,
+    "single_skill_manifest_conformance": false,
+    "single_library_manifest_conformance": false,
+    "version_chain_conformance": false,
+    "accuracy_claim_changed": false,
+    "theory_claim_changed": false
+  },
+  "required_closure": [
+    "Define a canonical, answer-free skill-manifest schema that binds g/e/t/v/r/p by paths, hashes, versions and declared interfaces without embedding benchmark text or evaluator-only data.",
+    "Define a canonical library-manifest schema that binds K_t, rho_t, V, E, parent hash, rollback hash, promotion decision and accepted/rejected ledger references.",
+    "Reconstruct the current TSP plus OR-Debug library manifest from the already frozen artifacts and verify that running through the manifest reproduces the existing direct and mixed hashes without changing behavior.",
+    "Keep description length and empirical promotion results separate: manifest serialization supplies the code-length object, while held-out endpoints continue to determine utility.",
+    "Treat this audit as an implementation contract only; it does not authorize a refactor, rerun, new accuracy claim or automatic-acquisition claim."
+  ],
+  "safety": {
+    "api_or_model_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "request_or_response_bodies_read": false,
+    "evaluator_only_answers_read": false,
+    "credentials_read": false,
+    "files_modified_outside_audit": false
+  }
+}
