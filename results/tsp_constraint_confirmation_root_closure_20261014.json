@@ -1,0 +1,63 @@
+{
+  "schema": "tsp-constraint-confirmation-root-closure-v1",
+  "status": "closed_sealed_within_source_size_confirmation",
+  "method": "benchmark-grounded proof-carrying TSP constraint skill with common scalable exact backend",
+  "result": {
+    "denominator": 140,
+    "static_correct": 54,
+    "static_accuracy": 0.38571428571428573,
+    "skill_correct": 100,
+    "skill_accuracy": 0.7142857142857143,
+    "accuracy_delta": 0.32857142857142857,
+    "corrections": 46,
+    "regressions": 0,
+    "paired_one_sided_exact_p": 1.4210854715202004e-14,
+    "positive_gain_each_size_13_to_19": true,
+    "skill_abstentions_counted_incorrect": 40,
+    "model_requests": 0,
+    "api_requests": 0,
+    "new_candidate_solver_calls_during_scoring": 0
+  },
+  "endpoint": "OPT-Engine upstream absolute error <= 0.002 * abs(reference)",
+  "byte_sha256": {
+    "experiments/tsp_constraint_confirmation_preparation_plan_20261014.json": "90f4c8e312cdab35116ceaad026264de0b75d481d83390cdf2f7160af94da5d2",
+    "results/private/tsp_constraint_confirmation_public_20261014.json": "7c5635e8b78fa2f5d7647890bd8d6199c00e28a128c1c55a1b48f43af12d2fc8",
+    "experiments/tsp_constraint_confirmation_candidate_plan_20261014.json": "30befe1f147928c0375f734900f9db4599597e18028607e64ba15475317717e9",
+    "results/private/tsp_constraint_confirmation_candidates_20261014.json": "f114fff73ff3c80cc557b7642a336a417a8bb1b85609f862cd2260dbad0c6627",
+    "results/tsp_constraint_confirmation_candidates_20261014.json": "1deab10c8ab93dbc9208608f0370a6b61f9130ed87a8d86c5a7e7d1154aceca4",
+    "experiments/tsp_constraint_confirmation_evaluation_plan_20261014.json": "86e7a399e2c3b96bf1880461066b9fb3027df3631c8b4787304111c14f79050a",
+    "results/private/tsp_constraint_confirmation_evaluation_20261014.json": "e38ab3a57e06be77aedec0be5536745ebb403ca8bd9d5362e42b7d16eefb7f6b",
+    "results/tsp_constraint_confirmation_evaluation_20261014.json": "184d05aa1ff0857e9577fa239c4aed230d021e7404b865c340020c93f7757082",
+    "results/tsp_constraint_confirmation_actual_review_20261014.json": "219d208f44669ee8a9f79dcb89062015e04b53f2f50233a141b819203f323cfc",
+    "results/tsp_scalable_replay_equivalence_20261014.json": "29f72243edf89be39b71b3250a8df3675f949155c71f39272859d129717e5e6b",
+    "results/tsp_scalable_frontend_equivalence_20261014.json": "2876eab35a1e6b1304b0fce55906c95c6a1cb119265b6b351df528a86d03036c",
+    "llm4or/tsp_constraint_skill_scalable.py": "7130d57f2f6821720e5002c4ad6841ee6cd5df7b1aca0871338b4165eec19653",
+    "llm4or/tsp_scalable_exact.py": "8bcf804cb47430fb014bee4ad8695d7cdc42699fff8dff654b9c27287317b5bc"
+  },
+  "independent_review": {
+    "passed": true,
+    "required_fixes": [],
+    "candidate_rows_per_arm": 140,
+    "adopted_candidate_tour_checks": 154,
+    "synthetic_mtz_constraint_checks": 150,
+    "official_threshold_boundary_tests": 105,
+    "real_question_answer_or_label_parses": 0,
+    "new_solver_or_api_calls": 0
+  },
+  "theory_mapping": {
+    "contract": "one forbidden undirected edge plus exactly one of two present edges in a closed minimum Hamiltonian tour",
+    "proof_obligation": "conditional solution and objective preservation for the typed graph",
+    "resource_certificate": "same directed MTZ backend, exact decimal scaling, independently decoded primal tour",
+    "selective_deployment": "constraint skill when its full public evidence guard holds; otherwise exact static fallback or abstention",
+    "endpoint_test": "full-denominator paired accuracy with corrections and regressions"
+  },
+  "decision": {
+    "same_source_size_confirmation_supported": true,
+    "benchmark_specific_accuracy_improvement_supported": true,
+    "cross_source_generalization_supported": false,
+    "automatic_llm_skill_synthesis_supported": false,
+    "mixed_benchmark_router_supported": false,
+    "next_study": "Freeze this TSP skill and obtain a second source or independently constructed benchmark-family skill, then evaluate a public-only mixed-task router."
+  },
+  "claim_boundary": "This closure confirms a large benchmark-specific accuracy gain across a sealed size range within the same OPT-Engine constraint-augmentation source. Shared source templates make the item-level sign-test p-value nominal. Owner binders parsed a co-located raw file, so physical non-reading of other fields is not claimed. The skill was authored through benchmark-grounded development, not autonomously synthesized by an LLM."
+}

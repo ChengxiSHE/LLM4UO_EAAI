@@ -1,0 +1,122 @@
+{
+  "schema": "llm4or-reproduction-environment-contract-audit-v1",
+  "status": "environment_gap_bound_not_clean_clone_ready",
+  "created_at_local_date": "2026-10-15",
+  "purpose": "Separate the verified offline evidence environment from the current shell, solver/native, provider, test and plotting environments, and identify the exact dependency contracts still missing for a credential-free clean clone.",
+  "inputs": {
+    "requirements-offline.txt": "6f359bfd71ebac9196dfb0c868f8279a4b3994c3f9b918372775feef41e030d3",
+    "manuscript/SUPPLEMENTARY_REPRODUCIBILITY.md": "dcdeb9a839bcb8a61a6c4f74ecac04876e50d74b5ed86618220a644c09171c7c",
+    "docs/DATA_CODE_AVAILABILITY_AUDIT_20261015.md": "6640e3ef7122d0228f0b505689cd5301437d04104ffa53bf112122fbe7685741",
+    "docs/RELEASE_READINESS_DELTA_V2_20261015.md": "b4932c2dc6415799d4f16e735aa3934770f25ed902d728564203978ca5e4db4b",
+    "experiments/reconstruction_publisher_solver_boundary_audit_20261015.json": "b5331ac3b605d153680becfa664910cfc00b93852c608986a7f144cf9bb8c22f",
+    ".gitmodules": "aae8291a5d8aa8a3c98a38b5a38ae543a116319aab067daed68d83c8030b1d45"
+  },
+  "declared_offline_environment": {
+    "python": "3.11.16",
+    "packages": {
+      "numpy": "2.4.4",
+      "scipy": "1.17.1",
+      "jsonschema": "4.26.0",
+      "scikit-learn": "1.9.0"
+    },
+    "scope": "Offline paper-evidence verification only; no provider SDK, API key, solver or native evaluator is promised by this file."
+  },
+  "current_shell_observation": {
+    "python": "3.10.1",
+    "implementation": "CPython",
+    "platform": "macOS-15.7.4-arm64-arm-64bit",
+    "modules": {
+      "numpy": {"available": true, "version": "2.2.6", "matches_declared_offline": false},
+      "scipy": {"available": false, "matches_declared_offline": false},
+      "jsonschema": {"available": true, "version": "4.26.0", "matches_declared_offline": true},
+      "scikit-learn": {"available": false, "matches_declared_offline": false},
+      "psutil": {"available": false, "pinned": false},
+      "PyYAML": {"available": true, "version": "6.0.3", "pinned": false},
+      "pytest": {"available": false, "pinned": false},
+      "cpmpy": {"available": false, "pinned": false},
+      "gurobipy": {"available": false, "pinned": false},
+      "openai": {"available": true, "version": "2.54.0", "pinned": false},
+      "requests": {"available": true, "version": "2.34.2", "pinned": false}
+    },
+    "binaries_present": {
+      "gurobi_cl": true,
+      "git": true,
+      "sqlite3": true,
+      "Rscript": false
+    },
+    "interpretation": "This shell is not the recorded offline verification environment. Missing or mismatched modules here do not invalidate the previously recorded Python 3.11.16 verification, but they prevent this shell from serving as clean-clone reproduction evidence."
+  },
+  "source_usage_inventory": {
+    "method": "Bounded lexical scan of Python source under llm4or, scripts and tests; counts are source mentions, not import-time reachability or release necessity.",
+    "files_mentioning": {
+      "cpmpy": 41,
+      "gurobi": 43,
+      "psutil": 32,
+      "PyYAML": 1,
+      "pytest": 240,
+      "scikit-learn": 1
+    }
+  },
+  "solver_and_submodule_boundary": {
+    "recorded_solver": "Gurobi 13.0.1",
+    "license": "User-supplied commercial license; not distributable by the repository.",
+    "current_python_binding_available": false,
+    "current_cli_binary_present": true,
+    "binary_executed": false,
+    "solver_in_the_loop_commit": "c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010",
+    "submodule_state": "uninitialized",
+    "submodule_status_prefix": "-",
+    "consequence": "The pinned upstream identity is known, but a recursive clean clone has not materialized or rebuilt the solver-in-the-loop dependency."
+  },
+  "required_layered_contract": {
+    "layer_1_offline_evidence": [
+      "Exact CPython 3.11.16 environment",
+      "The four existing exact package pins",
+      "Credential-free evidence and assertion verification command"
+    ],
+    "layer_2_tests_and_static_reconstruction": [
+      "Exact pytest pin",
+      "Exact psutil pin",
+      "Exact PyYAML pin",
+      "A declared test subset and platform boundary"
+    ],
+    "layer_3_solver_and_native": [
+      "Exact cpmpy version for count/native preparation paths",
+      "Gurobi 13.0.1 CLI/Python compatibility statement",
+      "User-supplied license preflight that does not reveal license data",
+      "Initialized pinned solver-in-the-loop submodule",
+      "Platform-specific native evaluator and sandbox requirements"
+    ],
+    "layer_4_provider": [
+      "Exact HTTP/SDK dependency pins used by the chosen provider path",
+      "Model/base-URL configuration schema without credentials",
+      "Request, retry, ledger and concurrency contract",
+      "Offline replay path that does not require a live key"
+    ],
+    "layer_5_figures": [
+      "Persisted Python or R backend selection",
+      "Exact plotting and PDF-QA dependencies",
+      "Backend-exclusive render and validation commands"
+    ]
+  },
+  "release_decision": {
+    "requirements_offline_is_valid_for_its_declared_scope": true,
+    "requirements_offline_is_complete_for_project_reproduction": false,
+    "current_shell_proves_clean_clone_reproduction": false,
+    "safe_to_bulk_add_detected_packages_to_one_lock": false,
+    "reason": "The repository has distinct offline, test, solver/native, provider and figure layers with proprietary and platform-specific boundaries; merging observed packages without layer-specific commands would create a misleading environment claim.",
+    "next_required_artifact": "An architecture-approved layered environment specification and reconstruction command map, followed by an actual credential-free recursive clean-clone run."
+  },
+  "execution": {
+    "network_calls": 0,
+    "model_calls": 0,
+    "api_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "credentials_read": false,
+    "license_content_read": false,
+    "submodule_initialized": false,
+    "packages_installed": false
+  }
+}

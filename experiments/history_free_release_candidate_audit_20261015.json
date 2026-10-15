@@ -1,0 +1,186 @@
+{
+  "all_required_paths_tracked": true,
+  "boundary": "The one-commit bundle removes prior ancestry mechanically and passes credential-free Layer A. It is not a licensed, rights-reviewed or author-approved public release.",
+  "candidate": {
+    "bundle_sha256": "d94ecdddc57f14ba676e53b850183b4864d88761ec8d8cefde2cdaff800c21ad",
+    "commit": "347977e4535737829b4f3883055c4b581fd62530",
+    "parent_count": 0,
+    "private_paths_tracked": [],
+    "reachable_commit_count": 1,
+    "restricted_paths_present": [],
+    "root_license_paths": [],
+    "source_tree_exact_match": true,
+    "tree": "fa8f3665ea239ab2ade4e6744fe2373dc70698aa"
+  },
+  "execution": {
+    "api_or_model_calls": 0,
+    "credentials_read": false,
+    "evaluator_only_answers_read": false,
+    "git_ref_created": true,
+    "history_free_bundle_created": true,
+    "public_push": false,
+    "request_or_response_bodies_read": false,
+    "solver_calls": 0,
+    "temporary_git_ref_deleted": true
+  },
+  "layer_a": {
+    "audited_at_local_date": "2026-10-15",
+    "claim_boundary": {
+      "external_submodule_remote_acquisition_passed": false,
+      "figure_regeneration_layer_passed": false,
+      "layer_a_passed": true,
+      "offline_analysis_layer_passed": false,
+      "provider_layer_passed": false,
+      "rights_or_history_safe_release_passed": false,
+      "solver_native_layer_passed": false
+    },
+    "clone": {
+      "clean_after": true,
+      "clean_before": true,
+      "clone_returncode": 0,
+      "commit": "347977e4535737829b4f3883055c4b581fd62530",
+      "mode": "git_clone_no_local_plus_local_pinned_complete_submodule_snapshot",
+      "tree": "fa8f3665ea239ab2ade4e6744fe2373dc70698aa"
+    },
+    "commands": [
+      {
+        "command": [
+          "python3",
+          "-m",
+          "unittest",
+          "tests.test_content_addressed_manifests",
+          "tests.test_current_library_manifests",
+          "tests.test_current_library_reconstruction",
+          "tests.test_release_evidence_reconstruction",
+          "tests.test_clean_clone_layer_a",
+          "tests.test_verified_skill_library",
+          "tests.test_audit_mixed_skill_confirmation",
+          "tests.test_mixed_skill_execution"
+        ],
+        "returncode": 0,
+        "tests": 53
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/build_current_library_manifests.py",
+          "--check"
+        ],
+        "returncode": 0
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/audit_current_library_reconstruction.py",
+          "--check"
+        ],
+        "returncode": 0
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/reconstruct_release_evidence.py",
+          "--check"
+        ],
+        "returncode": 0
+      }
+    ],
+    "environment": {
+      "credentials_available_to_commands": false,
+      "environment_variable_names": [
+        "GIT_CONFIG_NOSYSTEM",
+        "GIT_TERMINAL_PROMPT",
+        "HOME",
+        "LANG",
+        "LC_ALL",
+        "PATH",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONHASHSEED"
+      ],
+      "inherited_environment_values": false,
+      "python": "Python 3.10.1"
+    },
+    "safety": {
+      "api_or_model_calls": 0,
+      "credentials_read": false,
+      "environment_values_read_from_parent": false,
+      "evaluator_only_answers_read": false,
+      "native_evaluator_calls": 0,
+      "request_or_response_bodies_read": false,
+      "solver_calls": 0,
+      "vm_calls": 0
+    },
+    "schema": "llm4or-clean-clone-layer-a-audit-v1",
+    "solver_submodule": {
+      "commit": "c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010",
+      "complete_object_graph_verified": true,
+      "fsck_full_passed": true,
+      "initialized": true,
+      "local_source_used": true,
+      "missing_reachable_objects": 0,
+      "path": "vendor/solver-in-the-loop",
+      "remote_acquisition_verified": false,
+      "solver_executed": false
+    },
+    "source": {
+      "branch": "release-candidate-20261015",
+      "commit": "347977e4535737829b4f3883055c4b581fd62530",
+      "tree": "fa8f3665ea239ab2ade4e6744fe2373dc70698aa"
+    },
+    "status": "passed_no_local_credential_free_layer_a_with_local_complete_submodule_snapshot"
+  },
+  "required_paths": [
+    {
+      "exists": true,
+      "path": "scripts/build_history_free_release_candidate.py",
+      "sha256": "f7bde2c4e13c517d621d50adebc73d4e52eaeed7abe4a04a7c4a7b5df9644865",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "tests/test_history_free_release_candidate.py",
+      "sha256": "ebb559044eda17f7115a1ab36e280237bc3f26067353f7c8b998dc8577af3234",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "scripts/run_clean_clone_layer_a.py",
+      "sha256": "0b26ea8f77378e089226ce3b1ee6cf45e2008233ac6e46bdac54fed5c4d5bfda",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "experiments/restricted_source_exclusion_audit_20261015.json",
+      "sha256": "e649fdb40429198c890741eaeb51965f699b03bedd15fb706ba7ac4832057888",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": ".gitmodules",
+      "sha256": "aae8291a5d8aa8a3c98a38b5a38ae543a116319aab067daed68d83c8030b1d45",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "vendor/solver-in-the-loop",
+      "sha256": null,
+      "tracked": true
+    }
+  ],
+  "rights": {
+    "author_selected_license": false,
+    "per_file_rights_review_complete": false,
+    "public_release_authorized": false,
+    "third_party_attribution_policy_approved": false
+  },
+  "schema_version": "history-free-release-candidate-audit-v1",
+  "source": {
+    "commit": "df0ef6428bd2b7cf4991698b7f0e2c465b9a9c8b",
+    "tree": "fa8f3665ea239ab2ade4e6744fe2373dc70698aa"
+  },
+  "status": "passed_history_free_mechanical_candidate_rights_open",
+  "submodule": {
+    "commit": "c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010",
+    "path": "vendor/solver-in-the-loop"
+  }
+}

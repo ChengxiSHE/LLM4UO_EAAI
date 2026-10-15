@@ -1,0 +1,85 @@
+{
+  "all_required_paths_tracked": true,
+  "execution": {
+    "api_calls": 0,
+    "credentials_read": false,
+    "evaluator_only_answers_read": false,
+    "external_solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "request_or_response_bodies_read": false,
+    "scipy_internal_milp_checks": 1,
+    "virtual_machine_calls": 0
+  },
+  "expected": {
+    "packages": {
+      "jsonschema": "4.26.0",
+      "numpy": "2.4.4",
+      "scikit-learn": "1.9.0",
+      "scipy": "1.17.1"
+    },
+    "python": "3.11.16"
+  },
+  "observed": {
+    "packages": {
+      "jsonschema": "4.26.0",
+      "numpy": "2.4.4",
+      "scikit-learn": "1.9.0",
+      "scipy": "1.17.1"
+    },
+    "python": "3.11.16"
+  },
+  "required_paths": [
+    {
+      "exists": true,
+      "path": "requirements-offline.txt",
+      "sha256": "6f359bfd71ebac9196dfb0c868f8279a4b3994c3f9b918372775feef41e030d3",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "scripts/verify_offline_analysis_environment.py",
+      "sha256": "50c3d0a47230ad9a5eb6dac6b81f25f5e81019aec6dc42010a928d1d1bdb2efd",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "tests/test_offline_analysis_environment.py",
+      "sha256": "4c784a8199ab20d0fb9b77b142d4f4435953b4855fe268ecea6f27f5514b1deb",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "llm4or/confirmatory_statistics.py",
+      "sha256": "27606881897d7aac9506f5c315130cca355b0c30a616f956699abfa399f47c44",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "llm4or/families.py",
+      "sha256": "ddbefb041bb20ea2803a5e92a0571b7c85d6ec2f7743db358ece5ac1c4116ef4",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "llm4or/contracts.py",
+      "sha256": "a66ff207dded579991b0a91018dff6ef13b644525866c7f36a74b5350d3f6a02",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "llm4or/schema.py",
+      "sha256": "82a63e82f4cf72b99f4f58be2ff5ece44ad8b8ae8c08c0aa440d8615d6d9e428",
+      "tracked": true
+    }
+  ],
+  "schema_version": "offline-analysis-environment-audit-v1",
+  "status": "passed_clean_offline_analysis_smoke",
+  "synthetic_checks": {
+    "confirmatory_statistics": true,
+    "jsonschema_contract": true,
+    "numpy_deterministic_numeric": true,
+    "scipy_internal_integer_milp": true,
+    "sklearn_synthetic_grouping": true
+  },
+  "version_mismatches": {}
+}

@@ -1,0 +1,101 @@
+{
+  "schema": "llm4or-figure1-render-qa-v1",
+  "audited_at_local_date": "2026-10-15",
+  "status": "passed_publication_size_render_and_visual_qa",
+  "backend": {
+    "language": "python",
+    "library": "matplotlib",
+    "matplotlib_version": "3.10.7",
+    "render_source": "scripts/render_main_figure1.py",
+    "render_source_sha256": "64ca7403155bb31d8f8176dce1cbae05211399352924395c8b05ecec9731bf07"
+  },
+  "outputs": [
+    {
+      "path": "manuscript/figures/figure1_knowledge_compilation.pdf",
+      "sha256": "7c4e0b246881f6a827da27006b16af3d564eb60f5c720e3a7147a153d266044a",
+      "role": "main_text_vector"
+    },
+    {
+      "path": "manuscript/figures/figure1_knowledge_compilation.svg",
+      "sha256": "fe05e22cf61fdf5e42a1a50a5c2c122aa5864804d8603ed26d25ac4abb79fc3a",
+      "role": "editable_vector"
+    },
+    {
+      "path": "manuscript/figures/figure1_knowledge_compilation.png",
+      "sha256": "e3dda5287460a2b0742b2623d20928db7823bdfc83e7ef9c492111494f7b3d17",
+      "role": "600_dpi_preview"
+    },
+    {
+      "path": "manuscript/figures/figure1_knowledge_compilation.tiff",
+      "sha256": "aa3587b284a2f5bd61a8fcd82718db228fdb5b6065500c2e7fe776645c89e499",
+      "role": "600_dpi_submission_raster"
+    }
+  ],
+  "final_size": {
+    "width_mm": 180.0,
+    "height_mm": 135.89,
+    "raster_dpi": 600
+  },
+  "automated_qa": {
+    "source_preflight": {
+      "verdict": "PASS",
+      "pass": 21,
+      "warn": 0,
+      "fail": 0
+    },
+    "pdf_text": {
+      "auditable": true,
+      "text_runs": 78,
+      "minimum_font_pt": 5.0,
+      "minimum_required_pt": 5.0,
+      "below_minimum": 0,
+      "warnings": 0
+    },
+    "collision": {
+      "path": "manuscript/figures/figure1_knowledge_compilation.collision-audit.json",
+      "sha256": "aaacd2f11839e2264f3df84b56b58ab55b6a54ee95a5ea198e95db54d9db462e",
+      "verdict": "PASS",
+      "fail": 0,
+      "warn": 0
+    },
+    "alignment": {
+      "path": "manuscript/figures/figure1_knowledge_compilation.alignment.json",
+      "sha256": "d9e3dd6b368b230962fc5f3ac2b8b9db8889b1b07ccf6845510b8b8d4529d03b",
+      "verdict": "PASS",
+      "comparisons": 4,
+      "tolerance_pt": 1.5,
+      "fail": 0,
+      "warn": 0
+    }
+  },
+  "visual_qa": {
+    "performed_at_final_export_size": true,
+    "panel_a": "PASS: the untrusted proposer is visibly outside the solid trusted-library boundary and the implemented canonical manifest is labeled as a retrospective artifact measurement",
+    "panel_b": "PASS: pass, witness-driven rejection and exhausted-grammar termination paths are directional and legible",
+    "panel_c": "PASS: unique accepted execution and zero-or-multiple or rejected exact-fallback paths are visually distinct",
+    "panel_d": "PASS: paired endpoint accounting, pass/fail promotion, immutable successor and unchanged-state outcomes are explicit",
+    "cross_panel": "PASS: admitted artifact, selective execution and durable output are directional; software, conditional and empirical claim classes remain distinct",
+    "overall": "PASS"
+  },
+  "claim_boundaries": {
+    "finite_grammar_and_verification_domain": true,
+    "accepted_path_correctness_is_conditional": true,
+    "exact_fallback_outside_unique_coverage": true,
+    "benchmark_utility_is_empirical": true,
+    "canonical_manifest_currently_implemented": true,
+    "complexity_weighted_promotion_currently_executed": false,
+    "universal_natural_language_proof_claimed": false,
+    "unrestricted_recursive_self_improvement_claimed": false
+  },
+  "execution": {
+    "model_calls": 0,
+    "api_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "request_or_response_bodies_read": false,
+    "evaluator_only_answers_read": false,
+    "credentials_read": false
+  },
+  "claim_boundary": "The schematic visualizes the bounded method and the implemented content-addressed manifest as a retrospective artifact measurement. It adds no empirical result and does not depict successful natural-language acquisition, complexity-weighted promotion or unrestricted recursive self-improvement as established."
+}

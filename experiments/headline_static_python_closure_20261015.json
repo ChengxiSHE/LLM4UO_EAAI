@@ -1,0 +1,828 @@
+{
+  "schema": "llm4or-headline-static-python-closure-v1",
+  "audited_at_local_date": "2026-10-15",
+  "status": "conservative_static_projection_not_release_authorization",
+  "purpose": "Conservative local-Python import closure for the 13 inspected headline reconstruction scripts and nine targeted verification test modules.",
+  "method": {
+    "entrypoints": [
+      "scripts/prepare_tsp_constraint_confirmation.py",
+      "scripts/run_tsp_constraint_confirmation.py",
+      "scripts/evaluate_tsp_constraint_confirmation.py",
+      "scripts/run_or_debug_confirmation_methods.py",
+      "scripts/evaluate_or_debug_confirmation.py",
+      "scripts/prepare_mixed_skill_confirmation_bundle.py",
+      "scripts/run_mixed_skill_confirmation.py",
+      "scripts/audit_mixed_skill_confirmation.py",
+      "scripts/evaluate_bind_common40_union.py",
+      "scripts/evaluate_coe_common40_union.py",
+      "scripts/summarize_external_common40.py",
+      "scripts/audit_typed_count_cegis_revision.py",
+      "scripts/certify_typed_count_repair.py",
+      "tests/test_evaluate_tsp_constraint_confirmation.py",
+      "tests/test_or_debug_confirmation_inference.py",
+      "tests/test_mixed_skill_router.py",
+      "tests/test_mixed_skill_execution.py",
+      "tests/test_audit_mixed_skill_confirmation.py",
+      "tests/test_prepare_mixed_skill_confirmation_bundle.py",
+      "tests/test_typed_count_repair_certificate.py",
+      "tests/test_certify_typed_count_repair.py",
+      "tests/test_external_common40_summary.py"
+    ],
+    "resolution": "Recursively parse Python AST import and from-import statements; resolve repository-local modules and package __init__.py files; include eager package imports.",
+    "limitations": [
+      "This is a conservative static Python closure, not a minimal runtime trace.",
+      "It can include modules imported eagerly through package initializers but unused by one command.",
+      "It does not discover dynamic imports, subprocess binaries, data files, plans, result inputs, provider services, solver licenses or upstream repositories.",
+      "A path appearing here is not automatically rights-safe or approved for release."
+    ]
+  },
+  "summary": {
+    "entrypoints": 22,
+    "closure_files": 121,
+    "git_tracked": 38,
+    "git_untracked": 83,
+    "tracked_fraction": 0.31405,
+    "missing_entrypoints": 0
+  },
+  "by_root": {
+    "dcp_reference_adapter.py": {
+      "files": 1,
+      "git_tracked": 0
+    },
+    "dcp_reference_files.py": {
+      "files": 1,
+      "git_tracked": 0
+    },
+    "dcp_reference_inputs.py": {
+      "files": 1,
+      "git_tracked": 0
+    },
+    "llm4or": {
+      "files": 93,
+      "git_tracked": 31
+    },
+    "scripts": {
+      "files": 16,
+      "git_tracked": 3
+    },
+    "tests": {
+      "files": 9,
+      "git_tracked": 4
+    }
+  },
+  "import_time_probe": {
+    "method": "Import every entrypoint as a non-main module in a fresh Python process, collect repository-local module files loaded in sys.modules, and add the entrypoint itself even when import fails.",
+    "boundary": "Import-time observation is narrower than full execution and does not discover imports performed only inside runtime branches or subprocesses.",
+    "groups": {
+      "tsp": {
+        "entrypoints": 4,
+        "import_time_plus_entrypoint_files": 74,
+        "git_tracked": 23,
+        "git_untracked": 51,
+        "largest_entrypoint": "scripts/prepare_tsp_constraint_confirmation.py",
+        "largest_entrypoint_import_files": 61,
+        "finding": "The preparation launcher reuses object_feedback_pilot_inputs, which imports historical object-transport, semantic-review, provider and packing infrastructure for a task that primarily needs pinned file I/O and ownership controls."
+      },
+      "or_debug": {
+        "entrypoints": 3,
+        "import_time_plus_entrypoint_files": 18,
+        "git_tracked": 7,
+        "git_untracked": 11
+      },
+      "mixed": {
+        "entrypoints": 7,
+        "import_time_plus_entrypoint_files": 27,
+        "git_tracked": 27,
+        "git_untracked": 0,
+        "finding": "The inspected mixed-router Python import-time closure is fully tracked; rights-safe inputs, outputs, external binaries and full runtime execution remain separate release conditions."
+      },
+      "external_common40": {
+        "entrypoints": 4,
+        "import_time_plus_entrypoint_files": 11,
+        "git_tracked": 6,
+        "git_untracked": 5,
+        "import_error": "tests/test_external_common40_summary.py requires pytest, which is absent from the current tracked offline environment.",
+        "finding": "The three untracked evaluator/summary launchers and their untracked cohort-audit helper account for the code gap; inference replay has additional provider and official-adapter dependencies."
+      },
+      "count": {
+        "entrypoints": 4,
+        "import_time_plus_entrypoint_files": 76,
+        "git_tracked": 16,
+        "git_untracked": 60,
+        "largest_entrypoint": "scripts/audit_typed_count_cegis_revision.py",
+        "largest_entrypoint_import_files": 72,
+        "minimal_entrypoint": "scripts/certify_typed_count_repair.py",
+        "minimal_entrypoint_import_files": 1,
+        "finding": "The terminal audit imports the historical acquisition runner and therefore its provider and preparation stack. The certificate launcher intentionally defers verifier imports until after source pinning and demonstrates a substantially narrower trust-root pattern."
+      }
+    },
+    "union": {
+      "files": 121,
+      "git_tracked": 38,
+      "git_untracked": 83
+    }
+  },
+  "dependency_reduction_decision": {
+    "mixed_python_code_candidate_for_layered_allowlist": true,
+    "tsp_and_count_have_avoidable_looking_import_fanout": true,
+    "refactor_verified": false,
+    "refactor_implementation_authorized": false,
+    "recommended_design_direction": "Separate a minimal pinned evidence-I/O trust root from historical provider, reviewer and experiment-controller modules; make each reconstruction layer import only its own verifier and backend closure.",
+    "required_proof_before_replacing_existing_launchers": "Byte-identical reads, hashes, canonical serialization, exclusive output creation, path confinement, ownership/locking behavior and all existing fail-closed tests must match before the old launchers are superseded."
+  },
+  "evidence_bound_source_sets": {
+    "method": "Extract project-relative Python path/hash bindings from the frozen terminal closures and plans, then compare each bound byte identity with the current file and Git tracking state.",
+    "tsp_confirmation_union": {
+      "source_artifacts": [
+        "results/tsp_constraint_confirmation_root_closure_20261014.json",
+        "experiments/tsp_constraint_confirmation_evaluation_plan_20261014.json",
+        "experiments/tsp_constraint_confirmation_candidate_plan_20261014.json",
+        "experiments/tsp_constraint_confirmation_preparation_plan_20261014.json"
+      ],
+      "bound_python_files": 11,
+      "git_tracked": 2,
+      "git_untracked": 9,
+      "hash_mismatches": 0,
+      "boundary": "The eleven include one pinned upstream evaluator under data/raw, four launchers, two tests and four TSP implementation/evaluation modules; this is an evidence-bound set, not a complete import or binary closure."
+    },
+    "or_debug_confirmation_union": {
+      "source_artifacts": [
+        "experiments/or_debug_confirmation_plan_20261014.json",
+        "experiments/or_debug_confirmation_evaluation_plan_20261014.json"
+      ],
+      "bound_python_files": 17,
+      "git_tracked": 6,
+      "git_untracked": 11,
+      "hash_mismatches": 0
+    },
+    "typed_count_exact_repair": {
+      "source_artifact": "results/dcp_typed_count_repair_certificate_v3_20261014.json",
+      "bound_python_files": 11,
+      "git_tracked": 3,
+      "git_untracked": 8,
+      "hash_mismatches": 0,
+      "boundary": "This is the certificate's complete declared local verifier closure plus launcher, but its two required input artifacts and Python environment remain separate dependencies."
+    },
+    "typed_count_terminal_audit_plan": {
+      "source_artifact": "experiments/dcp_typed_count_cegis_revision_20261014_plan.json",
+      "bound_project_python_files": 432,
+      "git_tracked": 89,
+      "git_untracked": 343,
+      "hash_mismatches": 0,
+      "finding": "The historical plan intentionally pinned every llm4or Python source plus its own review surface. Reconstructing the terminal audit therefore inherits hundreds of unrelated source identities even though the reported candidate check uses a much smaller functional core.",
+      "release_implication": "Preserve the historical plan as provenance, but use a separately specified slim, behavior-equivalent terminal projection before claiming practical clean-clone reconstruction. The slim projection does not yet exist."
+    },
+    "mixed_and_external_gap": {
+      "finding": "The mixed headline artifacts bind data/result identities but do not carry a complete source-code manifest. The external summary binds its summary script but not the complete inference and official-adapter closure.",
+      "release_implication": "A final layered code manifest must bind the tested mixed runtime and every external inference adapter independently of the result artifacts."
+    }
+  },
+  "untracked_source_screen": {
+    "scope": "The 83 untracked Python files in the conservative closure; raw bytes were scanned without emitting literal values.",
+    "files": 83,
+    "total_bytes": 669532,
+    "python_ast_parse_errors": 0,
+    "credential_literal_pattern_hits": {
+      "bearer": 0,
+      "openai_style_key": 0,
+      "quoted_secret_assignment": 0
+    },
+    "large_string_literals": {
+      "threshold_characters": 500,
+      "literals": 23,
+      "files": 19,
+      "maximum_characters": 4055
+    },
+    "files_referencing_private_or_evaluator_path_terms": 16,
+    "files_with_spdx_copyright_or_licensed_under_signal": 0,
+    "interpretation": "All 83 files parse and no generic credential literal is detected, but 19 contain large strings and 16 mention private/evaluator paths. No per-file license signal was found. These files require semantic, rights, minimum-disclosure and provenance review before any allowlist or staging decision.",
+    "not_a_release_clearance": true
+  },
+  "files": [
+    {
+      "path": "dcp_reference_adapter.py",
+      "sha256": "c2006a695cf348cd0ff0c7be80b677d41cb6d4ff49e53b5f78530f100eda44a0",
+      "git_tracked": false
+    },
+    {
+      "path": "dcp_reference_files.py",
+      "sha256": "794944cc8d2d1b23bc885144f2b911223a999fc77e0dd348aee3660ccad18aa4",
+      "git_tracked": false
+    },
+    {
+      "path": "dcp_reference_inputs.py",
+      "sha256": "d48a3e3c45b4283e8e38176c4c452adb61ee988ef472a4f5967ae30ea0efa417",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/__init__.py",
+      "sha256": "6590ae779555739059f1c5793d5d35ba1f9691e5aae5538071cd36b412f30982",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/antchat_object_pilot_contract.py",
+      "sha256": "a0866fc5592792bdd111c5e29cec9c9bf076dbe846c23513279edb42f4e56462",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/antchat_object_pilot_transport_v2.py",
+      "sha256": "a1c51b6d56586cc0ccbd33c4e28f3c1ebe51b201524d0dca30856b16c715253b",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/benchmark_inputs.py",
+      "sha256": "4400d140532368a2bf015d98095ab0af9b34918d7af052121080e455b43f4528",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/codex_cli_gateway.py",
+      "sha256": "359678d2c6705c7a3bf587152574480ee88113db6a4c3dfc848c4e2b950d5d9f",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/compact_integer_relations.py",
+      "sha256": "8cc66479293cb93a9aef50a902d40c8be262c79a2f432dfeefeb2d275a39912e",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/compact_object_transport.py",
+      "sha256": "42275178fcb972de89f323ff2e6f41d16eae29496de16ced43e0fef360f753b4",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/count_skill_acquisition.py",
+      "sha256": "e4f29c55fb7ec8c3377b4fed208a31fde2a2215965393a0550b1f3d7cbcd1f53",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/count_skill_library.py",
+      "sha256": "51c57c87be9eb6f7eb64a2d8300be28bb8012a466b7c02c0aaaa4c4783480987",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/declarative_packing_compiler.py",
+      "sha256": "c27920c61dc1f315a004a2457ce5869980a1d6db7a8301e4f6684723ab959721",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/direct_semantic_review_gateway.py",
+      "sha256": "8accb225f6ef4a3b10751f1b3e2838158f0386c76f4099ba7e798248f9faaf7f",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/domain_selection_contract.py",
+      "sha256": "26c0032f101f24af44d7bcb44924579733f3f9ecf275f750c6e7f9a70bcf521c",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/external_completion_gateway.py",
+      "sha256": "664ce7a12f8c5521725990eb6f25066b49a8a390e9408e0497fa24147d1f4e2c",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/finite_count_model.py",
+      "sha256": "aeab13a5c06bf06b56889bf185ec930de6f06b2195a4eeeacb7a8f123a802444",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/finite_count_public.py",
+      "sha256": "999d2e79c6b5e1018caa983743e3e5ced2de911227c7d751c126f90d884225c8",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/finite_count_response.py",
+      "sha256": "9a0aa67e9ff20a9112235795b12f089c318735076fbcbbf5faa7031c6404f493",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/formal_gateway.py",
+      "sha256": "8ad662de6dfaa5a21324a47baf69059dd4812372ca8e091d0a49b8ef25788dfd",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/formal_provider.py",
+      "sha256": "bd87fa4aec57ef9dc66188ba3e5505118300911b7d4055df8241a985921944ad",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/gates.py",
+      "sha256": "891c4d23e8dbb202f5eda8b5243025312c56af06bd97d9ef1f66ff8b6d875a95",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/gateway.py",
+      "sha256": "4c06c88012fea67e42083d39d57821d50809ac3db9e6d17c43aaedbbb367b2f8",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/gurobi_cli_solver.py",
+      "sha256": "59bc10e45901908c0782767dfc70fbf3bd248af6c671d0c62b396bdfd295e126",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/isolated_semantic_review.py",
+      "sha256": "761b4a5bafc945c86ac3bad8b8ae14a4445896e3ca241a65f9103c8ffd1d79a7",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/live.py",
+      "sha256": "9bc1dc4d65c2d893fd6f6828b3d7d273aca69c2660d421c5aff3a7f894c608a2",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/milp_schema.py",
+      "sha256": "0900e2e5d9e4669b5067209ead0d3ab221e6b78bbdd5f5ed120670f452703556",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/milp_solver.py",
+      "sha256": "2a30ce4668ab04ad823f9b93adfabc291f4e76ba0f80e9614d21540d20522858",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/mixed_skill_execution.py",
+      "sha256": "b9928572da49960db693c55ce4fe631462ce2660cd877b9d691016c3aabfae83",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/mixed_skill_router.py",
+      "sha256": "950c817a60f87a8fcdbb024bab84895b4b7e547ae772f285f00bbe0977e72a83",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/object_feedback_contract.py",
+      "sha256": "6e258785ea915360fd3df2994b7e010dd548dfed5fd911b58f7db194303b5356",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/object_feedback_pilot_inputs.py",
+      "sha256": "89396c7fd96b021bdec6603644a20888aae3ba0c413910c17e27ba9cafbef22d",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/obligation_packing_compiler.py",
+      "sha256": "befdf2999bb2772647f06eca38090606050eec39a422a366e6d84459fae43676",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/obligation_packing_exact.py",
+      "sha256": "98006376ac6a7e9462d6ee0edc8755e9b31b89d9cb6cde67f8c7e493194b2086",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/or_debug_comparison.py",
+      "sha256": "e2703e7f2092c164311bc37699eb701a91f93ad6f784683d29f43663de808c50",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/or_debug_confirmation_inference.py",
+      "sha256": "3bdb9b36ed254d199b096be518343ec00ced336f550b8ef9013002c10c58ba12",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/or_debug_development_eval.py",
+      "sha256": "3586b6d280dc34ccec45257f6862b375c818cf1a4bdec4bc07cf7ea56fa6a480",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/or_debug_evolved_skill.py",
+      "sha256": "3eb6d961313b34fd57ad0d13309e716379e11b0d46dd254914de64fad85b5e93",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/or_debug_gurobi.py",
+      "sha256": "97691082bfe6ba48bdfdedf33f8df5abcbdb8baf44cd59c72d96f7752cb9cf8b",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/or_debug_hidden_score.py",
+      "sha256": "2eb7682363dea11aa5fa8159acd606773e8ff2f2bbc2d85de77fdfa6c65a5ff9",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/or_debug_iis_control.py",
+      "sha256": "7b911b667ee71272811ee5ee6980e13811703468d3f948b2ac8b16021581124e",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/or_debug_mps.py",
+      "sha256": "f598e37dce8d133c458258d5c87a30746bb7b66ffe25401e15b3b37b7be1ec9c",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/or_debug_mps_inspect.py",
+      "sha256": "389962c1aaa58fdd3b5c2aafe9ef910ae428fafd2084def1a3c6ab118cc42eaa",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/or_debug_public_runner.py",
+      "sha256": "60049e80ee3e2dd1c2d133cfa127461983de9a3321a49bd69f6acf41a80318be",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/or_debug_repair_dsl.py",
+      "sha256": "cfec98d763d12ea4d7a5379fc71273075ce942eaf8d6e87cd95ca59f83fd6c6b",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/or_debug_repair_equivalence.py",
+      "sha256": "07353c4ea12424ef581e0071e8d10ad81be5e94aca463bc86f401518277663a1",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/or_debug_split.py",
+      "sha256": "7cdabaefb74b3736431141c425cf87f2578613abfdb43d97c2a1857804a2370f",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/or_debug_static_public_runner.py",
+      "sha256": "5ada97326a34906444f229f68e933226a5e4117e9184ecae154c71d312ada44a",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/order_component.py",
+      "sha256": "feb02061c784c547cbd0236c3b726718205eb87862a64789269ebbdd719b8e36",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/order_component_compact.py",
+      "sha256": "22e040ba856c5d89590bc885ae416cf9852abdf5aba3fc5fe8c254ae67138bb3",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/order_component_search.py",
+      "sha256": "767d653dd7bfaef5567df94c855f000fd16efe04863464e046bde41fae95b15b",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/order_study_contract.py",
+      "sha256": "db38491eea1cbeae37dc991ccad2d49442f7fba43d5ebcc9500af8bcc5473b61",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/packing_capacity_references.py",
+      "sha256": "8ac19442e181ffac7bd00f3fc0bdd15b39208ca9534330bf6a4f2320e3b36107",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/packing_indexed_development.py",
+      "sha256": "78904598f2f90846c8bb989305aaafbfea785271c61b8f1e02994f939ab880c7",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/packing_measurement_projection.py",
+      "sha256": "e3efc5e577517fff4ad124d6a1480d4fd8ea0b11235e952fb3d7a6461419cda0",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/packing_reference_obligation_audit.py",
+      "sha256": "afd0a073b4f5f78325417171b1152e3651435f0d8fcbda6f1896266839679f1b",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/packing_reference_obligation_audit_v2.py",
+      "sha256": "42d8ea274f0267fb731d1b313c8ca44ad1c5432bf240cc0f8d8e63e57ec4fe50",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/packing_relational_audit.py",
+      "sha256": "1b4554ec52c7df850dc49b24b2452c0329900fb9edb775b4c1c46eeff1a7896e",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/packing_relational_development.py",
+      "sha256": "db7a91aef950e95bb43aaa1790beaf61bcd1bd08d774b93cfe70873efdc431b9",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/packing_relational_frontend.py",
+      "sha256": "e41c101bea85781cfafc2f9e37aa63afbbfb10b19f4111a4e0c4b1dc85c1c08b",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/packing_semantic_frontend_v2.py",
+      "sha256": "1df159be4704dabd161bd74193e5e748e4f436c6d895e93259dcccf147f8d9fc",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/packing_source_index_frontend.py",
+      "sha256": "a9960a1d03b957380ef448a893aaf4340121ad2e05d9110aee206176a068fab3",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/pair_skill_acquisition.py",
+      "sha256": "3fdd31ed189456bb6e30e1d1a2287d3615787e4842e17c6923c975d197300a54",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/pipeline.py",
+      "sha256": "f15089697fac45dca363b5b32a64d61fb7050b06b3d73e98a5ae1f3a3d7d014e",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/public_compact_canary.py",
+      "sha256": "27de09171f596525e37e1b7a9ddbe50a1ab57036969386351ed110c3dbd4980e",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/public_compact_guidance.py",
+      "sha256": "70a56419d9cce35c91806ec5a9091c516932f0e481d52490729f9f03323a223f",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/public_compact_inputs.py",
+      "sha256": "1c4299911aaa858adb22e1dda5b2d3ee9c10ffdf8674091596d1eec23629e159",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/public_compact_program.py",
+      "sha256": "2706d09c7ccff3911c6f3624d9168ccdca14d98a3b50e3970351fecce331ed50",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/public_compact_proposal.py",
+      "sha256": "d81cf8c5128bc56d208226b44a06d48110791394bfa5adf198f8e23b6794a883",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/public_compact_repair_files.py",
+      "sha256": "35303bb29b8e28d1993a1194aa1dc803e3037feb06d5182c8b4815e4d66f7a08",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/public_finite_assignment.py",
+      "sha256": "77816032e11debcf2dab1bd8314219d27cca2cf644513312d7049d26b9e384f8",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/public_finite_canary.py",
+      "sha256": "c33624f5eff5ef9b12eaa6aba8deb168b473a756214bc590ac5e23f9bad9b389",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/public_finite_program.py",
+      "sha256": "9ca76e596f46995753724e52db1fdc2d749fd5da2f25ed084a7eb0ed0afb12fd",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/public_finite_proposal.py",
+      "sha256": "57666b936841d58b53db3f2e4dbbef846f3e945d0b5cc0f9ff01605901b0db53",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/public_finite_quoted.py",
+      "sha256": "70fd1ac8cb5b89979e01f1e9746c5cae48d469ab0027500d5241b8897ed5d6c5",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/public_finite_tensor.py",
+      "sha256": "0ee90f9c71127d51271bbde6180135f3906995735319e4fb62f7f1b56e6daa85",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/public_finite_tensor_proposal.py",
+      "sha256": "80e30924f797f050d3316978000926af829212b80dbb959e0868fc1d6553701d",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/public_order_program.py",
+      "sha256": "2949618c8a72f87e7693d8afd284b19555dcf7b6246637ce374ea5cd5f02c94d",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/public_order_proposal.py",
+      "sha256": "468752df4e56ed82bbe0d8ce20f0f2b474cab310d48b8a4436ab64bdec5df6a1",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/public_output_declarations.py",
+      "sha256": "5eecef48844b42ae5021da991e87ca7cd18d5a21775a7c7368a189817490b6af",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/reference_audit_stress_v2.py",
+      "sha256": "f05016d6d014f2ba62a9e2f9a7ba9096b420321c6ccab16c50630299535eeb9f",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/run_interruption.py",
+      "sha256": "ca71ec7e9084c1bbb5acee48f33a9c57ca91521907ebd672960f347bc0514e85",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/schema.py",
+      "sha256": "82a63e82f4cf72b99f4f58be2ff5ece44ad8b8ae8c08c0aa440d8615d6d9e428",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/solver.py",
+      "sha256": "fad10e67ad43fd427628f5a9613fa34ea7bb65dfb4bce16fb96b3c765445b0f1",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/tsp_constraint_skill.py",
+      "sha256": "2bb4712061c112c155678f00d301519edaaf40be978a893585f1e86f4a1256df",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/tsp_constraint_skill_scalable.py",
+      "sha256": "7130d57f2f6821720e5002c4ad6841ee6cd5df7b1aca0871338b4165eec19653",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/tsp_graph_exact.py",
+      "sha256": "4b1f68d16e89af67370669b6812c5b5a0ca380ee5068ac2244f093987364f4b1",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/tsp_paired_evaluation.py",
+      "sha256": "d9d6cb06dc7db10824821cb2f55762209f0de298915662dd14e102341f794b0b",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/tsp_public_graph.py",
+      "sha256": "46f7eb934b84ae72595c8813dfaf838bbec37d31e891bef733f44c7777ffd93e",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/tsp_scalable_exact.py",
+      "sha256": "8bcf804cb47430fb014bee4ad8695d7cdc42699fff8dff654b9c27287317b5bc",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/tsp_static_controller.py",
+      "sha256": "0f1368b13891473019de4a1829649ca80b3a54d6588c9a2900d889dbd9609d63",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/tsp_static_evaluation.py",
+      "sha256": "d464134c0b6436820258197c179069012f18ccd2f849a3b12e249fe74c06734c",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/tsp_typed_graph.py",
+      "sha256": "1703c0e79251b3663ae1d368857626e9b5ca70f327e0478d6aa53a3c4708ba2b",
+      "git_tracked": true
+    },
+    {
+      "path": "llm4or/typed_count_cegis_revision.py",
+      "sha256": "cc9fec59056d35f96eff4c18ac990c0ea3674189a1d6d07ba9141d29dbe17720",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/typed_count_repair_certificate.py",
+      "sha256": "52747d0e1745853da51a0f82dcc280d52920de69030d0891231a655f192bd59f",
+      "git_tracked": false
+    },
+    {
+      "path": "llm4or/typed_count_skill.py",
+      "sha256": "4e7af9b56a2da61eec9dcbe68beb331beadb3ed7d8b997575ec0d2766750b49d",
+      "git_tracked": false
+    },
+    {
+      "path": "scripts/acquire_typed_count_cegis_revision.py",
+      "sha256": "7d03dfdd1af68861c2279a6cc530ed997506e574ad1ce9882cc94d0160deea02",
+      "git_tracked": false
+    },
+    {
+      "path": "scripts/audit_external_comparison_cohorts.py",
+      "sha256": "88a3338ebeb60608b68a2b49067b73f9bb0f179d8dc9821b9ad653462383ea3d",
+      "git_tracked": false
+    },
+    {
+      "path": "scripts/audit_mixed_skill_confirmation.py",
+      "sha256": "7df56867a43476fe54b09b5d1dc5e9c97dd2ef8777b9fa73b79aaa0d76231954",
+      "git_tracked": true
+    },
+    {
+      "path": "scripts/audit_typed_count_cegis_revision.py",
+      "sha256": "9b4313b4c3e62b39e7e70769db990e34eaf6458292b5f27c339291085f19235f",
+      "git_tracked": false
+    },
+    {
+      "path": "scripts/certify_typed_count_repair.py",
+      "sha256": "4e8669276c9d5354e71651f5336c88ed33d0b8226318f86ebaf34135860c1068",
+      "git_tracked": false
+    },
+    {
+      "path": "scripts/evaluate_bind_common40_union.py",
+      "sha256": "4030011751843354d2d8eb0756cdddbb029046e5f079f56c66400ee9f1740c14",
+      "git_tracked": false
+    },
+    {
+      "path": "scripts/evaluate_coe_common40_union.py",
+      "sha256": "8e86aa778069ec56de4172279b5cb8d0789f5c3594a3324878ef2caac5d04ab6",
+      "git_tracked": false
+    },
+    {
+      "path": "scripts/evaluate_or_debug_confirmation.py",
+      "sha256": "b7ae44c3d3367e5401ab3aee052de1b7ab9c9a0e4529d8429e0d59c122badd74",
+      "git_tracked": false
+    },
+    {
+      "path": "scripts/evaluate_tsp_constraint_confirmation.py",
+      "sha256": "304445d047e119f0d1b64521975430efd963caf89c548a24ee243a06a769c1b0",
+      "git_tracked": false
+    },
+    {
+      "path": "scripts/evaluate_tsp_constraint_promotion.py",
+      "sha256": "0347b56d5cb11b6063537dbc775eae17f2cc9a72cf175265d997685a2e444ac7",
+      "git_tracked": false
+    },
+    {
+      "path": "scripts/prepare_mixed_skill_confirmation_bundle.py",
+      "sha256": "7a934eb71c6f391e16077d2cb3031aa41ba8e73fba55f0a65b2cb6a3659d0b47",
+      "git_tracked": true
+    },
+    {
+      "path": "scripts/prepare_tsp_constraint_confirmation.py",
+      "sha256": "0e1fcdc7d319a0fcfdc48eee6a5c3a043592d19147d6b0c915cb94aa1cb4b83e",
+      "git_tracked": false
+    },
+    {
+      "path": "scripts/run_mixed_skill_confirmation.py",
+      "sha256": "6ef3307eb858407d932915bfef3083ef4f4315fe392c9defba496cc01988b176",
+      "git_tracked": true
+    },
+    {
+      "path": "scripts/run_or_debug_confirmation_methods.py",
+      "sha256": "3ecc7f014deba013a9d8305777b517873492205bbb81b96ed551470beab3f4e9",
+      "git_tracked": false
+    },
+    {
+      "path": "scripts/run_tsp_constraint_confirmation.py",
+      "sha256": "ed977e5ca6c01ae4e95316c5ee02feffddbe2e322b15a5b5e5d274b799e33e75",
+      "git_tracked": false
+    },
+    {
+      "path": "scripts/summarize_external_common40.py",
+      "sha256": "86208c6d9452890e5e5ef354576665f65a36b20ba665c330712c62046789e4aa",
+      "git_tracked": false
+    },
+    {
+      "path": "tests/test_audit_mixed_skill_confirmation.py",
+      "sha256": "803541b54648d3d21cb6fe07f72f23c3a55a014f99a92dfc8f661f83f009c057",
+      "git_tracked": true
+    },
+    {
+      "path": "tests/test_certify_typed_count_repair.py",
+      "sha256": "79c95a280b002e04d68942c1caf8fbfef784d3af17a07204fffd208009e3038d",
+      "git_tracked": false
+    },
+    {
+      "path": "tests/test_evaluate_tsp_constraint_confirmation.py",
+      "sha256": "ecf6d573cb60eca1cd68e32a0e8ae8a68261ced466673a538af1d372c998b5d5",
+      "git_tracked": false
+    },
+    {
+      "path": "tests/test_external_common40_summary.py",
+      "sha256": "f62c37013c687f0d32b112448987475a51e14c92b5d2d918e285ca76500e5a13",
+      "git_tracked": false
+    },
+    {
+      "path": "tests/test_mixed_skill_execution.py",
+      "sha256": "fd1d30d9f37eca016752ed8438cb3b5b5ed36f9a17296dcad55022cfc1ecdea2",
+      "git_tracked": true
+    },
+    {
+      "path": "tests/test_mixed_skill_router.py",
+      "sha256": "9e9a33cffc42e3911b4313fe99478fd434dca280ed0936f56a72cc3a8db37d5f",
+      "git_tracked": true
+    },
+    {
+      "path": "tests/test_or_debug_confirmation_inference.py",
+      "sha256": "a3834043d06262c3f2774ce2b11b7788915bb34a4b21ea2899fb3ac763c58e4e",
+      "git_tracked": false
+    },
+    {
+      "path": "tests/test_prepare_mixed_skill_confirmation_bundle.py",
+      "sha256": "4f93f7da9aec8302b8207869abcdf5ab7baac9bd8a8b71e7363d97989a28fd00",
+      "git_tracked": true
+    },
+    {
+      "path": "tests/test_typed_count_repair_certificate.py",
+      "sha256": "1ff3f0bc7973994887406c71216306be010c648acee15344f51639ac18b04bc6",
+      "git_tracked": false
+    }
+  ],
+  "decision": {
+    "complete_python_release_allowlist_established": false,
+    "clean_clone_support_established": false,
+    "permitted_claim": "The inspected entrypoints have a 121-file conservative local-Python closure, of which 38 are tracked and 83 are untracked.",
+    "prohibited_claims": [
+      "These 121 files are the complete runtime dependency set.",
+      "All listed files are approved or rights-safe for public release.",
+      "Tracking the listed files alone would make the paper reproducible."
+    ],
+    "next_action": "Review the 83 untracked Python files by experiment layer and derive a minimal tested release closure together with non-Python inputs, binaries, licenses and upstream revisions."
+  },
+  "execution": {
+    "network_calls": 0,
+    "model_or_api_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "git_index_modified": false,
+    "git_history_modified": false
+  }
+}

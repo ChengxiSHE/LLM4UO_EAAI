@@ -1,0 +1,95 @@
+{
+  "schema": "paper-evidence-offline-verification-v1",
+  "created_at_local_date": "2026-10-14",
+  "purpose": "Targeted offline verification of the five current paper evidence axes without model, API, benchmark solver, native evaluator, VM, request-body, response-body, credential, or evaluator-answer access.",
+  "environment": {
+    "python": "3.10.1",
+    "pytest_available": false,
+    "pytest_unavailable_interpretation": "The default Python environment did not contain pytest. This was a runner-availability result, not a test failure. Unittest modules were run with the standard library; the one pytest-style common-40 contract file was checked with an equivalent read-only assertion harness."
+  },
+  "unittest_run": {
+    "command": "PYTHONPATH=scripts:. python3 -m unittest -v tests.test_evaluate_tsp_constraint_confirmation tests.test_or_debug_confirmation_inference tests.test_mixed_skill_router tests.test_mixed_skill_execution tests.test_audit_mixed_skill_confirmation tests.test_prepare_mixed_skill_confirmation_bundle tests.test_typed_count_repair_certificate tests.test_certify_typed_count_repair",
+    "tests_run": 40,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "test_elapsed_seconds": 1.365,
+    "process_exit_code": 0,
+    "status": "passed"
+  },
+  "external_common40_equivalent_assertions": {
+    "source_test": "tests/test_external_common40_summary.py",
+    "implementation": "scripts/summarize_external_common40.py",
+    "assertions_run": 11,
+    "failures": 0,
+    "process_exit_code": 0,
+    "status": "passed",
+    "coverage": [
+      "three repeats remain 40 distinct problems and 120 planned runs",
+      "infrastructure-unavailable outcomes remain in the primary denominator",
+      "six invalid denominator or count combinations fail closed",
+      "three invalid family allocations fail closed"
+    ]
+  },
+  "evidence_axes": {
+    "tsp": [
+      "evaluation module availability",
+      "unfrozen or wrong-role plan rejection before file access"
+    ],
+    "or_debug": [
+      "one-shot group-effect reporting without inventing a pass/fail gate",
+      "observed-regression handling without a zero-event bound"
+    ],
+    "mixed_router": [
+      "public-envelope routing and ambiguity abstention",
+      "unsafe path and content-hash rejection before dispatch",
+      "outer identifier exclusion from guard features",
+      "localized executor failure",
+      "exclusive publication and output reservation",
+      "transitive code-pin rejection",
+      "missing, duplicate, malformed, source-mismatched, route-mismatched and output-mismatched record accounting",
+      "public bundle excludes hidden and evaluator fields"
+    ],
+    "typed_count_repair": [
+      "exact minimum distance two",
+      "distinct one-field semantic and resource failure modes",
+      "mutated verification domain fails closed",
+      "nonempty and empty version-space termination bounds",
+      "zero-call v3 certificate reconstruction",
+      "answer-free projection binding without authored upper-bound hash"
+    ],
+    "external_common40": [
+      "repeat interpretation",
+      "full-denominator preservation",
+      "family denominator integrity"
+    ]
+  },
+  "source_sha256": {
+    "tests/test_evaluate_tsp_constraint_confirmation.py": "ecf6d573cb60eca1cd68e32a0e8ae8a68261ced466673a538af1d372c998b5d5",
+    "tests/test_or_debug_confirmation_inference.py": "a3834043d06262c3f2774ce2b11b7788915bb34a4b21ea2899fb3ac763c58e4e",
+    "tests/test_mixed_skill_router.py": "9e9a33cffc42e3911b4313fe99478fd434dca280ed0936f56a72cc3a8db37d5f",
+    "tests/test_mixed_skill_execution.py": "fd1d30d9f37eca016752ed8438cb3b5b5ed36f9a17296dcad55022cfc1ecdea2",
+    "tests/test_audit_mixed_skill_confirmation.py": "803541b54648d3d21cb6fe07f72f23c3a55a014f99a92dfc8f661f83f009c057",
+    "tests/test_prepare_mixed_skill_confirmation_bundle.py": "4f93f7da9aec8302b8207869abcdf5ab7baac9bd8a8b71e7363d97989a28fd00",
+    "tests/test_typed_count_repair_certificate.py": "1ff3f0bc7973994887406c71216306be010c648acee15344f51639ac18b04bc6",
+    "tests/test_certify_typed_count_repair.py": "79c95a280b002e04d68942c1caf8fbfef784d3af17a07204fffd208009e3038d",
+    "tests/test_external_common40_summary.py": "f62c37013c687f0d32b112448987475a51e14c92b5d2d918e285ca76500e5a13",
+    "scripts/summarize_external_common40.py": "86208c6d9452890e5e5ef354576665f65a36b20ba665c330712c62046789e4aa"
+  },
+  "execution": {
+    "model_calls": 0,
+    "api_calls": 0,
+    "benchmark_solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "reference_answers_read": false,
+    "request_or_response_bodies_read": false,
+    "credentials_read": false
+  },
+  "limitations": [
+    "This record verifies targeted contract and reconstruction tests, not the full historical repository test suite.",
+    "It does not rerun TSP, OR-Debug, mixed-routing solvers or external baseline inference.",
+    "It does not independently establish benchmark accuracy; headline accuracy remains bound to the terminal result artifacts and their closures.",
+    "The equivalent common-40 harness mirrors the pytest-style assertions because pytest is absent from the default Python environment; it does not replace execution of the complete summary script against all private or locally provisioned artifacts."
+  ]
+}

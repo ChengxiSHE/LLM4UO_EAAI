@@ -1,0 +1,85 @@
+{
+  "claim_boundary": {
+    "broad_superiority_supported": false,
+    "equal_budget_leaderboard": false,
+    "method_accuracy_estimated": false,
+    "official_optitrust_reproduction": false,
+    "paper_structure_sensitivity_only": true,
+    "published_optitrust_score_substituted": false,
+    "zero_scoreable_outcomes_treated_as_zero_accuracy": false
+  },
+  "cohort": {
+    "planned": 38,
+    "scoreable": 0
+  },
+  "comparison_context": {
+    "existing_common_protocol": "experiments/fresh_common38_common_protocol_synthesis_20261015.json",
+    "existing_common_protocol_sha256": "a678008a7449d588e12eb59bf019875fb08d7cb8f4e9c177ca8aaf9f0fb2aa9e",
+    "existing_rows_unchanged": {
+      "Base": 0,
+      "BIND final": 13,
+      "BIND round 1": 13,
+      "CoE-safe": 4,
+      "Proof-carrying compilation": 30
+    },
+    "retuned_after_optitrust_style_outcomes": false
+  },
+  "execution_accounting": {
+    "failed_physical_attempts": 121,
+    "logical_requests": 199,
+    "physical_attempts": 282,
+    "provider_complete_responses": 161,
+    "reserved_or_reported_tokens": 7608756,
+    "retry_attempts": 83
+  },
+  "failure_localization": {
+    "classification": "adapter_capacity_and_transport_failure",
+    "dominant_stage": "first_full_milp_sidecar_candidate",
+    "exhausted_request_fingerprints": 38,
+    "failure_class": "transport_RemoteDisconnected",
+    "terminal_slot_distribution": {
+      "5": 35,
+      "6": 1,
+      "9": 2
+    }
+  },
+  "input_sha256": {
+    "audit": "23501c91cb283e1581a3c90c5e290412974558c5e1b99118e5df77f06e3ae4da",
+    "circuit_closure": "25778d40b99ecf33b6a0570922b98739f06e21ed80a10640384eda0f42ddba71",
+    "result": "328e917de571222446582d3d4c91fce760566b7e329c282affdfea9600091ce6"
+  },
+  "method": "OptiTrust-style-safe-sidecar",
+  "next_adapter_design": {
+    "description": "Generate one canonical milp-v1 candidate per identity, then request five compact language-conditioned review records that reference the immutable candidate hash and may emit only bounded typed deltas or abstentions.",
+    "must_freeze_before_dispatch": [
+      "canonical_candidate_schema_and_hash_binding",
+      "bounded_review_and_delta_schema",
+      "strict_delta_composer_and_resource_checker",
+      "canary_progression_gate",
+      "three_attempt_cap_and_final_attempt_resume_fix"
+    ],
+    "outcome_blind": true,
+    "reuse_v1_test_answers_for_tuning": false,
+    "status": "design_required_before_new_dispatch"
+  },
+  "outcomes": {
+    "correct": 0,
+    "incorrect": 0,
+    "infrastructure_unavailable": 38,
+    "method_failure": 0
+  },
+  "paired_against_current": {
+    "reason": "zero_scoreable_outcomes",
+    "status": "not_estimable"
+  },
+  "privacy": {
+    "contains_credentials": false,
+    "contains_objectives": false,
+    "contains_problem_bodies": false,
+    "contains_reference_values": false,
+    "contains_request_bodies": false,
+    "contains_response_bodies": false
+  },
+  "schema": "fresh-common38-optitrust-style-synthesis-v1",
+  "status": "complete_unscoreable_adapter_capacity_failure"
+}

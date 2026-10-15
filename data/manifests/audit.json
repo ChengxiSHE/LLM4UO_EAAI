@@ -1,0 +1,254 @@
+{
+  "status": "metadata_and_integrity_only_not_gold_label_validation",
+  "all_file_hashes_match": true,
+  "datasets": [
+    {
+      "source": "Minw913/AlphaOPT:data/optimization_tasks/clean/industryor.json",
+      "rows": 82,
+      "empty_prompts": 0,
+      "duplicate_prompt_rows_exact_normalized": 0,
+      "schema_fields": [
+        "correct_program",
+        "description",
+        "fail_to_diagnose",
+        "formulation",
+        "ground_truth",
+        "output_status",
+        "retrieved_insights",
+        "success_confidence",
+        "success_count",
+        "task_id"
+      ],
+      "question_field": "description",
+      "type_counts": {},
+      "rows_with_reference_program": 82,
+      "rows_with_nonempty_prior_insights": 0
+    },
+    {
+      "source": "Minw913/AlphaOPT:data/optimization_tasks/clean/mamo_complex.json",
+      "rows": 111,
+      "empty_prompts": 0,
+      "duplicate_prompt_rows_exact_normalized": 0,
+      "schema_fields": [
+        "description",
+        "ground_truth",
+        "task_id"
+      ],
+      "question_field": "description",
+      "type_counts": {},
+      "rows_with_reference_program": 0,
+      "rows_with_nonempty_prior_insights": 0
+    },
+    {
+      "source": "Minw913/AlphaOPT:data/optimization_tasks/clean/nl4opt.json",
+      "rows": 214,
+      "empty_prompts": 0,
+      "duplicate_prompt_rows_exact_normalized": 0,
+      "schema_fields": [
+        "description",
+        "ground_truth",
+        "task_id"
+      ],
+      "question_field": "description",
+      "type_counts": {},
+      "rows_with_reference_program": 0,
+      "rows_with_nonempty_prior_insights": 0
+    },
+    {
+      "source": "Minw913/AlphaOPT:data/optimization_tasks/clean/nlp4lp.json",
+      "rows": 242,
+      "empty_prompts": 0,
+      "duplicate_prompt_rows_exact_normalized": 0,
+      "schema_fields": [
+        "correct_program",
+        "description",
+        "fail_to_diagnose",
+        "formulation",
+        "ground_truth",
+        "output_status",
+        "retrieved_insights",
+        "success_confidence",
+        "success_count",
+        "task_id"
+      ],
+      "question_field": "description",
+      "type_counts": {},
+      "rows_with_reference_program": 242,
+      "rows_with_nonempty_prior_insights": 0
+    },
+    {
+      "source": "nl4opt/nl4opt-competition:generation_data/dev.jsonl",
+      "rows": 99,
+      "empty_prompts": 0,
+      "duplicate_prompt_rows_exact_normalized": 0,
+      "schema_fields": [
+        "_input_hash",
+        "const_declarations",
+        "document",
+        "first_var_to_mentions",
+        "obj_declaration",
+        "order_mapping",
+        "params",
+        "spans",
+        "tokens",
+        "var_mention_to_first_var",
+        "var_mentions",
+        "vars"
+      ],
+      "question_field": "document",
+      "type_counts": {},
+      "rows_with_reference_program": 0,
+      "rows_with_nonempty_prior_insights": 0
+    },
+    {
+      "source": "nl4opt/nl4opt-competition:generation_data/test.jsonl",
+      "rows": 289,
+      "empty_prompts": 0,
+      "duplicate_prompt_rows_exact_normalized": 0,
+      "schema_fields": [
+        "_input_hash",
+        "const_declarations",
+        "document",
+        "first_var_to_mentions",
+        "obj_declaration",
+        "order_mapping",
+        "params",
+        "spans",
+        "tokens",
+        "var_mention_to_first_var",
+        "var_mentions",
+        "vars"
+      ],
+      "question_field": "document",
+      "type_counts": {},
+      "rows_with_reference_program": 0,
+      "rows_with_nonempty_prior_insights": 0
+    },
+    {
+      "source": "nl4opt/nl4opt-competition:generation_data/train.jsonl",
+      "rows": 713,
+      "empty_prompts": 0,
+      "duplicate_prompt_rows_exact_normalized": 0,
+      "schema_fields": [
+        "_input_hash",
+        "const_declarations",
+        "document",
+        "first_var_to_mentions",
+        "obj_declaration",
+        "order_mapping",
+        "params",
+        "spans",
+        "tokens",
+        "var_mention_to_first_var",
+        "var_mentions",
+        "vars"
+      ],
+      "question_field": "document",
+      "type_counts": {},
+      "rows_with_reference_program": 0,
+      "rows_with_nonempty_prior_insights": 0
+    },
+    {
+      "source": "yangzhch6/ReSocratic:data/NL4OPT-E.json",
+      "rows": 289,
+      "empty_prompts": 0,
+      "duplicate_prompt_rows_exact_normalized": 0,
+      "schema_fields": [
+        "index",
+        "question",
+        "results",
+        "type"
+      ],
+      "question_field": "question",
+      "type_counts": {
+        "linear-notable": 289
+      },
+      "rows_with_reference_program": 0,
+      "rows_with_nonempty_prior_insights": 0
+    },
+    {
+      "source": "yangzhch6/ReSocratic:data/OptiBench.json",
+      "rows": 605,
+      "empty_prompts": 0,
+      "duplicate_prompt_rows_exact_normalized": 0,
+      "schema_fields": [
+        "index",
+        "question",
+        "results",
+        "type"
+      ],
+      "question_field": "question",
+      "type_counts": {
+        "linear-notable": 342,
+        "nonlinear-notable": 133,
+        "linear-table": 80,
+        "nonlinear-table": 50
+      },
+      "rows_with_reference_program": 0,
+      "rows_with_nonempty_prior_insights": 0
+    }
+  ],
+  "exact_overlaps": [
+    {
+      "left": "Minw913/AlphaOPT:data/optimization_tasks/clean/nl4opt.json",
+      "right": "Minw913/AlphaOPT:data/optimization_tasks/clean/nlp4lp.json",
+      "exact_normalized_overlap": 196
+    },
+    {
+      "left": "Minw913/AlphaOPT:data/optimization_tasks/clean/nl4opt.json",
+      "right": "nl4opt/nl4opt-competition:generation_data/test.jsonl",
+      "exact_normalized_overlap": 214
+    },
+    {
+      "left": "Minw913/AlphaOPT:data/optimization_tasks/clean/nl4opt.json",
+      "right": "yangzhch6/ReSocratic:data/NL4OPT-E.json",
+      "exact_normalized_overlap": 194
+    },
+    {
+      "left": "Minw913/AlphaOPT:data/optimization_tasks/clean/nl4opt.json",
+      "right": "yangzhch6/ReSocratic:data/OptiBench.json",
+      "exact_normalized_overlap": 179
+    },
+    {
+      "left": "Minw913/AlphaOPT:data/optimization_tasks/clean/nlp4lp.json",
+      "right": "nl4opt/nl4opt-competition:generation_data/test.jsonl",
+      "exact_normalized_overlap": 242
+    },
+    {
+      "left": "Minw913/AlphaOPT:data/optimization_tasks/clean/nlp4lp.json",
+      "right": "yangzhch6/ReSocratic:data/NL4OPT-E.json",
+      "exact_normalized_overlap": 220
+    },
+    {
+      "left": "Minw913/AlphaOPT:data/optimization_tasks/clean/nlp4lp.json",
+      "right": "yangzhch6/ReSocratic:data/OptiBench.json",
+      "exact_normalized_overlap": 191
+    },
+    {
+      "left": "nl4opt/nl4opt-competition:generation_data/test.jsonl",
+      "right": "yangzhch6/ReSocratic:data/NL4OPT-E.json",
+      "exact_normalized_overlap": 239
+    },
+    {
+      "left": "nl4opt/nl4opt-competition:generation_data/test.jsonl",
+      "right": "yangzhch6/ReSocratic:data/OptiBench.json",
+      "exact_normalized_overlap": 219
+    },
+    {
+      "left": "nl4opt/nl4opt-competition:generation_data/train.jsonl",
+      "right": "yangzhch6/ReSocratic:data/OptiBench.json",
+      "exact_normalized_overlap": 81
+    },
+    {
+      "left": "yangzhch6/ReSocratic:data/NL4OPT-E.json",
+      "right": "yangzhch6/ReSocratic:data/OptiBench.json",
+      "exact_normalized_overlap": 190
+    }
+  ],
+  "warnings": [
+    "Exact text matching does not detect paraphrases or shared problem templates.",
+    "All answers, formulations, reference code and prior evaluation fields must be evaluator-only.",
+    "No benchmark reference code has been executed or trusted as expert gold.",
+    "Solver and LP/MILP eligibility must be assessed before freezing inclusion lists."
+  ]
+}

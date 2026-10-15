@@ -1,0 +1,104 @@
+{
+  "audited_at_local_date": "2026-10-15",
+  "claim_boundary": {
+    "external_submodule_remote_acquisition_passed": false,
+    "figure_regeneration_layer_passed": false,
+    "layer_a_passed": true,
+    "offline_analysis_layer_passed": false,
+    "provider_layer_passed": false,
+    "rights_or_history_safe_release_passed": false,
+    "solver_native_layer_passed": false
+  },
+  "clone": {
+    "clean_after": true,
+    "clean_before": true,
+    "clone_returncode": 0,
+    "commit": "1a5033b8de26174dd65ac3444cf3bcd88202032e",
+    "mode": "git_clone_no_local_plus_local_pinned_partial_submodule_snapshot",
+    "tree": "b75818f32d65524ccf03b4e9a612c08709393189"
+  },
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "tests.test_content_addressed_manifests",
+        "tests.test_current_library_manifests",
+        "tests.test_current_library_reconstruction",
+        "tests.test_release_evidence_reconstruction",
+        "tests.test_clean_clone_layer_a",
+        "tests.test_verified_skill_library",
+        "tests.test_audit_mixed_skill_confirmation",
+        "tests.test_mixed_skill_execution"
+      ],
+      "returncode": 0,
+      "tests": 51
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/build_current_library_manifests.py",
+        "--check"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/audit_current_library_reconstruction.py",
+        "--check"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/reconstruct_release_evidence.py",
+        "--check"
+      ],
+      "returncode": 0
+    }
+  ],
+  "environment": {
+    "credentials_available_to_commands": false,
+    "environment_variable_names": [
+      "GIT_CONFIG_NOSYSTEM",
+      "GIT_TERMINAL_PROMPT",
+      "HOME",
+      "LANG",
+      "LC_ALL",
+      "PATH",
+      "PYTHONDONTWRITEBYTECODE",
+      "PYTHONHASHSEED"
+    ],
+    "inherited_environment_values": false,
+    "python": "Python 3.10.1"
+  },
+  "safety": {
+    "api_or_model_calls": 0,
+    "credentials_read": false,
+    "environment_values_read_from_parent": false,
+    "evaluator_only_answers_read": false,
+    "native_evaluator_calls": 0,
+    "request_or_response_bodies_read": false,
+    "solver_calls": 0,
+    "vm_calls": 0
+  },
+  "schema": "llm4or-clean-clone-layer-a-audit-v1",
+  "solver_submodule": {
+    "commit": "c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010",
+    "complete_object_graph_verified": false,
+    "initialized": true,
+    "local_source_used": true,
+    "path": "vendor/solver-in-the-loop",
+    "remote_acquisition_verified": false,
+    "solver_executed": false
+  },
+  "source": {
+    "branch": "codex/typed-count-cegis-revision-20261014",
+    "commit": "1a5033b8de26174dd65ac3444cf3bcd88202032e",
+    "tree": "b75818f32d65524ccf03b4e9a612c08709393189"
+  },
+  "status": "passed_no_local_credential_free_layer_a_with_local_partial_submodule_snapshot"
+}

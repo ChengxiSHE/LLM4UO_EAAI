@@ -1,0 +1,14 @@
+# Exact environment used for the 2026-10-15 main-figure render and clean rebuild.
+# Python 3.10.1; no provider credential or solver license is required.
+PyMuPDF==1.26.5
+contourpy==1.3.2
+cycler==0.12.1
+fonttools==4.65.0
+kiwisolver==1.5.1
+matplotlib==3.10.7
+numpy==2.2.6
+packaging==26.3
+pillow==12.3.0
+pyparsing==3.3.3
+python-dateutil==2.9.0.post0
+six==1.17.0

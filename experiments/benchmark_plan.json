@@ -1,0 +1,161 @@
+{
+  "api_enabled": false,
+  "audit": "data/manifests/benchmark_inventory_audit.json",
+  "benchmarks": [
+    {
+      "final_test_denominator": null,
+      "full_benchmark_run_completed": false,
+      "name": "IndustryOR",
+      "role": "core",
+      "source": {
+        "local_path": "data/raw/benchmark_inventory_20260831/Cardinal-Operations__SIRL/test_data/IndustryOR_fixedV2.json",
+        "repo": "Cardinal-Operations/SIRL",
+        "revision": "b329ff288e9240ecd41813fa41e7f003fd5ca47d",
+        "sha256": "756549264386d9c28f3bf15b442e4d45e345f809155f7c7951c9b7edfd25ee8b",
+        "upstream_path": "test_data/IndustryOR_fixedV2.json",
+        "url": "https://raw.githubusercontent.com/Cardinal-Operations/SIRL/b329ff288e9240ecd41813fa41e7f003fd5ca47d/test_data/IndustryOR_fixedV2.json"
+      },
+      "source_rows_before_split": 100,
+      "version_note": "IndustryOR official release has 100; retained local AlphaOPT clean 82 is a different derivative."
+    },
+    {
+      "final_test_denominator": null,
+      "full_benchmark_run_completed": false,
+      "name": "MAMO ComplexLP",
+      "role": "core",
+      "source": {
+        "local_path": "data/raw/benchmark_inventory_20260831/Cardinal-Operations__SIRL/test_data/MAMO_ComplexLP_fixed.jsonl",
+        "repo": "Cardinal-Operations/SIRL",
+        "revision": "b329ff288e9240ecd41813fa41e7f003fd5ca47d",
+        "sha256": "0fe155db0ddb62ab82cdf270f2966afae9f46a512b1c02f6d8a9233f5d3f33c7",
+        "upstream_path": "test_data/MAMO_ComplexLP_fixed.jsonl",
+        "url": "https://raw.githubusercontent.com/Cardinal-Operations/SIRL/b329ff288e9240ecd41813fa41e7f003fd5ca47d/test_data/MAMO_ComplexLP_fixed.jsonl"
+      },
+      "source_rows_before_split": 203,
+      "version_note": "Author original 211 is archived for version comparison; old AlphaOPT clean 111 is not the full benchmark."
+    },
+    {
+      "final_test_denominator": null,
+      "full_benchmark_run_completed": false,
+      "name": "OptMATH-Bench",
+      "role": "core",
+      "source": {
+        "local_path": "data/raw/benchmark_inventory_20260831/optsuite__OptMATH/benchmark/OptMATH_Bench.json",
+        "repo": "optsuite/OptMATH",
+        "revision": "f15bbc4477c70db85ad148df8bcc1b780bca0f8c",
+        "sha256": "c5dbc2bf14995b880d13e306ff54ae81b603f07b565a31e52248533848ad3a93",
+        "upstream_path": "benchmark/OptMATH_Bench.json",
+        "url": "https://raw.githubusercontent.com/optsuite/OptMATH/f15bbc4477c70db85ad148df8bcc1b780bca0f8c/benchmark/OptMATH_Bench.json"
+      },
+      "source_rows_before_split": 166,
+      "version_note": "Use author revision, not the nonidentical SIRL 166 mirror or the separate 193 release."
+    },
+    {
+      "name": "ComplexOR",
+      "role": "core",
+      "source": {
+        "kind": "directory_bundle",
+        "repo": "XiaoAI1989/ORMind",
+        "revision": "f5bc4ff3b5bcc2db7ea88ab0783f8d9a4078ac30",
+        "upstream_path": "dataset/ComplexOR",
+        "local_path": "data/raw/complexor_20260831/XiaoAI1989__ORMind/dataset/ComplexOR",
+        "url": "https://github.com/XiaoAI1989/ORMind/tree/f5bc4ff3b5bcc2db7ea88ab0783f8d9a4078ac30/dataset/ComplexOR",
+        "sha256": "64f61398d44b7a495f78108da8e05ad299308f7530d650f804a8418bba44d62c",
+        "hash_scope": "SHA256 of canonical sorted [{path,sha256}] for the 111 selected dataset files",
+        "manifest": "data/manifests/complexor_sources.json"
+      },
+      "source_rows_before_split": 37,
+      "source_parameter_instances": 37,
+      "final_test_denominator": null,
+      "full_benchmark_run_completed": false,
+      "version_note": "ORMind restructured 37-problem distribution, pinned independently; not assumed identical to CoE 18/37 or OptiMUS 21. No local source edits.",
+      "input_profile": "description_parameters_v1",
+      "scaffold_profile": "separate adapted comparison only; source text never executed",
+      "input_adapter": "llm4or/benchmark_inputs.py",
+      "reference_status": "not independently audited",
+      "data_license_status": "upstream_dataset_rights_not_established_for_redistribution",
+      "available_input_revision": {
+        "name": "complexor-parameter-metadata-v1",
+        "manifest": "data/revisions/complexor_parameters_v1.json",
+        "manifest_sha256": "6903d1248440d9443be16048380befda86a26b09ac4b451a1d4f6456476fdeb6",
+        "export": "data/prepared_benchmarks/complexor_parameters_v1.json",
+        "export_sha256": "eb277a683cc95f977adba70f7332c9ede9fd624a8c1f28116faa114044623bd0",
+        "selection_status": "available_not_final_test_frozen",
+        "retained_problems": 37,
+        "edited_problems": 2,
+        "shape_edits": 3,
+        "unresolved_problem_ids": [
+          "complexor_fleet",
+          "complexor_net1",
+          "complexor_netmcol"
+        ],
+        "reference_reaudit_required": true,
+        "source_snapshot_unchanged": true
+      }
+    },
+    {
+      "final_test_denominator": null,
+      "full_benchmark_run_completed": false,
+      "name": "OptiBench",
+      "role": "coverage",
+      "source": {
+        "local_path": "data/raw/yangzhch6__ReSocratic/data/OptiBench.json",
+        "repo": "yangzhch6/ReSocratic",
+        "revision": "27ff7ecb3c6a4955fdcb031f7bf3419c6f462d2e",
+        "sha256": "0378fab2065e084563913340bc4cff6818a891dc06c5adc83452b40fbd18e85b",
+        "upstream_path": "data/OptiBench.json",
+        "url": "https://raw.githubusercontent.com/yangzhch6/ReSocratic/27ff7ecb3c6a4955fdcb031f7bf3419c6f462d2e/data/OptiBench.json"
+      },
+      "source_rows_before_split": 605,
+      "version_note": "Author snapshot; prior development exposure and cross-benchmark overlap must remain visible."
+    },
+    {
+      "final_test_denominator": null,
+      "full_benchmark_run_completed": false,
+      "name": "NL4Opt",
+      "role": "basic_control",
+      "source": {
+        "local_path": "data/raw/benchmark_inventory_20260831/Cardinal-Operations__SIRL/test_data/NL4OPT.jsonl",
+        "repo": "Cardinal-Operations/SIRL",
+        "revision": "b329ff288e9240ecd41813fa41e7f003fd5ca47d",
+        "sha256": "7cf8e6fb097a57d9f647ab7b37d005656cbc6a89f6ba2978a52ed618bfbdb5df",
+        "upstream_path": "test_data/NL4OPT.jsonl",
+        "url": "https://raw.githubusercontent.com/Cardinal-Operations/SIRL/b329ff288e9240ecd41813fa41e7f003fd5ca47d/test_data/NL4OPT.jsonl"
+      },
+      "source_rows_before_split": 245,
+      "version_note": "Objective-value execution version; original competition generation test has 289 and a different evaluation protocol."
+    }
+  ],
+  "core_benchmarks": [
+    "IndustryOR",
+    "MAMO ComplexLP",
+    "OptMATH-Bench",
+    "ComplexOR"
+  ],
+  "date": "2026-08-31",
+  "deferred_benchmarks": {
+    "NLP4LP": "Resolve author parameterized version vs overlapping 242-file derivative."
+  },
+  "documentation": "docs/BENCHMARKS.md",
+  "primary_analysis_prefers_disclosed_revised_versions_where_selected": true,
+  "request_budget_authorized": 0,
+  "requirements": [
+    "Extend executable and evaluator coverage beyond small continuous LP.",
+    "Freeze family splits and propagate prior development exposure to new versions.",
+    "Keep complete-source reporting and uncontaminated evaluation subsets explicitly distinct.",
+    "Preserve published-version and corrected-version differences.",
+    "No label-based choice of problems or versions.",
+    "Resolve ComplexOR parameter shape inconsistencies without outcome-based editing.",
+    "Keep scaffold-assisted comparisons separate from description/parameter-only modeling.",
+    "ComplexOR infeasible/status grading requires independent reference audit; never interpret all non-optimal statuses as infeasible."
+  ],
+  "selection_basis": "Known benchmark coverage and user-requested difficult benchmarks, not searching for model failures.",
+  "source_rows_sum_not_independent_test_size": 1356,
+  "status": "versions_selected_not_evaluation_ready",
+  "input_audit": "data/manifests/benchmark_input_audit.json",
+  "execution_extension": {
+    "protocol": "experiments/milp_protocol.json",
+    "report": "docs/BENCHMARKS.md",
+    "status": "generic_linear_milp_verified_benchmark_reference_and_coverage_pending"
+  }
+}

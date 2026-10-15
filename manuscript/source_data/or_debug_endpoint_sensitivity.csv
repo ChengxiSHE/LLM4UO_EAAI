@@ -1,0 +1,3 @@
+endpoint,denominator,static_correct,evolved_correct,both_correct,corrections,regressions,both_wrong,accuracy_delta
+corrected_primary,2845,828,2752,828,1924,0,93,0.6762741652021089
+released_primary,2845,828,2236,828,1408,0,609,0.49490333919156415

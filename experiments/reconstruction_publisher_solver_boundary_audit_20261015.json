@@ -1,0 +1,249 @@
+{
+  "audited_at_local_date": "2026-10-15",
+  "decision": {
+    "current_behavior_bound": true,
+    "next_design_obligations": [
+      "Preserve exact serialization and output hashes where scientific identity depends on bytes.",
+      "Replace terminal publication with exclusive reservation and never replace a competing result.",
+      "Preserve path confinement, regular-file checks, maximum sizes and source hash checks.",
+      "Define crash recovery for reserved temporary and terminal files.",
+      "Bind Gurobi version, binary identity, license expectation and dataset root reconstruction without redistributing restricted assets."
+    ],
+    "prohibited_claims": [
+      "The nine historical publishers are concurrency-safe.",
+      "A successful local run proves clean-clone publication safety.",
+      "The repository supplies Gurobi or its license.",
+      "The hidden-score consumer independently proves model-path confinement."
+    ],
+    "publisher_contract_gap": "All nine can replace an existing terminal result or race after an existence precheck; none proves exclusive result ownership.",
+    "replacement_implementation_authorized": false,
+    "solver_contract_gap": "The wrapper is pinned and bounded, but the binary/license is external and one consumer lacks a local path-containment check."
+  },
+  "execution": {
+    "credentials_read": 0,
+    "evaluator_only_answers_read": 0,
+    "git_history_modified": false,
+    "git_index_modified": false,
+    "model_or_api_calls": 0,
+    "native_or_vm_calls": 0,
+    "network_calls": 0,
+    "request_or_response_bodies_read": 0,
+    "solver_calls": 0
+  },
+  "inputs": {
+    "experiments/or_debug_confirmation_evaluation_plan_20261014.json": "5f20fbcd09289a37f9f38d06c71938d6a202f39a3ec5f01547f6b2a4d19bd1b7",
+    "experiments/or_debug_confirmation_plan_20261014.json": "1e6a75da27cf5e75fe773a12e95b97d56e827080decfe547976aa8bbf924ed79",
+    "experiments/release_trigger_disposition_audit_20261015.json": "7ae9b3544ebb9b08c0e391c63373db22bb310e5fa911777d6af3efe26144bc6f",
+    "llm4or/or_debug_gurobi.py": "97691082bfe6ba48bdfdedf33f8df5abcbdb8baf44cd59c72d96f7752cb9cf8b",
+    "llm4or/pipeline.py": "f15089697fac45dca363b5b32a64d61fb7050b06b3d73e98a5ae1f3a3d7d014e",
+    "llm4or/schema.py": "82a63e82f4cf72b99f4f58be2ff5ece44ad8b8ae8c08c0aa440d8615d6d9e428"
+  },
+  "publisher_summary": {
+    "also_publishes_markdown": 1,
+    "directory_fsync": 0,
+    "exclusive_terminal_reservation": 0,
+    "explicit_file_fsync": 3,
+    "nonexclusive_terminal_ownership": 9,
+    "publishers": 9,
+    "uses_compact_canonical_json": 3,
+    "uses_pretty_json": 6
+  },
+  "publishers": [
+    {
+      "durability": "no_explicit_flush_or_fsync",
+      "input_identity_controls": "reads frozen plans/manifests and/or compares source hashes, but completeness remains plan-specific",
+      "path": "scripts/audit_external_comparison_cohorts.py",
+      "path_boundary": "fixed root-relative constants and resolved input paths; no generic output containment proof",
+      "publication": "exists_precheck_then_direct_write_text",
+      "required_equivalence_obligations": [
+        "same accepted input byte identities and size/path checks",
+        "same JSON field set and canonical/pretty serialization as declared",
+        "same output SHA-256 for identical inputs",
+        "same fail-closed behavior on missing, duplicate, invalid or mismatched inputs",
+        "exclusive terminal-file ownership without replacing a competing result"
+      ],
+      "serialization": "pretty_json_sort_keys_indent2_ensure_ascii_false_allow_nan_false_plus_newline",
+      "sha256": "88a3338ebeb60608b68a2b49067b73f9bb0f179d8dc9821b9ad653462383ea3d",
+      "temporary_path": "none",
+      "terminal_ownership": "nonexclusive_toctou_window"
+    },
+    {
+      "durability": "file_fsync_only",
+      "input_identity_controls": "reads frozen plans/manifests and/or compares source hashes, but completeness remains plan-specific",
+      "path": "scripts/evaluate_bind_common40_union.py",
+      "path_boundary": "root resolution plus relative_to checks at selected inputs; output is call-site supplied",
+      "publication": "fixed_dot_tmp_write_flush_fsync_then_replace",
+      "required_equivalence_obligations": [
+        "same accepted input byte identities and size/path checks",
+        "same JSON field set and canonical/pretty serialization as declared",
+        "same output SHA-256 for identical inputs",
+        "same fail-closed behavior on missing, duplicate, invalid or mismatched inputs",
+        "exclusive terminal-file ownership without replacing a competing result"
+      ],
+      "serialization": "schema.canonical compact sorted utf8 finite-json plus newline via pipeline.write_json",
+      "sha256": "4030011751843354d2d8eb0756cdddbb029046e5f079f56c66400ee9f1740c14",
+      "temporary_path": "fixed sibling name plus .tmp",
+      "terminal_ownership": "nonexclusive_replace_can_overwrite"
+    },
+    {
+      "durability": "file_fsync_only",
+      "input_identity_controls": "reads frozen plans/manifests and/or compares source hashes, but completeness remains plan-specific",
+      "path": "scripts/evaluate_coe_common40_union.py",
+      "path_boundary": "root resolution plus relative_to checks at selected inputs; output is call-site supplied",
+      "publication": "fixed_dot_tmp_write_flush_fsync_then_replace",
+      "required_equivalence_obligations": [
+        "same accepted input byte identities and size/path checks",
+        "same JSON field set and canonical/pretty serialization as declared",
+        "same output SHA-256 for identical inputs",
+        "same fail-closed behavior on missing, duplicate, invalid or mismatched inputs",
+        "exclusive terminal-file ownership without replacing a competing result"
+      ],
+      "serialization": "schema.canonical compact sorted utf8 finite-json plus newline via pipeline.write_json",
+      "sha256": "8e86aa778069ec56de4172279b5cb8d0789f5c3594a3324878ef2caac5d04ab6",
+      "temporary_path": "fixed sibling name plus .tmp",
+      "terminal_ownership": "nonexclusive_replace_can_overwrite"
+    },
+    {
+      "durability": "no_explicit_flush_or_fsync",
+      "input_identity_controls": "reads frozen plans/manifests and/or compares source hashes, but completeness remains plan-specific",
+      "path": "scripts/evaluate_or_debug_confirmation.py",
+      "path_boundary": "fixed root-derived plan and output constants; plan-supplied dataset/split paths resolved",
+      "publication": "exists_precheck_then_fixed_suffix_tmp_write_then_replace",
+      "required_equivalence_obligations": [
+        "same accepted input byte identities and size/path checks",
+        "same JSON field set and canonical/pretty serialization as declared",
+        "same output SHA-256 for identical inputs",
+        "same fail-closed behavior on missing, duplicate, invalid or mismatched inputs",
+        "exclusive terminal-file ownership without replacing a competing result"
+      ],
+      "serialization": "pretty_json_sort_keys_indent2_plus_newline; allow_nan not explicitly disabled",
+      "sha256": "b7ae44c3d3367e5401ab3aee052de1b7ab9c9a0e4529d8429e0d59c122badd74",
+      "temporary_path": "fixed output suffix plus .tmp",
+      "terminal_ownership": "nonexclusive_replace_can_overwrite"
+    },
+    {
+      "durability": "no_explicit_flush_or_fsync",
+      "input_identity_controls": "reads frozen plans/manifests and/or compares source hashes, but completeness remains plan-specific",
+      "path": "scripts/evaluate_tsp_constraint_confirmation.py",
+      "path_boundary": "root resolution and plan-bound paths; no exclusive terminal reservation",
+      "publication": "exists_precheck_then_direct_write_bytes",
+      "required_equivalence_obligations": [
+        "same accepted input byte identities and size/path checks",
+        "same JSON field set and canonical/pretty serialization as declared",
+        "same output SHA-256 for identical inputs",
+        "same fail-closed behavior on missing, duplicate, invalid or mismatched inputs",
+        "exclusive terminal-file ownership without replacing a competing result"
+      ],
+      "serialization": "pretty_json_sort_keys_indent2_ensure_ascii_false_allow_nan_false plus newline",
+      "sha256": "304445d047e119f0d1b64521975430efd963caf89c548a24ee243a06a769c1b0",
+      "temporary_path": "none",
+      "terminal_ownership": "nonexclusive_toctou_window"
+    },
+    {
+      "durability": "no_explicit_flush_or_fsync",
+      "input_identity_controls": "reads frozen plans/manifests and/or compares source hashes, but completeness remains plan-specific",
+      "path": "scripts/evaluate_tsp_constraint_promotion.py",
+      "path_boundary": "root resolution and plan-bound paths; no exclusive terminal reservation",
+      "publication": "exists_precheck_then_direct_write_bytes",
+      "required_equivalence_obligations": [
+        "same accepted input byte identities and size/path checks",
+        "same JSON field set and canonical/pretty serialization as declared",
+        "same output SHA-256 for identical inputs",
+        "same fail-closed behavior on missing, duplicate, invalid or mismatched inputs",
+        "exclusive terminal-file ownership without replacing a competing result"
+      ],
+      "serialization": "pretty_json_sort_keys_indent2_ensure_ascii_false_allow_nan_false plus newline",
+      "sha256": "0347b56d5cb11b6063537dbc775eae17f2cc9a72cf175265d997685a2e444ac7",
+      "temporary_path": "none",
+      "terminal_ownership": "nonexclusive_toctou_window"
+    },
+    {
+      "durability": "no_explicit_flush_or_fsync",
+      "input_identity_controls": "reads frozen plans/manifests and/or compares source hashes, but completeness remains plan-specific",
+      "path": "scripts/run_or_debug_confirmation_methods.py",
+      "path_boundary": "fixed root-derived plan, bundle and output constants",
+      "publication": "exists_precheck_then_fixed_suffix_tmp_write_then_replace",
+      "required_equivalence_obligations": [
+        "same accepted input byte identities and size/path checks",
+        "same JSON field set and canonical/pretty serialization as declared",
+        "same output SHA-256 for identical inputs",
+        "same fail-closed behavior on missing, duplicate, invalid or mismatched inputs",
+        "exclusive terminal-file ownership without replacing a competing result"
+      ],
+      "serialization": "pretty_json_sort_keys_indent2_plus_newline; allow_nan not explicitly disabled",
+      "sha256": "3ecc7f014deba013a9d8305777b517873492205bbb81b96ed551470beab3f4e9",
+      "temporary_path": "fixed output suffix plus .tmp",
+      "terminal_ownership": "nonexclusive_replace_can_overwrite"
+    },
+    {
+      "durability": "no_explicit_flush_or_fsync",
+      "input_identity_controls": "reads frozen plans/manifests and/or compares source hashes, but completeness remains plan-specific",
+      "path": "scripts/run_tsp_constraint_confirmation.py",
+      "path_boundary": "root resolution, relative_to check and frozen input/code hashes; no exclusive terminal reservation",
+      "publication": "exists_precheck_then_direct_write_bytes",
+      "required_equivalence_obligations": [
+        "same accepted input byte identities and size/path checks",
+        "same JSON field set and canonical/pretty serialization as declared",
+        "same output SHA-256 for identical inputs",
+        "same fail-closed behavior on missing, duplicate, invalid or mismatched inputs",
+        "exclusive terminal-file ownership without replacing a competing result"
+      ],
+      "serialization": "pretty_json_sort_keys_indent2_ensure_ascii_false_allow_nan_false plus newline",
+      "sha256": "ed977e5ca6c01ae4e95316c5ee02feffddbe2e322b15a5b5e5d274b799e33e75",
+      "temporary_path": "none",
+      "terminal_ownership": "nonexclusive_toctou_window"
+    },
+    {
+      "durability": "JSON file_fsync_only; markdown no explicit fsync",
+      "input_identity_controls": "reads frozen plans/manifests and/or compares source hashes, but completeness remains plan-specific",
+      "path": "scripts/summarize_external_common40.py",
+      "path_boundary": "root.resolve and fixed report/plan maps; no exclusive terminal reservation",
+      "publication": "JSON fixed_dot_tmp_flush_fsync_replace; markdown direct write_text",
+      "required_equivalence_obligations": [
+        "same accepted input byte identities and size/path checks",
+        "same JSON field set and canonical/pretty serialization as declared",
+        "same output SHA-256 for identical inputs",
+        "same fail-closed behavior on missing, duplicate, invalid or mismatched inputs",
+        "exclusive terminal-file ownership without replacing a competing result"
+      ],
+      "serialization": "canonical JSON via pipeline.write_json plus deterministic markdown text",
+      "sha256": "86208c6d9452890e5e5ef354576665f65a36b20ba665c330712c62046789e4aa",
+      "temporary_path": "fixed JSON sibling .tmp; no markdown temporary",
+      "terminal_ownership": "nonexclusive_replace_or_direct_overwrite"
+    }
+  ],
+  "purpose": "Freeze the current serialization, path, hash, publication-ownership and solver-boundary behavior that any future clean-clone reconstruction implementation must preserve or deliberately strengthen.",
+  "schema": "reconstruction-publisher-solver-boundary-audit-v1",
+  "shared_solver_boundary": {
+    "binary_and_license_status": "environment-specific Gurobi binary and user license required; not supplied by the repository",
+    "default_binary_identifier": {
+      "characters": 24,
+      "sha256": "b8a7ce0c529c9f9470580ec8def065ce34b6323a6251bdd9c22145b3a1421aa5"
+    },
+    "max_mps_bytes": 1000000,
+    "pinned_source_commit": "c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010",
+    "solver_timeout_seconds": 15,
+    "subprocess_contract": "captured combined output, finite wall timeout, nonzero return code and timeout mapped to structured wrapper outcomes",
+    "threads_per_solve": 1,
+    "wall_timeout_seconds": 25,
+    "wrapper_path": "llm4or/or_debug_gurobi.py",
+    "wrapper_sha256": "97691082bfe6ba48bdfdedf33f8df5abcbdb8baf44cd59c72d96f7752cb9cf8b"
+  },
+  "solver_consumers": [
+    {
+      "failure_semantics": "nonoptimal, missing, invalid or solver-error outcomes are returned as incorrect endpoint records",
+      "model_path_contract": "resolved model path is read from the bound dataset row; this file has no local is_relative_to check",
+      "path": "llm4or/or_debug_hidden_score.py",
+      "sha256": "2eb7682363dea11aa5fa8159acd606773e8ff2f2bbc2d85de77fdfa6c65a5ff9",
+      "solver_interface": "llm4or.or_debug_gurobi.solve_mps_text"
+    },
+    {
+      "failure_semantics": "solver or repair failures remain localized to the record result",
+      "model_path_contract": "dataset root and model path are resolved and is_relative_to is checked before bytes are read",
+      "path": "llm4or/or_debug_static_public_runner.py",
+      "sha256": "5ada97326a34906444f229f68e933226a5e4117e9184ecae154c71d312ada44a",
+      "solver_interface": "llm4or.or_debug_gurobi.solve_mps_text plus IIS control"
+    }
+  ],
+  "status": "current_behavior_bound_replacement_not_authorized"
+}

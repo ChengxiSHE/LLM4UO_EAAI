@@ -1,0 +1,230 @@
+{
+  "adapters": {
+    "count": 9,
+    "deferred_solver_or_owner_custody_dependency_closure": 5,
+    "implicit_batch_execution": false,
+    "minimal_layer_a_import_ready": 4,
+    "registry": {
+      "bind-common40": [
+        "results/bind_fixed_common40.json"
+      ],
+      "coe-common40": [
+        "results/coe_fixed_common40.json"
+      ],
+      "external-cohort-audit": [
+        "results/external_comparison_cohort_audit.json"
+      ],
+      "external-common40-summary": [
+        "results/external_fixed_common40_summary.json",
+        "docs/EXTERNAL_FIXED_COMMON40_RESULTS.md"
+      ],
+      "or-debug-confirmation-evaluation": [
+        "results/or_debug_confirmation_evaluation_20261014.json"
+      ],
+      "or-debug-confirmation-methods": [
+        "results/or_debug_confirmation_method_outputs_20261014.json"
+      ],
+      "tsp-confirmation-candidates": [
+        "results/private/tsp_constraint_confirmation_candidates_20261014.json",
+        "results/tsp_constraint_confirmation_candidates_20261014.json"
+      ],
+      "tsp-confirmation-evaluation": [
+        "results/private/tsp_constraint_confirmation_evaluation_20261014.json",
+        "results/tsp_constraint_confirmation_evaluation_20261014.json"
+      ],
+      "tsp-promotion-evaluation": [
+        "results/private/tsp_constraint_promotion_evaluation_20261014.json",
+        "results/tsp_constraint_promotion_evaluation_20261014.json"
+      ]
+    },
+    "unexpected_output_paths": 0
+  },
+  "authorization": {
+    "approved": true,
+    "decision": "D5",
+    "scope": "one shared atomic publisher plus nine thin adapters only",
+    "source": "user_2026-10-15"
+  },
+  "bound_files": [
+    {
+      "path": "docs/ATOMIC_PUBLISHER_D5_DESIGN_20261015.md",
+      "sha256": "ca4e699d425740f7ff3c5551160c3a37db6fe0d5d3c27a321c90a242f4354331"
+    },
+    {
+      "path": "llm4or/atomic_publisher.py",
+      "sha256": "992b489f7b45dac101f3efe79f003203aca9f2c2d3107237197f1845c3438716"
+    },
+    {
+      "path": "llm4or/reconstruction_publishers.py",
+      "sha256": "a37d68d9e131d9f5ad59d2febab5dbc7a7f05fe3b112d15fdd2d8d66aeda29ab"
+    },
+    {
+      "path": "scripts/publish_reconstructed_artifact.py",
+      "sha256": "01c4555d3f07aab577f3713c82461a3d2c78cdcf6e95849243e8abc02f2100a8"
+    },
+    {
+      "path": "tests/test_atomic_publisher.py",
+      "sha256": "99d4ce6b4fa79c14d23d22032eb7d5151810f70b5e62656c7a035e74b5ec6b8d"
+    },
+    {
+      "path": "tests/test_reconstruction_publishers.py",
+      "sha256": "54ecc60e4b1877ad52c2340ae62c3be45496aaab4b1341d1236e03f0cfdc60da"
+    },
+    {
+      "path": "scripts/audit_external_comparison_cohorts.py",
+      "sha256": "88a3338ebeb60608b68a2b49067b73f9bb0f179d8dc9821b9ad653462383ea3d"
+    },
+    {
+      "path": "scripts/evaluate_bind_common40_union.py",
+      "sha256": "4030011751843354d2d8eb0756cdddbb029046e5f079f56c66400ee9f1740c14"
+    },
+    {
+      "path": "scripts/evaluate_coe_common40_union.py",
+      "sha256": "8e86aa778069ec56de4172279b5cb8d0789f5c3594a3324878ef2caac5d04ab6"
+    },
+    {
+      "path": "scripts/evaluate_or_debug_confirmation.py",
+      "sha256": "b7ae44c3d3367e5401ab3aee052de1b7ab9c9a0e4529d8429e0d59c122badd74"
+    },
+    {
+      "path": "scripts/evaluate_tsp_constraint_confirmation.py",
+      "sha256": "304445d047e119f0d1b64521975430efd963caf89c548a24ee243a06a769c1b0"
+    },
+    {
+      "path": "scripts/evaluate_tsp_constraint_promotion.py",
+      "sha256": "0347b56d5cb11b6063537dbc775eae17f2cc9a72cf175265d997685a2e444ac7"
+    },
+    {
+      "path": "scripts/run_or_debug_confirmation_methods.py",
+      "sha256": "3ecc7f014deba013a9d8305777b517873492205bbb81b96ed551470beab3f4e9"
+    },
+    {
+      "path": "scripts/run_tsp_constraint_confirmation.py",
+      "sha256": "ed977e5ca6c01ae4e95316c5ee02feffddbe2e322b15a5b5e5d274b799e33e75"
+    },
+    {
+      "path": "scripts/summarize_external_common40.py",
+      "sha256": "86208c6d9452890e5e5ef354576665f65a36b20ba665c330712c62046789e4aa"
+    }
+  ],
+  "date": "2026-10-15",
+  "historical_producers": {
+    "count": 9,
+    "edited_in_place": false,
+    "files": [
+      {
+        "expected_sha256": "88a3338ebeb60608b68a2b49067b73f9bb0f179d8dc9821b9ad653462383ea3d",
+        "match": true,
+        "observed_sha256": "88a3338ebeb60608b68a2b49067b73f9bb0f179d8dc9821b9ad653462383ea3d",
+        "path": "scripts/audit_external_comparison_cohorts.py",
+        "serialization": "pretty_json_sort_keys_indent2_ensure_ascii_false_allow_nan_false_plus_newline"
+      },
+      {
+        "expected_sha256": "4030011751843354d2d8eb0756cdddbb029046e5f079f56c66400ee9f1740c14",
+        "match": true,
+        "observed_sha256": "4030011751843354d2d8eb0756cdddbb029046e5f079f56c66400ee9f1740c14",
+        "path": "scripts/evaluate_bind_common40_union.py",
+        "serialization": "schema.canonical compact sorted utf8 finite-json plus newline via pipeline.write_json"
+      },
+      {
+        "expected_sha256": "8e86aa778069ec56de4172279b5cb8d0789f5c3594a3324878ef2caac5d04ab6",
+        "match": true,
+        "observed_sha256": "8e86aa778069ec56de4172279b5cb8d0789f5c3594a3324878ef2caac5d04ab6",
+        "path": "scripts/evaluate_coe_common40_union.py",
+        "serialization": "schema.canonical compact sorted utf8 finite-json plus newline via pipeline.write_json"
+      },
+      {
+        "expected_sha256": "b7ae44c3d3367e5401ab3aee052de1b7ab9c9a0e4529d8429e0d59c122badd74",
+        "match": true,
+        "observed_sha256": "b7ae44c3d3367e5401ab3aee052de1b7ab9c9a0e4529d8429e0d59c122badd74",
+        "path": "scripts/evaluate_or_debug_confirmation.py",
+        "serialization": "pretty_json_sort_keys_indent2_plus_newline; allow_nan not explicitly disabled"
+      },
+      {
+        "expected_sha256": "304445d047e119f0d1b64521975430efd963caf89c548a24ee243a06a769c1b0",
+        "match": true,
+        "observed_sha256": "304445d047e119f0d1b64521975430efd963caf89c548a24ee243a06a769c1b0",
+        "path": "scripts/evaluate_tsp_constraint_confirmation.py",
+        "serialization": "pretty_json_sort_keys_indent2_ensure_ascii_false_allow_nan_false plus newline"
+      },
+      {
+        "expected_sha256": "0347b56d5cb11b6063537dbc775eae17f2cc9a72cf175265d997685a2e444ac7",
+        "match": true,
+        "observed_sha256": "0347b56d5cb11b6063537dbc775eae17f2cc9a72cf175265d997685a2e444ac7",
+        "path": "scripts/evaluate_tsp_constraint_promotion.py",
+        "serialization": "pretty_json_sort_keys_indent2_ensure_ascii_false_allow_nan_false plus newline"
+      },
+      {
+        "expected_sha256": "3ecc7f014deba013a9d8305777b517873492205bbb81b96ed551470beab3f4e9",
+        "match": true,
+        "observed_sha256": "3ecc7f014deba013a9d8305777b517873492205bbb81b96ed551470beab3f4e9",
+        "path": "scripts/run_or_debug_confirmation_methods.py",
+        "serialization": "pretty_json_sort_keys_indent2_plus_newline; allow_nan not explicitly disabled"
+      },
+      {
+        "expected_sha256": "ed977e5ca6c01ae4e95316c5ee02feffddbe2e322b15a5b5e5d274b799e33e75",
+        "match": true,
+        "observed_sha256": "ed977e5ca6c01ae4e95316c5ee02feffddbe2e322b15a5b5e5d274b799e33e75",
+        "path": "scripts/run_tsp_constraint_confirmation.py",
+        "serialization": "pretty_json_sort_keys_indent2_ensure_ascii_false_allow_nan_false plus newline"
+      },
+      {
+        "expected_sha256": "86208c6d9452890e5e5ef354576665f65a36b20ba665c330712c62046789e4aa",
+        "match": true,
+        "observed_sha256": "86208c6d9452890e5e5ef354576665f65a36b20ba665c330712c62046789e4aa",
+        "path": "scripts/summarize_external_common40.py",
+        "serialization": "canonical JSON via pipeline.write_json plus deterministic markdown text"
+      }
+    ],
+    "hash_mismatches": 0
+  },
+  "implementation": {
+    "adapter_registry": "llm4or/reconstruction_publishers.py",
+    "explicit_single_adapter_cli": "scripts/publish_reconstructed_artifact.py",
+    "multi_output_boundary": "all destinations reserved before first payload; cross-directory pairs are recoverable rather than instantaneously all-or-none visible",
+    "recovery": "byte-identical replay completes durable journal/reservations; no TTL or owner stealing",
+    "shared_publisher": "llm4or/atomic_publisher.py",
+    "terminal_commit": "same-directory hard link from fsynced unique temporary file; no replacement",
+    "transaction_identity": "SHA-256 of canonical sorted paths, payload lengths and payload SHA-256 values"
+  },
+  "input_boundary_audit": {
+    "path": "experiments/reconstruction_publisher_solver_boundary_audit_20261015.json",
+    "sha256": "b5331ac3b605d153680becfa664910cfc00b93852c608986a7f144cf9bb8c22f"
+  },
+  "remaining_boundary": "D5 ownership/durability and nine adapter definitions are implemented. Four producers import in the minimal Layer-A closure; five require solver/evaluator dependency files that remain outside the rights-reviewed allowlist and are intentionally deferred to the corresponding solver or owner-custody layer. D1-D4 and D6-D8 remain unapproved; no license was applied, no repository was published, no DOI was reserved, and no third-party redistribution right was inferred.",
+  "safety": {
+    "api_or_model_calls": 0,
+    "credentials_read": false,
+    "evaluator_only_answers_read": false,
+    "native_evaluator_calls": 0,
+    "request_or_response_bodies_read": false,
+    "solver_calls": 0,
+    "vm_calls": 0
+  },
+  "schema": "llm4or-atomic-publisher-migration-audit-v1",
+  "scientific_equivalence": {
+    "endpoint_results_recomputed": false,
+    "historical_output_bytes_rewritten": false,
+    "input_identity_or_failure_checks_changed": false,
+    "output_paths_changed": false,
+    "producer_computation_changed": false,
+    "producer_source_hashes_preserved": true,
+    "serializers_changed": false
+  },
+  "status": "passed_d5_shared_atomic_publisher_and_nine_thin_adapters",
+  "verification": {
+    "command": "python3 -m unittest tests.test_atomic_publisher tests.test_reconstruction_publishers -v",
+    "compact_pretty_private_public_and_json_markdown_bytes_passed": true,
+    "cross_directory_recovery_passed": true,
+    "different_payload_conflict_passed": true,
+    "failures": 0,
+    "file_and_directory_fsync_passed": true,
+    "parent_segment_rejection_passed": true,
+    "path_escape_and_symlink_rejection_passed": true,
+    "post_open_terminal_type_recheck_passed": true,
+    "same_payload_concurrency_passed": true,
+    "single_result_cli_channel_passed": true,
+    "source_pin_and_output_inventory_fail_closed_passed": true,
+    "tests": 22
+  }
+}

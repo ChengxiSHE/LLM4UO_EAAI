@@ -1,0 +1,135 @@
+{
+  "all_required_hashes_match": true,
+  "all_required_paths_tracked": true,
+  "author_metadata": {
+    "affiliation": "School of Management & Engineering, Nanjing University",
+    "basis": "publicly verified name, affiliation and email; optional unverified fields omitted",
+    "corresponding_email": "522023150104@smail.nju.edu.cn",
+    "funding": "not_declared",
+    "name": "Chengxi She",
+    "orcid": "omitted_unverified",
+    "target_venue": "undecided"
+  },
+  "boundary": "This audit binds author-approved metadata and license scope to the separately verified public history-free v1.0.0 release. No archival DOI is claimed until an external archive records it.",
+  "date": "2026-10-16",
+  "decisions": {
+    "aggregate_data_license": "CC-BY-4.0",
+    "all_d1_d8_approved": true,
+    "history_free_publication_authorized": true,
+    "software_license": "Apache-2.0",
+    "third_party_exclusions_preserved": true
+  },
+  "execution": {
+    "api_or_model_calls": 0,
+    "credentials_read": false,
+    "doi_minted": false,
+    "repository_published": true,
+    "solver_calls": 0
+  },
+  "required_paths": [
+    {
+      "exists": true,
+      "path": ".zenodo.json",
+      "sha256": "d1b1f2ebc554d523f26a346ac37a04a78d1c5f4ecf38a71bedc5c6ef0898e00e",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "CITATION.cff",
+      "sha256": "2d2518705f514f05fe66e894b7abcd45a706039ea1b82ef8a7e56ec4e17f46db",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "LICENSE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "LICENSE-DATA",
+      "sha256": "b20b96a8d2aa4a928711b2329b77aa3d40ec78ef53d26002d170215433944ebd",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "NOTICE",
+      "sha256": "ab96b1750d83fd74aba4b21227abdb36a8e9c7b65e9d96c8c35d731ee0ed93f9",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "docs/AUTHOR_RELEASE_DECISION_PACKET_20261015.md",
+      "sha256": "e28ad8f619eb5e0d38f79fea2e0c747867566625efb7965876533c763c997acc",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "docs/DATA_CODE_AVAILABILITY_AUDIT_V3_20261016.md",
+      "sha256": "ebb29c22999f07f5c0364d410f9c19d94ace225133663483c1d2bd539e39f19d",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "docs/POST_PUBLICATION_RELEASE_CLOSURE_20261016.md",
+      "sha256": "94d0f7217268c90cd3ac0a83da2a0a9ef472ceaa9db7f25ed123a153dcda91d8",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "experiments/author_release_decision_packet_20261015.json",
+      "sha256": "a413a0796c8af169e47d8e8bb625c1174e3ab5c760ebb60e1afdeec8b04d3ea7",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "experiments/data_code_availability_audit_v3_20261016.json",
+      "sha256": "1fd9cf18f06aab4d674add107e11beef35e10b778c54dbbc68267b428997682a",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "experiments/post_publication_release_closure_20261016.json",
+      "sha256": "a66e91657c66b7a25d2a5a79ab488146628b3049a9b8b9079f6f394cc05bf290",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "experiments/provider_environment_preflight_audit_20261016.json",
+      "sha256": "2f8c8e5c92cbc577d37eb5710e7f8f028fa2e59f3e15742798632608b4de9001",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "docs/PROVIDER_ENVIRONMENT_PREFLIGHT_AUDIT_20261016.md",
+      "sha256": "d2a94af8ee768c51ea5b437f0e01bd9555a2508bf0013e84b5a5bcfbe28e0c51",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "llm4or/public_antchat_transport.py",
+      "sha256": "0514ba591bc391cf0c72bf38f4fa1c0140f3511678297456a3b925c441c17e24",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "reproduction/environment_layers_v1.json",
+      "sha256": "5a011d2135c18c4b4490869e555b2645748e9cc4beb567ab4d5303c9973bd742",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "scripts/audit_authorized_release.py",
+      "sha256": "47a093f2cddeea9633741225e274081648dbb4844819ec548f13a1f5a3fb4b40",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "tests/test_authorized_release_metadata.py",
+      "sha256": "5b24a947ade917ed01fe23ce0ec7c998dd321a32046d120ae5de3594e0bf61f3",
+      "tracked": true
+    }
+  ],
+  "schema": "llm4or-authorized-release-audit-v1",
+  "status": "authorized_metadata_complete_publication_verified_doi_pending"
+}

@@ -1,0 +1,6 @@
+# Verified with Python 3.11.16 in the existing ark-base environment.
+# No provider SDK or API key is needed for offline verification.
+numpy==2.4.4
+scipy==1.17.1
+jsonschema==4.26.0
+scikit-learn==1.9.0
