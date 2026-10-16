@@ -135,7 +135,7 @@
     },
     {
       "path": "docs/TOP_CONFERENCE_METHOD_ROADMAP.md",
-      "sha256": "219dea96ec22b00358c560a671e5551277d0174e66f6d0f1c72702d1b7eb1363"
+      "sha256": "3ded8c900dd4e42b01e0ac69810b62bd342537c6958637c20a0eacd480c954fa"
     }
   ],
   "purpose": "Record the author authorization for D1-D8 and bind the scoped release metadata used by the verified history-free public candidate.",

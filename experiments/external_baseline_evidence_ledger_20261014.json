@@ -1,7 +1,7 @@
 {
   "schema": "external-baseline-evidence-ledger-v1",
   "created_at_utc": "2026-10-14T14:10:00Z",
-  "updated_at_utc": "2026-10-14T15:35:19Z",
+  "updated_at_utc": "2026-10-16T00:00:00Z",
   "supersedes_status_only_fields_in": {
     "path": "experiments/external_baseline_reproduction_manifest.json",
     "prior_sha256": "913e2bc338f6c40b7ca0eab8787bddc0c6dd6997f847b70c9042255fd6ed0c4e"
@@ -76,6 +76,25 @@
       "official_reproduction_status": "not_yet_reproducible_from_verified_artifact",
       "runnable_files_in_arxiv_source": 0,
       "interpretation": "The inspected official arXiv source contains manuscript assets but no runnable implementation, complete prompts, training data, checkpoint or inference scripts. This does not prove that no artifact exists elsewhere; no paper score may be substituted for a local reproduction."
+    },
+    "optitrust_style_safe_sidecar_v1": {
+      "artifact_class": "paper_structure_sensitivity",
+      "classification": "paper_based_sensitivity",
+      "method_label": "OptiTrust-style-safe-sidecar",
+      "official_reproduction": false,
+      "result": "experiments/fresh_common38_optitrust_style_result_v1_20261016.json",
+      "result_sha256": "328e917de571222446582d3d4c91fce760566b7e329c282affdfea9600091ce6",
+      "audit": "experiments/fresh_common38_optitrust_style_audit_v1_20261016.json",
+      "audit_sha256": "23501c91cb283e1581a3c90c5e290412974558c5e1b99118e5df77f06e3ae4da",
+      "circuit_closure": "experiments/fresh_common38_optitrust_style_circuit_closure_v1_20261016.json",
+      "circuit_closure_sha256": "25778d40b99ecf33b6a0570922b98739f06e21ed80a10640384eda0f42ddba71",
+      "synthesis": "experiments/fresh_common38_optitrust_style_synthesis_20261016.json",
+      "synthesis_sha256": "1d844184f5fd2984e3e4aa98ffc5916af48bf949dae82b0aff65a160c8673f2a",
+      "planned": 38,
+      "scoreable_outcomes": 0,
+      "infrastructure_unavailable": 38,
+      "interpretation": "All 38 identities exhausted the bounded transport while constructing repeated full-model sidecars. This is an adapter-capacity result, not an accuracy estimate or official OptiTrust reproduction.",
+      "next_step": "Freeze an outcome-blind single-canonical-model plus compact typed-review adapter before any new dispatch."
     }
   },
   "paper_table_policy": {
@@ -89,13 +108,17 @@
     ],
     "published_scores_used_as_empirical_results": false,
     "baseline_retuning_allowed": false,
-    "method_and_adapter_failures_retained_in_denominator": true
+    "method_and_adapter_failures_retained_in_denominator": true,
+    "paper_based_sensitivity_rows": [
+      "optitrust_style_safe_sidecar_v1"
+    ],
+    "unscoreable_rows_excluded_from_accuracy_comparisons": true
   },
   "remaining_gaps": [
     "The fixed-40 source families were previously exposed, so these rows are retrospective rather than fresh confirmation.",
     "BIND final and answer-blind methods have different information budgets and must be reported separately.",
     "CoE native unrestricted generated-code execution was not performed; the fixed safe adapter has material unsupported-output coverage.",
-    "No verified runnable OptiTrust artifact is available locally, so only an explicitly labeled paper-based reimplementation could be added without a new official release.",
+    "No verified runnable OptiTrust artifact is available locally. The separately labeled v1 paper-based safe-sidecar sensitivity yielded zero scoreable outcomes because all 38 identities were infrastructure unavailable; a compact outcome-blind adapter redesign is required before another sensitivity dispatch.",
     "The confirmed TSP and OR-Debug skill results use different benchmark sources and cannot be numerically ranked against fixed-40 external rows."
   ]
 }

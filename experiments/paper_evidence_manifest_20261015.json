@@ -112,7 +112,7 @@
     },
     "external_fixed_common40": {
       "ledger": "experiments/external_baseline_evidence_ledger_20261014.json",
-      "ledger_sha256": "5c35cf2fb7adb7b1c4ed67392f81e630f631b07657745daeea4017f9930a736b",
+      "ledger_sha256": "f9aaa74190c1735105fc0061662be1ca2b0411479c77bbafcc3b4f9272c7d0e7",
       "summary": "results/external_fixed_common40_summary.json",
       "summary_sha256": "22c588da5167f6cb76615340ea81551021b8473b9db2a4ea83d717c93a77a38c",
       "bind": "results/bind_fixed_common40.json",
@@ -145,7 +145,9 @@
         "ledger.baselines.optitrust.runnable_files_in_arxiv_source": 0
       },
       "permitted_claim": "The inspected official arXiv v1 source and bounded public-channel recheck did not yield a verified runnable official OptiTrust artifact.",
-      "boundary": "This is an artifact-availability result, not proof that no artifact exists globally; no published score may replace a local reproduction."
+      "boundary": "This is an artifact-availability result, not proof that no artifact exists globally; no published score may replace a local reproduction.",
+      "ledger": "experiments/external_baseline_evidence_ledger_20261014.json",
+      "ledger_sha256": "f9aaa74190c1735105fc0061662be1ca2b0411479c77bbafcc3b4f9272c7d0e7"
     },
     "typed_count_automatic_proposer": {
       "terminal_audit": "results/dcp_typed_count_cegis_revision_20261014_audit.json",
@@ -739,6 +741,30 @@
       },
       "permitted_claim": "A fresh-context reviewer independently recomputed the TSP, OR-Debug and common-38 endpoints exactly under hash-bound restricted-data custody.",
       "boundary": "Aggregate-only controlled verification; restricted inputs remain non-public, common-38 budgets remain unequal, and within-source confirmation does not establish broad generalization or automatic acquisition."
+    },
+    "optitrust_style_safe_sidecar_v1": {
+      "result": "experiments/fresh_common38_optitrust_style_result_v1_20261016.json",
+      "result_sha256": "328e917de571222446582d3d4c91fce760566b7e329c282affdfea9600091ce6",
+      "audit": "experiments/fresh_common38_optitrust_style_audit_v1_20261016.json",
+      "audit_sha256": "23501c91cb283e1581a3c90c5e290412974558c5e1b99118e5df77f06e3ae4da",
+      "synthesis": "experiments/fresh_common38_optitrust_style_synthesis_20261016.json",
+      "synthesis_sha256": "1d844184f5fd2984e3e4aa98ffc5916af48bf949dae82b0aff65a160c8673f2a",
+      "schema": "fresh-common38-optitrust-style-synthesis-v1",
+      "assertions": {
+        "status": "complete_unscoreable_adapter_capacity_failure",
+        "method": "OptiTrust-style-safe-sidecar",
+        "cohort.planned": 38,
+        "cohort.scoreable": 0,
+        "outcomes.infrastructure_unavailable": 38,
+        "paired_against_current.status": "not_estimable",
+        "failure_localization.terminal_slot_distribution.5": 35,
+        "failure_localization.terminal_slot_distribution.6": 1,
+        "failure_localization.terminal_slot_distribution.9": 2,
+        "claim_boundary.official_optitrust_reproduction": false,
+        "claim_boundary.method_accuracy_estimated": false
+      },
+      "permitted_claim": "The frozen paper-based safe-sidecar sensitivity completed as an audited adapter-capacity failure with zero scoreable outcomes and 38 infrastructure-unavailable cells.",
+      "boundary": "This is not an accuracy estimate, official OptiTrust reproduction, native five-language execution, equal-budget leaderboard row, or paired comparison."
     }
   },
   "paper_documents": {
@@ -748,11 +774,11 @@
     },
     "manuscript_draft": {
       "path": "manuscript/MANUSCRIPT_DRAFT.md",
-      "sha256": "72abf87dbeabe3075bf5af70110761657add680be0cc46a7b149eabd829458f1"
+      "sha256": "30cf147649812499486373252b9e09d9c7a5ae74d8396108043b414c71faccc5"
     },
     "manuscript_evidence_audit": {
       "path": "manuscript/MANUSCRIPT_EVIDENCE_AUDIT.md",
-      "sha256": "530da4410a79d954934b1a35d03864c32f552c8710dc592db75a1f5b447cc5c5"
+      "sha256": "76b9bc5d14e4438644d185d7e79ca6d2fcf32893e912427f205da696f34aa0ed"
     },
     "worked_example": {
       "path": "manuscript/WORKED_EXAMPLE.md",
@@ -804,7 +830,7 @@
     },
     "method_roadmap": {
       "path": "docs/TOP_CONFERENCE_METHOD_ROADMAP.md",
-      "sha256": "219dea96ec22b00358c560a671e5551277d0174e66f6d0f1c72702d1b7eb1363"
+      "sha256": "3ded8c900dd4e42b01e0ac69810b62bd342537c6958637c20a0eacd480c954fa"
     },
     "component_ablation_report": {
       "path": "docs/COMPONENT_ABLATION_IDENTIFIABILITY_AUDIT_20261015.md",
@@ -853,6 +879,10 @@
     "controlled_endpoint_review_audit": {
       "path": "docs/CONTROLLED_ENDPOINT_REVIEW_AUDIT_20261016.md",
       "sha256": "60c2ca16743c8f84380bc1fd92e34a222bfd6776ad525ad3751d3d27839d329d"
+    },
+    "optitrust_style_common38_result": {
+      "path": "docs/OPTITRUST_STYLE_COMMON38_RESULTS_20261016.md",
+      "sha256": "284daade8ea61347317e5eb7088663820b1940a3c9278dbe08f7bca06ea4551b"
     }
   },
   "global_claim_boundaries": [
@@ -870,7 +900,8 @@
     "Complexity-weighted promotion and cumulative regression budgeting are prospective conditional protocol guarantees; current runs did not use the former, and TSP plus OR-Debug do not form one fixed-target sequence for the latter.",
     "The fresh common-38 study establishes a large fixed-endpoint advantage over locally rerun Base, BIND and CoE-safe on two families from one source lineage; it does not equalize construction cost or prove broad benchmark superiority.",
     "Finite complete-population censuses identify semantic-admission, resource-admission and exactly-one routing effects inside their frozen 64-candidate and 69-envelope grammars, and a complexity-control effect inside the authored six-shadow-guard library grammar; none establishes natural proposer or shift-distribution generalization.",
-    "A second source lineage is required before a broad benchmark-superiority claim, but the failed DCP development gate and non-score-ready MIPLIB-NL inventory must not be bypassed to manufacture that replication."
+    "A second source lineage is required before a broad benchmark-superiority claim, but the failed DCP development gate and non-score-ready MIPLIB-NL inventory must not be bypassed to manufacture that replication.",
+    "The paper-based OptiTrust-style-safe-sidecar v1 has zero scoreable outcomes and 38 infrastructure-unavailable cells; its mechanical zero is not an accuracy estimate and cannot enter paired superiority statistics."
   ],
   "construction_execution": {
     "new_model_calls": 44,

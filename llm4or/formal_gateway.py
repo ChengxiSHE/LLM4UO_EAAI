@@ -64,7 +64,7 @@ def fresh_external_scope_spec(plan, scope, calls, tokens):
 
 
 def validate_fresh_external_payload(plan, scope, payload, replicate, slot):
-    """Bind a Base/BIND/CoE request to the frozen public input and exact slot."""
+    """Bind a fresh external request to the frozen public input and exact slot."""
     method = plan.get('external_method', {})
     spec = fresh_external_scope_spec(
         plan, scope, method.get('max_calls'), plan.get('token_cap'),
@@ -119,6 +119,55 @@ def validate_fresh_external_payload(plan, scope, payload, replicate, slot):
             or context.get('step') != expected_step
             or (expected_stage is not None and stage != expected_stage)
             or (expected_stage is None and stage not in FRESH_COE_EXPERT_STAGES)
+        ):
+            raise Stopped('fresh_external_payload_changed')
+    elif spec['method'] == 'OptiTrustStyle':
+        from .optitrust_style_runtime import LANGUAGES, STAGES
+        slots = method.get('stage_slots')
+        canonical_slots = [
+            {
+                'stage': stage,
+                'modeling_language': LANGUAGES[index - 4] if index >= 4 else None,
+            }
+            for index, stage in enumerate(STAGES)
+        ]
+        if calls != 9 or slots != canonical_slots:
+            raise Stopped('fresh_external_payload_changed')
+        expected_slot = slots[slot]
+        if (
+            not isinstance(expected_slot, dict)
+            or set(expected_slot) != {'stage', 'modeling_language'}
+            or context.get('method') != 'OptiTrust-style-safe-sidecar'
+            or context.get('stage') != expected_slot.get('stage')
+            or context.get('step') != slot
+        ):
+            raise Stopped('fresh_external_payload_changed')
+        if slot == 0:
+            expected_keys = {'method', 'stage', 'step'}
+        elif slot == 1:
+            expected_keys = {'method', 'stage', 'step', 'previous_components'}
+        elif slot == 2:
+            expected_keys = {'method', 'stage', 'step', 'components'}
+        elif slot == 3:
+            expected_keys = {
+                'method', 'stage', 'step', 'components', 'previous_formulation',
+            }
+        else:
+            expected_keys = {
+                'method', 'stage', 'step', 'modeling_language', 'components',
+                'formulation', 'safe_execution_adapter',
+            }
+        if set(context) != expected_keys:
+            raise Stopped('fresh_external_payload_changed')
+        text_fields = expected_keys - {'step'}
+        if any(type(context.get(key)) is not str or not context[key] for key in text_fields):
+            raise Stopped('fresh_external_payload_changed')
+        if slot < 4:
+            if expected_slot.get('modeling_language') is not None:
+                raise Stopped('fresh_external_payload_changed')
+        elif (
+            context.get('modeling_language') != expected_slot.get('modeling_language')
+            or context.get('safe_execution_adapter') != 'strict_milp_v1_sidecar'
         ):
             raise Stopped('fresh_external_payload_changed')
     else:

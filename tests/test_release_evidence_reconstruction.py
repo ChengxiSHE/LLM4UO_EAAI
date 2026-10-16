@@ -19,13 +19,13 @@ class ReleaseEvidenceReconstructionTests(unittest.TestCase):
         report = build_release_evidence_report(ROOT)
         self.assertEqual(report["status"], "passed_credential_free_layer_a")
         self.assertEqual(report["paper_manifest"], {
-            "assertions": 430,
-            "boundaries": 15,
-            "path_hashes": 74,
+            "assertions": 441,
+            "boundaries": 16,
+            "path_hashes": 78,
             "path_hash_mismatches": 0,
         })
-        self.assertEqual(report["goal_evidence"]["references"], 149)
-        self.assertEqual(report["goal_evidence"]["unique_paths"], 137)
+        self.assertEqual(report["goal_evidence"]["references"], 156)
+        self.assertEqual(report["goal_evidence"]["unique_paths"], 141)
         self.assertEqual(report["goal_evidence"]["mismatches"], 0)
         self.assertEqual(report["citations"]["cited_keys"], 18)
         self.assertEqual(report["citations"]["missing"], [])

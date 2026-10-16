@@ -31,6 +31,7 @@ rule, not an instruction to an outer agent or Codex goal loop.
 | BIND local reproduction | 31/40 first round; 40/40 answer-bearing final | Closed |
 | CoE local reproduction | paper/current 3/40 and 1/40 under fixed safe adapter | Closed with adapter boundary |
 | OptiTrust official artifact audit | no runnable implementation in inspected arXiv v1 source or bounded public recheck | Artifact unavailable |
+| OptiTrust-style-safe-sidecar v1 | 0 scoreable; 38 infrastructure unavailable | Closed unscoreable capacity diagnostic; not an accuracy estimate |
 | Automatic proposer probe | semantic pass, exact resource rejection | Closed negative |
 | Exact repair certificate | six distance-one failures; unique distance-two repair | Closed within frozen grammar |
 | Theory and claim boundaries | proof-constrained library selection, 12 bounded propositions and 6 corollaries mapped to evidence | Closed for current claims |
@@ -101,6 +102,14 @@ as an artifact-availability row. Reopen official reproduction only if an
 author- or venue-linked runnable package appears. A paper-faithful
 reimplementation, if pursued, must remain a separately labeled sensitivity
 study.
+
+The first such `OptiTrust-style-safe-sidecar` sensitivity is complete but
+unscoreable: all 38 identities are infrastructure unavailable after repeated
+full-model sidecars exhausted the bounded transport. This is not an accuracy
+estimate. Before another dispatch, freeze a compact outcome-blind adapter with
+one canonical model and five hash-bound typed reviews, a trusted bounded-delta
+composer, an explicit canary progression gate, and a corrected final-attempt
+resume rule. Do not use v1 endpoint answers to tune that redesign.
 
 ## Execution order
 
@@ -184,6 +193,8 @@ proposer-distribution claim should be attached to those censuses.
 - CoE-safe scores measure the disclosed system plus bounded adapter, not
   unrestricted native CoE ability.
 - OptiTrust artifact unavailability is not a zero score.
+- The `OptiTrust-style-safe-sidecar` v1 mechanical zero is not an accuracy
+  estimate because there are zero scoreable outcomes.
 - The TSP, OR-Debug, common-38 and finite-census endpoints are frozen and must
   not be retuned for a better paper narrative.
 

@@ -127,8 +127,11 @@ Our contributions are:
    controller and a frozen fresh-IIS OR-Debug repair control, followed by exact
    retrospective composition behind one public-only router.
 4. We audit local BIND and CoE reproductions under disclosed safe-execution
-   adapters and retain OptiTrust as artifact-unavailable because the inspected
-   author source does not provide a verified runnable implementation.
+   adapters and retain official OptiTrust as artifact-unavailable because the
+   inspected author source does not provide a verified runnable implementation.
+   A separately labeled `OptiTrust-style-safe-sidecar` sensitivity yields zero
+   scoreable outcomes because all 38 cells exhaust the bounded transport; this
+   is an adapter-capacity finding, not an accuracy estimate.
 5. We report a negative language-model construction trace, an exact
    minimum-repair certificate, and a prospective eight-pair feedback canary
    with zero paired discordance. A separate complete finite census then shows
@@ -597,10 +600,13 @@ The fixed external panel uses 40 RCPSP/VRPTW identities, pinned method sources,
 and the `gpt-6-luna` backbone at high reasoning effort. BIND is reported
 separately for its answer-blind first round and its
 answer-bearing final repair. CoE paper and current snapshots retain
-safe-adapter failures in the denominator. OptiTrust is marked
+safe-adapter failures in the denominator. Official OptiTrust is marked
 artifact-unavailable because the inspected author source archive contains no
-verified runnable package. Unequal prompts, feedback, rounds, and execution
-coverage preclude an unconditional leaderboard.
+verified runnable package. A separate paper-structure sensitivity uses five
+language-conditioned strict sidecars under the common-38 endpoint and is named
+`OptiTrust-style-safe-sidecar`; it is not an official reproduction. Unequal
+prompts, feedback, rounds, and execution coverage preclude an unconditional
+leaderboard.
 
 ### 6.5 Automatic-construction diagnostic
 
@@ -716,6 +722,16 @@ importing a published score.
 | CoE, paper snapshot | 3/40 | 38 complete; 1 method failure; 1 infrastructure unavailable | Safe adapter; 25 completed outputs unsupported |
 | CoE, current snapshot | 1/40 | 37 complete; 1 method failure; 2 infrastructure unavailable | Safe adapter; 29 completed outputs unsupported |
 | OptiTrust | Artifact unavailable | Not executed | No verified runnable author package in audited source |
+| OptiTrust-style-safe-sidecar v1 | Not estimable | 0 scoreable; 38 infrastructure unavailable | Paper-structure sensitivity; repeated full-model sidecars exhausted transport |
+
+The `OptiTrust-style-safe-sidecar` v1 row recorded 199 logical requests, 282
+physical attempts, 83 retries, and 161 complete provider responses before all
+38 identities exhausted one terminal request fingerprint. Thirty-five cells
+stopped after five logical slots, one after six, and two after nine, localizing
+the failure to repeated full-model sidecar generation. Its low-level result
+contains a mechanical zero, but with no scoreable method outcomes this is not
+an accuracy estimate. Corrections, regressions, accuracy deltas, and paired
+tests against the current method are therefore not estimable.
 
 These rows cannot be ranked directly against the TSP and OR-Debug results:
 the populations, prompts, feedback budgets, rounds, and endpoints differ. The
@@ -946,12 +962,14 @@ common-38 study now supplies matched Base, BIND, CoE-safe and current-method
 rows on identical public packets and the same endpoint, but their native
 trajectories consume different numbers of model calls. BIND final additionally
 receives answer-bearing feedback, CoE remains limited by the safe adapter, and
-OptiTrust lacks a verified runnable artifact. The separate at-most-one-call
+official OptiTrust lacks a verified runnable artifact. The separately labeled
+`OptiTrust-style-safe-sidecar` v1 is excluded from accuracy comparison because
+all 38 outcomes are infrastructure unavailable. The separate at-most-one-call
 view controls only the inference-call ceiling and does not equalize authored
 library-construction cost or provider tokens. The 38 identities cover two
 families from one source lineage; the paired results can establish a large
-effect on this frozen cohort, not broad moderate-effect leaderboard
-superiority or transfer to unrelated optimization families.
+effect on this frozen cohort, not broad moderate-effect leaderboard superiority
+or transfer to unrelated optimization families.
 
 The endpoint panel alone cannot identify every component contribution. Semantic and
 resource admission act on candidate proposals, description length acts on
@@ -1026,7 +1044,10 @@ feedback canary, a positive finite active-acquisition census, and an
 exact finite complexity-control census delimit the current evidence: the methodology
 supports auditable benchmark-specific skill engineering and bounded acquisition
 inside an authored grammar, but does not support universal semantic correctness
-or autonomous natural-language knowledge discovery. Natural-language grammar
+or autonomous natural-language knowledge discovery. The attempted
+`OptiTrust-style-safe-sidecar` sensitivity additionally exposes a capacity
+failure of repeated full-model sidecars; zero scoreable outcomes are not an
+accuracy estimate and do not rank OptiTrust. Natural-language grammar
 and fact acquisition, natural library-selection replication, and a second
 fresh source lineage remain valuable extensions. The latter is required before
 claiming broad benchmark superiority, but is not needed for the bounded

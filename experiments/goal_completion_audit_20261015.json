@@ -2,9 +2,10 @@
   "audited_at_local_date": "2026-10-16",
   "completion_decision": {
     "blocking_requirements": [
+      "G14",
       "G13"
     ],
-    "claim_if_no_new_experiments": "A defensible methods paper with a bounded fresh common-38 superiority result, exact finite semantic/resource/routing/complexity mechanism evidence and bounded active acquisition inside an authored grammar, but not natural-language discovery, natural library-distribution generalization or broad benchmark superiority.",
+    "claim_if_no_new_experiments": "A defensible methods paper with a bounded fresh common-38 superiority result and exact finite mechanism evidence. The OptiTrust-style v1 paper-based sensitivity is an audited adapter-capacity failure with zero scoreable outcomes and contributes no accuracy comparison.",
     "goal_complete": false
   },
   "execution": {
@@ -19,14 +20,21 @@
     "request_or_response_bodies_read": true
   },
   "objective": "Complete LLM4OR-EAAI as a reproducible top-conference research package with locally audited external baselines, a fresh common protocol, bounded theory, a compelling method story, and a complete evidence chain.",
-  "overall_status": "active_not_complete_archival_doi_only",
+  "overall_status": "active_not_complete_optitrust_style_adapter_and_archival_doi",
   "priority_order": [
     {
       "priority": 1,
-      "reason": "Bind an externally verified archival DOI to the already public immutable release; no scientific or release-integrity gate remains open.",
+      "requirements": [
+        "G14"
+      ],
+      "reason": "Freeze and canary-test a compact outcome-blind OptiTrust-style adapter; do not reuse v1 test answers or retune existing baselines."
+    },
+    {
+      "priority": 2,
       "requirements": [
         "G13"
-      ]
+      ],
+      "reason": "Bind an externally verified archival DOI to the already public immutable release after the scientific evidence update is published."
     }
   ],
   "requirements": [
@@ -115,7 +123,7 @@
       "evidence": [
         {
           "path": "experiments/external_baseline_evidence_ledger_20261014.json",
-          "sha256": "5c35cf2fb7adb7b1c4ed67392f81e630f631b07657745daeea4017f9930a736b"
+          "sha256": "f9aaa74190c1735105fc0061662be1ca2b0411479c77bbafcc3b4f9272c7d0e7"
         }
       ],
       "id": "G04",
@@ -128,7 +136,7 @@
       "evidence": [
         {
           "path": "experiments/external_baseline_evidence_ledger_20261014.json",
-          "sha256": "5c35cf2fb7adb7b1c4ed67392f81e630f631b07657745daeea4017f9930a736b"
+          "sha256": "f9aaa74190c1735105fc0061662be1ca2b0411479c77bbafcc3b4f9272c7d0e7"
         },
         {
           "path": "experiments/coe_official_artifact_recheck_20261015.json",
@@ -153,7 +161,7 @@
       "supported_claim": "Paper and current official-code snapshots were locally rerun on the fixed common-40 identities."
     },
     {
-      "closure_test": "Reopen official reproduction only when a concrete runnable official artifact is identified; a paper-based implementation must remain a separately labeled sensitivity analysis.",
+      "closure_test": "Reopen official reproduction only when a concrete runnable official artifact is identified; keep every paper-based sensitivity separate from the official row and exclude an unscoreable sensitivity from accuracy comparisons.",
       "evidence": [
         {
           "path": "results/optitrust_arxiv_source_audit_20261014.json",
@@ -162,13 +170,25 @@
         {
           "path": "results/optitrust_artifact_recheck_20261014.json",
           "sha256": "64cf9e2a217f4ed33526fb5366c6f4b37007290ec201be870bb567e167d5d104"
+        },
+        {
+          "path": "experiments/fresh_common38_optitrust_style_result_v1_20261016.json",
+          "sha256": "328e917de571222446582d3d4c91fce760566b7e329c282affdfea9600091ce6"
+        },
+        {
+          "path": "experiments/fresh_common38_optitrust_style_audit_v1_20261016.json",
+          "sha256": "23501c91cb283e1581a3c90c5e290412974558c5e1b99118e5df77f06e3ae4da"
+        },
+        {
+          "path": "experiments/fresh_common38_optitrust_style_synthesis_20261016.json",
+          "sha256": "1d844184f5fd2984e3e4aa98ffc5916af48bf949dae82b0aff65a160c8673f2a"
         }
       ],
       "id": "G06",
-      "missing_evidence": "A verified author- or venue-linked runnable package.",
+      "missing_evidence": "A verified author- or venue-linked runnable package. The paper-based safe-sidecar v1 does not satisfy official reproduction.",
       "requirement": "Audit and reproduce OptiTrust from an official implementation.",
       "status": "external_unavailable",
-      "supported_claim": "No verified runnable official artifact was found in the inspected arXiv v1 source or bounded public recheck."
+      "supported_claim": "No verified runnable official artifact was found in the inspected arXiv v1 source or bounded public recheck. A separately labeled paper-based sensitivity completed with zero scoreable outcomes and 38 infrastructure-unavailable cells; this is not an accuracy estimate."
     },
     {
       "boundary": "The cohort contains two families from one source lineage. Native inference trajectories use unequal calls and provider tokens; BIND final is answer-bearing, CoE has no valid one-call official terminal, and authored library-construction cost is not equalized. The 38 identities are sufficient for the observed large paired effects but do not establish broad moderate-effect superiority over unrelated benchmarks.",
@@ -380,11 +400,11 @@
       "evidence": [
         {
           "path": "experiments/paper_evidence_manifest_20261015.json",
-          "sha256": "a56d5dbeb80aa481350ddf4a8e97987018c416984e27f8e548897c8a86572dd7"
+          "sha256": "203cbc37feb04f74b58e2e7bb12a94fff8392d0c926c881a2025415c95193418"
         },
         {
           "path": "manuscript/MANUSCRIPT_EVIDENCE_AUDIT.md",
-          "sha256": "530da4410a79d954934b1a35d03864c32f552c8710dc592db75a1f5b447cc5c5"
+          "sha256": "76b9bc5d14e4438644d185d7e79ca6d2fcf32893e912427f205da696f34aa0ed"
         },
         {
           "path": "experiments/independent_public_release_review_20261016.json",
@@ -641,7 +661,7 @@
         },
         {
           "path": "experiments/author_release_decision_packet_20261015.json",
-          "sha256": "a413a0796c8af169e47d8e8bb625c1174e3ab5c760ebb60e1afdeec8b04d3ea7"
+          "sha256": "dd8210808d2c5d5d60a389dbf2e73c74b084eac397e44a6f94dcbbf3203e1460"
         },
         {
           "path": "docs/AUTHOR_RELEASE_DECISION_PACKET_20261015.md",
@@ -743,7 +763,7 @@
       "evidence": [
         {
           "path": "experiments/author_release_decision_packet_20261015.json",
-          "sha256": "a413a0796c8af169e47d8e8bb625c1174e3ab5c760ebb60e1afdeec8b04d3ea7"
+          "sha256": "dd8210808d2c5d5d60a389dbf2e73c74b084eac397e44a6f94dcbbf3203e1460"
         },
         {
           "path": "docs/DATA_CODE_AVAILABILITY_AUDIT_V4_20261016.md",
@@ -755,6 +775,32 @@
       "requirement": "Complete author metadata, archival identifiers, and author-approved AI-use and data/code disclosures.",
       "status": "partial",
       "supported_claim": "The author approved D1-D8; scoped licenses, NOTICE, verified name/affiliation/email, approved availability/AI-use text, the public history-free repository and v1.0.0 release are externally verified. Optional unverified ORCID is omitted and no DOI is invented."
+    },
+    {
+      "id": "G14",
+      "requirement": "Produce a scoreable, bounded paper-structure OptiTrust-style sensitivity without native unreleased components.",
+      "status": "open_adapter_redesign",
+      "evidence": [
+        {
+          "path": "experiments/fresh_common38_optitrust_style_result_v1_20261016.json",
+          "sha256": "328e917de571222446582d3d4c91fce760566b7e329c282affdfea9600091ce6"
+        },
+        {
+          "path": "experiments/fresh_common38_optitrust_style_audit_v1_20261016.json",
+          "sha256": "23501c91cb283e1581a3c90c5e290412974558c5e1b99118e5df77f06e3ae4da"
+        },
+        {
+          "path": "experiments/fresh_common38_optitrust_style_synthesis_20261016.json",
+          "sha256": "1d844184f5fd2984e3e4aa98ffc5916af48bf949dae82b0aff65a160c8673f2a"
+        },
+        {
+          "path": "docs/OPTITRUST_STYLE_COMMON38_RESULTS_20261016.md",
+          "sha256": "284daade8ea61347317e5eb7088663820b1940a3c9278dbe08f7bca06ea4551b"
+        }
+      ],
+      "supported_claim": "The v1 full-model sidecar representation is operationally unscoreable under the frozen transport: 0 scoreable and 38 infrastructure-unavailable outcomes.",
+      "missing_evidence": "A prospectively frozen compact adapter that first passes an outcome-blind canary and then yields terminal scoreable outcomes under the same benchmark endpoint.",
+      "closure_test": "Freeze the canonical-model plus bounded typed-review adapter before dispatch; pass the canary gate without reading endpoint answers; then report all 38 outcomes with failures retained and an independent no-new-call audit."
     }
   ],
   "review_issue_mapping": [

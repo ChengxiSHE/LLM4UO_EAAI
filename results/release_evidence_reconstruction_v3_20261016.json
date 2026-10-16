@@ -24,14 +24,14 @@
   },
   "goal_evidence": {
     "mismatches": 0,
-    "references": 149,
-    "unique_paths": 137
+    "references": 156,
+    "unique_paths": 141
   },
   "paper_manifest": {
-    "assertions": 430,
-    "boundaries": 15,
+    "assertions": 441,
+    "boundaries": 16,
     "path_hash_mismatches": 0,
-    "path_hashes": 74
+    "path_hashes": 78
   },
   "restricted_sources": {
     "declared": 6,

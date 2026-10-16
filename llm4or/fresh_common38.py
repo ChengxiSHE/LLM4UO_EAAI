@@ -17,7 +17,6 @@ import subprocess
 from .benchmark_inputs import BASE_PROFILE, input_shape_issues, validate_public_input
 from .gateway import Stopped
 from .schema import canonical, digest, loads
-from .text2opt_template_compiler_v10 import compile_template_problem
 
 
 VERSION = "fresh-common38-packets-v1"
@@ -203,6 +202,11 @@ def _failure_code(exc):
 
 
 def _static_readiness(bundle):
+    # This historical compiler is not part of the public runtime closure.  Load
+    # it only for the legacy readiness audit that actually consumes it; packet
+    # projection and downstream frozen controllers remain dependency-free.
+    from .text2opt_template_compiler_v10 import compile_template_problem
+
     compiled = []
     failures = Counter()
     family = {name: {"planned": 0, "compiled": 0, "failed": 0}
