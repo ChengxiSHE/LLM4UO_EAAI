@@ -57,9 +57,10 @@ deposit must be recorded only after the external states are verified.
 
 > First-party code, typed skill and library manifests, public-only routing and
 > verification code, aggregate evidence, figure-generation scripts and
-> deterministic reconstruction commands are authorized for publication at
+> deterministic reconstruction commands are publicly available at
 > `https://github.com/ChengxiSHE/LLM4UO_EAAI` under Apache-2.0. The archival DOI
-> and live repository status will be added only after external verification.
+> will be added only after an external archival deposit is verified. The live
+> `v1.0.0` repository and release are independently verified.
 > The solver-in-the-loop dataset remains
 > an external pinned submodule under its upstream terms. Gurobi 13.0.1 requires
 > a separate user installation and licence. Provider replay requires a
@@ -80,3 +81,11 @@ deposit must be recorded only after the external states are verified.
 
 This packet records the user's authorization and the repository's technical
 scope; it is not legal advice.
+
+## Post-publication addendum — 2026-10-16
+
+The authorized history-free candidate is now public at
+<https://github.com/ChengxiSHE/LLM4UO_EAAI>; release `v1.0.0` and all attached
+asset digests have been independently verified. D1--D8 and all third-party
+exclusions remain unchanged. No archival DOI is claimed until an external
+deposit is verified.

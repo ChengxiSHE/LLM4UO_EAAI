@@ -10,7 +10,7 @@
     "orcid": "omitted_unverified",
     "target_venue": "undecided"
   },
-  "boundary": "This audit binds author-approved metadata and license scope. It does not claim that the public repository or archival DOI exists until a separate post-publication audit verifies those external states.",
+  "boundary": "This audit binds author-approved metadata and license scope to the separately verified public history-free v1.0.0 release. No archival DOI is claimed until an external archive records it.",
   "date": "2026-10-16",
   "decisions": {
     "aggregate_data_license": "CC-BY-4.0",
@@ -23,7 +23,7 @@
     "api_or_model_calls": 0,
     "credentials_read": false,
     "doi_minted": false,
-    "repository_published": false,
+    "repository_published": true,
     "solver_calls": 0
   },
   "required_paths": [
@@ -60,31 +60,43 @@
     {
       "exists": true,
       "path": "docs/AUTHOR_RELEASE_DECISION_PACKET_20261015.md",
-      "sha256": "1e0cb251127122f7b8f172093925b6100e0fc98ee2d9789fc32db90e8726c51b",
+      "sha256": "e28ad8f619eb5e0d38f79fea2e0c747867566625efb7965876533c763c997acc",
       "tracked": true
     },
     {
       "exists": true,
       "path": "docs/DATA_CODE_AVAILABILITY_AUDIT_V3_20261016.md",
-      "sha256": "e02c524c4ad8d622edd774aca9d0b5aa870d9045d83bcaa34de344c0bbeb67eb",
+      "sha256": "ebb29c22999f07f5c0364d410f9c19d94ace225133663483c1d2bd539e39f19d",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "docs/POST_PUBLICATION_RELEASE_CLOSURE_20261016.md",
+      "sha256": "94d0f7217268c90cd3ac0a83da2a0a9ef472ceaa9db7f25ed123a153dcda91d8",
       "tracked": true
     },
     {
       "exists": true,
       "path": "experiments/author_release_decision_packet_20261015.json",
-      "sha256": "034773f082115cb030020614a1097af1462dbbcacdc6df52fdf60be5293a39b0",
+      "sha256": "a413a0796c8af169e47d8e8bb625c1174e3ab5c760ebb60e1afdeec8b04d3ea7",
       "tracked": true
     },
     {
       "exists": true,
       "path": "experiments/data_code_availability_audit_v3_20261016.json",
-      "sha256": "8c1ae7faadf8c5bcfa2600fb9118fe900bc3f45642275c6ebe2003fb4ab8f517",
+      "sha256": "1fd9cf18f06aab4d674add107e11beef35e10b778c54dbbc68267b428997682a",
+      "tracked": true
+    },
+    {
+      "exists": true,
+      "path": "experiments/post_publication_release_closure_20261016.json",
+      "sha256": "a66e91657c66b7a25d2a5a79ab488146628b3049a9b8b9079f6f394cc05bf290",
       "tracked": true
     },
     {
       "exists": true,
       "path": "experiments/provider_environment_preflight_audit_20261016.json",
-      "sha256": "bf0d118398a8191fdd461c1913a4d321650449da61e8c87b302bc238d3ad82a4",
+      "sha256": "2f8c8e5c92cbc577d37eb5710e7f8f028fa2e59f3e15742798632608b4de9001",
       "tracked": true
     },
     {
@@ -102,22 +114,22 @@
     {
       "exists": true,
       "path": "reproduction/environment_layers_v1.json",
-      "sha256": "28dbc73118a1b2007df0ce77ecd8226e2d90abeebb2e625a34205f233e47e809",
+      "sha256": "5a011d2135c18c4b4490869e555b2645748e9cc4beb567ab4d5303c9973bd742",
       "tracked": true
     },
     {
       "exists": true,
       "path": "scripts/audit_authorized_release.py",
-      "sha256": "ba5de0d73e261f7035111526218c703721101e8edb3f5e054b90d78ef7b04e34",
+      "sha256": "47a093f2cddeea9633741225e274081648dbb4844819ec548f13a1f5a3fb4b40",
       "tracked": true
     },
     {
       "exists": true,
       "path": "tests/test_authorized_release_metadata.py",
-      "sha256": "36ee8e43242e4796ff84068a169d61311d5f1fc7534471454638a19505cfbedd",
+      "sha256": "5b24a947ade917ed01fe23ce0ec7c998dd321a32046d120ae5de3594e0bf61f3",
       "tracked": true
     }
   ],
   "schema": "llm4or-authorized-release-audit-v1",
-  "status": "authorized_metadata_complete_publication_pending"
+  "status": "authorized_metadata_complete_publication_verified_doi_pending"
 }

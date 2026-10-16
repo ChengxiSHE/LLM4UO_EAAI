@@ -90,6 +90,38 @@ Two earlier development probes are complete and closed. S1 used 46 requests / 46
 | `results/` | Non-secret verification summaries; private request records are ignored |
 | [`manuscript/OUTLINE.md`](manuscript/OUTLINE.md) | V9-centered paper argument, section plan, evidence allocation, and claim limits |
 
+## Public release integrity check
+
+The history-free public repository and immutable `v1.0.0` release are available
+at <https://github.com/ChengxiSHE/LLM4UO_EAAI>. After a recursive clone, one
+credential-free command runs the canonical 79-test Layer-A contract and its
+three deterministic reconstruction checks:
+
+```bash
+git clone --recurse-submodules https://github.com/ChengxiSHE/LLM4UO_EAAI.git
+cd LLM4UO_EAAI
+python3 scripts/run_public_integrity.py --check
+```
+
+This command verifies the public integrity/audit package. It reconstructs the
+content-addressed skill library, aggregate claim arithmetic and all 2,985
+body-free output identities. It does not rerun provider inference or rescore
+restricted benchmark endpoints from evaluator-only answers. The latter uses
+the separately documented controlled-review protocol.
+
+The provider layer is deliberately separate from credential-free Layer A. Its
+single dependency is version- and wheel-hash-pinned:
+
+```bash
+python3 -m venv .venv-provider
+. .venv-provider/bin/activate
+python -m pip install --require-hashes -r requirements-provider.txt
+python scripts/verify_provider_environment.py --check
+```
+
+The provider command is a zero-call TLS, endpoint, model and concurrency
+preflight. It does not read a credential or request/response body.
+
 ## Offline verification
 
 The validated environment uses Python 3.11.16 and the pinned packages in `requirements-offline.txt`.

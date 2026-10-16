@@ -1,0 +1,151 @@
+{
+  "claim_boundary": "Independent controlled endpoint recomputation passed. Restricted materials remain non-public; common-38 is not equal-budget broad superiority; TSP and OR-Debug are within-source confirmations.",
+  "date": "2026-10-16",
+  "execution": {
+    "api_calls": 0,
+    "gurobi_solver_calls": 5597,
+    "model_calls": 0,
+    "project_files_written": 0
+  },
+  "finding_severity": {
+    "critical": 0,
+    "important": 3,
+    "minor": 2
+  },
+  "fresh_common38": {
+    "bindings": {
+      "base": {
+        "ledger": "d8a2f275b3cdec80a1e919ba6975a7b1fd964925c2da1b9828fae97ac073fa15",
+        "plan": "4650fce1bca5cb4734d29d78bbc4230d08885ea2976881e79aa8e8d565218bd3",
+        "result": "e59604cd899f31709e61a8b73d45bded29dfe7949c4ea94f0a2e63ded753fb4a"
+      },
+      "bind": {
+        "ledger": "3310955dc3873512b4bae45dff31d03b1360c0a6a516ef2feb29fe3cb16f6ae3",
+        "plan": "071834aa420f9bc2f856a963391f5395a76f693d2ad97027342d3570f8f7322f",
+        "result": "8e718530097f5ed604839beb04cca6a8aa2829e3c9aabfb3509cd632901d5c63"
+      },
+      "coe": {
+        "ledger": "ea20913711b1ec854057ddf98ae7d90d0b9d7119d70be327d863294686f48314",
+        "plan": "6f18e3d719fa667b445b5b5eb254a5246b19c249f672dc458121d6ea586eaff2",
+        "result": "0797696f6f569339b291f43fd0fee81af8dd62c4c5d5926a975b7feddc40e210"
+      }
+    },
+    "byte_hash_only_final_path": true,
+    "identities_aligned": 38,
+    "method_correct": [
+      30,
+      0,
+      13,
+      13,
+      4
+    ],
+    "paired_corrections_regressions": [
+      [
+        30,
+        0
+      ],
+      [
+        18,
+        1
+      ],
+      [
+        18,
+        1
+      ],
+      [
+        26,
+        0
+      ]
+    ],
+    "request_response_payloads_parsed": 0,
+    "sqlite_ledgers_opened": 0,
+    "synthesis_exact": true,
+    "synthesis_sha256": "a678008a7449d588e12eb59bf019875fb08d7cb8f4e9c177ca8aaf9f0fb2aa9e"
+  },
+  "human_report": {
+    "path": "docs/CONTROLLED_ENDPOINT_REVIEW_AUDIT_20261016.md",
+    "sha256": "60c2ca16743c8f84380bc1fd92e34a222bfd6776ad525ad3751d3d27839d329d"
+  },
+  "independence": {
+    "aggregate_only_attestation": true,
+    "fresh_context_reviewer": true,
+    "project_tree_written": false,
+    "temporary_workspace_only": true
+  },
+  "or_debug": {
+    "arm_objects_exact": 5690,
+    "comparison_exact": true,
+    "complete_arm_solver_calls": 5597,
+    "corrected": {
+      "both_wrong": 93,
+      "corrections": 1924,
+      "evolved_correct": 2752,
+      "regressions": 0,
+      "static_correct": 828
+    },
+    "deterministic_fields_matched": 22388,
+    "group_inference_exact": true,
+    "groups": {
+      "negative": 0,
+      "one_sided_p": 2.710505431213761e-20,
+      "positive": 65,
+      "tied": 35,
+      "total": 100
+    },
+    "records": 2845,
+    "records_exact": 2845,
+    "released": {
+      "both_wrong": 609,
+      "corrections": 1408,
+      "evolved_correct": 2236,
+      "regressions": 0,
+      "static_correct": 828
+    },
+    "scored_arm_objects": 5690,
+    "sha256": {
+      "dataset": "65937371add10a2d42398c04421418c3651214e022fa9a93a170fcbb43d21aca",
+      "evaluation_plan": "5f20fbcd09289a37f9f38d06c71938d6a202f39a3ec5f01547f6b2a4d19bd1b7",
+      "frozen_evaluation": "04342d960613c01d3e354d742e39eec5949a90a53ca06fe0c6e30b6be057b66e",
+      "method_output": "9ab4058fd9f641f96279d5880820c13cbf7277af779fc42c62503ddd4c7d27ec",
+      "plan": "1e6a75da27cf5e75fe773a12e95b97d56e827080decfe547976aa8bbf924ed79",
+      "split": "0a930c69cd582dce7343cba188e3b905f5dd4bc2bca58c70880673bb72d1e0fa"
+    }
+  },
+  "privacy": {
+    "contains_credentials": false,
+    "contains_per_instance_rows": false,
+    "contains_points": false,
+    "contains_problem_bodies": false,
+    "contains_reference_values": false,
+    "contains_request_bodies": false,
+    "contains_response_bodies": false
+  },
+  "protocol": {
+    "path": "experiments/controlled_endpoint_review_protocol_20261016.json",
+    "sha256": "ce6567ceee83704921450251bc9da370c2bde8faa27cb7109bf3bc0d3f133adf"
+  },
+  "schema": "llm4or-controlled-endpoint-review-audit-v1",
+  "status": "passed_all_controlled_endpoints_exact",
+  "tsp": {
+    "corrections": 46,
+    "one_sided_exact_p": 1.4210854715202004e-14,
+    "pins_matched": 10,
+    "private_exact": true,
+    "public_exact": true,
+    "records": 140,
+    "regressions": 0,
+    "root_closure_fields_matched": 14,
+    "root_closure_hashes_matched": 13,
+    "sha256": {
+      "candidates": "f114fff73ff3c80cc557b7642a336a417a8bb1b85609f862cd2260dbad0c6627",
+      "plan": "86e7a399e2c3b96bf1880461066b9fb3027df3631c8b4787304111c14f79050a",
+      "private_result": "e38ab3a57e06be77aedec0be5536745ebb403ca8bd9d5362e42b7d16eefb7f6b",
+      "public_result": "184d05aa1ff0857e9577fa239c4aed230d021e7404b865c340020c93f7757082",
+      "root_closure": "0a0aef6aad14e720f537c3201b5cc585b0177c0a05150a18d0300f3e498c437d",
+      "source": "79170ad525dae10ad132fa5ad8fdc9d5419c61a6e18e99d2cce5295b7eb64a0c",
+      "split": "3b42e10c6c63840ce0b42e968a55bf16b109656c798fb50febc5282b405b074c"
+    },
+    "skill_correct": 100,
+    "static_correct": 54
+  }
+}

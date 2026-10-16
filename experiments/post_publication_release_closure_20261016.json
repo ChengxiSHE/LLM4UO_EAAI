@@ -1,0 +1,139 @@
+{
+  "archival_doi_verified": false,
+  "boundary": "The public GitHub repository, v1.0.0 release, asset digests, main/submodule remote acquisition and credential-free integrity reconstruction are verified. Public endpoint rescoring is excluded and dispatched under a separate controlled-review protocol. No archival DOI is claimed.",
+  "controlled_endpoint_review": {
+    "audit": "experiments/controlled_endpoint_review_audit_20261016.json",
+    "audit_sha256": "9dd9f89f88bf82e5590a44521e4c81b590b7b4d078f907eb4105f9b45675e1d7",
+    "protocol": "experiments/controlled_endpoint_review_protocol_20261016.json",
+    "public_package_endpoint_rescoring": false,
+    "status": "passed_all_controlled_endpoints_exact"
+  },
+  "date": "2026-10-16",
+  "execution": {
+    "api_or_model_calls": 0,
+    "benchmark_solver_calls": 0,
+    "credentials_read": false,
+    "evaluator_only_answers_read": false,
+    "native_evaluator_calls": 0,
+    "request_or_response_bodies_read": false,
+    "vm_calls": 0
+  },
+  "git_identity": {
+    "bundle_sha256": "bc8b817fddf8844bafe468b33860355b4bd2d2dfc2c699ea74e204f24530c658",
+    "commit": "3b870323935fa0a00ffd3fe9d1dc3512323beacf",
+    "parent_count": 0,
+    "reachable_commit_count_at_tag": 1,
+    "tree": "3c90e562c0f3f228c2a1a031320dd75b80257304"
+  },
+  "human_report": {
+    "path": "docs/POST_PUBLICATION_RELEASE_CLOSURE_20261016.md",
+    "sha256": "94d0f7217268c90cd3ac0a83da2a0a9ef472ceaa9db7f25ed123a153dcda91d8"
+  },
+  "local_layers": {
+    "A": true,
+    "B": true,
+    "C": true,
+    "D": true,
+    "D_api_calls": 0,
+    "D_max_concurrency": 5,
+    "D_model": "DeepSeek-V4-Flash",
+    "E": true
+  },
+  "public_clean_clone": {
+    "clean_after": true,
+    "local_object_borrowing": false,
+    "main_fsck_full_passed": true,
+    "main_remote_acquisition_verified": true,
+    "python": "3.10.1",
+    "submodule_commit": "c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010",
+    "submodule_fsck_full_passed": true,
+    "submodule_remote_acquisition_verified": true
+  },
+  "release": {
+    "all_server_digests_match_local": true,
+    "assets": [
+      {
+        "bytes": 1826,
+        "name": "POST_PUBLICATION_SHA256SUMS.json",
+        "sha256": "f988bbbcf2dee72e3f1f0c2822d46096967b798773a2c5c0be071f28d3876782"
+      },
+      {
+        "bytes": 1317,
+        "name": "SHA256SUMS.json",
+        "sha256": "041d0868afa79ffd7a07b55eddff942885508c76c648baacdd0dbd04d5711358"
+      },
+      {
+        "bytes": 4292,
+        "name": "llm4or-final-five-layer-release-sidecar-v2-20261016.json",
+        "sha256": "5f7bdf02ed5d5f016e4f03363de449d740aea5823c4f979cfcaaa24d344ce883"
+      },
+      {
+        "bytes": 1538,
+        "name": "llm4or-final-release-sidecar-v3-20261016.json",
+        "sha256": "36e12327d458a14122b453ed136aa60a6e4f0f94d1bddd7b5ce658c7c4c6956b"
+      },
+      {
+        "bytes": 2390,
+        "name": "llm4or-final-v2-layer-b-20261016.json",
+        "sha256": "0ce5e116043bab18c4852d0dde67adee3834fb1d6dc92f2c96983231576e8b7a"
+      },
+      {
+        "bytes": 3566,
+        "name": "llm4or-final-v2-layer-c-20261016.json",
+        "sha256": "3476e963a270f19756fe7147e92bb50b5b895f8ead1aa950c02c411b42b445b0"
+      },
+      {
+        "bytes": 2056,
+        "name": "llm4or-final-v2-layer-d-20261016.json",
+        "sha256": "bf0d118398a8191fdd461c1913a4d321650449da61e8c87b302bc238d3ad82a4"
+      },
+      {
+        "bytes": 7318,
+        "name": "llm4or-final-v2-layer-e-20261016.json",
+        "sha256": "bda2cc0ee8bad5ab7dfc1134633a2e0ec5d93686ca2a262af912c8ad7b24b1e6"
+      },
+      {
+        "bytes": 2220,
+        "name": "llm4or-post-publication-audit-20261016.json",
+        "sha256": "c7df08ce0b5a10b715de84ff3bd9fcb7502d6d5ebb1f8aa2c1b317dec98f2cd2"
+      },
+      {
+        "bytes": 8955,
+        "name": "llm4or-release-20261016-v2-audit.json",
+        "sha256": "5c27e165fd98b8560b23724f519a4aae263674eeda246170edfaccf5869c025b"
+      },
+      {
+        "bytes": 6540184,
+        "name": "llm4or-release-20261016-v2.bundle",
+        "sha256": "bc8b817fddf8844bafe468b33860355b4bd2d2dfc2c699ea74e204f24530c658"
+      }
+    ],
+    "draft": false,
+    "prerelease": false,
+    "tag": "v1.0.0",
+    "url": "https://github.com/ChengxiSHE/LLM4UO_EAAI/releases/tag/v1.0.0"
+  },
+  "repository": {
+    "default_branch": "main",
+    "github_repository_id": 1421624296,
+    "legacy_private_repository": {
+      "distinct_repository_id": true,
+      "github_repository_id": 1367142518,
+      "name": "ChengxiSHE/LLM4UO_EAAI-private-legacy-20261016",
+      "private": true
+    },
+    "url": "https://github.com/ChengxiSHE/LLM4UO_EAAI",
+    "verified_without_authentication": true,
+    "visibility": "public"
+  },
+  "schema": "llm4or-post-publication-release-closure-v1",
+  "status": "passed_public_history_free_release_clean_clone",
+  "verification": {
+    "additional_release_tests": 12,
+    "errors": 0,
+    "failures": 0,
+    "layer_a_tests": 79,
+    "reconstruction_and_preflight_commands": 6,
+    "total_tests": 91
+  }
+}

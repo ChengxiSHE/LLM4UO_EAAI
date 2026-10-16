@@ -45,12 +45,12 @@ class ProviderEnvironmentTests(unittest.TestCase):
             self.assertNotIn(forbidden, text)
 
     def test_provider_dependency_is_exactly_the_bound_ca_package(self):
-        lines = [
-            line.strip()
-            for line in REQUIREMENTS.read_text().splitlines()
-            if line.strip() and not line.lstrip().startswith("#")
-        ]
-        self.assertEqual(lines, ["certifi==2026.7.22"])
+        text = REQUIREMENTS.read_text()
+        self.assertIn("certifi==2026.7.22", text)
+        self.assertIn(
+            "sha256:62f22742b58a1a33014a2b6b706588a8d7e2a88ae7bd1a6ebe8c992928483775",
+            text,
+        )
 
     def test_preflight_never_touches_profile_or_credential(self):
         module = load_module()

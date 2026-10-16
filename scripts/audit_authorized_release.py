@@ -19,8 +19,10 @@ REQUIRED_PATHS = (
     "NOTICE",
     "docs/AUTHOR_RELEASE_DECISION_PACKET_20261015.md",
     "docs/DATA_CODE_AVAILABILITY_AUDIT_V3_20261016.md",
+    "docs/POST_PUBLICATION_RELEASE_CLOSURE_20261016.md",
     "experiments/author_release_decision_packet_20261015.json",
     "experiments/data_code_availability_audit_v3_20261016.json",
+    "experiments/post_publication_release_closure_20261016.json",
     "experiments/provider_environment_preflight_audit_20261016.json",
     "docs/PROVIDER_ENVIRONMENT_PREFLIGHT_AUDIT_20261016.md",
     "llm4or/public_antchat_transport.py",
@@ -66,12 +68,29 @@ def build_report() -> dict:
     )
     hashes_match = all(item["sha256"] and len(item["sha256"]) == 64 for item in records)
     all_tracked = all(item["tracked"] for item in records)
-    complete = all(item["exists"] for item in records) and hashes_match and all_tracked and all_approved
+    post = json.loads(
+        (ROOT / "experiments" / "post_publication_release_closure_20261016.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    repository_published = (
+        post.get("status") == "passed_public_history_free_release_clean_clone"
+        and post.get("repository", {}).get("visibility") == "public"
+        and post.get("release", {}).get("tag") == "v1.0.0"
+    )
+    doi_minted = post.get("archival_doi_verified") is True
+    complete = (
+        all(item["exists"] for item in records)
+        and hashes_match
+        and all_tracked
+        and all_approved
+        and repository_published
+    )
     return {
         "schema": "llm4or-authorized-release-audit-v1",
         "date": "2026-10-16",
         "status": (
-            "authorized_metadata_complete_publication_pending"
+            "authorized_metadata_complete_publication_verified_doi_pending"
             if complete
             else "authorized_metadata_incomplete"
         ),
@@ -90,13 +109,13 @@ def build_report() -> dict:
             "api_or_model_calls": 0,
             "solver_calls": 0,
             "credentials_read": False,
-            "repository_published": False,
-            "doi_minted": False,
+            "repository_published": repository_published,
+            "doi_minted": doi_minted,
         },
         "boundary": (
-            "This audit binds author-approved metadata and license scope. It does not "
-            "claim that the public repository or archival DOI exists until a separate "
-            "post-publication audit verifies those external states."
+            "This audit binds author-approved metadata and license scope to the "
+            "separately verified public history-free v1.0.0 release. No archival DOI "
+            "is claimed until an external archive records it."
         ),
     }
 
@@ -118,7 +137,7 @@ def main() -> int:
         if not OUTPUT.is_file() or OUTPUT.read_bytes() != raw:
             raise SystemExit("authorized_release_audit_mismatch")
     print(raw.decode(), end="")
-    return 0 if build_report()["status"].endswith("publication_pending") else 1
+    return 0 if build_report()["status"].startswith("authorized_metadata_complete_") else 1
 
 
 if __name__ == "__main__":

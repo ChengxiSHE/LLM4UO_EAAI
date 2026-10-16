@@ -1,0 +1,57 @@
+{
+  "archival_doi_verified": false,
+  "boundary": "Public code and integrity/audit reconstruction are verified. Restricted endpoint rescoring uses the separate controlled-review protocol. No DOI is claimed until an external archive records it; live provider replay and commercial solver availability remain external.",
+  "commit": "3b870323935fa0a00ffd3fe9d1dc3512323beacf",
+  "controlled_endpoint_review": {
+    "audit": "experiments/controlled_endpoint_review_audit_20261016.json",
+    "audit_sha256": "9dd9f89f88bf82e5590a44521e4c81b590b7b4d078f907eb4105f9b45675e1d7",
+    "protocol": "experiments/controlled_endpoint_review_protocol_20261016.json",
+    "public_package_endpoint_rescoring": false,
+    "status": "passed_all_controlled_endpoints_exact"
+  },
+  "date": "2026-10-16",
+  "human_report": {
+    "path": "docs/DATA_CODE_AVAILABILITY_AUDIT_V4_20261016.md",
+    "sha256": "9ab7595b782edd85f0041b3a9ff1456969e898dbbc44e6409cfd12b45f960da6"
+  },
+  "inputs": [
+    {
+      "path": "experiments/post_publication_release_closure_20261016.json",
+      "sha256": "a66e91657c66b7a25d2a5a79ab488146628b3049a9b8b9079f6f394cc05bf290"
+    },
+    {
+      "path": "experiments/author_release_decision_packet_20261015.json",
+      "sha256": "a413a0796c8af169e47d8e8bb625c1174e3ab5c760ebb60e1afdeec8b04d3ea7"
+    },
+    {
+      "path": "reproduction/environment_layers_v1.json",
+      "sha256": "5a011d2135c18c4b4490869e555b2645748e9cc4beb567ab4d5303c9973bd742"
+    }
+  ],
+  "licenses": {
+    "aggregate_data": "CC-BY-4.0",
+    "software": "Apache-2.0",
+    "third_party_exclusions_preserved": true
+  },
+  "provider_public_surface": {
+    "api_calls": 0,
+    "max_concurrency": 5,
+    "model": "DeepSeek-V4-Flash",
+    "private_runtime_released": false
+  },
+  "public_reconstruction": {
+    "clean_after": true,
+    "credential_free_tests": 91,
+    "deterministic_checks": 6,
+    "main_and_submodule_remote_acquisition": true
+  },
+  "release_url": "https://github.com/ChengxiSHE/LLM4UO_EAAI/releases/tag/v1.0.0",
+  "remaining": [
+    "external archival deposit and DOI verification"
+  ],
+  "repository_url": "https://github.com/ChengxiSHE/LLM4UO_EAAI",
+  "schema": "llm4or-data-code-availability-audit-v4",
+  "status": "public_history_free_release_verified_doi_pending",
+  "tag": "v1.0.0",
+  "tree": "3c90e562c0f3f228c2a1a031320dd75b80257304"
+}

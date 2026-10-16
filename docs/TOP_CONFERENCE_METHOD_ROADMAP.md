@@ -39,7 +39,7 @@ rule, not an instruction to an outer agent or Codex goal loop.
 | Bounded active acquisition | negative eight-pair language-model canary plus exact ten-class census, 10/10 versus 6/10 within three queries | Closed inside the authored grammar |
 | Component identification | complete finite semantic, resource, routing and shadow-guard complexity censuses | Closed inside declared finite populations |
 | Figures and worked example | two rendered, audited main figures and one synthetic end-to-end example | Closed |
-| Credential-free reconstruction | all 70 evidence paths tracked; recursive HTTP/1.1 submodule acquisition and 53-test Layer A pass; Layers B--E separately audited | Closed under declared layer boundaries |
+| Credential-free reconstruction | all 70 evidence paths tracked; public recursive main/submodule acquisition and canonical 79-test Layer A pass; 12 additional release tests and Layers B--E separately audited | Closed under declared layer boundaries |
 
 Do not rerun or retune closed baseline rows, TSP, OR-Debug, mixed routing, the
 count proposer namespace, the DCP 135 selection cohort or the unopened 219
@@ -47,7 +47,7 @@ confirmation cohort to improve a score.
 
 ## Remaining top-conference gaps
 
-### Gap 1. Licensed and rights-safe public release
+### Gap 1. Licensed and rights-safe public release — closed
 
 The scientific evidence, author-controlled release decisions and local
 reconstruction are closed. The author has confirmed authority for the scoped
@@ -58,10 +58,12 @@ adapters are implemented and tested. A local one-commit candidate established
 the history-removal mechanism, but that candidate is superseded by the final
 provider-surface correction and must not be published.
 
-The remaining gap is operational and externally verifiable: rebuild the
-zero-parent candidate from the final correction commit, repeat its complete
-Layer-A check, publish that exact artifact, mint or reserve an archival DOI,
-and run a post-publication independent audit against the immutable release.
+The corrected zero-parent candidate is now public as `v1.0.0`. An
+unauthenticated recursive clone retrieved the public repository and pinned
+submodule; 91 credential-free release tests and six reconstruction/preflight
+commands passed. Eleven GitHub Release assets have server SHA-256 digests that
+match the local bundle and audit sidecars. Public clean-clone reproducibility is
+closed; archival DOI registration remains Gap 2.
 
 ### Gap 2. Author, venue and archival fields
 
@@ -70,9 +72,10 @@ Engineering, Nanjing University, with the corresponding institutional email.
 ORCID is omitted because it was not independently verified; funding is not
 declared and the target venue remains undecided. The SHA-bound decision packet
 approves the AI-use and availability disclosures, scoped Apache-2.0 and CC BY
-4.0 treatment, the NOTICE policy and GitHub-to-Zenodo archiving. Only the live
-public repository URL, immutable release identifier and archival DOI remain to
-be verified after publication.
+4.0 treatment, the NOTICE policy and GitHub-to-Zenodo archiving. The live
+public repository and immutable `v1.0.0` release are verified. Only an archival
+DOI remains to be supplied by an external archival service; venue selection
+remains an editorial decision.
 
 ### Gap 3. Optional stronger scientific claims
 
@@ -129,7 +132,7 @@ directory-durability checks and a complete Layer-A reconstruction.
 5. Repository and archival metadata templates are frozen; their live URL and
    DOI remain false until externally verified.
 
-### Phase C. Build the final public candidate — in progress
+### Phase C. Build the final public candidate — completed
 
 1. Rebuild the zero-parent history-free candidate from the final source commit.
 2. Confirm that restricted task text, repair objects, evaluator-only answers,
@@ -137,18 +140,19 @@ directory-durability checks and a complete Layer-A reconstruction.
 3. Acquire every upstream dependency from its pinned source.
 4. Rerun Layer A, offline analysis, solver/native, provider preflight and figure
    reconstruction under their separate declared boundaries.
-5. Reconstruct all 70 evidence paths, 416 structured assertions, 15 global
+5. Reconstruct all 74 evidence paths, 430 structured assertions, 15 global
    boundaries and 18 citation keys.
 6. Verify that the candidate remains clean after reconstruction.
 
-### Phase D. Freeze and independently audit the submission
+### Phase D. Freeze and independently audit the submission — completed except DOI
 
 1. Regenerate all tables and figures only from the final public candidate.
 2. Recheck every denominator, paired correction and regression, group summary,
    baseline information condition and generalization boundary.
 3. Run a new independent mock review against the immutable release packet.
-4. Resolve only evidence-supported issues, then archive the exact release and
-   record its DOI.
+4. Resolve only evidence-supported issues. The public integrity review and the
+   controlled TSP/OR-Debug/common-38 endpoint review are complete; archive the
+   exact release and record its DOI when the external service is available.
 
 ## Current scientific decision
 

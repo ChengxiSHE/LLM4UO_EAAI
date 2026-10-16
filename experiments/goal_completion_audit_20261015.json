@@ -2,7 +2,7 @@
   "audited_at_local_date": "2026-10-16",
   "completion_decision": {
     "blocking_requirements": [
-      "G11"
+      "G13"
     ],
     "claim_if_no_new_experiments": "A defensible methods paper with a bounded fresh common-38 superiority result, exact finite semantic/resource/routing/complexity mechanism evidence and bounded active acquisition inside an authored grammar, but not natural-language discovery, natural library-distribution generalization or broad benchmark superiority.",
     "goal_complete": false
@@ -19,21 +19,13 @@
     "request_or_response_bodies_read": true
   },
   "objective": "Complete LLM4OR-EAAI as a reproducible top-conference research package with locally audited external baselines, a fresh common protocol, bounded theory, a compelling method story, and a complete evidence chain.",
-  "overall_status": "active_not_complete",
+  "overall_status": "active_not_complete_archival_doi_only",
   "priority_order": [
     {
       "priority": 1,
-      "reason": "Required to turn the locally authorized release into an externally verifiable immutable public artifact and archival record.",
+      "reason": "Bind an externally verified archival DOI to the already public immutable release; no scientific or release-integrity gate remains open.",
       "requirements": [
-        "G11",
         "G13"
-      ]
-    },
-    {
-      "priority": 2,
-      "reason": "Repeat the final claim audit after release artifacts are frozen; broader replication is needed only if the claim set expands.",
-      "requirements": [
-        "G10"
       ]
     }
   ],
@@ -388,32 +380,44 @@
       "evidence": [
         {
           "path": "experiments/paper_evidence_manifest_20261015.json",
-          "sha256": "91ad52aee099f03c51809d62c91dc755690a33b2b9dee3b7841002b2fdfb49ed"
+          "sha256": "a56d5dbeb80aa481350ddf4a8e97987018c416984e27f8e548897c8a86572dd7"
         },
         {
           "path": "manuscript/MANUSCRIPT_EVIDENCE_AUDIT.md",
-          "sha256": "917fc0736969b979e2bfa7e044af3cbc1b30402685a01ab6110dd8a63102770a"
+          "sha256": "530da4410a79d954934b1a35d03864c32f552c8710dc592db75a1f5b447cc5c5"
+        },
+        {
+          "path": "experiments/independent_public_release_review_20261016.json",
+          "sha256": "b51fea682d1816f0399ce7133d229dd81ed0568747b4a5849fc35bcf6f0516f9"
+        },
+        {
+          "path": "experiments/controlled_endpoint_review_protocol_20261016.json",
+          "sha256": "ce6567ceee83704921450251bc9da370c2bde8faa27cb7109bf3bc0d3f133adf"
+        },
+        {
+          "path": "experiments/controlled_endpoint_review_audit_20261016.json",
+          "sha256": "9dd9f89f88bf82e5590a44521e4c81b590b7b4d078f907eb4105f9b45675e1d7"
         }
       ],
       "id": "G10",
-      "missing_evidence": "The final immutable public release, archival DOI and a post-publication independent submission audit remain necessary. Natural-language acquisition, natural library evolution or second-source broad-superiority replication are required only if those stronger claims are pursued.",
+      "missing_evidence": "None for the bounded manuscript claims. Natural-language acquisition, natural library evolution, or second-source broad-superiority replication is required only if those stronger claims are pursued.",
       "requirement": "Provide a complete manuscript evidence chain with bounded theory, exact claim-to-artifact links, citations, source data, and independent claim audit.",
-      "status": "partial",
-      "supported_claim": "Current numerical claims, theory boundaries, all 18 used bibliography keys, and the 70 manifest-bound artifact/path hashes with 416 structured assertions and 15 global claim boundaries are internally consistent. Author-controlled licensing and disclosure decisions are now closed; the evidence chain includes the negative language-model canary, positive bounded active-acquisition census, fresh common-38 comparison and scope closure, exact finite semantic/resource/routing/complexity censuses, the implemented answer-free two-skill/one-library canonical manifest, clean reconstruction layers, and both final audited main figures."
+      "status": "closed",
+      "supported_claim": "The final manuscript evidence chain is independently audited at both public and controlled layers. The public v1.0.0 integrity package, 74 manifest paths, 430 structured assertions, 15 global boundaries and 18 citations are bound; a fresh-context controlled reviewer exactly recomputed TSP, OR-Debug and common-38 without releasing restricted contents."
     },
     {
-      "artifact_conformance_gap": "Scoped rights, Apache-2.0 and CC BY 4.0 licenses, NOTICE, author metadata, the shared atomic publisher and a body-free public provider preflight are implemented and authorized. The earlier local history-free bundle is superseded by the provider-surface correction. A final zero-parent candidate must be rebuilt from the corrected commit, published at an externally verified public URL, archived with a DOI and independently audited after publication.",
-      "closure_test": "Commit the provider-surface and active-document corrections; rebuild a one-commit zero-parent candidate from that exact tree; verify no restricted/private paths and rerun credential-free Layer A; bind Layers B-E to the immutable inputs; publish the exact candidate, verify the public URL, archive it with a DOI and run the final independent clean-clone and claim audit.",
-      "contradicting_evidence": "The release engineering is locally complete except for the final corrected bundle and external publication. D1-D8 are author-approved; root software/data licenses and NOTICE are present; nine historical producers use one exclusive durable publisher; the pinned submodule and five separated environment layers have executable evidence. The final audit found and removed a private provider-runtime dependency from the public preflight. GitHub publication and archival DOI remain externally unverified, so independent public reproducibility is not yet closed.",
-      "current_tree_exclusion_status": "All six identified task-text, repair-identity and repair-object sources are absent from the source-bound release index, with zero tracked private paths. Six metadata projections preserve all 2,985 identity comparisons. The public provider surface contains endpoint/model/concurrency/CA/TLS metadata only and imports no private request construction. The old one-commit bundle demonstrated history exclusion but is superseded and must not be published; the corrected bundle remains to be rebuilt.",
+      "artifact_conformance_gap": "None for the bounded public clean-clone claim. The licensed history-free v1.0.0 repository, exact release bundle, public server digests, remote main/submodule acquisition, credential-free Layer A, and separate B-E layer audits are verified. DOI registration is tracked under G13 rather than public clone reproducibility.",
+      "closure_test": "Satisfied: the public v1.0.0 tag resolves to one zero-parent commit and the authorized tree; an unauthenticated recursive clone acquired main and the pinned submodule, both object graphs passed full checks, 91 credential-free release tests and six deterministic checks passed, and the checkout remained clean.",
+      "contradicting_evidence": "No current contradiction. The old repository was preserved under a different private legacy name; the public repository was created empty and received only the verified history-free candidate. GitHub reports all 11 release-asset SHA-256 digests, and they match local artifacts.",
+      "current_tree_exclusion_status": "The public v1.0.0 tree has zero restricted/private paths, contains the six metadata-only projections and body-free public provider surface, and is reachable through a single zero-parent commit. Public clean-clone verification did not read task bodies, private request/response bodies, credentials or evaluator-only answers.",
       "evidence": [
         {
-          "path": "experiments/release_readiness_delta_v2_20261015.json",
-          "sha256": "5bbee3ca8cf8169a2b85aa75526445ea503ac57c46a846adf310d6a2355e8106"
+          "path": "experiments/post_publication_release_closure_20261016.json",
+          "sha256": "a66e91657c66b7a25d2a5a79ab488146628b3049a9b8b9079f6f394cc05bf290"
         },
         {
-          "path": "docs/RELEASE_READINESS_DELTA_V2_20261015.md",
-          "sha256": "b4932c2dc6415799d4f16e735aa3934770f25ed902d728564203978ca5e4db4b"
+          "path": "docs/POST_PUBLICATION_RELEASE_CLOSURE_20261016.md",
+          "sha256": "94d0f7217268c90cd3ac0a83da2a0a9ef472ceaa9db7f25ed123a153dcda91d8"
         },
         {
           "path": "experiments/release_readiness_delta_v4_20261015.json",
@@ -581,7 +585,7 @@
         },
         {
           "path": "experiments/provider_environment_preflight_audit_20261016.json",
-          "sha256": "bf0d118398a8191fdd461c1913a4d321650449da61e8c87b302bc238d3ad82a4"
+          "sha256": "2f8c8e5c92cbc577d37eb5710e7f8f028fa2e59f3e15742798632608b4de9001"
         },
         {
           "path": "docs/PROVIDER_ENVIRONMENT_PREFLIGHT_AUDIT_20261016.md",
@@ -605,7 +609,7 @@
         },
         {
           "path": "reproduction/environment_layers_v1.json",
-          "sha256": "28dbc73118a1b2007df0ce77ecd8226e2d90abeebb2e625a34205f233e47e809"
+          "sha256": "5a011d2135c18c4b4490869e555b2645748e9cc4beb567ab4d5303c9973bd742"
         },
         {
           "path": "experiments/history_free_release_candidate_audit_20261015.json",
@@ -624,8 +628,8 @@
           "sha256": "12f3d1d33430b8782a44bf8fa6119c923efec3ba69800805de09ed11bec7e7e0"
         },
         {
-          "path": "experiments/data_code_availability_audit_v3_20261016.json",
-          "sha256": "8c1ae7faadf8c5bcfa2600fb9118fe900bc3f45642275c6ebe2003fb4ab8f517"
+          "path": "experiments/data_code_availability_audit_v4_20261016.json",
+          "sha256": "f1005a8c22f6ea2ce35be541ec25a4b5390e64dc090d82505b70eabf393d6a00"
         },
         {
           "path": "experiments/clean_clone_layer_a_remote_http1_audit_20261015.json",
@@ -637,11 +641,11 @@
         },
         {
           "path": "experiments/author_release_decision_packet_20261015.json",
-          "sha256": "034773f082115cb030020614a1097af1462dbbcacdc6df52fdf60be5293a39b0"
+          "sha256": "a413a0796c8af169e47d8e8bb625c1174e3ab5c760ebb60e1afdeec8b04d3ea7"
         },
         {
           "path": "docs/AUTHOR_RELEASE_DECISION_PACKET_20261015.md",
-          "sha256": "1e0cb251127122f7b8f172093925b6100e0fc98ee2d9789fc32db90e8726c51b"
+          "sha256": "e28ad8f619eb5e0d38f79fea2e0c747867566625efb7965876533c763c997acc"
         },
         {
           "path": "experiments/atomic_publisher_migration_audit_20261015.json",
@@ -660,13 +664,13 @@
           "sha256": "b0c29aeef40c7084dcd4d55f6300c1c3ea96054b8565be919fbf321f705c3955"
         }
       ],
-      "goal_evidence_index_status": "The goal evidence keeps 146 references over 133 unique paths by rebinding the provider, environment, author-decision and availability records to their current public-safe versions. Hashes are rechecked by the credential-free reconstruction command.",
+      "goal_evidence_index_status": "All 149 goal-evidence references span 137 unique paths after adding the independent public-release review and controlled endpoint-review protocol/audit. Hashes are checked by the credential-free reconstruction command.",
       "id": "G11",
-      "latest_release_delta": "D1-D8 are approved. Apache-2.0, CC BY 4.0, NOTICE, CITATION and Zenodo metadata are present; verified author metadata is recorded; D5 wraps all nine historical producers. A final five-layer check exposed an untracked private provider dependency, which was replaced by a body-free public transport preflight for DeepSeek-V4-Flash at concurrency five. Source-layer B-E checks pass under their declared boundaries; the final corrected history-free candidate and its Layer-A rerun are pending.",
+      "latest_release_delta": "Public release closed on 2026-10-16: repository and v1.0.0 are externally visible, the candidate bundle SHA-256 is bc8b817fddf8844bafe468b33860355b4bd2d2dfc2c699ea74e204f24530c658, and an unauthenticated recursive clone passed 91 tests plus six checks. The exact offline, solver, provider and figure layers also pass for the identical tree.",
       "manifest_design_status": "The two-level answer-free content-addressed contract, current TSP/OR-Debug skill manifests, current genesis library manifest and body-free public identity reconstruction are implemented. The semantic envelope is 17,728 bits. Because the current policies were authored after development outcomes were known, this is an artifact measurement and does not retroactively validate a complexity effect.",
       "requirement": "Make the paper independently reproducible from a licensed, rights-safe, credential-free clean clone.",
       "solver_submodule_status": "The submodule is pinned to c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010, has 4,962 tracked models, zero missing reachable objects and a passing full fsck. The earlier remote HTTP/1.1 audit verified fresh upstream acquisition; the later D5 local-complete-snapshot clean clone passes 79 Layer-A tests including the publisher/adapters. The local Gurobi boundary remains separate and no solver was called by Layer A.",
-      "status": "partial"
+      "status": "closed"
     },
     {
       "boundary": "The figures visualize the bounded method and sealed aggregate results. They add no experiment, do not turn conditional guarantees into universal ones, and do not present the retrospective manifest measurement or prospective complexity-weighted promotion as causal empirical evidence.",
@@ -734,23 +738,23 @@
       "supported_claim": "The synthetic worked example is complete and contributes no benchmark row. Figure 1 renders every construction stage, trust boundary, guarantee class and prohibited extrapolation at 180 mm with editable PDF/SVG, 600-dpi PNG/TIFF, at least 5.0-pt text and passing strict source, collision, alignment and visual QA. It displays the implemented answer-free two-skill/one-library canonical manifest, 2,985 reconstructed identities and the 17,728-bit operational description length as a retrospective artifact measurement; complexity-weighted promotion remains prospective. Figure 2 is rendered from aggregate answer-free Source Data at 180 mm with the same output and QA classes and at least 5.5-pt text. Both main legends pass self-containment, panel-coverage, statistics, boundary and under-250-word preflight."
     },
     {
-      "boundary": "D1-D8 are approved and the verified author, license, NOTICE, availability and AI-use metadata are bound. ORCID is omitted as unverified; funding is not declared and venue selection is deferred. A repository URL or DOI is not treated as live until external verification.",
-      "closure_test": "Publish the final corrected immutable release, verify its public URL, archive the same release, record the DOI and rebind the manuscript availability statement to those external identifiers.",
+      "boundary": "D1-D8, verified author metadata, licenses, NOTICE, disclosures, the public repository URL and immutable v1.0.0 release are bound. ORCID remains omitted as unverified, funding is not declared and venue selection is deferred. No archival DOI is claimed.",
+      "closure_test": "Deposit the exact v1.0.0 release with an external archival service, verify the resulting DOI and rebind the manuscript availability statement to that identifier.",
       "evidence": [
         {
           "path": "experiments/author_release_decision_packet_20261015.json",
-          "sha256": "034773f082115cb030020614a1097af1462dbbcacdc6df52fdf60be5293a39b0"
+          "sha256": "a413a0796c8af169e47d8e8bb625c1174e3ab5c760ebb60e1afdeec8b04d3ea7"
         },
         {
-          "path": "docs/AUTHOR_RELEASE_DECISION_PACKET_20261015.md",
-          "sha256": "1e0cb251127122f7b8f172093925b6100e0fc98ee2d9789fc32db90e8726c51b"
+          "path": "docs/DATA_CODE_AVAILABILITY_AUDIT_V4_20261016.md",
+          "sha256": "9ab7595b782edd85f0041b3a9ff1456969e898dbbc44e6409cfd12b45f960da6"
         }
       ],
       "id": "G13",
-      "missing_evidence": "Externally verified public release URL, immutable release/tag identity, archival DOI and post-publication audit. Venue selection remains an editorial decision rather than a reproducibility blocker.",
+      "missing_evidence": "Externally verified archival DOI. Venue selection remains an editorial decision rather than a reproducibility blocker.",
       "requirement": "Complete author metadata, archival identifiers, and author-approved AI-use and data/code disclosures.",
       "status": "partial",
-      "supported_claim": "The author approved D1-D8; scoped Apache-2.0 and CC BY 4.0 licenses, NOTICE, CITATION/Zenodo metadata, verified name/affiliation/email and approved availability and AI-use disclosures are present. Optional unverified ORCID is omitted and no repository availability or DOI is invented."
+      "supported_claim": "The author approved D1-D8; scoped licenses, NOTICE, verified name/affiliation/email, approved availability/AI-use text, the public history-free repository and v1.0.0 release are externally verified. Optional unverified ORCID is omitted and no DOI is invented."
     }
   ],
   "review_issue_mapping": [

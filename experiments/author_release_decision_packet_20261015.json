@@ -63,7 +63,7 @@
       "id": "D8"
     }
   ],
-  "boundary": "The user authorized D1-D8 on 2026-10-16. This record scopes the grants to first-party materials under the stated authority and preserves all third-party exclusions; it is a release record, not legal advice. Publication and DOI fields remain false until independently verified.",
+  "boundary": "The user authorized D1-D8 on 2026-10-16. Scoped grants and third-party exclusions are unchanged. The history-free public repository and v1.0.0 release are independently verified; the archival DOI remains pending.",
   "date": "2026-10-15",
   "execution": {
     "api_or_model_calls": 0,
@@ -72,9 +72,11 @@
     "doi_reserved": false,
     "license_applied": true,
     "public_provider_surface_added": true,
+    "public_release_tag": "v1.0.0",
+    "public_repository": "https://github.com/ChengxiSHE/LLM4UO_EAAI",
     "publisher_adapters": 9,
     "publisher_code_changed": true,
-    "repository_published": false,
+    "repository_published": true,
     "solver_calls": 0
   },
   "external_primary_sources": [
@@ -125,7 +127,7 @@
     },
     {
       "path": "reproduction/environment_layers_v1.json",
-      "sha256": "28dbc73118a1b2007df0ce77ecd8226e2d90abeebb2e625a34205f233e47e809"
+      "sha256": "5a011d2135c18c4b4490869e555b2645748e9cc4beb567ab4d5303c9973bd742"
     },
     {
       "path": "docs/DATA_CODE_AVAILABILITY_AUDIT_V2_20261015.md",
@@ -133,13 +135,13 @@
     },
     {
       "path": "docs/TOP_CONFERENCE_METHOD_ROADMAP.md",
-      "sha256": "97e43e8b6be5becc56e423e038875793e1ea8df0560fc41dd278c0f010673962"
+      "sha256": "219dea96ec22b00358c560a671e5551277d0174e66f6d0f1c72702d1b7eb1363"
     }
   ],
   "purpose": "Record the author authorization for D1-D8 and bind the scoped release metadata used by the verified history-free public candidate.",
   "ready_to_paste": {
     "ai_use_disclosure": "Language models were used in the explicitly identified candidate-generation experiments, in software-development assistance and in manuscript drafting. Candidate knowledge, code changes, numerical results and prose were not accepted solely on model output. Human authors defined the research questions and frozen evaluation contracts, reviewed the outputs, and verified the reported evidence through deterministic checks, independent endpoint scoring, source and citation audits, and reproducible reconstruction. The human authors remain accountable for all claims, analyses, citations and released artifacts.",
-    "code_availability": "First-party code, typed skill and library manifests, public-only routing and verification code, aggregate evidence, figure-generation scripts and deterministic reconstruction commands are authorized for publication at https://github.com/ChengxiSHE/LLM4UO_EAAI under Apache-2.0. The live repository status and archival DOI will be added only after external verification. The solver-in-the-loop dataset remains an external pinned submodule under its upstream terms. Gurobi 13.0.1 requires a separate user installation and licence. Provider replay requires a user-supplied account and credential; credential-free evidence reconstruction does not.",
+    "code_availability": "First-party code, typed skill and library manifests, public-only routing and verification code, aggregate evidence, figure-generation scripts and deterministic reconstruction commands are publicly available at https://github.com/ChengxiSHE/LLM4UO_EAAI under Apache-2.0. The public v1.0.0 release is independently verified; an archival DOI will be added only after an external deposit is verified. The solver-in-the-loop dataset remains an external pinned submodule under its upstream terms. Gurobi 13.0.1 requires a separate user installation and licence. Provider replay requires a user-supplied account and credential; credential-free evidence reconstruction does not.",
     "data_availability": "Author-owned aggregate data supporting the findings of this study, including endpoint summaries, paired correction and regression counts, structural-group summaries, routing-identity records and figure Source Data, accompany the versioned software release under CC BY 4.0. The archival DOI will be added after archival deposit. Reused benchmark sources are retrieved at pinned revisions listed in the release metadata and remain subject to their upstream terms. Where redistribution is not authorized, the release provides metadata-only identities, checksums and reconstruction instructions rather than upstream task text or evaluator-only answers. Private request and response bodies, credentials and evaluator-only answers are not released."
   },
   "recommendation": {
@@ -222,7 +224,7 @@
     "reason": "final five-layer audit found that the historical provider preflight depended on untracked private experiment modules"
   },
   "schema": "llm4or-author-release-decision-packet-v2",
-  "status": "author_approved_ready_for_verified_publication",
+  "status": "author_approved_publication_verified_doi_pending",
   "verified_author_metadata": {
     "affiliation": "School of Management & Engineering, Nanjing University",
     "basis": "publicly verified name, affiliation and email; optional unverified fields omitted",

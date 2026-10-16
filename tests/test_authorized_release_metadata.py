@@ -56,7 +56,7 @@ class AuthorizedReleaseMetadataTests(unittest.TestCase):
 
     def test_all_author_decisions_are_approved_without_invented_metadata(self):
         packet = json.loads(PACKET.read_text(encoding="utf-8"))
-        self.assertEqual(packet["status"], "author_approved_ready_for_verified_publication")
+        self.assertEqual(packet["status"], "author_approved_publication_verified_doi_pending")
         self.assertTrue(all(item["approved"] for item in packet["author_decisions"]))
         self.assertEqual(
             {item["id"] for item in packet["author_decisions"]},
@@ -70,7 +70,7 @@ class AuthorizedReleaseMetadataTests(unittest.TestCase):
         self.assertEqual(author["funding"], "not_declared")
         self.assertEqual(author["orcid"], "omitted_unverified")
         self.assertFalse(packet["execution"]["doi_reserved"])
-        self.assertFalse(packet["execution"]["repository_published"])
+        self.assertTrue(packet["execution"]["repository_published"])
 
         disclosures = "\n".join(packet["ready_to_paste"].values())
         self.assertNotIn("[PUBLIC REPOSITORY]", disclosures)
@@ -84,11 +84,14 @@ class AuthorizedReleaseMetadataTests(unittest.TestCase):
                 encoding="utf-8"
             )
         )
-        self.assertEqual(audit["status"], "authorized_metadata_complete_publication_pending")
+        self.assertEqual(
+            audit["status"],
+            "authorized_metadata_complete_publication_verified_doi_pending",
+        )
         self.assertTrue(audit["all_required_paths_tracked"])
         self.assertTrue(audit["all_required_hashes_match"])
         self.assertTrue(audit["decisions"]["all_d1_d8_approved"])
-        self.assertFalse(audit["execution"]["repository_published"])
+        self.assertTrue(audit["execution"]["repository_published"])
         self.assertFalse(audit["execution"]["doi_minted"])
 
 

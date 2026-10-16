@@ -1,0 +1,57 @@
+{
+  "citations": {
+    "bibliography_keys": 18,
+    "cited_keys": 18,
+    "missing": [],
+    "uncited": []
+  },
+  "claim_boundary": {
+    "allowed_claim": "The public evidence integrity layer is reconstructable from a credential-free recursive clone.",
+    "figures_regenerated": false,
+    "full_clean_clone_claimed": false,
+    "provider_reexecuted": false,
+    "solver_runtime_reexecuted": false
+  },
+  "current_library": {
+    "exact_identities": 2985,
+    "identity_reconstruction_passed": true,
+    "library_sha256": "1005544bd062b618f89c86a4e73707ea5dfd1daf267ddb29ac46b6c03a807116",
+    "operational_description_length_bits": 17728,
+    "skill_sha256": [
+      "68d5aed2794c5ccf381519f0a8ebc1c35da44a6f1fc749434f64491df49d9d39",
+      "cafdd1bb6429391f64aabd3b130d2028972b3f5f3dfb78d4609b2e7cd8fa87ff"
+    ]
+  },
+  "goal_evidence": {
+    "mismatches": 0,
+    "references": 149,
+    "unique_paths": 137
+  },
+  "paper_manifest": {
+    "assertions": 430,
+    "boundaries": 15,
+    "path_hash_mismatches": 0,
+    "path_hashes": 74
+  },
+  "restricted_sources": {
+    "declared": 6,
+    "tracked": []
+  },
+  "safety": {
+    "api_or_model_calls": 0,
+    "credentials_read": false,
+    "environment_values_read": false,
+    "evaluator_only_answers_read": false,
+    "native_evaluator_calls": 0,
+    "restricted_bodies_read": false,
+    "solver_calls": 0,
+    "vm_calls": 0
+  },
+  "schema": "llm4or-release-evidence-reconstruction-v1",
+  "solver_submodule": {
+    "commit": "c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010",
+    "initialized": true,
+    "path": "vendor/solver-in-the-loop"
+  },
+  "status": "passed_credential_free_layer_a"
+}

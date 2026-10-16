@@ -18,9 +18,12 @@ infrastructure-unavailable records stay in their prespecified denominator
 unless a table explicitly labels availability as a separate quantity.
 
 Private request bodies, response bodies, evaluator-only answers and credentials
-are excluded from this supplement. Public release will use aggregate records,
-hashes and upstream reconstruction instructions where redistribution rights do
-not permit publishing raw task text.
+are excluded from this supplement and from the public release. The public
+history-free repository uses aggregate records, hashes and upstream
+reconstruction instructions where redistribution rights do not permit
+publishing raw task text. A separate controlled-review protocol permits an
+independent reviewer to recompute restricted endpoints without redistributing
+those materials.
 
 ## R2. Recorded environment
 
@@ -36,16 +39,28 @@ terms. A clean checkout must initialize submodules recursively. OPT-Engine,
 DCP-Bench-Open, text2opt-bench and Chain-of-Experts are retrieved at pinned
 upstream revisions rather than silently relicensed by this project.
 
-The current public-release audit remains `not_ready`, although the evidence
-projection and credential-free reconstruction gates are now closed. All 70
-paper-manifest paths are tracked, restricted task text and repair-bearing
-records are replaced by metadata-only projections, and a fresh recursive
-checkout acquired the exact pinned submodule over Git HTTPS HTTP/1.1 before
-passing all 53 Layer-A tests. The remaining gates are author confirmation of
-first-party rights, a root license and attribution policy, exclusive durable
-replacement or wrapping of nine historical result publishers, publication of
-the final history-free candidate, and the post-release audit. These release
-issues do not change the sealed numerical outcomes.
+The history-free public repository is available at
+<https://github.com/ChengxiSHE/LLM4UO_EAAI>. Release `v1.0.0` resolves to the
+single zero-parent commit `3b870323935fa0a00ffd3fe9d1dc3512323beacf` and tree
+`3c90e562c0f3f228c2a1a031320dd75b80257304`. An unauthenticated recursive
+clone retrieved the exact pinned submodule, both Git object graphs passed full
+checks, and the canonical credential-free Layer-A contract passed 79 tests and
+three deterministic reconstruction checks. Twelve additional release/provider
+tests passed after installing the separately declared provider dependency.
+The release contains all 70 paper-manifest paths and replaces restricted task
+text and repair-bearing records with metadata-only projections.
+
+The public package is an integrity/audit package: it reconstructs aggregate
+arithmetic, content-addressed library identities and 2,985 body-free output
+identities, but it does not rerun provider inference or rescore restricted
+benchmark endpoints from evaluator-only answers. Endpoint recomputation uses
+the hash-bound
+[`CONTROLLED_ENDPOINT_REVIEW_PROTOCOL_20261016.md`](../docs/CONTROLLED_ENDPOINT_REVIEW_PROTOCOL_20261016.md).
+A fresh-context reviewer executed that protocol and reproduced the TSP,
+OR-Debug and common-38 endpoints exactly; the aggregate-only result is recorded
+in
+[`CONTROLLED_ENDPOINT_REVIEW_AUDIT_20261016.md`](../docs/CONTROLLED_ENDPOINT_REVIEW_AUDIT_20261016.md).
+No archival DOI is claimed.
 
 ## R3. TSP constraint-skill study
 
@@ -298,27 +313,25 @@ problems.
 
 ## R9. What can currently be reproduced
 
-The local evidence package binds terminal aggregates, split manifests,
+The public evidence package binds terminal aggregates, split manifests,
 compiler and evaluator identities, selected source hashes, targeted offline
-tests and narrative claims. Fifty-three credential-free Layer-A tests pass
-without model, API, benchmark-solver or native-evaluator calls. Figure 2
-aggregate Source Data were independently recomputed from four sealed result
-files and verified field by field.
+tests and narrative claims. The single canonical command
+`python3 scripts/run_public_integrity.py --check` runs 79 credential-free
+Layer-A tests and three deterministic checks without model, API,
+benchmark-solver or native-evaluator calls. Figure 2 aggregate Source Data were
+independently recomputed from four sealed result files and verified field by
+field.
 
-The package now establishes credential-free Layer-A reconstruction from a
-no-local clone with a complete pinned local submodule snapshot. All 70
+The `v1.0.0` tag is a one-commit, zero-parent history-free release. All 70
 paper-manifest paths are tracked; restricted embedded text and repair-bearing
-records are replaced by metadata-only projections; exact offline, local
-solver, provider-transport and figure environments have separate audits. A
-one-commit, zero-parent candidate reproduces Layer A without restricted or
-private paths. Public release still requires author confirmation of the 792
-first-party candidates, a root license and attribution policy, approved
-exclusive wrappers or replacements for nine historical publishers, a rebuilt
-history-free candidate from the final public source commit, and a final audit
-of the licensed candidate. The pinned submodule has now been acquired from
-GitHub over Git HTTPS HTTP/1.1 with zero missing reachable objects and a
-passing full `fsck`; the resulting recursive checkout passed all 53 Layer-A
-tests. Gurobi remains separately licensed.
+records are represented by metadata-only projections; exact offline, local
+solver, provider-transport and figure environments have separate audits. The
+pinned submodule was acquired recursively from its public Git remote with zero
+missing reachable objects and a passing full object check. Gurobi remains
+separately licensed. This public reconstruction verifies integrity and
+aggregate arithmetic, not end-to-end endpoint rescoring from excluded private
+or evaluator-only material. The controlled-review protocol supplies that
+separate path; DOI registration remains pending.
 
 ## R10. Completed prospective studies and stronger open claims
 

@@ -1,6 +1,6 @@
 {
   "schema": "llm4or-paper-evidence-manifest-v1",
-  "created_at_local_date": "2026-10-15",
+  "created_at_local_date": "2026-10-16",
   "method_name": "Benchmark-Grounded Proof-Carrying Knowledge Compilation",
   "purpose": "Single machine-readable entry point binding every headline paper claim to terminal evidence, exact file identity, permitted interpretation, and claim boundary.",
   "source_of_truth_order": [
@@ -658,29 +658,6 @@
       "permitted_claim": "Across the complete authored six-shadow-guard library grammar and all 64 calibration subsets, proof-constrained label-independent description length selects 64/64 fully correct libraries versus 1/64 for a proof-only frozen-hash selector, with 132 routing-decision corrections and no regressions.",
       "boundary": "This is an exact bounded mechanism effect over an authored finite library grammar, not a sample from natural library evolution. It does not measure current TSP/OR library length, add benchmark-accuracy evidence or perform promotion."
     },
-    "release_readiness_delta": {
-      "artifact": "experiments/release_readiness_delta_v2_20261015.json",
-      "sha256": "5bbee3ca8cf8169a2b85aa75526445ea503ac57c46a846adf310d6a2355e8106",
-      "schema": "llm4or-release-readiness-delta-v2",
-      "assertions": {
-        "status": "not_ready",
-        "repository.root_license_present": false,
-        "manifest_inventory.unique_bound_paths": 46,
-        "manifest_inventory.git_tracked": 7,
-        "manifest_inventory.git_untracked": 39,
-        "manifest_inventory.missing": 0,
-        "content_and_secret_scan.credential_literal_patterns.bearer_token_hits": 0,
-        "content_and_secret_scan.credential_literal_patterns.openai_style_key_hits": 0,
-        "content_and_secret_scan.credential_literal_patterns.quoted_secret_assignment_hits": 0,
-        "environment_and_clone_readiness.offline_environment_spec_present": true,
-        "environment_and_clone_readiness.full_provider_solver_native_environment_locked": false,
-        "environment_and_clone_readiness.submodule_initialized_now": false,
-        "environment_and_clone_readiness.credential_free_clean_clone_rebuild_completed": false,
-        "decision.release_ready": false
-      },
-      "permitted_claim": "The current 45-path evidence package is complete on disk but not integrated into a licensed, rights-safe, credential-free reproducible release.",
-      "boundary": "Read-only release audit; no license, Git index, history, submodule, public repository or archive was modified."
-    },
     "targeted_offline_verification": {
       "artifact": "results/paper_evidence_offline_verification_20261014.json",
       "sha256": "27c0d1cfacb77d03036fa541c2bda7ff17402e66020dc6ccf527893a7d23a4c9",
@@ -700,22 +677,68 @@
       "permitted_claim": "Targeted offline contract and reconstruction tests for the five paper evidence axes pass under the recorded source identities.",
       "boundary": "Not a rerun of headline benchmark inference or the complete historical repository suite."
     },
-    "remote_recursive_layer_a_http1": {
-      "artifact": "experiments/clean_clone_layer_a_remote_http1_audit_20261015.json",
-      "sha256": "4be4b7dfcf7f7ec03680588b4c349e74cdceb7b0b6837c1418f4a06b76b266cf",
-      "schema": "llm4or-remote-recursive-layer-a-http1-audit-v1",
+    "public_release_integrity": {
+      "artifact": "experiments/post_publication_release_closure_20261016.json",
+      "sha256": "a66e91657c66b7a25d2a5a79ab488146628b3049a9b8b9079f6f394cc05bf290",
+      "schema": "llm4or-post-publication-release-closure-v1",
       "assertions": {
-        "status": "passed_remote_submodule_recursive_credential_free_layer_a_http1",
-        "source.commit": "2002b29851b2ab118001251566b21d76ac339474",
-        "remote_submodule.checked_out_commit": "c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010",
-        "remote_submodule.missing_reachable_objects": 0,
-        "remote_submodule.fsck_full_passed": true,
-        "remote_submodule.remote_acquisition_verified": true,
-        "layer_a.tests": 53,
-        "safety.api_or_model_calls": 0
+        "status": "passed_public_history_free_release_clean_clone",
+        "git_identity.commit": "3b870323935fa0a00ffd3fe9d1dc3512323beacf",
+        "git_identity.parent_count": 0,
+        "git_identity.reachable_commit_count_at_tag": 1,
+        "release.tag": "v1.0.0",
+        "release.all_server_digests_match_local": true,
+        "public_clean_clone.main_remote_acquisition_verified": true,
+        "public_clean_clone.submodule_remote_acquisition_verified": true,
+        "verification.layer_a_tests": 79,
+        "verification.additional_release_tests": 12,
+        "verification.reconstruction_and_preflight_commands": 6,
+        "execution.api_or_model_calls": 0
       },
-      "permitted_claim": "At the bound main source commit, Git HTTPS HTTP/1.1 retrieved the exact pinned solver-in-the-loop submodule from GitHub with a complete object graph and supported all 53 credential-free Layer-A tests.",
-      "boundary": "This run does not prove public main-repository availability, rights clearance, historical publisher safety, or provider/solver/figure reexecution."
+      "permitted_claim": "The public v1.0.0 history-free repository, release assets, recursive dependencies and credential-free integrity/audit reconstruction are externally verified.",
+      "boundary": "The public package verifies integrity, aggregate arithmetic and body-free identities; it does not rescore restricted benchmark endpoints or establish an archival DOI."
+    },
+    "independent_public_release_review": {
+      "artifact": "experiments/independent_public_release_review_20261016.json",
+      "sha256": "b51fea682d1816f0399ce7133d229dd81ed0568747b4a5849fc35bcf6f0516f9",
+      "schema": "llm4or-independent-public-release-review-v1",
+      "assertions": {
+        "status": "completed_with_critical_public_endpoint_rescoring_gap",
+        "verified.release_assets_with_matching_size_and_sha256": 11,
+        "verified.layer_a_tests_passed": 79,
+        "verified.additional_release_tests_passed_after_declared_provider_install": 12,
+        "verified.reconstruction_commands_passed": 3,
+        "verified.paper_paths": 70,
+        "verified.paper_assertions": 416,
+        "verified.paper_boundaries": 15,
+        "verified.body_free_output_identities": 2985,
+        "execution.api_or_model_calls": 0,
+        "execution.benchmark_solver_calls": 0,
+        "conclusion": "passed_history_free_public_integrity_package_not_complete_public_endpoint_reproduction"
+      },
+      "permitted_claim": "A fresh-context public-only reviewer verified the history-free release, aggregate arithmetic and bounded theory while identifying the public endpoint-rescoring limitation.",
+      "boundary": "This review deliberately lacked restricted task bodies and evaluator-only answers; endpoint recomputation is a separate controlled review."
+    },
+    "controlled_endpoint_review": {
+      "artifact": "experiments/controlled_endpoint_review_audit_20261016.json",
+      "sha256": "9dd9f89f88bf82e5590a44521e4c81b590b7b4d078f907eb4105f9b45675e1d7",
+      "schema": "llm4or-controlled-endpoint-review-audit-v1",
+      "assertions": {
+        "status": "passed_all_controlled_endpoints_exact",
+        "tsp.records": 140,
+        "tsp.static_correct": 54,
+        "tsp.skill_correct": 100,
+        "tsp.corrections": 46,
+        "or_debug.records": 2845,
+        "or_debug.corrected.evolved_correct": 2752,
+        "or_debug.released.evolved_correct": 2236,
+        "or_debug.arm_objects_exact": 5690,
+        "fresh_common38.identities_aligned": 38,
+        "fresh_common38.request_response_payloads_parsed": 0,
+        "execution.api_calls": 0
+      },
+      "permitted_claim": "A fresh-context reviewer independently recomputed the TSP, OR-Debug and common-38 endpoints exactly under hash-bound restricted-data custody.",
+      "boundary": "Aggregate-only controlled verification; restricted inputs remain non-public, common-38 budgets remain unequal, and within-source confirmation does not establish broad generalization or automatic acquisition."
     }
   },
   "paper_documents": {
@@ -725,11 +748,11 @@
     },
     "manuscript_draft": {
       "path": "manuscript/MANUSCRIPT_DRAFT.md",
-      "sha256": "e711c2867ed5069cc7184a0902d46860266c175babbf4d01520842265ec11cfd"
+      "sha256": "72abf87dbeabe3075bf5af70110761657add680be0cc46a7b149eabd829458f1"
     },
     "manuscript_evidence_audit": {
       "path": "manuscript/MANUSCRIPT_EVIDENCE_AUDIT.md",
-      "sha256": "917fc0736969b979e2bfa7e044af3cbc1b30402685a01ab6110dd8a63102770a"
+      "sha256": "530da4410a79d954934b1a35d03864c32f552c8710dc592db75a1f5b447cc5c5"
     },
     "worked_example": {
       "path": "manuscript/WORKED_EXAMPLE.md",
@@ -745,7 +768,7 @@
     },
     "supplementary_reproducibility": {
       "path": "manuscript/SUPPLEMENTARY_REPRODUCIBILITY.md",
-      "sha256": "1796f4064932ac668e14dbfd9b681726437950d192678323c77f6078da0c0688"
+      "sha256": "10f52e359d566de0954b99438f40f21c6b79db7f8b2bca011707086f4efc0b6a"
     },
     "knowledge_evolution_theory": {
       "path": "docs/KNOWLEDGE_EVOLUTION_THEORETICAL_FRAMEWORK_20261015.md",
@@ -781,7 +804,7 @@
     },
     "method_roadmap": {
       "path": "docs/TOP_CONFERENCE_METHOD_ROADMAP.md",
-      "sha256": "97e43e8b6be5becc56e423e038875793e1ea8df0560fc41dd278c0f010673962"
+      "sha256": "219dea96ec22b00358c560a671e5551277d0174e66f6d0f1c72702d1b7eb1363"
     },
     "component_ablation_report": {
       "path": "docs/COMPONENT_ABLATION_IDENTIFIABILITY_AUDIT_20261015.md",
@@ -812,12 +835,24 @@
       "sha256": "0a070c2a40ed07378604159bca8347780a1a27bd40470c09197bcd339556abd6"
     },
     "data_code_availability_audit": {
-      "path": "docs/DATA_CODE_AVAILABILITY_AUDIT_V3_20261016.md",
-      "sha256": "e02c524c4ad8d622edd774aca9d0b5aa870d9045d83bcaa34de344c0bbeb67eb"
+      "path": "docs/DATA_CODE_AVAILABILITY_AUDIT_V4_20261016.md",
+      "sha256": "9ab7595b782edd85f0041b3a9ff1456969e898dbbc44e6409cfd12b45f960da6"
     },
     "release_readiness_report": {
       "path": "docs/RELEASE_READINESS_DELTA_V2_20261015.md",
       "sha256": "b4932c2dc6415799d4f16e735aa3934770f25ed902d728564203978ca5e4db4b"
+    },
+    "independent_public_release_review": {
+      "path": "docs/INDEPENDENT_PUBLIC_RELEASE_REVIEW_20261016.md",
+      "sha256": "5da57368bfa7682a24fb508ff92f5edd62556c03746b6fd3f96c76649819e3a4"
+    },
+    "controlled_endpoint_review_protocol": {
+      "path": "docs/CONTROLLED_ENDPOINT_REVIEW_PROTOCOL_20261016.md",
+      "sha256": "d023d7e763e912bf2677a94c8b3c2f65bdd0ade73563e8e6e8787e8afb1fcefe"
+    },
+    "controlled_endpoint_review_audit": {
+      "path": "docs/CONTROLLED_ENDPOINT_REVIEW_AUDIT_20261016.md",
+      "sha256": "60c2ca16743c8f84380bc1fd92e34a222bfd6776ad525ad3751d3d27839d329d"
     }
   },
   "global_claim_boundaries": [

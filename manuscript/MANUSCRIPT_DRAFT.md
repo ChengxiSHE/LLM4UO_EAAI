@@ -1,12 +1,13 @@
 # Benchmark-Grounded Proof-Carrying Knowledge Compilation for Reliable Optimization Modeling
 
-**Status:** evidence-grounded manuscript draft, 15 October 2026. Results in this
+**Status:** evidence-grounded manuscript draft, 16 October 2026. Results in this
 document are restricted to terminal artifacts bound by the project evidence
 manifest. The eight-pair matched-feedback engineering canary is complete and
 negative; the fresh RCPSP/VRPTW common-protocol comparison, bounded finite
-component censuses and a bounded active-acquisition census are complete. Natural-language fact acquisition,
-broader source replication, author metadata,
-and submission-specific formatting remain incomplete. Figures 1 and 2 have
+component censuses and a bounded active-acquisition census are complete. The
+history-free public release, independent public integrity review and controlled
+endpoint recomputation are complete. Natural-language fact acquisition, broader source replication, an
+archival DOI, and submission-specific formatting remain incomplete. Figures 1 and 2 have
 passed publication-size render and visual QA.
 A claim-level audit is maintained in
 [`MANUSCRIPT_EVIDENCE_AUDIT.md`](MANUSCRIPT_EVIDENCE_AUDIT.md).
@@ -43,7 +44,11 @@ fresh common cohort of 38 larger RCPSP/VRPTW instances, proof-carrying
 compilation is correct on 30, compared with 13 for answer-blind BIND and 4 for
 CoE-safe; the one-call Base is correct on none. The paired current-versus-BIND
 comparison contains 18 corrections and one regression (Holm-adjusted
-$p=7.63\times10^{-5}$). A bounded automatic proposer passes 20,977 semantic assignments but
+$p=7.63\times10^{-5}$). This fixed-cohort comparison uses unequal native
+inference budgets, does not equalize authored construction cost or provider
+tokens, includes answer-bearing feedback only in the separately reported BIND
+final row, and covers two families from one source lineage. A bounded automatic
+proposer passes 20,977 semantic assignments but
 fails an exact resource obligation. In a subsequent eight-pair engineering
 canary, fact-equivalent flat and verifier-partitioned feedback both admit all
 eight proposals, with zero discordant pairs; the prespecified progression gate
@@ -985,13 +990,13 @@ candidate. One shared exclusive durable publisher now serves the nine
 source-hash-bound historical adapters. A final release audit also replaced a
 private provider-preflight dependency with a body-free public surface that binds
 only the endpoint, model, concurrency, CA identity and TLS construction. The
-earlier local candidate is therefore superseded; the corrected candidate still
-must be rebuilt and published. Gurobi remains a separate commercial dependency,
-and no live repository or DOI is claimed. The pinned external
-submodule is now independently retrievable: forcing Git HTTPS to HTTP/1.1
-obtained the exact commit, verified a complete object graph and passed all 53
-credential-free Layer-A tests in a fresh recursive checkout. These remaining
-publication steps do not change the closed numerical results.
+corrected history-free candidate is publicly frozen as `v1.0.0`; an
+unauthenticated recursive clone acquired the main repository and pinned
+submodule, passed full object checks, 91 release tests and six deterministic
+reconstruction/preflight commands, and remained clean. All 11 release-asset
+server digests match their local sources. Gurobi remains a separate commercial
+dependency, and no archival DOI is claimed. These archival conditions do not
+change the closed numerical results.
 
 The current implementation now exposes one canonical answer-free skill
 manifest per family and a parent-linked library manifest binding the router,
@@ -1012,7 +1017,8 @@ optimization-modeling knowledge into versioned typed programs with explicit
 verification, selective routing, and endpoint-tested promotion. Frozen TSP and
 OR-Debug studies show large full-denominator gains over strong static controls,
 and the fresh common-38 comparison retains a large advantage over Base, BIND
-and CoE-safe on two larger optimization families. A public-only mixed router
+and CoE-safe on two larger optimization families under unequal native inference
+budgets, non-equalized authored construction cost, and one source lineage. A public-only mixed router
 preserves all direct-family outputs, while finite component censuses isolate
 bounded semantic-admission, resource-admission and selective-routing effects. External
 reproductions, a negative automatic proposer, a zero-discordance matched
@@ -1026,20 +1032,39 @@ fresh source lineage remain valuable extensions. The latter is required before
 claiming broad benchmark superiority, but is not needed for the bounded
 common-38 claim reported here.
 
+The public `v1.0.0` package is an integrity/audit release: it reconstructs
+aggregate arithmetic, evidence bindings and body-free output identities, but
+does not redistribute restricted task bodies or evaluator-only answers and
+therefore cannot itself rescore every central endpoint. A separate frozen,
+hash-bound controlled-review protocol permits independent endpoint
+recomputation under restricted-data custody; a fresh-context reviewer
+reproduced all three central endpoint families exactly. This separation preserves the
+release boundary rather than treating aggregate integrity as end-to-end public
+benchmark reproduction.
+
 ## Data and code availability
 
 First-party code, typed skill and library manifests, public-only routing and
 verification code, aggregate evidence, figure Source Data and deterministic
-reconstruction commands are authorized for release under Apache-2.0, with
+reconstruction commands are publicly available in the history-free `v1.0.0`
+release at <https://github.com/ChengxiSHE/LLM4UO_EAAI> under Apache-2.0, with
 explicitly marked author-owned aggregate Source Data and documentation under CC
-BY 4.0. The public repository and archival DOI will be inserted only after the
-corrected history-free candidate is published and independently verified. The
-solver-in-the-loop dataset remains an external pinned submodule under its
-upstream terms, and Gurobi 13.0.1 requires a separate user installation and
-license. Provider replay requires a user-supplied account and credential;
-credential-free evidence reconstruction does not. Private request and response
-bodies, credentials, evaluator-only answers and restricted upstream task text
-are excluded from release.
+BY 4.0. The exact release bundle and five-layer audit sidecars are attached to
+the GitHub Release; an archival DOI will be added after external deposit and is
+not yet claimed. The solver-in-the-loop dataset remains an external pinned
+submodule under its upstream terms, and Gurobi 13.0.1 requires a separate user
+installation and license. Provider replay requires a user-supplied account and
+credential; credential-free evidence reconstruction does not. Private request
+and response bodies, credentials, evaluator-only answers and restricted
+upstream task text are excluded from release.
+The public package therefore supports integrity reconstruction rather than
+public rescoring from those excluded materials. Conference artifact reviewers
+may recompute the TSP, OR-Debug and common-38 endpoints through the frozen
+controlled-review protocol, which verifies exact input/code hashes and emits
+only an aggregate attestation
+([protocol](../docs/CONTROLLED_ENDPOINT_REVIEW_PROTOCOL_20261016.md)).
+The completed aggregate audit is available separately
+([audit](../docs/CONTROLLED_ENDPOINT_REVIEW_AUDIT_20261016.md)).
 
 ## AI-use disclosure
 

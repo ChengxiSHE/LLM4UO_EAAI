@@ -1,5 +1,12 @@
 # Data and code availability audit v3 — 2026-10-16
 
+> **Superseded historical snapshot.** This document records the final
+> pre-publication gate. Current availability is reported in
+> [`DATA_CODE_AVAILABILITY_AUDIT_V4_20261016.md`](DATA_CODE_AVAILABILITY_AUDIT_V4_20261016.md);
+> the history-free public repository and `v1.0.0` release are verified, while
+> the archival DOI remains pending.
+
+
 ## Current status
 
 The author-controlled release decisions are closed. The author confirmed

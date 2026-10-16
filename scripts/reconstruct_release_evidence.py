@@ -18,7 +18,7 @@ if str(ROOT) not in sys.path:
 from llm4or.release_evidence_reconstruction import build_release_evidence_report
 
 
-OUTPUT = Path("results/release_evidence_reconstruction_v1_20261015.json")
+OUTPUT = Path("results/release_evidence_reconstruction_v3_20261016.json")
 
 
 def _render(value) -> bytes:

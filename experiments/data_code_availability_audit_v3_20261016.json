@@ -7,7 +7,7 @@
     "notice_and_third_party_exclusions_approved": true,
     "software_license": "Apache-2.0"
   },
-  "boundary": "Author authorization and local release engineering do not establish that a public repository or DOI exists. The old local bundle is superseded. No restricted task text, private request/response body, evaluator-only answer or credential is released.",
+  "boundary": "Historical pre-publication snapshot retained for provenance. Current public availability is governed by v4; no archival DOI is claimed.",
   "date": "2026-10-16",
   "execution": {
     "api_or_model_calls": 0,
@@ -24,7 +24,7 @@
   "inputs": [
     {
       "path": "experiments/author_release_decision_packet_20261015.json",
-      "sha256": "034773f082115cb030020614a1097af1462dbbcacdc6df52fdf60be5293a39b0"
+      "sha256": "47e66cac1293f984fe2f8a1be7f15212248949edef45b56be137290c4a7f9940"
     },
     {
       "path": "experiments/provider_environment_preflight_audit_20261016.json",
@@ -60,7 +60,8 @@
     "perform a post-publication independent claim and clean-clone audit"
   ],
   "schema": "llm4or-data-code-availability-audit-v3",
-  "status": "authorized_local_release_closure_publication_pending",
+  "status": "superseded_by_v4_public_release_verified",
+  "superseded_by": "experiments/data_code_availability_audit_v4_20261016.json",
   "superseded_candidate": {
     "bundle_sha256": "46a1d0417b24387a2adadbb57bd09d7012b17d24d00eab36361654b6806939e2",
     "reason": "predates the final provider-surface correction; mechanism evidence only; do not publish"

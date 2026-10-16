@@ -1,6 +1,6 @@
 # Manuscript claim and evidence audit
 
-Status: post-review revision audited against terminal evidence on 2026-10-15. This
+Status: public-release revision audited against terminal evidence on 2026-10-16. This
 file is a human-readable companion to
 [`paper_evidence_manifest_20261015.json`](../experiments/paper_evidence_manifest_20261015.json).
 The machine-readable manifest remains authoritative when narrative documents
@@ -10,11 +10,33 @@ disagree.
 
 The closed numerical and artifact-availability claims in
 [`MANUSCRIPT_DRAFT.md`](MANUSCRIPT_DRAFT.md) are consistent with their terminal
-evidence. The current draft has 1,040 lines, 8,148 whitespace-delimited words
+evidence. The current draft has 1,079 lines, 8,491 whitespace-delimited words
 and SHA-256
-`e711c2867ed5069cc7184a0902d46860266c175babbf4d01520842265ec11cfd`.
+`72abf87dbeabe3075bf5af70110761657add680be0cc46a7b149eabd829458f1`.
 All 18 citation keys used by the draft are present in
 [`references.bib`](references.bib), and every bibliography entry is cited.
+
+The history-free `v1.0.0` repository and release are publicly available at
+<https://github.com/ChengxiSHE/LLM4UO_EAAI>. An unauthenticated recursive
+clean clone retrieved the main repository and pinned submodule, then passed 91
+credential-free release tests and six reconstruction/preflight commands. All 11
+release-asset server digests match the local bundle and sidecars. An archival
+DOI remains pending and is not claimed by the manuscript.
+
+A fresh-context reviewer then used only the unauthenticated public repository
+and release. The reviewer reproduced the Git identities, 11 asset digests,
+79-test Layer-A contract, additional 12-test release suite, aggregate
+arithmetic and bounded theoretical statements. The reviewer correctly found
+that the public package is an integrity/audit package rather than an
+end-to-end endpoint-rescoring package because restricted task bodies and
+evaluator-only answers are intentionally excluded. The draft now states this
+boundary and binds a controlled, aggregate-only endpoint-review protocol. A
+fresh-context reviewer subsequently recomputed all three central endpoint
+families from the hash-bound restricted inputs: TSP matched exactly, OR-Debug
+matched all 2,845 records and 5,690 arm objects after 5,597 local Gurobi calls,
+and common-38 matched through a byte-hash-only ledger path that parsed no
+request or response payload. The controlled result remains separate from the
+public integrity checks.
 
 The revision adds no endpoint result. It makes the construction operator
 explicit as `Abstract -> Acquire -> Admit -> Route -> Promote`, labels the
@@ -70,8 +92,8 @@ The experimental supplement
 [`SUPPLEMENTARY_REPRODUCIBILITY.md`](SUPPLEMENTARY_REPRODUCIBILITY.md) records
 the evidence hierarchy, environment, information boundaries, full-denominator
 endpoints, external-baseline adaptations, request accounting and current
-release limitations over 352 lines (SHA-256
-`1796f4064932ac668e14dbfd9b681726437950d192678323c77f6078da0c0688`).
+release limitations over 365 lines (SHA-256
+`10f52e359d566de0954b99438f40f21c6b79db7f8b2bca011707086f4efc0b6a`).
 It adds no endpoint result beyond the sealed artifacts in the headline claim
 ledger.
 
@@ -80,8 +102,9 @@ knowledge-construction engineering canary is complete and negative; the fresh
 common-38 comparison, bounded semantic/resource/routing component censuses and
 exact finite active-acquisition and library-complexity censuses are complete.
 Natural-language grammar and fact acquisition, natural library-selection replication, broader
-source replication, the release package and author-supplied disclosure fields
-remain open. Figures 1 and 2 have passed
+source replication and the archival DOI remain open. The history-free public
+release, controlled endpoint review, author metadata and disclosure
+fields are closed. Figures 1 and 2 have passed
 strict source, editable-text, collision, alignment and final-size visual QA;
 these renders add no benchmark result.
 
@@ -203,7 +226,7 @@ material. SkillOpt and AlphaOPT common-40 rows may appear in a supplementary
 reproduction table; they should not be inserted into the main comparison as if
 all methods shared one native protocol.
 
-## Submission-critical open evidence
+## Submission-critical boundaries and optional extensions
 
 1. **Natural-language acquisition beyond the bounded census.** Preserve the
    completed negative eight-pair canary and the positive exact finite census.
@@ -224,15 +247,14 @@ all methods shared one native protocol.
    naturally proposed libraries or a second independently authored library
    grammar. Do not convert deterministic census rows into sampling p-values or
    broad necessity claims.
-4. **Release closure.** Obtain author confirmation for the 792 first-party
-   candidates, select a root license and attribution policy, approve and
-   implement exclusive durable replacements or wrappers for the nine
-   historical publishers, rebuild the final history-free candidate, publish
-   it, and rerun all five layers plus the independent claim audit.
-5. **Paper completion.** The final figures and worked example are complete.
-   Add author metadata, the archival repository and DOI, and the
-   author-approved AI-use disclosure after the release artifact and venue are
-   fixed.
+4. **Controlled endpoint review (closed).** A fresh-context reviewer reproduced
+   TSP, OR-Debug and common-38 exactly from hash-bound restricted inputs. Keep
+   this aggregate attestation distinct from the public integrity package: it
+   verifies endpoint custody but does not grant redistribution rights.
+5. **Archival completion.** The public history-free repository, author
+   metadata, scoped licenses, disclosure text, final figures and worked
+   example are complete. Deposit the exact release in an external archive and
+   add the verified DOI; do not infer a DOI from the GitHub Release.
 
 ## Validation performed for this audit
 
@@ -264,6 +286,12 @@ all methods shared one native protocol.
   the same 38 identities, recomputed the four paired correction/regression
   tables and exact tests, and reproduced the Holm-adjusted p-values and
   answer-blind at-most-one-call sensitivity view.
+- Independently recomputed the controlled TSP, OR-Debug and common-38
+  endpoints. TSP reproduced 54/140 versus 100/140; OR-Debug reproduced every
+  one of 2,845 records and 5,690 arm objects after 5,597 local Gurobi calls;
+  common-38 reproduced 30/0/13/13/4 and all paired/Holm values using raw-byte
+  ledger hashes without parsing request or response payloads. The attestation
+  contains aggregate values and hashes only.
 - Verified the G07 scope decision against the failed DCP development gate and
   still-sealed 219-identity confirmation partition, and against MIPLIB-NL's
   metadata-only, non-score-ready status. No new source was dispatched.
@@ -280,17 +308,15 @@ all methods shared one native protocol.
 - Recomputed the exact 80% and 90% sample-size tables and verified that the
   historical proposal, library-selection and routing counts do not satisfy the
   corresponding unit definitions.
-- Preserved the historical release snapshots, integrated the reviewed
-  allowlist, and replaced body- or repair-bearing manifest bindings with
-  deterministic metadata-only projections. The current manifest is 70/70
-  tracked with zero restricted or private source paths bound; its 416
-  assertions and 15 boundaries are unchanged. All five environment layers have
-  explicit audits, the pinned submodule object graph is complete, and a
-  one-commit zero-parent candidate passes the 53-test credential-free Layer-A
-  rebuild. A fresh recursive checkout has also acquired the pinned submodule
-  from GitHub over HTTP/1.1 and passed the same 53-test Layer-A chain. The root
-  license, first-party rights confirmation, attribution policy, nine historical
-  publisher replacements and author-approved release remain open.
+- Verified the public `v1.0.0` zero-parent candidate, all release assets and the
+  remote recursive main/submodule acquisition. The canonical public-integrity
+  entrypoint runs 79 Layer-A tests and three deterministic checks; 12 additional
+  release/provider tests pass in the separately declared provider environment.
+  The current manifest binds the full tracked public evidence surface with zero
+  restricted or private source paths. The public package reconstructs integrity
+  and aggregate arithmetic, while restricted endpoint rescoring remains under
+  the separate controlled-review protocol. Scoped licenses, rights decisions,
+  NOTICE, publisher migration and public release are closed; the DOI is open.
 - Rechecked every numeric statement in the theory-to-evidence mapping against
   the sealed count, TSP, OR-Debug and mixed-router artifacts.
 - Checked that the main draft records the transition from distributed pinned

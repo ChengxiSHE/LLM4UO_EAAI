@@ -19,13 +19,13 @@ class ReleaseEvidenceReconstructionTests(unittest.TestCase):
         report = build_release_evidence_report(ROOT)
         self.assertEqual(report["status"], "passed_credential_free_layer_a")
         self.assertEqual(report["paper_manifest"], {
-            "assertions": 416,
+            "assertions": 430,
             "boundaries": 15,
-            "path_hashes": 70,
+            "path_hashes": 74,
             "path_hash_mismatches": 0,
         })
-        self.assertEqual(report["goal_evidence"]["references"], 146)
-        self.assertEqual(report["goal_evidence"]["unique_paths"], 133)
+        self.assertEqual(report["goal_evidence"]["references"], 149)
+        self.assertEqual(report["goal_evidence"]["unique_paths"], 137)
         self.assertEqual(report["goal_evidence"]["mismatches"], 0)
         self.assertEqual(report["citations"]["cited_keys"], 18)
         self.assertEqual(report["citations"]["missing"], [])
@@ -61,14 +61,14 @@ class ReleaseEvidenceReconstructionTests(unittest.TestCase):
         evidence_layer = layers["A_evidence_integrity"]
         self.assertEqual(
             evidence_layer["status"],
-            "passed_remote_recursive_credential_free_layer_a_http1",
+            "passed_public_v1_0_0_recursive_credential_free_integrity_contract",
         )
         self.assertEqual(evidence_layer["credentials"], "forbidden")
-        self.assertTrue(
-            evidence_layer["commands"][0].startswith(
-                "git -c http.version=HTTP/1.1 submodule update"
-            )
+        self.assertEqual(
+            evidence_layer["commands"],
+            ["python3 scripts/run_public_integrity.py --check"],
         )
+        self.assertEqual(evidence_layer["expected_test_count"], 79)
         remote_dependency = evidence_layer["remote_dependency"]
         self.assertTrue(remote_dependency["remote_acquisition_verified"])
         self.assertEqual(remote_dependency["missing_reachable_objects"], 0)
@@ -80,17 +80,15 @@ class ReleaseEvidenceReconstructionTests(unittest.TestCase):
         )
         self.assertEqual(
             evidence_audit["status"],
-            "passed_remote_submodule_recursive_credential_free_layer_a_http1",
+            "passed_public_history_free_release_clean_clone",
         )
-        self.assertTrue(
-            evidence_audit["remote_submodule"]["remote_acquisition_verified"]
-        )
+        self.assertTrue(evidence_audit["public_clean_clone"]["submodule_remote_acquisition_verified"])
         self.assertEqual(
-            evidence_audit["remote_submodule"]["checked_out_commit"],
+            evidence_audit["public_clean_clone"]["submodule_commit"],
             remote_dependency["commit"],
         )
-        self.assertFalse(evidence_audit["safety"]["credentials_read"])
-        self.assertEqual(evidence_audit["safety"]["api_or_model_calls"], 0)
+        self.assertFalse(evidence_audit["execution"]["credentials_read"])
+        self.assertEqual(evidence_audit["execution"]["api_or_model_calls"], 0)
         provider_layer = layers["D_provider_replay"]
         self.assertEqual(provider_layer["max_concurrency"], 5)
         self.assertEqual(provider_layer["status"], "passed_transport_preflight_replay_external")
@@ -153,7 +151,7 @@ class ReleaseEvidenceReconstructionTests(unittest.TestCase):
         )
         self.assertEqual(
             packet["status"],
-            "author_approved_ready_for_verified_publication",
+            "author_approved_publication_verified_doi_pending",
         )
         for item in packet["inputs"]:
             self.assertEqual(
@@ -174,12 +172,9 @@ class ReleaseEvidenceReconstructionTests(unittest.TestCase):
             "user_2026-10-15_reaffirmed_2026-10-16",
         )
         execution = packet["execution"]
-        for key in (
-            "repository_published",
-            "doi_reserved",
-            "credentials_read",
-        ):
-            self.assertFalse(execution[key])
+        self.assertTrue(execution["repository_published"])
+        self.assertFalse(execution["doi_reserved"])
+        self.assertFalse(execution["credentials_read"])
         self.assertTrue(execution["license_applied"])
         self.assertTrue(execution["publisher_code_changed"])
         self.assertEqual(execution["publisher_adapters"], 9)
