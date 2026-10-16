@@ -1,0 +1,180 @@
+{
+  "schema": "llm4or-matched-acquisition-design-audit-v1",
+  "audited_at_local_date": "2026-10-15",
+  "status": "not_ready_for_freeze_or_dispatch",
+  "research_question": "Does interaction-aware separating-witness feedback improve verifier-valid typed-skill acquisition over flat feedback when evidence, grammar, model and budget are matched?",
+  "authoritative_inputs": [
+    {
+      "path": "llm4or/typed_count_skill.py",
+      "sha256": "4e7af9b56a2da61eec9dcbe68beb331beadb3ed7d8b997575ec0d2766750b49d"
+    },
+    {
+      "path": "llm4or/typed_count_cegis_revision.py",
+      "sha256": "cc9fec59056d35f96eff4c18ac990c0ea3674189a1d6d07ba9141d29dbe17720"
+    },
+    {
+      "path": "results/dcp_typed_count_repair_input_20261014.json",
+      "sha256": "4bd31cba7a752110b38974faedfd2839682e94a9ea3d8e944b31b6028e8c0d53"
+    },
+    {
+      "path": "results/dcp_typed_count_cegis_revision_20261014_audit.json",
+      "sha256": "c3fb17f664ccfbf4e46d08b7695e9730111bcd4b3ccf01cb48074307c6cc03f2"
+    },
+    {
+      "path": "results/dcp_typed_count_repair_certificate_v3_20261014.json",
+      "sha256": "43af5c30bc8bc69f0c60a990f133fe842e9cfee149119bbcf37b08159730d911"
+    },
+    {
+      "path": "docs/TOP_CONFERENCE_METHOD_ROADMAP.md",
+      "sha256": "bedea9d61f4980cd0152ef7ef69bb5743b97f4bbd0c85b1a390da8382d4f1236"
+    }
+  ],
+  "verified_fixed_components": {
+    "candidate_grammar_size": 64,
+    "binary_choice_fields": [
+      "tail_role",
+      "counted_scope",
+      "relation",
+      "bound_strategy",
+      "zero_tail_policy",
+      "resource_policy"
+    ],
+    "semantic_assignments_checked_for_preserved_proposal": 20977,
+    "preserved_proposal_failure": "resource_model_rejected",
+    "minimum_passing_distance": 2,
+    "unique_minimum_repair": true,
+    "distance_one_neighbors": 6,
+    "distance_one_failure_types": {
+      "semantic_counterexample": 4,
+      "untrusted_resource_policy": 1,
+      "resource_model_rejected": 1
+    },
+    "existing_model_source_candidates": 1,
+    "existing_revision_requests": 1,
+    "existing_untreated_matched_arm": false
+  },
+  "readiness_checks": [
+    {
+      "id": "A01",
+      "requirement": "A frozen definition of the paired experimental unit.",
+      "status": "failed",
+      "finding": "The roadmap says eight stratified source candidates, but no artifact defines whether a source candidate is a public problem, a rejected model proposal, a grammar member, or a version-space state."
+    },
+    {
+      "id": "A02",
+      "requirement": "A deterministic eight-unit selection manifest independent of treatment outcomes.",
+      "status": "failed",
+      "finding": "Only one preserved model-generated typed candidate is bound. No eight-unit identity list, stratum definition, selection salt, or pre-treatment exclusion rule exists."
+    },
+    {
+      "id": "A03",
+      "requirement": "Two immutable feedback packets whose non-treatment information is equal.",
+      "status": "failed",
+      "finding": "No flat-feedback packet, separating-witness packet, atomic-fact ledger, fact-equivalence proof, or payload hash has been materialized."
+    },
+    {
+      "id": "A04",
+      "requirement": "A deterministic separating-witness teacher defined without the authored repair.",
+      "status": "failed",
+      "finding": "The theory defines beta(w,H), but no implementation fixes the witness universe, outcome partition, tie-breaking, stopping rule, or treatment of semantic versus resource outcomes."
+    },
+    {
+      "id": "A05",
+      "requirement": "A matched request and accounting contract.",
+      "status": "failed",
+      "finding": "Model, schema and conceptual request count are named, but there is no frozen per-unit call schedule, maximum rounds, input-byte accounting, output ceiling, retry policy, randomization/order policy, or same-fingerprint rule."
+    },
+    {
+      "id": "A06",
+      "requirement": "A primary estimator and inference rule consistent with the sample size.",
+      "status": "failed",
+      "finding": "Verifier pass is named as primary, but the denominator, paired estimator, missingness rule and uncertainty interval are absent. The canary gate of two net corrections and zero regressions is a progression heuristic, not significance: with exactly two discordant pairs its one-sided sign-test p-value is 0.25."
+    },
+    {
+      "id": "A07",
+      "requirement": "A distinction between canary progression and publishable confirmation.",
+      "status": "partial",
+      "finding": "The roadmap requires a separately frozen expansion after a passing canary, but no expansion population, effect size, power target, grouping unit or alpha allocation is defined."
+    },
+    {
+      "id": "A08",
+      "requirement": "Outcome and information custody.",
+      "status": "partial",
+      "finding": "Existing count artifacts exclude authored candidate objects and reference answers from the repair input, but no new inference bundle, process-level isolation, or before/after custody receipt exists for the proposed matched study."
+    },
+    {
+      "id": "A09",
+      "requirement": "A claim boundary separating acquisition from benchmark accuracy and component ablation.",
+      "status": "passed",
+      "finding": "Current documents correctly state that the exposed count study can test verifier-valid acquisition only. It cannot establish fresh benchmark accuracy, complexity-control benefit, routing benefit, or cross-benchmark automatic evolution."
+    },
+    {
+      "id": "A10",
+      "requirement": "An executable freeze, plan, authorization and terminal output namespace.",
+      "status": "failed",
+      "finding": "No matched-study implementation, plan, payload hashes, authorization, reservation ledger, run directory or terminal audit exists."
+    }
+  ],
+  "design_decisions_required_before_implementation": [
+    {
+      "id": "D01",
+      "decision": "Define the paired unit.",
+      "recommended_choice": "Use a rejected typed source proposal plus its frozen version-space state as one paired unit. Public benchmark instances remain evidence inside that unit rather than statistical replicates.",
+      "reason": "The treatment changes feedback organization for repairing a candidate; it does not change the underlying benchmark problem."
+    },
+    {
+      "id": "D02",
+      "decision": "Define the eight-unit canary population.",
+      "recommended_choice": "Create an outcome-independent deterministic manifest before any treatment request. If seven additional model-generated source proposals do not already exist, label deterministically corrupted grammar members as synthetic repair seeds rather than model proposals.",
+      "reason": "Inventing seven model proposals or selecting seeds after treatment would invalidate the causal comparison."
+    },
+    {
+      "id": "D03",
+      "decision": "Define flat and separating feedback.",
+      "recommended_choice": "Bind a common atomic-fact ledger. The flat arm receives the same fact records in canonical order without partitions; the treatment receives the same fact IDs plus a verifier-derived partition/separation structure. No authored winner, winner hash, minimum repair, endpoint label, or solved vector enters either arm.",
+      "reason": "This isolates organization and relational structure while keeping the underlying observations fixed."
+    },
+    {
+      "id": "D04",
+      "decision": "Define the teacher algorithm.",
+      "recommended_choice": "At each round, choose the eligible witness minimizing the largest verifier-outcome cell over the current version space, with lexicographic SHA-256 tie-breaking. Stop at the common round cap, a singleton version space, or a valid proposal.",
+      "reason": "This operationalizes the balanced-witness theory without consulting the authored repair."
+    },
+    {
+      "id": "D05",
+      "decision": "Define matched budgets and ordering.",
+      "recommended_choice": "Use the same model, response schema, maximum rounds, output ceiling, attempt policy and per-unit total reserved-token ceiling. Interleave paired cells using a precommitted hash order and retain every terminal or unavailable cell.",
+      "reason": "A larger treatment budget or favorable temporal ordering would confound feedback organization with compute or provider state."
+    },
+    {
+      "id": "D06",
+      "decision": "Define canary and expansion inference.",
+      "recommended_choice": "Treat the eight-unit gate only as operational progression. If it passes, preregister an independent expansion with a justified number of proposal-level units and a paired confidence interval or exact test; do not pool canary and expansion as if all units were untouched.",
+      "reason": "Eight units and a two-correction gate cannot support the intended causal headline by themselves."
+    }
+  ],
+  "prohibited_shortcuts": [
+    "Do not treat the six distance-one grammar neighbors as independent benchmark samples.",
+    "Do not use the unique minimum repair, its hash, or the authored candidate to select or phrase treatment witnesses.",
+    "Do not let the treatment receive more atomic evidence, calls, output budget, retries, or compiler capability than the flat arm.",
+    "Do not tune the teacher, prompt, strata, gate, or round cap after observing any matched outcome.",
+    "Do not label deterministic exhaustive search as model acquisition.",
+    "Do not use exposed count outcomes as a fresh benchmark-accuracy or complexity-ablation result."
+  ],
+  "dispatch_decision": {
+    "prepare_payloads": false,
+    "freeze_plan": false,
+    "authorize_requests": false,
+    "dispatch_requests": false,
+    "reason": "A01--A06 and A10 fail. The current documents specify a hypothesis and heuristic canary gate, not an executable matched experiment."
+  },
+  "execution": {
+    "new_api_calls": 0,
+    "new_model_calls": 0,
+    "new_solver_calls": 0,
+    "new_native_or_vm_calls": 0,
+    "request_or_response_bodies_read": false,
+    "credentials_read": false,
+    "evaluator_only_answers_read": false
+  }
+}

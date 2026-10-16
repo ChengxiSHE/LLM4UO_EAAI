@@ -1,0 +1,107 @@
+{
+  "schema": "llm4or-figure3-render-qa-v1",
+  "audited_at_local_date": "2026-10-17",
+  "status": "passed_publication_size_render_and_visual_qa",
+  "backend": {
+    "language": "python",
+    "library": "matplotlib",
+    "matplotlib_version": "3.10.8",
+    "render_source": "scripts/render_main_figure3.py",
+    "render_source_sha256": "9da5ce36da57e41ec452c078b88037f3257c15ce7c18bff77e62095ef9182fbe"
+  },
+  "source_data": [
+    {
+      "path": "manuscript/source_data/figure3_retailopt_summary.csv",
+      "sha256": "051a718fe1bc89228241766aca57d6b51ee3041574f2017163fe4698c5be89c8"
+    },
+    {
+      "path": "manuscript/source_data/figure3_retailopt_diagnostics.csv",
+      "sha256": "25e6bc92729b8fca0d78572ca523fa4cf752fe1197d6ee85cf9806a80d5ab13b"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "manuscript/figures/figure3_retailopt_confirmation.pdf",
+      "sha256": "fc3c9dba7b48359b1684e7589435eecd422183062a32f2d92a63b95fc2cc7510",
+      "role": "main_text_vector"
+    },
+    {
+      "path": "manuscript/figures/figure3_retailopt_confirmation.svg",
+      "sha256": "1302cd6881b9b4c3d1f60c894096be56edcf0fd8980821eed89ced909dbb0e7d",
+      "role": "editable_vector"
+    },
+    {
+      "path": "manuscript/figures/figure3_retailopt_confirmation.png",
+      "sha256": "63a45daf9854fd089c8fa5664bccedc1a99bac5e81852728cec503bdc147c2fb",
+      "role": "600_dpi_preview"
+    },
+    {
+      "path": "manuscript/figures/figure3_retailopt_confirmation.tiff",
+      "sha256": "3856a089c5cbf8f55d50bbd7266d25e4e5f62b5229a631ddcc7e33d20c488f23",
+      "role": "600_dpi_submission_raster"
+    }
+  ],
+  "final_size": {
+    "width_mm": 180.0,
+    "height_mm": 110.0,
+    "raster_dpi": 600
+  },
+  "automated_qa": {
+    "source_preflight": {
+      "verdict": "PASS",
+      "pass": 21,
+      "warn": 0,
+      "fail": 0
+    },
+    "source_data_reconstruction": {
+      "path": "results/manuscript_figure3_source_data_audit_20261017.json",
+      "sha256": "02ccc2527e14e1e6b8fff9f2f42b2315375de304356a21fb645dc6b06e4a6a26",
+      "verdict": "PASS"
+    },
+    "pdf_text": {
+      "auditable": true,
+      "text_runs": 60,
+      "minimum_font_pt": 5.5,
+      "minimum_required_pt": 5.0,
+      "below_minimum": 0,
+      "warnings": 0
+    },
+    "collision": {
+      "path": "manuscript/figures/figure3_retailopt_confirmation.collision-audit.json",
+      "sha256": "dc74306fc46e5a56e6de32788a531a7732e6351f25e430244e4c7d32a8218e68",
+      "verdict": "PASS",
+      "fail": 0,
+      "warn": 0
+    },
+    "alignment": {
+      "path": "manuscript/figures/figure3_retailopt_confirmation.alignment.json",
+      "sha256": "b5e923d191118ddadfd5b1bc3c94a74407f73af3a6aaa1b9b20d15c2229479cf",
+      "verdict": "PASS",
+      "comparisons": 4,
+      "tolerance_pt": 1.5,
+      "fail": 0,
+      "warn": 0
+    },
+    "clean_reconstruction": {
+      "path": "experiments/figure3_clean_reconstruction_audit_20261017.json",
+      "sha256": "b07a1c103e237b0570afa9f25a80e32056bce2d0907af637cb18b4d66c6087bf",
+      "verdict": "PASS",
+      "status": "passed_clean_temporary_reconstruction"
+    }
+  },
+  "visual_qa": {
+    "performed_at_final_export_size": true,
+    "panel_a": "PASS: Base and routed-knowledge values, the 63.2-point gain and the independent-source cohort definition are legible without a pooled claim",
+    "panel_b": "PASS: all four paired outcome categories are keyed, the one regression remains visible as a red segment, and the prespecified unit and test are explicit",
+    "panel_c": "PASS: the label-blind result is visually subordinate and explicitly marked post hoc and same-benchmark",
+    "panel_d": "PASS: both diagnostic denominators and paired counts are legible and the title marks the analysis post hoc",
+    "overall": "PASS"
+  },
+  "privacy": {
+    "contains_problem_text": false,
+    "contains_request_or_response_body": false,
+    "contains_evaluator_only_answer": false,
+    "contains_credential": false
+  },
+  "claim_boundary": "The figure visualizes sealed aggregate evidence and adds no model, API, solver, native-evaluator or VM call. The label-blind panel is a same-benchmark nuisance check, not an independent confirmation; the diagnostic panel localizes aggregate errors but is not a causal decomposition."
+}

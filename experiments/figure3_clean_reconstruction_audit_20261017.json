@@ -1,0 +1,73 @@
+{
+  "schema": "llm4or-figure3-clean-reconstruction-v1",
+  "status": "passed_clean_temporary_reconstruction",
+  "python": "3.10.1",
+  "declared_environment": {
+    "pymupdf": "1.28.2",
+    "contourpy": "1.3.2",
+    "cycler": "0.12.1",
+    "fonttools": "4.62.1",
+    "kiwisolver": "1.5.0",
+    "matplotlib": "3.10.8",
+    "numpy": "2.2.6",
+    "packaging": "26.0",
+    "pillow": "12.1.1",
+    "pyparsing": "3.3.2",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  },
+  "required_inputs": {
+    "requirements-figure3.txt": "71d6329a3081c04c0a0820bfb2a0aef8972c8eafa75eb0db7e0b3cf7016a779a",
+    "scripts/render_main_figure3.py": "9da5ce36da57e41ec452c078b88037f3257c15ce7c18bff77e62095ef9182fbe",
+    "scripts/audit_panel_alignment.py": "bd9a667507b4a0cfc0675d9512034b3423b8c39758e6fa96f2f5a0424a68b11d",
+    "manuscript/source_data/figure3_retailopt_summary.csv": "051a718fe1bc89228241766aca57d6b51ee3041574f2017163fe4698c5be89c8",
+    "manuscript/source_data/figure3_retailopt_diagnostics.csv": "25e6bc92729b8fca0d78572ca523fa4cf752fe1197d6ee85cf9806a80d5ab13b"
+  },
+  "renderer_returncode": 0,
+  "alignment_verdict": "PASS",
+  "comparisons": [
+    {
+      "format": "pdf",
+      "reference_sha256": "fc3c9dba7b48359b1684e7589435eecd422183062a32f2d92a63b95fc2cc7510",
+      "rebuilt_sha256": "0ce35b28913687c73033cd2c2c3c0b82fad86b2f6e6e292fa7dd1a8bc6759987",
+      "equivalent": true
+    },
+    {
+      "format": "svg",
+      "reference_sha256": "1302cd6881b9b4c3d1f60c894096be56edcf0fd8980821eed89ced909dbb0e7d",
+      "rebuilt_sha256": "ec6ca6f658442fb6264d403b5f8b3e0fc762ca1737c9650071e48c6cebe05963",
+      "equivalent": true
+    },
+    {
+      "format": "png",
+      "reference_sha256": "63a45daf9854fd089c8fa5664bccedc1a99bac5e81852728cec503bdc147c2fb",
+      "rebuilt_sha256": "63a45daf9854fd089c8fa5664bccedc1a99bac5e81852728cec503bdc147c2fb",
+      "equivalent": true
+    },
+    {
+      "format": "tiff",
+      "reference_sha256": "3856a089c5cbf8f55d50bbd7266d25e4e5f62b5229a631ddcc7e33d20c488f23",
+      "rebuilt_sha256": "3856a089c5cbf8f55d50bbd7266d25e4e5f62b5229a631ddcc7e33d20c488f23",
+      "equivalent": true
+    }
+  ],
+  "sanitized_environment_keys": [
+    "FIGURE_QA_SCRIPTS",
+    "HOME",
+    "LANG",
+    "LC_ALL",
+    "MPLCONFIGDIR",
+    "PATH",
+    "PYTHONDONTWRITEBYTECODE",
+    "PYTHONHASHSEED"
+  ],
+  "execution": {
+    "model_calls": 0,
+    "api_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "credentials_read": false
+  },
+  "claim_boundary": "The clean rebuild checks only Figure 3 rendering determinism from aggregate body-free Source Data."
+}

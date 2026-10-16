@@ -1,0 +1,82 @@
+{
+  "claim_boundary": "This audit selects a reproducible published endpoint. It does not evaluate a language-model method and does not establish benchmark accuracy.",
+  "contracts": {
+    "reference_solver": {
+      "mip_gap": 0.01,
+      "time_limit_seconds": 60
+    },
+    "reloop_code": {
+      "ast_comparison_counts": {
+        "Gt": 1,
+        "Lt": 1,
+        "LtE": 1
+      },
+      "comparison": "strict_less_than",
+      "relative_objective_error_threshold": 0.01,
+      "status_match_required": false
+    },
+    "retailopt_readme": {
+      "default_relative_tolerance": 0.0001,
+      "relaxed_archetypes": [
+        "fixed_order_cost",
+        "pack_size_integer"
+      ],
+      "relaxed_relative_tolerance": 0.01,
+      "status_match_required": true
+    }
+  },
+  "decision": {
+    "frozen_confirmatory_endpoint": "relative objective error < 0.01 on the full denominator; execution and solver status reported separately",
+    "reloop_code_endpoint_eligible": true,
+    "retailopt_readme_endpoint_eligible": false,
+    "source_snapshot_eligible": true
+  },
+  "diagnosis": {
+    "all_strict_misses_within_reloop_one_percent_endpoint": true,
+    "python_or_gurobi_import_failure": false,
+    "solver_worker_timeout_or_crash": false,
+    "strict_contract_precision_exceeds_reference_solver_gap": true
+  },
+  "execution": {
+    "credentials_read": false,
+    "new_api_calls": 0,
+    "new_model_calls": 0,
+    "new_solver_calls": 0
+  },
+  "frozen_run": {
+    "checkpoint_sha256": "a33188fed41496ffd4b12761ff602bae9ac711b9252c9f47c5442ecfa7be72f6",
+    "gurobi_version": "13.0.3",
+    "plan_sha256": "27fb66e61ec334602a352722334fd2a29e87beb9a7c8213fa5f63ce043e15c66",
+    "seed": 0,
+    "terminal_counts": {
+      "complete": 190
+    },
+    "threads": 1
+  },
+  "privacy": {
+    "contains_objectives": false,
+    "contains_per_item_results": false,
+    "contains_problem_bodies": false,
+    "contains_source_ids": false
+  },
+  "results": {
+    "denominator": 190,
+    "maximum_relative_objective_error": 0.008459538103521584,
+    "reloop_code_correct": 190,
+    "reloop_code_incorrect": 0,
+    "retailopt_readme_correct": 185,
+    "retailopt_readme_incorrect": 5,
+    "retailopt_readme_miss_archetype_counts": {
+      "moq_binary": 5
+    }
+  },
+  "schema": "llm4or-retailopt190-endpoint-stability-audit-v1",
+  "source": {
+    "reloop_commit": "0508ac656a98219ebf005cc0433442bc3a465bb8",
+    "reloop_experiment_runner_sha256": "1d9c7abc99f1ffe36fc491c65b363633e4cbede7e741af209f320a31fdf0c25c",
+    "retailopt_commit": "d809c6bbeb42cb99b0564c41bfb8f331f0156b9d",
+    "retailopt_readme_sha256": "305f74f74e0a4801c030e87a079b0b230f7055e10ab7d1217da5d6eb295d17dd",
+    "retailopt_solver_sha256": "f1a7c5f1ebb08f95264873d32a8012deaf7f255d7aea4579620ec8bff6682478"
+  },
+  "status": "passed_reloop_endpoint_only"
+}

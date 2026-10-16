@@ -1,0 +1,109 @@
+{
+  "schema": "llm4or-release-readiness-delta-v5",
+  "audited_at_local_date": "2026-10-15",
+  "status": "not_ready_manifest_tracking_68_of_69_projection_and_architecture_open",
+  "purpose": "Freeze release readiness after explicitly integrating 34 reviewed legacy evidence paths into local Git history while retaining the full OR-Debug evaluation record outside Git.",
+  "repository": {
+    "branch": "codex/typed-count-cegis-revision-20261014",
+    "head_after_allowlist_integration": "757c9d5be4c17abc98c7ca5e52c79534580e3b7c",
+    "root_license_present": false,
+    "remote_push_performed": false
+  },
+  "inputs": [
+    {
+      "path": "experiments/release_readiness_delta_v4_20261015.json",
+      "sha256": "74a5341b83cf53e7abb2979bbf815701c977a7fd24e90cb807c2e8eabb924182"
+    },
+    {
+      "path": "experiments/release_manifest_35_path_disposition_20261015.json",
+      "sha256": "3470932f5a26863a3fbd5a2194643f22c1cb9b0d5fdeb9f0d752694499a69123"
+    },
+    {
+      "path": "docs/RELEASE_MANIFEST_35_PATH_DISPOSITION_20261015.md",
+      "sha256": "ffca43dc20ad9409105625ca1131f9b11a76d11ea975c6814bbfa4e42a5b6b12"
+    },
+    {
+      "path": "experiments/paper_evidence_manifest_20261015.json",
+      "sha256": "bb1ef5e845c19aa5d18ac5eb7f2536f3eaa6bcca631b1f9e5c802d828b304f14"
+    }
+  ],
+  "manifest_inventory": {
+    "unique_bound_paths": 69,
+    "git_tracked": 68,
+    "git_untracked": 1,
+    "missing": 0,
+    "path_set_sha256": "420292bb6fb4e619ee7195f9f3f8ae4961aa79c07b636e68eb566a47e7d9ff9f",
+    "only_untracked_path": "results/or_debug_confirmation_evaluation_20261014.json",
+    "only_untracked_path_sha256": "04342d960613c01d3e354d742e39eec5949a90a53ca06fe0c6e30b6be057b66e",
+    "only_untracked_path_bytes": 3581564,
+    "only_untracked_path_disposition": "replace_with_claim_complete_safe_projection"
+  },
+  "delta_from_v4": {
+    "paths_newly_integrated_into_local_history": 34,
+    "paper_manifest_hashes_changed": 0,
+    "paper_endpoint_or_baseline_values_changed": 0,
+    "restricted_full_evaluation_record_integrated": false,
+    "workspace_bulk_add_used": false,
+    "remote_push_performed": false
+  },
+  "restricted_manifest_bindings": [
+    {
+      "path": "experiments/mixed_skill_confirmation_bundle_20261014.json",
+      "git_tracked": true,
+      "risk": "140_upstream_public_text_values",
+      "required_projection": "identity_source_revision_text_hash_family_order_and_route_metadata"
+    },
+    {
+      "path": "results/or_debug_confirmation_evaluation_20261014.json",
+      "git_tracked": false,
+      "risk": "per_instance_corrected_and_released_repair_identity",
+      "required_projection": "denominator_group_membership_hash_endpoints_correction_regression_terminal_hash"
+    },
+    {
+      "path": "results/or_debug_confirmation_method_outputs_20261014.json",
+      "git_tracked": true,
+      "risk": "per_instance_static_and_evolved_repair_object",
+      "required_projection": "membership_hash_status_candidate_count_route_and_output_hash"
+    },
+    {
+      "path": "results/mixed_skill_confirmation_outputs_20261014.json",
+      "git_tracked": true,
+      "risk": "mixed_output_contains_or_debug_repair_object",
+      "required_projection": "route_status_direct_and_mixed_output_hash_and_exact_equivalence"
+    }
+  ],
+  "outside_manifest_exclusions": [
+    "results/private/tsp_constraint_confirmation_public_20261014.json",
+    "results/private/tsp_constraint_confirmation_candidates_20261014.json"
+  ],
+  "remaining_gates": {
+    "four_safe_projections_materialized_and_rebound": false,
+    "two_tracked_private_files_removed_or_replaced": false,
+    "root_license_selected": false,
+    "third_party_attribution_policy_frozen": false,
+    "fixed_prompt_disclosure_approved": false,
+    "canonical_skill_and_library_manifests_implemented": false,
+    "exclusive_terminal_publisher_implemented": false,
+    "five_layer_environment_and_commands_implemented": false,
+    "required_submodule_initialized": false,
+    "credential_free_recursive_clean_clone_completed": false,
+    "release_ready": false
+  },
+  "decision": {
+    "manifest_tracking_backlog_closed_without_projection": false,
+    "safe_to_add_full_or_debug_evaluation": false,
+    "local_history_integration_materially_improved": true,
+    "clean_clone_claim_supported": false,
+    "permitted_claim": "Sixty-eight of 69 paper-manifest paths are now tracked locally; the sole untracked path is deliberately withheld pending a claim-complete safe projection.",
+    "prohibited_claim": "The four restricted bindings, license, canonical manifest, environment, submodule or clean-clone gates are complete."
+  },
+  "execution": {
+    "api_or_model_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "request_or_response_bodies_read": false,
+    "evaluator_only_answers_read": false,
+    "credentials_read": false
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "arms": [
+    {
+      "id": "flat_knowledge_control",
+      "knowledge_source": "canonical_answer_free_atomic_fact_set",
+      "representation": "ordinary_guidance_under_fixed_schema"
+    },
+    {
+      "id": "proof_carrying_treatment",
+      "knowledge_source": "same_canonical_answer_free_atomic_fact_set",
+      "representation": "typed_guard_evidence_transform_semantic_resource_provenance_contract"
+    }
+  ],
+  "candidate_source": {
+    "artifact": "experiments/formulationbench_source_qualification_20261016.json",
+    "fixed_commit": "6f37a71e6251b11599ef42869e4268882985a8a7",
+    "fixed_tree": "793db197693fac5446fe1bd39aaf178fea437822",
+    "full_denominator_pairs": 89,
+    "open_gates": [
+      "full_source_materialization",
+      "answer_blind_custody",
+      "same_fact_dual_view_serializer",
+      "synthetic_short_output_capacity",
+      "frozen_prompt_and_budget"
+    ],
+    "spec": "docs/superpowers/specs/2026-10-16-formulationbench-same-knowledge-design.md",
+    "status": "fixed_source_eligible_in_principle_not_dispatch_ready"
+  },
+  "claim_boundary": [
+    "Existing benchmark gains remain valid complete-system formulation-accuracy results but do not identify representation causality.",
+    "The FormulationBench study operationalizes G09 as pair-validity accuracy and does not replace formulation-generation endpoints.",
+    "No task, pair label, solution, Lean proof, request, or response body has been opened.",
+    "The rejected MIPLIB-NL release and its 220 exact instances cannot be reused post audit."
+  ],
+  "date": "2026-10-16",
+  "dispatch_gate": {
+    "answer_blind_custody": false,
+    "current_gate_passed": false,
+    "full_source_materialization": false,
+    "same_fact_dual_view_serializer": false,
+    "source_identity_frozen": true,
+    "source_license_explicit": true,
+    "synthetic_short_output_capacity": false,
+    "unopened_pair_labels_and_proofs": true
+  },
+  "execution": {
+    "api_calls": 0,
+    "model_calls": 0,
+    "native_calls": 0,
+    "solver_calls": 0
+  },
+  "freeze_before_outcome": [
+    "canonical_atomic_facts",
+    "serializers",
+    "prompts",
+    "router",
+    "verifier",
+    "resource_policy",
+    "endpoint",
+    "denominator",
+    "lineage_unit",
+    "success_rule"
+  ],
+  "held_fixed": [
+    "atomic_semantic_fact_identity",
+    "public_input",
+    "base_model",
+    "maximum_model_calls",
+    "completion_ceiling",
+    "solver_contract",
+    "benchmark_endpoint",
+    "full_denominator"
+  ],
+  "ineligible_existing_outcomes": [
+    "TSP_confirmation",
+    "OR_Debug_confirmation",
+    "fresh_common38",
+    "exposed_DCP",
+    "historical_Text2Opt"
+  ],
+  "primary_outcome": "full_denominator_formulation_pair_validity_accuracy",
+  "research_question": "Does proof-obligation serialization improve formulation-pair validity accuracy when the semantic fact graph is fixed?",
+  "schema": "llm4or-same-knowledge-task-level-study-design-v1",
+  "secondary_outcomes": [
+    "paired_corrections",
+    "paired_regressions",
+    "positive_label_accuracy",
+    "negative_label_accuracy",
+    "typed_response_validity",
+    "abstention",
+    "method_failure",
+    "infrastructure_unavailable",
+    "model_calls",
+    "provider_tokens",
+    "wall_time"
+  ],
+  "status": "design_complete_formulationbench_fixed_custody_and_capacity_open"
+}

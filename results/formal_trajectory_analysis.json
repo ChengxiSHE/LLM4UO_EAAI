@@ -1,0 +1,1079 @@
+{
+  "by_method": {
+    "A": {
+      "errors": {
+        "initial:Invalid": 129,
+        "initial:incomplete_response": 51,
+        "initial:invalid_json_response": 41,
+        "initial:request_unavailable:incomplete_response": 37,
+        "initial:request_unavailable:invalid_json_response": 65,
+        "initial:request_unavailable:transport_TimeoutError": 406,
+        "initial:trajectory_budget_exhausted": 471,
+        "semantic_review:Invalid": 4990,
+        "semantic_review:incomplete_response": 2,
+        "semantic_review:invalid_json_response": 27,
+        "semantic_review:request_unavailable:incomplete_response": 1,
+        "semantic_review:request_unavailable:invalid_json_response": 29,
+        "semantic_review:request_unavailable:transport_TimeoutError": 96,
+        "semantic_review:trajectory_budget_exhausted": 3174
+      },
+      "final_proxy_transition_vs_base": {
+        "both_match": 5113,
+        "known": 10693,
+        "neither_match": 5580
+      },
+      "final_solve_status": {
+        "infeasible": 420,
+        "optimal": 8113,
+        "unbounded": 51,
+        "unknown": 25
+      },
+      "initial_model_vs_base": {
+        "equal": 8609
+      },
+      "initial_solve_status": {
+        "infeasible": 420,
+        "optimal": 8113,
+        "unbounded": 51,
+        "unknown": 25
+      },
+      "operations": {
+        "semantic_review": {
+          "comparison_completed": 6742,
+          "comparison_with_difference": 1150,
+          "edit_kinds": {
+            "domain": 16,
+            "objective": 2,
+            "row": 16
+          },
+          "errored": 8319,
+          "errors": {
+            "Invalid": 4990,
+            "incomplete_response": 2,
+            "inferred_stage:before_comparison": 1867,
+            "inferred_stage:feedback_or_compile": 6452,
+            "invalid_json_response": 27,
+            "request_unavailable:incomplete_response": 1,
+            "request_unavailable:invalid_json_response": 29,
+            "request_unavailable:transport_TimeoutError": 96,
+            "trajectory_budget_exhausted": 3174
+          },
+          "evidence": {
+            "left_to_right:None": 100,
+            "left_to_right:contained_within_tolerance": 5736,
+            "left_to_right:unknown": 380,
+            "left_to_right:witness": 526,
+            "overall:compared": 6642,
+            "overall:limit": 84,
+            "overall:unknown": 8,
+            "overall:unsupported": 8,
+            "preference:None": 100,
+            "preference:no_strict_reversal_not_equivalence": 6127,
+            "preference:strict_reversal": 77,
+            "preference:unknown": 438,
+            "right_to_left:None": 100,
+            "right_to_left:contained_within_tolerance": 5565,
+            "right_to_left:unknown": 381,
+            "right_to_left:witness": 696
+          },
+          "gate_accepted": 4,
+          "gate_returned": 22,
+          "gates": {
+            "accepted_relative_to_evidence": 4,
+            "reason:none": 4,
+            "reason:write_scope_or_teacher_fragment_violation": 18,
+            "rejected": 18
+          },
+          "model_changed": 4,
+          "observable_proxy_transitions": {
+            "both_match": 5140,
+            "known": 7963,
+            "neither_match": 2823
+          },
+          "scheduled": 8609,
+          "teacher_packet_compiled": 290,
+          "teacher_packets": {
+            "reason:no_repair_requested": 268,
+            "reason:none": 22,
+            "repair": 22,
+            "unresolved": 268
+          },
+          "triggered": 8609
+        }
+      },
+      "planned": 12204,
+      "record_status": {
+        "completed": 290,
+        "completed_with_errors": 8193,
+        "infrastructure_unavailable": 634,
+        "input_ambiguity": 36,
+        "unresolved": 3051
+      },
+      "records_with_changed_final_model": 4,
+      "unsupported_reasons": {
+        "ambiguous_input": 6,
+        "conic": 202,
+        "missing_input": 391,
+        "nonlinear": 1760
+      }
+    },
+    "B": {
+      "errors": {
+        "initial:Invalid": 129,
+        "initial:request_unavailable:incomplete_response": 64,
+        "initial:request_unavailable:invalid_json_response": 100,
+        "initial:request_unavailable:transport_TimeoutError": 436,
+        "initial:trajectory_budget_exhausted": 471,
+        "solver_repair:Invalid": 1804,
+        "solver_repair:request_unavailable:transport_TimeoutError": 37,
+        "solver_repair:trajectory_budget_exhausted": 6066
+      },
+      "final_proxy_transition_vs_base": {
+        "both_match": 5132,
+        "correction": 14,
+        "known": 10768,
+        "neither_match": 5620,
+        "regression": 2
+      },
+      "final_solve_status": {
+        "infeasible": 418,
+        "optimal": 8115,
+        "unbounded": 51,
+        "unknown": 25
+      },
+      "initial_model_vs_base": {
+        "equal": 8609
+      },
+      "initial_solve_status": {
+        "infeasible": 420,
+        "optimal": 8113,
+        "unbounded": 51,
+        "unknown": 25
+      },
+      "operations": {
+        "solver_repair": {
+          "edit_kinds": {},
+          "errored": 7907,
+          "errors": {
+            "Invalid": 1804,
+            "inferred_stage:repair_or_solve_before_gate": 7907,
+            "request_unavailable:transport_TimeoutError": 37,
+            "trajectory_budget_exhausted": 6066
+          },
+          "evidence": {},
+          "gate_accepted": 9307,
+          "gate_returned": 9311,
+          "gates": {
+            "accepted": 9307,
+            "reason:trusted_solve_and_protected_points_only_not_semantic_truth": 9311,
+            "rejected": 4
+          },
+          "model_changed": 465,
+          "observable_proxy_transitions": {
+            "both_match": 10290,
+            "correction": 14,
+            "known": 15922,
+            "neither_match": 5616,
+            "regression": 2
+          },
+          "scheduled": 17218,
+          "teacher_packets": {},
+          "triggered": 17218
+        }
+      },
+      "planned": 12204,
+      "record_status": {
+        "completed": 4365,
+        "completed_with_errors": 4224,
+        "infrastructure_unavailable": 620,
+        "input_ambiguity": 36,
+        "unresolved": 2959
+      },
+      "records_with_changed_final_model": 461,
+      "unsupported_reasons": {
+        "ambiguous_input": 6,
+        "conic": 202,
+        "missing_input": 391,
+        "nonlinear": 1760
+      }
+    },
+    "Base": {
+      "errors": {
+        "initial:Invalid": 129,
+        "initial:request_unavailable:incomplete_response": 64,
+        "initial:request_unavailable:invalid_json_response": 100,
+        "initial:request_unavailable:transport_TimeoutError": 436,
+        "initial:trajectory_budget_exhausted": 471
+      },
+      "final_proxy_transition_vs_base": {
+        "both_match": 5140,
+        "known": 10785,
+        "neither_match": 5645
+      },
+      "final_solve_status": {
+        "infeasible": 420,
+        "optimal": 8113,
+        "unbounded": 51,
+        "unknown": 25
+      },
+      "initial_model_vs_base": {
+        "equal": 8609
+      },
+      "initial_solve_status": {
+        "infeasible": 420,
+        "optimal": 8113,
+        "unbounded": 51,
+        "unknown": 25
+      },
+      "operations": {},
+      "planned": 12204,
+      "record_status": {
+        "completed": 8609,
+        "infrastructure_unavailable": 600,
+        "input_ambiguity": 36,
+        "unresolved": 2959
+      },
+      "records_with_changed_final_model": 0,
+      "unsupported_reasons": {
+        "ambiguous_input": 6,
+        "conic": 202,
+        "missing_input": 391,
+        "nonlinear": 1760
+      }
+    },
+    "Full": {
+      "errors": {
+        "initial:Invalid": 129,
+        "initial:request_unavailable:incomplete_response": 64,
+        "initial:request_unavailable:invalid_json_response": 100,
+        "initial:request_unavailable:transport_TimeoutError": 436,
+        "initial:trajectory_budget_exhausted": 471,
+        "semantic_review:Invalid": 4990,
+        "semantic_review:request_unavailable:incomplete_response": 2,
+        "semantic_review:request_unavailable:invalid_json_response": 55,
+        "semantic_review:request_unavailable:transport_TimeoutError": 98,
+        "semantic_review:trajectory_budget_exhausted": 3174,
+        "solver_repair:Invalid": 884,
+        "solver_repair:invalid_json_response": 1,
+        "solver_repair:request_unavailable:invalid_json_response": 1,
+        "solver_repair:request_unavailable:transport_TimeoutError": 7,
+        "solver_repair:trajectory_budget_exhausted": 3114
+      },
+      "final_proxy_transition_vs_base": {
+        "both_match": 5109,
+        "correction": 16,
+        "known": 10687,
+        "neither_match": 5562
+      },
+      "final_solve_status": {
+        "infeasible": 420,
+        "optimal": 8113,
+        "unbounded": 51,
+        "unknown": 25
+      },
+      "initial_model_vs_base": {
+        "equal": 8609
+      },
+      "initial_solve_status": {
+        "infeasible": 420,
+        "optimal": 8113,
+        "unbounded": 51,
+        "unknown": 25
+      },
+      "operations": {
+        "semantic_review": {
+          "comparison_completed": 6742,
+          "comparison_with_difference": 1150,
+          "edit_kinds": {
+            "domain": 16,
+            "objective": 2,
+            "row": 16
+          },
+          "errored": 8319,
+          "errors": {
+            "Invalid": 4990,
+            "inferred_stage:before_comparison": 1867,
+            "inferred_stage:feedback_or_compile": 6452,
+            "request_unavailable:incomplete_response": 2,
+            "request_unavailable:invalid_json_response": 55,
+            "request_unavailable:transport_TimeoutError": 98,
+            "trajectory_budget_exhausted": 3174
+          },
+          "evidence": {
+            "left_to_right:None": 100,
+            "left_to_right:contained_within_tolerance": 5736,
+            "left_to_right:unknown": 380,
+            "left_to_right:witness": 526,
+            "overall:compared": 6642,
+            "overall:limit": 84,
+            "overall:unknown": 8,
+            "overall:unsupported": 8,
+            "preference:None": 100,
+            "preference:no_strict_reversal_not_equivalence": 6127,
+            "preference:strict_reversal": 77,
+            "preference:unknown": 438,
+            "right_to_left:None": 100,
+            "right_to_left:contained_within_tolerance": 5565,
+            "right_to_left:unknown": 381,
+            "right_to_left:witness": 696
+          },
+          "gate_accepted": 4,
+          "gate_returned": 22,
+          "gates": {
+            "accepted_relative_to_evidence": 4,
+            "reason:none": 4,
+            "reason:write_scope_or_teacher_fragment_violation": 18,
+            "rejected": 18
+          },
+          "model_changed": 4,
+          "observable_proxy_transitions": {
+            "both_match": 5140,
+            "known": 7963,
+            "neither_match": 2823
+          },
+          "scheduled": 8609,
+          "teacher_packet_compiled": 290,
+          "teacher_packets": {
+            "reason:no_repair_requested": 268,
+            "reason:none": 22,
+            "repair": 22,
+            "unresolved": 268
+          },
+          "triggered": 8609
+        },
+        "solver_repair": {
+          "edit_kinds": {},
+          "errored": 4007,
+          "errors": {
+            "Invalid": 884,
+            "inferred_stage:repair_or_solve_before_gate": 4007,
+            "invalid_json_response": 1,
+            "request_unavailable:invalid_json_response": 1,
+            "request_unavailable:transport_TimeoutError": 7,
+            "trajectory_budget_exhausted": 3114
+          },
+          "evidence": {},
+          "gate_accepted": 4600,
+          "gate_returned": 4602,
+          "gates": {
+            "accepted": 4600,
+            "reason:trusted_solve_and_protected_points_only_not_semantic_truth": 4602,
+            "rejected": 2
+          },
+          "model_changed": 377,
+          "observable_proxy_transitions": {
+            "both_match": 5140,
+            "correction": 16,
+            "known": 7963,
+            "neither_match": 2807
+          },
+          "scheduled": 8609,
+          "teacher_packets": {},
+          "triggered": 8609
+        }
+      },
+      "planned": 12204,
+      "record_status": {
+        "completed": 261,
+        "completed_with_errors": 8188,
+        "infrastructure_unavailable": 760,
+        "input_ambiguity": 36,
+        "unresolved": 2959
+      },
+      "records_with_changed_final_model": 381,
+      "unsupported_reasons": {
+        "ambiguous_input": 6,
+        "conic": 202,
+        "missing_input": 391,
+        "nonlinear": 1760
+      }
+    },
+    "SimpleAB": {
+      "errors": {
+        "initial:Invalid": 129,
+        "initial:request_unavailable:incomplete_response": 64,
+        "initial:request_unavailable:invalid_json_response": 100,
+        "initial:request_unavailable:transport_TimeoutError": 436,
+        "initial:trajectory_budget_exhausted": 471,
+        "semantic_review:Invalid": 4990,
+        "semantic_review:request_unavailable:incomplete_response": 2,
+        "semantic_review:request_unavailable:invalid_json_response": 55,
+        "semantic_review:request_unavailable:transport_TimeoutError": 98,
+        "semantic_review:trajectory_budget_exhausted": 3174,
+        "solver_repair:Invalid": 884,
+        "solver_repair:request_unavailable:invalid_json_response": 2,
+        "solver_repair:request_unavailable:transport_TimeoutError": 7,
+        "solver_repair:trajectory_budget_exhausted": 3114
+      },
+      "final_proxy_transition_vs_base": {
+        "both_match": 5109,
+        "correction": 16,
+        "known": 10687,
+        "neither_match": 5562
+      },
+      "final_solve_status": {
+        "infeasible": 420,
+        "optimal": 8113,
+        "unbounded": 51,
+        "unknown": 25
+      },
+      "initial_model_vs_base": {
+        "equal": 8609
+      },
+      "initial_solve_status": {
+        "infeasible": 420,
+        "optimal": 8113,
+        "unbounded": 51,
+        "unknown": 25
+      },
+      "operations": {
+        "semantic_review": {
+          "comparison_completed": 6742,
+          "comparison_with_difference": 1150,
+          "edit_kinds": {
+            "domain": 16,
+            "objective": 2,
+            "row": 16
+          },
+          "errored": 8319,
+          "errors": {
+            "Invalid": 4990,
+            "inferred_stage:before_comparison": 1867,
+            "inferred_stage:feedback_or_compile": 6452,
+            "request_unavailable:incomplete_response": 2,
+            "request_unavailable:invalid_json_response": 55,
+            "request_unavailable:transport_TimeoutError": 98,
+            "trajectory_budget_exhausted": 3174
+          },
+          "evidence": {
+            "left_to_right:None": 100,
+            "left_to_right:contained_within_tolerance": 5736,
+            "left_to_right:unknown": 380,
+            "left_to_right:witness": 526,
+            "overall:compared": 6642,
+            "overall:limit": 84,
+            "overall:unknown": 8,
+            "overall:unsupported": 8,
+            "preference:None": 100,
+            "preference:no_strict_reversal_not_equivalence": 6127,
+            "preference:strict_reversal": 77,
+            "preference:unknown": 438,
+            "right_to_left:None": 100,
+            "right_to_left:contained_within_tolerance": 5565,
+            "right_to_left:unknown": 381,
+            "right_to_left:witness": 696
+          },
+          "gate_accepted": 4,
+          "gate_returned": 22,
+          "gates": {
+            "accepted_relative_to_evidence": 4,
+            "reason:none": 4,
+            "reason:write_scope_or_teacher_fragment_violation": 18,
+            "rejected": 18
+          },
+          "model_changed": 4,
+          "observable_proxy_transitions": {
+            "both_match": 5140,
+            "known": 7963,
+            "neither_match": 2823
+          },
+          "scheduled": 8609,
+          "teacher_packet_compiled": 290,
+          "teacher_packets": {
+            "reason:no_repair_requested": 268,
+            "reason:none": 22,
+            "repair": 22,
+            "unresolved": 268
+          },
+          "triggered": 8609
+        },
+        "solver_repair": {
+          "edit_kinds": {},
+          "errored": 4007,
+          "errors": {
+            "Invalid": 884,
+            "inferred_stage:repair_or_solve_before_gate": 4007,
+            "request_unavailable:invalid_json_response": 2,
+            "request_unavailable:transport_TimeoutError": 7,
+            "trajectory_budget_exhausted": 3114
+          },
+          "evidence": {},
+          "gate_accepted": 4600,
+          "gate_returned": 4602,
+          "gates": {
+            "accepted": 4600,
+            "reason:trusted_solve_and_protected_points_only_not_semantic_truth": 4602,
+            "rejected": 2
+          },
+          "model_changed": 377,
+          "observable_proxy_transitions": {
+            "both_match": 5140,
+            "correction": 16,
+            "known": 7963,
+            "neither_match": 2807
+          },
+          "scheduled": 8609,
+          "teacher_packets": {},
+          "triggered": 8609
+        }
+      },
+      "planned": 12204,
+      "record_status": {
+        "completed": 261,
+        "completed_with_errors": 8187,
+        "infrastructure_unavailable": 761,
+        "input_ambiguity": 36,
+        "unresolved": 2959
+      },
+      "records_with_changed_final_model": 381,
+      "unsupported_reasons": {
+        "ambiguous_input": 6,
+        "conic": 202,
+        "missing_input": 391,
+        "nonlinear": 1760
+      }
+    },
+    "SolverRepair": {
+      "errors": {
+        "initial:Invalid": 129,
+        "initial:request_unavailable:incomplete_response": 64,
+        "initial:request_unavailable:invalid_json_response": 100,
+        "initial:request_unavailable:transport_TimeoutError": 436,
+        "initial:trajectory_budget_exhausted": 471,
+        "solver_repair:Invalid": 1804,
+        "solver_repair:request_unavailable:transport_TimeoutError": 37,
+        "solver_repair:trajectory_budget_exhausted": 6066
+      },
+      "final_proxy_transition_vs_base": {
+        "both_match": 5132,
+        "correction": 14,
+        "known": 10768,
+        "neither_match": 5620,
+        "regression": 2
+      },
+      "final_solve_status": {
+        "infeasible": 418,
+        "optimal": 8115,
+        "unbounded": 51,
+        "unknown": 25
+      },
+      "initial_model_vs_base": {
+        "equal": 8609
+      },
+      "initial_solve_status": {
+        "infeasible": 420,
+        "optimal": 8113,
+        "unbounded": 51,
+        "unknown": 25
+      },
+      "operations": {
+        "solver_repair": {
+          "edit_kinds": {},
+          "errored": 7907,
+          "errors": {
+            "Invalid": 1804,
+            "inferred_stage:repair_or_solve_before_gate": 7907,
+            "request_unavailable:transport_TimeoutError": 37,
+            "trajectory_budget_exhausted": 6066
+          },
+          "evidence": {},
+          "gate_accepted": 9307,
+          "gate_returned": 9311,
+          "gates": {
+            "accepted": 9307,
+            "reason:trusted_solve_and_protected_points_only_not_semantic_truth": 9311,
+            "rejected": 4
+          },
+          "model_changed": 465,
+          "observable_proxy_transitions": {
+            "both_match": 10290,
+            "correction": 14,
+            "known": 15922,
+            "neither_match": 5616,
+            "regression": 2
+          },
+          "scheduled": 17218,
+          "teacher_packets": {},
+          "triggered": 17218
+        }
+      },
+      "planned": 12204,
+      "record_status": {
+        "completed": 4365,
+        "completed_with_errors": 4224,
+        "infrastructure_unavailable": 620,
+        "input_ambiguity": 36,
+        "unresolved": 2959
+      },
+      "records_with_changed_final_model": 461,
+      "unsupported_reasons": {
+        "ambiguous_input": 6,
+        "conic": 202,
+        "missing_input": 391,
+        "nonlinear": 1760
+      }
+    }
+  },
+  "by_method_and_token_cap": {
+    "A:16384": {
+      "errors": {
+        "Invalid": 35,
+        "request_unavailable:incomplete_response": 8,
+        "request_unavailable:invalid_json_response": 34,
+        "request_unavailable:transport_TimeoutError": 70,
+        "trajectory_budget_exhausted": 3224
+      },
+      "infrastructure_unavailable": 70,
+      "matched": 1670,
+      "operations": {
+        "semantic_review:comparison_completed": 1196,
+        "semantic_review:errored": 2757,
+        "semantic_review:scheduled": 2757,
+        "semantic_review:triggered": 2757
+      },
+      "planned": 4068
+    },
+    "A:32768": {
+      "errors": {
+        "Invalid": 2461,
+        "request_unavailable:incomplete_response": 29,
+        "request_unavailable:invalid_json_response": 60,
+        "request_unavailable:transport_TimeoutError": 212,
+        "trajectory_budget_exhausted": 320
+      },
+      "infrastructure_unavailable": 212,
+      "matched": 1730,
+      "operations": {
+        "semantic_review:accepted": 2,
+        "semantic_review:comparison_completed": 2739,
+        "semantic_review:errored": 2789,
+        "semantic_review:scheduled": 2926,
+        "semantic_review:teacher_packet_compiled": 137,
+        "semantic_review:triggered": 2926
+      },
+      "planned": 4068
+    },
+    "A:65536": {
+      "errors": {
+        "Invalid": 2623,
+        "incomplete_response": 53,
+        "invalid_json_response": 68,
+        "request_unavailable:incomplete_response": 1,
+        "request_unavailable:transport_TimeoutError": 220,
+        "trajectory_budget_exhausted": 101
+      },
+      "infrastructure_unavailable": 220,
+      "matched": 1713,
+      "operations": {
+        "semantic_review:accepted": 2,
+        "semantic_review:comparison_completed": 2807,
+        "semantic_review:errored": 2773,
+        "semantic_review:scheduled": 2926,
+        "semantic_review:teacher_packet_compiled": 153,
+        "semantic_review:triggered": 2926
+      },
+      "planned": 4068
+    },
+    "B:16384": {
+      "errors": {
+        "Invalid": 35,
+        "request_unavailable:incomplete_response": 8,
+        "request_unavailable:invalid_json_response": 30,
+        "request_unavailable:transport_TimeoutError": 70,
+        "trajectory_budget_exhausted": 5985
+      },
+      "infrastructure_unavailable": 70,
+      "matched": 1670,
+      "operations": {
+        "solver_repair:errored": 5514,
+        "solver_repair:scheduled": 5514,
+        "solver_repair:triggered": 5514
+      },
+      "planned": 4068
+    },
+    "B:32768": {
+      "errors": {
+        "Invalid": 879,
+        "request_unavailable:incomplete_response": 28,
+        "request_unavailable:invalid_json_response": 35,
+        "request_unavailable:transport_TimeoutError": 187,
+        "trajectory_budget_exhausted": 419
+      },
+      "infrastructure_unavailable": 185,
+      "matched": 1741,
+      "operations": {
+        "solver_repair:accepted": 4597,
+        "solver_repair:errored": 1255,
+        "solver_repair:scheduled": 5852,
+        "solver_repair:triggered": 5852
+      },
+      "planned": 4068
+    },
+    "B:65536": {
+      "errors": {
+        "Invalid": 1019,
+        "request_unavailable:incomplete_response": 28,
+        "request_unavailable:invalid_json_response": 35,
+        "request_unavailable:transport_TimeoutError": 216,
+        "trajectory_budget_exhausted": 133
+      },
+      "infrastructure_unavailable": 201,
+      "matched": 1735,
+      "operations": {
+        "solver_repair:accepted": 4710,
+        "solver_repair:errored": 1138,
+        "solver_repair:scheduled": 5852,
+        "solver_repair:triggered": 5852
+      },
+      "planned": 4068
+    },
+    "Base:16384": {
+      "errors": {
+        "Invalid": 35,
+        "request_unavailable:incomplete_response": 8,
+        "request_unavailable:invalid_json_response": 30,
+        "request_unavailable:transport_TimeoutError": 70,
+        "trajectory_budget_exhausted": 471
+      },
+      "infrastructure_unavailable": 70,
+      "matched": 1670,
+      "operations": {},
+      "planned": 4068
+    },
+    "Base:32768": {
+      "errors": {
+        "Invalid": 47,
+        "request_unavailable:incomplete_response": 28,
+        "request_unavailable:invalid_json_response": 35,
+        "request_unavailable:transport_TimeoutError": 183
+      },
+      "infrastructure_unavailable": 183,
+      "matched": 1735,
+      "operations": {},
+      "planned": 4068
+    },
+    "Base:65536": {
+      "errors": {
+        "Invalid": 47,
+        "request_unavailable:incomplete_response": 28,
+        "request_unavailable:invalid_json_response": 35,
+        "request_unavailable:transport_TimeoutError": 183
+      },
+      "infrastructure_unavailable": 183,
+      "matched": 1735,
+      "operations": {},
+      "planned": 4068
+    },
+    "Full:16384": {
+      "errors": {
+        "Invalid": 35,
+        "request_unavailable:incomplete_response": 8,
+        "request_unavailable:invalid_json_response": 34,
+        "request_unavailable:transport_TimeoutError": 70,
+        "trajectory_budget_exhausted": 5981
+      },
+      "infrastructure_unavailable": 70,
+      "matched": 1670,
+      "operations": {
+        "semantic_review:comparison_completed": 1196,
+        "semantic_review:errored": 2757,
+        "semantic_review:scheduled": 2757,
+        "semantic_review:triggered": 2757,
+        "solver_repair:errored": 2757,
+        "solver_repair:scheduled": 2757,
+        "solver_repair:triggered": 2757
+      },
+      "planned": 4068
+    },
+    "Full:32768": {
+      "errors": {
+        "Invalid": 2865,
+        "request_unavailable:incomplete_response": 29,
+        "request_unavailable:invalid_json_response": 61,
+        "request_unavailable:transport_TimeoutError": 212,
+        "trajectory_budget_exhausted": 574
+      },
+      "infrastructure_unavailable": 212,
+      "matched": 1738,
+      "operations": {
+        "semantic_review:accepted": 2,
+        "semantic_review:comparison_completed": 2739,
+        "semantic_review:errored": 2789,
+        "semantic_review:scheduled": 2926,
+        "semantic_review:teacher_packet_compiled": 137,
+        "semantic_review:triggered": 2926,
+        "solver_repair:accepted": 2267,
+        "solver_repair:errored": 659,
+        "solver_repair:scheduled": 2926,
+        "solver_repair:triggered": 2926
+      },
+      "planned": 4068
+    },
+    "Full:65536": {
+      "errors": {
+        "Invalid": 3103,
+        "invalid_json_response": 1,
+        "request_unavailable:incomplete_response": 29,
+        "request_unavailable:invalid_json_response": 61,
+        "request_unavailable:transport_TimeoutError": 259,
+        "trajectory_budget_exhausted": 204
+      },
+      "infrastructure_unavailable": 256,
+      "matched": 1717,
+      "operations": {
+        "semantic_review:accepted": 2,
+        "semantic_review:comparison_completed": 2807,
+        "semantic_review:errored": 2773,
+        "semantic_review:scheduled": 2926,
+        "semantic_review:teacher_packet_compiled": 153,
+        "semantic_review:triggered": 2926,
+        "solver_repair:accepted": 2333,
+        "solver_repair:errored": 591,
+        "solver_repair:scheduled": 2926,
+        "solver_repair:triggered": 2926
+      },
+      "planned": 4068
+    },
+    "SimpleAB:16384": {
+      "errors": {
+        "Invalid": 35,
+        "request_unavailable:incomplete_response": 8,
+        "request_unavailable:invalid_json_response": 34,
+        "request_unavailable:transport_TimeoutError": 70,
+        "trajectory_budget_exhausted": 5981
+      },
+      "infrastructure_unavailable": 70,
+      "matched": 1670,
+      "operations": {
+        "semantic_review:comparison_completed": 1196,
+        "semantic_review:errored": 2757,
+        "semantic_review:scheduled": 2757,
+        "semantic_review:triggered": 2757,
+        "solver_repair:errored": 2757,
+        "solver_repair:scheduled": 2757,
+        "solver_repair:triggered": 2757
+      },
+      "planned": 4068
+    },
+    "SimpleAB:32768": {
+      "errors": {
+        "Invalid": 2865,
+        "request_unavailable:incomplete_response": 29,
+        "request_unavailable:invalid_json_response": 61,
+        "request_unavailable:transport_TimeoutError": 212,
+        "trajectory_budget_exhausted": 574
+      },
+      "infrastructure_unavailable": 212,
+      "matched": 1738,
+      "operations": {
+        "semantic_review:accepted": 2,
+        "semantic_review:comparison_completed": 2739,
+        "semantic_review:errored": 2789,
+        "semantic_review:scheduled": 2926,
+        "semantic_review:teacher_packet_compiled": 137,
+        "semantic_review:triggered": 2926,
+        "solver_repair:accepted": 2267,
+        "solver_repair:errored": 659,
+        "solver_repair:scheduled": 2926,
+        "solver_repair:triggered": 2926
+      },
+      "planned": 4068
+    },
+    "SimpleAB:65536": {
+      "errors": {
+        "Invalid": 3103,
+        "request_unavailable:incomplete_response": 29,
+        "request_unavailable:invalid_json_response": 62,
+        "request_unavailable:transport_TimeoutError": 259,
+        "trajectory_budget_exhausted": 204
+      },
+      "infrastructure_unavailable": 256,
+      "matched": 1717,
+      "operations": {
+        "semantic_review:accepted": 2,
+        "semantic_review:comparison_completed": 2807,
+        "semantic_review:errored": 2773,
+        "semantic_review:scheduled": 2926,
+        "semantic_review:teacher_packet_compiled": 153,
+        "semantic_review:triggered": 2926,
+        "solver_repair:accepted": 2333,
+        "solver_repair:errored": 591,
+        "solver_repair:scheduled": 2926,
+        "solver_repair:triggered": 2926
+      },
+      "planned": 4068
+    },
+    "SolverRepair:16384": {
+      "errors": {
+        "Invalid": 35,
+        "request_unavailable:incomplete_response": 8,
+        "request_unavailable:invalid_json_response": 30,
+        "request_unavailable:transport_TimeoutError": 70,
+        "trajectory_budget_exhausted": 5985
+      },
+      "infrastructure_unavailable": 70,
+      "matched": 1670,
+      "operations": {
+        "solver_repair:errored": 5514,
+        "solver_repair:scheduled": 5514,
+        "solver_repair:triggered": 5514
+      },
+      "planned": 4068
+    },
+    "SolverRepair:32768": {
+      "errors": {
+        "Invalid": 879,
+        "request_unavailable:incomplete_response": 28,
+        "request_unavailable:invalid_json_response": 35,
+        "request_unavailable:transport_TimeoutError": 187,
+        "trajectory_budget_exhausted": 419
+      },
+      "infrastructure_unavailable": 185,
+      "matched": 1741,
+      "operations": {
+        "solver_repair:accepted": 4597,
+        "solver_repair:errored": 1255,
+        "solver_repair:scheduled": 5852,
+        "solver_repair:triggered": 5852
+      },
+      "planned": 4068
+    },
+    "SolverRepair:65536": {
+      "errors": {
+        "Invalid": 1019,
+        "request_unavailable:incomplete_response": 28,
+        "request_unavailable:invalid_json_response": 35,
+        "request_unavailable:transport_TimeoutError": 216,
+        "trajectory_budget_exhausted": 133
+      },
+      "infrastructure_unavailable": 201,
+      "matched": 1735,
+      "operations": {
+        "solver_repair:accepted": 4710,
+        "solver_repair:errored": 1138,
+        "solver_repair:scheduled": 5852,
+        "solver_repair:triggered": 5852
+      },
+      "planned": 4068
+    }
+  },
+  "cells": 73224,
+  "evaluation_sha256": "30be6c1d9f72ac198eb61bddeba751a7444d555992c4ed6bf18dc78a8bcf2c60",
+  "evaluation_version": "formal-evaluation-v2",
+  "evolution": {
+    "accepted_gates": 0,
+    "candidate_best_match_delta_vs_incumbent": {
+      "0": 16
+    },
+    "candidate_ties_incumbent": 16,
+    "different_candidate_selected": 2,
+    "gate_reasons": {
+      "infrastructure_incomplete_gate": 2,
+      "no_candidate_selected": 16
+    },
+    "gates": 18,
+    "patch_kinds": {
+      "delete": 2,
+      "insert": 16
+    },
+    "proposal_rejection_types": {
+      "Stopped": 2
+    },
+    "proposal_rejections": 2,
+    "streams_generations": 18,
+    "valid_candidates": 18
+  },
+  "exact_control_comparisons": {
+    "B_vs_SolverRepair": {
+      "same_evaluation": 12204,
+      "same_final_model": 8609
+    },
+    "Full_vs_SimpleAB": {
+      "same_evaluation": 12204,
+      "same_final_model": 8609
+    }
+  },
+  "grade_by_model_entries": 2000,
+  "interpretation_guard": "Operation-level proxy transitions are observable only when both model hashes appear as eligible final models for the same problem. They are mechanism diagnostics, not semantic proof.",
+  "plan_sha256": "6d05f1a061e35bb181b055d9f74b599593f683c4b411cdbda260125a60f6a52f",
+  "response_contracts": {
+    "logical_uses": {
+      "baseline_repair:contract_valid": 28503,
+      "baseline_repair:repair_unsupported": 5481,
+      "baseline_repair:unknown coefficient variable": 2,
+      "baseline_repair:unsupported_contract": 28,
+      "initial:contract_valid": 66697,
+      "initial:invalid identifier": 18,
+      "initial:unknown coefficient variable": 771,
+      "proposal:not_checked": 16,
+      "semantic_repair:contract_valid": 66,
+      "teacher_feedback:contract_valid": 876,
+      "teacher_feedback:edit_lacks_replayed_target_evidence": 1406,
+      "teacher_feedback:nonrepair_edits": 9,
+      "teacher_feedback:output_contract_violation:edits:maxItems": 18,
+      "teacher_feedback:output_contract_violation:interpretation:maxLength": 105,
+      "teacher_feedback:output_contract_violation:model_hashes/teacher:pattern": 21,
+      "teacher_feedback:output_contract_violation:quote/end:minimum": 30,
+      "teacher_feedback:output_contract_violation:quote/field:maxLength": 6,
+      "teacher_feedback:positive_example_not_teacher_feasible": 132,
+      "teacher_feedback:quote_provenance_mismatch": 12549,
+      "teacher_feedback:repair_requires_scope_and_protected_points": 931,
+      "teacher_feedback:stale_teacher_input_or_models": 27,
+      "teacher_feedback:unaligned_teacher_interface": 6,
+      "teacher_model:contract_valid": 20594,
+      "teacher_model:teacher_unsupported": 36,
+      "teacher_model:unknown coefficient variable": 52
+    },
+    "physical_unique_responses": {
+      "baseline_repair:contract_valid": 7089,
+      "baseline_repair:repair_unsupported": 1437,
+      "baseline_repair:unknown coefficient variable": 1,
+      "baseline_repair:unsupported_contract": 7,
+      "initial:contract_valid": 3763,
+      "initial:invalid identifier": 1,
+      "initial:unknown coefficient variable": 46,
+      "proposal:not_checked": 16,
+      "semantic_repair:contract_valid": 11,
+      "teacher_feedback:contract_valid": 153,
+      "teacher_feedback:edit_lacks_replayed_target_evidence": 234,
+      "teacher_feedback:nonrepair_edits": 2,
+      "teacher_feedback:output_contract_violation:edits:maxItems": 4,
+      "teacher_feedback:output_contract_violation:interpretation:maxLength": 18,
+      "teacher_feedback:output_contract_violation:model_hashes/teacher:pattern": 4,
+      "teacher_feedback:output_contract_violation:quote/end:minimum": 5,
+      "teacher_feedback:output_contract_violation:quote/field:maxLength": 1,
+      "teacher_feedback:positive_example_not_teacher_feasible": 22,
+      "teacher_feedback:quote_provenance_mismatch": 2125,
+      "teacher_feedback:repair_requires_scope_and_protected_points": 158,
+      "teacher_feedback:stale_teacher_input_or_models": 3,
+      "teacher_feedback:unaligned_teacher_interface": 1,
+      "teacher_model:contract_valid": 2822,
+      "teacher_model:teacher_unsupported": 6,
+      "teacher_model:unknown coefficient variable": 8
+    },
+    "quote_rebinding_counterfactual": {
+      "logical_uses": {
+        "compiled:repair": 222,
+        "compiled:unresolved": 3731,
+        "next_error:edit_lacks_replayed_target_evidence": 4309,
+        "next_error:nonrepair_edits": 24,
+        "next_error:positive_example_not_teacher_feasible": 404,
+        "next_error:repair_requires_scope_and_protected_points": 3676,
+        "next_error:unaligned_teacher_interface": 12,
+        "not_uniquely_rebindable": 171
+      },
+      "physical_unique_responses": {
+        "compiled:repair": 39,
+        "compiled:unresolved": 625,
+        "next_error:edit_lacks_replayed_target_evidence": 736,
+        "next_error:nonrepair_edits": 4,
+        "next_error:positive_example_not_teacher_feasible": 69,
+        "next_error:repair_requires_scope_and_protected_points": 625,
+        "next_error:unaligned_teacher_interface": 2,
+        "not_uniquely_rebindable": 25
+      }
+    }
+  },
+  "schema": "formal-trajectory-analysis-v1",
+  "scope": "aggregate mechanism diagnostics only; no request/response text or evaluator-only answer content"
+}

@@ -1,0 +1,5 @@
+study,study_role,unit,denominator,base_correct,knowledge_correct,both_correct,corrections,regressions,both_wrong,one_sided_exact_mcnemar_p
+prospective_primary,prospective independent confirmation,instance,190,50,170,45,125,5,15,
+prospective_primary,prospective independent confirmation,archetype,38,10,34,9,25,1,3,4.023313522338867e-07
+posthoc_label_blind,post hoc same-benchmark robustness,instance,190,50,185,50,135,0,5,
+posthoc_label_blind,post hoc same-benchmark robustness,archetype,38,10,37,10,27,0,1,7.450580596923828e-09

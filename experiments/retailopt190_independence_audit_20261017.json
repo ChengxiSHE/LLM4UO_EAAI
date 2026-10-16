@@ -1,0 +1,81 @@
+{
+  "candidate": {
+    "commit": "d809c6bbeb42cb99b0564c41bfb8f331f0156b9d",
+    "field": "business_description_only",
+    "name": "RetailOpt-190",
+    "records": 190
+  },
+  "claim_boundary": "This audit rules out exact and high lexical/template overlap with the enumerated project sources; it cannot rule out pretraining contamination or conceptual similarity.",
+  "execution": {
+    "api_calls": 0,
+    "credentials_read": false,
+    "model_calls": 0,
+    "solver_calls": 0
+  },
+  "method": {
+    "near_duplicate_gate": "no candidate with maximum Jaccard >= 0.8 in either mode",
+    "numeric_template": "replace every decimal token with one numeric placeholder",
+    "shingle_width": 5,
+    "tokenization": "lowercase ASCII word and decimal tokens"
+  },
+  "overlap": {
+    "lexical": {
+      "candidate_counts_at_or_above_threshold": {
+        "0.2": 0,
+        "0.5": 0,
+        "0.8": 0
+      },
+      "candidate_descriptor_set_sha256": "991f8d92b34a67d46cbdc0c1e28dafd4be910071de9d9fbd2439a15c7e2d7bf0",
+      "exact_normalized_matches": 0,
+      "maximum_shingle_jaccard": {
+        "max": 0.00530035335689046,
+        "median": 0.0034482758620689655,
+        "min": 0.001736111111111111,
+        "p90": 0.0036540803897685747,
+        "p95": 0.003658536585365854,
+        "p99": 0.00530035335689046
+      },
+      "nearest_reference_kind_counts": {
+        "legacy_six_source": 15,
+        "text2opt": 175
+      },
+      "reference_descriptor_set_sha256": "a01ec64aa9cdd18c70f5b704b9025c2b97bf9de5a5baf4d3e1a56005db26e01f"
+    },
+    "numeric_template": {
+      "candidate_counts_at_or_above_threshold": {
+        "0.2": 0,
+        "0.5": 0,
+        "0.8": 0
+      },
+      "candidate_descriptor_set_sha256": "b75b89172632390d4ae6ba37a5a32258e80f1055a4dafb360d1c41fa4d8900bc",
+      "exact_normalized_matches": 0,
+      "maximum_shingle_jaccard": {
+        "max": 0.0056179775280898875,
+        "median": 0.0035842293906810036,
+        "min": 0.001736111111111111,
+        "p90": 0.003963011889035667,
+        "p95": 0.00398406374501992,
+        "p99": 0.0056179775280898875
+      },
+      "nearest_reference_kind_counts": {
+        "legacy_six_source": 20,
+        "text2opt": 170
+      },
+      "reference_descriptor_set_sha256": "7ecc15e843534dbc5011b25e7244db1adf94a13f0991dd4d42ce96336436cce5"
+    }
+  },
+  "privacy": {
+    "contains_answers_or_objectives": false,
+    "contains_candidate_or_reference_ids": false,
+    "contains_nearest_neighbor_identities": false,
+    "contains_problem_bodies": false
+  },
+  "reference_corpora": {
+    "legacy_six_source_records": 1356,
+    "text2opt_commit": "1dac06be656c41d827ef20987cf8af0b48d382a2",
+    "text2opt_records": 2121,
+    "total_records": 3477
+  },
+  "schema": "llm4or-retailopt190-independence-audit-v1",
+  "status": "passed_no_exact_or_near_duplicate"
+}

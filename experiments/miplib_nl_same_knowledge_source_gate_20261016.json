@@ -1,0 +1,127 @@
+{
+  "audited_at_local_date": "2026-10-16",
+  "claim_boundary": [
+    "This audit establishes a source-integrity failure, not benchmark accuracy, formulation accuracy, or a treatment effect.",
+    "The trusted custodian parsed source records mechanically but exposed no task body, data value, optimal value, model text, or reference program in public evidence or to an inference process.",
+    "The 220 exact instances are not substituted as a post-audit cohort; no exclusion, rename, inferred mapping, or guessed download is authorized.",
+    "Repository-level CC BY-SA 4.0 labeling does not by itself settle redistribution treatment of every upstream MIPLIB-derived file."
+  ],
+  "decision": {
+    "current_release_eligible": false,
+    "dispatch_allowed": false,
+    "reason": "The fixed official source is a distinct candidate lineage, but its declared and materialized input paths disagree in three instances; the full answer-blind custody rehearsal therefore failed before publication.",
+    "source_eligible_in_principle": true,
+    "status": "current_release_source_integrity_failed_not_dispatch_ready"
+  },
+  "execution": {
+    "api_calls": 0,
+    "human_visible_optimal_values": 0,
+    "inference_visible_optimal_values": 0,
+    "model_calls": 0,
+    "native_calls": 0,
+    "published_private_bundle_files": 0,
+    "solver_calls": 0,
+    "trusted_custodian_instance_reads": 223,
+    "vm_calls": 0
+  },
+  "gates": {
+    "answer_blind_custody": {
+      "implementation_ready": true,
+      "passed": false,
+      "reason": "Synthetic projection, privacy, publication, replay and drift tests pass, but the fixed-source full bundle cannot be published while source materialization fails."
+    },
+    "frozen_selector": {
+      "passed": false,
+      "reason": "Selection is prohibited after the source-integrity failure; 220 exact instances cannot be adopted post audit."
+    },
+    "packet_completeness": {
+      "passed": false,
+      "reason": "The 43 absent model.md files are represented explicitly, but three instances also fail required input-path completeness; no 223-item inference/evaluator packet exists."
+    },
+    "reference_access_contract": {
+      "passed": false,
+      "reason": "Evaluator-only projection code exists, but no full fixed-source evaluator bundle can be frozen while five declared inputs are absent."
+    },
+    "resource_contract": {
+      "passed": false,
+      "reason": "No selector or resource cohort may be frozen from a source that fails complete materialization."
+    },
+    "rights_safe_public_input_route": {
+      "passed": false,
+      "reason": "The official README labels the repository CC BY-SA 4.0, but attribution, share-alike, upstream MIPLIB-derived-file treatment, and any redistribution projection still require an explicit release review."
+    },
+    "same_knowledge_serializer": {
+      "passed": false,
+      "reason": "No serializer may be frozen until a complete canonical inference packet exists."
+    },
+    "scoreable_endpoint": {
+      "passed": false,
+      "reason": "A plausible reference route exists, but the release is not fully materialized and no exact endpoint contract has been frozen."
+    },
+    "source_lineage": {
+      "passed": true,
+      "reason": "This is a newly fixed MIPLIB-2017-derived source lineage distinct from the already opened Text2Opt, TSP, OR-Debug, and DCP cohorts."
+    },
+    "source_materialization": {
+      "passed": false,
+      "reason": "Only 220/223 instances have exact declared/actual data-path sets; three mismatch, with five declared files absent and five materialized files undeclared."
+    },
+    "untouched_endpoint_outcomes": {
+      "passed": true,
+      "reason": "Reference values were parsed only inside the trusted custodian, never rendered, scored, used for selection, or exposed to inference or the human-visible audit."
+    }
+  },
+  "next_required_actions": [
+    "Keep the current fixed release non-dispatchable and monitor only for an official hash-bound correction of the declared/materialized path mismatches.",
+    "Do not silently rename, infer, download, exclude, or replace any of the five mismatched paths.",
+    "If no official correction is available, qualify a different untouched source through the same source, custody, rights, resource, endpoint, selector, and serializer gates.",
+    "Only after a complete zero-model/no-solver custody rehearsal may a same-knowledge experiment plan be frozen."
+  ],
+  "privacy": {
+    "contains_credentials": false,
+    "contains_evaluator_answers": false,
+    "contains_instance_names": false,
+    "contains_reference_code": false,
+    "contains_task_bodies": false
+  },
+  "schema": "llm4or-miplib-nl-same-knowledge-source-gate-v2",
+  "source": {
+    "dataset_directory_count": 223,
+    "dataset_directory_name_set_sha256": "0b49be86cae4c26fb897fca74cfe37189713215603aec1fe4faa1f9f3fca3c8c",
+    "dataset_tree": "96132c089bbead0909c1ab9e55df59195ba8ec6f",
+    "fixed_commit": "9f14ad1782eaa547f7dad982d1edb186321ffd88",
+    "materialization_rehearsal": {
+      "artifact": "experiments/miplib_nl_custody_rehearsal_20261016.json",
+      "artifact_sha256": "258aae2ae7dee8bfcd39597d1bf95515f4bb0c9acbb4bca4f71eec7651d7bbdb",
+      "bundle_published": false,
+      "exact_instances": 220,
+      "human_report": "docs/MIPLIB_NL_CUSTODY_REHEARSAL_20261016.md",
+      "mismatched_instances": 3,
+      "missing_declared_data_files": 5,
+      "official_open_issue": "https://github.com/optsuite/MIPLIB-NL/issues/2",
+      "undeclared_actual_data_files": 5
+    },
+    "paper": {
+      "arxiv": "2602.10450",
+      "reported_status": "accepted_at_ICML_2026",
+      "title": "Constructing Industrial-Scale Optimization Modeling Benchmark"
+    },
+    "public_readme_claims": {
+      "instance_count": 223,
+      "license_label": "CC BY-SA 4.0",
+      "maximum_constraints": 1050112,
+      "maximum_variables": 283648,
+      "median_constraints": 1388,
+      "median_variables": 2183,
+      "scope": "mixed-integer linear programming instances reverse-constructed from MIPLIB 2017"
+    },
+    "repository": "https://github.com/optsuite/MIPLIB-NL",
+    "tree_only_census": {
+      "instance_json_paths": 223,
+      "model_md_paths": 180,
+      "model_md_paths_absent": 43,
+      "recursive_path_count": 1435,
+      "solve_py_paths": 223
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "claim_boundary": "This audit establishes source completeness, projection consistency and inference/evaluator separation only. It does not establish model accuracy, benchmark independence, solver reproducibility or a confirmatory split.",
+  "counts": {
+    "archetypes": 38,
+    "evaluator_records": 190,
+    "families": 8,
+    "inference_records": 190,
+    "records": 190,
+    "variants_per_archetype": 5
+  },
+  "execution": {
+    "api_calls": 0,
+    "credentials_read": false,
+    "model_calls": 0,
+    "native_calls": 0,
+    "solver_calls": 0
+  },
+  "family_counts": {
+    "1": 20,
+    "2": 30,
+    "3": 20,
+    "4": 30,
+    "5": 20,
+    "6": 20,
+    "7": 30,
+    "8": 20
+  },
+  "inference_metadata_projection_sha256": "51e05886e34a318883f8a6f02661a6106af3b31c4c363c5df46acff394a62620",
+  "license_boundary": {
+    "attribution_required": true,
+    "dataset_card_data_claim": "CC-BY-4.0",
+    "metadata_conflict_recorded": true,
+    "readme_code_badge_claim": "MIT",
+    "redistribute_source_bodies": false,
+    "root_license_name": "ReLoop Research and Education License v1.0"
+  },
+  "privacy": {
+    "contains_problem_bodies": false,
+    "contains_reference_objectives": false,
+    "contains_reference_solver_body": false,
+    "contains_reference_statuses": false,
+    "contains_source_scenario_ids": false,
+    "contains_structured_data_values": false
+  },
+  "private_ledger_sha256": "0268a8ed055803ffcce38a7be80ddd1edcc3f9117b86dc210dac2c5a089da7a5",
+  "public_descriptor_set_sha256": "1fa25eab3352d30a69f1b432610e1fd632c97efd00a077a9e84b2bcfd1162a2b",
+  "schema": "llm4or-retailopt190-source-custody-audit-v1",
+  "size_bytes": {
+    "data": {
+      "max": 9407,
+      "median": 4892,
+      "min": 4626,
+      "p95": 5409,
+      "total": 957185
+    },
+    "prompt_full": {
+      "max": 13923,
+      "median": 8747,
+      "min": 7030,
+      "p95": 9852,
+      "total": 1697785
+    },
+    "prompt_schema": {
+      "max": 7607,
+      "median": 6180,
+      "min": 4462,
+      "p95": 6444,
+      "total": 1168480
+    }
+  },
+  "source": {
+    "benchmark_csv_sha256": "c805a9753b2c73922c98be835ffe3190b9c9efd3e2f7c33a1e7dcd3db9e15364",
+    "commit": "d809c6bbeb42cb99b0564c41bfb8f331f0156b9d",
+    "dataset_card_sha256": "9e1b012584328c97763d9ac6f1ca217ec62af7f9a0b8c09bf5a26399bcad8e56",
+    "dataset_sha256": "9e859115d277d43ee0c0ae52616fdeca2ca7d2f02105e148974940521426be50",
+    "license_sha256": "c0a0322289b855ade0d395881c5439fd74a2be739f8f01176b67aa2ec95c5900",
+    "readme_sha256": "305f74f74e0a4801c030e87a079b0b230f7055e10ab7d1217da5d6eb295d17dd",
+    "reference_solver_sha256": "f1a7c5f1ebb08f95264873d32a8012deaf7f255d7aea4579620ec8bff6682478"
+  },
+  "source_consistency": {
+    "allowed_reference_statuses_only": true,
+    "complete_archetype_variant_grid": true,
+    "finite_reference_objectives": true,
+    "jsonl_to_benchmark_csv_exact": true,
+    "jsonl_to_data_files_semantic_exact": true,
+    "jsonl_to_prompt_files_exact": true,
+    "unique_scenario_ids": true
+  },
+  "status": "passed_source_custody_only"
+}

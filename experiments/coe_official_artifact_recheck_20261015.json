@@ -1,0 +1,57 @@
+{
+  "schema": "llm4or-coe-official-artifact-recheck-v1",
+  "status": "official_code_available_license_and_release_package_unverified",
+  "checked_at_local_date": "2026-10-15",
+  "purpose": "Recheck the current author repository for a root license, GitHub-recognized license metadata, releases and the stated ComplexOR data-release boundary without importing third-party claims.",
+  "official_sources": {
+    "repository": "https://github.com/xzymustbexzy/Chain-of-Experts",
+    "releases": "https://github.com/xzymustbexzy/Chain-of-Experts/releases",
+    "paper": "https://openreview.net/forum?id=HobyL1B9CZ"
+  },
+  "observations": {
+    "repository_identifies_itself_as_official_implementation": true,
+    "visible_root_entries": 24,
+    "visible_root_license_file": false,
+    "github_license_resource_shown": false,
+    "release_count": 0,
+    "release_assets_available": false,
+    "readme_installation_uses_requirements_txt": true,
+    "readme_requires_user_api_key": true,
+    "readme_says_lpwp_uploaded": true,
+    "readme_says_complexor_raw_version_uploaded": true,
+    "readme_says_formal_37_datasets_will_be_released": true,
+    "repository_history_count_displayed": 34
+  },
+  "relationship_to_local_reproduction": {
+    "paper_snapshot_commit": "9d96bcc2f067177eb0e122b1aae8227748dc6830",
+    "current_snapshot_commit": "afb89bf602690ea621f13a23c42722f20f653a43",
+    "local_prompt_and_controller_reproduction_complete": true,
+    "local_safe_adapter_boundary_disclosed": true,
+    "new_model_or_solver_rerun_required": false,
+    "interpretation": "The visible official code remains adequate as an upstream reconstruction source for the already completed pinned local reproductions. Absence of a verified license prevents vendoring or implying redistribution permission."
+  },
+  "decision": {
+    "official_code_artifact_available": true,
+    "official_license_verified": false,
+    "official_release_package_verified": false,
+    "formal_complete_complexor_release_verified": false,
+    "safe_publication_action": "Retain pinned upstream URLs and commits plus local adapters and aggregate results; do not vendor or relicense official CoE code or data unless the authors publish verifiable terms.",
+    "scientific_effect": "No change to local CoE numerical results or their safe-adapter boundary; this is a release and provenance constraint, not evidence of method failure."
+  },
+  "limitations": [
+    "The web surface did not expose an exact current commit hash through the available reader, so the audit does not claim that the live default branch equals the pinned local current snapshot.",
+    "Absence of a visible root license or GitHub license badge is not a legal opinion about every possible permission source.",
+    "No repository archive, dataset body, request body, response body, credential or evaluator-only answer was downloaded or read."
+  ],
+  "execution": {
+    "official_web_pages_read": true,
+    "third_party_summary_used": false,
+    "model_calls": 0,
+    "experiment_api_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "credentials_read": false,
+    "repository_modified": false
+  }
+}

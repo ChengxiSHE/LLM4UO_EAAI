@@ -1,0 +1,83 @@
+{
+  "schema": "llm4or-goal-evidence-index-closure-audit-v1",
+  "audited_at_local_date": "2026-10-15",
+  "status": "goal_evidence_index_closure_closed_release_still_open",
+  "purpose": "Close the exact Git-index backlog for every evidence file referenced by the current goal audit without bulk-adding unrelated workspace content.",
+  "allowlist_source": {
+    "path": "experiments/goal_completion_audit_20261015.json",
+    "sha256_before_closure_entry": "55333e8e08018aad7ee82a9c75507cca56d299d18fe38389e2388ce4ba284558",
+    "selection_rule": "Take the sorted set difference between evidence paths referenced by all goal requirements and git ls-files; accept only files whose initial bytes match the already declared SHA-256, then normalize five Markdown-only trailing-space date lines and rebind their final hashes."
+  },
+  "allowlist": {
+    "unique_paths": 34,
+    "json_files": 16,
+    "markdown_files": 18,
+    "total_bytes": 298476,
+    "sorted_path_and_sha256_set_sha256": "69b19feb787e9b81149f77d7b5c71bdf12bb82494a27e50c0651d6e62d6ab0d0",
+    "categories": [
+      "theory and artifact-conformance audits",
+      "proposal provenance, acquisition power and fresh-protocol design audits",
+      "release allowlist, source-closure, publisher and environment audits",
+      "figure preflights and legend audit"
+    ]
+  },
+  "validation": {
+    "declared_sha256_matches": 34,
+    "declared_sha256_mismatches": 0,
+    "markdown_trailing_space_normalizations_after_initial_match": 5,
+    "normalized_files_rebound_in_final_goal_audit": 5,
+    "missing_files": 0,
+    "json_parse_failures": 0,
+    "bearer_literal_hits": 0,
+    "openai_style_key_literal_hits": 0,
+    "quoted_secret_assignment_hits": 0,
+    "forbidden_exact_json_key_hits": 0,
+    "forbidden_exact_json_keys": [
+      "api_key",
+      "credential",
+      "evaluator_answer",
+      "point",
+      "problem_nl",
+      "public_text",
+      "reference_answer",
+      "repair",
+      "request_body",
+      "response_body",
+      "solve_objective"
+    ]
+  },
+  "result_after_commit": {
+    "goal_evidence_references_before_adding_this_audit": 110,
+    "goal_evidence_unique_paths_before_adding_this_audit": 99,
+    "referenced_paths_missing_from_git_index": 0,
+    "referenced_index_hash_mismatches": 0,
+    "paper_manifest_paths": 69,
+    "paper_manifest_index_hash_mismatches": 0,
+    "workspace_bulk_add_used": false
+  },
+  "decision": {
+    "goal_evidence_index_backlog_closed": true,
+    "release_ready": false,
+    "permitted_claim": "Every file referenced by the goal audit is present with its declared bytes in the candidate Git index after an exact 34-file allowlist addition.",
+    "prohibited_claim": "Index closure does not establish redistribution rights, a selected license, runnable producers, dependency completeness, solver availability, clean-clone execution or history safety."
+  },
+  "remaining_release_gates": [
+    "author-selected root license and third-party attribution policy",
+    "fixed prompt disclosure decision",
+    "canonical content-addressed skill and library manifests",
+    "historical producer replacement or wrapping",
+    "layered execution environments and commands",
+    "required solver submodule and external Gurobi contract",
+    "credential-free recursive clean-clone rebuild",
+    "history-free or sanitized public release construction"
+  ],
+  "execution": {
+    "api_or_model_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "credentials_read": false,
+    "request_or_response_bodies_read": false,
+    "evaluator_only_answers_read": false
+  }
+}

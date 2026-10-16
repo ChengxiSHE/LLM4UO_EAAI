@@ -1,0 +1,58 @@
+{
+  "conclusion": "passed_history_free_public_integrity_package_not_complete_public_endpoint_reproduction",
+  "controlled_endpoint_review": {
+    "audit": "experiments/controlled_endpoint_review_audit_20261016.json",
+    "public_package_boundary_unchanged": true,
+    "sha256": "9dd9f89f88bf82e5590a44521e4c81b590b7b4d078f907eb4105f9b45675e1d7",
+    "status": "passed_all_controlled_endpoints_exact"
+  },
+  "date": "2026-10-16",
+  "execution": {
+    "api_or_model_calls": 0,
+    "benchmark_solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0
+  },
+  "findings": {
+    "critical": [
+      "Public package verifies integrity and aggregate arithmetic but cannot independently rescore central endpoints from rights-restricted inputs and evaluator-only answers."
+    ],
+    "important": [
+      "Tagged manuscript and supplement contain pre-publication wording and historical 53-test references.",
+      "Common-38 is a fixed-cohort native-budget comparison, not an equal-total-information leaderboard.",
+      "Two Layer-A command contracts were present."
+    ],
+    "minor": [
+      "v1.0.0 tag is lightweight and unsigned.",
+      "Provider preflight requires the separately declared certifi dependency.",
+      "No archival DOI is verified."
+    ]
+  },
+  "human_report": {
+    "path": "docs/INDEPENDENT_PUBLIC_RELEASE_REVIEW_20261016.md",
+    "sha256": "5da57368bfa7682a24fb508ff92f5edd62556c03746b6fd3f96c76649819e3a4"
+  },
+  "independence": {
+    "credentials_read": false,
+    "evaluator_only_answers_read": false,
+    "local_worktree_read": false,
+    "request_or_response_bodies_read": false,
+    "task_bodies_read": false
+  },
+  "review_scope": "fresh_context_public_repository_and_v1.0.0_release_only",
+  "schema": "llm4or-independent-public-release-review-v1",
+  "status": "completed_with_critical_public_endpoint_rescoring_gap",
+  "verified": {
+    "additional_release_tests_passed_after_declared_provider_install": 12,
+    "body_free_output_identities": 2985,
+    "layer_a_tests_passed": 79,
+    "paper_assertions": 416,
+    "paper_boundaries": 15,
+    "paper_paths": 70,
+    "reconstruction_commands_passed": 3,
+    "release_assets_with_matching_size_and_sha256": 11,
+    "submodule": "c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010",
+    "tree": "3c90e562c0f3f228c2a1a031320dd75b80257304",
+    "zero_parent_commit": "3b870323935fa0a00ffd3fe9d1dc3512323beacf"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "bundle_sha256": "bd8e8b743df484713179cca4782b83ea11a6127ebadff37e3849a89f2267a48a",
+  "census_sha256": "723d7abe6b46bb78e51a1b64c3eecd1bf30622858597d49305b84a0329345e7b",
+  "claim_boundary": "This audit proves deterministic source separation only; it does not authorize inference or report benchmark accuracy.",
+  "counts": {
+    "formulations": 109,
+    "pairs": 89,
+    "problems": 20,
+    "proofs": 63
+  },
+  "evaluator_projection_sha256": "f17aa09b7701ee79087db619740edd4494e931ae81e1f99b4dc005b075b3dbf9",
+  "execution": {
+    "api_calls": 0,
+    "credentials_read": false,
+    "lean_calls": 0,
+    "model_calls": 0,
+    "solver_calls": 0,
+    "vm_calls": 0
+  },
+  "inference_metadata_projection_sha256": "4b99d2e600eaad0b07e38b8acc985acc56adbe302e8bc24ac5620d1aedc6408b",
+  "privacy": {
+    "contains_code_bodies": false,
+    "contains_data_values": false,
+    "contains_pair_labels": false,
+    "contains_problem_bodies": false,
+    "contains_proof_bodies": false,
+    "contains_solutions": false,
+    "contains_source_paths": false
+  },
+  "private_ledger_sha256": "368d5cedc1b8534dedead2fa57bb8d4e020f042a62c96fb7436e3fca2c64a4a7",
+  "schema": "llm4or-formulationbench-custody-audit-v1",
+  "source": {
+    "commit": "6f37a71e6251b11599ef42869e4268882985a8a7",
+    "dataset_tree": "793db197693fac5446fe1bd39aaf178fea437822"
+  },
+  "status": "published_private_bundle_verified"
+}

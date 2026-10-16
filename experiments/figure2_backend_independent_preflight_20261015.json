@@ -1,0 +1,106 @@
+{
+  "schema": "llm4or-figure2-backend-independent-preflight-v1",
+  "status": "passed_backend_independent_rendering_pending_backend_selection",
+  "created_at_local_date": "2026-10-15",
+  "purpose": "Freeze the scientific argument, source-data mapping, arithmetic checks, privacy boundary and render-time obligations for the main endpoint figure before a plotting backend is selected.",
+  "inputs": {
+    "manuscript/FIGURE_PLAN.md": "c19257e211ef4bdfd817249ada7f11713e7561efd41e72c5b99edf4e3f4edf78",
+    "results/manuscript_figure2_source_data_audit_20261015.json": "681dc3453e9134189059f80b7b432e4b71da927337368f286a3b0c05c5f58a8c",
+    "manuscript/source_data/figure2_endpoint_summary.csv": "71927fc29af5f54269dee1675c140f8f3b04404635458cc31973c2709e8ec71e",
+    "manuscript/source_data/figure2_tsp_by_size.csv": "ce6bc449422bc4a2ca5d066ded26801570283a35d71651fea3c42864ed9aa869",
+    "manuscript/source_data/figure2_group_summary.csv": "0977c0b8d8856fcf9e287907da993181ccdc39e269831901bcf84a9b507c2076",
+    "manuscript/source_data/figure2_router_identity.csv": "a44eb29bc162419e2acda954daf1b1f08e5448b9242cfc414cb0e8b59eae52e2"
+  },
+  "figure_contract": {
+    "results_level_question": "Does admitted benchmark-grounded knowledge improve each frozen endpoint relative to its strong control, and does public-only composition preserve pinned direct-family behavior?",
+    "core_conclusion": "Across two separately frozen studies, proof-carrying skills improve full-denominator endpoint accuracy through observed corrections with no paired regressions, while the retrospective mixed router preserves all pinned direct-family outputs.",
+    "archetype": "asymmetric_quantitative_grid",
+    "hero_panel": "a",
+    "target_width_mm": 180,
+    "minimum_rendered_glyph_pt": 5,
+    "required_vector_outputs": [
+      "pdf",
+      "svg"
+    ]
+  },
+  "panel_contracts": {
+    "a": {
+      "role": "primary quantitative evidence",
+      "source": "manuscript/source_data/figure2_endpoint_summary.csv",
+      "claim": "Within-study endpoint accuracy increases from 54/140 to 100/140 for TSP and from 828/2845 to 2752/2845 for OR-Debug.",
+      "prohibited_inference": "Do not pool the two endpoints or attach an item-level significance claim to TSP."
+    },
+    "b": {
+      "role": "paired mechanism and regression control",
+      "source": "manuscript/source_data/figure2_endpoint_summary.csv",
+      "claim": "The frozen cohorts contain 46 and 1924 corrections, respectively, with zero observed paired regressions.",
+      "prohibited_inference": "Zero observed regressions is not a future non-regression guarantee."
+    },
+    "c": {
+      "role": "stratification at disclosed dependence units",
+      "sources": [
+        "manuscript/source_data/figure2_tsp_by_size.csv",
+        "manuscript/source_data/figure2_group_summary.csv"
+      ],
+      "claim": "All seven TSP size strata improve descriptively; 65 of 100 OR-Debug structural groups improve, 35 tie and none decline.",
+      "prohibited_inference": "TSP sizes are descriptive strata with shared template lineage; the structural key does not prove complete source or generation-template lineage."
+    },
+    "d": {
+      "role": "orthogonal composition-preservation validation",
+      "source": "manuscript/source_data/figure2_router_identity.csv",
+      "claim": "All 2985 routed outputs equal their pinned direct-family outputs, with zero route, output, source or terminal mismatches.",
+      "prohibited_inference": "This retrospective identity audit does not recompute accuracy or establish routing under distribution shift."
+    }
+  },
+  "arithmetic_checks": {
+    "endpoint_rows": 2,
+    "endpoint_partition_equals_denominator": true,
+    "endpoint_accuracy_recomputes_from_counts": true,
+    "endpoint_delta_recomputes_from_counts": true,
+    "tsp_size_rows": 7,
+    "tsp_sizes_exactly_13_through_19": true,
+    "tsp_size_records_sum": 140,
+    "tsp_size_control_correct_sum": 54,
+    "tsp_size_method_correct_sum": 100,
+    "tsp_size_corrections_sum": 46,
+    "tsp_size_regressions_sum": 0,
+    "group_summary_matches_endpoint_evidence": true,
+    "router_family_records_sum": 2985,
+    "router_all_exact_matches": 2985,
+    "router_all_mismatch_or_failure_counts_zero": true
+  },
+  "privacy_checks": {
+    "contains_problem_text": false,
+    "contains_request_or_response_body": false,
+    "contains_evaluator_only_answer": false,
+    "contains_reference_repair": false,
+    "contains_credential": false,
+    "aggregate_only": true
+  },
+  "render_time_blocking_checks": [
+    "Select and persist exactly one plotting backend: Python or R.",
+    "Render PDF and SVG at 180 mm final width with editable text and a 5 pt glyph floor.",
+    "Measure final panel rectangles and pass the 1.5 pt multi-panel alignment gate.",
+    "Run plotting-source validation, PDF text audit and final-PDF collision audit.",
+    "Inspect every panel and the complete figure at final physical size.",
+    "Verify that the zero-regression category remains visibly labelled and that panel d is subordinate and marked accuracy-not-rescored.",
+    "Record any alignment exemption for the intentionally asymmetric hero panel."
+  ],
+  "decision": {
+    "backend_independent_evidence_architecture_ready": true,
+    "source_data_ready_for_rendering": true,
+    "publication_ready_figure_exists": false,
+    "remaining_blocker": "No plotting backend has been selected or persisted; no final figure has been rendered or visually audited."
+  },
+  "execution": {
+    "model_calls": 0,
+    "api_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "plotting_calls": 0,
+    "request_or_response_bodies_read": false,
+    "evaluator_only_answers_read": false,
+    "credentials_read": false
+  }
+}

@@ -1,0 +1,508 @@
+{
+  "claim_boundary": "Post-hoc aggregate decision diagnostics; counts localize errors but do not create an independent accuracy estimate or causal decomposition.",
+  "privacy": {
+    "contains_objectives": false,
+    "contains_per_item_results": false,
+    "contains_problem_bodies": false,
+    "contains_responses": false,
+    "contains_source_ids": false
+  },
+  "schema": "llm4or-retailopt190-decision-diagnostics-v1",
+  "status": "complete",
+  "studies": {
+    "posthoc_label_blind": {
+      "card_fully_correct_over_routed_archetypes": {
+        "base_short": {
+          "retail.budget.v1": {
+            "correct": 2,
+            "total": 2
+          },
+          "retail.core.flow.v1": {
+            "correct": 8,
+            "total": 38
+          },
+          "retail.labor.v1": {
+            "correct": 2,
+            "total": 2
+          },
+          "retail.lead_time.v1": {
+            "correct": 2,
+            "total": 2
+          },
+          "retail.moq_fixed.v1": {
+            "correct": 2,
+            "total": 2
+          },
+          "retail.pack_size.v1": {
+            "correct": 1,
+            "total": 1
+          },
+          "retail.returns.v1": {
+            "correct": 1,
+            "total": 1
+          },
+          "retail.substitution.v1": {
+            "correct": 7,
+            "total": 36
+          },
+          "retail.sustainability.v1": {
+            "correct": 1,
+            "total": 1
+          },
+          "retail.transshipment.v1": {
+            "correct": 4,
+            "total": 4
+          }
+        },
+        "knowledge_short": {
+          "retail.budget.v1": {
+            "correct": 2,
+            "total": 2
+          },
+          "retail.core.flow.v1": {
+            "correct": 37,
+            "total": 38
+          },
+          "retail.labor.v1": {
+            "correct": 2,
+            "total": 2
+          },
+          "retail.lead_time.v1": {
+            "correct": 2,
+            "total": 2
+          },
+          "retail.moq_fixed.v1": {
+            "correct": 2,
+            "total": 2
+          },
+          "retail.pack_size.v1": {
+            "correct": 1,
+            "total": 1
+          },
+          "retail.returns.v1": {
+            "correct": 1,
+            "total": 1
+          },
+          "retail.substitution.v1": {
+            "correct": 36,
+            "total": 36
+          },
+          "retail.sustainability.v1": {
+            "correct": 1,
+            "total": 1
+          },
+          "retail.transshipment.v1": {
+            "correct": 4,
+            "total": 4
+          }
+        }
+      },
+      "plan_sha256": "3a1f31b240bf47b54b533550f0343fe9e52b55a537c477209f871bb1a2e58978",
+      "question_correct_over_archetypes": {
+        "base_short": {
+          "aging": {
+            "correct": 13,
+            "total": 38
+          },
+          "budget": {
+            "correct": 2,
+            "total": 2
+          },
+          "demand_balance": {
+            "correct": 36,
+            "total": 38
+          },
+          "fixed_order_cost": {
+            "correct": 2,
+            "total": 2
+          },
+          "fresh_inflow": {
+            "correct": 25,
+            "total": 38
+          },
+          "holding_cost": {
+            "correct": 38,
+            "total": 38
+          },
+          "labor_capacity": {
+            "correct": 2,
+            "total": 2
+          },
+          "lead_time": {
+            "correct": 2,
+            "total": 2
+          },
+          "order_activation": {
+            "correct": 2,
+            "total": 2
+          },
+          "pack_size": {
+            "correct": 1,
+            "total": 1
+          },
+          "production_capacity": {
+            "correct": 36,
+            "total": 38
+          },
+          "purchase_cost": {
+            "correct": 38,
+            "total": 38
+          },
+          "returns": {
+            "correct": 1,
+            "total": 1
+          },
+          "substitution_demand_cap": {
+            "correct": 36,
+            "total": 36
+          },
+          "substitution_direction": {
+            "correct": 35,
+            "total": 36
+          },
+          "substitution_inventory_binding": {
+            "correct": 7,
+            "total": 36
+          },
+          "transshipment": {
+            "correct": 4,
+            "total": 4
+          },
+          "waste": {
+            "correct": 38,
+            "total": 38
+          },
+          "waste_limit": {
+            "correct": 1,
+            "total": 1
+          }
+        },
+        "knowledge_short": {
+          "aging": {
+            "correct": 38,
+            "total": 38
+          },
+          "budget": {
+            "correct": 2,
+            "total": 2
+          },
+          "demand_balance": {
+            "correct": 38,
+            "total": 38
+          },
+          "fixed_order_cost": {
+            "correct": 2,
+            "total": 2
+          },
+          "fresh_inflow": {
+            "correct": 37,
+            "total": 38
+          },
+          "holding_cost": {
+            "correct": 38,
+            "total": 38
+          },
+          "labor_capacity": {
+            "correct": 2,
+            "total": 2
+          },
+          "lead_time": {
+            "correct": 2,
+            "total": 2
+          },
+          "order_activation": {
+            "correct": 2,
+            "total": 2
+          },
+          "pack_size": {
+            "correct": 1,
+            "total": 1
+          },
+          "production_capacity": {
+            "correct": 38,
+            "total": 38
+          },
+          "purchase_cost": {
+            "correct": 38,
+            "total": 38
+          },
+          "returns": {
+            "correct": 1,
+            "total": 1
+          },
+          "substitution_demand_cap": {
+            "correct": 36,
+            "total": 36
+          },
+          "substitution_direction": {
+            "correct": 36,
+            "total": 36
+          },
+          "substitution_inventory_binding": {
+            "correct": 36,
+            "total": 36
+          },
+          "transshipment": {
+            "correct": 4,
+            "total": 4
+          },
+          "waste": {
+            "correct": 38,
+            "total": 38
+          },
+          "waste_limit": {
+            "correct": 1,
+            "total": 1
+          }
+        }
+      }
+    },
+    "prospective_primary": {
+      "card_fully_correct_over_routed_archetypes": {
+        "base_short": {
+          "retail.budget.v1": {
+            "correct": 2,
+            "total": 2
+          },
+          "retail.core.flow.v1": {
+            "correct": 10,
+            "total": 38
+          },
+          "retail.labor.v1": {
+            "correct": 2,
+            "total": 2
+          },
+          "retail.lead_time.v1": {
+            "correct": 2,
+            "total": 2
+          },
+          "retail.moq_fixed.v1": {
+            "correct": 2,
+            "total": 2
+          },
+          "retail.pack_size.v1": {
+            "correct": 1,
+            "total": 1
+          },
+          "retail.returns.v1": {
+            "correct": 1,
+            "total": 1
+          },
+          "retail.substitution.v1": {
+            "correct": 11,
+            "total": 36
+          },
+          "retail.sustainability.v1": {
+            "correct": 1,
+            "total": 1
+          },
+          "retail.transshipment.v1": {
+            "correct": 4,
+            "total": 4
+          }
+        },
+        "knowledge_short": {
+          "retail.budget.v1": {
+            "correct": 2,
+            "total": 2
+          },
+          "retail.core.flow.v1": {
+            "correct": 33,
+            "total": 38
+          },
+          "retail.labor.v1": {
+            "correct": 2,
+            "total": 2
+          },
+          "retail.lead_time.v1": {
+            "correct": 2,
+            "total": 2
+          },
+          "retail.moq_fixed.v1": {
+            "correct": 2,
+            "total": 2
+          },
+          "retail.pack_size.v1": {
+            "correct": 1,
+            "total": 1
+          },
+          "retail.returns.v1": {
+            "correct": 1,
+            "total": 1
+          },
+          "retail.substitution.v1": {
+            "correct": 36,
+            "total": 36
+          },
+          "retail.sustainability.v1": {
+            "correct": 1,
+            "total": 1
+          },
+          "retail.transshipment.v1": {
+            "correct": 4,
+            "total": 4
+          }
+        }
+      },
+      "plan_sha256": "a24779da198d42bb6cedaf9bc97653b6c3186abb4a949e1ac2bc38e1c71af1a4",
+      "question_correct_over_archetypes": {
+        "base_short": {
+          "aging": {
+            "correct": 13,
+            "total": 38
+          },
+          "budget": {
+            "correct": 2,
+            "total": 2
+          },
+          "demand_balance": {
+            "correct": 37,
+            "total": 38
+          },
+          "fixed_order_cost": {
+            "correct": 2,
+            "total": 2
+          },
+          "fresh_inflow": {
+            "correct": 24,
+            "total": 38
+          },
+          "holding_cost": {
+            "correct": 38,
+            "total": 38
+          },
+          "labor_capacity": {
+            "correct": 2,
+            "total": 2
+          },
+          "lead_time": {
+            "correct": 2,
+            "total": 2
+          },
+          "order_activation": {
+            "correct": 2,
+            "total": 2
+          },
+          "pack_size": {
+            "correct": 1,
+            "total": 1
+          },
+          "production_capacity": {
+            "correct": 36,
+            "total": 38
+          },
+          "purchase_cost": {
+            "correct": 38,
+            "total": 38
+          },
+          "returns": {
+            "correct": 1,
+            "total": 1
+          },
+          "substitution_demand_cap": {
+            "correct": 36,
+            "total": 36
+          },
+          "substitution_direction": {
+            "correct": 34,
+            "total": 36
+          },
+          "substitution_inventory_binding": {
+            "correct": 11,
+            "total": 36
+          },
+          "transshipment": {
+            "correct": 4,
+            "total": 4
+          },
+          "waste": {
+            "correct": 38,
+            "total": 38
+          },
+          "waste_limit": {
+            "correct": 1,
+            "total": 1
+          }
+        },
+        "knowledge_short": {
+          "aging": {
+            "correct": 38,
+            "total": 38
+          },
+          "budget": {
+            "correct": 2,
+            "total": 2
+          },
+          "demand_balance": {
+            "correct": 38,
+            "total": 38
+          },
+          "fixed_order_cost": {
+            "correct": 2,
+            "total": 2
+          },
+          "fresh_inflow": {
+            "correct": 33,
+            "total": 38
+          },
+          "holding_cost": {
+            "correct": 38,
+            "total": 38
+          },
+          "labor_capacity": {
+            "correct": 2,
+            "total": 2
+          },
+          "lead_time": {
+            "correct": 2,
+            "total": 2
+          },
+          "order_activation": {
+            "correct": 2,
+            "total": 2
+          },
+          "pack_size": {
+            "correct": 1,
+            "total": 1
+          },
+          "production_capacity": {
+            "correct": 38,
+            "total": 38
+          },
+          "purchase_cost": {
+            "correct": 38,
+            "total": 38
+          },
+          "returns": {
+            "correct": 1,
+            "total": 1
+          },
+          "substitution_demand_cap": {
+            "correct": 36,
+            "total": 36
+          },
+          "substitution_direction": {
+            "correct": 36,
+            "total": 36
+          },
+          "substitution_inventory_binding": {
+            "correct": 36,
+            "total": 36
+          },
+          "transshipment": {
+            "correct": 4,
+            "total": 4
+          },
+          "waste": {
+            "correct": 38,
+            "total": 38
+          },
+          "waste_limit": {
+            "correct": 1,
+            "total": 1
+          }
+        }
+      }
+    }
+  }
+}

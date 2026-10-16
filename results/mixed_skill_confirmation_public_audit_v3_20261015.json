@@ -1,0 +1,74 @@
+{
+  "claim_guard": {
+    "accuracy_recomputed": false,
+    "new_generalization_claimed": false,
+    "preservation_claim_allowed": true,
+    "retrospective_composition_only": true
+  },
+  "exact_identity_pass": true,
+  "families": {
+    "or_debug": {
+      "exact_matches": 2845,
+      "missing_direct_records": 0,
+      "missing_mixed_records": 0,
+      "output_mismatches": 0,
+      "records": 2845,
+      "route_mismatches": 0,
+      "source_mismatches": 0,
+      "terminal_failures": 0
+    },
+    "tsp": {
+      "exact_matches": 140,
+      "missing_direct_records": 0,
+      "missing_mixed_records": 0,
+      "output_mismatches": 0,
+      "records": 140,
+      "route_mismatches": 0,
+      "source_mismatches": 0,
+      "terminal_failures": 0
+    }
+  },
+  "inherited_confirmation_endpoints": {
+    "or_debug": {
+      "denominator": 2845,
+      "evolved_correct": 2752,
+      "static_correct": 828
+    },
+    "tsp": {
+      "denominator": 140,
+      "skill_correct": 100,
+      "static_correct": 54
+    }
+  },
+  "input_sha256": {
+    "bundle": "da9a35dcb6b76e2289a7a9f0613384661dac80f6e96b8c3ed41ba1f5538fee65",
+    "mixed": "5f7b5860f4e50e5ce37b85e49fbd9e3b96488429bf08e779fe17c503ded1ad70",
+    "or_debug_direct": "d714e72bb9207ba7ca7146f43a196f9b6599e1e43b5ea94446fe9a60bfbbcf46",
+    "tsp_direct": "bbd4e31ddf317df76dc7e84ce00be143ec078f159663f57fa443226610a27e23"
+  },
+  "route_counts": {
+    "or_debug_typed_repair_v1": 2845,
+    "tsp_constraint_xor_v2_scalable": 140
+  },
+  "schema": "llm4or.mixed_skill_confirmation_public_audit.v1",
+  "status_counts": {
+    "complete": 2985
+  },
+  "totals": {
+    "duplicate_bundle_records": 0,
+    "duplicate_direct_records": 0,
+    "duplicate_mixed_records": 0,
+    "exact_matches": 2985,
+    "invalid_bundle_records": 0,
+    "invalid_direct_records": 0,
+    "invalid_mixed_records": 0,
+    "missing_direct_records": 0,
+    "missing_mixed_records": 0,
+    "output_mismatches": 0,
+    "records": 2985,
+    "route_mismatches": 0,
+    "source_mismatches": 0,
+    "terminal_failures": 0,
+    "unexpected_mixed_records": 0
+  }
+}

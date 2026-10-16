@@ -1,0 +1,44 @@
+{
+  "schema": "bounded-official-artifact-recheck-v1",
+  "checked_at_utc": "2026-10-14T15:35:19Z",
+  "paper": "Toward a Trustworthy Optimization Modeling Agent via Verifiable Synthetic Data Generation",
+  "paper_id": "arXiv:2508.03117",
+  "workflow": "primary-source inspection plus bounded exact-title and author/code search",
+  "official_sources": [
+    "https://arxiv.org/abs/2508.03117",
+    "https://arxiv.org/html/2508.03117v1",
+    "https://arxiv.org/src/2508.03117"
+  ],
+  "queries": [
+    "OptiTrust 2508.03117 official code GitHub",
+    "Toward a Trustworthy Optimization Modeling Agent code",
+    "Vinicius Lima OptiTrust GitHub optimization modeling",
+    "site:github.com Dzung T. Phan OptiTrust"
+  ],
+  "observations": [
+    "The official arXiv history still exposes only version v1, submitted 2025-08-05.",
+    "The inspected official abstract page does not expose an author-linked runnable repository, dataset, checkpoint, or supplementary-code download.",
+    "Bounded exact-title and author/code searches did not verify an author-linked runnable package for this paper.",
+    "The search result charguer/optitrust describes an unrelated user-guided C source-to-source transformation system and is not an artifact for arXiv:2508.03117.",
+    "The previously pinned 1,052,932-byte arXiv v1 source archive remains the exact official package inspected by the local static audit."
+  ],
+  "prior_exact_archive_audit": {
+    "path": "results/optitrust_arxiv_source_audit_20261014.json",
+    "sha256": "d1eb6a32b479d236aefb698d14431c22d292cf03d5bbd9b3c0bd6416ec369c80",
+    "source_archive_sha256": "c550894d070b32877713053b0fc87e8df1b4e864a1055c2b71071d9c35123c7e",
+    "runnable_files": 0
+  },
+  "status": "official_runnable_artifact_not_verified",
+  "new_reproduction_evidence": false,
+  "official_code_reproduction_eligible": false,
+  "paper_score_substitution_allowed": false,
+  "paper_based_reimplementation_allowed_only_if_separately_labeled": true,
+  "external_calls": {
+    "model_api": 0,
+    "solver": 0,
+    "native_execution": 0,
+    "author_contact": 0
+  },
+  "limitations": "This is a bounded search and primary-page inspection, not proof that no artifact exists anywhere. Search indexes can omit or lag releases. A new author, venue, repository, or model-card pointer must be inspected when available.",
+  "next_action": "Do not repeat unchanged broad searches on every continuation. Re-open official-code reproduction only when a concrete author-linked artifact or venue supplement is identified; otherwise keep OptiTrust in the artifact-unavailable row."
+}

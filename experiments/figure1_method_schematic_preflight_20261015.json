@@ -1,0 +1,174 @@
+{
+  "schema": "llm4or-figure1-method-schematic-preflight-v1",
+  "status": "passed_backend_independent_rendering_pending_backend_selection",
+  "created_at_local_date": "2026-10-15",
+  "purpose": "Freeze a backend-independent method schematic that maps every knowledge-construction stage to its formal object, trust boundary, guarantee class, empirical decision and prohibited extrapolation.",
+  "inputs": {
+    "manuscript/FIGURE_PLAN.md": "c19257e211ef4bdfd817249ada7f11713e7561efd41e72c5b99edf4e3f4edf78",
+    "manuscript/SUPPLEMENTARY_THEORY.md": "16372d188580070141d8d1351057b3fefd78d0de54b555c7acc9ce21f6fe388e",
+    "docs/KNOWLEDGE_EVOLUTION_THEORETICAL_FRAMEWORK_20261015.md": "b6e0f543b3bafb4c0a406fa7da0d74ba44dd85e9aa196e85b3b97a628c3cf65b",
+    "docs/THEORY_CLAIM_EVIDENCE_MATRIX.md": "337ffa77c8babb8ade0b7802080c5ef6537f39a424ca43d0d2c5896211896975",
+    "manuscript/MANUSCRIPT_DRAFT.md": "6c1b006a4ea6031aaf5e74050e2fcd41cea466c97892dc137b9f1556382d203e"
+  },
+  "figure_contract": {
+    "results_level_question": "How does the system turn benchmark failures into versioned modeling knowledge while preventing the proposer from changing the correctness boundary?",
+    "core_conclusion": "Benchmark-grounded knowledge construction is a bounded library transition in which untrusted proposals are reduced by retained witnesses, admitted only with declared proof obligations, deployed through exact-fallback routing and promoted only by an independent endpoint.",
+    "archetype": "schematic_led_composite",
+    "target_width_mm": 180,
+    "minimum_rendered_glyph_pt": 5,
+    "required_vector_outputs": [
+      "pdf",
+      "svg"
+    ]
+  },
+  "visual_vocabulary": {
+    "untrusted_producer": "neutral dashed outline",
+    "candidate_or_new_skill": "method blue",
+    "trusted_checker_or_frozen_boundary": "dark neutral solid outline",
+    "accepted_transition": "restrained green",
+    "rejection_or_regression": "reserved red",
+    "fallback_or_unchanged_state": "light neutral grey"
+  },
+  "panel_contracts": {
+    "a": {
+      "title": "Typed skill and versioned library",
+      "role": "define the learned object and immutable boundary",
+      "nodes": [
+        "skill k=(guard,evidence,transform,semantic verifier,resource checker,provenance)",
+        "library L_t=(skills,public router,trusted verifier,frozen endpoint,lineage ledger)",
+        "untrusted proposer outside the trusted boundary"
+      ],
+      "theory_links": [
+        "Definitions S2",
+        "Proposition S9 and Corollary S9.1 for conditional complexity control"
+      ],
+      "guarantee_class": "formal object and assumption-conditional complexity interpretation",
+      "prohibited_inference": "Do not depict free-form prompt text as certified knowledge, imply that the proposer may modify the verifier, endpoint or sealed ledger, or imply that the current distributed implementation already has one loadable canonical library manifest."
+    },
+    "b": {
+      "title": "Counterexample-guided construction",
+      "role": "show how benchmark failures restrict a declared finite hypothesis space",
+      "nodes": [
+        "development failure obligation",
+        "finite typed grammar H_b",
+        "candidate proposal",
+        "semantic or resource witness",
+        "monotonically reduced version space",
+        "admitted proof-carrying skill or exhausted grammar"
+      ],
+      "theory_links": [
+        "Proposition S1 finite termination",
+        "Proposition S2 enumerated-domain soundness",
+        "Proposition S3 exact minimum repair",
+        "Proposition S4 monotone elimination",
+        "Proposition S4.1 conditional balanced-witness contraction"
+      ],
+      "guarantee_class": "finite-domain software guarantee plus a conditional teaching-rate bound",
+      "prohibited_inference": "Do not show logarithmic convergence without the balanced-witness premise or imply that the current language-model proposer has demonstrated automatic recovery."
+    },
+    "c": {
+      "title": "Selective proof-carrying execution",
+      "role": "show the accepted path and exact fallback path",
+      "nodes": [
+        "public input",
+        "exactly-one public guard",
+        "typed extraction and compilation",
+        "semantic and exact resource admission",
+        "backend and projection",
+        "zero or multiple matches return the previous-library output"
+      ],
+      "theory_links": [
+        "Proposition S5 conditional accepted-path correctness",
+        "Proposition S6 declared resource safety",
+        "Proposition S7 exact fallback identity",
+        "Proposition S8.1 conservative library extension"
+      ],
+      "guarantee_class": "conditional accepted-path correctness and deterministic behavior preservation outside unique coverage",
+      "prohibited_inference": "Do not imply universal natural-language correctness, backend infallibility or non-regression inside the accepted region."
+    },
+    "d": {
+      "title": "Independent promotion and immutable versioning",
+      "role": "separate verifier acceptance from benchmark usefulness",
+      "nodes": [
+        "full-denominator paired outcomes",
+        "correction, regression, both-correct and both-wrong partition",
+        "fresh grouped promotion gate with alpha spending",
+        "prefix-code-weighted candidate budget and cumulative regression budget",
+        "append content-addressed L_(t+1) or retain L_t",
+        "one-shot confirmation and rollback target"
+      ],
+      "theory_links": [
+        "Proposition S8 paired gain decomposition",
+        "Corollary S8.2 modular multi-skill gain",
+        "Proposition S10 anytime control of erroneous promotion",
+        "Corollary S10.1 complexity-weighted anytime promotion",
+        "Corollary S10.2 cumulative regression budget"
+      ],
+      "guarantee_class": "exact accounting identity plus assumption-conditional sequential and candidate-selection error control; benchmark gain remains empirical",
+      "prohibited_inference": "Do not imply that verifier acceptance proves utility, that zero observed regressions proves dominance, that current runs used complexity-weighted promotion, or that a cumulative budget applies across changing targets."
+    }
+  },
+  "cross_panel_edges": [
+    {
+      "from": "a.untrusted proposer",
+      "to": "b.candidate proposal",
+      "label": "producer-agnostic candidate"
+    },
+    {
+      "from": "b.admitted skill",
+      "to": "c.pinned skill",
+      "label": "content-addressed artifact plus certificate"
+    },
+    {
+      "from": "c.recorded output",
+      "to": "d.paired endpoint outcomes",
+      "label": "durable output scored by frozen endpoint"
+    },
+    {
+      "from": "d.accepted L_(t+1)",
+      "to": "a.library L_t",
+      "label": "next immutable version"
+    },
+    {
+      "from": "d.rejected transition",
+      "to": "a.library L_t",
+      "label": "state unchanged; witness retained"
+    }
+  ],
+  "boundary_labels": [
+    "Finite grammar and finite verification domain",
+    "Verifier-relative semantic and declared-resource guarantee",
+    "Exact fallback outside unique coverage",
+    "Empirical full-denominator benchmark utility",
+    "No universal natural-language proof",
+    "No unrestricted recursive self-improvement",
+    "Formal library state; current canonical manifest not yet implemented"
+  ],
+  "render_time_blocking_checks": [
+    "Select and persist exactly one plotting backend: Python or R.",
+    "Keep the proposer visually outside the trusted boundary in every panel.",
+    "Use distinct visual treatments for software guarantees, conditional guarantees and empirical decisions.",
+    "Ensure all cross-panel arrows are directional and every loop terminates in either rejection, fallback or a versioned transition.",
+    "Render PDF and SVG at 180 mm final width with editable text and a 5 pt glyph floor.",
+    "Measure final panel rectangles and pass the 1.5 pt alignment gate, or record an explicit structured-layout exemption.",
+    "Run plotting-source validation, PDF text audit and final-PDF collision audit, then inspect all labels and arrows at final physical size."
+  ],
+  "decision": {
+    "knowledge_construction_and_theory_visually_integrated": true,
+    "backend_independent_schematic_ready": true,
+    "current_single_manifest_implementation_claimed": false,
+    "publication_ready_figure_exists": false,
+    "remaining_blocker": "No plotting backend has been selected or persisted; the schematic has not been rendered or visually audited."
+  },
+  "execution": {
+    "model_calls": 0,
+    "api_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "plotting_calls": 0,
+    "request_or_response_bodies_read": false,
+    "evaluator_only_answers_read": false,
+    "credentials_read": false
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "checkpoint": {
+    "new_records": 190,
+    "resumed_records": 0,
+    "sha256": "a33188fed41496ffd4b12761ff602bae9ac711b9252c9f47c5442ecfa7be72f6"
+  },
+  "claim_boundary": "This is an upstream endpoint and local environment reproducibility audit. It does not evaluate any language-model method or establish formulation accuracy.",
+  "counts": {
+    "complete": 190,
+    "fully_matching": 185,
+    "objective_within_official_tolerance": 185,
+    "planned": 190,
+    "status_compatible": 189
+  },
+  "environment": {
+    "gurobi_version": "13.0.3",
+    "max_workers": 5,
+    "python_sha256": "1c06028eb947c0e64d44abafb1089f4d6822ebe76e78625bed3b248dda2e49b0",
+    "seed": 0,
+    "threads": 1
+  },
+  "execution": {
+    "api_calls": 0,
+    "credentials_read": false,
+    "model_calls": 0,
+    "solver_calls": 190
+  },
+  "plan_sha256": "27fb66e61ec334602a352722334fd2a29e87beb9a7c8213fa5f63ce043e15c66",
+  "privacy": {
+    "contains_per_item_objectives": false,
+    "contains_problem_bodies": false,
+    "contains_reference_objectives": false,
+    "contains_source_ids": false
+  },
+  "relative_objective_error": {
+    "max": 0.008459538103521584,
+    "mean": 0.00023719217950034696
+  },
+  "schema": "llm4or-retailopt190-reference-solver-audit-v1",
+  "source_commit": "d809c6bbeb42cb99b0564c41bfb8f331f0156b9d",
+  "status": "failed_or_incomplete",
+  "status_transition_counts": {
+    "OPTIMAL (TL)->OPTIMAL (TL)": 10,
+    "OPTIMAL->OPTIMAL": 179,
+    "OPTIMAL->OPTIMAL (TL)": 1
+  },
+  "terminal_counts": {
+    "complete": 190
+  },
+  "wall_seconds_this_invocation": 182.47873000008985
+}

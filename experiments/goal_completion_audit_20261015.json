@@ -1,0 +1,1333 @@
+{
+  "audited_at_local_date": "2026-10-17",
+  "completion_decision": {
+    "blocking_requirements": [
+      "G13"
+    ],
+    "claim_if_no_new_experiments": "A defensible bounded systems paper with three source-level formulation/modeling gains, a prospectively confirmed RetailOpt-190 short-decision knowledge method, a fixed common-38 implementation comparison, exhaustive finite contract tests, locally rerun external baselines, and a verified history-free v1.1.1 artifact. Architecture-only accuracy and automatic natural-language acquisition remain unsupported; only external DOI registration remains as the declared archival completion item.",
+    "goal_complete": false
+  },
+  "execution": {
+    "body_access_scope": "Private fixed-source custody, request construction and evaluator scoring for FormulationBench, NLEquiv and RetailOpt plus prior indexed diagnostics; public result, audit and projection artifacts contain no problem, request or response bodies.",
+    "credential_access_scope": "Pinned /Users/chengxi-nju/Desktop/LLM4UO/.venv-preparation transport workers only; no credential is present in evidence artifacts.",
+    "credentials_read": true,
+    "evaluator_only_answers_read": true,
+    "new_api_calls": 1084,
+    "new_model_calls": 1081,
+    "new_native_or_vm_calls": 0,
+    "new_solver_calls": 1140,
+    "request_or_response_bodies_read": true,
+    "retailopt_local_solver_calls": 1140,
+    "retailopt_physical_api_attempts": 157,
+    "retailopt_successful_model_responses": 154
+  },
+  "objective": "Complete LLM4OR-EAAI as a reproducible top-conference research package with locally audited external baselines, a fresh common protocol, bounded theory, a compelling method story, and a complete evidence chain.",
+  "overall_status": "active_not_complete_archival_doi",
+  "priority_order": [
+    {
+      "priority": 1,
+      "reason": "Deposit the exact verified v1.1.1 release plus the current RetailOpt evidence overlay with an external archive and bind only the returned, independently verified DOI.",
+      "requirements": [
+        "G13"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "boundary": "The individual theoretical ingredients and general typed, validation-gated, executable, applicability-aware, versioned skill-library mechanisms have established or concurrent precedents. The contribution is their optimization-modeling-specific executable composition and evidence chain. Complexity-weighted promotion and cumulative regression are prospective conditional protocol guarantees rather than current empirical results; the successful TSP and OR-Debug abstraction/acquisition stages were authored. A code-level conformance audit finds every k=(g,e,t,v,r,p) role and every library role behaviorally present, while the canonical single-skill and parent-linked library manifests remain an artifact/release gap rather than a theory-claim gap.",
+      "evidence": [
+        {
+          "path": "docs/KNOWLEDGE_EVOLUTION_THEORETICAL_FRAMEWORK_20261015.md",
+          "sha256": "da0710bb3f84d11e22fae3306270b314d148320b3764bba9e885bed2b9fbe584"
+        },
+        {
+          "path": "manuscript/SUPPLEMENTARY_THEORY.md",
+          "sha256": "5e613994a5e4e36dc20664ce5abfa82e2786aa7acee7becc5a2708390f029cf2"
+        },
+        {
+          "path": "experiments/theory_implementation_conformance_audit_20261015.json",
+          "sha256": "6c3ff980ade13608728d7c935b8e34bdb6310c129358522cff48de0b6218eea7"
+        },
+        {
+          "path": "docs/THEORY_IMPLEMENTATION_CONFORMANCE_AUDIT_20261015.md",
+          "sha256": "23795253abe37af04bb3ca064e5e3e1200c857ff4aa73e12a43d1e4ca0a95a0d"
+        },
+        {
+          "path": "experiments/content_addressed_library_manifest_design_20261015.json",
+          "sha256": "40ba7e21003c896a0768e741e98e512ea6ebfd107e7c1bbeff8e997018fc4222"
+        },
+        {
+          "path": "docs/CONTENT_ADDRESSED_LIBRARY_MANIFEST_DESIGN_20261015.md",
+          "sha256": "0d2b2c7654f4d30c6ed00fbd6c82617e2f3af6ac745bee1535339ca3c52351fc"
+        },
+        {
+          "path": "experiments/release_readiness_delta_v3_20261015.json",
+          "sha256": "9d8cef44499853607db3f3d8c0195601fce5de1c4bc822d088cebde962d01a77"
+        },
+        {
+          "path": "docs/RELEASE_READINESS_DELTA_V3_20261015.md",
+          "sha256": "c9b313a6afab90689f46c1232129ff3f4b1df79336c4173cdefeb1a19a498841"
+        }
+      ],
+      "id": "G01",
+      "requirement": "Define an attractive, reproducible methodology for benchmark-grounded knowledge construction rather than describing an outer-agent goal loop.",
+      "status": "closed",
+      "supported_claim": "Knowledge construction is a five-map Abstract-Acquire-Admit-Route-Promote operator instantiated as proof-constrained structural risk minimization over a versioned skill-and-router library, with finite acquisition, proof-carrying admission, selective deployment, complexity-weighted candidate promotion and cumulative regression budgeting under a fixed target."
+    },
+    {
+      "boundary": "This is methodological replication with separately authored skills, not unchanged-skill transfer or automatic discovery.",
+      "evidence": [
+        {
+          "path": "results/tsp_constraint_confirmation_root_closure_20261014.json",
+          "sha256": "0a0aef6aad14e720f537c3201b5cc585b0177c0a05150a18d0300f3e498c437d"
+        },
+        {
+          "path": "results/public_projections/or_debug_confirmation_evaluation_projection_20261015.json",
+          "sha256": "7f83555e8b81ff15bad510b95bf7e2617d87bb139786777407704a55e10a70ca"
+        }
+      ],
+      "id": "G02",
+      "requirement": "Demonstrate benchmark formulation-accuracy gains on more than one source.",
+      "status": "closed",
+      "supported_claim": "Authored proof-carrying skills improve the frozen TSP and OR-Debug full-denominator endpoints over their respective frozen controls."
+    },
+    {
+      "closure_test": "The bounded structured-routing requirement is closed. Reopen only for an unrestricted language-shift, learned-router or new-family generalization claim.",
+      "evidence": [
+        {
+          "path": "results/mixed_skill_confirmation_public_audit_v3_20261015.json",
+          "sha256": "3c9b8700639cfe5599fc76b18cca4318b14d4b0865fb5bd343f5c0d26fead08f"
+        },
+        {
+          "path": "experiments/g09_finite_component_census_v2_20261015.json",
+          "sha256": "11e68dbff762893924430608c69dae1cfdb41756f5b5d66c981b96584e8b8911"
+        },
+        {
+          "path": "docs/G09_FINITE_COMPONENT_CENSUS_V2_20261015.md",
+          "sha256": "cd5e01e8c2f76697a477cb4c1c5e42c99a1da300865faf711a18e63d3629b1a0"
+        }
+      ],
+      "id": "G03",
+      "missing_evidence": "Natural-language paraphrases, new benchmark families and shifts outside the declared key-transformation grammar remain unevaluated.",
+      "requirement": "Show that a multi-benchmark knowledge library routes safely and extends without corrupting old behavior.",
+      "status": "closed_with_boundary",
+      "supported_claim": "The public-only mixed router reproduces 2,985 of 2,985 frozen direct-family outputs exactly. Over the complete frozen 69-envelope structured shift and ambiguity grammar, exactly-one routing with fallback is correct on 69/69 versus 24/69 for forced-first and 67/69 when multiple matches are forced."
+    },
+    {
+      "boundary": "The final condition receives answer-bearing repair feedback and is not an answer-blind comparator.",
+      "evidence": [
+        {
+          "path": "experiments/external_baseline_evidence_ledger_20261014.json",
+          "sha256": "f9aaa74190c1735105fc0061662be1ca2b0411479c77bbafcc3b4f9272c7d0e7"
+        }
+      ],
+      "id": "G04",
+      "requirement": "Locally reproduce Text2Opt/BIND rather than importing its published score.",
+      "status": "closed_with_boundary",
+      "supported_claim": "The official-prompt and repository adaptation was locally rerun on 40 fixed identities, with 31/40 answer-blind first-round and 40/40 answer-bearing final results."
+    },
+    {
+      "boundary": "Author-exact accuracy is 3/40 and 1/40, but the safe adapter leaves 25 and 29 completed outputs unsupported; these rows measure the disclosed system-plus-adapter, not unrestricted native CoE reasoning. The current author repository remains an official upstream reconstruction source, but no visible root license, GitHub-recognized license or release package was verified, so its code and data must not be vendored or relicensed.",
+      "evidence": [
+        {
+          "path": "experiments/external_baseline_evidence_ledger_20261014.json",
+          "sha256": "f9aaa74190c1735105fc0061662be1ca2b0411479c77bbafcc3b4f9272c7d0e7"
+        },
+        {
+          "path": "experiments/coe_official_artifact_recheck_20261015.json",
+          "sha256": "90c2018b14c809964afb5be71b4e5418315b11584acd7b21d5751388024c0e3c"
+        },
+        {
+          "path": "docs/COE_OFFICIAL_ARTIFACT_RECHECK_20261015.md",
+          "sha256": "eea010c291ff2d44ecdc83b05cf707a503e0f81ed85e9c43dc77ff1c1825aab6"
+        },
+        {
+          "path": "experiments/theory_implementation_conformance_audit_20261015.json",
+          "sha256": "6c3ff980ade13608728d7c935b8e34bdb6310c129358522cff48de0b6218eea7"
+        },
+        {
+          "path": "docs/THEORY_IMPLEMENTATION_CONFORMANCE_AUDIT_20261015.md",
+          "sha256": "23795253abe37af04bb3ca064e5e3e1200c857ff4aa73e12a43d1e4ca0a95a0d"
+        }
+      ],
+      "id": "G05",
+      "requirement": "Locally reproduce Chain-of-Experts rather than importing its published score.",
+      "status": "closed_with_boundary",
+      "supported_claim": "Paper and current official-code snapshots were locally rerun on the fixed common-40 identities."
+    },
+    {
+      "closure_test": "Reopen official reproduction only when a concrete runnable official artifact is identified; keep every paper-based sensitivity separate from the official row and exclude an unscoreable sensitivity from accuracy comparisons.",
+      "evidence": [
+        {
+          "path": "results/optitrust_arxiv_source_audit_20261014.json",
+          "sha256": "d1eb6a32b479d236aefb698d14431c22d292cf03d5bbd9b3c0bd6416ec369c80"
+        },
+        {
+          "path": "results/optitrust_artifact_recheck_20261014.json",
+          "sha256": "64cf9e2a217f4ed33526fb5366c6f4b37007290ec201be870bb567e167d5d104"
+        },
+        {
+          "path": "experiments/fresh_common38_optitrust_style_result_v1_20261016.json",
+          "sha256": "328e917de571222446582d3d4c91fce760566b7e329c282affdfea9600091ce6"
+        },
+        {
+          "path": "experiments/fresh_common38_optitrust_style_audit_v1_20261016.json",
+          "sha256": "23501c91cb283e1581a3c90c5e290412974558c5e1b99118e5df77f06e3ae4da"
+        },
+        {
+          "path": "experiments/fresh_common38_optitrust_style_synthesis_20261016.json",
+          "sha256": "1d844184f5fd2984e3e4aa98ffc5916af48bf949dae82b0aff65a160c8673f2a"
+        }
+      ],
+      "id": "G06",
+      "missing_evidence": "A verified author- or venue-linked runnable package. The paper-based safe-sidecar v1 does not satisfy official reproduction.",
+      "requirement": "Audit and reproduce OptiTrust from an official implementation.",
+      "status": "external_unavailable",
+      "supported_claim": "No verified runnable official artifact was found in the inspected arXiv v1 source or bounded public recheck. A separately labeled paper-based sensitivity completed with zero scoreable outcomes and 38 infrastructure-unavailable cells; this is not an accuracy estimate."
+    },
+    {
+      "boundary": "The cohort contains two families from one source lineage. Native inference trajectories use unequal calls and provider tokens; BIND final is answer-bearing, CoE has no valid one-call official terminal, and authored library-construction cost is not equalized. The 38 identities are sufficient for the observed large paired effects but do not establish broad moderate-effect superiority over unrelated benchmarks.",
+      "closure_test": "The stated fixed-endpoint common-protocol comparison is closed. Reopen G07 only for a broad benchmark-superiority claim through a separately frozen score-ready source lineage; do not open the sealed DCP confirmation set or dispatch the incomplete MIPLIB-NL release.",
+      "evidence": [
+        {
+          "path": "results/external_fixed_common40_summary.json",
+          "sha256": "22c588da5167f6cb76615340ea81551021b8473b9db2a4ea83d717c93a77a38c"
+        },
+        {
+          "path": "experiments/fresh_common_protocol_estimand_audit_20261015.json",
+          "sha256": "cca6601442e8ab17ab5fbf298083c9b431ce96938b10ee35ff1160df08e89d3d"
+        },
+        {
+          "path": "docs/FRESH_COMMON_PROTOCOL_ESTIMAND_AUDIT_20261015.md",
+          "sha256": "13530a0a44995689320d216e0c5c0b788624b04f64af2c95227456139f2eb02f"
+        },
+        {
+          "path": "experiments/prospective_research_program_decision_20261015.json",
+          "sha256": "2d00dfa52b996b6ca4421cafcad0aa64b31f69f82d4acabf44a9594e68741e2f"
+        },
+        {
+          "path": "docs/PROSPECTIVE_RESEARCH_PROGRAM_DECISION_20261015.md",
+          "sha256": "f48485e1d11e2eca4a98c7ca24a6d0a1b27f5ce3ecad6502b8575cc8b7863ff7"
+        },
+        {
+          "path": "experiments/fresh_common38_packet_readiness_20261015.json",
+          "sha256": "a12efc6273060c5cdb7b6239b83fa0c102beebd6c394adb4206dff67b7aa543f"
+        },
+        {
+          "path": "experiments/fresh_common38_structured_skill_readiness_20261015.json",
+          "sha256": "27e9a27453540cf688887971e8110276c59d6b6cc5348ed8e94fba158d131acf"
+        },
+        {
+          "path": "experiments/fresh_common38_current_native_plan_20261015.json",
+          "sha256": "939eefbdb51c7e0087a34d0661f9e1560cfd65dc156ce1b585f78e1533348796"
+        },
+        {
+          "path": "experiments/fresh_common38_current_native_result_20261015.json",
+          "sha256": "33ccdd0ea22874a5424441d95027540661ce2688b5298175673867fc1dc11ce3"
+        },
+        {
+          "path": "experiments/fresh_common38_current_native_audit_20261015.json",
+          "sha256": "5f24ce220be4dc79c8160206b3fa125f23fb59015ff766edb3ab4e63515d2c20"
+        },
+        {
+          "path": "experiments/fresh_common38_base_result_v1_20261015.json",
+          "sha256": "e59604cd899f31709e61a8b73d45bded29dfe7949c4ea94f0a2e63ded753fb4a"
+        },
+        {
+          "path": "experiments/fresh_common38_base_audit_v1_20261015.json",
+          "sha256": "92851e842945cc4fdca54a0fe7fcce032cd39d109c96dd3fa1278ffd98ee8812"
+        },
+        {
+          "path": "experiments/fresh_common38_bind_result_v2_20261015.json",
+          "sha256": "8e718530097f5ed604839beb04cca6a8aa2829e3c9aabfb3509cd632901d5c63"
+        },
+        {
+          "path": "experiments/fresh_common38_bind_audit_v2_20261015.json",
+          "sha256": "dcbbb079167fa639d98aa565b7d44a3a7be5574abf5128a978e79d6c6cb34fe5"
+        },
+        {
+          "path": "experiments/fresh_common38_coe_current_result_v2_20261015.json",
+          "sha256": "0797696f6f569339b291f43fd0fee81af8dd62c4c5d5926a975b7feddc40e210"
+        },
+        {
+          "path": "experiments/fresh_common38_coe_current_audit_v2_20261015.json",
+          "sha256": "7c2c47f93c81fdae7acb1dd558ca07db9512b15028f4f1967d5ace6667f90006"
+        },
+        {
+          "path": "experiments/fresh_common38_common_protocol_synthesis_20261015.json",
+          "sha256": "a678008a7449d588e12eb59bf019875fb08d7cb8f4e9c177ca8aaf9f0fb2aa9e"
+        },
+        {
+          "path": "docs/FRESH_COMMON38_COMMON_PROTOCOL_SYNTHESIS_20261015.md",
+          "sha256": "c94fb11377815e89a24dd659cbf626e879b1c617eb8b7557b4f8a7f0b8568727"
+        },
+        {
+          "path": "experiments/g07_bounded_scope_closure_20261015.json",
+          "sha256": "11d0bf01cab6bf33cf6af1528e9318b01b1b92e92783103fc3496724ba911086"
+        },
+        {
+          "path": "docs/G07_BOUNDED_SCOPE_CLOSURE_20261015.md",
+          "sha256": "f21ea772df885837ff9015eae6e403e943c6e50c3fbbe7568104cc9bd7bd2175"
+        }
+      ],
+      "id": "G07",
+      "requirement": "Compare the current method, controls, and runnable external methods under one fresh common protocol.",
+      "status": "closed_with_boundary",
+      "supported_claim": "On the 38 body-isolated larger RCPSP/VRPTW identities, the current method scores 30/38 full-denominator identities versus Base 0/38, BIND round one 13/38, BIND final 13/38 and CoE-safe 4/38. Current-versus-baseline paired corrections/regressions are 30/0, 18/1, 18/1 and 26/0; all four one-sided exact tests reject after Holm correction. The answer-blind at-most-one-call sensitivity includes current, BIND round one and Base."
+    },
+    {
+      "boundary": "The grammar, oracle, 20,977-query domain and target-class population are authored and complete. The result proves bounded behavior-class acquisition only; it does not discover natural-language facts or the resource-policy axis, establish language-model proposer efficacy or benchmark accuracy, or promote a library version. The earlier eight-pair language-model canary remains a valid negative result and must not be expanded.",
+      "closure_test": "The bounded finite-grammar acquisition requirement is closed. Reopen G08 only for an end-to-end natural-language fact or grammar discovery claim; that stronger study requires a new outcome-blind design with the proposer outside verification and promotion.",
+      "evidence": [
+        {
+          "path": "results/dcp_typed_count_cegis_revision_20261014_audit.json",
+          "sha256": "c3fb17f664ccfbf4e46d08b7695e9730111bcd4b3ccf01cb48074307c6cc03f2"
+        },
+        {
+          "path": "results/dcp_typed_count_repair_certificate_v3_20261014.json",
+          "sha256": "43af5c30bc8bc69f0c60a990f133fe842e9cfee149119bbcf37b08159730d911"
+        },
+        {
+          "path": "experiments/matched_acquisition_design_audit_20261015.json",
+          "sha256": "170bb84c8db2c6cde3f7b213ecfcaff338ee135702e0fec0e71df091e981cfe4"
+        },
+        {
+          "path": "experiments/proposal_provenance_inventory_20261015.json",
+          "sha256": "b301eb0b168e85009b16e0f7f26404f30950cf6a123a5fdcdc4363dfa12d90f1"
+        },
+        {
+          "path": "docs/PROPOSAL_PROVENANCE_INVENTORY_20261015.md",
+          "sha256": "13e8e978d5110290cdaac4ef058896ff95c32c9d032932bd550e076e9b108058"
+        },
+        {
+          "path": "experiments/matched_acquisition_power_analysis_20261015.json",
+          "sha256": "f2362bab0bdcac78d30339d4e0b03ab32176974b44f5d6c0e3b678ff0d24f82d"
+        },
+        {
+          "path": "docs/MATCHED_ACQUISITION_POWER_ANALYSIS_20261015.md",
+          "sha256": "88f4dfede3ce9ea585a9c2f74ef11b75a2eb5757aa017d3dda1d91aafbbc4b1b"
+        },
+        {
+          "path": "experiments/prospective_research_program_decision_20261015.json",
+          "sha256": "2d00dfa52b996b6ca4421cafcad0aa64b31f69f82d4acabf44a9594e68741e2f"
+        },
+        {
+          "path": "docs/PROSPECTIVE_RESEARCH_PROGRAM_DECISION_20261015.md",
+          "sha256": "f48485e1d11e2eca4a98c7ca24a6d0a1b27f5ce3ecad6502b8575cc8b7863ff7"
+        },
+        {
+          "path": "experiments/prospective_acquisition_canary_plan.json",
+          "sha256": "3227b5af3275befbfe89466fb4cdb38e605850f159a6ecef1c8f62173ec76838"
+        },
+        {
+          "path": "results/prospective_acquisition_canary_result.json",
+          "sha256": "97f029192b6249de747f8e110c46280c1e7ae987d338dd021dc08b198a76c405"
+        },
+        {
+          "path": "results/prospective_acquisition_canary_audit.json",
+          "sha256": "4957610b0fd1bc00dd805957c8e5bd612822fb829cea2bbc314f217101f3645e"
+        },
+        {
+          "path": "experiments/g08_finite_acquisition_census_20261015.json",
+          "sha256": "e588d581da44acf9c6e29999da892940cb849059131afd32e43e3acf203320d2"
+        },
+        {
+          "path": "docs/G08_FINITE_ACQUISITION_CENSUS_20261015.md",
+          "sha256": "a8d22030d02a0a110ed5f97b627d928ebb375a579a375ae13f7ccd5c48ba8724"
+        }
+      ],
+      "id": "G08",
+      "requirement": "Establish that the knowledge-construction process improves automatic skill acquisition.",
+      "status": "closed_with_boundary",
+      "supported_claim": "Over the complete 10-class extensional population induced by the frozen semantic grammar, balanced verifier-selected witnesses identify 10/10 behavior classes within three queries, versus 6/10 for a frozen canonical-order separating-witness control. The paired census has four balanced-only classes, zero control-only classes, six both and zero neither; total query counts are 26 versus 30 and worst cases are three versus four."
+    },
+    {
+      "boundary": "System-level TSP, OR-Debug and common-38 gains remain valid for complete benchmark-specific knowledge systems. The completed matched studies do not causally validate an architecture-only accuracy benefit; NLEquiv is not direct solver-code formulation accuracy, and both opened sources are development evidence.",
+      "closure_test": "Closed with boundary: preserve the negative FormulationBench and neutral/directional NLEquiv results. Do not tune and reconfirm on either opened endpoint. Any revised mechanism requires a newly frozen independent direct-modeling endpoint.",
+      "evidence": [
+        {
+          "path": "experiments/component_ablation_identifiability_audit_20261015.json",
+          "sha256": "7c13e7921b38baa89cea5da335131609268bd5dff278c9edd6fe10ba91163bd7"
+        },
+        {
+          "path": "docs/COMPONENT_ABLATION_IDENTIFIABILITY_AUDIT_20261015.md",
+          "sha256": "1b71d413860e0f6b82f7b50c2c144afe545770e5162dbed0d850736ccc9a8156"
+        },
+        {
+          "path": "experiments/component_ablation_power_and_unit_inventory_20261015.json",
+          "sha256": "0f75cb740d2f2202a4699598f47e26f02ca3c9c37b211a5bcbc8577a208e1a5e"
+        },
+        {
+          "path": "docs/COMPONENT_ABLATION_POWER_AND_UNIT_INVENTORY_20261015.md",
+          "sha256": "c58d0f4bc8726bfdd04fdecab4d041456736d91b06814eb005e275fb82428e73"
+        },
+        {
+          "path": "experiments/prospective_research_program_decision_20261015.json",
+          "sha256": "2d00dfa52b996b6ca4421cafcad0aa64b31f69f82d4acabf44a9594e68741e2f"
+        },
+        {
+          "path": "docs/PROSPECTIVE_RESEARCH_PROGRAM_DECISION_20261015.md",
+          "sha256": "f48485e1d11e2eca4a98c7ca24a6d0a1b27f5ce3ecad6502b8575cc8b7863ff7"
+        },
+        {
+          "path": "experiments/g09_finite_component_census_v2_20261015.json",
+          "sha256": "11e68dbff762893924430608c69dae1cfdb41756f5b5d66c981b96584e8b8911"
+        },
+        {
+          "path": "docs/G09_FINITE_COMPONENT_CENSUS_V2_20261015.md",
+          "sha256": "cd5e01e8c2f76697a477cb4c1c5e42c99a1da300865faf711a18e63d3629b1a0"
+        },
+        {
+          "path": "experiments/g09_library_complexity_census_20261015.json",
+          "sha256": "d6deb6b5c538f78e431cd00c91dd239e48029854d73135fed2acfdc4e3ea8f1b"
+        },
+        {
+          "path": "docs/G09_LIBRARY_COMPLEXITY_CENSUS_20261015.md",
+          "sha256": "0abcfa1258eb8cc0560016a3d4fe49787c0f52331984c3f7139b97f7a970daae"
+        },
+        {
+          "path": "experiments/same_knowledge_task_level_study_design_20261016.json",
+          "sha256": "43f440073361b9d1d224bfce7a576a533dd13887e4f858b53e8e7c01680c0b9a"
+        },
+        {
+          "path": "docs/SAME_KNOWLEDGE_TASK_LEVEL_STUDY_DESIGN_20261016.md",
+          "sha256": "2307b26e24c6851faab603bea5496171c076be5f7a27bfce25e70c8899c9b435"
+        },
+        {
+          "path": "experiments/final_blind_review_synthesis_20261016.json",
+          "sha256": "ae2a8aee667e3c0593322983697b75fa47e37d3227d2a381c5748859a3daa101"
+        },
+        {
+          "path": "docs/FINAL_BLIND_REVIEW_SYNTHESIS_20261016.md",
+          "sha256": "e31b3232842a529051b9653c7f7b6725e552084cf0b93ea29b667c9421725a41"
+        },
+        {
+          "path": "experiments/miplib_nl_same_knowledge_source_gate_20261016.json",
+          "sha256": "b975de4cd969373072b43daca8279fa54255eb9d6d3f40016c45315ebc5a88d1"
+        },
+        {
+          "path": "docs/MIPLIB_NL_SAME_KNOWLEDGE_SOURCE_GATE_20261016.md",
+          "sha256": "aa79ccde56dc2c8f15c05949d365cea789101e66239ad535b483e64e4239d976"
+        },
+        {
+          "path": "experiments/miplib_nl_custody_rehearsal_20261016.json",
+          "sha256": "258aae2ae7dee8bfcd39597d1bf95515f4bb0c9acbb4bca4f71eec7651d7bbdb"
+        },
+        {
+          "path": "docs/MIPLIB_NL_CUSTODY_REHEARSAL_20261016.md",
+          "sha256": "7cd03dc10b0d087d8cb5d0dc10a4d8b706ec0f17c9e22ced98afc2791ee367cd"
+        },
+        {
+          "path": "llm4or/miplib_nl_custody.py",
+          "sha256": "e0a6302e5e287db2b91f6425a8def42e80a5743f1a4c9bd2011ae579c1922a5d"
+        },
+        {
+          "path": "tests/test_miplib_nl_custody.py",
+          "sha256": "f6ae375b0cb4e62c2666015c979ed25953bdd2633c92615917a85ad61ddf36a4"
+        },
+        {
+          "path": "scripts/build_miplib_nl_custody.py",
+          "sha256": "df659920bddc3daf5122eca21264d59cdc9026376fa438ed7cf5e9d7ea22eafc"
+        },
+        {
+          "path": "docs/superpowers/specs/2026-10-16-miplib-nl-custodian-design.md",
+          "sha256": "f49fb7a94f10deb421879a1c9788a14336f9a3c086067c090a17bbd87bde744d"
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-16-miplib-nl-custodian.md",
+          "sha256": "d26c0b95809df7cdbaf5394b5c2943b0f19fae34a18559048ab2dfcace3da134"
+        },
+        {
+          "path": "experiments/formulationbench_source_qualification_20261016.json",
+          "sha256": "51569add85097c1bb48746e23f881b5316c8ae855f5ad631268c946545b927f7"
+        },
+        {
+          "path": "docs/FORMULATIONBENCH_SOURCE_QUALIFICATION_20261016.md",
+          "sha256": "e8f50fef182104c12b8f031d3083a411cfd7cfe98b93f47a5ae183cbb3d4633f"
+        },
+        {
+          "path": "experiments/formulationbench_source_census_20261016.json",
+          "sha256": "e5fda4361c4faefa90034d09d457c6da9932f788ff01df74672f49998a27fd78"
+        },
+        {
+          "path": "docs/FORMULATIONBENCH_SOURCE_CENSUS_20261016.md",
+          "sha256": "081b5de764d680daa65cdc3462fcc58aad302e82c8b81a59d5f8100804eca72e"
+        },
+        {
+          "path": "llm4or/formulationbench_custody.py",
+          "sha256": "d30f2816a09581884c8b88141bb98e6beb0e4253f85ca85853ce58bddcdbe39b"
+        },
+        {
+          "path": "scripts/build_formulationbench_custody.py",
+          "sha256": "1c67a1ed71bcbfb998e7fef683546a89266c7e1b3ad03516107760628370820f"
+        },
+        {
+          "path": "tests/test_formulationbench_custody.py",
+          "sha256": "42452b4518a965cdadf7acb12fe22547359b8e1f658d8547e8cec4555acd29f6"
+        },
+        {
+          "path": "experiments/formulationbench_custody_audit_20261016.json",
+          "sha256": "f2583a812259db6d0ae4cee63eea5b59804242ee4e9d1e75d3e5b380abb49e93"
+        },
+        {
+          "path": "docs/FORMULATIONBENCH_CUSTODY_AUDIT_20261016.md",
+          "sha256": "663d8caa2af4c330887b946f7ddc280a92049d1ee8bd645698bb9de119aebfa5"
+        },
+        {
+          "path": "experiments/formulationbench_same_fact_audit_20261016.json",
+          "sha256": "c70c0ead7bdfcccaf69ecba3398c1b702ef5700f73942c2ac4bfc362b3f4e760"
+        },
+        {
+          "path": "docs/FORMULATIONBENCH_SAME_FACT_AUDIT_20261016.md",
+          "sha256": "6196376f3cf8b61d45a93422d225f5be6b518f6e06ff2813f71bd29f231b74fe"
+        },
+        {
+          "path": "llm4or/formulationbench_fact_graph.py",
+          "sha256": "9e9215cd26735951c87d3b6a31234104d03e7f9b2ed36b92f7ba0e23a219994f"
+        },
+        {
+          "path": "scripts/audit_formulationbench_fact_graph.py",
+          "sha256": "5ce0c82a0b653e4f4275074b5b58614fa66c97317d56289d07ddecd9e97353ca"
+        },
+        {
+          "path": "tests/test_formulationbench_fact_graph.py",
+          "sha256": "756c693c7cf285f48b6062d1100038069c406def112a43d49c44f6f59668119f"
+        },
+        {
+          "path": "docs/superpowers/specs/2026-10-16-formulationbench-same-knowledge-design.md",
+          "sha256": "57f2784795f0a018db17f5bb61ee7bb831be0859d8324af87e90265369d6eb60"
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-16-formulationbench-same-knowledge.md",
+          "sha256": "6c5066f9f4d7ffe15ae75baa247605bcb892fa0d12083d5926444bd93b198f06"
+        },
+        {
+          "path": "experiments/formulationbench_same_knowledge_result_20261016.json",
+          "sha256": "82a2d2eb4b5f6a191c032e502854236cf6ca3bf551438cb66bec48374c758c89"
+        },
+        {
+          "path": "experiments/formulationbench_same_knowledge_terminal_audit_20261016.json",
+          "sha256": "9999de693c8b95f671c20e77a48aa22a5006e61fd14a0a2cf46e770744b7e82e"
+        },
+        {
+          "path": "experiments/formulationbench_same_knowledge_diagnostic_20261016.json",
+          "sha256": "54647e76b95da86dd177e990c3014c9529f2aab144b83bac1526475f978ddc16"
+        },
+        {
+          "path": "docs/FORMULATIONBENCH_SAME_KNOWLEDGE_RESULT_20261016.md",
+          "sha256": "0fd820ea3309fdda87a6966cf215c543a0f153cd31a10de31044c148c65156d1"
+        },
+        {
+          "path": "experiments/nlequiv_skill_paced_plan_20261017.json",
+          "sha256": "b112e9a2960d451d24e6a0938db73c17ea2d2d13c68a3e5b8a6b62f0a3e297f8"
+        },
+        {
+          "path": "experiments/nlequiv_skill_paced_audit_20261017.json",
+          "sha256": "b89cb615da7028d3ccc1e30cb132803748c906dffefd2cd82d778bed4cecc29f"
+        },
+        {
+          "path": "experiments/nlequiv_skill_paced_execution_20261017.json",
+          "sha256": "3b2fda44be1bdd2c815a0039c2fddba61f133aedaed95c567c361a65040f1f81"
+        },
+        {
+          "path": "experiments/nlequiv_skill_paced_result_20261017.json",
+          "sha256": "5ea3b84d9e0a7a2e8ad06900acf1c527b504cbefa2e1f2aacc96344ffceb6501"
+        },
+        {
+          "path": "experiments/nlequiv_skill_paced_terminal_audit_20261017.json",
+          "sha256": "0d407ad08e4be46dccd8c0f59df610ce849b69e61ae9b85afff03c97f622fc4c"
+        },
+        {
+          "path": "docs/NLEQUIV150_ROUTED_SKILL_RESULT_20261017.md",
+          "sha256": "0ac0cc9628bdf68798fa642e80472345cf717ce62adafde6da0d1a7ec97db6a7"
+        },
+        {
+          "path": "experiments/same_knowledge_mechanism_synthesis_20261017.json",
+          "sha256": "6c5d51532b28ba6446d891512d4f43ea10bc101c460187ecaef4a0cbcc4d33cb"
+        },
+        {
+          "path": "docs/SAME_KNOWLEDGE_MECHANISM_SYNTHESIS_20261017.md",
+          "sha256": "e3c2f2fa1f955a27dced92d2956779c0ae108104ab1376a2b0942c054f9992b1"
+        },
+        {
+          "path": "experiments/infrastructure_root_cause_closure_20261017.json",
+          "sha256": "5f4147913f6e9ffaceaca715d8660c69c4abf202c5ea7fc0fedbdfb5b03a68bf"
+        },
+        {
+          "path": "docs/INFRASTRUCTURE_ROOT_CAUSE_CLOSURE_20261017.md",
+          "sha256": "deff8ae95858d1e98f93a68c005069f4e4c8269aad8d1d80701fae117979e284"
+        }
+      ],
+      "id": "G09",
+      "requirement": "Causally identify the contribution of verification, resource admission, complexity control, and selective routing.",
+      "status": "closed_with_boundary",
+      "supported_claim": "The finite censuses exhaustively test semantic admission, resource admission, exactly-one routing and description-length selection inside declared authored populations. The strict FormulationBench same-fact comparison completes 89/89 pairs but PCK-K scores 36/89 versus Flat-K 40/89 (7 corrections, 11 regressions, p=0.8811), so proof-carrying presentation does not improve the frozen full-denominator endpoint. Independent NLEquiv-150 finds neutral same-fact structuring and a directional but non-significant routed-skill gain, 128/150 versus 124/150 (p=0.2617)."
+    },
+    {
+      "evidence": [
+        {
+          "path": "experiments/paper_evidence_manifest_20261015.json",
+          "sha256": "3035e2abadf2d1b570d7e05a152f7f8371afcf25680daa4a1ba76004fffb7445"
+        },
+        {
+          "path": "manuscript/MANUSCRIPT_EVIDENCE_AUDIT.md",
+          "sha256": "4b39716dd93042966b89373ff51246f432adc946094ed4e0c3f331d1908535b9"
+        },
+        {
+          "path": "experiments/independent_public_release_review_20261016.json",
+          "sha256": "b51fea682d1816f0399ce7133d229dd81ed0568747b4a5849fc35bcf6f0516f9"
+        },
+        {
+          "path": "experiments/controlled_endpoint_review_protocol_20261016.json",
+          "sha256": "ce6567ceee83704921450251bc9da370c2bde8faa27cb7109bf3bc0d3f133adf"
+        },
+        {
+          "path": "experiments/controlled_endpoint_review_audit_20261016.json",
+          "sha256": "9dd9f89f88bf82e5590a44521e4c81b590b7b4d078f907eb4105f9b45675e1d7"
+        },
+        {
+          "path": "manuscript/REVIEWER_EVIDENCE_INDEX.md",
+          "sha256": "74d00fa1ca67f386455a47f9bfb2386e570c563884bd1374fb1bc30b5920947b"
+        },
+        {
+          "path": "results/reviewer_claim_table_v1_20261016.json",
+          "sha256": "97d51e9c82b8ab4aea2a8f7a6a166244f32c87deb975defe6996ba2a4b85baba"
+        },
+        {
+          "path": "docs/CLOSEST_METHOD_CLAIM_MAP_20261016.md",
+          "sha256": "584dab184e208a2337a5771a21606e69080d409959f072c8da091d2899cb526e"
+        },
+        {
+          "path": "experiments/final_blind_review_synthesis_20261016.json",
+          "sha256": "ae2a8aee667e3c0593322983697b75fa47e37d3227d2a381c5748859a3daa101"
+        },
+        {
+          "path": "docs/FINAL_BLIND_REVIEW_SYNTHESIS_20261016.md",
+          "sha256": "e31b3232842a529051b9653c7f7b6725e552084cf0b93ea29b667c9421725a41"
+        },
+        {
+          "path": "docs/GOAL_COMPLETION_AUDIT_20261015.md",
+          "sha256": "3497252b6467495d263b9f2656cc2e0d7828312887c7184ed5fe2a2a8335e73f"
+        }
+      ],
+      "id": "G10",
+      "missing_evidence": "A same-knowledge task-level study is required only for mechanism-superiority; faithful common-task comparison is required for a stronger closest-system novelty claim. Neither is represented as completed.",
+      "requirement": "Provide a complete manuscript evidence chain with bounded theory, exact claim-to-artifact links, citations, source data, and independent claim audit.",
+      "status": "closed_with_boundary",
+      "supported_claim": "The manuscript has a direct public aggregate reconstruction command, evidence index, 18/18 citation closure, controlled-review boundary, synchronized paper frame, blind-review synthesis, and explicit negative/directional mechanism evidence. The contribution is benchmark-specific proof-carrying knowledge compilation, not architecture-only accuracy improvement."
+    },
+    {
+      "artifact_conformance_gap": "Closed. Public v1.1.1 is a one-commit zero-parent history-free release containing the indexed OptiTrust-style closure and 81-path release manifest.",
+      "closure_test": "Satisfied by public tag v1.1.1: exact commit/tree verification, one reachable zero-parent commit, zero restricted/private tracked paths, remote recursive submodule acquisition, 81 Layer-A tests, three deterministic checks, clean checkout, full fsck, release-asset digest replay, and two 500-run publisher stress cohorts.",
+      "contradicting_evidence": "v1.1.0 failed one public-clone publisher concurrency test and is explicitly superseded for reconstruction. The patched v1.1.1 public clone passes the complete contract.",
+      "current_tree_exclusion_status": "The released v1.1.1 tree contains no declared restricted or private tracked path. Restricted task bodies and evaluator-only answers remain outside the public package.",
+      "evidence": [
+        {
+          "path": "experiments/post_publication_release_closure_20261016.json",
+          "sha256": "a66e91657c66b7a25d2a5a79ab488146628b3049a9b8b9079f6f394cc05bf290"
+        },
+        {
+          "path": "docs/POST_PUBLICATION_RELEASE_CLOSURE_20261016.md",
+          "sha256": "94d0f7217268c90cd3ac0a83da2a0a9ef472ceaa9db7f25ed123a153dcda91d8"
+        },
+        {
+          "path": "experiments/release_readiness_delta_v4_20261015.json",
+          "sha256": "74a5341b83cf53e7abb2979bbf815701c977a7fd24e90cb807c2e8eabb924182"
+        },
+        {
+          "path": "docs/RELEASE_READINESS_DELTA_V4_20261015.md",
+          "sha256": "4db7082e8a263c933b6c2fdbd67db2640d95d5f73184d9505c4ce4f109da7f5d"
+        },
+        {
+          "path": "experiments/release_readiness_delta_v5_20261015.json",
+          "sha256": "ca67bbabcdcb1cf01f9fe0eed18317865700519920078456aa3da7a05c027e2c"
+        },
+        {
+          "path": "docs/RELEASE_READINESS_DELTA_V5_20261015.md",
+          "sha256": "b7aa871e885d3874208a7c1021902b8b70470117f171d18651c80ad9db9b2f35"
+        },
+        {
+          "path": "experiments/release_projection_rebinding_audit_20261015.json",
+          "sha256": "30761ea6ea6ad16187f1761ea7d0ae10e21412c6a9dc6361778c66b2293c88a3"
+        },
+        {
+          "path": "docs/RELEASE_PROJECTION_REBINDING_AUDIT_20261015.md",
+          "sha256": "4589fc23de699be03c337b8aabbb99af5235bee0581919b6ea95f295c391f6b3"
+        },
+        {
+          "path": "experiments/restricted_source_exclusion_audit_20261015.json",
+          "sha256": "e649fdb40429198c890741eaeb51965f699b03bedd15fb706ba7ac4832057888"
+        },
+        {
+          "path": "docs/RESTRICTED_SOURCE_EXCLUSION_AUDIT_20261015.md",
+          "sha256": "507d16c3465b45e49629ccb02442af930197710e9ae9212d3e82adf61789a9b5"
+        },
+        {
+          "path": "experiments/goal_evidence_index_closure_audit_20261015.json",
+          "sha256": "51d1ce92f1f6432194610a4053ebb78d6a83cc058031696d45181b4d29c6d750"
+        },
+        {
+          "path": "docs/GOAL_EVIDENCE_INDEX_CLOSURE_AUDIT_20261015.md",
+          "sha256": "21303ec12ce4b0a0adbb1ffcdc1338cd22a83749800276da88e5b8dca6b3d621"
+        },
+        {
+          "path": "docs/DATA_CODE_AVAILABILITY_AUDIT_20261015.md",
+          "sha256": "6640e3ef7122d0228f0b505689cd5301437d04104ffa53bf112122fbe7685741"
+        },
+        {
+          "path": "experiments/release_allowlist_projection_20261015.json",
+          "sha256": "bc674b71546dc63e4a8638f51923590e53b55cd7a959e50d0f2d9fc06e7f065a"
+        },
+        {
+          "path": "docs/RELEASE_ALLOWLIST_PROJECTION_20261015.md",
+          "sha256": "c00912974aa985a29a675fe5a28e78c5fb1da353f576bdb9475ec666025a5f86"
+        },
+        {
+          "path": "experiments/headline_reconstruction_entrypoint_audit_20261015.json",
+          "sha256": "32225cf5bfd8cc7826726b7d9e1a5a6e9d9a160a3f41032fbceb7f4fb2ad1b16"
+        },
+        {
+          "path": "docs/HEADLINE_RECONSTRUCTION_COMMAND_MAP_20261015.md",
+          "sha256": "0bff31ea075f1d8600ded8a915047489c3cf6b1bc39767d2c57bd98a325d39e3"
+        },
+        {
+          "path": "experiments/headline_static_python_closure_20261015.json",
+          "sha256": "e2c5eba845c06df826570de1fc68103d37793422d813ab4341e0dfdecd2e098b"
+        },
+        {
+          "path": "docs/HEADLINE_STATIC_PYTHON_CLOSURE_20261015.md",
+          "sha256": "1fd07de1e219348f2a8041a08c1f59ff133bb8a66da8559bbcf37cc28bd19c26"
+        },
+        {
+          "path": "experiments/release_python_allowlist_triage_20261015.json",
+          "sha256": "da56d4924a5cc33639795dae6ab3a432d3269cf1930f8e18bb709bd4fc1801ea"
+        },
+        {
+          "path": "docs/RELEASE_PYTHON_ALLOWLIST_TRIAGE_20261015.md",
+          "sha256": "c32aab0913a927d1772a9a022c6b3dbd78fab212764b6534826c886ada2d06ff"
+        },
+        {
+          "path": "experiments/release_first_queue_file_review_20261015.json",
+          "sha256": "f9c8dc2a99b07f572f8550b7f5450c4790260f799c08f1ff1f42c7dc3fd523b6"
+        },
+        {
+          "path": "docs/RELEASE_FIRST_QUEUE_FILE_REVIEW_20261015.md",
+          "sha256": "f0227319efb0824be83a5acb28f5a2ebe10ddb8e48e902e40d68f0e86fe5a72b"
+        },
+        {
+          "path": "experiments/release_trigger_disposition_audit_20261015.json",
+          "sha256": "7ae9b3544ebb9b08c0e391c63373db22bb310e5fa911777d6af3efe26144bc6f"
+        },
+        {
+          "path": "docs/RELEASE_TRIGGER_DISPOSITION_AUDIT_20261015.md",
+          "sha256": "8a9d3d47cbac4b2917a43899f2fb16099593f48fe536510e2bedbcd887b07da5"
+        },
+        {
+          "path": "experiments/reconstruction_publisher_solver_boundary_audit_20261015.json",
+          "sha256": "b5331ac3b605d153680becfa664910cfc00b93852c608986a7f144cf9bb8c22f"
+        },
+        {
+          "path": "docs/RECONSTRUCTION_PUBLISHER_SOLVER_BOUNDARY_AUDIT_20261015.md",
+          "sha256": "bf1d722a69c59680cc527fd07b1ec5180b011a5e7cb982e4461545ca799ae656"
+        },
+        {
+          "path": "experiments/reproduction_environment_contract_audit_20261015.json",
+          "sha256": "567c71efefbfd3bccdb87ad92de83f6ee6c30455f92275bfe81cdbc5b1e7d69c"
+        },
+        {
+          "path": "docs/REPRODUCTION_ENVIRONMENT_CONTRACT_AUDIT_20261015.md",
+          "sha256": "382d31979b8f323d91edb1508eae633be153b62fdfdaa3a06dcb8690b710ba46"
+        },
+        {
+          "path": "experiments/solver_submodule_initialization_audit_20261015.json",
+          "sha256": "05e2a21883036ce360cdc76cfff141cda50aafe03ad45a5cc093609a7152ed32"
+        },
+        {
+          "path": "docs/SOLVER_SUBMODULE_INITIALIZATION_AUDIT_20261015.md",
+          "sha256": "f25269858e6b3f927d0cc591d8570867b642035537551a9703812f0e65dceb2d"
+        },
+        {
+          "path": "experiments/content_addressed_manifest_implementation_audit_20261015.json",
+          "sha256": "77f776da8421d9b7bcd64b23f0ebb1183a349171b9f224fde630894d25087189"
+        },
+        {
+          "path": "docs/CONTENT_ADDRESSED_MANIFEST_IMPLEMENTATION_AUDIT_20261015.md",
+          "sha256": "3e5ef425ad9614ab78297c1ac8f70f4749058727b46edbd8add4fbd915aa93e7"
+        },
+        {
+          "path": "experiments/current_library_manifest_reconstruction_audit_20261015.json",
+          "sha256": "af920f71608a46ce25fd5e8a54e88d1fe1f5ca351988b52546a83e1a3fbc6ce9"
+        },
+        {
+          "path": "docs/CURRENT_LIBRARY_MANIFEST_RECONSTRUCTION_20261015.md",
+          "sha256": "573c4b8678027d35a37c35337c05a1a06eca8b5c1ef03cd6c5efb76e86fc7c7f"
+        },
+        {
+          "path": "experiments/coe_official_artifact_recheck_20261015.json",
+          "sha256": "90c2018b14c809964afb5be71b4e5418315b11584acd7b21d5751388024c0e3c"
+        },
+        {
+          "path": "docs/COE_OFFICIAL_ARTIFACT_RECHECK_20261015.md",
+          "sha256": "eea010c291ff2d44ecdc83b05cf707a503e0f81ed85e9c43dc77ff1c1825aab6"
+        },
+        {
+          "path": "experiments/clean_clone_layer_a_audit_20261015.json",
+          "sha256": "bcc97f407f2e72c9a7338dc4f8c6ead02cd026921513be47fa866535a8e43d91"
+        },
+        {
+          "path": "docs/CLEAN_CLONE_LAYER_A_AUDIT_20261015.md",
+          "sha256": "27b3853738b6be9fa67a7dbcd07709511a1d5e515d85cdb2b46910a20c8e8e07"
+        },
+        {
+          "path": "experiments/offline_analysis_environment_audit_20261015.json",
+          "sha256": "0ce5e116043bab18c4852d0dde67adee3834fb1d6dc92f2c96983231576e8b7a"
+        },
+        {
+          "path": "docs/OFFLINE_ANALYSIS_ENVIRONMENT_AUDIT_20261015.md",
+          "sha256": "601efad1b2419d776356254a16f5874df5a1d76d4de759b865e9fadc6558dd28"
+        },
+        {
+          "path": "experiments/solver_native_environment_audit_20261015.json",
+          "sha256": "3476e963a270f19756fe7147e92bb50b5b895f8ead1aa950c02c411b42b445b0"
+        },
+        {
+          "path": "docs/SOLVER_NATIVE_ENVIRONMENT_AUDIT_20261015.md",
+          "sha256": "c36ae921f3b015dc09f6ebf0762972b5a4be6f4673110f9a85f62c8cb4ef4ad0"
+        },
+        {
+          "path": "experiments/provider_environment_preflight_audit_20261016.json",
+          "sha256": "2f8c8e5c92cbc577d37eb5710e7f8f028fa2e59f3e15742798632608b4de9001"
+        },
+        {
+          "path": "docs/PROVIDER_ENVIRONMENT_PREFLIGHT_AUDIT_20261016.md",
+          "sha256": "d2a94af8ee768c51ea5b437f0e01bd9555a2508bf0013e84b5a5bcfbe28e0c51"
+        },
+        {
+          "path": "experiments/figure_clean_reconstruction_audit_20261015.json",
+          "sha256": "70c0132d51551ffad0038a3ffeaba9ed6b79d14424f15ca33b366e0c2c8949a2"
+        },
+        {
+          "path": "docs/FIGURE_CLEAN_RECONSTRUCTION_AUDIT_20261015.md",
+          "sha256": "62e058d3708efec0a3c48210cf3a8893724e68dc50bf2c7df946f7e5d9d05d8b"
+        },
+        {
+          "path": "experiments/clean_clone_layer_a_local_complete_audit_20261015.json",
+          "sha256": "181d44f01c9eb1c1338660f8b827ad4cdada35810a804784a06a37e8c1c75e37"
+        },
+        {
+          "path": "docs/CLEAN_CLONE_LAYER_A_LOCAL_COMPLETE_AUDIT_20261015.md",
+          "sha256": "49ed197d654bf57b9fe7b0ffc4bb284214f5529125d50b79509f4da36a55123b"
+        },
+        {
+          "path": "reproduction/environment_layers_v1.json",
+          "sha256": "5a011d2135c18c4b4490869e555b2645748e9cc4beb567ab4d5303c9973bd742"
+        },
+        {
+          "path": "experiments/history_free_release_candidate_audit_20261015.json",
+          "sha256": "2be83de6834330ee94161622036a53bd0d9ef1e603b06ce86a97f13c31a72df5"
+        },
+        {
+          "path": "docs/HISTORY_FREE_RELEASE_CANDIDATE_AUDIT_20261015.md",
+          "sha256": "91028ab24efc76aa81e0e9875cf2f978eea844dae1441d42dbc527f03e10b9cc"
+        },
+        {
+          "path": "experiments/release_rights_inventory_20261015.json",
+          "sha256": "eb5e8cee55cacc26fa76085996dfe2451c0c542eb1fe48bb7dfab726ec877ebd"
+        },
+        {
+          "path": "docs/RELEASE_RIGHTS_INVENTORY_20261015.md",
+          "sha256": "12f3d1d33430b8782a44bf8fa6119c923efec3ba69800805de09ed11bec7e7e0"
+        },
+        {
+          "path": "experiments/data_code_availability_audit_v4_20261016.json",
+          "sha256": "f1005a8c22f6ea2ce35be541ec25a4b5390e64dc090d82505b70eabf393d6a00"
+        },
+        {
+          "path": "experiments/clean_clone_layer_a_remote_http1_audit_20261015.json",
+          "sha256": "4be4b7dfcf7f7ec03680588b4c349e74cdceb7b0b6837c1418f4a06b76b266cf"
+        },
+        {
+          "path": "docs/CLEAN_CLONE_LAYER_A_REMOTE_HTTP1_AUDIT_20261015.md",
+          "sha256": "97463bcc6c8409159d639146945c0e9cf3c2f89acf544f82da9b70fd5682376a"
+        },
+        {
+          "path": "experiments/author_release_decision_packet_20261015.json",
+          "sha256": "dd8210808d2c5d5d60a389dbf2e73c74b084eac397e44a6f94dcbbf3203e1460"
+        },
+        {
+          "path": "docs/AUTHOR_RELEASE_DECISION_PACKET_20261015.md",
+          "sha256": "e28ad8f619eb5e0d38f79fea2e0c747867566625efb7965876533c763c997acc"
+        },
+        {
+          "path": "experiments/atomic_publisher_migration_audit_20261015.json",
+          "sha256": "8eda814dd970c452da08de2d72897ae6783924ecd6fcc2bc2d543a6343c3f474"
+        },
+        {
+          "path": "docs/ATOMIC_PUBLISHER_MIGRATION_AUDIT_20261015.md",
+          "sha256": "cf12a86b94b68b7845ca7fbb7a60c44a2c6a242ca107f4ce180debcc4b2a8560"
+        },
+        {
+          "path": "experiments/clean_clone_layer_a_d5_audit_20261015.json",
+          "sha256": "bf582f84c34aea9a34afaa08a8ca969cfaa7c4fe73743b305a0d6ca08e3d5e1b"
+        },
+        {
+          "path": "docs/CLEAN_CLONE_LAYER_A_D5_AUDIT_20261015.md",
+          "sha256": "b0c29aeef40c7084dcd4d55f6300c1c3ea96054b8565be919fbf321f705c3955"
+        },
+        {
+          "path": "experiments/post_publication_release_v1_1_1_audit_20261016.json",
+          "sha256": "64196dcf6e13f24d128b8aa2ebbb5f5df5e442ab404298b9de3747d21be405a8"
+        }
+      ],
+      "goal_evidence_index_status": "The machine-readable goal evidence index binds the post-publication v1.1.1 audit; exact path hashes are checked by the credential-free reconstruction command.",
+      "id": "G11",
+      "latest_release_delta": "Public v1.1.1 is the current externally verified history-free release at commit ed663fcdf8336f77c466652a516d5bc2c567f93a and tree 93fc594cfe9d51a5674608a75d6ec3821b4fdba5.",
+      "manifest_design_status": "The two-level answer-free content-addressed contract, current TSP/OR-Debug skill manifests, current genesis library manifest and body-free public identity reconstruction are implemented. The semantic envelope is 17,728 bits. Because the current policies were authored after development outcomes were known, this is an artifact measurement and does not retroactively validate a complexity effect.",
+      "requirement": "Make the paper independently reproducible from a licensed, rights-safe, credential-free clean clone.",
+      "solver_submodule_status": "The public recursive clone remotely acquired the pinned c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010 submodule; both object graphs pass full fsck. Layer A makes no solver call and Gurobi remains a separate licensed runtime.",
+      "status": "closed"
+    },
+    {
+      "boundary": "The figures visualize the bounded method and sealed aggregate results. They add no experiment, do not turn conditional guarantees into universal ones, and do not present the retrospective manifest measurement or prospective complexity-weighted promotion as causal empirical evidence. Figure 3 keeps the post hoc label-blind and diagnostic panels distinct from the prospective independent-source claim.",
+      "evidence": [
+        {
+          "path": "manuscript/WORKED_EXAMPLE.md",
+          "sha256": "11f41d0809fc62c03b6109da3e28cf665c0ee8bd552a17bf2f25a3d31d414152"
+        },
+        {
+          "path": "manuscript/FIGURE_PLAN.md",
+          "sha256": "a6ba75577a25e364728b01ec2b1726986a720989061f1bdd9dfaa645d125e218"
+        },
+        {
+          "path": "experiments/figure2_backend_independent_preflight_20261015.json",
+          "sha256": "47dc1e1dabfa024bc6b908e2b892356c3067b028993062f1f94d1153c1ebaad3"
+        },
+        {
+          "path": "docs/FIGURE2_BACKEND_INDEPENDENT_PREFLIGHT_20261015.md",
+          "sha256": "96142f08a3c0790bb460a467cf628d3c4d5cbccaebc8051b195dcd7dd63bb93c"
+        },
+        {
+          "path": "experiments/figure1_method_schematic_preflight_20261015.json",
+          "sha256": "07241912dc26721c94ee76d360af06389de91a7ae76d84b64b59e9437183e351"
+        },
+        {
+          "path": "docs/FIGURE1_METHOD_SCHEMATIC_PREFLIGHT_20261015.md",
+          "sha256": "0174a871a5a064741abb9ad5e07bd9d0f873d2734d0218c73b0efff739a12cae"
+        },
+        {
+          "path": "manuscript/MAIN_FIGURE_LEGENDS_DRAFT.md",
+          "sha256": "31d9117c8d0799f640756ed0d1dba67d039aa272286b48e7cfc2fb169448ef54"
+        },
+        {
+          "path": "experiments/main_figure_legend_audit_20261015.json",
+          "sha256": "9431973ff5455575ae8cb0a82981f6d995a539dcf7f9d862d03ed62038bd88b2"
+        },
+        {
+          "path": "experiments/figure2_render_qa_20261015.json",
+          "sha256": "a9fb4d781939e451467eb53e0d3de79fb66abeee97f67296865ec7517a811a11"
+        },
+        {
+          "path": "docs/FIGURE2_RENDER_QA_20261015.md",
+          "sha256": "d115511c7f8c58119f517232de01577b78ea8acab7e2326e143f22632333c90d"
+        },
+        {
+          "path": "manuscript/figures/figure2_endpoint_preservation.pdf",
+          "sha256": "2aeac3a7a45452ebef683bdfe436663e0f6136c618e90126e025c4e78f57bec5"
+        },
+        {
+          "path": "experiments/figure1_render_qa_20261015.json",
+          "sha256": "8e779787a9c09329d27cf315efcfd7c80e52bc0eaad16cd4d7f3851343d15951"
+        },
+        {
+          "path": "docs/FIGURE1_RENDER_QA_20261015.md",
+          "sha256": "d149121fadf2905ffee60324785ba868bc23bf3a879ef83953fb09f68cd5bf7f"
+        },
+        {
+          "path": "manuscript/figures/figure1_knowledge_compilation.pdf",
+          "sha256": "7c4e0b246881f6a827da27006b16af3d564eb60f5c720e3a7147a153d266044a"
+        },
+        {
+          "path": "experiments/figure3_render_qa_20261017.json",
+          "sha256": "cea858d2d07b95bc1656d0c9f70d799746eef2eb51ab0cdc3fe952b5e18935e9"
+        },
+        {
+          "path": "experiments/figure3_clean_reconstruction_audit_20261017.json",
+          "sha256": "b07a1c103e237b0570afa9f25a80e32056bce2d0907af637cb18b4d66c6087bf"
+        },
+        {
+          "path": "results/manuscript_figure3_source_data_audit_20261017.json",
+          "sha256": "02ccc2527e14e1e6b8fff9f2f42b2315375de304356a21fb645dc6b06e4a6a26"
+        },
+        {
+          "path": "manuscript/figures/figure3_retailopt_confirmation.pdf",
+          "sha256": "fc3c9dba7b48359b1684e7589435eecd422183062a32f2d92a63b95fc2cc7510"
+        },
+        {
+          "path": "manuscript/source_data/figure3_retailopt_summary.csv",
+          "sha256": "051a718fe1bc89228241766aca57d6b51ee3041574f2017163fe4698c5be89c8"
+        },
+        {
+          "path": "manuscript/source_data/figure3_retailopt_diagnostics.csv",
+          "sha256": "25e6bc92729b8fca0d78572ca523fa4cf752fe1197d6ee85cf9806a80d5ab13b"
+        },
+        {
+          "path": "experiments/main_figure_legend_audit_v2_20261017.json",
+          "sha256": "04192b8cb9da9a0abc0bf3c4fa5c299b2d7f00f46012de33c7979665b113592d"
+        }
+      ],
+      "id": "G12",
+      "requirement": "Provide publication-ready figures and an accessible end-to-end worked example.",
+      "status": "closed",
+      "supported_claim": "The synthetic worked example is complete and contributes no benchmark row. Figure 1 renders every construction stage, trust boundary, guarantee class and prohibited extrapolation at 180 mm with editable PDF/SVG, 600-dpi PNG/TIFF, at least 5.0-pt text and passing strict source, collision, alignment and visual QA. It displays the implemented answer-free two-skill/one-library canonical manifest, 2,985 reconstructed identities and the 17,728-bit operational description length as a retrospective artifact measurement; complexity-weighted promotion remains prospective. Figure 2 is rendered from aggregate answer-free Source Data at 180 mm with the same output and QA classes and at least 5.5-pt text. All three main legends pass self-containment, panel-coverage, statistics, boundary and under-250-word preflight. Figure 3 renders the independent RetailOpt-190 confirmation at 180 by 110 mm from exact aggregate Source Data; source reconstruction, clean temporary rendering, editable-vector, 600-dpi, font, collision, alignment and final-size visual checks pass."
+    },
+    {
+      "boundary": "D1-D8, verified author metadata, licenses, NOTICE, disclosures, the public repository URL and immutable v1.1.1 release are bound. ORCID remains omitted as unverified, funding is not declared and venue selection is deferred. No archival DOI is claimed.",
+      "closure_test": "Deposit the exact verified v1.1.1 release with an external archival service, verify the returned DOI, and rebind the manuscript availability statement to that identifier.",
+      "evidence": [
+        {
+          "path": "experiments/author_release_decision_packet_20261015.json",
+          "sha256": "dd8210808d2c5d5d60a389dbf2e73c74b084eac397e44a6f94dcbbf3203e1460"
+        },
+        {
+          "path": "docs/DATA_CODE_AVAILABILITY_AUDIT_V5_20261016.md",
+          "sha256": "e01f7de264b692af6998c9d263a7f1e624711d833a55938184385e3e00c4e513"
+        },
+        {
+          "path": "experiments/post_publication_release_v1_1_1_audit_20261016.json",
+          "sha256": "64196dcf6e13f24d128b8aa2ebbb5f5df5e442ab404298b9de3747d21be405a8"
+        },
+        {
+          "path": "experiments/archival_deposit_packet_v1_1_1_20261016.json",
+          "sha256": "747eee2aa458ffa0dc070b57393224bfeee4c341affed1e9f7c42e7a847fdc8e"
+        },
+        {
+          "path": "docs/ARCHIVAL_DEPOSIT_PACKET_V1_1_1_20261016.md",
+          "sha256": "c5ba8ded27baec6cd65179d8ca50bb44298dfbb4266e4398f092b92f3ce4ce63"
+        },
+        {
+          "path": "experiments/data_code_availability_audit_v5_20261016.json",
+          "sha256": "b79cd105188a99637a20baa8a3de9cbdad9c8af68035bc27f9d46dd8c31afb6c"
+        },
+        {
+          "path": "docs/RELEASE_NOTES_V1_2_0_20261017.md",
+          "sha256": "171b16b8bd49b25073943092eddd546433b8ab7a2e4636d70b92567c53dc62f9"
+        },
+        {
+          "path": "CITATION.cff",
+          "sha256": "4b68e368998c8b1ac912d022799d19328ad63e3d1d71eddc891bf23bc492d36d"
+        },
+        {
+          "path": ".zenodo.json",
+          "sha256": "6568b215630f1e56fe1038ba777292b3ed62c09c72fab7729ff2ce1918dfe3d7"
+        },
+        {
+          "path": "scripts/build_history_free_release_candidate.py",
+          "sha256": "da9ca5c0f2e016807bd780aa1a6e5f9be8c02c8d174f3e5d9ee3ed39ee478157"
+        },
+        {
+          "path": "tests/test_history_free_release_candidate.py",
+          "sha256": "48a0b9ba7b189e9de56089a5bd4f6ecb4e142ab6704019c47c14be5c6289e8be"
+        }
+      ],
+      "id": "G13",
+      "missing_evidence": "Only an externally verified archival DOI for the exact v1.1.1 release. Venue selection remains an editorial decision rather than a reproducibility blocker.",
+      "requirement": "Complete author metadata, archival identifiers, and author-approved AI-use and data/code disclosures.",
+      "status": "partial",
+      "supported_claim": "The author approved D1-D8; scoped licenses, NOTICE, verified name/affiliation/email, approved availability/AI-use text, the public history-free repository and v1.1.1 release are externally verified. A DOI-ready deposit packet is complete. Optional unverified ORCID is omitted and no DOI is invented. Versioned v1.2.0 candidate metadata, release notes and a parameterized fail-closed history-free builder are locally prepared; no public v1.2.0 release or DOI is claimed."
+    },
+    {
+      "closure_test": "Closed with boundary: preserve the negative two-family feasibility result, do not tune or dispatch this adapter further, and report only infrastructure closure plus method-gate failure. Reopen only for a verified official runnable artifact or a separately preregistered study.",
+      "evidence": [
+        {
+          "path": "experiments/fresh_common38_optitrust_style_result_v1_20261016.json",
+          "sha256": "328e917de571222446582d3d4c91fce760566b7e329c282affdfea9600091ce6"
+        },
+        {
+          "path": "experiments/fresh_common38_optitrust_style_audit_v1_20261016.json",
+          "sha256": "23501c91cb283e1581a3c90c5e290412974558c5e1b99118e5df77f06e3ae4da"
+        },
+        {
+          "path": "experiments/fresh_common38_optitrust_style_synthesis_20261016.json",
+          "sha256": "1d844184f5fd2984e3e4aa98ffc5916af48bf949dae82b0aff65a160c8673f2a"
+        },
+        {
+          "path": "docs/OPTITRUST_STYLE_COMMON38_RESULTS_20261016.md",
+          "sha256": "284daade8ea61347317e5eb7088663820b1940a3c9278dbe08f7bca06ea4551b"
+        },
+        {
+          "path": "experiments/optitrust_style_compact_capacity_canary_plan_20261016.json",
+          "sha256": "058763f3970674e77953518b66275ac96e843f935ce53e5d9e8698b32cb904fa"
+        },
+        {
+          "path": "experiments/optitrust_style_compact_capacity_canary_result_20261016.json",
+          "sha256": "f90ae64e9f21437f3cd344c8a05bf20dd45c054c6ea32df0b90dab0684c60d11"
+        },
+        {
+          "path": "experiments/optitrust_style_compact_capacity_canary_audit_20261016.json",
+          "sha256": "8a9d0a1636ee3525ea51a4f39ba1fb1d1ea2d3fc8414c5cc9e8ef5be9d3bf8e0"
+        },
+        {
+          "path": "experiments/fresh_common38_optitrust_style_compact_plan_v2_20261016.json",
+          "sha256": "4c94f6aa3fc8a0b46bf64c574d029f62d71011de2db9103aabedcf307be361c4"
+        },
+        {
+          "path": "experiments/optitrust_style_compact_infrastructure_diagnosis_20261016.json",
+          "sha256": "b657a15817e84bd5ca37f3186ca9135e2b348bb9bc8a40da147beef32a5aa885"
+        },
+        {
+          "path": "docs/OPTITRUST_STYLE_COMPACT_INFRASTRUCTURE_DIAGNOSIS_20261016.md",
+          "sha256": "4d6c36c9ff50d2d8d2d88fea77f74e6d482c719efea9e93b30efb035c9550017"
+        },
+        {
+          "path": "experiments/optitrust_indexed_closure_20261016.json",
+          "sha256": "10f074655918d84e758ae99dc031e8492513479b90e591646340ea9282ab6d5d"
+        },
+        {
+          "path": "docs/OPTITRUST_INDEXED_CLOSURE_20261016.md",
+          "sha256": "742d4d52216705c5a031be53f1899234f8f39869a2451ef27ea753018c506618"
+        },
+        {
+          "path": "experiments/optitrust_style_indexed_capacity_plan_v4_20261016.json",
+          "sha256": "7fe36c9b16a14a730fbe918b856260cff162e20cd7ef0b92e43f62661cbf4c40"
+        },
+        {
+          "path": "experiments/optitrust_style_indexed_capacity_result_v4_20261016.json",
+          "sha256": "50da2d7a5e2db300486d5695ba0446b292598bb45af8ce395bcf5b0ddcce029c"
+        },
+        {
+          "path": "experiments/optitrust_style_indexed_capacity_audit_v4_20261016.json",
+          "sha256": "e3bc9641cafe163f61d57d882ce73b8d779112bffee80b9f029b97330005a857"
+        },
+        {
+          "path": "experiments/optitrust_style_indexed_feasibility_plan_20261016.json",
+          "sha256": "d472032593b394b71a450c9d32ab9db4de7c016ffec7d97f08b3d545062573da"
+        },
+        {
+          "path": "experiments/optitrust_style_indexed_feasibility_result_20261016.json",
+          "sha256": "f9f30b611cdc51ee5614d9427b54811294e0ac3cdbbcc91fcac0cdc1e10e28a1"
+        },
+        {
+          "path": "experiments/optitrust_style_indexed_feasibility_audit_20261016.json",
+          "sha256": "ee82a0a75ca876520029a34b14b7894fd65a88aad973c30dbac219a8ad661acb"
+        },
+        {
+          "path": "experiments/optitrust_style_indexed_feasibility_plan_v2_20261016.json",
+          "sha256": "e6fd2a86b31956d8afdb3f5a4cd5dee16ac648d649efbdac392532250508d4bf"
+        },
+        {
+          "path": "experiments/optitrust_style_indexed_feasibility_result_v2_20261016.json",
+          "sha256": "fe56bd46e42b8129fcc4f465fb01b9dcf7302c2b5f6e85087452cd8a8777a798"
+        },
+        {
+          "path": "experiments/optitrust_style_indexed_feasibility_audit_v2_20261016.json",
+          "sha256": "6d781364060275958ce9909d09c75f4f23a4e3ad68b38ba340f1a49bd58f3464"
+        }
+      ],
+      "id": "G14",
+      "missing_evidence": "No scoreable common-38 OptiTrust-style row exists. Official OptiTrust reproduction still requires a verified author- or venue-linked runnable package. This is an explicit boundary rather than a blocker because the user requested normal baseline reproduction without repeated baseline optimization.",
+      "requirement": "Produce a scoreable, bounded paper-structure OptiTrust-style sensitivity without native unreleased components.",
+      "status": "closed_with_boundary",
+      "supported_claim": "The expanded-model common-38 run was stopped and diagnosed as a provider/front-gateway duration failure. A benchmark-agnostic indexed IR, trusted deterministic compiler and pinned OpenAI/httpx worker subsequently passed the frozen worst-shape v4 capacity gate (3/3 complete bounded envelopes, 6 physical attempts, zero halt and zero restart sends). Two separately frozen answer-blind two-family feasibility gates then completed 20/20 logical requests each with one physical attempt per request, zero infrastructure-unavailable cells and five terminal review views per cell, but produced zero optimal views and zero selected consensus cells. The adapter therefore failed its prospective method gate and common-38 was not dispatched."
+    },
+    {
+      "boundary": "The result identifies the value of authored, routed benchmark knowledge under one shared compiler on 38 archetypes from one source and one model. It does not establish proof-carrying structure alone, automatic knowledge acquisition or broad benchmark superiority; the label-blind run is post hoc on the same benchmark.",
+      "closure_test": "Freeze an independent source and custody boundary before labels or answers are opened; compare the immutable revised method with its matched baseline under a short decision contract and separately budgeted evidence; require higher full-denominator final modeling accuracy and the prespecified paired significance/regression gate.",
+      "evidence": [
+        {
+          "path": "experiments/same_knowledge_mechanism_synthesis_20261017.json",
+          "sha256": "6c5d51532b28ba6446d891512d4f43ea10bc101c460187ecaef4a0cbcc4d33cb"
+        },
+        {
+          "path": "docs/SAME_KNOWLEDGE_MECHANISM_SYNTHESIS_20261017.md",
+          "sha256": "e3c2f2fa1f955a27dced92d2956779c0ae108104ab1376a2b0942c054f9992b1"
+        },
+        {
+          "path": "experiments/retailopt190_source_custody_audit_20261017.json",
+          "sha256": "637da7c1c4c0b69d97e79d81eade9b95e655bdd5c6cc90f43ebfe370de729223"
+        },
+        {
+          "path": "experiments/retailopt190_independence_audit_20261017.json",
+          "sha256": "14b0dbe347d70d09a014f8872d1c30050fc30a7f2b9ef6da4ddf2a5cbbd311da"
+        },
+        {
+          "path": "docs/RETAILOPT190_SOURCE_AND_ENDPOINT_GATE_20261017.md",
+          "sha256": "ab82084ea655c9fa6589372dc0fcc221b6876fe74e313a0de4efe32c0216a6dd"
+        },
+        {
+          "path": "experiments/retailopt190_gold_compiler_audit_20261017.json",
+          "sha256": "46a168c527b3ae696dd4e8a34757bf4321c3254609f969480e7bdc17b38bbcf1"
+        },
+        {
+          "path": "docs/RETAILOPT190_SHORT_DECISION_PROTOCOL_20261017.md",
+          "sha256": "f251e6a23a20decaf8f6ca81734c85931293dfd43109782de2597280a7e826c7"
+        },
+        {
+          "path": "experiments/retailopt190_short_full_plan_v2_20261017.json",
+          "sha256": "a24779da198d42bb6cedaf9bc97653b6c3186abb4a949e1ac2bc38e1c71af1a4"
+        },
+        {
+          "path": "experiments/retailopt190_short_full_audit_v2_20261017.json",
+          "sha256": "74ca5e290ca05df007320a63c7f066c1cf0432c0518d8411c7c69e37de21e6db"
+        },
+        {
+          "path": "experiments/retailopt190_short_full_execution_v2_20261017.json",
+          "sha256": "c4a0c8031b5715802db18b71150731a0e4fd8cbfafb322f5c51ad6947b90e0d1"
+        },
+        {
+          "path": "experiments/retailopt190_short_full_evaluation_projection_v1_20261017.json",
+          "sha256": "8685f02f5434a6ce7fba322d7c6f7af86cc08452be484143b123141d112ff1f1"
+        },
+        {
+          "path": "experiments/retailopt190_label_blind_plan_20261017.json",
+          "sha256": "3a1f31b240bf47b54b533550f0343fe9e52b55a537c477209f871bb1a2e58978"
+        },
+        {
+          "path": "experiments/retailopt190_label_blind_audit_20261017.json",
+          "sha256": "8d83f0a2eed995cb060f7ac0d1011310d00a0cdcb57e404a592309c306ebaec7"
+        },
+        {
+          "path": "experiments/retailopt190_label_blind_execution_20261017.json",
+          "sha256": "6ba35110304f3d8f129e5f7feb1c9c0129c449fca973dd89980a34598a9011a1"
+        },
+        {
+          "path": "experiments/retailopt190_label_blind_evaluation_projection_v1_20261017.json",
+          "sha256": "55dd56a847d5c2627a71a27c5696cb0dc517c322c0ff018077c335e83fc0d445"
+        },
+        {
+          "path": "experiments/retailopt190_decision_diagnostics_20261017.json",
+          "sha256": "a31e58e939d360459e25e1b5093569dd50d8e73dc3bd895682ce49fa38e8b5e4"
+        },
+        {
+          "path": "manuscript/MANUSCRIPT_DRAFT.md",
+          "sha256": "cbd0e8924363082e6703c0eb00b9b9fa8230cbecfb62b5ce566f4a6644bf033e"
+        }
+      ],
+      "id": "G15",
+      "missing_evidence": "None for the bounded G15 claim. A second independent source is needed only for broader benchmark-superiority or cross-source generalization claims.",
+      "requirement": "Confirm that a revised short-decision, sparse-retrieval and counterexample-witness knowledge compiler improves final direct-modeling accuracy on a new independent benchmark endpoint.",
+      "status": "closed_with_boundary",
+      "supported_claim": "The prospectively frozen short-decision, sparse-retrieval and counterexample-witness compiler improves full-denominator RetailOpt-190 direct-modeling accuracy from 50/190 to 170/190, with 25 corrected and one regressed archetype; a post hoc label-blind replication retains the result at 185/190."
+    }
+  ],
+  "review_issue_mapping": [
+    {
+      "id": "SYN-B1",
+      "mapped_requirements": [
+        "G08",
+        "G09"
+      ],
+      "note": "The eight-pair language-model canary is negative, while an exact 10-class finite census closes bounded active acquisition inside the authored semantic grammar. Exact finite censuses identify bounded semantic-admission, resource-admission, routing and shadow-guard complexity effects. Natural-language fact discovery, natural library evolution and unrestricted shift remain outside the closed finite-population claim.",
+      "status": "closed_with_boundary"
+    },
+    {
+      "id": "SYN-B2",
+      "mapped_requirements": [
+        "G07"
+      ],
+      "note": "The common-38 current/Base/BIND/CoE-safe comparison closes the bounded fixed-endpoint requirement and all four paired current-method contrasts reject after Holm correction. The two-family single-lineage cohort, unequal native trajectories and unequal construction cost still prevent a broad benchmark-superiority claim.",
+      "status": "closed_with_boundary"
+    },
+    {
+      "id": "SYN-B3",
+      "mapped_requirements": [
+        "G11",
+        "G13"
+      ],
+      "note": "Independent public clean-clone reproduction is closed by v1.1.1. External DOI registration remains an archival metadata task under G13, not a reproducibility failure.",
+      "status": "closed_with_boundary"
+    },
+    {
+      "id": "SYN-M1",
+      "mapped_requirements": [
+        "G02",
+        "G10"
+      ],
+      "note": "Complete aggregate OR-Debug group and endpoint sensitivity ledgers now exist, but public shape groups do not prove complete source/template lineage.",
+      "status": "partial"
+    },
+    {
+      "id": "SYN-M2",
+      "mapped_requirements": [
+        "G01",
+        "G09"
+      ],
+      "note": "Unsupported general necessity language is removed. Complete finite-population censuses support bounded semantic-admission, resource-admission, exactly-one routing and shadow-guard complexity effects, without extending those effects to natural proposal or shift distributions.",
+      "status": "closed_with_boundary"
+    },
+    {
+      "id": "SYN-M3",
+      "mapped_requirements": [
+        "G12"
+      ],
+      "note": "The worked example and both final main-figure renders are closed with publication-size source, font, collision, alignment and visual QA.",
+      "status": "closed"
+    },
+    {
+      "id": "BR-C1",
+      "mapped_requirements": [
+        "G09"
+      ],
+      "note": "The strict FormulationBench same-fact study is complete and negative, while NLEquiv shows neutral same-fact structuring and a directional but non-significant routed generic-skill effect. Claims remain limited to complete-system benchmark gains; architecture-only accuracy improvement is unsupported.",
+      "status": "closed_with_negative_boundary"
+    },
+    {
+      "id": "BR-C2",
+      "mapped_requirements": [
+        "G10"
+      ],
+      "note": "A public aggregate reconstruction script, generated claim table, evidence index and explicit controlled-access route now provide the shortest reviewer path. Restricted endpoint rescoring remains custody-limited.",
+      "status": "closed_with_boundary"
+    },
+    {
+      "id": "BR-C3",
+      "mapped_requirements": [
+        "G02",
+        "G10"
+      ],
+      "note": "The unmodified OR-Debug released-label endpoint is primary; the 516-record source correction is a separately labeled sensitivity.",
+      "status": "closed_with_boundary"
+    },
+    {
+      "id": "BR-C4",
+      "mapped_requirements": [
+        "G09"
+      ],
+      "note": "Finite authored-population results are described as exhaustive contract tests and no longer as evidence explaining the natural benchmark gains.",
+      "status": "closed_with_boundary"
+    },
+    {
+      "id": "BR-C5",
+      "mapped_requirements": [
+        "G10"
+      ],
+      "note": "The abstract and sole authoritative paper frame now separate system results, deployment invariants, contract tests, external implementation comparisons and prospective theory.",
+      "status": "closed_with_boundary"
+    },
+    {
+      "id": "BR-N1",
+      "mapped_requirements": [
+        "G01",
+        "G10"
+      ],
+      "note": "A claim-level closest-method map now narrows novelty; direct faithful common-task comparison remains necessary for a stronger integrated-system superiority claim.",
+      "status": "partial"
+    },
+    {
+      "id": "BR-C6",
+      "mapped_requirements": [
+        "G15"
+      ],
+      "note": "The revised short-decision, sparse-retrieval and counterexample-witness method passes a prospectively frozen RetailOpt-190 direct-modeling gate. A post hoc label-blind same-benchmark replication removes the arm-label nuisance. The claim remains limited to authored benchmark knowledge, 38 archetypes, one source and one model.",
+      "status": "closed_with_boundary"
+    }
+  ],
+  "schema": "llm4or-goal-completion-audit-v1",
+  "status_vocabulary": {
+    "closed": "Current evidence proves the bounded requirement as stated.",
+    "closed_with_boundary": "A local or retrospective requirement is complete only under an explicit information, adapter, or endpoint boundary.",
+    "external_unavailable": "The official external artifact needed for reproduction was not verified in the audited channels.",
+    "open_experiment": "A new prespecified experiment is necessary.",
+    "open_release_or_author": "Release work or an author-level decision remains necessary.",
+    "partial": "Material evidence exists, but the full requirement is not proved."
+  }
+}

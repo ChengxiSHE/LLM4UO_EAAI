@@ -1,0 +1,167 @@
+{
+  "claim_boundary": [
+    "This is a failed source-materialization gate, not a benchmark result or accuracy estimate.",
+    "The 220 exact instances are not promoted as a substitute cohort because no selector or denominator was frozen before this audit.",
+    "No missing path is silently repaired, renamed, inferred, downloaded, or excluded."
+  ],
+  "custodian": {
+    "cli": "scripts/build_miplib_nl_custody.py",
+    "cli_sha256": "df659920bddc3daf5122eca21264d59cdc9026376fa438ed7cf5e9d7ea22eafc",
+    "fixed_source_full_bundle_passed": false,
+    "focused_test_cases": 38,
+    "focused_tests_passed": true,
+    "implementation": "llm4or/miplib_nl_custody.py",
+    "implementation_sha256": "e0a6302e5e287db2b91f6425a8def42e80a5743f1a4c9bd2011ae579c1922a5d",
+    "synthetic_projection_and_publication_contract_passed": true,
+    "tests": "tests/test_miplib_nl_custody.py",
+    "tests_sha256": "f6ae375b0cb4e62c2666015c979ed25953bdd2633c92615917a85ad61ddf36a4"
+  },
+  "date": "2026-10-16",
+  "execution": {
+    "api_calls": 0,
+    "human_visible_optimal_values": 0,
+    "inference_visible_optimal_values": 0,
+    "model_calls": 0,
+    "native_calls": 0,
+    "solver_calls": 0,
+    "vm_calls": 0
+  },
+  "external_evidence": {
+    "issue_scope": "confirms_one_missing_declared_data_file_only",
+    "issue_state_checked_2026_10_16": "open",
+    "official_open_issue": "https://github.com/optsuite/MIPLIB-NL/issues/2"
+  },
+  "gates": {
+    "answer_blind_full_source_custody": false,
+    "dispatch": false,
+    "frozen_selector": false,
+    "packet_completeness": false,
+    "reference_access_contract": false,
+    "resource_contract": false,
+    "rights_safe_public_input_route": false,
+    "same_knowledge_serializer": false,
+    "scoreable_endpoint": false,
+    "source_materialization": false
+  },
+  "materialization": {
+    "counts": {
+      "actual_data_files": 809,
+      "declared_data_files": 809,
+      "exact_instances": 220,
+      "instances": 223,
+      "mismatched_instances": 3,
+      "missing_data_directories": 12,
+      "missing_declared_data_files": 5,
+      "undeclared_actual_data_files": 5
+    },
+    "dispatch_allowed": false,
+    "execution": {
+      "api_calls": 0,
+      "model_calls": 0,
+      "native_calls": 0,
+      "solver_calls": 0,
+      "vm_calls": 0
+    },
+    "mismatches": [
+      {
+        "actual_data_files": 0,
+        "declared_data_files": 1,
+        "missing_declared_data_files": 1,
+        "opaque_id": "62a5969cff60d97960d4445dbdff37ccbec267b4215b9987980484305d0f5110",
+        "undeclared_actual_data_files": 0
+      },
+      {
+        "actual_data_files": 4,
+        "declared_data_files": 4,
+        "missing_declared_data_files": 4,
+        "opaque_id": "66ac292302891121026f0ac045ba53332414d421fc94a1fe71323d774455f100",
+        "undeclared_actual_data_files": 4
+      },
+      {
+        "actual_data_files": 12,
+        "declared_data_files": 11,
+        "missing_declared_data_files": 0,
+        "opaque_id": "cd78dcba34d9588c9b7d28050300f1759257143f5bcf5413dbf6b02bdb6ad4cd",
+        "undeclared_actual_data_files": 1
+      }
+    ],
+    "privacy": {
+      "contains_credentials": false,
+      "contains_data_values": false,
+      "contains_evaluator_answers": false,
+      "contains_instance_names": false,
+      "contains_model_text": false,
+      "contains_reference_code": false,
+      "contains_task_bodies": false
+    },
+    "schema": "llm4or-miplib-nl-materialization-audit-v1",
+    "schema_census_sha256": "442df5a299fa645de9c79f3a373baf2d2c67d7f49c3014f07ca73f46a75325b9",
+    "source": {
+      "commit": "9f14ad1782eaa547f7dad982d1edb186321ffd88",
+      "dataset_tree": "96132c089bbead0909c1ab9e55df59195ba8ec6f",
+      "directory_name_set_sha256": "0b49be86cae4c26fb897fca74cfe37189713215603aec1fe4faa1f9f3fca3c8c",
+      "opaque_identity_set_sha256": "f67cae887e1090850b67ec75c8d3bc325c3661c9dc4bee28253f3df9bb9bfb92"
+    },
+    "status": "failed_source_materialization"
+  },
+  "privacy": {
+    "contains_credentials": false,
+    "contains_data_values": false,
+    "contains_evaluator_answers": false,
+    "contains_instance_names": false,
+    "contains_model_text": false,
+    "contains_reference_code": false,
+    "contains_task_bodies": false
+  },
+  "rehearsal": {
+    "bundle_published": false,
+    "fail_closed_before_publication": true,
+    "partial_terminal_files": 0,
+    "read_only_check_run": false,
+    "terminal_reason": "missing_data_directory",
+    "write_attempted": true
+  },
+  "schema": "llm4or-miplib-nl-custody-rehearsal-v1",
+  "schema_census": {
+    "counts": {
+      "declared_data_files": 809,
+      "instance_json": 223,
+      "instances": 223,
+      "model_md_absent": 43,
+      "model_md_present": 180,
+      "solve_py": 223
+    },
+    "optimal_value_types": {
+      "integer": 94,
+      "number": 41,
+      "string": 88
+    },
+    "sha256": "442df5a299fa645de9c79f3a373baf2d2c67d7f49c3014f07ca73f46a75325b9",
+    "top_level_key_sets": [
+      {
+        "count": 222,
+        "keys": [
+          "abstract_problem",
+          "files",
+          "optimal_value",
+          "parameters"
+        ]
+      },
+      {
+        "count": 1,
+        "keys": [
+          "abstract_problem",
+          "optimal_value",
+          "parameters"
+        ]
+      }
+    ]
+  },
+  "source": {
+    "dataset_tree": "96132c089bbead0909c1ab9e55df59195ba8ec6f",
+    "fixed_commit": "9f14ad1782eaa547f7dad982d1edb186321ffd88",
+    "official_main_head_checked_2026_10_16": "9f14ad1782eaa547f7dad982d1edb186321ffd88",
+    "repository": "https://github.com/optsuite/MIPLIB-NL"
+  },
+  "status": "failed_source_materialization_no_bundle_published"
+}

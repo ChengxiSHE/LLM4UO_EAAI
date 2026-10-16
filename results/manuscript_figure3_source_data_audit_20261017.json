@@ -1,0 +1,28 @@
+{
+  "schema": "llm4or-figure3-source-data-audit-v1",
+  "status": "passed",
+  "checks": {
+    "summary_exactly_reconstructed": true,
+    "diagnostics_exactly_reconstructed": true,
+    "summary_rows": 4,
+    "diagnostic_rows": 2,
+    "primary_instances": 190,
+    "primary_archetypes": 38
+  },
+  "inputs": {
+    "experiments/retailopt190_short_full_evaluation_projection_v1_20261017.json": "8685f02f5434a6ce7fba322d7c6f7af86cc08452be484143b123141d112ff1f1",
+    "experiments/retailopt190_label_blind_evaluation_projection_v1_20261017.json": "55dd56a847d5c2627a71a27c5696cb0dc517c322c0ff018077c335e83fc0d445",
+    "experiments/retailopt190_decision_diagnostics_20261017.json": "a31e58e939d360459e25e1b5093569dd50d8e73dc3bd895682ce49fa38e8b5e4"
+  },
+  "outputs": {
+    "manuscript/source_data/figure3_retailopt_summary.csv": "051a718fe1bc89228241766aca57d6b51ee3041574f2017163fe4698c5be89c8",
+    "manuscript/source_data/figure3_retailopt_diagnostics.csv": "25e6bc92729b8fca0d78572ca523fa4cf752fe1197d6ee85cf9806a80d5ab13b"
+  },
+  "privacy": {
+    "contains_problem_bodies": false,
+    "contains_request_or_response_bodies": false,
+    "contains_evaluator_only_answers": false,
+    "contains_credentials": false
+  },
+  "claim_boundary": "The audit reconstructs aggregate plotted counts only. It adds no model, API, solver or evaluator call and does not turn the post hoc robustness or error localization into independent confirmation or causal decomposition."
+}

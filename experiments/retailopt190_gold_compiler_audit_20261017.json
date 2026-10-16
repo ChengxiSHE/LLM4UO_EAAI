@@ -1,0 +1,67 @@
+{
+  "checkpoint": {
+    "new_records": 190,
+    "resumed_records": 0,
+    "sha256": "1861274c770b8038eb012bdbbef736ff61e4cd488ea8607daefcd13fab267084"
+  },
+  "claim_boundary": "This validates the shared compiler under the admitted decision. It does not evaluate either language-model arm and cannot establish an accuracy improvement.",
+  "counts": {
+    "archetypes": 38,
+    "correct": 190,
+    "fully_correct_archetypes": 38,
+    "records": 190
+  },
+  "endpoint": "relative objective error < 0.01; execution and solver status separately reported",
+  "execution": {
+    "api_calls": 0,
+    "credentials_read": false,
+    "model_calls": 0,
+    "solver_calls": 190
+  },
+  "implementation": {
+    "compiler_sha256": "958b9f9638d3f7f77e40a843feadc69a98d234c12ab3e7ca86a8b932e8f0cb3e",
+    "knowledge_sha256": "dd13c96ac9901eb61103ed47dc465396e6b1a08d534d21e42c76b377f8f09319",
+    "library_content_sha256": "457ab983b9add2131e89456adf9750c07ce64ae44dc005fc588b8b157379ef16",
+    "runner_sha256": "eb57d861f2ec35fa4a89a8a210dac488b8414d93a44440b285f547fec0f6ef25"
+  },
+  "maximum_model_size": {
+    "constraints": 15236,
+    "nonzeros": 49730,
+    "variables": 14040
+  },
+  "privacy": {
+    "contains_objectives": false,
+    "contains_per_item_results": false,
+    "contains_problem_bodies": false,
+    "contains_source_ids": false
+  },
+  "question_count_distribution": {
+    "10": 105,
+    "11": 65,
+    "12": 10,
+    "7": 10
+  },
+  "relative_objective_error": {
+    "max": 0.006185103964792928,
+    "mean": 0.00019715970432329356
+  },
+  "route_card_count_distribution": {
+    "1": 10,
+    "2": 105,
+    "3": 75
+  },
+  "schema": "llm4or-retailopt190-gold-compiler-audit-v1",
+  "solver_status_counts": {
+    "OPTIMAL": 180,
+    "OPTIMAL (TL)": 10
+  },
+  "source": {
+    "commit": "d809c6bbeb42cb99b0564c41bfb8f331f0156b9d",
+    "private_ledger_sha256": "0268a8ed055803ffcce38a7be80ddd1edcc3f9117b86dc210dac2c5a089da7a5"
+  },
+  "status": "passed",
+  "terminal_counts": {
+    "complete": 190
+  },
+  "wall_seconds_this_invocation": 155.7464347910136
+}

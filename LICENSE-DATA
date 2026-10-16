@@ -1,0 +1,23 @@
+LLM4OR-EAAI aggregate data and documentation license
+
+Unless a file states otherwise, author-owned aggregate Source Data and
+documentation that are explicitly identified as released data are licensed
+under the Creative Commons Attribution 4.0 International license (CC BY 4.0):
+
+https://creativecommons.org/licenses/by/4.0/
+
+Copyright 2026 Chengxi She.
+
+This data license applies only to author-owned aggregate endpoint summaries,
+paired correction and regression counts, structural-group summaries,
+routing-identity records, figure Source Data, and documentation explicitly
+marked as released data. It does not cover upstream benchmark text or answers,
+evaluator-only answers, private request or response bodies, credentials,
+external submodule contents, third-party generated programs, or other material
+for which redistribution rights are absent or unverified. Those materials
+remain subject to their upstream terms or are represented only by provenance
+metadata, identities, checksums, and reconstruction instructions.
+
+Attribution should identify the project as “LLM4OR-EAAI”, name Chengxi She,
+link this notice and the CC BY 4.0 license, and indicate whether changes were
+made.

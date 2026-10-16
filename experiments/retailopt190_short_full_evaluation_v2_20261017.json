@@ -1,0 +1,97 @@
+{
+  "archetypes": {
+    "base_short": {
+      "accuracy": 0.2631578947368421,
+      "fully_correct": 10,
+      "total": 38
+    },
+    "knowledge_short": {
+      "accuracy": 0.8947368421052632,
+      "fully_correct": 34,
+      "total": 38
+    }
+  },
+  "claim_boundary": "A passed gate confirms a prospective accuracy improvement on RetailOpt-190 under the frozen ReLoop endpoint, model, authored benchmark-specific library, shared compiler, and one-decision-per-archetype protocol; it does not establish universal OR superiority or automatic skill acquisition.",
+  "confirmation_gate": {
+    "checks": {
+      "archetype_corrections_at_least_6": true,
+      "archetype_regressions_at_most_2": true,
+      "correction_regression_ratio_at_least_2": true,
+      "inference_completion_fraction_at_least_0_99": true,
+      "one_sided_exact_mcnemar_below_0_05": true,
+      "positive_instance_gain_at_least_0_05": true
+    },
+    "passed": true
+  },
+  "execution": {
+    "api_calls": 0,
+    "model_calls": 0,
+    "solver_calls_this_invocation": 0,
+    "wall_seconds_this_invocation": 0.000709041953086853,
+    "workers": 5
+  },
+  "inference_completed": {
+    "base_short": {
+      "cells": 38,
+      "fraction": 1.0
+    },
+    "knowledge_short": {
+      "cells": 38,
+      "fraction": 1.0
+    }
+  },
+  "instances": {
+    "base_short": {
+      "accuracy": 0.2631578947368421,
+      "correct": 50,
+      "total": 190
+    },
+    "knowledge_short": {
+      "accuracy": 0.8947368421052632,
+      "correct": 170,
+      "total": 190
+    }
+  },
+  "paired_archetypes": {
+    "corrections": 25,
+    "one_sided_exact_mcnemar_p": 4.023313522338867e-07,
+    "regressions": 1
+  },
+  "paired_instances": {
+    "corrections": 125,
+    "regressions": 5
+  },
+  "plan_sha256": "302cdc9410816e1cbe7b2330f85b8fd9e9f3e7ef8598da2ae760da7cdbee0c9d",
+  "privacy": {
+    "contains_objectives": false,
+    "contains_per_item_results": false,
+    "contains_problem_bodies": false,
+    "contains_responses": false,
+    "contains_source_ids": false
+  },
+  "schema": "llm4or-retailopt190-short-full-evaluation-v2",
+  "solver_status_counts": {
+    "base_short": {
+      "OPTIMAL": 180,
+      "OPTIMAL (TL)": 10
+    },
+    "knowledge_short": {
+      "OPTIMAL": 180,
+      "OPTIMAL (TL)": 10
+    }
+  },
+  "source": {
+    "archetypes": 38,
+    "commit": "d809c6bbeb42cb99b0564c41bfb8f331f0156b9d",
+    "records": 190
+  },
+  "status": "confirmed_improvement",
+  "terminal_counts": {
+    "base_short": {
+      "complete": 190
+    },
+    "knowledge_short": {
+      "complete": 190
+    }
+  }
+}

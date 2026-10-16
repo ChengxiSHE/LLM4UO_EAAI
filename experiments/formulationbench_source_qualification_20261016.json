@@ -1,0 +1,103 @@
+{
+  "claim_boundary": [
+    "This is a body-free source qualification, not a benchmark result or an accuracy estimate.",
+    "No problem description, instance value, formulation body, validity label, solution, or Lean proof was opened.",
+    "Source eligibility does not authorize model or solver dispatch."
+  ],
+  "date": "2026-10-16",
+  "decision": {
+    "dispatch_allowed": false,
+    "selected_candidate": "FormulationBench",
+    "source_eligible_in_principle": true,
+    "status": "fixed_source_custody_and_same_fact_serialization_passed_capacity_gate_open"
+  },
+  "execution": {
+    "api_calls": 0,
+    "benchmark_bodies_opened": 0,
+    "labels_opened": 0,
+    "lean_proofs_opened": 0,
+    "model_calls": 0,
+    "solutions_opened": 0,
+    "solver_calls": 0,
+    "vm_calls": 0
+  },
+  "official_aggregate_contract": {
+    "negative_reformulation_pairs": 26,
+    "positive_reformulation_pairs": 63,
+    "problems": 20,
+    "reformulation_pairs": 89,
+    "structured_formulations": 109
+  },
+  "source_materialization_audit": {
+    "archive_bytes": 555683,
+    "archive_sha256": "78c9c4cf6e665cc4739482d634580a1a55a5476b0c786830a8f367914c3d4bf3",
+    "audit": "experiments/formulationbench_source_census_20261016.json",
+    "audit_sha256": "e5fda4361c4faefa90034d09d457c6da9932f788ff01df74672f49998a27fd78",
+    "counts_match_official_contract": true,
+    "full_source_materialized": true,
+    "pair_identity_census_without_label_access": true,
+    "status": "passed_body_free_source_census"
+  },
+  "custody_audit": {
+    "artifact": "experiments/formulationbench_custody_audit_20261016.json",
+    "artifact_sha256": "f2583a812259db6d0ae4cee63eea5b59804242ee4e9d1e75d3e5b380abb49e93",
+    "answer_blind_inference_projection": true,
+    "atomic_generation_publication": true,
+    "candidate_validity_removed_from_inference": true,
+    "deterministic_check_replay": true,
+    "evaluator_isolated": true,
+    "pairs": 89,
+    "proof_presence_removed_from_inference_metadata": true,
+    "status": "published_private_bundle_verified"
+  },
+  "same_fact_audit": {
+    "artifact": "experiments/formulationbench_same_fact_audit_20261016.json",
+    "artifact_sha256": "c70c0ead7bdfcccaf69ecba3398c1b702ef5700f73942c2ac4bfc362b3f4e760",
+    "fact_multiset_mismatches": 0,
+    "facts_total": 4935,
+    "fixed_guidance_variants": 1,
+    "guidance_mismatches": 0,
+    "pairs": 89,
+    "status": "passed_full_inference_population_same_fact_verification"
+  },
+  "source": {
+    "commit": "6f37a71e6251b11599ef42869e4268882985a8a7",
+    "commit_url": "https://github.com/henryrobbins/formulation-bench/commit/6f37a71e6251b11599ef42869e4268882985a8a7",
+    "dataset_documentation": "https://formulation-bench.henryrobbins.com/en/latest/schema.html",
+    "license": "MIT",
+    "license_url": "https://raw.githubusercontent.com/henryrobbins/formulation-bench/main/LICENSE.md",
+    "paper": "https://arxiv.org/abs/2608.25220",
+    "repository": "https://github.com/henryrobbins/formulation-bench",
+    "tree": "793db197693fac5446fe1bd39aaf178fea437822",
+    "tree_metadata_sha256": "d013835c776f1c206401f45dd28e6014c39e9103bdb0a5ef45e87590126d7b19"
+  },
+  "tree_only_census": {
+    "blobs": 665,
+    "data_json": 20,
+    "description_md": 20,
+    "formulation_json": 109,
+    "formulation_lean": 109,
+    "gen_params_py": 109,
+    "problem_directories": 20,
+    "problem_json": 20,
+    "reformulation_lean": 63,
+    "reformulation_map_json": 89,
+    "solution_json": 20,
+    "tree_entries": 947,
+    "tree_response_truncated": false
+  },
+  "why_selected": {
+    "external_machine_checked_endpoint": true,
+    "license_explicit": true,
+    "lineage_distinct_from_prior_project_cohorts": true,
+    "natural_language_and_structured_formulation_layers": true,
+    "same_knowledge_pair_task_available": true,
+    "solution_and_label_layers_separable_by_path": true
+  },
+  "why_not_yet_dispatchable": {
+    "capacity_canary": false,
+    "evaluator_contract": false,
+    "frozen_prompt_and_budget": false
+  },
+  "schema": "llm4or-formulationbench-source-qualification-v1"
+}

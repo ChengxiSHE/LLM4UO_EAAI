@@ -1,0 +1,70 @@
+{
+  "assets": [
+    {
+      "name": "llm4or-v1.1.1-authorized.bundle",
+      "server_sha256": "9dc8b4cd4d0cee0663a2f3646af68e55f9aac5189423e73e508c4f72b4727646",
+      "verified_after_download": true
+    },
+    {
+      "name": "history_free_release_candidate_v1_1_1_audit_20261016.json",
+      "server_sha256": "c793cab9c00c10c03c921dacc59939666801400443eab6ddd68d6162a397fd94",
+      "verified_after_download": true
+    },
+    {
+      "name": "SHA256SUMS-v1.1.1.json",
+      "server_sha256": "6b04cb6413fce573cedaa5899c493b357dbbf577a72ecacc2ddc768ebb382c06",
+      "verified_after_download": true
+    }
+  ],
+  "date": "2026-10-16",
+  "execution": {
+    "api_or_model_calls": 0,
+    "benchmark_solver_calls": 0,
+    "credentials_read": false,
+    "evaluator_only_answers_read": false,
+    "native_evaluator_calls": 0,
+    "request_or_response_bodies_read": false,
+    "vm_calls": 0
+  },
+  "history": {
+    "commit": "ed663fcdf8336f77c466652a516d5bc2c567f93a",
+    "main_unchanged_at": "41856e10640bf9820bdd734116c65f865489a410",
+    "parent_count": 0,
+    "reachable_commit_count": 1,
+    "release_branch": "release/v1.1.1-history-free",
+    "release_branch_commit": "ed663fcdf8336f77c466652a516d5bc2c567f93a",
+    "tag": "v1.1.1",
+    "tag_commit": "ed663fcdf8336f77c466652a516d5bc2c567f93a",
+    "tree": "93fc594cfe9d51a5674608a75d6ec3821b4fdba5",
+    "v1_0_0_unchanged_at": "3b870323935fa0a00ffd3fe9d1dc3512323beacf",
+    "v1_1_0_unchanged_at": "f656f2fc4f0426ebe92aa95dbb03a0b482121a33"
+  },
+  "public_clone": {
+    "clean_after": true,
+    "clean_before": true,
+    "clone_mode": "git clone --no-local --recurse-submodules --branch v1.1.1 from public GitHub",
+    "fsck_full_passed": true,
+    "integrity_tests": 81,
+    "reconstruction_checks": 3,
+    "remote_submodule_acquisition_verified": true,
+    "restricted_or_private_paths_present": 0,
+    "submodule_commit": "c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010"
+  },
+  "release": {
+    "draft": false,
+    "prerelease": false,
+    "url": "https://github.com/ChengxiSHE/LLM4UO_EAAI/releases/tag/v1.1.1"
+  },
+  "schema": "llm4or-post-publication-release-audit-v1",
+  "status": "passed_public_v1_1_1_recursive_credential_free_integrity_contract",
+  "stress": {
+    "different_payload_concurrent_runs": 500,
+    "failures": 0,
+    "identical_payload_concurrent_runs": 500
+  },
+  "supersession": {
+    "reason": "v1.1.0 failed one public-clone concurrency test because shared journal cleanup could race between stat and open",
+    "v1_1_0_public_integrity_complete": false,
+    "v1_1_1_is_current_verified_release": true
+  }
+}

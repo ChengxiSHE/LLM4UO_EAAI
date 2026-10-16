@@ -1,0 +1,197 @@
+{
+  "schema": "llm4or-figure-reconstruction-audit-v1",
+  "status": "passed_clean_temporary_figure_reconstruction",
+  "python": "3.10.1",
+  "declared_environment": {
+    "pymupdf": "1.26.5",
+    "contourpy": "1.3.2",
+    "cycler": "0.12.1",
+    "fonttools": "4.65.0",
+    "kiwisolver": "1.5.1",
+    "matplotlib": "3.10.7",
+    "numpy": "2.2.6",
+    "packaging": "26.3",
+    "pillow": "12.3.0",
+    "pyparsing": "3.3.3",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  },
+  "environment_mismatches": {},
+  "preflight": {
+    "schema": "llm4or-figure-reconstruction-preflight-v1",
+    "status": "preflight_passed",
+    "all_required_paths_tracked": true,
+    "missing_paths": [],
+    "untracked_paths": [],
+    "input_sha256": {
+      "requirements-figures.txt": "9a94b355b2cdfd238f2a1af83fb2887caab03eedd17d5d887ca70128f16cead9",
+      "scripts/audit_panel_alignment.py": "bd9a667507b4a0cfc0675d9512034b3423b8c39758e6fa96f2f5a0424a68b11d",
+      "scripts/render_main_figure1.py": "64ca7403155bb31d8f8176dce1cbae05211399352924395c8b05ecec9731bf07",
+      "scripts/render_main_figure2.py": "dc63d09b47a0e19d4815f050f24cd22ea9aa1ef1b5f24de8139a254c46b5828e",
+      "manuscript/source_data/figure2_endpoint_summary.csv": "71927fc29af5f54269dee1675c140f8f3b04404635458cc31973c2709e8ec71e",
+      "manuscript/source_data/figure2_group_summary.csv": "0977c0b8d8856fcf9e287907da993181ccdc39e269831901bcf84a9b507c2076",
+      "manuscript/source_data/figure2_router_identity.csv": "a44eb29bc162419e2acda954daf1b1f08e5448b9242cfc414cb0e8b59eae52e2",
+      "manuscript/source_data/figure2_tsp_by_size.csv": "ce6bc449422bc4a2ca5d066ded26801570283a35d71651fea3c42864ed9aa869"
+    },
+    "execution": {
+      "model_calls": 0,
+      "api_calls": 0,
+      "solver_calls": 0,
+      "native_evaluator_calls": 0,
+      "vm_calls": 0,
+      "request_or_response_bodies_read": false,
+      "evaluator_only_answers_read": false,
+      "credentials_read": false
+    }
+  },
+  "sanitized_environment_keys": [
+    "FIGURE_QA_SCRIPTS",
+    "HOME",
+    "LANG",
+    "LC_ALL",
+    "MPLCONFIGDIR",
+    "PATH",
+    "PYTHONDONTWRITEBYTECODE",
+    "PYTHONHASHSEED"
+  ],
+  "normalization_policy": {
+    "pdf": [
+      "CreationDate"
+    ],
+    "svg": [
+      "dc:date",
+      "Matplotlib internal m/p identifier names"
+    ],
+    "png": [],
+    "tiff": []
+  },
+  "commands": [
+    {
+      "renderer": "scripts/render_main_figure1.py",
+      "returncode": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "renderer": "scripts/render_main_figure2.py",
+      "returncode": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "figures": [
+    {
+      "stem": "figure1_knowledge_compilation",
+      "alignment_verdict": "PASS",
+      "alignment_summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 4,
+        "exemptions": 0
+      },
+      "outputs": [
+        {
+          "format": "pdf",
+          "reference_sha256": "7c4e0b246881f6a827da27006b16af3d564eb60f5c720e3a7147a153d266044a",
+          "rebuilt_sha256": "0e5b4f066c40cd182260ffe923ac2e034eba5a3eb2128836022b1e8c973c4f87",
+          "comparison": "byte_identity_after_creation_date_normalization",
+          "equivalent": true
+        },
+        {
+          "format": "svg",
+          "reference_sha256": "fe05e22cf61fdf5e42a1a50a5c2c122aa5864804d8603ed26d25ac4abb79fc3a",
+          "rebuilt_sha256": "fc3ee1a35d755ea55f7769efb8f61a8a0c0f6ca6590f91e8fd3e774dba0e88db",
+          "comparison": "byte_identity_after_dc_date_and_internal_id_canonicalization",
+          "equivalent": true
+        },
+        {
+          "format": "png",
+          "reference_sha256": "e3dda5287460a2b0742b2623d20928db7823bdfc83e7ef9c492111494f7b3d17",
+          "rebuilt_sha256": "e3dda5287460a2b0742b2623d20928db7823bdfc83e7ef9c492111494f7b3d17",
+          "comparison": "raw_byte_identity",
+          "equivalent": true
+        },
+        {
+          "format": "tiff",
+          "reference_sha256": "aa3587b284a2f5bd61a8fcd82718db228fdb5b6065500c2e7fe776645c89e499",
+          "rebuilt_sha256": "aa3587b284a2f5bd61a8fcd82718db228fdb5b6065500c2e7fe776645c89e499",
+          "comparison": "raw_byte_identity",
+          "equivalent": true
+        }
+      ],
+      "pdf_text": {
+        "pages": 1,
+        "text_runs": 78,
+        "minimum_font_pt": 5.0,
+        "minimum_required_pt": 5.0,
+        "font_floor_passed": true
+      },
+      "passed": true
+    },
+    {
+      "stem": "figure2_endpoint_preservation",
+      "alignment_verdict": "PASS",
+      "alignment_summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 4,
+        "exemptions": 0
+      },
+      "outputs": [
+        {
+          "format": "pdf",
+          "reference_sha256": "2aeac3a7a45452ebef683bdfe436663e0f6136c618e90126e025c4e78f57bec5",
+          "rebuilt_sha256": "43dcb526a6b98633dfc3ff4277a8739a6042c4016b4cf13381dacf30c3039724",
+          "comparison": "byte_identity_after_creation_date_normalization",
+          "equivalent": true
+        },
+        {
+          "format": "svg",
+          "reference_sha256": "594dff43ca77a0a8d8a368cd7791b49459323e2449ab0283171d26875933cf68",
+          "rebuilt_sha256": "c9fb85d9020ab1ab722e1c23c06c5bbe27d6b0ee853c9ec55b3941472e221ffa",
+          "comparison": "byte_identity_after_dc_date_and_internal_id_canonicalization",
+          "equivalent": true
+        },
+        {
+          "format": "png",
+          "reference_sha256": "6973a2de3fd9d7146196f7deb84604615a2a2a0b3ce8036cbaf5ed51e568162a",
+          "rebuilt_sha256": "6973a2de3fd9d7146196f7deb84604615a2a2a0b3ce8036cbaf5ed51e568162a",
+          "comparison": "raw_byte_identity",
+          "equivalent": true
+        },
+        {
+          "format": "tiff",
+          "reference_sha256": "794a0bdf4f774b49bdd19296bdd1afc52c26d8330e362f48e4e00ba0b08325d8",
+          "rebuilt_sha256": "794a0bdf4f774b49bdd19296bdd1afc52c26d8330e362f48e4e00ba0b08325d8",
+          "comparison": "raw_byte_identity",
+          "equivalent": true
+        }
+      ],
+      "pdf_text": {
+        "pages": 1,
+        "text_runs": 71,
+        "minimum_font_pt": 5.5,
+        "minimum_required_pt": 5.0,
+        "font_floor_passed": true
+      },
+      "passed": true
+    }
+  ],
+  "boundaries": [
+    "PDF normalization is limited to CreationDate. SVG normalization is limited to dc:date and self-consistent Matplotlib internal m/p identifier names; drawing content and geometry are not normalized.",
+    "PNG and TIFF require raw byte identity.",
+    "The rebuild uses a new temporary tree and starts without prior figure outputs.",
+    "Pixel identity transfers the already recorded collision and final-size visual QA only to these exact rebuilt pixels.",
+    "This layer makes no provider, solver, native-evaluator or VM call and reads no credential."
+  ],
+  "execution": {
+    "model_calls": 0,
+    "api_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "request_or_response_bodies_read": false,
+    "evaluator_only_answers_read": false,
+    "credentials_read": false
+  }
+}

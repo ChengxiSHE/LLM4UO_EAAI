@@ -1,0 +1,3 @@
+[submodule "vendor/solver-in-the-loop"]
+	path = vendor/solver-in-the-loop
+	url = https://github.com/agentic-or-benchmark/solver-in-the-loop.git

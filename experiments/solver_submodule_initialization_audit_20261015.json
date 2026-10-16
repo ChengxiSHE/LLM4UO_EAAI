@@ -1,0 +1,35 @@
+{
+  "schema": "llm4or-solver-submodule-initialization-audit-v1",
+  "audited_at_local_date": "2026-10-15",
+  "status": "pinned_submodule_initialized_local_clean_clone_still_pending",
+  "submodule": {
+    "path": "vendor/solver-in-the-loop",
+    "url": "https://github.com/agentic-or-benchmark/solver-in-the-loop.git",
+    "superproject_gitlink": "c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010",
+    "checked_out_head": "c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010",
+    "head_matches_gitlink": true,
+    "working_tree_dirty_entries": 0,
+    "nested_uninitialized_submodules": 0,
+    "or_debug_mps_files": 4962
+  },
+  "superproject": {
+    "gitmodules_sha256": "aae8291a5d8aa8a3c98a38b5a38ae543a116319aab067daed68d83c8030b1d45",
+    "initialization_command": "git submodule update --init --recursive vendor/solver-in-the-loop",
+    "network_fetch_required_in_fresh_clone": true
+  },
+  "decision": {
+    "current_checkout_submodule_gate_closed": true,
+    "credential_free_recursive_clean_clone_closed": false,
+    "gurobi_binary_and_license_contract_closed": false,
+    "permitted_claim": "The current checkout contains the exact solver-in-the-loop revision pinned by the superproject and the submodule worktree is clean.",
+    "prohibited_claim": "Initialization does not provide Gurobi, a Gurobi license, redistribution rights, a network-independent clone or a completed clean-clone reconstruction."
+  },
+  "execution": {
+    "api_or_model_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "benchmark_bodies_read": false,
+    "credentials_read": false
+  }
+}

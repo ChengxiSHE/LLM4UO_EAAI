@@ -1,0 +1,198 @@
+{
+  "schema": "llm4or-release-readiness-delta-v4",
+  "audited_at_local_date": "2026-10-15",
+  "status": "not_ready_surface_expanded_scientific_artifacts_tracked",
+  "purpose": "Freeze release readiness against the post-G07/G08/G09 and final-figure 69-path paper evidence manifest without changing the release allowlist, license, submodule, environment, runtime or historical evidence.",
+  "repository": {
+    "remote": "https://github.com/ChengxiSHE/LLM4UO_EAAI.git",
+    "branch": "codex/typed-count-cegis-revision-20261014",
+    "head_before_delta": "108c321a0f7908e639a1a45e33ad6d7d3343b351",
+    "root_license_present": false,
+    "solver_in_the_loop_submodule_status": "uninitialized_at_c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010"
+  },
+  "inputs": [
+    {
+      "path": "experiments/release_readiness_delta_v3_20261015.json",
+      "sha256": "9d8cef44499853607db3f3d8c0195601fce5de1c4bc822d088cebde962d01a77"
+    },
+    {
+      "path": "experiments/release_readiness_delta_v2_20261015.json",
+      "sha256": "5bbee3ca8cf8169a2b85aa75526445ea503ac57c46a846adf310d6a2355e8106"
+    },
+    {
+      "path": "experiments/paper_evidence_manifest_20261015.json",
+      "sha256": "15828372ce6017b3554d5e806761f829e371bfcbe39b70f1c22f4afb0fd4dde0"
+    }
+  ],
+  "manifest_inventory": {
+    "unique_bound_paths": 69,
+    "git_tracked": 34,
+    "git_untracked": 35,
+    "missing": 0,
+    "path_set_sha256": "420292bb6fb4e619ee7195f9f3f8ae4961aa79c07b636e68eb566a47e7d9ff9f",
+    "tracked_paths": [
+      "docs/FIGURE1_RENDER_QA_20261015.md",
+      "docs/FIGURE2_RENDER_QA_20261015.md",
+      "docs/FRESH_COMMON38_COMMON_PROTOCOL_SYNTHESIS_20261015.md",
+      "docs/G07_BOUNDED_SCOPE_CLOSURE_20261015.md",
+      "docs/G08_FINITE_ACQUISITION_CENSUS_20261015.md",
+      "docs/G09_FINITE_COMPONENT_CENSUS_V2_20261015.md",
+      "docs/G09_LIBRARY_COMPLEXITY_CENSUS_20261015.md",
+      "docs/THEORY_CLAIM_EVIDENCE_MATRIX.md",
+      "docs/TOP_CONFERENCE_METHOD_ROADMAP.md",
+      "experiments/figure1_render_qa_20261015.json",
+      "experiments/figure2_render_qa_20261015.json",
+      "experiments/fresh_common38_common_protocol_synthesis_20261015.json",
+      "experiments/fresh_common38_current_native_audit_20261015.json",
+      "experiments/fresh_common38_current_native_result_20261015.json",
+      "experiments/fresh_common38_packet_readiness_20261015.json",
+      "experiments/fresh_common38_structured_skill_readiness_20261015.json",
+      "experiments/g07_bounded_scope_closure_20261015.json",
+      "experiments/g08_finite_acquisition_census_20261015.json",
+      "experiments/g09_finite_component_census_v2_20261015.json",
+      "experiments/g09_library_complexity_census_20261015.json",
+      "experiments/mixed_skill_confirmation_bundle_20261014.json",
+      "experiments/prospective_acquisition_canary_plan.json",
+      "manuscript/FIGURE_PLAN.md",
+      "manuscript/MANUSCRIPT_DRAFT.md",
+      "manuscript/MANUSCRIPT_EVIDENCE_AUDIT.md",
+      "manuscript/OUTLINE.md",
+      "manuscript/figures/figure1_knowledge_compilation.pdf",
+      "manuscript/figures/figure2_endpoint_preservation.pdf",
+      "manuscript/source_data/README.md",
+      "results/mixed_skill_confirmation_audit_v2_20261014.json",
+      "results/mixed_skill_confirmation_outputs_20261014.json",
+      "results/or_debug_confirmation_method_outputs_20261014.json",
+      "results/prospective_acquisition_canary_audit.json",
+      "results/prospective_acquisition_canary_result.json"
+    ],
+    "untracked_paths": [
+      "docs/COMPONENT_ABLATION_IDENTIFIABILITY_AUDIT_20261015.md",
+      "docs/COMPONENT_ABLATION_POWER_AND_UNIT_INVENTORY_20261015.md",
+      "docs/DATA_CODE_AVAILABILITY_AUDIT_20261015.md",
+      "docs/KNOWLEDGE_EVOLUTION_THEORETICAL_FRAMEWORK_20261015.md",
+      "docs/PAPER_TERMINOLOGY_LEDGER_20261014.md",
+      "docs/PROOF_CARRYING_SKILL_EVOLUTION_THEORY.md",
+      "docs/RELEASE_READINESS_DELTA_V2_20261015.md",
+      "docs/THEORY_PRIMARY_SOURCE_MAP_20261015.md",
+      "docs/TOP_CONFERENCE_STORY.md",
+      "experiments/component_ablation_identifiability_audit_20261015.json",
+      "experiments/component_ablation_power_and_unit_inventory_20261015.json",
+      "experiments/external_baseline_evidence_ledger_20261014.json",
+      "experiments/fresh_common_protocol_estimand_audit_20261015.json",
+      "experiments/matched_acquisition_power_analysis_20261015.json",
+      "experiments/proposal_provenance_inventory_20261015.json",
+      "experiments/release_readiness_delta_v2_20261015.json",
+      "manuscript/SUPPLEMENTARY_REPRODUCIBILITY.md",
+      "manuscript/SUPPLEMENTARY_THEORY.md",
+      "manuscript/WORKED_EXAMPLE.md",
+      "manuscript/references.bib",
+      "manuscript/source_data/or_debug_endpoint_sensitivity.csv",
+      "manuscript/source_data/or_debug_group_endpoint_sensitivity.csv",
+      "results/bind_fixed_common40.json",
+      "results/coe_fixed_common40.json",
+      "results/dcp_typed_count_cegis_revision_20261014_audit.json",
+      "results/dcp_typed_count_repair_certificate_v3_20261014.json",
+      "results/dcp_typed_count_repair_input_20261014.json",
+      "results/external_fixed_common40_summary.json",
+      "results/manuscript_figure2_source_data_audit_20261015.json",
+      "results/optitrust_artifact_recheck_20261014.json",
+      "results/optitrust_arxiv_source_audit_20261014.json",
+      "results/or_debug_confirmation_evaluation_20261014.json",
+      "results/or_debug_group_endpoint_sensitivity_audit_20261015.json",
+      "results/paper_evidence_offline_verification_20261014.json",
+      "results/tsp_constraint_confirmation_root_closure_20261014.json"
+    ]
+  },
+  "delta_from_v3_surface": {
+    "v3_unique_bound_paths": 46,
+    "current_unique_bound_paths": 69,
+    "new_bound_paths": 23,
+    "removed_bound_paths": 0,
+    "new_bound_paths_all_git_tracked": true,
+    "previously_untracked_paths_now_tracked": [
+      "manuscript/FIGURE_PLAN.md",
+      "manuscript/MANUSCRIPT_DRAFT.md",
+      "manuscript/MANUSCRIPT_EVIDENCE_AUDIT.md",
+      "manuscript/source_data/README.md"
+    ],
+    "new_bound_path_roles": {
+      "final_figure_artifacts_and_qa": 6,
+      "fresh_common38_and_g07_artifacts_and_reports": 8,
+      "g08_artifact_and_report": 2,
+      "g09_artifacts_and_reports": 4,
+      "prospective_canary_plan_result_and_audit": 3
+    },
+    "legacy_untracked_paths_remaining": 35,
+    "interpretation": "The 23-path surface expansion and four integrations are tracked scientific artifacts. They do not release-clear the unchanged 35-path legacy evidence set or the runtime needed to reconstruct it."
+  },
+  "content_and_secret_scan": {
+    "scope": "All 69 bound paths; key-aware JSON inspection and credential-literal pattern scan without displaying field values.",
+    "credential_literal_patterns": {
+      "bearer_token_file_hits": 0,
+      "openai_style_key_file_hits": 0,
+      "quoted_secret_assignment_file_hits": 0
+    },
+    "body_bearing_manifest_paths": [
+      {
+        "path": "experiments/mixed_skill_confirmation_bundle_20261014.json",
+        "field": "records[].public_envelope.public_text",
+        "nonempty_values": 140,
+        "git_tracked": true,
+        "release_action": "exclude or replace with a rights-safe identity/hash/routing projection plus deterministic upstream reconstruction"
+      }
+    ],
+    "new_23_paths_body_or_secret_trigger_count": 0,
+    "claim_boundary": "Pattern absence is not a rights or semantic-redaction clearance. Every release path still requires explicit allowlisting and provenance review."
+  },
+  "tracked_paths_outside_manifest_requiring_release_action": [
+    {
+      "path": "results/private/tsp_constraint_confirmation_public_20261014.json",
+      "action": "exclude from the public tree or replace with a rights-safe reconstruction manifest"
+    },
+    {
+      "path": "results/private/tsp_constraint_confirmation_candidates_20261014.json",
+      "action": "exclude pending content and upstream-rights review"
+    }
+  ],
+  "release_gates": {
+    "root_license_present": false,
+    "rights_safe_projection_completed": false,
+    "fixed_prompt_disclosure_approved": false,
+    "canonical_skill_library_manifests_implemented": false,
+    "exclusive_terminal_publisher_implemented": false,
+    "five_layer_environment_and_commands_implemented": false,
+    "required_submodule_initialized": false,
+    "credential_free_recursive_clean_clone_completed": false,
+    "archival_doi_present": false,
+    "release_ready": false
+  },
+  "decision": {
+    "safe_to_bulk_add_workspace": false,
+    "safe_to_bulk_add_35_untracked_manifest_paths": false,
+    "new_23_tracked_paths_require_removal": false,
+    "new_23_tracked_paths_release_cleared": false,
+    "clean_clone_claim_supported": false,
+    "permitted_claim": "The current paper manifest binds 69 existing files with no hash mismatch; 34 are tracked and 35 remain untracked. All 23 paths added since the v3 surface are tracked and introduce no detected body or credential-literal trigger.",
+    "prohibited_claim": "The repository is licensed, rights-safe, independently reconstructable or release-ready."
+  },
+  "required_next_actions": [
+    "Preserve the explicit 69-path allowlist and never bulk-add the dirty workspace.",
+    "Select the first-party license and third-party attribution/provenance policy.",
+    "Replace the body-bearing mixed bundle and two tracked private TSP files with claim-complete rights-safe projections or deterministic reconstruction manifests.",
+    "Review and explicitly integrate only the 35 still-untracked manifest paths whose rights and minimum-disclosure checks pass.",
+    "Implement the approved canonical skill/library manifests, exclusive publisher and manifest-driven reconstruction without changing frozen endpoint behavior.",
+    "Implement the five-layer environment/command contract, initialize the pinned submodule where licensed, and run a credential-free recursive clean-clone rebuild."
+  ],
+  "execution": {
+    "api_or_model_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "git_index_modified_before_report": false,
+    "git_history_modified_before_report": false,
+    "request_or_response_bodies_read": false,
+    "evaluator_only_answers_read": false,
+    "credentials_read": false
+  }
+}

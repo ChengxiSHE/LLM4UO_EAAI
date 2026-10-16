@@ -1,0 +1,93 @@
+{
+  "schema": "infrastructure-root-cause-closure-v1",
+  "status": "experiments_stopped_root_causes_separated",
+  "date": "2026-10-17",
+  "process_state": {
+    "matching_controller_or_transport_processes": 0,
+    "inspection_scope": [
+      "run_nlequiv_skill",
+      "nlequiv_skill_full",
+      "nlequiv_skill_paced",
+      "openai_httpx_transport_worker"
+    ]
+  },
+  "incidents": {
+    "optitrust_expanded_sidecar": {
+      "terminal_cells": 35,
+      "completed": 10,
+      "method_failures": 3,
+      "infrastructure_unavailable": 22,
+      "unfinished": 3,
+      "physical_attempts": 303,
+      "retry_attempts": 63,
+      "root_cause": "provider_or_front_gateway_non_streaming_duration_cutoff_near_91_seconds_on_oversized_expanded_outputs",
+      "local_environment_failure": false,
+      "evidence": "experiments/optitrust_style_compact_infrastructure_diagnosis_20261016.json",
+      "evidence_sha256": "b657a15817e84bd5ca37f3186ca9135e2b348bb9bc8a40da147beef32a5aa885",
+      "terminal_decision": "closed_do_not_resume"
+    },
+    "nlequiv_unpaced": {
+      "checkpointed": 190,
+      "completed": 180,
+      "infrastructure_unavailable": 10,
+      "uncheckpointed": 260,
+      "physical_attempts": 227,
+      "retry_attempts": 34,
+      "only_observed_error": "http_429",
+      "root_cause": "provider_request_rate_window",
+      "local_environment_failure": false,
+      "evidence": "experiments/nlequiv_skill_full_infrastructure_halt_20261017.json",
+      "evidence_sha256": "6b6a45a204c6b88074ada5081f43a4443e2e962715648728b0c8f23bde160163",
+      "terminal_decision": "closed_without_evaluation_do_not_resume"
+    },
+    "nlequiv_rate_shaped_restart": {
+      "completed": 450,
+      "method_failures": 0,
+      "infrastructure_unavailable": 0,
+      "physical_attempts": 452,
+      "retry_attempts": 2,
+      "logical_starts": 450,
+      "maximum_starts_in_any_60_second_window": 40,
+      "root_cause_remediated": true,
+      "evidence": "experiments/nlequiv_skill_paced_terminal_audit_20261017.json",
+      "evidence_sha256": "0d407ad08e4be46dccd8c0f59df610ce849b69e61ae9b85afff03c97f622fc4c",
+      "terminal_decision": "completed_and_stopped"
+    }
+  },
+  "environment": {
+    "controller": {
+      "python": "/Users/chengxi-nju/Research/LLM4OR-EAAI/.venv-fresh38/bin/python",
+      "role": "controller_numeric_and_solver_side",
+      "observed_python_version": "3.11.6",
+      "pytest_available": false
+    },
+    "transport": {
+      "python": "/Users/chengxi-nju/Desktop/LLM4UO/.venv-preparation/bin/python",
+      "role": "OpenAI_httpx_transport_worker",
+      "observed_python_version": "3.10.1",
+      "observed_openssl": "OpenSSL 1.1.1l  24 Aug 2021",
+      "openai": "2.54.0",
+      "httpx": "0.28.1",
+      "httpcore": "1.0.9",
+      "pydantic": "2.13.4",
+      "include_system_site_packages": true,
+      "user_site_enabled": true,
+      "self_contained": false,
+      "used_by_claim_bearing_runs": true
+    }
+  },
+  "conclusions": {
+    "environment_migration_needed_for_these_incidents": false,
+    "transport_environment_was_already_the_user_supplied_environment": true,
+    "rate_shaping_was_necessary_and_sufficient_for_nlequiv": true,
+    "bounded_output_redesign_was_necessary_for_optitrust_style": true,
+    "missing_pytest_is_a_separate_reproduction_gap": true,
+    "missing_pytest_caused_api_infrastructure_unavailable": false
+  },
+  "privacy": {
+    "request_bodies_included": false,
+    "response_bodies_included": false,
+    "credentials_included": false,
+    "per_item_predictions_or_labels_included": false
+  }
+}

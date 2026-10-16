@@ -1,0 +1,44 @@
+{
+  "claim_boundary": "This audit proves exact fact and fixed-guidance identity between Flat-K and PCK-K. It does not report model behavior or accuracy.",
+  "counts": {
+    "fact_multiset_mismatches": 0,
+    "facts_maximum": 214,
+    "facts_minimum": 33,
+    "facts_total": 4935,
+    "flat_bytes_maximum": 61190,
+    "flat_bytes_minimum": 9999,
+    "flat_bytes_total": 1465136,
+    "guidance_mismatches": 0,
+    "guidance_variants": 1,
+    "pairs": 89,
+    "pck_bytes_maximum": 61245,
+    "pck_bytes_minimum": 10054,
+    "pck_bytes_total": 1470006,
+    "unique_graphs": 89,
+    "verified_pairs": 89
+  },
+  "execution": {
+    "api_calls": 0,
+    "credentials_read": false,
+    "lean_calls": 0,
+    "model_calls": 0,
+    "solver_calls": 0,
+    "vm_calls": 0
+  },
+  "guidance_sha256": "e3f009e187f510d4e61f5899a31cbbc3800b9691e712ed475faa16b4b6e36b12",
+  "population_descriptor_sha256": "f4cc348a641a73f706c4eb3843bea3a1d0b2a3e9ae6e8bc3be7f9d4b5c947315",
+  "privacy": {
+    "contains_code_bodies": false,
+    "contains_data_values": false,
+    "contains_pair_labels": false,
+    "contains_problem_bodies": false,
+    "contains_proof_bodies": false,
+    "contains_solutions": false
+  },
+  "schema": "llm4or-formulationbench-same-fact-audit-v1",
+  "source": {
+    "commit": "6f37a71e6251b11599ef42869e4268882985a8a7",
+    "dataset_tree": "793db197693fac5446fe1bd39aaf178fea437822"
+  },
+  "status": "passed_full_inference_population_same_fact_verification"
+}

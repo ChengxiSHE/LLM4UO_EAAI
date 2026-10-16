@@ -1,0 +1,83 @@
+{
+  "archive_state": {
+    "doi": null,
+    "external_record_id": null,
+    "public_zenodo_query_hits": 0,
+    "status": "ready_for_external_deposit_no_doi"
+  },
+  "deposit_files": [
+    {
+      "bytes": 6706216,
+      "name": "llm4or-v1.1.1-authorized.bundle",
+      "sha256": "9dc8b4cd4d0cee0663a2f3646af68e55f9aac5189423e73e508c4f72b4727646",
+      "source_url": "https://github.com/ChengxiSHE/LLM4UO_EAAI/releases/download/v1.1.1/llm4or-v1.1.1-authorized.bundle"
+    },
+    {
+      "bytes": 10223,
+      "name": "history_free_release_candidate_v1_1_1_audit_20261016.json",
+      "sha256": "c793cab9c00c10c03c921dacc59939666801400443eab6ddd68d6162a397fd94",
+      "source_url": "https://github.com/ChengxiSHE/LLM4UO_EAAI/releases/download/v1.1.1/history_free_release_candidate_v1_1_1_audit_20261016.json"
+    },
+    {
+      "bytes": 448,
+      "name": "SHA256SUMS-v1.1.1.json",
+      "sha256": "6b04cb6413fce573cedaa5899c493b357dbbf577a72ecacc2ddc768ebb382c06",
+      "source_url": "https://github.com/ChengxiSHE/LLM4UO_EAAI/releases/download/v1.1.1/SHA256SUMS-v1.1.1.json"
+    },
+    {
+      "name": "post_publication_release_v1_1_1_audit_20261016.json",
+      "sha256": "64196dcf6e13f24d128b8aa2ebbb5f5df5e442ab404298b9de3747d21be405a8",
+      "source_url": "https://github.com/ChengxiSHE/LLM4UO_EAAI/releases/download/v1.1.1/post_publication_release_v1_1_1_audit_20261016.json"
+    }
+  ],
+  "metadata": {
+    "access_right": "open",
+    "creators": [
+      {
+        "affiliation": "School of Management & Engineering, Nanjing University",
+        "name": "She, Chengxi"
+      }
+    ],
+    "description": "History-free reproducibility package for Benchmark-Grounded Proof-Carrying Knowledge Compilation. The release contains first-party code, typed skill and library manifests, aggregate evidence, figure source data and credential-free reconstruction commands. Restricted upstream task text, private provider traffic, credentials and evaluator-only answers are excluded.",
+    "keywords": [
+      "large language models",
+      "optimization modeling",
+      "knowledge compilation",
+      "verified skills",
+      "reproducibility"
+    ],
+    "license": "Apache-2.0",
+    "notes": "Author-owned aggregate Source Data and documentation explicitly marked in the repository are licensed CC BY 4.0. External benchmark and solver-submodule materials remain under their upstream terms.",
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/ChengxiSHE/LLM4UO_EAAI/releases/tag/v1.1.1",
+        "relation": "isIdenticalTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://github.com/agentic-or-benchmark/solver-in-the-loop/tree/c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010",
+        "relation": "references",
+        "scheme": "url"
+      }
+    ],
+    "title": "LLM4OR-EAAI: Benchmark-Grounded Proof-Carrying Knowledge Compilation",
+    "upload_type": "software",
+    "version": "v1.1.1"
+  },
+  "release_identity": {
+    "commit": "ed663fcdf8336f77c466652a516d5bc2c567f93a",
+    "parent_count": 0,
+    "reachable_commit_count": 1,
+    "tag": "v1.1.1",
+    "tree": "93fc594cfe9d51a5674608a75d6ec3821b4fdba5",
+    "url": "https://github.com/ChengxiSHE/LLM4UO_EAAI/releases/tag/v1.1.1"
+  },
+  "schema": "llm4or-archival-deposit-packet-v1",
+  "safety": {
+    "api_or_model_calls": 0,
+    "credentials_read": false,
+    "evaluator_only_answers_read": false,
+    "request_or_response_bodies_read": false,
+    "solver_calls": 0
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "schema": "llm4or-main-figure-legend-audit-v2",
+  "status": "passed_rendered_label_and_length_review_venue_pending",
+  "created_at_local_date": "2026-10-17",
+  "purpose": "Check all three rendered main-figure legends for self-containment, exact panel coverage, statistics, bounded interpretation, Source Data language and the under-250-word working contract.",
+  "inputs": {
+    "manuscript/MAIN_FIGURE_LEGENDS_DRAFT.md": "31d9117c8d0799f640756ed0d1dba67d039aa272286b48e7cfc2fb169448ef54",
+    "manuscript/FIGURE_PLAN.md": "a6ba75577a25e364728b01ec2b1726986a720989061f1bdd9dfaa645d125e218",
+    "experiments/figure1_render_qa_20261015.json": "8e779787a9c09329d27cf315efcfd7c80e52bc0eaad16cd4d7f3851343d15951",
+    "experiments/figure2_render_qa_20261015.json": "a9fb4d781939e451467eb53e0d3de79fb66abeee97f67296865ec7517a811a11",
+    "experiments/figure3_render_qa_20261017.json": "cea858d2d07b95bc1656d0c9f70d799746eef2eb51ab0cdc3fe952b5e18935e9"
+  },
+  "legends": {
+    "figure_1": {
+      "word_count": 228,
+      "panels_present_once": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "defines_method_units": true,
+      "identifies_untrusted_proposer": true,
+      "distinguishes_verification_from_empirical_utility": true,
+      "states_finite_and_conditional_boundaries": true,
+      "source_data_boilerplate_required": false
+    },
+    "figure_2": {
+      "word_count": 196,
+      "panels_present_once": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "sample_sizes_present": true,
+      "paired_outcomes_present": true,
+      "dependence_units_present": true,
+      "test_and_exact_p_value_present": true,
+      "endpoint_nonpooling_present": true,
+      "zero_regression_boundary_present": true,
+      "source_data_boilerplate_present": true
+    },
+    "figure_3": {
+      "word_count": 189,
+      "panels_present_once": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "sample_sizes_present": true,
+      "paired_archetype_table_present": true,
+      "test_and_exact_p_value_present": true,
+      "label_blind_posthoc_boundary_present": true,
+      "diagnostic_noncausal_boundary_present": true,
+      "finite_cohort_no_error_bar_reason_present": true,
+      "source_data_boilerplate_present": true
+    }
+  },
+  "shared_checks": {
+    "title_format_fig_number_pipe_noun_phrase": true,
+    "all_panel_descriptions_present": true,
+    "each_legend_below_250_words": true,
+    "rendered_panel_order_matches_legends": true,
+    "canonical_labels_preserved": [
+      "TSP",
+      "OR-Debug",
+      "RetailOpt-190"
+    ],
+    "no_unexplained_significance_stars": true,
+    "no_claim_of_universal_semantic_correctness": true,
+    "no_claim_of_automatic_skill_discovery": true,
+    "no_claim_of_distribution_free_non_regression": true
+  },
+  "remaining_submission_checks": [
+    "Verify the final target venue has no stricter legend rule than the current under-250-word contract.",
+    "Recount and re-audit after any panel-order, display-label or statistical-text revision."
+  ],
+  "decision": {
+    "legends_ready_for_submission_package": true,
+    "venue_specific_final": false,
+    "remaining_blocker": "The target venue is not fixed; venue-specific production instructions remain editorial rather than an evidence-chain blocker."
+  },
+  "execution": {
+    "model_calls": 0,
+    "api_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "plotting_calls": 0,
+    "request_or_response_bodies_read": false,
+    "evaluator_only_answers_read": false,
+    "credentials_read": false
+  },
+  "claim_boundary": "This audit checks wording against already rendered figures and sealed aggregate evidence. It adds no experiment and does not upgrade post hoc robustness or diagnostics into independent or causal evidence."
+}

@@ -1,0 +1,94 @@
+{
+  "claim_boundary": [
+    "The TSP and OR-Debug rows compare complete authored systems against frozen controls; they do not isolate the causal contribution of representation, verification, routing, or promotion.",
+    "The common-38 rows are frozen implementation outcomes under unequal construction and inference budgets, not a broad algorithmic leaderboard.",
+    "The mixed-router row is an identity reconstruction and does not rescore benchmark accuracy."
+  ],
+  "fresh_common38": {
+    "claim_boundary": {
+      "broad_benchmark_superiority_supported": false,
+      "coe_current_repository_license_and_release_package_unverified": true,
+      "component_causality_supported": false,
+      "construction_cost_equalized": false,
+      "current_knowledge_acquisition_was_authored": true,
+      "fixed_fresh_common_endpoint_only": true,
+      "infrastructure_unavailable_retained_in_full_denominator": true
+    },
+    "correct_by_method": {
+      "BIND final": 13,
+      "BIND round 1": 13,
+      "Base": 0,
+      "CoE-safe": 4,
+      "Proof-carrying compilation": 30
+    },
+    "denominator": 38,
+    "paired_against_current": [
+      {
+        "comparison": "current_vs_base",
+        "corrections": 30,
+        "regressions": 0
+      },
+      {
+        "comparison": "current_vs_bind_round_one",
+        "corrections": 18,
+        "regressions": 1
+      },
+      {
+        "comparison": "current_vs_bind_final",
+        "corrections": 18,
+        "regressions": 1
+      },
+      {
+        "comparison": "current_vs_coe_safe",
+        "corrections": 26,
+        "regressions": 0
+      }
+    ]
+  },
+  "mixed_router": {
+    "exact_matches": 2985,
+    "output_mismatches": 0,
+    "records": 2985,
+    "route_mismatches": 0,
+    "terminal_failures": 0
+  },
+  "or_debug": {
+    "denominator": 2845,
+    "primary_endpoint": "released_labels",
+    "released_labels": {
+      "both_wrong": 609,
+      "control_correct": 828,
+      "corrections": 1408,
+      "method_correct": 2236,
+      "regressions": 0
+    },
+    "source_corrected_sensitivity": {
+      "both_wrong": 93,
+      "control_correct": 828,
+      "corrections": 1924,
+      "method_correct": 2752,
+      "regressions": 0
+    }
+  },
+  "privacy": {
+    "aggregate_only": true,
+    "contains_credentials": false,
+    "contains_evaluator_answers": false,
+    "contains_item_level_outputs": false,
+    "contains_task_bodies": false
+  },
+  "schema": "llm4or-reviewer-claim-table-v1",
+  "source_sha256": {
+    "experiments/fresh_common38_common_protocol_synthesis_20261015.json": "a678008a7449d588e12eb59bf019875fb08d7cb8f4e9c177ca8aaf9f0fb2aa9e",
+    "results/mixed_skill_confirmation_public_audit_v3_20261015.json": "3c9b8700639cfe5599fc76b18cca4318b14d4b0865fb5bd343f5c0d26fead08f",
+    "results/public_projections/or_debug_confirmation_evaluation_projection_20261015.json": "7f83555e8b81ff15bad510b95bf7e2617d87bb139786777407704a55e10a70ca",
+    "results/tsp_constraint_confirmation_root_closure_20261014.json": "0a0aef6aad14e720f537c3201b5cc585b0177c0a05150a18d0300f3e498c437d"
+  },
+  "tsp": {
+    "control_correct": 54,
+    "corrections": 46,
+    "denominator": 140,
+    "method_correct": 100,
+    "regressions": 0
+  }
+}

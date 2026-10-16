@@ -1,0 +1,144 @@
+{
+  "baselines": [
+    {
+      "artifact_status": "official_source_obtained",
+      "common_input_development_pilot": {
+        "claim_guard": "outcome_exposed_development_only_no_superiority_claim",
+        "completed_cells": 11,
+        "current_exact": "0/5",
+        "infrastructure_unavailable": 1,
+        "logical_requests": 124,
+        "online_artifact": "results/coe_common_development_pilot_evaluation.json",
+        "paper_exact": "1/6",
+        "physical_attempts": 130,
+        "plan_sha256": "6a990725e686e44f65400628721fdba9c37ecdc5d6aa65b6bbc07a781ee2ad6d",
+        "planned_cells": 12,
+        "post_hoc_objective_projection": {
+          "confirmatory_eligible": false,
+          "current": "3/5",
+          "paper": "5/6"
+        },
+        "reserved_or_reported_tokens": 2434482,
+        "retry_attempts": 6,
+        "safe_adapter_supported": "9/11_completed",
+        "safe_replay_artifact": "results/coe_common_development_pilot_safe_replay.json"
+      },
+      "current_audited_commit": "afb89bf602690ea621f13a23c42722f20f653a43",
+      "execution_status": "official_forward_prompt_native_and_common_input_development_reproduction_complete",
+      "known_method_setting_issue": "paper_forward_collaborations_5_current_readme_default_3",
+      "license": "not_found",
+      "name": "Chain-of-Experts",
+      "native_development_pilot": {
+        "artifact": "results/coe_native_development_pilot_safe_replay.json",
+        "claim_guard": "development_adapter_fixtures_only",
+        "current_snapshot": "3/3",
+        "logical_requests": 66,
+        "paper_snapshot": "2/3",
+        "physical_attempts": 67
+      },
+      "official_repository": "https://github.com/xzymustbexzy/Chain-of-Experts",
+      "paper_snapshot_commit": "9d96bcc2f067177eb0e122b1aae8227748dc6830",
+      "prompt_differential_audit": {
+        "artifact": "results/coe_prompt_adapter_audit.json",
+        "rendered_prompts_exact": "5508/5508",
+        "snapshots": [
+          "paper",
+          "current"
+        ]
+      },
+      "required_variants": [
+        "paper_snapshot",
+        "current_fixed"
+      ],
+      "safe_path": "bounded_ast_interpreter_to_milp_v1_plus_trusted_solver_and_postsolve_return_facade",
+      "short_name": "CoE",
+      "unsafe_path": "generated_python_imported_in_controller_process"
+    },
+    {
+      "artifact_status": "official_source_obtained",
+      "current_audited_commit": "1dac06be656c41d827ef20987cf8af0b48d382a2",
+      "development_matrix": {
+        "artifact": "results/text2opt_bind_development_matrix_evaluation.json",
+        "claim_guard": "development_only_final_tie_with_v9",
+        "compatibility_replay": "results/bind_selective_harness_compatibility_replay.json",
+        "final_correct": 30,
+        "oracle_repair_corrections": 5,
+        "records": 30,
+        "round1_correct": 25
+      },
+      "development_pilot": {
+        "artifact": "results/text2opt_bind_development_pilot_evaluation.json",
+        "claim_guard": "compatibility_only_not_independent_comparison",
+        "final_correct": 6,
+        "records": 6,
+        "round1_correct": 6
+      },
+      "execution_status": "official_prompt_common_backbone_development_matrix_validated_30_of_30_final",
+      "license": "MIT",
+      "name": "Text2Opt BIND",
+      "official_repository": "https://github.com/SprocketLab/text2opt-bench",
+      "prompt_differential_audit": {
+        "artifact": "results/bind_prompt_adapter_audit.json",
+        "instance_prompts_exact": "680/680",
+        "repair_prompts_exact": "3/3"
+      },
+      "required_variants": [
+        "native_model_native_budget",
+        "common_backbone_native_budget",
+        "common_backbone_matched_budget"
+      ],
+      "short_name": "BIND",
+      "unsafe_path": "generated_gurobi_python_requires_isolated_execution"
+    },
+    {
+      "allowed_fallback": "separately_labeled_optiTrust_style_reimplementation",
+      "artifact_status": "official_code_not_found",
+      "arxiv_source_contents": "tex_figures_bibliography_partial_prompts_only",
+      "audited_version": "v1",
+      "execution_status": "blocked_missing_official_artifact",
+      "missing": [
+        "runnable_code",
+        "complete_prompts",
+        "training_data",
+        "checkpoint",
+        "inference_scripts"
+      ],
+      "name": "OptiTrust",
+      "paper": "https://arxiv.org/abs/2508.03117",
+      "short_name": "OptiTrust"
+    },
+    {
+      "artifact_status": "full_reproduction_code_announced_not_yet_available",
+      "execution_status": "conceptual_related_work_only",
+      "name": "Dream-RSI",
+      "official_repository": "https://github.com/zhengkid/Dream-RSI",
+      "paper": "https://arxiv.org/abs/2609.14858",
+      "short_name": "Dream-RSI"
+    }
+  ],
+  "comparison_policy": {
+    "existing_v9_confirmation_cohort": "retrospective_only_for_new_methods",
+    "fresh_confirmation": "untouched_grouped_cohort_required",
+    "generated_code_execution": "isolated_resource_bounded_worker_only",
+    "main_table": "locally_rerun_official_code_only",
+    "published_scores": "reproduction_targets_only",
+    "reimplementation_label": "paper_based_reimplementation"
+  },
+  "created_at": "2026-10-04",
+  "local_execution_environment": {
+    "container_runtime": "none_found",
+    "generated_code_execution_ready": false,
+    "gurobi_cli": "13.0.1_existing_academic_installation",
+    "gurobipy_in_pinned_python": false,
+    "macos_sandbox_exec": "present_but_deny_by_default_probe_could_not_be_applied",
+    "official_gold_audit": "results/restricted_gurobi_official_audit.json",
+    "official_gold_compile_coverage": 0.9745403111739745,
+    "remaining_resolution": "coe_reflection_and_fresh_common_cohort_pending",
+    "restricted_linear_translation_ready": true,
+    "restricted_translator": "llm4or/restricted_gurobi.py",
+    "structural_equivalence_given_compiled": 1.0,
+    "trusted_gurobi_cli_adapter": "llm4or/gurobi_cli_solver.py"
+  },
+  "schema_version": "1.0",
+  "status": "bind_and_coe_development_reproduction_complete_no_confirmatory_comparison"
+}

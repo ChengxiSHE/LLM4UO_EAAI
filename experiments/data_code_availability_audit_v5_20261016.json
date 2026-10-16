@@ -1,0 +1,50 @@
+{
+  "archival_doi_verified": false,
+  "boundary": "Public v1.1.1 code and integrity reconstruction are verified. Restricted endpoint rescoring uses the separate controlled-review protocol. No DOI is claimed until an external archive records the exact v1.1.1 deposit; live provider replay and commercial solver availability remain external.",
+  "commit": "ed663fcdf8336f77c466652a516d5bc2c567f93a",
+  "controlled_endpoint_review": {
+    "audit": "experiments/controlled_endpoint_review_audit_20261016.json",
+    "audit_sha256": "9dd9f89f88bf82e5590a44521e4c81b590b7b4d078f907eb4105f9b45675e1d7",
+    "protocol": "experiments/controlled_endpoint_review_protocol_20261016.json",
+    "public_package_endpoint_rescoring": false,
+    "status": "passed_all_controlled_endpoints_exact"
+  },
+  "date": "2026-10-16",
+  "deposit_packet": {
+    "path": "experiments/archival_deposit_packet_v1_1_1_20261016.json",
+    "sha256": "747eee2aa458ffa0dc070b57393224bfeee4c341affed1e9f7c42e7a847fdc8e",
+    "status": "ready_for_external_deposit_no_doi"
+  },
+  "human_report": {
+    "path": "docs/DATA_CODE_AVAILABILITY_AUDIT_V5_20261016.md",
+    "sha256": "e01f7de264b692af6998c9d263a7f1e624711d833a55938184385e3e00c4e513"
+  },
+  "licenses": {
+    "aggregate_data": "CC-BY-4.0",
+    "software": "Apache-2.0",
+    "third_party_exclusions_preserved": true
+  },
+  "post_publication_audit": {
+    "path": "experiments/post_publication_release_v1_1_1_audit_20261016.json",
+    "sha256": "64196dcf6e13f24d128b8aa2ebbb5f5df5e442ab404298b9de3747d21be405a8"
+  },
+  "public_reconstruction": {
+    "clean_after": true,
+    "credential_free_tests": 81,
+    "deterministic_checks": 3,
+    "main_and_submodule_remote_acquisition": true,
+    "publisher_different_payload_stress_runs": 500,
+    "publisher_identical_payload_stress_runs": 500,
+    "publisher_stress_failures": 0
+  },
+  "release_url": "https://github.com/ChengxiSHE/LLM4UO_EAAI/releases/tag/v1.1.1",
+  "remaining": [
+    "external archival deposit and DOI verification"
+  ],
+  "repository_url": "https://github.com/ChengxiSHE/LLM4UO_EAAI",
+  "schema": "llm4or-data-code-availability-audit-v5",
+  "status": "public_v1_1_1_verified_doi_ready_but_pending",
+  "supersedes": "experiments/data_code_availability_audit_v4_20261016.json",
+  "tag": "v1.1.1",
+  "tree": "93fc594cfe9d51a5674608a75d6ec3821b4fdba5"
+}

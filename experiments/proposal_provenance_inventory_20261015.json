@@ -1,0 +1,152 @@
+{
+  "schema": "proposal-provenance-inventory-v1",
+  "date": "2026-10-15",
+  "status": "closed_metadata_only_inventory",
+  "purpose": "Separate knowledge-skill proposals from per-instance formulation trajectories and legacy skill lineages before defining the matched acquisition population.",
+  "privacy_boundary": {
+    "request_bodies_read": false,
+    "response_bodies_read": false,
+    "reference_answers_read": false,
+    "credentials_read": false,
+    "proposal_text_reproduced": false,
+    "identities_and_terminal_metadata_only": true
+  },
+  "current_dcp_skill_proposal_episodes": [
+    {
+      "episode_id": "pair_acquisition",
+      "family": "pair_spacing",
+      "generation_role": "initial_free_text_skill_proposal",
+      "proposal_sha256": "5039755cf3b731e3c4e9e9fa8fb8047143d13df87daa7bf021fb275ae99c4d4b",
+      "plan_sha256": "7e45ea3d957bf67b3ac9ad2df52311cc51549c95397aadba979245c1234656ba",
+      "model": "DeepSeek-V4-Flash",
+      "physical_attempts": 1,
+      "terminal_status": "invalid",
+      "semantic_verified": false,
+      "typed_finite_grammar": false,
+      "eligible_as_strict_matched_typed_unit": false,
+      "exclusion_reason": "Free-text rule proposal predates the frozen typed finite grammar."
+    },
+    {
+      "episode_id": "pair_revision",
+      "family": "pair_spacing",
+      "generation_role": "counterexample_conditioned_free_text_revision",
+      "proposal_sha256": "b83ac679dbe33610350753fe18ec3db176a0d3954d397e4438dd2589e294da2f",
+      "plan_sha256": "b402371d6a9c7f20c8a7c71cf10c952c2127923b29228703d738360d9805d021",
+      "model": "DeepSeek-V4-Flash",
+      "physical_attempts": 1,
+      "terminal_status": "invalid",
+      "semantic_verified": false,
+      "typed_finite_grammar": false,
+      "eligible_as_strict_matched_typed_unit": false,
+      "exclusion_reason": "Sequential revision of the pair-spacing episode and not an independent frozen typed unit."
+    },
+    {
+      "episode_id": "count_acquisition",
+      "family": "finite_count",
+      "generation_role": "initial_free_text_skill_proposal",
+      "proposal_sha256": "9e3bf2104d6b3c3909439c8a79e878e5364b20b1b98d5561c4fd4d8b9e7015e0",
+      "plan_sha256": "77118c52deec4ec372560b55c1fc7a3fccb5ba999e1ad0b0527533458645bf40",
+      "model": "DeepSeek-V4-Flash",
+      "physical_attempts": 1,
+      "terminal_status": "invalid",
+      "semantic_verified": false,
+      "typed_finite_grammar": false,
+      "eligible_as_strict_matched_typed_unit": false,
+      "exclusion_reason": "Free-text proposal did not enter the later frozen 64-member grammar."
+    },
+    {
+      "episode_id": "count_revision",
+      "family": "finite_count",
+      "generation_role": "counterexample_conditioned_free_text_revision",
+      "proposal_sha256": "f04e648082050ae4f016a78d93cfad0b3b38105b18de8c63fba7a9ea69c9a60c",
+      "candidate_sha256": "387046d44c8629468ead5bdc9cec3fa71c303529d554031eb26424adde387a59",
+      "plan_sha256": "d256a65575bddbcda014f3ddadeb2378678ad36f2baa9533aacc659b0e6b391c",
+      "model": "DeepSeek-V4-Flash",
+      "physical_attempts": 1,
+      "terminal_status": "shape_and_quotes_valid_only",
+      "semantic_verified": false,
+      "typed_finite_grammar": false,
+      "eligible_as_strict_matched_typed_unit": false,
+      "exclusion_reason": "Sequential free-text revision with opened counterexamples and no frozen finite version space."
+    },
+    {
+      "episode_id": "typed_count_revision",
+      "family": "finite_count",
+      "generation_role": "typed_finite_grammar_proposal",
+      "proposal_sha256": "ef56537a55cd32562537d692c76349bf52b855fd4bbff79b66edb184ae6d1d2a",
+      "candidate_sha256": "da296de0f760a67e1323c8571a643d8ae8249d68e2d55ef64351af8ead89b851",
+      "plan_sha256": "026c3b586dd4b05c5dccb2831a617ab65c0d7188b7296d01c74526fbd57f231f",
+      "model": "DeepSeek-V4-Flash",
+      "physical_attempts": 1,
+      "terminal_status": "typed_grammar_valid_only",
+      "semantic_verified": false,
+      "typed_finite_grammar": true,
+      "grammar_size": 64,
+      "semantic_assignments_passed_before_resource_rejection": 20977,
+      "eligible_as_strict_matched_typed_unit": true,
+      "eligibility_boundary": "The only historical episode with a frozen typed finite grammar and verifier state suitable for the proposed matched feedback comparison."
+    }
+  ],
+  "current_dcp_summary": {
+    "distinct_proposal_identities": 5,
+    "free_text_or_untyped": 4,
+    "typed_finite_grammar": 1,
+    "strict_matched_typed_units": 1,
+    "promoted_candidates": 0
+  },
+  "per_instance_formulation_trajectory_class": {
+    "source": "results/packing_reference_candidate_coverage.json",
+    "records": 229,
+    "distinct_source_proposal_identities": 132,
+    "source_status": "proposal_received",
+    "original_mechanically_compiles": 94,
+    "no_structurally_eligible_reference": 217,
+    "requires_semantic_review": 11,
+    "candidate_not_compilable": 1,
+    "distinct_candidate_proposal_identities": 11,
+    "eligible_as_knowledge_skill_units": false,
+    "exclusion_reason": "These are per-instance formulation trajectories, not proposals for a reusable skill under a common frozen skill grammar and verifier."
+  },
+  "legacy_vera_skill_lineage_class": {
+    "development_records_inspected": 3,
+    "distinct_proposal_identities_visible_in_those_records": 6,
+    "proposal_sha256": [
+      "e1abe09d9fb0d1053646eaadbe53802a1f7683fb1ddd3ee6f343778e2a52a77f",
+      "fcbaf20c20f70a70c54c6a2516ed9a2efc79fdd4ddc464af28c420644e9b2f56",
+      "68c3641812b016bcac4a7293f88613c81e8c81054e6340beaea7411914ad5689",
+      "249d9767cd9074825bf2aa1904fc59f08db841e56aa7541833475aaa93db5470",
+      "8791060663062d4d5501bee35046ff35e420d2f46b608ff0f1e43c4be861dd26",
+      "e8076378084b6b7ed36e9042edf2a3a61e05487817d2bffe7d3a7caf69f6f8b1"
+    ],
+    "eligible_as_current_matched_units": false,
+    "exclusion_reasons": [
+      "They were not produced under the current 64-member typed count grammar and verifier.",
+      "Their development or promotion outcomes were already opened.",
+      "Their task families, feedback histories and endpoints are not exchangeable with the current typed-count episode."
+    ]
+  },
+  "decision": {
+    "historical_artifacts_form_a_valid_eight_unit_matched_population": false,
+    "strictly_eligible_historical_units": 1,
+    "main_reason": "Proposal hashes are plentiful, but the statistical unit required by the acquisition claim is a reusable skill proposal paired with a frozen common grammar and verifier state.",
+    "allowed_reuse": [
+      "Use the four untyped DCP episodes as qualitative failure taxonomy or preregistration inputs, not matched observations.",
+      "Use the 229 formulation trajectories to motivate benchmark error clustering, not as automatic skill-acquisition trials.",
+      "Use legacy VERA records only as historical context unless a new prospective common protocol regenerates comparable units."
+    ],
+    "next_valid_population_source": "Prospectively generate independent rejected typed skill proposals under one frozen grammar, verifier, endpoint and custody protocol before randomizing flat versus separating-witness feedback."
+  },
+  "evidence": [
+    {"path": "results/dcp_pair_skill_acquisition_20261014_result.json", "sha256": "c56ea6f243890c5e9598449bf5a3146bd9e35f9d9aa0391681d5ea1f8f57275c"},
+    {"path": "results/dcp_pair_skill_revision_20261014_result.json", "sha256": "babae37337e95a305e9b0c4f5da0d062e3fe688caac220a027ca7d38f9d99b5c"},
+    {"path": "results/dcp_count_skill_acquisition_20261014_result.json", "sha256": "d468a0f969446274bd907b7e84c5d658fea4ece0fd6f1a2d173399685f452d7b"},
+    {"path": "results/dcp_count_skill_revision_20261014_result.json", "sha256": "1dfda8a9ffbd553e3977d453fd3819b1d76630f279c214a1486f2d53fb964156"},
+    {"path": "results/dcp_typed_count_cegis_revision_20261014_result.json", "sha256": "182cc53247b2a73466728e823953bc6c650d401a97316cb555e5ff0df5e28552"},
+    {"path": "results/dcp_typed_count_cegis_revision_20261014_audit.json", "sha256": "c3fb17f664ccfbf4e46d08b7695e9730111bcd4b3ccf01cb48074307c6cc03f2"},
+    {"path": "results/packing_reference_candidate_coverage.json", "sha256": "eac72a863b9c8b776551a8fc500764c4e415beac4992040a14c3041326dd2236"},
+    {"path": "results/vera_opt_generation2_development.json", "sha256": "e1468fdb5b71ab0938592f2c52be293ac2cc524266fab7dd6e33599bba380652"},
+    {"path": "results/vera_opt_binpacking_generation2_development.json", "sha256": "b41524694d324b97a37b492e0d3bf8b22ae90983e1b61da525abd0de5d877c1b"},
+    {"path": "results/vera_opt_binpacking_generation3_development.json", "sha256": "c7318f3bd0ae4303b34a552050a661c10db977be135f434b4a5d5a9a53c703a1"},
+    {"path": "experiments/matched_acquisition_design_audit_20261015.json", "sha256": "170bb84c8db2c6cde3f7b213ecfcaff338ee135702e0fec0e71df091e981cfe4"}
+  ]
+}

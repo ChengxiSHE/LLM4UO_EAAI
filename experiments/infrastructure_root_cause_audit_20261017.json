@@ -1,0 +1,136 @@
+{
+  "schema": "llm4or-infrastructure-root-cause-audit-v1",
+  "status": "closed_experiment_held_no_restart",
+  "audit_date": "2026-10-17",
+  "experiment": {
+    "run_directory": "results/private/formal_v3_20260912",
+    "controller_state": "completed",
+    "controller_pid_alive_at_audit": false,
+    "new_model_calls": 0,
+    "restart_performed": false
+  },
+  "frozen_evidence": {
+    "full_run_plan_sha256": "da3976b560a520d8c2258a8229c4189fa59db433e5fb15f8c7e2b6c318485553",
+    "controller_sha256": "3400efdbcbd248b9234b2463d72a785eec4d1e6feae966616b985b4f4030f6ba",
+    "progress_sha256": "08f34aba4e1f6d1adb7dbfb6929771373059a097e146af82195c70def0577df1",
+    "completed_sha256": "1e13a3581c4c4215e7e1a686fc35ad7576bfc86d45962df39196cb1806c5d00b",
+    "ledger_sha256": "1f6a82e0cb20ea2de6bb99c130ff96fcc3ed27847d174613f25f04035dd6a7d4"
+  },
+  "formal_v3_execution": {
+    "model": "DeepSeek-V4-Flash",
+    "planned_concurrency": 5,
+    "request_timeout_seconds": 90,
+    "test_cells": 73224,
+    "test_complete": 69229,
+    "test_unavailable": 3995,
+    "test_unavailable_percent": 5.45586146618595,
+    "physical_attempts": 19241,
+    "retry_attempts": 937,
+    "global_halt": null
+  },
+  "test_unavailable_causes": {
+    "request_unavailable:transport_TimeoutError": 2780,
+    "request_unavailable:invalid_json_response": 675,
+    "request_unavailable:incomplete_response": 358,
+    "Invalid": 112,
+    "trajectory_budget_exhausted": 70
+  },
+  "failed_physical_attempt_causes": {
+    "transport_TimeoutError": 1170,
+    "incomplete_response": 26,
+    "invalid_json_response": 7,
+    "http_500": 5,
+    "http_429": 3
+  },
+  "test_unavailable_by_benchmark": {
+    "complexor": {"total": 1998, "unavailable": 204, "percent": 10.2102102102102},
+    "industryor": {"total": 5400, "unavailable": 151, "percent": 2.7962962962963},
+    "mamo": {"total": 10962, "unavailable": 1288, "percent": 11.7496807151979},
+    "nl4opt": {"total": 13230, "unavailable": 139, "percent": 1.05064247921391},
+    "optibench": {"total": 32670, "unavailable": 308, "percent": 0.942760942760943},
+    "optmath": {"total": 8964, "unavailable": 1905, "percent": 21.2516733601071}
+  },
+  "test_unavailable_by_token_cap": {
+    "16384": {"total": 24408, "unavailable": 660, "percent": 2.70403146509341},
+    "32768": {"total": 24408, "unavailable": 1647, "percent": 6.74778761061947},
+    "65536": {"total": 24408, "unavailable": 1688, "percent": 6.91576532284497}
+  },
+  "runtime_diagnosis": {
+    "legacy_full_run_transport": "controller Python 3.11 direct urllib transport with a 90-second hard request bound",
+    "requested_transport_environment": "/Users/chengxi-nju/Desktop/LLM4UO/.venv-preparation/bin/python",
+    "requested_environment_python": "3.10.1",
+    "requested_environment_openssl": "OpenSSL 1.1.1l 24 Aug 2021",
+    "requested_environment_packages": {
+      "httpx": "0.28.1",
+      "httpcore": "1.0.9",
+      "openai": "2.54.0",
+      "requests": "2.34.2",
+      "certifi": "2026.7.22"
+    },
+    "requested_environment_include_system_site_packages": true,
+    "offline_worker_smoke_test": "passed_with_expected_worker_body_keys_rejection",
+    "root_cause_classification": "primarily_legacy_transport_timeout_and_long_response_shape_not_credential_or_rate_limit",
+    "environment_is_primary_root_cause": false
+  },
+  "cross_run_controls": {
+    "short_paced_nlequiv": {
+      "transport_environment_used": true,
+      "logical_requests_complete": 450,
+      "logical_requests_total": 450,
+      "physical_attempts": 452,
+      "transient_connection_failures": 2,
+      "global_halt": false
+    },
+    "long_optitrust_capacity": {
+      "transport_environment_used": true,
+      "logical_requests_complete": 3,
+      "logical_requests_total": 3,
+      "physical_attempts": 6,
+      "transient_connection_failures": 3,
+      "observed_retry_terminal_gaps_seconds": [93.305, 94.125, 96.35],
+      "global_halt": false
+    }
+  },
+  "alternative_transport_environment_review": {
+    "path": "/Users/chengxi-nju/Desktop/LLM4DRO/.venv/bin/python",
+    "python_sha256": "1c06028eb947c0e64d44abafb1089f4d6822ebe76e78625bed3b248dda2e49b0",
+    "python": "3.10.1",
+    "openssl": "OpenSSL 1.1.1l 24 Aug 2021",
+    "include_system_site_packages": false,
+    "openai": "2.29.0",
+    "httpx": "0.28.1",
+    "httpcore": "1.0.9",
+    "requests": "2.32.5",
+    "certifi": "2026.2.25",
+    "ca_bundle_sha256": "fc9165a12403263e7ebfbdad7be7a3eac0fa5d325d3c70465f28d3690072ca28",
+    "expected_certifi": "2026.7.22",
+    "expected_ca_bundle_sha256": "9cc2a774b5198dcff14d9be1e66091f538975d867ce029a96bce15a55dfd730f",
+    "worker_unit_tests_passed": 3,
+    "worker_unit_tests_total": 3,
+    "provider_environment_tests_passed": 6,
+    "provider_environment_tests_total": 8,
+    "provider_preflight_status": "provider_transport_preflight_failed",
+    "selection": "rejected_as_is_keep_as_repairable_fallback",
+    "selection_reason": "better isolation but frozen certifi and CA contract mismatch",
+    "external_environment_modified": false
+  },
+  "required_future_policy": {
+    "legacy_formal_v3_resume_forbidden": true,
+    "controller_environment": "/Users/chengxi-nju/Research/LLM4OR-EAAI/.venv-fresh38/bin/python",
+    "transport_environment": "/Users/chengxi-nju/Desktop/LLM4UO/.venv-preparation/bin/python",
+    "transport_kind": "openai_httpx_single_attempt_v1",
+    "transport_worker_sha256": "109272cece59589878416f8f68efa0ff242a6c3629352752b17c56a214a86bb7",
+    "transport_module_sha256": "5509ce6a58e086cb364ca21f590524f84146d4fec7565849472081507e95fec2",
+    "must_freeze_runtime_and_ca_metadata": true,
+    "must_run_short_transport_canary_before_new_campaign": true,
+    "must_use_short_decision_or_chunked_payloads": true,
+    "must_separate_transport_format_method_and_budget_failures": true,
+    "must_preserve_full_denominator": true
+  },
+  "privacy": {
+    "credential_read": false,
+    "request_body_read": false,
+    "response_body_read": false,
+    "evaluator_answer_read": false
+  }
+}

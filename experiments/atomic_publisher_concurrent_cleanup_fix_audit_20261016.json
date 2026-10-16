@@ -1,0 +1,46 @@
+{
+  "bound_files": [
+    {
+      "path": "llm4or/atomic_publisher.py",
+      "sha256": "9d9cd234717b50092e96ed2c45ff6abc92ccf26bad2435faf3f72598c21331ed"
+    },
+    {
+      "path": "tests/test_atomic_publisher.py",
+      "sha256": "7d303d7d9a865f36e50827fd8ae8fef248d137f1fa3db22c93c79a0760e15d81"
+    }
+  ],
+  "date": "2026-10-16",
+  "diagnosis": {
+    "affected_surface": "concurrent byte-identical publication cleanup",
+    "data_corruption_observed": false,
+    "deterministic_reproduction": "remove the shared bookkeeping file after no-follow stat and before open",
+    "failure": "FileNotFoundError from _read_regular during shared journal cleanup",
+    "root_cause": "a byte-identical concurrent transaction may remove a shared journal or reservation between os.stat and os.open"
+  },
+  "fix": {
+    "behavior": "treat ENOENT at the post-stat open as the bookkeeping file already being absent",
+    "different_payload_conflict_semantics_changed": false,
+    "no_clobber_semantics_changed": false,
+    "path_or_symlink_boundary_changed": false
+  },
+  "safety": {
+    "api_or_model_calls": 0,
+    "credentials_read": false,
+    "evaluator_only_answers_read": false,
+    "native_evaluator_calls": 0,
+    "request_or_response_bodies_read": false,
+    "solver_calls": 0,
+    "vm_calls": 0
+  },
+  "schema": "llm4or-atomic-publisher-concurrent-cleanup-fix-audit-v1",
+  "status": "passed_concurrent_cleanup_race_patch",
+  "supersedes_evidence_sha256": "8eda814dd970c452da08de2d72897ae6783924ecd6fcc2bc2d543a6343c3f474",
+  "verification": {
+    "deterministic_regression_passed": true,
+    "different_writer_stress_runs": 300,
+    "identical_writer_stress_runs": 300,
+    "stress_failures": 0,
+    "tests": 23,
+    "tests_command": "python3 -m unittest tests.test_atomic_publisher tests.test_reconstruction_publishers -v"
+  }
+}

@@ -1,0 +1,25 @@
+LLM4OR-EAAI
+Copyright 2026 Chengxi She
+
+First-party software, tests, scripts, and machine-readable project artifacts
+are made available under the Apache License, Version 2.0, subject to the scope
+and exclusions below. Author-owned aggregate data and documentation explicitly
+marked as released data are governed by LICENSE-DATA.
+
+Third-party and external boundaries
+
+* vendor/solver-in-the-loop is an external Git submodule pinned at
+  c631f9c65ad7f0ae97933c4b4c6bd6a3755e0010. Its contents are not relicensed
+  by this repository and remain under the upstream CC BY 4.0 terms published
+  by agentic-or-benchmark/solver-in-the-loop.
+* CoE is retrieved from its pinned upstream source. It is not vendored or
+  relicensed here because a license was not verified in the reproduced source.
+* Gurobi is separately installed commercial software. This release contains no
+  Gurobi binary or license and grants no rights to Gurobi.
+* Reused benchmark sources remain subject to their source-specific upstream
+  terms. Where redistribution is absent or unverified, this release retains
+  metadata and checksums rather than benchmark task text or evaluator answers.
+
+The Apache-2.0 and CC BY 4.0 grants apply only to material for which the author
+or the author's institution has licensing authority. No license is granted to
+excluded third-party content merely because it is named by this project.

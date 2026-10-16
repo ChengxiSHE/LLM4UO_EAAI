@@ -1,0 +1,77 @@
+{
+  "schema": "llm4or-manuscript-figure2-source-data-audit-v1",
+  "status": "passed",
+  "created_at_local_date": "2026-10-15",
+  "purpose": "Bind the aggregate source-data tables for the planned main endpoint figure to terminal evidence and verify every plotted field before backend-specific rendering.",
+  "authoritative_inputs": {
+    "results/tsp_constraint_confirmation_root_closure_20261014.json": "0a0aef6aad14e720f537c3201b5cc585b0177c0a05150a18d0300f3e498c437d",
+    "results/tsp_constraint_confirmation_evaluation_20261014.json": "184d05aa1ff0857e9577fa239c4aed230d021e7404b865c340020c93f7757082",
+    "results/or_debug_confirmation_evaluation_20261014.json": "04342d960613c01d3e354d742e39eec5949a90a53ca06fe0c6e30b6be057b66e",
+    "results/mixed_skill_confirmation_audit_v2_20261014.json": "d2ec7251f562373cf50a0e3e22f7a0ce87e0aa5748749c873420c531a757b992"
+  },
+  "source_data": {
+    "manuscript/source_data/README.md": "6495199dd8b68cba457cede52ab21dfa3dd4cf14fd234f98c04a5c545d7363e8",
+    "manuscript/source_data/figure2_endpoint_summary.csv": "71927fc29af5f54269dee1675c140f8f3b04404635458cc31973c2709e8ec71e",
+    "manuscript/source_data/figure2_group_summary.csv": "0977c0b8d8856fcf9e287907da993181ccdc39e269831901bcf84a9b507c2076",
+    "manuscript/source_data/figure2_router_identity.csv": "a44eb29bc162419e2acda954daf1b1f08e5448b9242cfc414cb0e8b59eae52e2",
+    "manuscript/source_data/figure2_tsp_by_size.csv": "ce6bc449422bc4a2ca5d066ded26801570283a35d71651fea3c42864ed9aa869"
+  },
+  "verified_fields": {
+    "endpoint_summary": [
+      "denominator",
+      "control_correct",
+      "method_correct",
+      "control_accuracy",
+      "method_accuracy",
+      "accuracy_delta",
+      "both_correct",
+      "corrections",
+      "regressions",
+      "both_wrong"
+    ],
+    "tsp_by_size": [
+      "all_sizes_13_through_19_present_once",
+      "records",
+      "control_correct",
+      "method_correct",
+      "control_accuracy",
+      "method_accuracy",
+      "accuracy_delta",
+      "corrections",
+      "regressions"
+    ],
+    "group_summary": [
+      "or_debug_groups",
+      "positive_groups",
+      "tied_groups",
+      "negative_groups",
+      "gain_p_value",
+      "tsp_seven_positive_size_strata"
+    ],
+    "router_identity": [
+      "records",
+      "exact_matches",
+      "route_mismatches",
+      "output_mismatches",
+      "source_mismatches",
+      "terminal_failures"
+    ]
+  },
+  "claim_boundaries": [
+    "The two benchmark endpoints remain separate within-study comparisons and are not pooled.",
+    "TSP size rows share template lineage and are descriptive strata rather than independent replicates.",
+    "OR-Debug inference uses 100 structural groups.",
+    "Mixed-router identity is retrospective behavior preservation and does not recompute accuracy.",
+    "Zero observed regressions is not a distribution-free non-regression guarantee."
+  ],
+  "execution": {
+    "model_calls": 0,
+    "api_calls": 0,
+    "solver_calls": 0,
+    "native_evaluator_calls": 0,
+    "vm_calls": 0,
+    "request_or_response_bodies_read": false,
+    "evaluator_only_answers_read": false,
+    "credentials_read": false
+  }
+}

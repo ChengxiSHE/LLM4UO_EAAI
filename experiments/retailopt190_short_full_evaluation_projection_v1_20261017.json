@@ -1,0 +1,105 @@
+{
+  "archetypes": {
+    "base_short": {
+      "accuracy": 0.2631578947368421,
+      "fully_correct": 10,
+      "total": 38
+    },
+    "knowledge_short": {
+      "accuracy": 0.8947368421052632,
+      "fully_correct": 34,
+      "total": 38
+    }
+  },
+  "claim_boundary": {
+    "automatic_skill_acquisition": false,
+    "benchmark_specific_authored_knowledge": true,
+    "direct_modeling_accuracy": true,
+    "single_benchmark": true,
+    "universal_or_superiority": false
+  },
+  "confirmation_gate": {
+    "checks": {
+      "archetype_corrections_at_least_6": true,
+      "archetype_regressions_at_most_2": true,
+      "correction_regression_ratio_at_least_2": true,
+      "inference_completion_fraction_at_least_0_99": true,
+      "one_sided_exact_mcnemar_below_0_05": true,
+      "positive_instance_gain_at_least_0_05": true
+    },
+    "passed": true
+  },
+  "execution": {
+    "api_calls_in_evaluation": 0,
+    "model_calls_in_evaluation": 0,
+    "solver_evaluations": 380,
+    "workers": 5
+  },
+  "inference_completed": {
+    "base_short": {
+      "cells": 38,
+      "fraction": 1.0
+    },
+    "knowledge_short": {
+      "cells": 38,
+      "fraction": 1.0
+    }
+  },
+  "instances": {
+    "base_short": {
+      "accuracy": 0.2631578947368421,
+      "correct": 50,
+      "total": 190
+    },
+    "knowledge_short": {
+      "accuracy": 0.8947368421052632,
+      "correct": 170,
+      "total": 190
+    }
+  },
+  "paired_archetypes": {
+    "corrections": 25,
+    "one_sided_exact_mcnemar_p": 4.023313522338867e-07,
+    "regressions": 1
+  },
+  "paired_instances": {
+    "corrections": 125,
+    "regressions": 5
+  },
+  "plan_file_sha256": "a24779da198d42bb6cedaf9bc97653b6c3186abb4a949e1ac2bc38e1c71af1a4",
+  "plan_sha256": "302cdc9410816e1cbe7b2330f85b8fd9e9f3e7ef8598da2ae760da7cdbee0c9d",
+  "privacy": {
+    "contains_objectives": false,
+    "contains_per_item_results": false,
+    "contains_problem_bodies": false,
+    "contains_responses": false,
+    "contains_source_ids": false
+  },
+  "schema": "llm4or-retailopt190-public-evaluation-projection-v1",
+  "solver_status_counts": {
+    "base_short": {
+      "OPTIMAL": 180,
+      "OPTIMAL (TL)": 10
+    },
+    "knowledge_short": {
+      "OPTIMAL": 180,
+      "OPTIMAL (TL)": 10
+    }
+  },
+  "source": {
+    "archetypes": 38,
+    "commit": "d809c6bbeb42cb99b0564c41bfb8f331f0156b9d",
+    "records": 190
+  },
+  "status": "confirmed_improvement",
+  "study": "prospective_primary",
+  "study_role": "prospective_independent_confirmation",
+  "terminal_counts": {
+    "base_short": {
+      "complete": 190
+    },
+    "knowledge_short": {
+      "complete": 190
+    }
+  }
+}

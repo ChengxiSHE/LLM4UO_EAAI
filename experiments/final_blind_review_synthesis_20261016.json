@@ -1,0 +1,83 @@
+{
+  "schema": "llm4or-final-blind-review-synthesis-v1",
+  "date": "2026-10-16",
+  "review_design": {
+    "reviewers": 3,
+    "mutually_blind": true,
+    "reports_frozen_before_synthesis": true,
+    "consensus_threshold": 2
+  },
+  "decision": "major_revision_bounded_system_result_supported_mechanism_attribution_open",
+  "consensus_concerns": [
+    {
+      "id": "BR-C1",
+      "reviewers": ["R1", "R2"],
+      "status": "open_scientific_gate_claim_narrowed",
+      "concern": "Task-level gains change benchmark knowledge and architecture together, so mechanism causality is not identified."
+    },
+    {
+      "id": "BR-C2",
+      "reviewers": ["R2", "R3"],
+      "status": "public_aggregate_route_added_restricted_rescoring_remains_custody_limited",
+      "concern": "The supplied packet lacked a direct executable route from public evidence to headline tables."
+    },
+    {
+      "id": "BR-C3",
+      "reviewers": ["R2", "R3"],
+      "status": "addressed_by_endpoint_reordering",
+      "concern": "The 516-record OR-Debug correction materially changes the headline and is not publicly adjudicable at record level."
+    },
+    {
+      "id": "BR-C4",
+      "reviewers": ["R1", "R2"],
+      "status": "addressed_by_contract_test_language",
+      "concern": "Authored finite censuses were described too strongly as causal evidence for natural benchmark mechanisms."
+    },
+    {
+      "id": "BR-C5",
+      "reviewers": ["R1", "R3"],
+      "status": "addressed_by_evidence_hierarchy_revision",
+      "concern": "The abstract and status documents mixed evidence levels and prospective mechanisms."
+    },
+    {
+      "id": "BR-C6",
+      "reviewers": ["R1", "R2"],
+      "status": "boundary_retained",
+      "concern": "Breadth and inferential independence are limited by authored skills and source lineage."
+    }
+  ],
+  "non_consensus_concerns": [
+    {
+      "id": "BR-N1",
+      "reviewers": ["R1"],
+      "status": "open",
+      "concern": "Closest-method novelty needs a traceable claim-level comparison."
+    },
+    {
+      "id": "BR-N2",
+      "reviewers": ["R3"],
+      "status": "addressed_by_surface_reconciliation",
+      "concern": "Release, review, and submission-overlay path and test counts were difficult to reconcile."
+    }
+  ],
+  "claim_decision": {
+    "system_level_accuracy_gain_supported": true,
+    "architecture_causally_explains_gain": false,
+    "released_or_debug_endpoint_primary": true,
+    "source_corrected_or_debug_endpoint_role": "sensitivity",
+    "finite_component_results_role": "exhaustive_contract_tests",
+    "broad_benchmark_superiority_supported": false
+  },
+  "execution": {
+    "api_calls": 0,
+    "model_calls": 0,
+    "solver_calls": 0,
+    "native_calls": 0
+  },
+  "privacy": {
+    "contains_credentials": false,
+    "contains_problem_bodies": false,
+    "contains_request_or_response_bodies": false,
+    "contains_evaluator_only_answers": false
+  }
+}

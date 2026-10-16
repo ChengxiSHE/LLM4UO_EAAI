@@ -1,0 +1,1886 @@
+{
+  "construction_execution": {
+    "body_access_scope": "Private indexed diagnostics plus fixed FormulationBench, NLEquiv and RetailOpt custody/evaluation; public evidence artifacts contain no problem, request or response bodies.",
+    "credential_access_scope": "Pinned /Users/chengxi-nju/Desktop/LLM4UO/.venv-preparation transport workers only; no credential is present in evidence artifacts.",
+    "credentials_read": true,
+    "new_api_calls": 1084,
+    "new_model_calls": 1081,
+    "new_native_or_vm_calls": 0,
+    "new_solver_calls": 1140,
+    "reference_answers_read": true,
+    "request_or_response_bodies_read": true,
+    "retailopt_local_solver_calls": 1140,
+    "retailopt_physical_api_attempts": 157,
+    "retailopt_successful_model_responses": 154
+  },
+  "created_at_local_date": "2026-10-17",
+  "global_claim_boundaries": [
+    "Benchmark formulation accuracy is a fixed task endpoint, not full formulation equivalence.",
+    "Finite verifier-relative correctness does not establish correctness outside the declared verification domain.",
+    "TSP and OR-Debug show replication of a methodology with separately authored skills, not transfer of one unchanged skill.",
+    "OR-Debug corrected-primary and released-primary results are both disclosed because the endpoint definition changes 516 type-B LP judgments.",
+    "Mixed routing is retrospective frozen-interface composition, not fresh accuracy or learned routing under shift.",
+    "The fixed common-40 panel has unequal information and execution contracts and is not an unconditional leaderboard.",
+    "One final endpoint table cannot causally identify proposal-level admission, library-level complexity control and envelope-level routing; each requires its valid intervention and unit.",
+    "The current evidence establishes bounded behavior-class acquisition inside one authored finite grammar, but not end-to-end automatic skill acquisition from natural language or unrestricted RSI.",
+    "The completed eight-pair matched canary has zero discordant pairs and fails its progression gate; it tests feedback organization over authored facts, not automatic fact discovery or efficacy equivalence.",
+    "Recent work already covers typed contracts, validation-gated revision, executable skill programs, applicability filtering and versioned verifiable skill libraries; this paper claims an optimization-modeling-specific proof-carrying composition rather than general priority for those mechanisms.",
+    "The current TSP/OR-Debug library has canonical answer-free skill and parent-linked library manifests with a measured 17,728-bit semantic envelope and exact 2,985-record identity reconstruction; because the authored encoding was fixed after development outcomes, this is an artifact measurement rather than a retrospective generalization bound.",
+    "Complexity-weighted promotion and cumulative regression budgeting are prospective conditional protocol guarantees; current runs did not use the former, and TSP plus OR-Debug do not form one fixed-target sequence for the latter.",
+    "The fresh common-38 study establishes a large fixed-endpoint advantage over locally rerun Base, BIND and CoE-safe on two families from one source lineage; it does not equalize construction cost or prove broad benchmark superiority.",
+    "Finite complete-population censuses identify semantic-admission, resource-admission and exactly-one routing effects inside their frozen 64-candidate and 69-envelope grammars, and a complexity-control effect inside the authored six-shadow-guard library grammar; none establishes natural proposer or shift-distribution generalization.",
+    "The strict FormulationBench same-fact comparison is complete and negative; NLEquiv-150 finds neutral fact structuring and a directional but non-significant routed-skill gain. Neither supports architecture-only accuracy improvement, and both opened endpoints are now development evidence.",
+    "The paper-based OptiTrust-style-safe-sidecar v1 has zero scoreable outcomes and 38 infrastructure-unavailable cells; its mechanical zero is not an accuracy estimate and cannot enter paired superiority statistics.",
+    "The OptiTrust-style indexed adapter is reported only as an infrastructure-clean negative method preflight; it supplies no official OptiTrust reproduction, common-38 accuracy estimate, or ranking claim.",
+    "The TSP and OR-Debug comparisons establish complete-system formulation-accuracy gains. The completed matched mechanism studies do not establish a causal benefit from proof-carrying representation or fact organization alone.",
+    "The prospective RetailOpt-190 comparison identifies a complete-method benefit from authored routed benchmark knowledge under a shared short-decision compiler; it does not identify proof-carrying structure alone or automatic knowledge acquisition.",
+    "The RetailOpt label-blind replication is post hoc on the same 38 archetypes and only excludes an informative-label explanation; it is not a second independent confirmation.",
+    "RetailOpt-190 task bodies remain restricted because the upstream root license and README license statement disagree; only body-free custody, plans, code and aggregate projections enter the release evidence surface.",
+    "RetailOpt Figure 3 visualizes one prospective independent-source confirmation plus same-benchmark post hoc robustness and diagnostics; the latter two do not create additional independent samples or causal component identification.",
+    "The v1.2.0 metadata and release notes describe a local submission candidate only; they do not establish a public tag, release asset, archive record or DOI."
+  ],
+  "headline_evidence": {
+    "archival_deposit_readiness": {
+      "artifact": "experiments/archival_deposit_packet_v1_1_1_20261016.json",
+      "assertions": {
+        "archive_state.doi": null,
+        "archive_state.public_zenodo_query_hits": 0,
+        "archive_state.status": "ready_for_external_deposit_no_doi",
+        "deposit_files.count": 4,
+        "release_identity.tag": "v1.1.1"
+      },
+      "boundary": "No DOI exists in the public record yet; readiness is not archival publication and no identifier may be inferred or invented.",
+      "human_report": "docs/ARCHIVAL_DEPOSIT_PACKET_V1_1_1_20261016.md",
+      "human_report_sha256": "c5ba8ded27baec6cd65179d8ca50bb44298dfbb4266e4398f092b92f3ce4ce63",
+      "permitted_claim": "The exact v1.1.1 release files, digests, author metadata, licenses and related identifiers are assembled for external archival deposit.",
+      "schema": "llm4or-archival-deposit-packet-v1",
+      "sha256": "747eee2aa458ffa0dc070b57393224bfeee4c341affed1e9f7c42e7a847fdc8e"
+    },
+    "component_ablation_identifiability": {
+      "artifact": "experiments/component_ablation_identifiability_audit_20261015.json",
+      "assertions": {
+        "decision.ready_to_dispatch": false,
+        "decision.ready_to_freeze": false,
+        "decision.ready_to_prepare": false,
+        "identifiability_finding.single_final_accuracy_table_sufficient": false,
+        "multiplicity_and_power.zero_regression_minimum_corrections_at_alpha_0_0125": 7,
+        "readiness_checks.power_for_four_moderate_endpoint_effects_on_n38": "insufficient",
+        "readiness_checks.theory_to_intervention_mapping": "passed",
+        "status": "not_ready_for_freeze_or_dispatch"
+      },
+      "boundary": "Design and power audit only; no component effect has been estimated, and the 38-record endpoint cohort is underpowered for four moderate confirmatory effects.",
+      "permitted_claim": "The knowledge-construction theory maps to separately identifiable proposal-, library- and envelope-level interventions with immutable outer safety caps.",
+      "schema": "component-ablation-identifiability-audit-v1",
+      "sha256": "7c13e7921b38baa89cea5da335131609268bd5dff278c9edd6fe10ba91163bd7"
+    },
+    "component_ablation_power_and_units": {
+      "artifact": "experiments/component_ablation_power_and_unit_inventory_20261015.json",
+      "assertions": {
+        "decision.ready_to_dispatch": false,
+        "existing_unit_inventory.fresh_endpoint_level.minimum_total_units_at_r_0_30_q_0_70_for_80_percent_power": 205,
+        "existing_unit_inventory.fresh_endpoint_level.minimum_total_units_at_r_0_30_q_0_70_for_90_percent_power": 263,
+        "existing_unit_inventory.fresh_endpoint_level.power_at_r_0_30_q_0_70_alpha_0_0125": 0.120922,
+        "existing_unit_inventory.library_selection_level.independent_repeated_common_pool_selection_episodes": 0,
+        "existing_unit_inventory.proposal_level.strict_historical_matched_typed_units": 1,
+        "existing_unit_inventory.routing_envelope_level.existing_mixed_records": 2985,
+        "existing_unit_inventory.routing_envelope_level.zero_or_multiple_match_outcomes_observed": 0,
+        "multiplicity_plan.conservative_planning_alpha_per_contrast": 0.0125,
+        "status": "closed_offline_design_analysis_not_ready_for_dispatch"
+      },
+      "boundary": "The displayed r and q values are planning alternatives rather than effect estimates; no new proposal, route or component outcome was generated.",
+      "permitted_claim": "Exact conservative planning and metadata inventory show that current historical proposal, library-selection and routing records do not supply valid powered units for the four component effects.",
+      "schema": "component-ablation-power-unit-inventory-v1",
+      "sha256": "0f75cb740d2f2202a4699598f47e26f02ca3c9c37b211a5bcbc8577a208e1a5e"
+    },
+    "controlled_endpoint_review": {
+      "artifact": "experiments/controlled_endpoint_review_audit_20261016.json",
+      "assertions": {
+        "execution.api_calls": 0,
+        "fresh_common38.identities_aligned": 38,
+        "fresh_common38.request_response_payloads_parsed": 0,
+        "or_debug.arm_objects_exact": 5690,
+        "or_debug.corrected.evolved_correct": 2752,
+        "or_debug.records": 2845,
+        "or_debug.released.evolved_correct": 2236,
+        "status": "passed_all_controlled_endpoints_exact",
+        "tsp.corrections": 46,
+        "tsp.records": 140,
+        "tsp.skill_correct": 100,
+        "tsp.static_correct": 54
+      },
+      "boundary": "Aggregate-only controlled verification; restricted inputs remain non-public, common-38 budgets remain unequal, and within-source confirmation does not establish broad generalization or automatic acquisition.",
+      "permitted_claim": "A fresh-context reviewer independently recomputed the TSP, OR-Debug and common-38 endpoints exactly under hash-bound restricted-data custody.",
+      "schema": "llm4or-controlled-endpoint-review-audit-v1",
+      "sha256": "9dd9f89f88bf82e5590a44521e4c81b590b7b4d078f907eb4105f9b45675e1d7"
+    },
+    "external_fixed_common40": {
+      "assertions": {
+        "ledger.baselines.bind.final_correct": 40,
+        "ledger.baselines.bind.round1_correct": 31,
+        "ledger.baselines.coe_current_snapshot.author_exact_correct_all_planned": 1,
+        "ledger.baselines.coe_current_snapshot.safe_adapter_unsupported_completed_outputs": 29,
+        "ledger.baselines.coe_paper_snapshot.author_exact_correct_all_planned": 3,
+        "ledger.baselines.coe_paper_snapshot.safe_adapter_unsupported_completed_outputs": 25,
+        "summary.distinct_problem_records": 40,
+        "summary.families.rcpsp": 20,
+        "summary.families.vrptw": 20,
+        "summary.new_model_calls": 0,
+        "summary.new_solver_calls": 0
+      },
+      "bind": "results/bind_fixed_common40.json",
+      "bind_sha256": "fd3e12d813d1e3b2824b25bf0c53d8071b6e11f7566f5583e79dcf01c117268d",
+      "boundary": "Different information, feedback, output and execution contracts prevent an unconditional leaderboard; BIND final is answer-bearing and CoE safe-adapter undercoverage is material.",
+      "coe": "results/coe_fixed_common40.json",
+      "coe_sha256": "6d478837d18584add5636d083567c8aa280c5db2edff18894452664b78fd9b06",
+      "ledger": "experiments/external_baseline_evidence_ledger_20261014.json",
+      "ledger_sha256": "f9aaa74190c1735105fc0061662be1ca2b0411479c77bbafcc3b4f9272c7d0e7",
+      "permitted_claim": "BIND and CoE were locally rerun on the same retrospective 40 identities under disclosed official-prompt or official-code adaptations.",
+      "summary": "results/external_fixed_common40_summary.json",
+      "summary_sha256": "22c588da5167f6cb76615340ea81551021b8473b9db2a4ea83d717c93a77a38c"
+    },
+    "final_blind_review_synthesis": {
+      "artifact": "experiments/final_blind_review_synthesis_20261016.json",
+      "assertions": {
+        "claim_decision.architecture_causally_explains_gain": false,
+        "claim_decision.broad_benchmark_superiority_supported": false,
+        "claim_decision.released_or_debug_endpoint_primary": true,
+        "claim_decision.system_level_accuracy_gain_supported": true,
+        "decision": "major_revision_bounded_system_result_supported_mechanism_attribution_open",
+        "execution.api_calls": 0,
+        "execution.model_calls": 0,
+        "execution.solver_calls": 0,
+        "review_design.mutually_blind": true,
+        "review_design.reviewers": 3
+      },
+      "boundary": "This is an author-orchestrated mock review, not editorial acceptance or unaffiliated peer review.",
+      "permitted_claim": "Three mutually blind reviews support the bounded system-level accuracy case and converge on open mechanism attribution.",
+      "schema": "llm4or-final-blind-review-synthesis-v1",
+      "sha256": "ae2a8aee667e3c0593322983697b75fa47e37d3227d2a381c5748859a3daa101"
+    },
+    "formulationbench_custody": {
+      "artifact": "experiments/formulationbench_custody_audit_20261016.json",
+      "assertions": {
+        "counts.formulations": 109,
+        "counts.pairs": 89,
+        "counts.problems": 20,
+        "counts.proofs": 63,
+        "execution.api_calls": 0,
+        "execution.credentials_read": false,
+        "execution.lean_calls": 0,
+        "execution.model_calls": 0,
+        "execution.solver_calls": 0,
+        "execution.vm_calls": 0,
+        "privacy.contains_code_bodies": false,
+        "privacy.contains_data_values": false,
+        "privacy.contains_pair_labels": false,
+        "privacy.contains_problem_bodies": false,
+        "privacy.contains_proof_bodies": false,
+        "privacy.contains_solutions": false,
+        "privacy.contains_source_paths": false,
+        "status": "published_private_bundle_verified"
+      },
+      "bound_files": [
+        {
+          "path": "llm4or/formulationbench_custody.py",
+          "sha256": "d30f2816a09581884c8b88141bb98e6beb0e4253f85ca85853ce58bddcdbe39b"
+        },
+        {
+          "path": "scripts/build_formulationbench_custody.py",
+          "sha256": "1c67a1ed71bcbfb998e7fef683546a89266c7e1b3ad03516107760628370820f"
+        },
+        {
+          "path": "tests/test_formulationbench_custody.py",
+          "sha256": "42452b4518a965cdadf7acb12fe22547359b8e1f658d8547e8cec4555acd29f6"
+        }
+      ],
+      "boundary": "This proves deterministic answer-blind custody and atomic generation publication, not same-fact serialization, provider capacity, a mechanism effect or benchmark accuracy.",
+      "human_report": "docs/FORMULATIONBENCH_CUSTODY_AUDIT_20261016.md",
+      "human_report_sha256": "663d8caa2af4c330887b946f7ddc280a92049d1ee8bd645698bb9de119aebfa5",
+      "permitted_claim": "The complete fixed FormulationBench source was partitioned into answer-blind inference, answer-free metadata and isolated evaluator projections with atomic all-or-none publication.",
+      "schema": "llm4or-formulationbench-custody-audit-v1",
+      "sha256": "f2583a812259db6d0ae4cee63eea5b59804242ee4e9d1e75d3e5b380abb49e93"
+    },
+    "formulationbench_same_fact": {
+      "artifact": "experiments/formulationbench_same_fact_audit_20261016.json",
+      "assertions": {
+        "counts.fact_multiset_mismatches": 0,
+        "counts.facts_maximum": 214,
+        "counts.facts_minimum": 33,
+        "counts.facts_total": 4935,
+        "counts.flat_bytes_maximum": 61190,
+        "counts.guidance_mismatches": 0,
+        "counts.guidance_variants": 1,
+        "counts.pairs": 89,
+        "counts.pck_bytes_maximum": 61245,
+        "counts.unique_graphs": 89,
+        "counts.verified_pairs": 89,
+        "execution.api_calls": 0,
+        "execution.credentials_read": false,
+        "execution.lean_calls": 0,
+        "execution.model_calls": 0,
+        "execution.solver_calls": 0,
+        "execution.vm_calls": 0,
+        "privacy.contains_code_bodies": false,
+        "privacy.contains_data_values": false,
+        "privacy.contains_pair_labels": false,
+        "privacy.contains_problem_bodies": false,
+        "privacy.contains_proof_bodies": false,
+        "privacy.contains_solutions": false,
+        "status": "passed_full_inference_population_same_fact_verification"
+      },
+      "bound_files": [
+        {
+          "path": "llm4or/formulationbench_fact_graph.py",
+          "sha256": "9e9215cd26735951c87d3b6a31234104d03e7f9b2ed36b92f7ba0e23a219994f"
+        },
+        {
+          "path": "scripts/audit_formulationbench_fact_graph.py",
+          "sha256": "5ce0c82a0b653e4f4275074b5b58614fa66c97317d56289d07ddecd9e97353ca"
+        },
+        {
+          "path": "tests/test_formulationbench_fact_graph.py",
+          "sha256": "756c693c7cf285f48b6062d1100038069c406def112a43d49c44f6f59668119f"
+        }
+      ],
+      "boundary": "This proves complete-population fact and fixed-guidance identity between Flat-K and PCK-K, not provider capacity, model behavior, mechanism gain or benchmark accuracy.",
+      "human_report": "docs/FORMULATIONBENCH_SAME_FACT_AUDIT_20261016.md",
+      "human_report_sha256": "6196376f3cf8b61d45a93422d225f5be6b518f6e06ff2813f71bd29f231b74fe",
+      "permitted_claim": "Across all 89 fixed pairs, Flat-K and PCK-K serialize the same 4,935 content-addressed facts and the same six generic checks with zero mismatch.",
+      "schema": "llm4or-formulationbench-same-fact-audit-v1",
+      "sha256": "c70c0ead7bdfcccaf69ecba3398c1b702ef5700f73942c2ac4bfc362b3f4e760"
+    },
+    "formulationbench_same_knowledge_result": {
+      "artifact": "experiments/formulationbench_same_knowledge_result_20261016.json",
+      "assertions": {
+        "accuracy.flat-k.correct": 40,
+        "accuracy.pck-k.correct": 36,
+        "paired.both_correct": 29,
+        "paired.both_incorrect": 42,
+        "paired.corrections": 7,
+        "paired.one_sided_exact_mcnemar_p": 0.8810577392578125,
+        "paired.regressions": 11,
+        "population.pairs": 89,
+        "population.predictions": 178,
+        "primary_gate.passed": false,
+        "privacy.bodies_published": false,
+        "privacy.per_pair_labels_published": false,
+        "privacy.per_pair_predictions_published": false,
+        "status": "complete"
+      },
+      "boundary": "Pair validity is not direct model generation; the mandatory proof contract increases method failures, and the opened endpoint cannot confirm a revision.",
+      "diagnostic": "experiments/formulationbench_same_knowledge_diagnostic_20261016.json",
+      "diagnostic_sha256": "54647e76b95da86dd177e990c3014c9529f2aab144b83bac1526475f978ddc16",
+      "human_report": "docs/FORMULATIONBENCH_SAME_KNOWLEDGE_RESULT_20261016.md",
+      "human_report_sha256": "0fd820ea3309fdda87a6966cf215c543a0f153cd31a10de31044c148c65156d1",
+      "permitted_claim": "On the prospective strict same-fact 89-pair endpoint, PCK-K does not improve full-denominator pair-validity accuracy over Flat-K.",
+      "schema": "formulationbench-same-knowledge-v1-full-result",
+      "sha256": "82a2d2eb4b5f6a191c032e502854236cf6ca3bf551438cb66bec48374c758c89",
+      "terminal_audit": "experiments/formulationbench_same_knowledge_terminal_audit_20261016.json",
+      "terminal_audit_sha256": "9999de693c8b95f671c20e77a48aa22a5006e61fd14a0a2cf46e770744b7e82e"
+    },
+    "formulationbench_source_census": {
+      "artifact": "experiments/formulationbench_source_census_20261016.json",
+      "assertions": {
+        "counts.formulations": 109,
+        "counts.pairs": 89,
+        "counts.problems": 20,
+        "counts.proofs": 63,
+        "privacy.contains_data_values": false,
+        "privacy.contains_formulation_bodies": false,
+        "privacy.contains_labels": false,
+        "privacy.contains_problem_bodies": false,
+        "privacy.contains_proof_bodies": false,
+        "privacy.contains_solutions": false,
+        "source.commit": "6f37a71e6251b11599ef42869e4268882985a8a7",
+        "source.dataset_tree": "793db197693fac5446fe1bd39aaf178fea437822",
+        "status": "passed_body_free_source_census"
+      },
+      "bound_files": [
+        {
+          "path": "llm4or/formulationbench_custody.py",
+          "sha256": "d30f2816a09581884c8b88141bb98e6beb0e4253f85ca85853ce58bddcdbe39b"
+        },
+        {
+          "path": "scripts/build_formulationbench_custody.py",
+          "sha256": "1c67a1ed71bcbfb998e7fef683546a89266c7e1b3ad03516107760628370820f"
+        },
+        {
+          "path": "tests/test_formulationbench_custody.py",
+          "sha256": "42452b4518a965cdadf7acb12fe22547359b8e1f658d8547e8cec4555acd29f6"
+        }
+      ],
+      "boundary": "This source census opened no benchmark file body and supports no benchmark result, pair label, accuracy estimate or provider dispatch.",
+      "human_report": "docs/FORMULATIONBENCH_SOURCE_CENSUS_20261016.md",
+      "human_report_sha256": "081b5de764d680daa65cdc3462fcc58aad302e82c8b81a59d5f8100804eca72e",
+      "permitted_claim": "The fixed FormulationBench source has the declared 20/109/89/63 path structure and passed a strict body-free materialization audit.",
+      "schema": "llm4or-formulationbench-source-census-v1",
+      "sha256": "e5fda4361c4faefa90034d09d457c6da9932f788ff01df74672f49998a27fd78"
+    },
+    "formulationbench_source_qualification": {
+      "artifact": "experiments/formulationbench_source_qualification_20261016.json",
+      "assertions": {
+        "custody_audit.answer_blind_inference_projection": true,
+        "custody_audit.atomic_generation_publication": true,
+        "custody_audit.candidate_validity_removed_from_inference": true,
+        "custody_audit.evaluator_isolated": true,
+        "custody_audit.pairs": 89,
+        "custody_audit.proof_presence_removed_from_inference_metadata": true,
+        "custody_audit.status": "published_private_bundle_verified",
+        "decision.dispatch_allowed": false,
+        "decision.source_eligible_in_principle": true,
+        "execution.api_calls": 0,
+        "execution.benchmark_bodies_opened": 0,
+        "execution.labels_opened": 0,
+        "execution.lean_proofs_opened": 0,
+        "execution.model_calls": 0,
+        "execution.solutions_opened": 0,
+        "execution.solver_calls": 0,
+        "official_aggregate_contract.negative_reformulation_pairs": 26,
+        "official_aggregate_contract.positive_reformulation_pairs": 63,
+        "official_aggregate_contract.problems": 20,
+        "official_aggregate_contract.reformulation_pairs": 89,
+        "official_aggregate_contract.structured_formulations": 109,
+        "same_fact_audit.fact_multiset_mismatches": 0,
+        "same_fact_audit.facts_total": 4935,
+        "same_fact_audit.fixed_guidance_variants": 1,
+        "same_fact_audit.guidance_mismatches": 0,
+        "same_fact_audit.pairs": 89,
+        "same_fact_audit.status": "passed_full_inference_population_same_fact_verification",
+        "source.license": "MIT",
+        "source_materialization_audit.full_source_materialized": true,
+        "source_materialization_audit.pair_identity_census_without_label_access": true,
+        "source_materialization_audit.status": "passed_body_free_source_census",
+        "tree_only_census.reformulation_map_json": 89,
+        "tree_only_census.tree_response_truncated": false
+      },
+      "boundary": "Body-free source qualification only; no task, label, solution, formulation, proof, request or response body was opened, and no benchmark result or dispatch authorization is created.",
+      "human_report": "docs/FORMULATIONBENCH_SOURCE_QUALIFICATION_20261016.md",
+      "human_report_sha256": "e8f50fef182104c12b8f031d3083a411cfd7cfe98b93f47a5ae183cbb3d4633f",
+      "permitted_claim": "FormulationBench is fixed as an MIT-licensed prospective 89-pair source and has passed materialization, answer-blind custody and exact same-fact serialization; the capacity gate remains open.",
+      "schema": "llm4or-formulationbench-source-qualification-v1",
+      "sha256": "51569add85097c1bb48746e23f881b5316c8ae855f5ad631268c946545b927f7"
+    },
+    "fresh_common38_common_protocol_synthesis": {
+      "artifact": "experiments/fresh_common38_common_protocol_synthesis_20261015.json",
+      "assertions": {
+        "bind_answer_bearing_transition.corrections": 0,
+        "bind_answer_bearing_transition.regressions": 0,
+        "claim_boundary.broad_benchmark_superiority_supported": false,
+        "claim_boundary.construction_cost_equalized": false,
+        "claim_boundary.fixed_fresh_common_endpoint_only": true,
+        "cohort.planned": 38,
+        "cohort.rcpsp": 13,
+        "cohort.vrptw": 25,
+        "identity_alignment_verified": true,
+        "inference.confirmatory_comparisons": 4,
+        "inference.familywise_control": "Holm",
+        "privacy.contains_credentials": false,
+        "privacy.contains_problem_bodies": false,
+        "privacy.contains_request_bodies": false,
+        "privacy.contains_response_bodies": false,
+        "status": "complete"
+      },
+      "boundary": "This is a fixed-endpoint comparison over two families from one source lineage. Method-native call budgets and provider tokens differ, BIND final is answer-bearing, construction cost is not equalized, and broad benchmark superiority is not established.",
+      "permitted_claim": "On the frozen 38-identity RCPSP/VRPTW cohort, the current method scores 30/38 versus Base 0/38, BIND round one and final 13/38, and CoE-safe 4/38; all four paired current-method comparisons reject after Holm correction.",
+      "schema": "fresh-common38-common-protocol-synthesis-v1",
+      "sha256": "a678008a7449d588e12eb59bf019875fb08d7cb8f4e9c177ca8aaf9f0fb2aa9e"
+    },
+    "fresh_common38_current_native": {
+      "artifact": "experiments/fresh_common38_current_native_result_20261015.json",
+      "assertions": {
+        "aggregate.accuracy": 0.7894736842105263,
+        "aggregate.correct": 30,
+        "aggregate.planned": 38,
+        "aggregate.solver_unavailable": 8,
+        "claim_boundary.common_external_comparison_complete": false,
+        "families.rcpsp.correct": 12,
+        "families.rcpsp.planned": 13,
+        "families.rcpsp.solver_unavailable": 1,
+        "families.vrptw.correct": 18,
+        "families.vrptw.planned": 25,
+        "families.vrptw.solver_unavailable": 7,
+        "privacy.contains_objectives": false,
+        "privacy.contains_points": false,
+        "privacy.contains_reference_values": false,
+        "status": "complete"
+      },
+      "boundary": "Eight solver-unavailable cells remain in the full denominator. This is the current-method row only, not a Base/BIND/CoE comparison, broad superiority result, or automatic-acquisition result.",
+      "permitted_claim": "Under the frozen one-thread 20-second Gurobi native endpoint, the authored current method is correct on 30/38 fresh common identities; all 30 optimal cells match the benchmark endpoint.",
+      "schema": "fresh-common38-current-native-v1-public-result",
+      "sha256": "33ccdd0ea22874a5424441d95027540661ce2688b5298175673867fc1dc11ce3"
+    },
+    "fresh_common38_current_native_audit": {
+      "artifact": "experiments/fresh_common38_current_native_audit_20261015.json",
+      "assertions": {
+        "checks.endpoint_scores_recomputed": 38,
+        "checks.models_reconstructed": 38,
+        "checks.plan_reconstructed": true,
+        "checks.private_checkpoints_verified": 38,
+        "checks.public_result_exactly_reproduced": true,
+        "checks.status_counts.limit": 7,
+        "checks.status_counts.numerical_error": 1,
+        "checks.status_counts.optimal": 30,
+        "execution.api_calls": 0,
+        "execution.new_solver_calls": 0,
+        "status": "passed"
+      },
+      "boundary": "The audit verifies the current native row and its privacy/accounting boundaries; it does not supply missing external rows.",
+      "permitted_claim": "An independent local audit reconstructs the frozen plan, every model, every private checkpoint and the exact public 30/38 aggregate without new solver calls.",
+      "schema": "fresh-common38-current-native-independent-audit-v1",
+      "sha256": "5f24ce220be4dc79c8160206b3fa125f23fb59015ff766edb3ab4e63515d2c20"
+    },
+    "fresh_common38_packets": {
+      "artifact": "experiments/fresh_common38_packet_readiness_20261015.json",
+      "assertions": {
+        "cohort.rcpsp": 13,
+        "cohort.records": 38,
+        "cohort.unique_public_payloads": 38,
+        "cohort.vrptw": 25,
+        "decision.common_atomic_fact_packet_ready": true,
+        "decision.ready_to_dispatch": false,
+        "static_compiler_readiness.compiled": 9,
+        "static_compiler_readiness.failed": 29,
+        "status": "common_packets_ready_method_dispatch_not_ready"
+      },
+      "boundary": "The public manifest is body-free, the packet bundle remains private, and packet readiness is not formulation accuracy or dispatch authorization.",
+      "permitted_claim": "All 38 fresh identities have a content-bound common public-text-plus-structured-data packet; the pre-existing static compiler covers only 9/38.",
+      "schema": "fresh-common38-packets-v1-public-readiness",
+      "sha256": "a12efc6273060c5cdb7b6239b83fa0c102beebd6c394adb4206dff67b7aa543f"
+    },
+    "fresh_common38_structured_skills": {
+      "artifact": "experiments/fresh_common38_structured_skill_readiness_20261015.json",
+      "assertions": {
+        "aggregate.compiled_and_admitted": 38,
+        "aggregate.exact_source_count_matches": 38,
+        "aggregate.maximum_resources.constraints": 742,
+        "aggregate.maximum_resources.nonzeros": 2850,
+        "aggregate.maximum_resources.serialized_bytes": 149270,
+        "aggregate.maximum_resources.variables": 419,
+        "aggregate.planned": 38,
+        "aggregate.routes.rcpsp": 13,
+        "aggregate.routes.vrptw": 25,
+        "decision.ready_to_dispatch": false,
+        "decision.typed_skills_ready": true,
+        "execution.api_calls": 0,
+        "execution.solver_calls": 0,
+        "status": "typed_skills_ready_dispatch_controls_open"
+      },
+      "boundary": "Count agreement and resource admission establish structural readiness only; they do not prove semantic equivalence, solver feasibility, endpoint accuracy, automatic acquisition or external-method superiority.",
+      "permitted_claim": "Authored typed RCPSP/VRPTW skills route, compile and admit all 38 fresh packets with exact agreement to source-reported variable and constraint counts.",
+      "schema": "fresh-common38-structured-skills-readiness-v1",
+      "sha256": "27e9a27453540cf688887971e8110276c59d6b6cc5348ed8e94fba158d131acf"
+    },
+    "fresh_common_protocol_estimand": {
+      "artifact": "experiments/fresh_common_protocol_estimand_audit_20261015.json",
+      "assertions": {
+        "cohort.families.rcpsp": 13,
+        "cohort.families.vrptw": 25,
+        "cohort.public_text_hash_overlap_with_existing_prepared_183": 0,
+        "cohort.records": 38,
+        "cohort.reference_endpoint.finite_theoretical_optimum": 38,
+        "cohort.reference_endpoint.solver_status_2": 38,
+        "cohort.unique_ids": 38,
+        "cohort.unique_public_text_hashes": 38,
+        "decision.ready_to_dispatch": false,
+        "n38_exact_power.zero_regression_minimum_corrections_for_nominal_one_sided_p_below_0_05": 5,
+        "source.revision": "1dac06be656c41d827ef20987cf8af0b48d382a2",
+        "status": "not_ready_for_freeze_or_dispatch"
+      },
+      "boundary": "This artifact is the pre-implementation metadata and power audit. Later manifest entries freeze the common packets and authored typed compilers, while solving, scoring, ablations, external serializers, budgets and custody remain open; moderate-effect leaderboard power is still insufficient.",
+      "permitted_claim": "A unique, evaluator-complete 38-record larger-size RCPSP/VRPTW candidate cohort supports a future common-evidence size-generalization and mechanism panel.",
+      "schema": "fresh-common-protocol-estimand-audit-v1",
+      "sha256": "cca6601442e8ab17ab5fbf298083c9b431ce96938b10ee35ff1160df08e89d3d"
+    },
+    "g07_bounded_scope_closure": {
+      "artifact": "experiments/g07_bounded_scope_closure_20261015.json",
+      "assertions": {
+        "candidate_second_source_disposition.dcp_bench.promotion_gate_passed": false,
+        "candidate_second_source_disposition.dcp_bench.reserved_confirmation_identities": 219,
+        "candidate_second_source_disposition.dcp_bench.reserved_confirmation_remains_closed": true,
+        "candidate_second_source_disposition.miplib_nl.scoreable_endpoint_frozen": false,
+        "claim_boundary.broad_benchmark_superiority_supported": false,
+        "claim_boundary.credentials_read": false,
+        "claim_boundary.evaluator_only_answers_read": false,
+        "claim_boundary.fixed_common38_superiority_supported": true,
+        "claim_boundary.new_api_calls": 0,
+        "claim_boundary.new_model_calls": 0,
+        "claim_boundary.new_native_or_vm_calls": 0,
+        "claim_boundary.new_solver_calls": 0,
+        "claim_boundary.problem_bodies_read": false,
+        "claim_boundary.request_or_response_bodies_read": false,
+        "claim_boundary.sealed_confirmation_opened": false,
+        "claim_boundary.second_source_result_claimed": false,
+        "completed_common_protocol.cohort.planned": 38,
+        "completed_common_protocol.cohort.source_lineages": 1,
+        "completed_common_protocol.full_denominator_correct.base": 0,
+        "completed_common_protocol.full_denominator_correct.bind_final": 13,
+        "completed_common_protocol.full_denominator_correct.bind_round_one": 13,
+        "completed_common_protocol.full_denominator_correct.coe_safe": 4,
+        "completed_common_protocol.full_denominator_correct.current": 30,
+        "scope_decision.g07_status": "closed_with_boundary",
+        "scope_decision.goal_blocker_after_this_decision": false,
+        "status": "closed_with_boundary_no_new_dispatch"
+      },
+      "boundary": "The DCP confirmation partition remains sealed after its failed promotion gate. The fixed MIPLIB-NL release failed whole-source materialization and was not dispatched; no second-source result is claimed.",
+      "human_report": "docs/G07_BOUNDED_SCOPE_CLOSURE_20261015.md",
+      "human_report_sha256": "f21ea772df885837ff9015eae6e403e943c6e50c3fbbe7568104cc9bd7bd2175",
+      "permitted_claim": "The completed fresh common-38 comparison closes G07 for its stated fixed-endpoint scope; a second independently frozen source is required only before a broad benchmark-superiority claim.",
+      "schema": "g07-bounded-scope-closure-v1",
+      "sha256": "11d0bf01cab6bf33cf6af1528e9318b01b1b92e92783103fc3496724ba911086"
+    },
+    "g08_finite_active_acquisition_census": {
+      "artifact": "experiments/g08_finite_acquisition_census_20261015.json",
+      "assertions": {
+        "arms.balanced_separating_witness.identified_within_budget": 10,
+        "arms.balanced_separating_witness.total_queries": 26,
+        "arms.balanced_separating_witness.worst_queries": 3,
+        "arms.canonical_first_witness.identified_within_budget": 6,
+        "arms.canonical_first_witness.total_queries": 30,
+        "arms.canonical_first_witness.worst_queries": 4,
+        "claim_boundary.benchmark_accuracy_claimed": false,
+        "claim_boundary.exact_only_for_frozen_semantic_classes": true,
+        "claim_boundary.library_promoted": false,
+        "claim_boundary.llm_proposer_efficacy_claimed": false,
+        "claim_boundary.natural_language_fact_discovery_supported": false,
+        "claim_boundary.resource_policy_identified_by_semantic_queries": false,
+        "execution.api_calls": 0,
+        "execution.model_calls": 0,
+        "execution.native_calls": 0,
+        "execution.solver_calls": 0,
+        "execution.vm_calls": 0,
+        "inference.sampling_based_p_value": false,
+        "paired.balanced_only": 4,
+        "paired.both": 6,
+        "paired.canonical_only": 0,
+        "paired.neither": 0,
+        "population.full_candidates": 64,
+        "population.query_space": 20977,
+        "population.semantic_candidates": 32,
+        "population.semantic_equivalence_classes": 10,
+        "privacy.contains_counterexample_assignments": false,
+        "privacy.contains_credentials": false,
+        "privacy.contains_problem_bodies": false,
+        "privacy.contains_reference_answers": false,
+        "privacy.contains_request_bodies": false,
+        "privacy.contains_response_bodies": false,
+        "status": "complete_exact_finite_population_census"
+      },
+      "boundary": "This is finite active acquisition inside an authored grammar, oracle and complete domain. It does not discover natural-language facts or the resource-policy axis, establish language-model proposer efficacy or benchmark accuracy, or perform library promotion.",
+      "human_report": "docs/G08_FINITE_ACQUISITION_CENSUS_20261015.md",
+      "human_report_sha256": "a8d22030d02a0a110ed5f97b627d928ebb375a579a375ae13f7ccd5c48ba8724",
+      "permitted_claim": "An exact census over the 10 extensional behavior classes induced by the frozen semantic grammar shows that balanced verifier-selected witnesses identify 10/10 classes within three queries, versus 6/10 for a frozen canonical-order separating-witness control.",
+      "schema": "g08-finite-acquisition-census-v1",
+      "sha256": "e588d581da44acf9c6e29999da892940cb849059131afd32e43e3acf203320d2"
+    },
+    "g09_finite_component_census": {
+      "artifact": "experiments/g09_finite_component_census_v2_20261015.json",
+      "assertions": {
+        "admission_census.paired_full_vs_no_resource.full_prevents_unsafe_admission": 5,
+        "admission_census.paired_full_vs_no_resource.no_resource_prevents_safe_admission": 0,
+        "admission_census.paired_full_vs_no_semantic.full_prevents_unsafe_admission": 11,
+        "admission_census.paired_full_vs_no_semantic.no_semantic_prevents_safe_admission": 0,
+        "admission_census.population": 64,
+        "admission_census.semantic_identifiability": "identified_non_nested_complete_finite_grammar",
+        "admission_census.semantic_resource_cells.semantic_0_resource_0": 47,
+        "admission_census.semantic_resource_cells.semantic_0_resource_1": 11,
+        "admission_census.semantic_resource_cells.semantic_1_resource_0": 5,
+        "admission_census.semantic_resource_cells.semantic_1_resource_1": 1,
+        "admission_census.unique_candidate_hashes": 64,
+        "claim_boundary.complexity_control_causal_effect_identified": false,
+        "claim_boundary.exactly_one_routing_effect_identified_in_envelope_grammar": true,
+        "claim_boundary.resource_gate_effect_identified_in_typed_count_grammar": true,
+        "claim_boundary.semantic_gate_effect_identified_in_typed_count_grammar": true,
+        "complexity_control.independent_library_selection_episodes": 0,
+        "execution.api_calls": 0,
+        "execution.solver_calls": 0,
+        "routing_census.multiplicity_counts.multiple": 2,
+        "routing_census.multiplicity_counts.unique": 24,
+        "routing_census.multiplicity_counts.zero": 43,
+        "routing_census.paired_exactly_one_vs_forced_first.corrections": 45,
+        "routing_census.paired_exactly_one_vs_forced_first.regressions": 0,
+        "routing_census.population": 69,
+        "status": "complete_exact_finite_population_census"
+      },
+      "boundary": "Deployment verification remains fail-fast, whereas ablation measurement runs both gates independently. This earlier census contains no library-selection episode; complexity is tested separately. Neither census supports proposer-distribution or unrestricted-shift generalization.",
+      "permitted_claim": "Exact complete-population censuses identify bounded semantic-admission and resource-admission effects in the 64-member typed-count grammar and a bounded exactly-one routing effect in the 69-envelope shift and ambiguity grammar.",
+      "schema": "g09-finite-component-census-v2",
+      "sha256": "11e68dbff762893924430608c69dae1cfdb41756f5b5d66c981b96584e8b8911"
+    },
+    "g09_library_complexity_census": {
+      "artifact": "experiments/g09_library_complexity_census_20261015.json",
+      "assertions": {
+        "arms.proof_constrained_mdl.fully_correct_libraries": 64,
+        "arms.proof_constrained_mdl.routing_decisions_correct": 4416,
+        "arms.proof_only_frozen_hash.fully_correct_libraries": 1,
+        "arms.proof_only_frozen_hash.routing_decisions_correct": 4284,
+        "claim_boundary.benchmark_accuracy_claimed": false,
+        "claim_boundary.bounded_complexity_effect_identified": true,
+        "claim_boundary.current_authored_library_length_measured": false,
+        "claim_boundary.exact_only_for_authored_shadow_guard_grammar": true,
+        "claim_boundary.library_promoted": false,
+        "claim_boundary.natural_library_distribution_generalization": false,
+        "execution.api_calls": 0,
+        "execution.model_calls": 0,
+        "execution.native_calls": 0,
+        "execution.solver_calls": 0,
+        "execution.vm_calls": 0,
+        "inference.sampling_based_p_value": false,
+        "paired.both_fully_correct": 1,
+        "paired.control_only_fully_correct": 0,
+        "paired.mdl_only_fully_correct": 63,
+        "paired.mdl_routing_corrections": 132,
+        "paired.mdl_routing_regressions": 0,
+        "paired.neither_fully_correct": 0,
+        "population.calibration_episodes": 64,
+        "population.candidate_libraries": 64,
+        "population.code_frozen_before_episode_labels": true,
+        "population.optional_shadow_guards": 6,
+        "population.routing_envelopes": 69,
+        "population.same_candidate_pool_every_episode": true,
+        "population.unique_candidate_hashes": 64,
+        "population.unique_episode_hashes": 64,
+        "prefix_code.label_independent": true,
+        "prefix_code.membership_header_bits": 6,
+        "prefix_code.prefix_free": true,
+        "privacy.contains_credentials": false,
+        "privacy.contains_evaluator_only_answers": false,
+        "privacy.contains_problem_bodies": false,
+        "privacy.contains_reference_answers": false,
+        "privacy.contains_request_bodies": false,
+        "privacy.contains_response_bodies": false,
+        "status": "complete_exact_finite_population_census"
+      },
+      "boundary": "This is an exact bounded mechanism effect over an authored finite library grammar, not a sample from natural library evolution. It does not measure current TSP/OR library length, add benchmark-accuracy evidence or perform promotion.",
+      "human_report": "docs/G09_LIBRARY_COMPLEXITY_CENSUS_20261015.md",
+      "human_report_sha256": "0abcfa1258eb8cc0560016a3d4fe49787c0f52331984c3f7139b97f7a970daae",
+      "permitted_claim": "Across the complete authored six-shadow-guard library grammar and all 64 calibration subsets, proof-constrained label-independent description length selects 64/64 fully correct libraries versus 1/64 for a proof-only frozen-hash selector, with 132 routing-decision corrections and no regressions.",
+      "schema": "g09-library-complexity-census-v1",
+      "sha256": "d6deb6b5c538f78e431cd00c91dd239e48029854d73135fed2acfdc4e3ea8f1b"
+    },
+    "independent_public_release_review": {
+      "artifact": "experiments/independent_public_release_review_20261016.json",
+      "assertions": {
+        "conclusion": "passed_history_free_public_integrity_package_not_complete_public_endpoint_reproduction",
+        "execution.api_or_model_calls": 0,
+        "execution.benchmark_solver_calls": 0,
+        "status": "completed_with_critical_public_endpoint_rescoring_gap",
+        "verified.additional_release_tests_passed_after_declared_provider_install": 12,
+        "verified.body_free_output_identities": 2985,
+        "verified.layer_a_tests_passed": 79,
+        "verified.paper_assertions": 416,
+        "verified.paper_boundaries": 15,
+        "verified.paper_paths": 70,
+        "verified.reconstruction_commands_passed": 3,
+        "verified.release_assets_with_matching_size_and_sha256": 11
+      },
+      "boundary": "This review deliberately lacked restricted task bodies and evaluator-only answers; endpoint recomputation is a separate controlled review.",
+      "permitted_claim": "A fresh-context public-only reviewer verified the history-free release, aggregate arithmetic and bounded theory while identifying the public endpoint-rescoring limitation.",
+      "schema": "llm4or-independent-public-release-review-v1",
+      "sha256": "b51fea682d1816f0399ce7133d229dd81ed0568747b4a5849fc35bcf6f0516f9"
+    },
+    "infrastructure_root_cause_closure": {
+      "artifact": "experiments/infrastructure_root_cause_closure_20261017.json",
+      "assertions": {
+        "conclusions.environment_migration_needed_for_these_incidents": false,
+        "conclusions.rate_shaping_was_necessary_and_sufficient_for_nlequiv": true,
+        "conclusions.transport_environment_was_already_the_user_supplied_environment": true,
+        "incidents.nlequiv_rate_shaped_restart.completed": 450,
+        "incidents.nlequiv_rate_shaped_restart.infrastructure_unavailable": 0,
+        "process_state.matching_controller_or_transport_processes": 0,
+        "status": "experiments_stopped_root_causes_separated"
+      },
+      "boundary": "This classifies infrastructure incidents and does not create or revise an accuracy result.",
+      "human_report": "docs/INFRASTRUCTURE_ROOT_CAUSE_CLOSURE_20261017.md",
+      "human_report_sha256": "deff8ae95858d1e98f93a68c005069f4e4c8269aad8d1d80701fae117979e284",
+      "permitted_claim": "The NLEquiv infrastructure loss was a provider rate-window failure remediated by durable pacing, while the OptiTrust-style loss was a long-output duration cutoff.",
+      "schema": "infrastructure-root-cause-closure-v1",
+      "sha256": "5f4147913f6e9ffaceaca715d8660c69c4abf202c5ea7fc0fedbdfb5b03a68bf"
+    },
+    "main_figure_legend_audit_v2": {
+      "artifact": "experiments/main_figure_legend_audit_v2_20261017.json",
+      "assertions": {
+        "decision.legends_ready_for_submission_package": true,
+        "decision.venue_specific_final": false,
+        "legends.figure_1.word_count": 228,
+        "legends.figure_2.word_count": 196,
+        "legends.figure_3.diagnostic_noncausal_boundary_present": true,
+        "legends.figure_3.label_blind_posthoc_boundary_present": true,
+        "legends.figure_3.source_data_boilerplate_present": true,
+        "legends.figure_3.word_count": 189,
+        "shared_checks.each_legend_below_250_words": true,
+        "shared_checks.no_claim_of_automatic_skill_discovery": true,
+        "shared_checks.rendered_panel_order_matches_legends": true,
+        "status": "passed_rendered_label_and_length_review_venue_pending"
+      },
+      "boundary": "Venue-specific production instructions remain pending until a target venue is fixed; the audit adds no experimental or causal claim.",
+      "permitted_claim": "All three rendered main-figure legends are self-contained, panel-complete and below the working 250-word ceiling.",
+      "schema": "llm4or-main-figure-legend-audit-v2",
+      "sha256": "04192b8cb9da9a0abc0bf3c4fa5c299b2d7f00f46012de33c7979665b113592d"
+    },
+    "manuscript_figure1_render": {
+      "artifact": "experiments/figure1_render_qa_20261015.json",
+      "assertions": {
+        "automated_qa.alignment.verdict": "PASS",
+        "automated_qa.collision.fail": 0,
+        "automated_qa.collision.verdict": "PASS",
+        "automated_qa.collision.warn": 0,
+        "automated_qa.pdf_text.below_minimum": 0,
+        "automated_qa.pdf_text.minimum_font_pt": 5.0,
+        "automated_qa.source_preflight.fail": 0,
+        "automated_qa.source_preflight.verdict": "PASS",
+        "claim_boundaries.canonical_manifest_currently_implemented": true,
+        "claim_boundaries.complexity_weighted_promotion_currently_executed": false,
+        "claim_boundaries.universal_natural_language_proof_claimed": false,
+        "claim_boundaries.unrestricted_recursive_self_improvement_claimed": false,
+        "execution.api_calls": 0,
+        "execution.model_calls": 0,
+        "execution.solver_calls": 0,
+        "final_size.height_mm": 135.89,
+        "final_size.raster_dpi": 600,
+        "final_size.width_mm": 180.0,
+        "status": "passed_publication_size_render_and_visual_qa",
+        "visual_qa.overall": "PASS"
+      },
+      "boundary": "The schematic adds no experimental result; manifest description length was measured after development and is not a retrospective generalization guarantee. Complexity-weighted promotion and unrestricted recursive self-improvement remain unestablished.",
+      "figure": "manuscript/figures/figure1_knowledge_compilation.pdf",
+      "figure_sha256": "7c4e0b246881f6a827da27006b16af3d564eb60f5c720e3a7147a153d266044a",
+      "human_report": "docs/FIGURE1_RENDER_QA_20261015.md",
+      "human_report_sha256": "d149121fadf2905ffee60324785ba868bc23bf3a879ef83953fb09f68cd5bf7f",
+      "permitted_claim": "The main method schematic has a reproducible 180-mm Python/Matplotlib render with editable vector outputs, 600-dpi raster companions and passing source, font, collision, alignment and final-size visual checks; it depicts the implemented canonical manifest as a retrospective artifact measurement.",
+      "schema": "llm4or-figure1-render-qa-v1",
+      "sha256": "8e779787a9c09329d27cf315efcfd7c80e52bc0eaad16cd4d7f3851343d15951"
+    },
+    "manuscript_figure2_render": {
+      "artifact": "experiments/figure2_render_qa_20261015.json",
+      "assertions": {
+        "automated_qa.alignment.verdict": "PASS",
+        "automated_qa.collision.fail": 0,
+        "automated_qa.collision.verdict": "PASS",
+        "automated_qa.collision.warn": 0,
+        "automated_qa.pdf_text.below_minimum": 0,
+        "automated_qa.pdf_text.minimum_font_pt": 5.5,
+        "automated_qa.source_preflight.fail": 0,
+        "automated_qa.source_preflight.verdict": "PASS",
+        "final_size.height_mm": 122.0,
+        "final_size.raster_dpi": 600,
+        "final_size.width_mm": 180.0,
+        "privacy.contains_credential": false,
+        "privacy.contains_evaluator_only_answer": false,
+        "privacy.contains_problem_text": false,
+        "privacy.contains_request_or_response_body": false,
+        "status": "passed_publication_size_render_and_visual_qa",
+        "visual_qa.overall": "PASS"
+      },
+      "boundary": "The render visualizes sealed aggregate evidence, adds no benchmark result or execution call, keeps the two endpoint definitions separate, treats zero regressions as observed rather than guaranteed, and does not rescore router accuracy.",
+      "figure": "manuscript/figures/figure2_endpoint_preservation.pdf",
+      "figure_sha256": "2aeac3a7a45452ebef683bdfe436663e0f6136c618e90126e025c4e78f57bec5",
+      "human_report": "docs/FIGURE2_RENDER_QA_20261015.md",
+      "human_report_sha256": "d115511c7f8c58119f517232de01577b78ea8acab7e2326e143f22632333c90d",
+      "permitted_claim": "The main endpoint figure has a reproducible 180-mm Python/Matplotlib render with editable vector outputs, 600-dpi raster companions and passing source, font, collision, alignment and final-size visual checks.",
+      "schema": "llm4or-figure2-render-qa-v1",
+      "sha256": "a9fb4d781939e451467eb53e0d3de79fb66abeee97f67296865ec7517a811a11"
+    },
+    "manuscript_figure2_source_data": {
+      "artifact": "results/manuscript_figure2_source_data_audit_20261015.json",
+      "assertions": {
+        "execution.api_calls": 0,
+        "execution.model_calls": 0,
+        "execution.native_evaluator_calls": 0,
+        "execution.solver_calls": 0,
+        "execution.vm_calls": 0,
+        "status": "passed"
+      },
+      "boundary": "Source-data validation only; no new benchmark accuracy is computed by rendering.",
+      "permitted_claim": "The aggregate tables planned for the main endpoint figure reproduce every displayed count, ratio, grouped outcome and routing-identity field from the sealed evidence.",
+      "schema": "llm4or-manuscript-figure2-source-data-audit-v1",
+      "sha256": "681dc3453e9134189059f80b7b432e4b71da927337368f286a3b0c05c5f58a8c"
+    },
+    "manuscript_figure3_render": {
+      "artifact": "experiments/figure3_render_qa_20261017.json",
+      "assertions": {
+        "automated_qa.alignment.verdict": "PASS",
+        "automated_qa.clean_reconstruction.verdict": "PASS",
+        "automated_qa.collision.fail": 0,
+        "automated_qa.collision.verdict": "PASS",
+        "automated_qa.collision.warn": 0,
+        "automated_qa.pdf_text.below_minimum": 0,
+        "automated_qa.pdf_text.minimum_font_pt": 5.5,
+        "automated_qa.source_data_reconstruction.verdict": "PASS",
+        "automated_qa.source_preflight.fail": 0,
+        "automated_qa.source_preflight.verdict": "PASS",
+        "final_size.height_mm": 110.0,
+        "final_size.raster_dpi": 600,
+        "final_size.width_mm": 180.0,
+        "privacy.contains_credential": false,
+        "privacy.contains_evaluator_only_answer": false,
+        "privacy.contains_problem_text": false,
+        "privacy.contains_request_or_response_body": false,
+        "status": "passed_publication_size_render_and_visual_qa",
+        "visual_qa.overall": "PASS"
+      },
+      "boundary": "The figure adds no experiment. The label-blind panel is same-benchmark post hoc robustness rather than independent confirmation, and the diagnostic panel is not a causal decomposition.",
+      "clean_reconstruction": "experiments/figure3_clean_reconstruction_audit_20261017.json",
+      "clean_reconstruction_sha256": "b07a1c103e237b0570afa9f25a80e32056bce2d0907af637cb18b4d66c6087bf",
+      "figure": "manuscript/figures/figure3_retailopt_confirmation.pdf",
+      "figure_sha256": "fc3c9dba7b48359b1684e7589435eecd422183062a32f2d92a63b95fc2cc7510",
+      "permitted_claim": "Figure 3 faithfully visualizes the prospectively frozen RetailOpt endpoint, paired archetype evidence and bounded post hoc robustness and diagnostics from aggregate body-free Source Data.",
+      "schema": "llm4or-figure3-render-qa-v1",
+      "sha256": "cea858d2d07b95bc1656d0c9f70d799746eef2eb51ab0cdc3fe952b5e18935e9",
+      "source_data_audit": "results/manuscript_figure3_source_data_audit_20261017.json",
+      "source_data_audit_sha256": "02ccc2527e14e1e6b8fff9f2f42b2315375de304356a21fb645dc6b06e4a6a26"
+    },
+    "matched_acquisition_power": {
+      "artifact": "experiments/matched_acquisition_power_analysis_20261015.json",
+      "assertions": {
+        "eight_pair_canary.role": "Engineering and variance-estimation pilot only",
+        "primary_design.alpha": 0.05,
+        "recommended_two_stage_use.illustrative_conservative_target": "If r=0.30 and q=0.70 are the minimum relevant alternative, 138 total independent pairs give at least 80% power and 186 give at least 90% power."
+      },
+      "boundary": "Offline planning assumptions, not effect estimates; no proposal generation, dispatch or endpoint result is authorized or implied.",
+      "permitted_claim": "Under the displayed exact conditional planning scenarios, eight total proposal pairs are an engineering pilot rather than a confirmatory efficacy study; the illustrative r=.30,q=.70 alternative requires 138 or 186 independent pairs for 80% or 90% power.",
+      "schema": "matched-acquisition-exact-power-analysis-v1",
+      "sha256": "f2362bab0bdcac78d30339d4e0b03ab32176974b44f5d6c0e3b678ff0d24f82d"
+    },
+    "miplib_nl_custody_rehearsal": {
+      "artifact": "experiments/miplib_nl_custody_rehearsal_20261016.json",
+      "assertions": {
+        "execution.api_calls": 0,
+        "execution.model_calls": 0,
+        "execution.native_calls": 0,
+        "execution.solver_calls": 0,
+        "execution.vm_calls": 0,
+        "gates.dispatch_allowed": false,
+        "gates.packet_completeness": false,
+        "gates.source_materialization": false,
+        "materialization.counts.exact_instances": 220,
+        "materialization.counts.instances": 223,
+        "materialization.counts.mismatched_instances": 3,
+        "materialization.counts.missing_declared_data_files": 5,
+        "materialization.counts.undeclared_actual_data_files": 5,
+        "rehearsal.published_file_count": 0,
+        "status": "failed_source_materialization_no_bundle_published"
+      },
+      "boundary": "This is a zero-model, zero-solver fail-closed custody rehearsal. It does not create an experimental cohort, endpoint result, accuracy estimate, treatment effect, or permission to use the 220 exact records.",
+      "human_report": "docs/MIPLIB_NL_CUSTODY_REHEARSAL_20261016.md",
+      "human_report_sha256": "7cd03dc10b0d087d8cb5d0dc10a4d8b706ec0f17c9e22ced98afc2791ee367cd",
+      "permitted_claim": "The custodian rejected the incomplete fixed source before publication and left no inference or evaluator bundle.",
+      "schema": "llm4or-miplib-nl-custody-rehearsal-v1",
+      "sha256": "258aae2ae7dee8bfcd39597d1bf95515f4bb0c9acbb4bca4f71eec7651d7bbdb"
+    },
+    "miplib_nl_same_knowledge_source_gate": {
+      "artifact": "experiments/miplib_nl_same_knowledge_source_gate_20261016.json",
+      "assertions": {
+        "decision.current_release_eligible": false,
+        "decision.dispatch_allowed": false,
+        "decision.source_eligible_in_principle": true,
+        "execution.api_calls": 0,
+        "execution.instance_bodies_opened": 0,
+        "execution.model_calls": 0,
+        "execution.optimal_values_opened": 0,
+        "execution.solver_calls": 0,
+        "materialization.counts.exact_instances": 220,
+        "materialization.counts.instances": 223,
+        "materialization.counts.mismatched_instances": 3,
+        "materialization.counts.missing_declared_data_files": 5,
+        "materialization.counts.undeclared_actual_data_files": 5
+      },
+      "boundary": "This body-free source audit creates no benchmark packet, score, accuracy estimate, treatment effect, or dispatch authorization. The 220 exact instances cannot be selected after this audit.",
+      "human_report": "docs/MIPLIB_NL_SAME_KNOWLEDGE_SOURCE_GATE_20261016.md",
+      "human_report_sha256": "aa79ccde56dc2c8f15c05949d365cea789101e66239ad535b483e64e4239d976",
+      "permitted_claim": "The fixed MIPLIB-NL release is a distinct candidate lineage, but it fails whole-source materialization and is not eligible for the prospective same-knowledge dispatch.",
+      "schema": "llm4or-miplib-nl-same-knowledge-source-gate-v2",
+      "sha256": "b975de4cd969373072b43daca8279fa54255eb9d6d3f40016c45315ebc5a88d1"
+    },
+    "mixed_public_router": {
+      "assertions": {
+        "claim_guard.accuracy_recomputed": false,
+        "claim_guard.retrospective_composition_only": true,
+        "exact_identity_pass": true,
+        "families.or_debug.exact_matches": 2845,
+        "families.tsp.exact_matches": 140,
+        "totals.duplicate_mixed_records": 0,
+        "totals.exact_matches": 2985,
+        "totals.invalid_mixed_records": 0,
+        "totals.missing_mixed_records": 0,
+        "totals.output_mismatches": 0,
+        "totals.records": 2985,
+        "totals.route_mismatches": 0,
+        "totals.source_mismatches": 0,
+        "totals.terminal_failures": 0,
+        "totals.unexpected_mixed_records": 0
+      },
+      "audit": "results/mixed_skill_confirmation_public_audit_v3_20261015.json",
+      "audit_sha256": "3c9b8700639cfe5599fc76b18cca4318b14d4b0865fb5bd343f5c0d26fead08f",
+      "boundary": "Retrospective interface composition only; no fresh accuracy, learned routing, paraphrase robustness, or distribution-shift result.",
+      "bundle": "experiments/public_projections/mixed_skill_confirmation_bundle_projection_20261015.json",
+      "bundle_sha256": "da9a35dcb6b76e2289a7a9f0613384661dac80f6e96b8c3ed41ba1f5538fee65",
+      "outputs": "results/public_projections/mixed_skill_confirmation_outputs_projection_20261015.json",
+      "outputs_sha256": "5f7b5860f4e50e5ce37b85e49fbd9e3b96488429bf08e779fe17c503ded1ad70",
+      "permitted_claim": "The frozen public-only mixed router preserves the exact direct-family output for every TSP and OR-Debug confirmation envelope.",
+      "schema": "llm4or.mixed_skill_confirmation_public_audit.v1"
+    },
+    "nlequiv_routed_skill_result": {
+      "artifact": "experiments/nlequiv_skill_paced_result_20261017.json",
+      "assertions": {
+        "accuracy.flat-short.correct": 124,
+        "accuracy.routed-skill-short.correct": 128,
+        "accuracy.structured-short.correct": 124,
+        "claim_boundary.direct_solver_code_modeling_accuracy": false,
+        "claim_boundary.independent_source_lineage": true,
+        "population.pairs": 150,
+        "population.predictions": 450,
+        "primary_gate.passed": false,
+        "primary_paired.corrections": 13,
+        "primary_paired.one_sided_exact_mcnemar_p": 0.2617335319519043,
+        "primary_paired.regressions": 9,
+        "secondary_paired.corrections": 13,
+        "secondary_paired.one_sided_exact_mcnemar_p": 0.577490508556366,
+        "secondary_paired.regressions": 13,
+        "status": "complete"
+      },
+      "boundary": "This is nonlinear-equivalence classification rather than direct solver-code formulation accuracy; opened outcomes are development evidence.",
+      "execution": "experiments/nlequiv_skill_paced_execution_20261017.json",
+      "execution_sha256": "3b2fda44be1bdd2c815a0039c2fddba61f133aedaed95c567c361a65040f1f81",
+      "human_report": "docs/NLEQUIV150_ROUTED_SKILL_RESULT_20261017.md",
+      "human_report_sha256": "0ac0cc9628bdf68798fa642e80472345cf717ce62adafde6da0d1a7ec97db6a7",
+      "permitted_claim": "On independent NLEquiv-150, same-fact structuring is neutral and routed generic skills are directionally positive but do not pass the prespecified paired gate.",
+      "schema": "nlequiv-routed-skill-v1-full-result",
+      "sha256": "5ea3b84d9e0a7a2e8ad06900acf1c527b504cbefa2e1f2aacc96344ffceb6501",
+      "terminal_audit": "experiments/nlequiv_skill_paced_terminal_audit_20261017.json",
+      "terminal_audit_sha256": "0d407ad08e4be46dccd8c0f59df610ce849b69e61ae9b85afff03c97f622fc4c"
+    },
+    "optitrust_artifact_availability": {
+      "assertions": {
+        "ledger.baselines.optitrust.official_reproduction_status": "not_yet_reproducible_from_verified_artifact",
+        "ledger.baselines.optitrust.runnable_files_in_arxiv_source": 0
+      },
+      "boundary": "This is an artifact-availability result, not proof that no artifact exists globally; no published score may replace a local reproduction.",
+      "ledger": "experiments/external_baseline_evidence_ledger_20261014.json",
+      "ledger_sha256": "f9aaa74190c1735105fc0061662be1ca2b0411479c77bbafcc3b4f9272c7d0e7",
+      "permitted_claim": "The inspected official arXiv v1 source and bounded public-channel recheck did not yield a verified runnable official OptiTrust artifact.",
+      "public_recheck": "results/optitrust_artifact_recheck_20261014.json",
+      "public_recheck_sha256": "64cf9e2a217f4ed33526fb5366c6f4b37007290ec201be870bb567e167d5d104",
+      "source_audit": "results/optitrust_arxiv_source_audit_20261014.json",
+      "source_audit_sha256": "d1eb6a32b479d236aefb698d14431c22d292cf03d5bbd9b3c0bd6416ec369c80"
+    },
+    "optitrust_style_indexed_closure": {
+      "artifact": "experiments/optitrust_indexed_closure_20261016.json",
+      "assertions": {
+        "aggregate_new_indexed_execution.common38_accuracy_scored": false,
+        "aggregate_new_indexed_execution.logical_requests": 52,
+        "aggregate_new_indexed_execution.new_solver_calls": 0,
+        "aggregate_new_indexed_execution.physical_attempts": 59,
+        "aggregate_new_indexed_execution.reference_answers_loaded": false,
+        "aggregate_new_indexed_execution.retry_attempts": 7,
+        "conclusion.capacity_gate_passed_version": "v4",
+        "conclusion.full_common38_dispatched": false,
+        "conclusion.infrastructure_closed": true,
+        "conclusion.method_feasibility_passed": false,
+        "feasibility.v1.infrastructure_unavailable": 0,
+        "feasibility.v1.selected_consensus_cells": 0,
+        "feasibility.v2.infrastructure_unavailable": 0,
+        "feasibility.v2.selected_consensus_cells": 0,
+        "status": "closed_with_boundary_no_common38_dispatch"
+      },
+      "boundary": "This is not an official OptiTrust reproduction, native five-language execution, equal-budget comparison, accuracy estimate, or evidence of OptiTrust superiority or inferiority.",
+      "human_report": "docs/OPTITRUST_INDEXED_CLOSURE_20261016.md",
+      "human_report_sha256": "742d4d52216705c5a031be53f1899234f8f39869a2451ef27ea753018c506618",
+      "permitted_claim": "The bounded indexed representation closes the observed provider-duration failure, but the disclosed paper-structure adapter fails two frozen two-family method gates and therefore has no common-38 accuracy row.",
+      "schema": "optitrust-indexed-closure-v1",
+      "sha256": "10f074655918d84e758ae99dc031e8492513479b90e591646340ea9282ab6d5d"
+    },
+    "optitrust_style_safe_sidecar_v1": {
+      "assertions": {
+        "claim_boundary.method_accuracy_estimated": false,
+        "claim_boundary.official_optitrust_reproduction": false,
+        "cohort.planned": 38,
+        "cohort.scoreable": 0,
+        "failure_localization.terminal_slot_distribution.5": 35,
+        "failure_localization.terminal_slot_distribution.6": 1,
+        "failure_localization.terminal_slot_distribution.9": 2,
+        "method": "OptiTrust-style-safe-sidecar",
+        "outcomes.infrastructure_unavailable": 38,
+        "paired_against_current.status": "not_estimable",
+        "status": "complete_unscoreable_adapter_capacity_failure"
+      },
+      "audit": "experiments/fresh_common38_optitrust_style_audit_v1_20261016.json",
+      "audit_sha256": "23501c91cb283e1581a3c90c5e290412974558c5e1b99118e5df77f06e3ae4da",
+      "boundary": "This is not an accuracy estimate, official OptiTrust reproduction, native five-language execution, equal-budget leaderboard row, or paired comparison.",
+      "permitted_claim": "The frozen paper-based safe-sidecar sensitivity completed as an audited adapter-capacity failure with zero scoreable outcomes and 38 infrastructure-unavailable cells.",
+      "result": "experiments/fresh_common38_optitrust_style_result_v1_20261016.json",
+      "result_sha256": "328e917de571222446582d3d4c91fce760566b7e329c282affdfea9600091ce6",
+      "schema": "fresh-common38-optitrust-style-synthesis-v1",
+      "synthesis": "experiments/fresh_common38_optitrust_style_synthesis_20261016.json",
+      "synthesis_sha256": "1d844184f5fd2984e3e4aa98ffc5916af48bf949dae82b0aff65a160c8673f2a"
+    },
+    "or_debug_confirmation": {
+      "artifact": "results/public_projections/or_debug_confirmation_evaluation_projection_20261015.json",
+      "assertions": {
+        "comparison.corrected_primary.both_wrong": 93,
+        "comparison.corrected_primary.corrections": 1924,
+        "comparison.corrected_primary.evolved_correct": 2752,
+        "comparison.corrected_primary.regressions": 0,
+        "comparison.corrected_primary.static_correct": 828,
+        "comparison.records": 2845,
+        "comparison.released_primary.both_wrong": 609,
+        "comparison.released_primary.corrections": 1408,
+        "comparison.released_primary.evolved_correct": 2236,
+        "comparison.released_primary.regressions": 0,
+        "comparison.released_primary.static_correct": 828,
+        "confirmation_inference.gain_p_value": 2.710505431213761e-20,
+        "confirmation_inference.groups": 100,
+        "confirmation_inference.negative_groups": 0,
+        "confirmation_inference.positive_groups": 65,
+        "confirmation_inference.tied_groups": 35,
+        "source_metadata.execution.model_or_api_calls": 0
+      },
+      "boundary": "Corrected-primary uses a development-frozen source correction and yields 2752/2845; unmodified released-primary yields 2236/2845. This is methodological replication across sources, not transfer of one unchanged skill, automatic synthesis, independent item-level samples, or unrestricted RSI.",
+      "method_outputs": "results/public_projections/or_debug_confirmation_method_outputs_projection_20261015.json",
+      "method_outputs_sha256": "d714e72bb9207ba7ca7146f43a196f9b6599e1e43b5ea94446fe9a60bfbbcf46",
+      "permitted_claim": "The complete OR-Debug system improves both disclosed full-denominator endpoints over a generic fresh-IIS static policy on a second benchmark source and repair task; this end-to-end result does not isolate the effect of construction, verification, routing, or promotion components.",
+      "schema": "llm4or-release-or-debug-evaluation-projection-v1",
+      "sha256": "7f83555e8b81ff15bad510b95bf7e2617d87bb139786777407704a55e10a70ca"
+    },
+    "or_debug_group_endpoint_sensitivity": {
+      "artifact": "results/or_debug_group_endpoint_sensitivity_audit_20261015.json",
+      "assertions": {
+        "execution.api_calls": 0,
+        "execution.model_calls": 0,
+        "execution.solver_calls": 0,
+        "privacy.contains_evaluator_only_answer": false,
+        "privacy.contains_problem_text": false,
+        "privacy.contains_reference_repair": false,
+        "summary.endpoint_divergence.error_type_counts.B": 516,
+        "summary.endpoint_divergence.evolved_records": 516,
+        "summary.endpoint_divergence.shape_groups_with_divergence": 20,
+        "summary.endpoint_divergence.static_records": 0,
+        "summary.maximum_group_size": 126,
+        "summary.minimum_group_size": 1,
+        "summary.records": 2845,
+        "summary.shape_groups": 100,
+        "summary.unique_membership_hashes": 100
+      },
+      "boundary": "Membership hashes and public shape groups support reconstruction without exposing task text or answers; they do not prove that the grouping captures every source-model or generation-template lineage.",
+      "permitted_claim": "A complete aggregate ledger accounts for all 100 confirmation shape groups and localizes the 516 corrected-versus-released evolved-output disagreements to type B across 20 groups.",
+      "schema": "llm4or-or-debug-group-endpoint-sensitivity-audit-v1",
+      "sha256": "613fd34cd25a844813c9decf22e800a4c99eba651d25b887b50d897327e33a33"
+    },
+    "proposal_provenance_inventory": {
+      "artifact": "experiments/proposal_provenance_inventory_20261015.json",
+      "assertions": {
+        "current_dcp_summary.distinct_proposal_identities": 5,
+        "current_dcp_summary.free_text_or_untyped": 4,
+        "current_dcp_summary.strict_matched_typed_units": 1,
+        "current_dcp_summary.typed_finite_grammar": 1,
+        "decision.historical_artifacts_form_a_valid_eight_unit_matched_population": false,
+        "legacy_vera_skill_lineage_class.distinct_proposal_identities_visible_in_those_records": 6,
+        "per_instance_formulation_trajectory_class.distinct_source_proposal_identities": 132,
+        "per_instance_formulation_trajectory_class.records": 229
+      },
+      "boundary": "Metadata-only provenance classification; it neither evaluates proposal text nor estimates an acquisition-policy effect.",
+      "permitted_claim": "Historical artifacts with proposal hashes separate into incompatible statistical objects; only one current historical episode is a reusable skill proposal under the common frozen typed grammar.",
+      "schema": "proposal-provenance-inventory-v1",
+      "sha256": "b301eb0b168e85009b16e0f7f26404f30950cf6a123a5fdcdc4363dfa12d90f1"
+    },
+    "prospective_acquisition_canary": {
+      "assertions": {
+        "accounting.logical_cells": 48,
+        "accounting.physical_attempts_completed": 44,
+        "accounting.physical_attempts_reserved": 44,
+        "accounting.usage.completion_tokens": 4723,
+        "accounting.usage.prompt_tokens": 42797,
+        "accounting.usage.total_tokens": 47520,
+        "claim_boundary.automatic_acquisition_efficacy_claimed": false,
+        "claim_boundary.benchmark_accuracy_claimed": false,
+        "claim_boundary.library_promotion_performed": false,
+        "engineering_gate.global_safety_failure_observed": false,
+        "engineering_gate.passed": false,
+        "paired_counts.both": 8,
+        "paired_counts.flat_only": 0,
+        "paired_counts.neither": 0,
+        "paired_counts.treatment_only": 0,
+        "recomputed_evidence_counts.typed_responses": 44,
+        "recomputed_evidence_counts.verification_passed": 16
+      },
+      "audit": "results/prospective_acquisition_canary_audit.json",
+      "audit_sha256": "4957610b0fd1bc00dd805957c8e5bd612822fb829cea2bbc314f217101f3645e",
+      "boundary": "The six atomic facts were authored, seven proposal units were deterministic synthetic rejected seeds, and the canary was an underpowered engineering gate. It does not establish automatic fact acquisition, efficacy equivalence, benchmark accuracy or component necessity.",
+      "permitted_claim": "In the prospective eight-pair engineering canary, flat and verifier-partitioned feedback both eventually admitted all eight rejected typed proposals, producing zero discordant pairs and failing the prespecified progression gate.",
+      "plan": "experiments/prospective_acquisition_canary_plan.json",
+      "plan_sha256": "3227b5af3275befbfe89466fb4cdb38e605850f159a6ecef1c8f62173ec76838",
+      "result": "results/prospective_acquisition_canary_result.json",
+      "result_sha256": "97f029192b6249de747f8e110c46280c1e7ae987d338dd021dc08b198a76c405",
+      "schema": "prospective-acquisition-canary-audit-v1"
+    },
+    "public_release_integrity": {
+      "artifact": "experiments/post_publication_release_v1_1_1_audit_20261016.json",
+      "assertions": {
+        "assets.all_downloaded_digests_match": true,
+        "execution.api_or_model_calls": 0,
+        "history.commit": "ed663fcdf8336f77c466652a516d5bc2c567f93a",
+        "history.parent_count": 0,
+        "history.reachable_commit_count": 1,
+        "history.tag": "v1.1.1",
+        "history.tree": "93fc594cfe9d51a5674608a75d6ec3821b4fdba5",
+        "public_clone.integrity_tests": 81,
+        "public_clone.reconstruction_checks": 3,
+        "public_clone.remote_submodule_acquisition_verified": true,
+        "status": "passed_public_v1_1_1_recursive_credential_free_integrity_contract",
+        "stress.different_payload_concurrent_runs": 500,
+        "stress.failures": 0,
+        "stress.identical_payload_concurrent_runs": 500
+      },
+      "boundary": "The public package verifies integrity, aggregate arithmetic and body-free identities; it does not rescore restricted benchmark endpoints or establish an archival DOI. v1.1.0 is superseded for reconstruction.",
+      "patch_artifact": "experiments/atomic_publisher_concurrent_cleanup_fix_audit_20261016.json",
+      "patch_artifact_sha256": "8ced4d63560d8a08b62bcc37ad9bb6bea5e2cfb01718897cbb76f451d63ce435",
+      "permitted_claim": "The public v1.1.1 history-free release contains the indexed-closure evidence surface and passes independent recursive-clone, remote-submodule, integrity, reconstruction, asset-digest and publisher-concurrency verification.",
+      "schema": "llm4or-post-publication-release-audit-v1",
+      "sha256": "64196dcf6e13f24d128b8aa2ebbb5f5df5e442ab404298b9de3747d21be405a8"
+    },
+    "retailopt190_decision_diagnostics": {
+      "artifact": "experiments/retailopt190_decision_diagnostics_20261017.json",
+      "assertions": {
+        "privacy.contains_objectives": false,
+        "privacy.contains_per_item_results": false,
+        "privacy.contains_problem_bodies": false,
+        "privacy.contains_responses": false,
+        "status": "complete"
+      },
+      "boundary": "Post-hoc aggregate localization only; no independent accuracy estimate or causal decomposition.",
+      "permitted_claim": "Aggregate decision errors concentrate in core inventory flow and substitution for Base and are largely removed by routed knowledge.",
+      "schema": "llm4or-retailopt190-decision-diagnostics-v1",
+      "sha256": "a31e58e939d360459e25e1b5093569dd50d8e73dc3bd895682ce49fa38e8b5e4"
+    },
+    "retailopt190_gold_compiler": {
+      "artifact": "experiments/retailopt190_gold_compiler_audit_20261017.json",
+      "assertions": {
+        "counts.archetypes": 38,
+        "counts.correct": 190,
+        "counts.fully_correct_archetypes": 38,
+        "counts.records": 190,
+        "execution.api_calls": 0,
+        "execution.solver_calls": 190,
+        "status": "passed"
+      },
+      "boundary": "This validates the compiler and admitted decision, not either model arm or an accuracy improvement.",
+      "permitted_claim": "The shared first-party compiler reaches the frozen endpoint on all 190 records under the admitted short decision before language-model inference.",
+      "schema": "llm4or-retailopt190-gold-compiler-audit-v1",
+      "sha256": "46a168c527b3ae696dd4e8a34757bf4321c3254609f969480e7bdc17b38bbcf1"
+    },
+    "retailopt190_label_blind_robustness": {
+      "artifact": "experiments/retailopt190_label_blind_evaluation_projection_v1_20261017.json",
+      "assertions": {
+        "archetypes.base_short.fully_correct": 10,
+        "archetypes.knowledge_short.fully_correct": 37,
+        "confirmation_gate.passed": true,
+        "instances.base_short.correct": 50,
+        "instances.knowledge_short.correct": 185,
+        "paired_archetypes.corrections": 27,
+        "paired_archetypes.one_sided_exact_mcnemar_p": 7.450580596923828e-09,
+        "paired_archetypes.regressions": 0,
+        "status": "confirmed_improvement",
+        "study_role": "posthoc_same_benchmark_robustness"
+      },
+      "boundary": "Post hoc same-benchmark robustness after opening the primary result; not a second independent confirmation or a causal decomposition of card components.",
+      "permitted_claim": "Removing informative arm and cell labels retains the RetailOpt effect when evidence is the only model-visible paired difference.",
+      "schema": "llm4or-retailopt190-public-evaluation-projection-v1",
+      "sha256": "55dd56a847d5c2627a71a27c5696cb0dc517c322c0ff018077c335e83fc0d445"
+    },
+    "retailopt190_primary_confirmation": {
+      "artifact": "experiments/retailopt190_short_full_evaluation_projection_v1_20261017.json",
+      "assertions": {
+        "archetypes.base_short.fully_correct": 10,
+        "archetypes.knowledge_short.fully_correct": 34,
+        "confirmation_gate.passed": true,
+        "execution.solver_evaluations": 380,
+        "instances.base_short.correct": 50,
+        "instances.base_short.total": 190,
+        "instances.knowledge_short.correct": 170,
+        "instances.knowledge_short.total": 190,
+        "paired_archetypes.corrections": 25,
+        "paired_archetypes.one_sided_exact_mcnemar_p": 4.023313522338867e-07,
+        "paired_archetypes.regressions": 1,
+        "status": "confirmed_improvement"
+      },
+      "boundary": "One benchmark, model and 38 archetype units; authored benchmark knowledge; the primary request exposes an arm label; no architecture-only, automatic-acquisition or broad-superiority claim.",
+      "permitted_claim": "The prospectively frozen short-decision, sparse-retrieval and counterexample-witness method improves the RetailOpt-190 direct-modeling endpoint over matched Base.",
+      "schema": "llm4or-retailopt190-public-evaluation-projection-v1",
+      "sha256": "8685f02f5434a6ce7fba322d7c6f7af86cc08452be484143b123141d112ff1f1"
+    },
+    "retailopt190_source_independence": {
+      "artifact": "experiments/retailopt190_independence_audit_20261017.json",
+      "assertions": {
+        "comparisons.lexical_exact_matches": 0,
+        "comparisons.numeric_template_exact_matches": 0,
+        "status": "passed",
+        "target.archetypes": 38,
+        "target.records": 190
+      },
+      "boundary": "Hash- and shingle-based independence does not prove absence of conceptual overlap; the source still contains 38 related archetypes with five variants each.",
+      "permitted_claim": "The frozen RetailOpt-190 source has no exact lexical or numeric-template identity with the prior six-source ledger or Text2Opt under the declared comparison.",
+      "schema": "llm4or-retailopt190-independence-audit-v1",
+      "sha256": "14b0dbe347d70d09a014f8872d1c30050fc30a7f2b9ef6da4ddf2a5cbbd311da"
+    },
+    "reviewer_claim_table": {
+      "artifact": "results/reviewer_claim_table_v1_20261016.json",
+      "assertions": {
+        "mixed_router.exact_matches": 2985,
+        "mixed_router.output_mismatches": 0,
+        "or_debug.primary_endpoint": "released_labels",
+        "or_debug.released_labels.control_correct": 828,
+        "or_debug.released_labels.corrections": 1408,
+        "or_debug.released_labels.method_correct": 2236,
+        "or_debug.released_labels.regressions": 0,
+        "or_debug.source_corrected_sensitivity.method_correct": 2752,
+        "tsp.control_correct": 54,
+        "tsp.method_correct": 100
+      },
+      "boundary": "Aggregate reconstruction verifies displayed counts but does not rescore restricted endpoints or identify architecture-level causality.",
+      "builder": "scripts/build_reviewer_claim_table.py",
+      "builder_sha256": "0af3c6b58918fa2278908678925dda4bc650394d45d1f33da8636377e824abff",
+      "module": "llm4or/reviewer_claim_table.py",
+      "module_sha256": "699f879a45b0cc4bb79e2a83e59825f16f3b403a095c23416d3ce49792ae1492",
+      "permitted_claim": "One public command reconstructs the headline aggregate table from four answer-free public artifacts.",
+      "schema": "llm4or-reviewer-claim-table-v1",
+      "sha256": "97d51e9c82b8ab4aea2a8f7a6a166244f32c87deb975defe6996ba2a4b85baba",
+      "test": "tests/test_reviewer_claim_table.py",
+      "test_sha256": "1e39763a79046077d54336b2cb0df268df1172290a312615996f8c34a05438ed"
+    },
+    "same_knowledge_mechanism_synthesis": {
+      "artifact": "experiments/same_knowledge_mechanism_synthesis_20261017.json",
+      "assertions": {
+        "claim_boundary.new_confirmatory_claim_requires_independent_endpoint": true,
+        "claim_boundary.universal_or_broad_superiority_supported": false,
+        "joint_inference.architecture_only_accuracy_gain_confirmed": false,
+        "joint_inference.benchmark_specific_complete_system_gains_invalidated": false,
+        "joint_inference.same_fact_structure_gain_confirmed": false,
+        "privacy.credentials_included": false,
+        "privacy.per_item_predictions_or_labels_included": false,
+        "privacy.problem_bodies_included": false,
+        "privacy.request_bodies_included": false,
+        "privacy.response_bodies_included": false,
+        "status": "closed_negative_and_directional_evidence"
+      },
+      "boundary": "A revised short-decision and counterexample-witness method requires a new independent direct-modeling endpoint.",
+      "human_report": "docs/SAME_KNOWLEDGE_MECHANISM_SYNTHESIS_20261017.md",
+      "human_report_sha256": "e3c2f2fa1f955a27dced92d2956779c0ae108104ab1376a2b0942c054f9992b1",
+      "permitted_claim": "The completed matched studies do not support architecture-only accuracy improvement; the defensible contribution is benchmark-specific knowledge compilation into an auditable fail-closed runtime.",
+      "schema": "same-knowledge-mechanism-synthesis-v1",
+      "sha256": "6c5d51532b28ba6446d891512d4f43ea10bc101c460187ecaef4a0cbcc4d33cb"
+    },
+    "same_knowledge_study_design": {
+      "artifact": "experiments/same_knowledge_task_level_study_design_20261016.json",
+      "assertions": {
+        "candidate_source.full_denominator_pairs": 89,
+        "candidate_source.status": "fixed_source_eligible_in_principle_not_dispatch_ready",
+        "dispatch_gate.answer_blind_custody": false,
+        "dispatch_gate.current_gate_passed": false,
+        "dispatch_gate.same_fact_dual_view_serializer": false,
+        "dispatch_gate.source_identity_frozen": true,
+        "dispatch_gate.source_license_explicit": true,
+        "dispatch_gate.synthetic_short_output_capacity": false,
+        "execution.api_calls": 0,
+        "execution.model_calls": 0,
+        "execution.native_calls": 0,
+        "execution.solver_calls": 0,
+        "status": "design_complete_formulationbench_fixed_custody_and_capacity_open"
+      },
+      "boundary": "No result, effect, authorization or endpoint evidence is created. The prospective endpoint is pair-validity accuracy for G09, not a replacement formulation-generation score.",
+      "permitted_claim": "The FormulationBench same-fact flat-versus-proof-obligation study is specified on all 89 pairs, but no dispatch is allowed until its custody, serializer and capacity gates pass.",
+      "schema": "llm4or-same-knowledge-task-level-study-design-v1",
+      "sha256": "43f440073361b9d1d224bfce7a576a533dd13887e4f858b53e8e7c01680c0b9a"
+    },
+    "targeted_offline_verification": {
+      "artifact": "results/paper_evidence_offline_verification_20261014.json",
+      "assertions": {
+        "execution.api_calls": 0,
+        "execution.benchmark_solver_calls": 0,
+        "execution.model_calls": 0,
+        "execution.native_evaluator_calls": 0,
+        "external_common40_equivalent_assertions.assertions_run": 11,
+        "external_common40_equivalent_assertions.failures": 0,
+        "external_common40_equivalent_assertions.status": "passed",
+        "unittest_run.errors": 0,
+        "unittest_run.failures": 0,
+        "unittest_run.status": "passed",
+        "unittest_run.tests_run": 40
+      },
+      "boundary": "Not a rerun of headline benchmark inference or the complete historical repository suite.",
+      "permitted_claim": "Targeted offline contract and reconstruction tests for the five paper evidence axes pass under the recorded source identities.",
+      "sha256": "27c0d1cfacb77d03036fa541c2bda7ff17402e66020dc6ccf527893a7d23a4c9"
+    },
+    "tsp_confirmation": {
+      "artifact": "results/tsp_constraint_confirmation_root_closure_20261014.json",
+      "assertions": {
+        "decision.automatic_llm_skill_synthesis_supported": false,
+        "decision.benchmark_specific_accuracy_improvement_supported": true,
+        "decision.same_source_size_confirmation_supported": true,
+        "result.corrections": 46,
+        "result.denominator": 140,
+        "result.positive_gain_each_size_13_to_19": true,
+        "result.regressions": 0,
+        "result.skill_abstentions_counted_incorrect": 40,
+        "result.skill_correct": 100,
+        "result.static_correct": 54,
+        "status": "closed_sealed_within_source_size_confirmation"
+      },
+      "boundary": "Same-source size confirmation; the item-level sign test is nominal under shared templates; the skill is authored rather than automatically synthesized.",
+      "permitted_claim": "The typed TSP skill improves benchmark formulation accuracy over the frozen strong static controller on the sealed size-13 through size-19 confirmation split.",
+      "schema": "tsp-constraint-confirmation-root-closure-v1",
+      "sha256": "0a0aef6aad14e720f537c3201b5cc585b0177c0a05150a18d0300f3e498c437d"
+    },
+    "typed_count_automatic_proposer": {
+      "assertions": {
+        "candidate_audit.failure_code": "resource_model_rejected",
+        "candidate_audit.grammar_size": 64,
+        "candidate_audit.matches_unique_authored_upper_bound": false,
+        "candidate_audit.verification.semantic.assignments_checked": 20977,
+        "candidate_audit.verification.semantic.passed": true,
+        "claim_boundary.general_automatic_acquisition_claimed": false,
+        "claim_boundary.independent_accuracy_claimed": false,
+        "passed": false
+      },
+      "boundary": "Negative proposer result on exposed development material; no recovery, promotion, accuracy gain or causal treatment effect.",
+      "permitted_claim": "The bounded model proposer entered the frozen typed grammar and satisfied the enumerated semantic domain but failed exact resource admission.",
+      "terminal_audit": "results/dcp_typed_count_cegis_revision_20261014_audit.json",
+      "terminal_audit_sha256": "c3fb17f664ccfbf4e46d08b7695e9730111bcd4b3ccf01cb48074307c6cc03f2"
+    },
+    "typed_count_exact_repair": {
+      "assertions": {
+        "claim_boundary.finite_frozen_grammar_only": true,
+        "claim_boundary.library_promoted": false,
+        "execution.model_api_calls": 0,
+        "execution.native_or_vm_calls": 0,
+        "execution.reference_answers_read": 0,
+        "execution.solver_calls": 0,
+        "repair_certificate.all_hypotheses_verified": 64,
+        "repair_certificate.guarantees.finite_class_minimality_exact": true,
+        "repair_certificate.guarantees.finite_class_uniqueness_exact": true,
+        "repair_certificate.hypothesis_class_size": 64,
+        "repair_certificate.minimum_passing_candidates": 1,
+        "repair_certificate.minimum_passing_distance": 2,
+        "repair_certificate.passed": true,
+        "repair_certificate.unique_minimum_repair": true
+      },
+      "boundary": "Deterministic verifier-mediated repair, not model discovery, grammar completeness, an unbounded semantic theorem or benchmark accuracy.",
+      "certificate": "results/dcp_typed_count_repair_certificate_v3_20261014.json",
+      "certificate_sha256": "43af5c30bc8bc69f0c60a990f133fe842e9cfee149119bbcf37b08159730d911",
+      "input": "results/dcp_typed_count_repair_input_20261014.json",
+      "input_sha256": "4bd31cba7a752110b38974faedfd2839682e94a9ea3d8e944b31b6028e8c0d53",
+      "permitted_claim": "Exhaustive answer-free verification proves one unique minimum distance-two repair within the frozen grammar and verifier.",
+      "schema": "proof-carrying-count-repair-report-v3"
+    },
+    "v1_2_local_candidate_metadata": {
+      "artifact": ".zenodo.json",
+      "assertions": {
+        "access_right": "open",
+        "license": "Apache-2.0",
+        "version": "v1.2.0"
+      },
+      "boundary": "No public v1.2.0 tag, GitHub release, archive record or DOI is claimed until independently verified.",
+      "builder": "scripts/build_history_free_release_candidate.py",
+      "builder_sha256": "da9ca5c0f2e016807bd780aa1a6e5f9be8c02c8d174f3e5d9ee3ed39ee478157",
+      "citation": "CITATION.cff",
+      "citation_sha256": "4b68e368998c8b1ac912d022799d19328ad63e3d1d71eddc891bf23bc492d36d",
+      "permitted_claim": "The local tree contains versioned metadata and a parameterized, fail-closed history-free builder for a v1.2.0 submission candidate.",
+      "release_notes": "docs/RELEASE_NOTES_V1_2_0_20261017.md",
+      "release_notes_sha256": "171b16b8bd49b25073943092eddd546433b8ab7a2e4636d70b92567c53dc62f9",
+      "sha256": "6568b215630f1e56fe1038ba777292b3ed62c09c72fab7729ff2ce1918dfe3d7"
+    }
+  },
+  "method_name": "Benchmark-Grounded Proof-Carrying Knowledge Compilation",
+  "paper_documents": {
+    "archival_deposit_report": {
+      "path": "docs/ARCHIVAL_DEPOSIT_PACKET_V1_1_1_20261016.md",
+      "sha256": "c5ba8ded27baec6cd65179d8ca50bb44298dfbb4266e4398f092b92f3ce4ce63"
+    },
+    "bibliography": {
+      "path": "manuscript/references.bib",
+      "sha256": "b306306cf3e90720d434ef8f92ae8e82166de3286388ee3e6343b51326407b2f"
+    },
+    "blind_review_synthesis_report": {
+      "path": "docs/FINAL_BLIND_REVIEW_SYNTHESIS_20261016.md",
+      "sha256": "e31b3232842a529051b9653c7f7b6725e552084cf0b93ea29b667c9421725a41"
+    },
+    "claim_evidence_matrix": {
+      "path": "docs/THEORY_CLAIM_EVIDENCE_MATRIX.md",
+      "sha256": "8beff240cbe43b039ee6898ce4f00718b5000074cf65dad6f9a99b969b530522"
+    },
+    "clean_clone_layer_a_runner": {
+      "path": "scripts/run_clean_clone_layer_a.py",
+      "sha256": "8b4273f9ea84f549782febc4fd33c20e764bd53d1ac9a9c9f3f7342440ea15dd"
+    },
+    "clean_clone_layer_a_test": {
+      "path": "tests/test_clean_clone_layer_a.py",
+      "sha256": "a4061fa09c8ccae9e64c4598b1c0a0e011fc262cf92f878384c96c54d2438a49"
+    },
+    "closest_method_claim_map": {
+      "path": "docs/CLOSEST_METHOD_CLAIM_MAP_20261016.md",
+      "sha256": "584dab184e208a2337a5771a21606e69080d409959f072c8da091d2899cb526e"
+    },
+    "component_ablation_power_report": {
+      "path": "docs/COMPONENT_ABLATION_POWER_AND_UNIT_INVENTORY_20261015.md",
+      "sha256": "c58d0f4bc8726bfdd04fdecab4d041456736d91b06814eb005e275fb82428e73"
+    },
+    "component_ablation_report": {
+      "path": "docs/COMPONENT_ABLATION_IDENTIFIABILITY_AUDIT_20261015.md",
+      "sha256": "1b71d413860e0f6b82f7b50c2c144afe545770e5162dbed0d850736ccc9a8156"
+    },
+    "controlled_endpoint_review_audit": {
+      "path": "docs/CONTROLLED_ENDPOINT_REVIEW_AUDIT_20261016.md",
+      "sha256": "60c2ca16743c8f84380bc1fd92e34a222bfd6776ad525ad3751d3d27839d329d"
+    },
+    "controlled_endpoint_review_protocol": {
+      "path": "docs/CONTROLLED_ENDPOINT_REVIEW_PROTOCOL_20261016.md",
+      "sha256": "d023d7e763e912bf2677a94c8b3c2f65bdd0ade73563e8e6e8787e8afb1fcefe"
+    },
+    "data_code_availability_audit": {
+      "path": "docs/DATA_CODE_AVAILABILITY_AUDIT_V5_20261016.md",
+      "sha256": "e01f7de264b692af6998c9d263a7f1e624711d833a55938184385e3e00c4e513"
+    },
+    "data_code_availability_audit_machine": {
+      "path": "experiments/data_code_availability_audit_v5_20261016.json",
+      "sha256": "b79cd105188a99637a20baa8a3de9cbdad9c8af68035bc27f9d46dd8c31afb6c"
+    },
+    "figure3_alignment": {
+      "path": "manuscript/figures/figure3_retailopt_confirmation.alignment.json",
+      "sha256": "b5e923d191118ddadfd5b1bc3c94a74407f73af3a6aaa1b9b20d15c2229479cf"
+    },
+    "figure3_clean_reconstruction": {
+      "path": "experiments/figure3_clean_reconstruction_audit_20261017.json",
+      "sha256": "b07a1c103e237b0570afa9f25a80e32056bce2d0907af637cb18b4d66c6087bf"
+    },
+    "figure3_collision": {
+      "path": "manuscript/figures/figure3_retailopt_confirmation.collision-audit.json",
+      "sha256": "dc74306fc46e5a56e6de32788a531a7732e6351f25e430244e4c7d32a8218e68"
+    },
+    "figure3_pdf": {
+      "path": "manuscript/figures/figure3_retailopt_confirmation.pdf",
+      "sha256": "fc3c9dba7b48359b1684e7589435eecd422183062a32f2d92a63b95fc2cc7510"
+    },
+    "figure3_png": {
+      "path": "manuscript/figures/figure3_retailopt_confirmation.png",
+      "sha256": "63a45daf9854fd089c8fa5664bccedc1a99bac5e81852728cec503bdc147c2fb"
+    },
+    "figure3_reconstruction_script": {
+      "path": "scripts/reconstruct_figure3.py",
+      "sha256": "dc2583be19e1ef1bb2ef5fb7983e3c1749400ebf8b32a09467288825dd877682"
+    },
+    "figure3_render_qa": {
+      "path": "experiments/figure3_render_qa_20261017.json",
+      "sha256": "cea858d2d07b95bc1656d0c9f70d799746eef2eb51ab0cdc3fe952b5e18935e9"
+    },
+    "figure3_render_script": {
+      "path": "scripts/render_main_figure3.py",
+      "sha256": "9da5ce36da57e41ec452c078b88037f3257c15ce7c18bff77e62095ef9182fbe"
+    },
+    "figure3_requirements": {
+      "path": "requirements-figure3.txt",
+      "sha256": "71d6329a3081c04c0a0820bfb2a0aef8972c8eafa75eb0db7e0b3cf7016a779a"
+    },
+    "figure3_source_audit_script": {
+      "path": "scripts/audit_figure3_source_data.py",
+      "sha256": "e8290e9067fbcf9dc86cd4224de84b7bf9198aa847f80bc9d0e15125440660db"
+    },
+    "figure3_source_data_audit": {
+      "path": "results/manuscript_figure3_source_data_audit_20261017.json",
+      "sha256": "02ccc2527e14e1e6b8fff9f2f42b2315375de304356a21fb645dc6b06e4a6a26"
+    },
+    "figure3_source_diagnostics": {
+      "path": "manuscript/source_data/figure3_retailopt_diagnostics.csv",
+      "sha256": "25e6bc92729b8fca0d78572ca523fa4cf752fe1197d6ee85cf9806a80d5ab13b"
+    },
+    "figure3_source_summary": {
+      "path": "manuscript/source_data/figure3_retailopt_summary.csv",
+      "sha256": "051a718fe1bc89228241766aca57d6b51ee3041574f2017163fe4698c5be89c8"
+    },
+    "figure3_svg": {
+      "path": "manuscript/figures/figure3_retailopt_confirmation.svg",
+      "sha256": "1302cd6881b9b4c3d1f60c894096be56edcf0fd8980821eed89ced909dbb0e7d"
+    },
+    "figure3_tiff": {
+      "path": "manuscript/figures/figure3_retailopt_confirmation.tiff",
+      "sha256": "3856a089c5cbf8f55d50bbd7266d25e4e5f62b5229a631ddcc7e33d20c488f23"
+    },
+    "figure_plan": {
+      "path": "manuscript/FIGURE_PLAN.md",
+      "sha256": "a6ba75577a25e364728b01ec2b1726986a720989061f1bdd9dfaa645d125e218"
+    },
+    "formulationbench_custody_artifact": {
+      "path": "experiments/formulationbench_custody_audit_20261016.json",
+      "sha256": "f2583a812259db6d0ae4cee63eea5b59804242ee4e9d1e75d3e5b380abb49e93"
+    },
+    "formulationbench_custody_report": {
+      "path": "docs/FORMULATIONBENCH_CUSTODY_AUDIT_20261016.md",
+      "sha256": "663d8caa2af4c330887b946f7ddc280a92049d1ee8bd645698bb9de119aebfa5"
+    },
+    "formulationbench_same_fact_artifact": {
+      "path": "experiments/formulationbench_same_fact_audit_20261016.json",
+      "sha256": "c70c0ead7bdfcccaf69ecba3398c1b702ef5700f73942c2ac4bfc362b3f4e760"
+    },
+    "formulationbench_same_fact_report": {
+      "path": "docs/FORMULATIONBENCH_SAME_FACT_AUDIT_20261016.md",
+      "sha256": "6196376f3cf8b61d45a93422d225f5be6b518f6e06ff2813f71bd29f231b74fe"
+    },
+    "formulationbench_same_knowledge_plan": {
+      "path": "docs/superpowers/plans/2026-10-16-formulationbench-same-knowledge.md",
+      "sha256": "6c5066f9f4d7ffe15ae75baa247605bcb892fa0d12083d5926444bd93b198f06"
+    },
+    "formulationbench_same_knowledge_result_report": {
+      "path": "docs/FORMULATIONBENCH_SAME_KNOWLEDGE_RESULT_20261016.md",
+      "sha256": "0fd820ea3309fdda87a6966cf215c543a0f153cd31a10de31044c148c65156d1"
+    },
+    "formulationbench_same_knowledge_spec": {
+      "path": "docs/superpowers/specs/2026-10-16-formulationbench-same-knowledge-design.md",
+      "sha256": "57f2784795f0a018db17f5bb61ee7bb831be0859d8324af87e90265369d6eb60"
+    },
+    "formulationbench_source_census_artifact": {
+      "path": "experiments/formulationbench_source_census_20261016.json",
+      "sha256": "e5fda4361c4faefa90034d09d457c6da9932f788ff01df74672f49998a27fd78"
+    },
+    "formulationbench_source_census_report": {
+      "path": "docs/FORMULATIONBENCH_SOURCE_CENSUS_20261016.md",
+      "sha256": "081b5de764d680daa65cdc3462fcc58aad302e82c8b81a59d5f8100804eca72e"
+    },
+    "formulationbench_source_qualification_artifact": {
+      "path": "experiments/formulationbench_source_qualification_20261016.json",
+      "sha256": "51569add85097c1bb48746e23f881b5316c8ae855f5ad631268c946545b927f7"
+    },
+    "formulationbench_source_qualification_report": {
+      "path": "docs/FORMULATIONBENCH_SOURCE_QUALIFICATION_20261016.md",
+      "sha256": "e8f50fef182104c12b8f031d3083a411cfd7cfe98b93f47a5ae183cbb3d4633f"
+    },
+    "fresh_common38_common_protocol_report": {
+      "path": "docs/FRESH_COMMON38_COMMON_PROTOCOL_SYNTHESIS_20261015.md",
+      "sha256": "c94fb11377815e89a24dd659cbf626e879b1c617eb8b7557b4f8a7f0b8568727"
+    },
+    "g07_bounded_scope_closure_report": {
+      "path": "docs/G07_BOUNDED_SCOPE_CLOSURE_20261015.md",
+      "sha256": "f21ea772df885837ff9015eae6e403e943c6e50c3fbbe7568104cc9bd7bd2175"
+    },
+    "g09_finite_component_report": {
+      "path": "docs/G09_FINITE_COMPONENT_CENSUS_V2_20261015.md",
+      "sha256": "cd5e01e8c2f76697a477cb4c1c5e42c99a1da300865faf711a18e63d3629b1a0"
+    },
+    "goal_completion_audit_human": {
+      "path": "docs/GOAL_COMPLETION_AUDIT_20261015.md",
+      "sha256": "3497252b6467495d263b9f2656cc2e0d7828312887c7184ed5fe2a2a8335e73f"
+    },
+    "independent_public_release_review": {
+      "path": "docs/INDEPENDENT_PUBLIC_RELEASE_REVIEW_20261016.md",
+      "sha256": "5da57368bfa7682a24fb508ff92f5edd62556c03746b6fd3f96c76649819e3a4"
+    },
+    "infrastructure_root_cause_report": {
+      "path": "docs/INFRASTRUCTURE_ROOT_CAUSE_CLOSURE_20261017.md",
+      "sha256": "deff8ae95858d1e98f93a68c005069f4e4c8269aad8d1d80701fae117979e284"
+    },
+    "knowledge_evolution_theory": {
+      "path": "docs/KNOWLEDGE_EVOLUTION_THEORETICAL_FRAMEWORK_20261015.md",
+      "sha256": "da0710bb3f84d11e22fae3306270b314d148320b3764bba9e885bed2b9fbe584"
+    },
+    "main_figure_legend_audit_v2": {
+      "path": "experiments/main_figure_legend_audit_v2_20261017.json",
+      "sha256": "04192b8cb9da9a0abc0bf3c4fa5c299b2d7f00f46012de33c7979665b113592d"
+    },
+    "manuscript_draft": {
+      "path": "manuscript/MANUSCRIPT_DRAFT.md",
+      "sha256": "cbd0e8924363082e6703c0eb00b9b9fa8230cbecfb62b5ce566f4a6644bf033e"
+    },
+    "manuscript_evidence_audit": {
+      "path": "manuscript/MANUSCRIPT_EVIDENCE_AUDIT.md",
+      "sha256": "4b39716dd93042966b89373ff51246f432adc946094ed4e0c3f331d1908535b9"
+    },
+    "method_roadmap": {
+      "path": "docs/TOP_CONFERENCE_METHOD_ROADMAP.md",
+      "sha256": "3ded8c900dd4e42b01e0ac69810b62bd342537c6958637c20a0eacd480c954fa"
+    },
+    "method_roadmap_v2": {
+      "path": "docs/TOP_CONFERENCE_METHOD_ROADMAP_V2_20261016.md",
+      "sha256": "5eb7159a9195c3f4235bdfe47818dffefc45da1b73a48f86d90e0e1705cfd29e"
+    },
+    "miplib_nl_custodian_cli": {
+      "path": "scripts/build_miplib_nl_custody.py",
+      "sha256": "df659920bddc3daf5122eca21264d59cdc9026376fa438ed7cf5e9d7ea22eafc"
+    },
+    "miplib_nl_custodian_design": {
+      "path": "docs/superpowers/specs/2026-10-16-miplib-nl-custodian-design.md",
+      "sha256": "f49fb7a94f10deb421879a1c9788a14336f9a3c086067c090a17bbd87bde744d"
+    },
+    "miplib_nl_custodian_implementation_plan": {
+      "path": "docs/superpowers/plans/2026-10-16-miplib-nl-custodian.md",
+      "sha256": "d26c0b95809df7cdbaf5394b5c2943b0f19fae34a18559048ab2dfcace3da134"
+    },
+    "miplib_nl_custodian_module": {
+      "path": "llm4or/miplib_nl_custody.py",
+      "sha256": "e0a6302e5e287db2b91f6425a8def42e80a5743f1a4c9bd2011ae579c1922a5d"
+    },
+    "miplib_nl_custodian_test": {
+      "path": "tests/test_miplib_nl_custody.py",
+      "sha256": "f6ae375b0cb4e62c2666015c979ed25953bdd2633c92615917a85ad61ddf36a4"
+    },
+    "miplib_nl_custody_rehearsal_artifact": {
+      "path": "experiments/miplib_nl_custody_rehearsal_20261016.json",
+      "sha256": "258aae2ae7dee8bfcd39597d1bf95515f4bb0c9acbb4bca4f71eec7651d7bbdb"
+    },
+    "miplib_nl_custody_rehearsal_report": {
+      "path": "docs/MIPLIB_NL_CUSTODY_REHEARSAL_20261016.md",
+      "sha256": "7cd03dc10b0d087d8cb5d0dc10a4d8b706ec0f17c9e22ced98afc2791ee367cd"
+    },
+    "miplib_nl_same_knowledge_source_gate_report": {
+      "path": "docs/MIPLIB_NL_SAME_KNOWLEDGE_SOURCE_GATE_20261016.md",
+      "sha256": "aa79ccde56dc2c8f15c05949d365cea789101e66239ad535b483e64e4239d976"
+    },
+    "nlequiv_routed_skill_result_report": {
+      "path": "docs/NLEQUIV150_ROUTED_SKILL_RESULT_20261017.md",
+      "sha256": "0ac0cc9628bdf68798fa642e80472345cf717ce62adafde6da0d1a7ec97db6a7"
+    },
+    "optitrust_style_common38_result": {
+      "path": "docs/OPTITRUST_STYLE_COMMON38_RESULTS_20261016.md",
+      "sha256": "284daade8ea61347317e5eb7088663820b1940a3c9278dbe08f7bca06ea4551b"
+    },
+    "or_debug_endpoint_sensitivity_source_data": {
+      "path": "manuscript/source_data/or_debug_endpoint_sensitivity.csv",
+      "sha256": "6b771547ea2d1bd7cd4bf093a1f99b4e7a206667a0e2e42f85ae011f06babc4e"
+    },
+    "or_debug_group_endpoint_sensitivity_source_data": {
+      "path": "manuscript/source_data/or_debug_group_endpoint_sensitivity.csv",
+      "sha256": "3659cddc28cddd41498ebd4bae86c7c5cc50b7d6a2eabd906fe2ab2d4d00c5c3"
+    },
+    "outline": {
+      "path": "manuscript/OUTLINE.md",
+      "sha256": "57138788376853ef58e465e4587322e6c61dead4822ce4e64064348a01b7931a"
+    },
+    "paper_frame": {
+      "path": "docs/TOP_CONFERENCE_PAPER_FRAME.md",
+      "sha256": "b9fdc0b9e7f62552539cfe5c4bbb77b04da43939c4c9fbfa770aba2516c86177"
+    },
+    "paper_story": {
+      "path": "docs/TOP_CONFERENCE_STORY.md",
+      "sha256": "e49bf60352277e75342932bc019f5e2d1ac5f7fcf7183d682c7500870ccbf185"
+    },
+    "public_integrity_entrypoint": {
+      "path": "scripts/run_public_integrity.py",
+      "sha256": "ff92a2232e98329fb100c9c939d7f12fc40468f17a0e2694ad4989619ba68d5a"
+    },
+    "public_integrity_entrypoint_test": {
+      "path": "tests/test_public_integrity_entrypoint.py",
+      "sha256": "fd03f4031615e63e1fedee6a32b907b520cc182933764f9e099e692a8a32ab8f"
+    },
+    "release_evidence_reconstruction_builder": {
+      "path": "scripts/reconstruct_release_evidence.py",
+      "sha256": "49dc09b2660ca61f777413c9a92b372096df6f85284c05f9a196293e479e5857"
+    },
+    "release_notes_v1_2_0_candidate": {
+      "path": "docs/RELEASE_NOTES_V1_2_0_20261017.md",
+      "sha256": "171b16b8bd49b25073943092eddd546433b8ab7a2e4636d70b92567c53dc62f9"
+    },
+    "release_readiness_report": {
+      "path": "docs/RELEASE_READINESS_DELTA_V2_20261015.md",
+      "sha256": "b4932c2dc6415799d4f16e735aa3934770f25ed902d728564203978ca5e4db4b"
+    },
+    "retailopt_docs_INFRASTRUCTURE_ROOT_CAUSE_20261017_md": {
+      "path": "docs/INFRASTRUCTURE_ROOT_CAUSE_20261017.md",
+      "sha256": "3db81af14482e29aa44235ec24aba6de2c729970cb55b6e5b31151d067968d1f"
+    },
+    "retailopt_docs_PROJECT_HANDOFF_md": {
+      "path": "docs/PROJECT_HANDOFF.md",
+      "sha256": "f94eb5de129f9a73eb9e82c6e081aefcbb8be85609645307a7f11bf8ab74e220"
+    },
+    "retailopt_docs_RETAILOPT190_SHORT_DECISION_PROTOCOL_20261017_md": {
+      "path": "docs/RETAILOPT190_SHORT_DECISION_PROTOCOL_20261017.md",
+      "sha256": "f251e6a23a20decaf8f6ca81734c85931293dfd43109782de2597280a7e826c7"
+    },
+    "retailopt_docs_RETAILOPT190_SOURCE_AND_ENDPOINT_GATE_20261017_md": {
+      "path": "docs/RETAILOPT190_SOURCE_AND_ENDPOINT_GATE_20261017.md",
+      "sha256": "ab82084ea655c9fa6589372dc0fcc221b6876fe74e313a0de4efe32c0216a6dd"
+    },
+    "retailopt_experiments_infrastructure_root_cause_audit_20261017_json": {
+      "path": "experiments/infrastructure_root_cause_audit_20261017.json",
+      "sha256": "10915ca7ff2517f01515d194c8c100b180b361492a940465fa237cbf84dd544f"
+    },
+    "retailopt_experiments_retailopt190_endpoint_stability_audit_20261017_json": {
+      "path": "experiments/retailopt190_endpoint_stability_audit_20261017.json",
+      "sha256": "d494b12c56d73e1977cbc6509e0e01bf6094a52733129503adf32d2a77776621"
+    },
+    "retailopt_experiments_retailopt190_label_blind_execution_20261017_json": {
+      "path": "experiments/retailopt190_label_blind_execution_20261017.json",
+      "sha256": "6ba35110304f3d8f129e5f7feb1c9c0129c449fca973dd89980a34598a9011a1"
+    },
+    "retailopt_experiments_retailopt190_label_blind_plan_20261017_json": {
+      "path": "experiments/retailopt190_label_blind_plan_20261017.json",
+      "sha256": "3a1f31b240bf47b54b533550f0343fe9e52b55a537c477209f871bb1a2e58978"
+    },
+    "retailopt_experiments_retailopt190_reference_solver_audit_20261017_json": {
+      "path": "experiments/retailopt190_reference_solver_audit_20261017.json",
+      "sha256": "9be883edcb5d0771016d1824274052f8679e5167d787d0c9206b39d801afa104"
+    },
+    "retailopt_experiments_retailopt190_reference_solver_plan_20261017_json": {
+      "path": "experiments/retailopt190_reference_solver_plan_20261017.json",
+      "sha256": "27fb66e61ec334602a352722334fd2a29e87beb9a7c8213fa5f63ce043e15c66"
+    },
+    "retailopt_experiments_retailopt190_short_capacity_plan_20261017_json": {
+      "path": "experiments/retailopt190_short_capacity_plan_20261017.json",
+      "sha256": "4f4a5c8723408b6136820e72751ee4a2d2e5de4dd0975143b01579f56c77c784"
+    },
+    "retailopt_experiments_retailopt190_short_capacity_plan_v2_20261017_json": {
+      "path": "experiments/retailopt190_short_capacity_plan_v2_20261017.json",
+      "sha256": "469a94c335d66e598e5658b1464be128fbcb5d5325038657b73155287fdefa99"
+    },
+    "retailopt_experiments_retailopt190_short_capacity_result_20261017_json": {
+      "path": "experiments/retailopt190_short_capacity_result_20261017.json",
+      "sha256": "79548811c3779cc08564416f80f6d463b38c6fa0522c2d74c2b440b3a760635c"
+    },
+    "retailopt_experiments_retailopt190_short_capacity_result_v2_20261017_json": {
+      "path": "experiments/retailopt190_short_capacity_result_v2_20261017.json",
+      "sha256": "4fcac441dd07f2879baaa4438c2b8d18764d9bcfbb10b63f216fb6f8ff9829da"
+    },
+    "retailopt_experiments_retailopt190_short_full_execution_v2_20261017_json": {
+      "path": "experiments/retailopt190_short_full_execution_v2_20261017.json",
+      "sha256": "c4a0c8031b5715802db18b71150731a0e4fd8cbfafb322f5c51ad6947b90e0d1"
+    },
+    "retailopt_experiments_retailopt190_short_full_plan_v2_20261017_json": {
+      "path": "experiments/retailopt190_short_full_plan_v2_20261017.json",
+      "sha256": "a24779da198d42bb6cedaf9bc97653b6c3186abb4a949e1ac2bc38e1c71af1a4"
+    },
+    "retailopt_experiments_retailopt190_skill_library_20261017_json": {
+      "path": "experiments/retailopt190_skill_library_20261017.json",
+      "sha256": "d648967e72f6036512c5568481f876fdf868230a6db9e9d69a6c1b6e1cf3bff5"
+    },
+    "retailopt_experiments_retailopt190_source_custody_audit_20261017_json": {
+      "path": "experiments/retailopt190_source_custody_audit_20261017.json",
+      "sha256": "637da7c1c4c0b69d97e79d81eade9b95e655bdd5c6cc90f43ebfe370de729223"
+    },
+    "retailopt_llm4or_benchmark_independence_py": {
+      "path": "llm4or/benchmark_independence.py",
+      "sha256": "f8dd6be0f277c98e60ca96fdbdd4202918e372c74d3198315a4c01806cc70064"
+    },
+    "retailopt_llm4or_retailopt190_blind_replication_py": {
+      "path": "llm4or/retailopt190_blind_replication.py",
+      "sha256": "566f460171255593abaf698c2d1bf03ba6a0ef5c35e1beffdc15922652c675b1"
+    },
+    "retailopt_llm4or_retailopt190_compiler_py": {
+      "path": "llm4or/retailopt190_compiler.py",
+      "sha256": "958b9f9638d3f7f77e40a843feadc69a98d234c12ab3e7ca86a8b932e8f0cb3e"
+    },
+    "retailopt_llm4or_retailopt190_custody_py": {
+      "path": "llm4or/retailopt190_custody.py",
+      "sha256": "c65c00995e0311b9d08df9330ea609e3b0e699a17bc976d8c00f343cf4370623"
+    },
+    "retailopt_llm4or_retailopt190_endpoint_py": {
+      "path": "llm4or/retailopt190_endpoint.py",
+      "sha256": "1d2ba69701cfd3b13f0818c3238e5a63d89a91cb125043c7a0fe46c40bcb9277"
+    },
+    "retailopt_llm4or_retailopt190_evaluation_py": {
+      "path": "llm4or/retailopt190_evaluation.py",
+      "sha256": "d05d7ad8aafd544bcdcf2658c9c1d8b22f3cb5e0a988b863d5a73354492f5252"
+    },
+    "retailopt_llm4or_retailopt190_experiment_py": {
+      "path": "llm4or/retailopt190_experiment.py",
+      "sha256": "dce1de00833b41af7a25df14789e4d66d4a3b73b8e814f6fbba2242ceddb5680"
+    },
+    "retailopt_llm4or_retailopt190_knowledge_py": {
+      "path": "llm4or/retailopt190_knowledge.py",
+      "sha256": "dd13c96ac9901eb61103ed47dc465396e6b1a08d534d21e42c76b377f8f09319"
+    },
+    "retailopt_scripts_audit_retailopt190_decision_diagnostics_py": {
+      "path": "scripts/audit_retailopt190_decision_diagnostics.py",
+      "sha256": "e61a9123acb4ca10290db469b67ab929e79a7ac8f24d04efb9fb1763847ef19f"
+    },
+    "retailopt_scripts_audit_retailopt190_gold_compiler_py": {
+      "path": "scripts/audit_retailopt190_gold_compiler.py",
+      "sha256": "eb57d861f2ec35fa4a89a8a210dac488b8414d93a44440b285f547fec0f6ef25"
+    },
+    "retailopt_scripts_evaluate_retailopt190_short_full_py": {
+      "path": "scripts/evaluate_retailopt190_short_full.py",
+      "sha256": "c99e8d8432dac3f9439c7506aee202f0b0c8ee5ce07b553d83e1c5c1a398e8f5"
+    },
+    "retailopt_scripts_freeze_retailopt190_label_blind_py": {
+      "path": "scripts/freeze_retailopt190_label_blind.py",
+      "sha256": "ff05a439aa7a974079f8ec20c03717a6244c0fea8ecdd35f2cfae44c883d688c"
+    },
+    "retailopt_scripts_freeze_retailopt190_short_full_py": {
+      "path": "scripts/freeze_retailopt190_short_full.py",
+      "sha256": "5cace8caba6fab3e2ab64a1068352452b8cf8a62816b7a06e7353defc0392da7"
+    },
+    "retailopt_scripts_project_retailopt190_evaluations_py": {
+      "path": "scripts/project_retailopt190_evaluations.py",
+      "sha256": "f80a579a0cdae380a18a4704d0bbff417489fffc86867e6d10d34a5c732c2740"
+    },
+    "retailopt_scripts_run_retailopt190_label_blind_py": {
+      "path": "scripts/run_retailopt190_label_blind.py",
+      "sha256": "6029afd2dec56e7525a6dd50f593185db1e374bc316f0ec379323167142aa35d"
+    },
+    "retailopt_scripts_run_retailopt190_short_full_py": {
+      "path": "scripts/run_retailopt190_short_full.py",
+      "sha256": "5cbc808623178887feba9307c1cdf6326eb49de3e5d468d4933ecc54a38e2de7"
+    },
+    "retailopt_tests_test_retailopt190_blind_replication_py": {
+      "path": "tests/test_retailopt190_blind_replication.py",
+      "sha256": "4ead2f211922c90170e89f3dc6bf8623f5441379584559637255b16e327e03c1"
+    },
+    "retailopt_tests_test_retailopt190_compiler_py": {
+      "path": "tests/test_retailopt190_compiler.py",
+      "sha256": "c293293906bd2ea91e4236b31d90ef180684cb8bba50378ed27cb0378c1943d9"
+    },
+    "retailopt_tests_test_retailopt190_evaluation_py": {
+      "path": "tests/test_retailopt190_evaluation.py",
+      "sha256": "6131c25f2366f2dd9a088b07711700da96a4f59d35d220504c06a661960338ec"
+    },
+    "retailopt_tests_test_retailopt190_experiment_py": {
+      "path": "tests/test_retailopt190_experiment.py",
+      "sha256": "7ee8f253fba39773405286b15cb25c703ab89e12bcce6c92e0ecba0bc82f622a"
+    },
+    "retailopt_tests_test_retailopt190_knowledge_py": {
+      "path": "tests/test_retailopt190_knowledge.py",
+      "sha256": "b96640d0b03d30f7463d96b4694bd36f9297aa6589d66045ae1fe74b73a71156"
+    },
+    "reviewer_evidence_index": {
+      "path": "manuscript/REVIEWER_EVIDENCE_INDEX.md",
+      "sha256": "74d00fa1ca67f386455a47f9bfb2386e570c563884bd1374fb1bc30b5920947b"
+    },
+    "same_knowledge_mechanism_synthesis_report": {
+      "path": "docs/SAME_KNOWLEDGE_MECHANISM_SYNTHESIS_20261017.md",
+      "sha256": "e3c2f2fa1f955a27dced92d2956779c0ae108104ab1376a2b0942c054f9992b1"
+    },
+    "same_knowledge_study_design_report": {
+      "path": "docs/SAME_KNOWLEDGE_TASK_LEVEL_STUDY_DESIGN_20261016.md",
+      "sha256": "2307b26e24c6851faab603bea5496171c076be5f7a27bfce25e70c8899c9b435"
+    },
+    "source_data_readme": {
+      "path": "manuscript/source_data/README.md",
+      "sha256": "a792deab42e68ebdf7877cae6b02a1fda47847f33be83e902eb931201b2f9793"
+    },
+    "supplementary_reproducibility": {
+      "path": "manuscript/SUPPLEMENTARY_REPRODUCIBILITY.md",
+      "sha256": "b4cccbf8e07d1117a03f6331f7c133b878d8161e77e9a142b32c7eaab46bfe92"
+    },
+    "supplementary_theory": {
+      "path": "manuscript/SUPPLEMENTARY_THEORY.md",
+      "sha256": "5e613994a5e4e36dc20664ce5abfa82e2786aa7acee7becc5a2708390f029cf2"
+    },
+    "terminology": {
+      "path": "docs/PAPER_TERMINOLOGY_LEDGER_20261014.md",
+      "sha256": "668311cf7956367b27ca8bbbcfaa60c2912ebcc14619035194d9f0ad745b25f0"
+    },
+    "theory": {
+      "path": "docs/PROOF_CARRYING_SKILL_EVOLUTION_THEORY.md",
+      "sha256": "a0c8001ae887ba7e793a53ecc315762483a32363417910b998a2e36050911fd4"
+    },
+    "theory_primary_source_map": {
+      "path": "docs/THEORY_PRIMARY_SOURCE_MAP_20261015.md",
+      "sha256": "2805a2f50a4764bc9be4e3e5d31ed783c8b0b1b26185ed613b4692a3d0523c07"
+    },
+    "worked_example": {
+      "path": "manuscript/WORKED_EXAMPLE.md",
+      "sha256": "11f41d0809fc62c03b6109da3e28cf665c0ee8bd552a17bf2f25a3d31d414152"
+    }
+  },
+  "purpose": "Single machine-readable entry point binding every headline paper claim to terminal evidence, exact file identity, permitted interpretation, and claim boundary.",
+  "schema": "llm4or-paper-evidence-manifest-v1",
+  "source_of_truth_order": [
+    "terminal result or closure JSON",
+    "machine-readable evidence ledger",
+    "claim-to-evidence matrix",
+    "paper-facing narrative documents"
+  ]
+}

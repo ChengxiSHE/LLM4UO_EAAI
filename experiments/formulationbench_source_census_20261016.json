@@ -1,0 +1,24 @@
+{
+  "counts": {
+    "formulations": 109,
+    "pairs": 89,
+    "problems": 20,
+    "proofs": 63
+  },
+  "pair_opaque_identity_set_sha256": "87f530293d915896248d141367a90047ca23fb7146d1eb33f02c844fcd5e565a",
+  "path_structure_sha256": "03eacaa4bae8eebc90cf2beb59c3efd20a0dc6bca88fac90d01944fe4f67a14d",
+  "privacy": {
+    "contains_data_values": false,
+    "contains_formulation_bodies": false,
+    "contains_labels": false,
+    "contains_problem_bodies": false,
+    "contains_proof_bodies": false,
+    "contains_solutions": false
+  },
+  "schema": "llm4or-formulationbench-source-census-v1",
+  "source": {
+    "commit": "6f37a71e6251b11599ef42869e4268882985a8a7",
+    "dataset_tree": "793db197693fac5446fe1bd39aaf178fea437822"
+  },
+  "status": "passed_body_free_source_census"
+}

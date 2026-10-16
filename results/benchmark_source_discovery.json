@@ -1,0 +1,130 @@
+[
+  {
+    "repo": "FreedomIntelligence/Mamo",
+    "revision": "2c91069dee5c1e4db4b899eb176ec987d0251bb3",
+    "files": [
+      {
+        "path": "LICENSE",
+        "bytes": 20138
+      },
+      {
+        "path": "data/optimization/Complex_LP/mamo_complex_lp.jsonl",
+        "bytes": 387757
+      }
+    ]
+  },
+  {
+    "repo": "Cardinal-Operations/SIRL",
+    "revision": "b329ff288e9240ecd41813fa41e7f003fd5ca47d",
+    "files": [
+      {
+        "path": "test_data/IndustryOR_fixedV2.json",
+        "bytes": 115295
+      },
+      {
+        "path": "test_data/MAMO_ComplexLP.json",
+        "bytes": 376260
+      },
+      {
+        "path": "test_data/MAMO_ComplexLP_fixed.jsonl",
+        "bytes": 362655
+      },
+      {
+        "path": "test_data/MAMO_EasyLP.json",
+        "bytes": 712140
+      },
+      {
+        "path": "test_data/MAMO_EasyLP_fixed.jsonl",
+        "bytes": 713826
+      },
+      {
+        "path": "test_data/NL4OPT.jsonl",
+        "bytes": 143216
+      },
+      {
+        "path": "test_data/OptMATH_Bench_166.jsonl",
+        "bytes": 492278
+      },
+      {
+        "path": "test_data/OptMATH_Bench_193.jsonl",
+        "bytes": 588813
+      },
+      {
+        "path": "test_data/OptiBench.jsonl",
+        "bytes": 439907
+      },
+      {
+        "path": "test_data/README.md",
+        "bytes": 31052
+      },
+      {
+        "path": "test_data/diagnostics/IndustryOR_diagnostic_process.json",
+        "bytes": 25593
+      }
+    ]
+  },
+  {
+    "repo": "optsuite/OptMATH",
+    "revision": "f15bbc4477c70db85ad148df8bcc1b780bca0f8c",
+    "files": [
+      {
+        "path": "LICENSE",
+        "bytes": 11357
+      },
+      {
+        "path": "benchmark/MAMO_ComplexLP.json",
+        "bytes": 376260
+      },
+      {
+        "path": "benchmark/MAMO_EasyLP.json",
+        "bytes": 712140
+      },
+      {
+        "path": "benchmark/NL4OPT.json",
+        "bytes": 143217
+      },
+      {
+        "path": "benchmark/OptMATH_Bench.json",
+        "bytes": 499806
+      },
+      {
+        "path": "optmath/generators/complexity.py",
+        "bytes": 7500
+      }
+    ]
+  },
+  {
+    "repo": "Cardinal-Operations/ORLM",
+    "revision": "33bc47d0a1d1710d24ab839118bdf4cb89b9e31b",
+    "files": [
+      {
+        "path": "LICENSE",
+        "bytes": 11396
+      },
+      {
+        "path": "results/IndustryOR.q2mc_en.ORLM-LLaMA-3-8B/executed.jsonl",
+        "bytes": 1200961
+      },
+      {
+        "path": "results/MAMO.ComplexLP.q2mc_en.ORLM-LLaMA-3-8B/executed.jsonl",
+        "bytes": 3252333
+      },
+      {
+        "path": "scripts/eval.IndustryOR.pass1.sh",
+        "bytes": 683
+      },
+      {
+        "path": "scripts/eval.IndustryOR.pass8.sh",
+        "bytes": 685
+      },
+      {
+        "path": "scripts/eval.MAMO_ComplexLP.pass1.sh",
+        "bytes": 686
+      },
+      {
+        "path": "scripts/eval.MAMO_ComplexLP.pass8.sh",
+        "bytes": 688
+      }
+    ]
+  }
+]

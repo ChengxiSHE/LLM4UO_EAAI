@@ -1,0 +1,101 @@
+{
+  "kind": "synthetic_mechanism_check_not_benchmark",
+  "correct_objective": 1.0,
+  "incorrect_objective": 1.0,
+  "objective_match": true,
+  "violating_witness": [
+    1.0,
+    1.0
+  ],
+  "missing_constraint_residual": 1.0,
+  "llm_requests": 0,
+  "solver": "scipy.optimize.linprog/HiGHS",
+  "passed": true,
+  "cases": {
+    "omission": {
+      "status": "difference_witness",
+      "point": [
+        1.0,
+        1.0
+      ],
+      "violated_row": [
+        1,
+        1
+      ],
+      "rhs": 1.0,
+      "raw_residual": 1.0,
+      "scaled_residual": 1.0
+    },
+    "overrestriction": {
+      "status": "difference_witness",
+      "point": [
+        -0.0,
+        1.0
+      ],
+      "violated_row": [
+        0,
+        1
+      ],
+      "rhs": 0.0,
+      "raw_residual": 1.0,
+      "scaled_residual": 1.0
+    },
+    "equivalent_scaled_redundant_constraints": [
+      {
+        "status": "contained_within_numerical_tolerance",
+        "dimension": 2
+      },
+      {
+        "status": "contained_within_numerical_tolerance",
+        "dimension": 2
+      }
+    ],
+    "variable_renaming": {
+      "canonical_mapping_checked": true
+    },
+    "objective_preference_reversal": {
+      "equal_optima": [
+        2.0,
+        2.0
+      ],
+      "decision_pair": [
+        [
+          1.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          1.0
+        ]
+      ],
+      "a_scores": [
+        2.0,
+        1.0
+      ],
+      "b_scores": [
+        1.0,
+        2.0
+      ],
+      "solver_generated_margin": 1.0
+    },
+    "finite_probe_blind_spot": {
+      "agree_at_origin": true,
+      "models_equivalent": false
+    },
+    "shared_error": {
+      "candidates_agree": true,
+      "trusted_clause_violated": true
+    },
+    "integrality": {
+      "point": [
+        0.5,
+        0.5
+      ],
+      "continuous_accepts_integer_rejects": true
+    },
+    "objective_unit_conversion": {
+      "canonical_values_match": true
+    }
+  },
+  "scope": "trusted_handwritten_fixtures_only; no teacher, extraction, evolution, or accuracy evaluation"
+}
